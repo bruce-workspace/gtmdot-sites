@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tucker's Home Services | Gutter Specialists Since 2005 | Woodstock, GA</title>
+<meta name="description" content="Family-owned gutter specialists serving Metro Atlanta since 2005. 5.0 stars on Nextdoor, 142 reviews. Cleaning, repair, installation, fascia, siding. Free estimates. Call (404) 697-7341.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Tucker's Home Services LLC",
+  "address": {"@type": "PostalAddress","streetAddress": "3200 River Rock Pl","addressLocality": "Woodstock","addressRegion": "GA","postalCode": "30188"},
+  "telephone": "(404) 697-7341",
+  "priceRange": "$$",
+  "aggregateRating": {"@type": "AggregateRating","ratingValue": "5.0","reviewCount": "142"},
+  "foundingDate": "2005",
+  "areaServed": ["Woodstock","Canton","Marietta","Kennesaw","Alpharetta","Roswell","Atlanta"]
+}
+</script>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#070a0e;--bg-alt:#0a0f16;--surface:#0e1520;
+  --brand:#166534;--brand-light:#22c55e;--brand-muted:#14532d;
+  --brand-rgb:22,101,52;--brand-glow:rgba(34,197,94,0.10);
+  --text:#eef2f0;--muted:#8a9490;
+  --border:rgba(34,197,94,0.14);--border-full:rgba(34,197,94,0.30);
+  --font-serif:'Cormorant Garamond',Georgia,serif;
+  --font-sans:'Plus Jakarta Sans',-apple-system,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-sans);background:var(--bg);color:var(--text);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+
+.nav{position:fixed;top:0;left:0;width:100%;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;background:rgba(7,10,14,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);z-index:900;border-bottom:1px solid var(--border);transition:background .3s}
+.nav.scrolled{background:rgba(7,10,14,0.95)}
+.nav-logo{font-family:var(--font-serif);font-size:22px;font-weight:700;color:var(--text);display:flex;align-items:center;gap:10px}
+.nav-logo .pipe{width:2px;height:28px;background:var(--brand-light);border-radius:1px}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{font-size:15px;font-weight:600;letter-spacing:.04em;color:var(--muted);transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{background:var(--brand);color:#fff;font-size:14px;font-weight:700;padding:10px 24px;border-radius:8px;border:none;cursor:pointer;letter-spacing:.04em;transition:background .3s,transform .2s;display:inline-flex;align-items:center;gap:8px}
+.nav-cta:hover{background:var(--brand-light);color:#000;transform:translateY(-1px)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{width:24px;height:2px;background:var(--text);border-radius:2px;transition:transform .3s,opacity .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:68px;left:0;width:100%;background:rgba(7,10,14,0.98);backdrop-filter:blur(20px);padding:24px 40px;z-index:899;border-bottom:1px solid var(--border)}
+.mobile-menu.open{display:flex;flex-direction:column;gap:20px}
+.mobile-menu a{font-size:18px;font-weight:600;color:var(--muted);padding:8px 0;border-bottom:1px solid var(--border)}
+.mobile-menu a:last-child{border:none}
+
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:120px 40px 80px;overflow:hidden;background:linear-gradient(135deg,var(--bg) 0%,var(--bg-alt) 50%,#0a1510 100%)}
+.hero-content{position:relative;z-index:1;max-width:720px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--brand-glow);border:1px solid var(--border-full);padding:8px 16px;border-radius:100px;font-size:13px;font-weight:600;color:var(--brand-light);margin-bottom:24px;letter-spacing:.04em}
+.hero h1{font-family:var(--font-serif);font-size:clamp(42px,5.5vw,76px);font-weight:700;line-height:1.05;letter-spacing:-1px;margin-bottom:20px}
+.hero h1 .accent{color:var(--brand-light)}
+.hero-sub{font-size:18px;color:var(--muted);line-height:1.7;max-width:560px;margin-bottom:36px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.btn-primary{background:var(--brand);color:#fff;font-size:15px;font-weight:700;padding:14px 32px;border-radius:10px;border:none;cursor:pointer;letter-spacing:.04em;transition:all .3s;display:inline-flex;align-items:center;gap:8px}
+.btn-primary:hover{background:var(--brand-light);color:#000;transform:translateY(-1px)}
+.btn-secondary{background:transparent;color:var(--text);font-size:15px;font-weight:600;padding:14px 32px;border-radius:10px;border:1px solid var(--border-full);cursor:pointer;transition:all .3s;display:inline-flex;align-items:center;gap:8px}
+.btn-secondary:hover{border-color:var(--brand-light);color:var(--brand-light)}
+.hero-quote{margin-top:48px;padding-left:20px;border-left:2px solid var(--brand-light);font-family:var(--font-serif);font-size:20px;font-style:italic;color:var(--muted);line-height:1.6;max-width:480px}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stat{padding:36px 24px;text-align:center;border-right:1px solid var(--border)}
+.stat:last-child{border-right:none}
+.stat-number{font-family:var(--font-serif);font-size:48px;font-weight:900;color:var(--brand-light);letter-spacing:-1px;line-height:1}
+.stat-label{font-size:14px;color:var(--muted);margin-top:8px;font-weight:500;letter-spacing:.04em}
+
+.marquee{overflow:hidden;background:var(--bg-alt);padding:16px 0;border-bottom:1px solid var(--border)}
+.marquee-track{display:flex;gap:48px;width:max-content;animation:marquee 35s linear infinite}
+.marquee-item{font-size:14px;font-weight:600;color:var(--muted);white-space:nowrap;display:flex;align-items:center;gap:12px;letter-spacing:.04em}
+.marquee-dot{width:6px;height:6px;border-radius:50%;background:var(--brand-light);flex-shrink:0}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+
+.section{padding:96px 40px;max-width:1200px;margin:0 auto}
+.section-alt{background:var(--bg-alt)}
+.section-full{padding:96px 40px}
+.eyebrow{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:4px;color:var(--brand-light);margin-bottom:12px}
+.section-h2{font-family:var(--font-serif);font-size:clamp(32px,3.5vw,52px);font-weight:700;letter-spacing:-.5px;line-height:1.1;margin-bottom:16px}
+.section-sub{font-size:17px;color:var(--muted);max-width:560px;line-height:1.7}
+
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px}
+.service-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 24px;transition:transform .3s ease,box-shadow .3s ease}
+.service-card:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.3)}
+.service-icon{width:56px;height:56px;display:flex;align-items:center;justify-content:center;background:var(--brand-glow);border-radius:14px;margin-bottom:20px;color:var(--brand-light)}
+.service-icon svg{width:28px;height:28px}
+.service-card h3{font-size:18px;font-weight:700;margin-bottom:8px;line-height:1.3}
+.service-card p{font-size:14px;color:var(--muted);line-height:1.6}
+
+.review-feed{margin-top:40px;overflow:hidden;mask-image:linear-gradient(to right,transparent,black 5%,black 95%,transparent);-webkit-mask-image:linear-gradient(to right,transparent,black 5%,black 95%,transparent)}
+.review-feed-track{display:flex;gap:24px;animation:reviewScroll 55s linear infinite;width:max-content}
+.review-feed-track:hover{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.review-feed-track{animation:none;flex-wrap:wrap}}
+@keyframes reviewScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.review-mini{flex-shrink:0;width:360px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.review-mini-stars{color:#f59e0b;font-size:14px;letter-spacing:2px}
+.review-mini-text{font-size:14px;line-height:1.65;color:var(--text);font-style:italic;flex:1}
+.review-mini-author{font-size:13px;font-weight:600;color:var(--brand-light)}
+.review-mini-source{font-size:11px;color:var(--muted)}
+
+.timeline-section{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-top:48px}
+.timeline-text h3{font-family:var(--font-serif);font-size:28px;font-weight:700;margin-bottom:16px}
+.timeline-text p{color:var(--muted);line-height:1.7;margin-bottom:20px}
+.timeline{position:relative;padding-left:32px}
+.timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--border-full)}
+.timeline-item{position:relative;padding-bottom:32px}
+.timeline-item:last-child{padding-bottom:0}
+.timeline-item::before{content:'';position:absolute;left:-28px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--brand-light);border:3px solid var(--bg)}
+.timeline-year{font-family:var(--font-serif);font-size:20px;font-weight:700;color:var(--brand-light);margin-bottom:4px}
+.timeline-desc{font-size:15px;color:var(--muted);line-height:1.6}
+
+.area-pills{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.area-pill{background:var(--surface);border:1px solid var(--border);padding:10px 20px;border-radius:100px;font-size:14px;font-weight:600;color:var(--muted);transition:all .3s}
+.area-pill:hover{border-color:var(--brand-light);color:var(--brand-light)}
+
+.faq-list{margin-top:48px;max-width:800px}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-question{width:100%;background:none;border:none;color:var(--text);font-family:var(--font-sans);font-size:17px;font-weight:600;padding:24px 0;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq-question svg{flex-shrink:0;transition:transform .3s;color:var(--brand-light)}
+.faq-item.open .faq-question svg{transform:rotate(180deg)}
+.faq-answer{display:grid;grid-template-rows:0fr;overflow:hidden;transition:grid-template-rows .4s ease}
+.faq-answer-inner{padding:0 0 24px;font-size:15px;color:var(--muted);line-height:1.7;overflow:hidden;min-height:0}
+.faq-item.open .faq-answer{grid-template-rows:1fr}
+
+.form-wrap{max-width:600px;margin:48px auto 0}
+.form-group{margin-bottom:20px}
+.form-group label{display:block;font-size:14px;font-weight:600;margin-bottom:8px;color:var(--text)}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:14px 16px;background:var(--surface);border:1px solid var(--border);border-radius:10px;color:var(--text);font-family:var(--font-sans);font-size:15px;transition:border-color .3s;-webkit-appearance:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--brand-light);box-shadow:0 0 0 3px var(--brand-glow)}
+.form-group select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238a9490' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:48px}
+.form-group textarea{min-height:120px;resize:vertical}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-submit{width:100%;padding:16px;background:var(--brand);color:#fff;font-size:16px;font-weight:700;border:none;border-radius:10px;cursor:pointer;letter-spacing:.04em;transition:all .3s}
+.form-submit:hover{background:var(--brand-light);color:#000;transform:translateY(-1px)}
+.form-consent{font-size:12px;color:var(--muted);margin-top:12px;line-height:1.5}
+.form-success{display:none;text-align:center;padding:48px 24px}
+.form-success svg{color:var(--brand-light);margin:0 auto 16px}
+.form-success h3{font-family:var(--font-serif);font-size:28px;font-weight:700;margin-bottom:8px}
+.form-success p{color:var(--muted)}
+
+.footer{background:var(--surface);border-top:1px solid var(--border);padding:64px 40px 32px}
+.footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px}
+.footer-brand{font-family:var(--font-serif);font-size:22px;font-weight:700;margin-bottom:12px}
+.footer-desc{font-size:14px;color:var(--muted);line-height:1.7;max-width:360px}
+.footer-heading{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--brand-light);margin-bottom:16px}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-links a,.footer-links li{font-size:14px;color:var(--muted);transition:color .2s}
+.footer-links a:hover{color:var(--text)}
+.footer-bottom{max-width:1200px;margin:32px auto 0;padding-top:24px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
+
+.mobile-phone{display:none;position:fixed;bottom:20px;right:20px;z-index:800;background:var(--brand);color:#fff;width:56px;height:56px;border-radius:50%;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(34,197,94,0.4);transition:transform .2s}
+.mobile-phone:hover{transform:scale(1.1)}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+@media(max-width:1024px){.services-grid{grid-template-columns:repeat(2,1fr)}.timeline-section{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){.nav{padding:0 20px}.nav-links,.nav-cta{display:none}.hamburger{display:flex}.hero{padding:100px 20px 60px;min-height:auto}.hero h1{font-size:clamp(36px,8vw,52px)}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:none}.section{padding:64px 20px}.section-full{padding:64px 20px}.services-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr;gap:32px}.footer-bottom{flex-direction:column;gap:8px;text-align:center}.mobile-phone{display:flex}}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="#" class="nav-logo">Tucker's<span class="pipe"></span><span style="font-family:var(--font-sans);font-size:13px;font-weight:600;color:var(--muted);letter-spacing:.08em;text-transform:uppercase">Home Services</span></a>
+  <ul class="nav-links"><li><a href="#services">Services</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#story">About</a></li><li><a href="#faq">FAQ</a></li></ul>
+  <a href="tel:4046977341" class="nav-cta"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(404) 697-7341</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu"><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#story">About Shaun &amp; Misty</a><a href="#faq">FAQ</a><a href="#contact">Free Estimate</a><a href="tel:4046977341" style="color:var(--brand-light)">(404) 697-7341</a></div>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>Family Owned Since 2005 &middot; Woodstock, GA</div>
+    <h1>Your Gutters,<br><span class="accent">Our Specialty</span></h1>
+    <p class="hero-sub">Shaun and Misty Tucker have been protecting Metro Atlanta homes for 21 years. Gutter cleaning, repair, installation, fascia, siding, and everything that keeps water away from your foundation. No upsells. Just honest work.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Get a Free Estimate<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      <a href="tel:4046977341" class="btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call Shaun</a>
+    </div>
+    <p class="hero-quote">"I HIGHLY recommend Shaun. You will NOT find anyone more professional, hardworking, and basically just awesomely awesome. Cannot say enough good things."</p>
+  </div>
+</section>
+
+<div class="stats reveal">
+  <div class="stat"><div class="stat-number">21+</div><div class="stat-label">Years in Business</div></div>
+  <div class="stat"><div class="stat-number">5.0</div><div class="stat-label">Star Rating</div></div>
+  <div class="stat"><div class="stat-number">218+</div><div class="stat-label">Projects Completed</div></div>
+  <div class="stat"><div class="stat-number">5</div><div class="stat-label">Counties Served</div></div>
+</div>
+
+<div class="marquee"><div class="marquee-track">
+  <span class="marquee-item"><span class="marquee-dot"></span>Family Owned &amp; Operated</span>
+  <span class="marquee-item"><span class="marquee-dot"></span>Fully Insured</span>
+  <span class="marquee-item"><span class="marquee-dot"></span>Free Estimates</span>
+  <span class="marquee-item"><span class="marquee-dot"></span>Maintenance Plans Available</span>
+  <span class="marquee-item"><span class="marquee-dot"></span>142 Nextdoor Reviews</span>
+  <span class="marquee-item"><span class="marquee-dot"></span>No Upselling, Ever</span>
+  <span class="marquee-item"><span class="marquee-dot"></span>Emergency Service Available</span>
+  <span class="marquee-item"><span class="marquee-dot"></span>Background Checked &amp; Verified</span>
+  <span class="marquee-item"><span class="marquee-dot"></span>Family Owned &amp; Operated</span>
+  <span class="marquee-item"><span class="marquee-dot"></span>Fully Insured</span>
+  <span class="marquee-item"><span class="marquee-dot"></span>Free Estimates</span>
+  <span class="marquee-item"><span class="marquee-dot"></span>Maintenance Plans Available</span>
+  <span class="marquee-item"><span class="marquee-dot"></span>142 Nextdoor Reviews</span>
+  <span class="marquee-item"><span class="marquee-dot"></span>No Upselling, Ever</span>
+  <span class="marquee-item"><span class="marquee-dot"></span>Emergency Service Available</span>
+  <span class="marquee-item"><span class="marquee-dot"></span>Background Checked &amp; Verified</span>
+</div></div>
+
+<section class="section-full section-alt" id="services">
+  <div class="section reveal" style="padding-top:0;padding-bottom:0">
+    <div class="eyebrow">What We Do</div>
+    <h2 class="section-h2">Gutter Specialists &amp; Exterior Care</h2>
+    <p class="section-sub">Gutters are our bread and butter, but we handle everything on the outside of your home that keeps water, weather, and wildlife where they belong.</p>
+    <div class="services-grid">
+      <div class="service-card"><div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg></div><h3>Gutter Cleaning</h3><p>Thorough debris removal, flushing, and inspection. Maintenance plans available for automatic service 2-3 times per year so you never worry about clogs.</p></div>
+      <div class="service-card"><div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3>Gutter Repair</h3><p>Sagging sections, leaking joints, loose hangers, and damaged downspouts. Shaun fixes what's broken and tells you honestly if replacement makes more sense.</p></div>
+      <div class="service-card"><div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Gutter Guards</h3><p>Screen and guard installation to reduce debris buildup and extend the time between cleanings. Right product for your tree coverage and roof type.</p></div>
+      <div class="service-card"><div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><h3>Gutter Installation</h3><p>Seamless metal gutters sized and pitched correctly for your roof. Shaun once told a customer their gutters were the wrong size before quoting new ones. That's the kind of honesty you get.</p></div>
+      <div class="service-card"><div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="22" height="4" rx="1"/><rect x="1" y="14" width="22" height="4" rx="1"/></svg></div><h3>Fascia &amp; Soffit Repair</h3><p>Rotted fascia boards and damaged soffits replaced before they lead to bigger problems. We catch wood rot early and fix it right.</p></div>
+      <div class="service-card"><div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div><h3>Siding &amp; Chimney</h3><p>Siding repair and installation, chimney pans, shrouds, and exterior repairs. Full exterior coverage so you only need one call.</p></div>
+      <div class="service-card"><div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></svg></div><h3>Pressure Washing</h3><p>Driveways, walkways, siding, and decks cleaned to remove years of buildup. Often bundled with gutter cleaning for a full exterior refresh.</p></div>
+      <div class="service-card"><div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 8v4l3 3"/></svg></div><h3>Maintenance Plans</h3><p>Set it and forget it. Tucker's comes out 2-3 times per year to clean and inspect your gutters automatically. No scheduling, no reminders needed.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="reveal">
+    <div class="eyebrow">What Neighbors Say</div>
+    <h2 class="section-h2">142 Reviews on Nextdoor Alone</h2>
+    <p class="section-sub">Shaun and Misty built this business on word-of-mouth in real neighborhoods. Here is what your neighbors are saying.</p>
+  </div>
+  <div class="review-feed reveal">
+    <div class="review-feed-track">
+      <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"I HIGHLY recommend Shaun. You will NOT find anyone more professional, hardworking, and basically just awesomely awesome. Cannot say enough good things about Shaun and the quality of his work. You will not be disappointed!"</p><span class="review-mini-author">Nextdoor Neighbor</span><span class="review-mini-source">Nextdoor</span></div>
+      <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"It is not often that you find a company that truly impresses you at every step of the process. Tucker's Home Services did just that for my home."</p><span class="review-mini-author">Angi Customer</span><span class="review-mini-source">Angi</span></div>
+      <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"The scheduling process was seamless, the crew was efficient, and my gutters look great."</p><span class="review-mini-author">Wade S.</span><span class="review-mini-source">Thumbtack</span></div>
+      <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Work was completed to our satisfaction and in a very timely manner. Very ethical and did NOT try to over-sell a product or service that wasn't necessary."</p><span class="review-mini-author">Angi Customer</span><span class="review-mini-source">Angi</span></div>
+      <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"They not only arrived on time but they were early. Cleaned up afterwards. Reliable, efficient, and reasonably priced."</p><span class="review-mini-author">Brenda R.</span><span class="review-mini-source">Thumbtack</span></div>
+      <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Recently used Tucker Home Services to clean our gutters. Communication was great, they were on time, reasonable and left my home and yard beautifully cleaned up."</p><span class="review-mini-author">Nextdoor Neighbor</span><span class="review-mini-source">Nextdoor</span></div>
+      <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"They did a great job clearing out gutters and downspouts. Also removed moss and cleaned surrounding areas."</p><span class="review-mini-author">Kelly B.</span><span class="review-mini-source">Thumbtack</span></div>
+      <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Misty Tucker had her husband come out to clean our gutters yesterday and we were VERY pleased! My driveway hasn't looked this good."</p><span class="review-mini-author">Nextdoor Neighbor</span><span class="review-mini-source">Nextdoor</span></div>
+      <!-- duplicate for scroll -->
+      <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"I HIGHLY recommend Shaun. You will NOT find anyone more professional, hardworking, and basically just awesomely awesome. Cannot say enough good things about Shaun and the quality of his work. You will not be disappointed!"</p><span class="review-mini-author">Nextdoor Neighbor</span><span class="review-mini-source">Nextdoor</span></div>
+      <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"It is not often that you find a company that truly impresses you at every step of the process. Tucker's Home Services did just that for my home."</p><span class="review-mini-author">Angi Customer</span><span class="review-mini-source">Angi</span></div>
+      <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"The scheduling process was seamless, the crew was efficient, and my gutters look great."</p><span class="review-mini-author">Wade S.</span><span class="review-mini-source">Thumbtack</span></div>
+      <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Work was completed to our satisfaction and in a very timely manner. Very ethical and did NOT try to over-sell a product or service that wasn't necessary."</p><span class="review-mini-author">Angi Customer</span><span class="review-mini-source">Angi</span></div>
+      <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"They not only arrived on time but they were early. Cleaned up afterwards. Reliable, efficient, and reasonably priced."</p><span class="review-mini-author">Brenda R.</span><span class="review-mini-source">Thumbtack</span></div>
+      <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Recently used Tucker Home Services to clean our gutters. Communication was great, they were on time, reasonable and left my home and yard beautifully cleaned up."</p><span class="review-mini-author">Nextdoor Neighbor</span><span class="review-mini-source">Nextdoor</span></div>
+      <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"They did a great job clearing out gutters and downspouts. Also removed moss and cleaned surrounding areas."</p><span class="review-mini-author">Kelly B.</span><span class="review-mini-source">Thumbtack</span></div>
+      <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Misty Tucker had her husband come out to clean our gutters yesterday and we were VERY pleased! My driveway hasn't looked this good."</p><span class="review-mini-author">Nextdoor Neighbor</span><span class="review-mini-source">Nextdoor</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-full section-alt" id="story">
+  <div class="section reveal" style="padding-top:0;padding-bottom:0">
+    <div class="eyebrow">Our Story</div>
+    <h2 class="section-h2">A Family Protecting Families</h2>
+    <div class="timeline-section">
+      <div class="timeline-text">
+        <h3>Shaun &amp; Misty Tucker</h3>
+        <p>Tucker's Home Services is a husband-and-wife operation. Shaun leads the crews in the field. Misty manages scheduling and makes sure every appointment runs on time. Together, they've built their livelihoods on helping people maintain their homes.</p>
+        <p>They started in 2005 with a simple mission: do honest gutter work at a fair price. Twenty-one years later, that mission hasn't changed. What has changed is the team (now roughly 10 employees) and the range of services, which grew because customers kept asking "can you also fix my fascia?" and "what about my siding?" The answer was always yes.</p>
+        <p>Their Nextdoor reputation (142 reviews at 5.0 stars) tells the story better than any marketing. Neighbors recommend Shaun to neighbors, and those neighbors recommend him to more. That's how you build a business that lasts two decades.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-year">2005</div><div class="timeline-desc">Shaun and Misty Tucker start Tucker's Home Services in Woodstock, GA</div></div>
+        <div class="timeline-item"><div class="timeline-year">2010s</div><div class="timeline-desc">Expand from gutter cleaning to full exterior services: fascia, siding, chimney, pressure washing</div></div>
+        <div class="timeline-item"><div class="timeline-year">2018</div><div class="timeline-desc">Named Thumbtack Top Pro. Grow to team of 10 employees</div></div>
+        <div class="timeline-item"><div class="timeline-year">Today</div><div class="timeline-desc">5.0 stars, 142 Nextdoor reviews, 76 Thumbtack reviews. Serving 5 counties across Metro Atlanta</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="area">
+  <div class="reveal">
+    <div class="eyebrow">Where We Work</div>
+    <h2 class="section-h2">Serving 5 Metro Atlanta Counties</h2>
+    <p class="section-sub">Based in Woodstock and serving homeowners across Cherokee, Cobb, Fulton, DeKalb, and Gwinnett counties.</p>
+    <div class="area-pills">
+      <span class="area-pill">Woodstock</span><span class="area-pill">Canton</span><span class="area-pill">Marietta</span><span class="area-pill">Kennesaw</span><span class="area-pill">Acworth</span><span class="area-pill">Alpharetta</span><span class="area-pill">Roswell</span><span class="area-pill">Milton</span><span class="area-pill">Johns Creek</span><span class="area-pill">Duluth</span><span class="area-pill">Suwanee</span><span class="area-pill">Smyrna</span><span class="area-pill">Atlanta</span>
+    </div>
+  </div>
+</section>
+
+<section class="section-full section-alt" id="faq">
+  <div class="section reveal" style="padding-top:0;padding-bottom:0">
+    <div class="eyebrow">Common Questions</div>
+    <h2 class="section-h2">Gutter Service FAQ</h2>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-question">How often should gutters be cleaned?<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-answer"><div class="faq-answer-inner">Most homes in Metro Atlanta need gutter cleaning 2 to 3 times per year, depending on tree coverage. Heavy pine or oak coverage may need quarterly attention. Our maintenance plans handle this automatically so you never have to think about it.</div></div></div>
+      <div class="faq-item"><button class="faq-question">Do you offer maintenance plans?<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-answer"><div class="faq-answer-inner">Yes. Tucker's offers recurring maintenance plans where we come out 2-3 times per year automatically to clean and inspect your gutters. You don't have to remember to schedule or call. We handle it, and you get consistent, reliable care for your home's drainage system.</div></div></div>
+      <div class="faq-item"><button class="faq-question">How do I know if I need gutter repair or replacement?<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-answer"><div class="faq-answer-inner">Shaun will give you an honest assessment. If a section can be repaired, he'll repair it. If your gutters are the wrong size for your roof (which he's caught before), he'll tell you that too instead of just patching a system that won't work properly. Multiple reviewers specifically mention that Tucker's does not upsell or push unnecessary services.</div></div></div>
+      <div class="faq-item"><button class="faq-question">What does rotted fascia look like?<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-answer"><div class="faq-answer-inner">Rotted fascia often starts as soft or discolored wood behind your gutters. You might notice paint peeling, gutters pulling away from the house, or visible dark spots along the roofline. Left untreated, it spreads to the soffit and roof decking and gets much more expensive to fix. We catch it early during gutter cleanings and repair it before it becomes a major project.</div></div></div>
+      <div class="faq-item"><button class="faq-question">Do you handle emergency gutter issues?<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-answer"><div class="faq-answer-inner">Yes. If a gutter section falls, a downspout detaches during a storm, or water is pouring over and threatening your foundation, call us. We offer emergency services and will prioritize getting to you quickly. Shaun's Thumbtack response time averages around 4 hours.</div></div></div>
+      <div class="faq-item"><button class="faq-question">Do you also handle wildlife in the gutters or attic?<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-answer"><div class="faq-answer-inner">Yes. We offer wildlife exclusion services. If squirrels, birds, or other animals have made their way into your gutter system, soffit, or attic through exterior openings, we remove them and seal the entry points to prevent them from coming back.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="reveal">
+    <div style="text-align:center"><div class="eyebrow">Get Started</div><h2 class="section-h2">Free Estimate</h2><p class="section-sub" style="margin:0 auto">Tell us about your home and what you need. Misty will schedule your estimate and Shaun will come take a look.</p></div>
+    <div class="form-wrap">
+      <form id="contactForm">
+        <div class="form-row"><div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" required placeholder="Full name"></div><div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" required placeholder="(___) ___-____"></div></div>
+        <div class="form-group"><label for="address">Property Address</label><input type="text" id="address" name="address" placeholder="Street address, city"></div>
+        <div class="form-group"><label for="service">Service Needed</label><select id="service" name="service"><option value="">Select a service</option><option value="gutter-cleaning">Gutter Cleaning</option><option value="gutter-repair">Gutter Repair</option><option value="gutter-install">Gutter Installation</option><option value="gutter-guards">Gutter Guards</option><option value="fascia-soffit">Fascia / Soffit Repair</option><option value="siding">Siding Repair</option><option value="pressure-washing">Pressure Washing</option><option value="chimney">Chimney Repair</option><option value="maintenance">Maintenance Plan</option><option value="other">Other</option></select></div>
+        <div class="form-group"><label for="details">Project Details</label><textarea id="details" name="details" placeholder="Describe what's going on, how many stories your home is, any specific concerns..."></textarea></div>
+        <button type="submit" class="form-submit">Request Your Free Estimate</button>
+        <p class="form-consent">By submitting this form you agree to be contacted about your estimate. We will never share your information.</p>
+      </form>
+      <div class="form-success" id="formSuccess"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg><h3>Request Received</h3><p>Misty will schedule your estimate and Shaun will be in touch shortly.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><div class="footer-brand">Tucker's Home Services</div><p class="footer-desc">Family-owned gutter specialists serving Metro Atlanta since 2005. Shaun and Misty Tucker. 5.0 stars from 142 Nextdoor reviews. Fully insured. Free estimates.</p></div>
+    <div><div class="footer-heading">Services</div><ul class="footer-links"><li><a href="#services">Gutter Cleaning</a></li><li><a href="#services">Gutter Repair</a></li><li><a href="#services">Gutter Installation</a></li><li><a href="#services">Fascia &amp; Soffit</a></li><li><a href="#services">Pressure Washing</a></li><li><a href="#services">Maintenance Plans</a></li></ul></div>
+    <div><div class="footer-heading">Contact</div><ul class="footer-links"><li><a href="tel:4046977341">(404) 697-7341</a></li><li><a href="mailto:tuckershomeservices@yahoo.com">tuckershomeservices@yahoo.com</a></li><li>Woodstock, GA 30188</li><li style="margin-top:8px;font-size:13px;color:var(--muted)">Mon: 7 AM - 1 PM</li><li style="font-size:13px;color:var(--muted)">Tue-Fri: 7 AM - 3 PM</li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>&copy; 2026 Tucker's Home Services LLC. All rights reserved.</span><span>Woodstock, Georgia</span></div>
+</footer>
+
+<a href="tel:4046977341" class="mobile-phone" aria-label="Call Tucker's Home Services"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+
+<script>
+const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40)});
+const hamburger=document.getElementById('hamburger'),mobileMenu=document.getElementById('mobileMenu');hamburger.addEventListener('click',()=>{hamburger.classList.toggle('open');mobileMenu.classList.toggle('open')});mobileMenu.querySelectorAll('a').forEach(l=>{l.addEventListener('click',()=>{hamburger.classList.remove('open');mobileMenu.classList.remove('open')})});
+document.querySelectorAll('.faq-question').forEach(b=>{b.addEventListener('click',()=>{const i=b.parentElement,w=i.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(x=>x.classList.remove('open'));if(!w)i.classList.add('open')})});
+document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();this.style.display='none';document.getElementById('formSuccess').style.display='block'});
+const observer=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');observer.unobserve(x.target)}})},{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
