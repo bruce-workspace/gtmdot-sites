@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pine Peach Painting | Atlanta's Trusted Painters Since 2009</title>
+<meta name="description" content="Professional interior and exterior painting in Atlanta. 4.8 stars from 21 homeowners. Cabinet painting, deck staining, drywall repair. Call (678) 651-6674.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HousePainter",
+  "name": "Pine Peach Painting",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3700 Buford Hwy NE, Ste 69",
+    "addressLocality": "Atlanta",
+    "addressRegion": "GA",
+    "postalCode": "30329"
+  },
+  "telephone": "(678) 651-6674",
+  "priceRange": "$",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "21"
+  },
+  "foundingDate": "2009",
+  "areaServed": ["Atlanta", "Sandy Springs", "Brookhaven", "Chamblee", "Stone Mountain"]
+}
+</script>
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #0a080e;
+  --bg-alt: #0f0c16;
+  --surface: #141020;
+  --brand: #8b5cf6;
+  --brand-light: #a78bfa;
+  --brand-muted: #2e1f5e;
+  --brand-rgb: 139,92,246;
+  --brand-glow: rgba(139,92,246,0.15);
+  --text: #f0ece4;
+  --muted: #8e8a96;
+  --border: rgba(139,92,246,0.18);
+  --border-full: rgba(139,92,246,0.35);
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+/* ── NAV ── */
+.nav {
+  position: fixed; top: 0; left: 0; width: 100%; height: 68px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 40px;
+  background: rgba(10,8,14,0.85);
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  z-index: 900;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.3s;
+}
+.nav.scrolled { background: rgba(10,8,14,0.95); }
+.nav-logo {
+  font-family: var(--font-serif); font-size: 22px; font-weight: 700;
+  display: flex; align-items: center; gap: 10px;
+}
+.nav-logo .icon {
+  width: 36px; height: 36px; border-radius: 10px;
+  background: var(--brand-glow); border: 1px solid var(--border-full);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--brand);
+}
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a { font-size: 15px; font-weight: 600; letter-spacing: 0.04em; color: var(--muted); transition: color 0.2s; }
+.nav-links a:hover { color: var(--text); }
+.nav-cta {
+  background: var(--brand); color: #fff; font-size: 14px; font-weight: 700;
+  padding: 10px 24px; border-radius: 8px; border: none; cursor: pointer;
+  letter-spacing: 0.04em; transition: background 0.3s, transform 0.2s;
+}
+.nav-cta:hover { background: var(--brand-light); transform: translateY(-1px); }
+.hamburger {
+  display: none; flex-direction: column; gap: 5px; cursor: pointer;
+  background: none; border: none; padding: 4px;
+}
+.hamburger span { width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.mobile-menu {
+  display: none; position: fixed; top: 68px; left: 0; width: 100%;
+  background: rgba(10,8,14,0.98); backdrop-filter: blur(20px);
+  padding: 24px 40px; z-index: 899; border-bottom: 1px solid var(--border);
+}
+.mobile-menu.open { display: flex; flex-direction: column; gap: 20px; }
+.mobile-menu a { font-size: 18px; font-weight: 600; color: var(--muted); padding: 8px 0; border-bottom: 1px solid var(--border); }
+.mobile-menu a:last-child { border: none; }
+
+/* ── HERO ── */
+.hero {
+  position: relative; min-height: 100vh; display: flex; align-items: center;
+  padding: 120px 40px 80px; overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0; z-index: 0;
+  background: url('photos/gbp-1.jpg') center/cover no-repeat;
+}
+.hero-bg::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to right, rgba(10,8,14,0.82) 0%, rgba(10,8,14,0.55) 55%, rgba(17,13,28,0.35) 100%);
+}
+.hero-content { position: relative; z-index: 1; max-width: 720px; }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--brand-glow); border: 1px solid var(--border-full);
+  padding: 8px 16px; border-radius: 100px;
+  font-size: 13px; font-weight: 600; color: var(--brand-light);
+  margin-bottom: 24px; letter-spacing: 0.04em;
+}
+.hero h1 {
+  font-family: var(--font-serif); font-size: clamp(42px, 5.5vw, 76px);
+  font-weight: 700; line-height: 1.05; letter-spacing: -1px; margin-bottom: 20px;
+}
+.hero h1 .accent { color: var(--brand-light); }
+.hero-sub {
+  font-size: 18px; color: var(--muted); line-height: 1.7;
+  max-width: 560px; margin-bottom: 36px;
+}
+.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--brand); color: #fff; font-size: 15px; font-weight: 700;
+  padding: 14px 32px; border-radius: 10px; border: none; cursor: pointer;
+  letter-spacing: 0.04em; transition: all 0.3s;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.btn-primary:hover { background: var(--brand-light); transform: translateY(-1px); }
+.btn-secondary {
+  background: transparent; color: var(--text); font-size: 15px; font-weight: 600;
+  padding: 14px 32px; border-radius: 10px; border: 1px solid var(--border-full);
+  cursor: pointer; transition: all 0.3s;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.btn-secondary:hover { border-color: var(--brand); color: var(--brand-light); }
+.hero-quote {
+  margin-top: 48px; padding-left: 20px; border-left: 2px solid var(--brand);
+  font-family: var(--font-serif); font-size: 20px; font-style: italic;
+  color: var(--muted); line-height: 1.6; max-width: 480px;
+}
+
+/* ── STATS ── */
+.stats {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  background: var(--surface);
+  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+}
+.stat { padding: 36px 24px; text-align: center; border-right: 1px solid var(--border); }
+.stat:last-child { border-right: none; }
+.stat-number { font-family: var(--font-serif); font-size: 48px; font-weight: 900; color: var(--brand); letter-spacing: -1px; line-height: 1; }
+.stat-label { font-size: 14px; color: var(--muted); margin-top: 8px; font-weight: 500; letter-spacing: 0.04em; }
+
+/* ── MARQUEE ── */
+.marquee { overflow: hidden; background: var(--bg-alt); padding: 16px 0; border-bottom: 1px solid var(--border); }
+.marquee-track { display: flex; gap: 48px; width: max-content; animation: marquee 35s linear infinite; }
+.marquee-item { font-size: 14px; font-weight: 600; color: var(--muted); white-space: nowrap; display: flex; align-items: center; gap: 12px; letter-spacing: 0.04em; }
+.marquee-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--brand); flex-shrink: 0; }
+@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
+
+/* ── SECTIONS ── */
+.section { padding: 96px 40px; max-width: 1200px; margin: 0 auto; }
+.section-alt { background: var(--bg-alt); }
+.section-full { padding: 96px 40px; }
+.eyebrow { font-family: var(--font-sans); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 4px; color: var(--brand); margin-bottom: 12px; }
+.section-h2 { font-family: var(--font-serif); font-size: clamp(32px, 3.5vw, 52px); font-weight: 700; letter-spacing: -0.5px; line-height: 1.1; margin-bottom: 16px; }
+.section-sub { font-size: 17px; color: var(--muted); max-width: 560px; line-height: 1.7; }
+
+/* ── SERVICES ── */
+.services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
+.service-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+  padding: 32px 24px; transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
+.service-icon {
+  width: 56px; height: 56px; display: flex; align-items: center; justify-content: center;
+  background: var(--brand-glow); border-radius: 14px; margin-bottom: 20px; color: var(--brand);
+}
+.service-icon svg { width: 28px; height: 28px; }
+.service-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; line-height: 1.3; }
+.service-card p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+/* ── REVIEWS ── */
+.reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+.review-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; }
+.review-stars { color: #f59e0b; font-size: 16px; margin-bottom: 16px; letter-spacing: 2px; }
+.review-text { font-size: 15px; line-height: 1.7; color: var(--text); margin-bottom: 20px; }
+.review-author { font-size: 14px; font-weight: 600; color: var(--brand-light); }
+.review-source { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+/* ── OUR WORK GALLERY ── */
+.work-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
+.work-item { position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 4/3; cursor: pointer; }
+.work-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.work-item:hover img { transform: scale(1.05); }
+.work-item .work-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 16px; background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)); font-size: 14px; font-weight: 600; color: var(--text); opacity: 0; transition: opacity 0.3s ease; }
+.work-item:hover .work-caption { opacity: 1; }
+
+/* ── REVIEW SCROLL FEED ── */
+.review-feed { margin-top: 40px; overflow: hidden; mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent); }
+.review-feed-track { display: flex; gap: 24px; animation: reviewScroll 45s linear infinite; width: max-content; }
+.review-feed-track:hover { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .review-feed-track { animation: none; flex-wrap: wrap; } }
+@keyframes reviewScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.review-mini { flex-shrink: 0; width: 320px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; display: flex; flex-direction: column; gap: 8px; }
+.review-mini-stars { color: #f59e0b; font-size: 13px; letter-spacing: 2px; }
+.review-mini-text { font-size: 14px; line-height: 1.6; color: var(--muted); font-style: italic; }
+.review-mini-author { font-size: 12px; font-weight: 600; color: var(--brand-light); }
+
+/* ── STORY ── */
+.story-section { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; margin-top: 48px; }
+.story-text h3 { font-family: var(--font-serif); font-size: 28px; font-weight: 700; margin-bottom: 16px; }
+.story-text p { color: var(--muted); line-height: 1.7; margin-bottom: 20px; }
+.story-quote {
+  font-family: var(--font-serif); font-size: 24px; font-style: italic;
+  color: var(--brand-light); padding: 32px; background: var(--surface);
+  border: 1px solid var(--border); border-radius: 16px; line-height: 1.5;
+  position: relative;
+}
+.story-quote::before {
+  content: '\201C'; position: absolute; top: 12px; left: 20px;
+  font-size: 60px; color: var(--brand-muted); font-family: var(--font-serif); line-height: 1;
+}
+.story-values { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
+.value-item {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 15px; font-weight: 600; color: var(--text);
+}
+.value-item .check { color: var(--brand); flex-shrink: 0; }
+
+/* ── SERVICE AREA ── */
+.area-pills { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.area-pill {
+  background: var(--surface); border: 1px solid var(--border);
+  padding: 10px 20px; border-radius: 100px;
+  font-size: 14px; font-weight: 600; color: var(--muted); transition: all 0.3s;
+}
+.area-pill:hover { border-color: var(--brand); color: var(--brand-light); }
+
+/* ── FAQ ── */
+.faq-list { margin-top: 48px; max-width: 800px; }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-question {
+  width: 100%; background: none; border: none; color: var(--text);
+  font-family: var(--font-sans); font-size: 17px; font-weight: 600;
+  padding: 24px 0; text-align: left; cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+}
+.faq-question svg { flex-shrink: 0; transition: transform 0.3s; color: var(--brand); }
+.faq-item.open .faq-question svg { transform: rotate(180deg); }
+.faq-answer { display: grid; grid-template-rows: 0fr; overflow: hidden; transition: grid-template-rows 0.4s ease; }
+.faq-answer-inner { padding: 0 0 24px; font-size: 15px; color: var(--muted); line-height: 1.7; overflow: hidden; min-height: 0; }
+.faq-item.open .faq-answer { grid-template-rows: 1fr; }
+
+/* ── FORM ── */
+.form-wrap { max-width: 600px; margin: 48px auto 0; }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; padding: 14px 16px; background: var(--surface);
+  border: 1px solid var(--border); border-radius: 10px; color: var(--text);
+  font-family: var(--font-sans); font-size: 15px; transition: border-color 0.3s;
+  -webkit-appearance: none;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  outline: none; border-color: var(--brand); box-shadow: 0 0 0 3px var(--brand-glow);
+}
+.form-group select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238e8a96' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 16px center; padding-right: 48px;
+}
+.form-group textarea { min-height: 120px; resize: vertical; }
+.upload-area {
+  border: 2px dashed var(--border-full); border-radius: 12px; padding: 32px;
+  text-align: center; cursor: pointer; transition: border-color 0.3s, background 0.3s;
+  background: var(--surface);
+}
+.upload-area:hover { border-color: var(--brand); background: var(--brand-glow); }
+.upload-area p { font-size: 14px; color: var(--muted); margin-top: 8px; }
+.upload-area .upload-icon { color: var(--brand); margin-bottom: 8px; }
+.upload-area input { display: none; }
+.form-submit {
+  width: 100%; padding: 16px; background: var(--brand); color: #fff;
+  font-size: 16px; font-weight: 700; border: none; border-radius: 10px;
+  cursor: pointer; letter-spacing: 0.04em; transition: all 0.3s;
+}
+.form-submit:hover { background: var(--brand-light); transform: translateY(-1px); }
+.form-consent { font-size: 12px; color: var(--muted); margin-top: 12px; line-height: 1.5; }
+.form-success { display: none; text-align: center; padding: 48px 24px; }
+.form-success svg { color: var(--brand); margin-bottom: 16px; }
+.form-success h3 { font-size: 24px; margin-bottom: 8px; }
+.form-success p { color: var(--muted); }
+
+/* ── CTA ── */
+.cta-section { text-align: center; padding: 96px 40px; background: var(--bg-alt); }
+.cta-phone {
+  font-family: var(--font-serif); font-size: clamp(28px, 4vw, 48px); font-weight: 700;
+  color: var(--brand-light); margin-top: 24px; display: inline-block; transition: color 0.3s;
+}
+.cta-phone:hover { color: var(--brand); }
+
+/* ── FOOTER ── */
+.footer { padding: 64px 40px 32px; border-top: 1px solid var(--border); }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; max-width: 1200px; margin: 0 auto; }
+.footer-brand { font-family: var(--font-serif); font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+.footer-tagline { font-size: 14px; color: var(--muted); line-height: 1.6; max-width: 320px; }
+.footer-heading { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--brand); margin-bottom: 16px; }
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-links a, .footer-links li { font-size: 14px; color: var(--muted); transition: color 0.2s; }
+.footer-links a:hover { color: var(--text); }
+.footer-bottom {
+  border-top: 1px solid var(--border); margin-top: 48px; padding-top: 24px;
+  display: flex; justify-content: space-between; align-items: center;
+  max-width: 1200px; margin-left: auto; margin-right: auto;
+  font-size: 13px; color: var(--muted);
+}
+
+/* ── POPUP ── */
+.popup-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);
+  z-index: 1000; align-items: center; justify-content: center;
+}
+.popup-overlay.open { display: flex; }
+.popup-box {
+  background: var(--surface); border: 1px solid var(--border-full);
+  border-radius: 20px; padding: 48px; max-width: 520px; width: 90%;
+  position: relative; text-align: center;
+}
+.popup-close { position: absolute; top: 16px; right: 16px; background: none; border: none; color: var(--muted); cursor: pointer; }
+.popup-eyebrow { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 4px; color: var(--brand); margin-bottom: 16px; }
+.popup-h2 { font-family: var(--font-serif); font-size: 32px; font-weight: 700; line-height: 1.2; margin-bottom: 12px; }
+.popup-desc { font-size: 15px; color: var(--muted); line-height: 1.6; margin-bottom: 24px; }
+.popup-code {
+  background: var(--bg); border: 1px solid var(--border); border-radius: 10px;
+  padding: 16px; font-family: monospace; font-size: 18px; font-weight: 700;
+  color: var(--brand-light); letter-spacing: 2px; margin-bottom: 16px;
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+}
+.popup-code button { background: none; border: none; color: var(--muted); cursor: pointer; }
+.popup-code button:hover { color: var(--brand-light); }
+.popup-skip { font-size: 13px; color: var(--muted); cursor: pointer; background: none; border: none; margin-top: 8px; }
+
+/* ── CLAIM BAR ── */
+.claim-bar {
+  position: fixed; bottom: 0; left: 0; width: 100%;
+  background: linear-gradient(90deg, var(--brand), var(--brand-light));
+  padding: 14px 24px; display: flex; align-items: center; justify-content: center; gap: 16px;
+  z-index: 800; transform: translateY(100%); transition: transform 0.4s ease;
+  font-size: 14px; font-weight: 600; color: #fff;
+}
+.claim-bar.visible { transform: translateY(0); }
+.claim-bar a { background: rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 6px; font-weight: 700; transition: background 0.3s; }
+.claim-bar a:hover { background: rgba(255,255,255,0.3); }
+
+/* ── MOBILE PHONE ── */
+.mobile-phone {
+  display: none; position: fixed; bottom: 20px; right: 20px;
+  width: 56px; height: 56px; background: var(--brand); border-radius: 50%;
+  align-items: center; justify-content: center; z-index: 700;
+  box-shadow: 0 4px 20px rgba(139,92,246,0.4); color: #fff; transition: transform 0.3s;
+}
+.mobile-phone:hover { transform: scale(1.1); }
+
+/* ── COOKIE ── */
+.cookie-banner {
+  display: none; position: fixed; bottom: 0; left: 0; width: 100%;
+  background: var(--surface); border-top: 1px solid var(--border);
+  padding: 16px 40px; z-index: 750; align-items: center;
+  justify-content: space-between; font-size: 13px; color: var(--muted); gap: 16px;
+}
+.cookie-banner.visible { display: flex; }
+.cookie-btn {
+  background: var(--brand); color: #fff; border: none; padding: 8px 20px;
+  border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap;
+}
+
+/* ── REVEAL ── */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1100px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+  .work-gallery { grid-template-columns: repeat(2, 1fr); }
+  .story-section { grid-template-columns: 1fr; gap: 32px; }
+}
+@media (max-width: 768px) {
+  .nav-links, .nav-cta { display: none; }
+  .hamburger { display: flex; }
+  .hero { padding: 100px 24px 64px; }
+  .section { padding: 64px 24px; }
+  .section-full { padding: 64px 24px; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stat { border-bottom: 1px solid var(--border); }
+  .services-grid { grid-template-columns: 1fr; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .work-gallery { grid-template-columns: 1fr; }
+  .story-values { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+  .mobile-phone { display: flex; }
+  .claim-bar { flex-direction: column; gap: 8px; text-align: center; }
+  .cta-section { padding: 64px 24px; }
+}
+@media (max-width: 480px) {
+  .hero h1 { font-size: 36px; }
+  .hero-actions { flex-direction: column; }
+  .stat-number { font-size: 36px; }
+}
+</style>
+<!-- TRACKING_ANCHOR -->
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+  <a href="#" class="nav-logo">
+    <span class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-2 5-2 5 2 5 2 3-2 5-2 5 2 5 2"/><path d="M2 6s3-2 5-2 5 2 5 2 3-2 5-2 5 2 5 2"/><path d="M2 18s3-2 5-2 5 2 5 2 3-2 5-2 5 2 5 2"/></svg>
+    </span>
+    Pine Peach
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#work">Our Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#area">Areas</a></li>
+  </ul>
+  <a href="#estimate" class="nav-cta">Get a Free Estimate</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services">Services</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#about">About Fernando</a>
+  <a href="#area">Service Area</a>
+  <a href="#estimate">Get a Free Estimate</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-2 5-2 5 2 5 2 3-2 5-2 5 2 5 2"/><path d="M2 6s3-2 5-2 5 2 5 2 3-2 5-2 5 2 5 2"/><path d="M2 18s3-2 5-2 5 2 5 2 3-2 5-2 5 2 5 2"/></svg>
+      Est. 2009 &middot; 17 Years Transforming Atlanta Homes
+    </div>
+    <h1>Expert Painting That <span class="accent">Transforms</span> Your Home</h1>
+    <p class="hero-sub">4.8 stars from 21 Atlanta homeowners. Fernando and his team bring 17 years of skilled craftsmanship to every interior, exterior, and specialty project.</p>
+    <div class="hero-actions">
+      <a href="#estimate" class="btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-2 5-2 5 2 5 2 3-2 5-2 5 2 5 2"/><path d="M2 6s3-2 5-2 5 2 5 2 3-2 5-2 5 2 5 2"/><path d="M2 18s3-2 5-2 5 2 5 2 3-2 5-2 5 2 5 2"/></svg>
+        Get a Free Estimate
+      </a>
+      <a href="tel:6786516674" class="btn-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        (678) 651-6674
+      </a>
+    </div>
+    <p class="hero-quote">"Outstanding work, very reasonable and record time!"</p>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat reveal"><div class="stat-number">17</div><div class="stat-label">Years of Experience</div></div>
+  <div class="stat reveal"><div class="stat-number">4.8</div><div class="stat-label">Star Rating</div></div>
+  <div class="stat reveal"><div class="stat-number">21</div><div class="stat-label">5-Star Reviews</div></div>
+  <div class="stat reveal"><div class="stat-number">95%+</div><div class="stat-label">Quality Score</div></div>
+</div>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="marquee-item"><span class="marquee-dot"></span>Licensed & Insured</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Family Operated</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Interior & Exterior</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Cabinet Painting Specialists</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Reasonably Priced</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Free Estimates</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Carpentry & Repairs</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Serving Atlanta Since 2009</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Licensed & Insured</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Family Operated</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Interior & Exterior</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Cabinet Painting Specialists</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Reasonably Priced</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Free Estimates</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Carpentry & Repairs</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Serving Atlanta Since 2009</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="reveal">
+    <p class="eyebrow">What We Do</p>
+    <h2 class="section-h2">Painting & Beyond</h2>
+    <p class="section-sub">From a single accent wall to a full exterior transformation, Fernando and his team handle every project with meticulous care and craftsmanship.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+      </div>
+      <h3>Interior Painting</h3>
+      <p>Walls, ceilings, trim, and detail work. We prep thoroughly, protect your furniture, and leave every room looking brand new.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <h3>Exterior Painting</h3>
+      <p>Complete exterior prep, prime, and paint. We handle siding, trim, shutters, porches, and everything weather touches.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg>
+      </div>
+      <h3>Cabinet Painting</h3>
+      <p>Kitchen and bathroom cabinet transformations. Professional prep and finish that makes old cabinets look factory-fresh.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2z"/><line x1="12" y1="1" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="23"/><line x1="1" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="23" y2="12"/></svg>
+      </div>
+      <h3>Deck Staining</h3>
+      <p>Restore and protect your deck with professional staining and sealing. We clean, sand, and apply premium finishes.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8h20"/></svg>
+      </div>
+      <h3>Drywall Repair</h3>
+      <p>Holes, cracks, water damage, and texture matching. We fix the wall before we paint it so the finish is flawless.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 011.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"/></svg>
+      </div>
+      <h3>Color Consultation</h3>
+      <p>Not sure which colors to pick? Fernando helps you choose palettes that complement your home's style and natural light.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z" opacity="0.3" transform="translate(2,-1)"/></svg>
+      </div>
+      <h3>Pressure Washing</h3>
+      <p>Driveways, patios, siding, and decks. We blast away years of grime before painting or as a standalone service.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+      </div>
+      <h3>Carpentry & Shiplap</h3>
+      <p>Custom bookshelves, shiplap accent walls, rotted wood repair, and trim work. Fernando builds it and paints it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section-full section-alt" id="reviews">
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="reveal">
+      <p class="eyebrow">What Homeowners Say</p>
+      <h2 class="section-h2">Real Reviews from Real Neighbors</h2>
+      <p class="section-sub">Every review is from a verified Atlanta homeowner. No filler, no fluff.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">"Fernando and team painted interior of my new townhome before I moved in and finished early! He painted kitchen cabinets, bathroom cabinets, a majority of interior walls, handrails, as well as some construction projects. He shiplaped a powder room, back of kitchen island, and living room niches. He also built bookshelves. Outstanding work, very reasonable and record time!"</p>
+        <div class="review-author">Vicky Fowler</div>
+        <div class="review-source">Google Review</div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">"If you need help with painting or other home projects, I highly recommend Pine Peach Painting. Fernando Chamarro has been a friend and helper to me since I moved into our home 6.5 years ago. His amazing son is being trained well by his dad. Their senior assistant does impeccable trim work. Great workmanship all around."</p>
+        <div class="review-author">Carolyn Sherman</div>
+        <div class="review-source">Google Review</div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">"Fernando and his team at Pine Peach Painting were extremely professional, thorough, and reasonably priced. Fernando delivered his services promptly and efficiently. We have had both interior and exterior painting and repairs done with this company and will call them again."</p>
+        <div class="review-author">Lauren Reagin</div>
+        <div class="review-source">Google Review</div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">"This company restored our deck as well as did interior painting after we had multiple areas that needed paint revision after a bad paint job. Not only were they punctual but they were very meticulous and completed the job sooner than expected. I highly recommend Fernando."</p>
+        <div class="review-author">Alia Brown</div>
+        <div class="review-source">Google Review</div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">"Fernando and his crew are honest, reliable, affordable and do great work. I highly recommend them!"</p>
+        <div class="review-author">Alyssa Acree</div>
+        <div class="review-source">Google Review</div>
+      </div>
+    </div>
+
+    <!-- Scrolling Review Feed -->
+    <div class="review-feed">
+      <div class="review-feed-track">
+        <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Outstanding work, very reasonable and record time! He shiplaped a powder room and built bookshelves."</p><div class="review-mini-author">Vicky Fowler - Google</div></div>
+        <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Their senior assistant does impeccable trim work. Great workmanship all around."</p><div class="review-mini-author">Carolyn Sherman - Google</div></div>
+        <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Extremely professional, thorough, and reasonably priced. Will call them again."</p><div class="review-mini-author">Lauren Reagin - Google</div></div>
+        <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"They were very meticulous and completed the job sooner than expected."</p><div class="review-mini-author">Alia Brown - Google</div></div>
+        <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Honest, reliable, affordable and do great work. I highly recommend them!"</p><div class="review-mini-author">Alyssa Acree - Google</div></div>
+        <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Fernando has been a friend and helper since I moved in 6.5 years ago."</p><div class="review-mini-author">Carolyn Sherman - Google</div></div>
+        <!-- duplicate for seamless loop -->
+        <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Outstanding work, very reasonable and record time! He shiplaped a powder room and built bookshelves."</p><div class="review-mini-author">Vicky Fowler - Google</div></div>
+        <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Their senior assistant does impeccable trim work. Great workmanship all around."</p><div class="review-mini-author">Carolyn Sherman - Google</div></div>
+        <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Extremely professional, thorough, and reasonably priced. Will call them again."</p><div class="review-mini-author">Lauren Reagin - Google</div></div>
+        <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"They were very meticulous and completed the job sooner than expected."</p><div class="review-mini-author">Alia Brown - Google</div></div>
+        <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Honest, reliable, affordable and do great work. I highly recommend them!"</p><div class="review-mini-author">Alyssa Acree - Google</div></div>
+        <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Fernando has been a friend and helper since I moved in 6.5 years ago."</p><div class="review-mini-author">Carolyn Sherman - Google</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR WORK -->
+<section class="section" id="work">
+  <div class="reveal">
+    <p class="eyebrow">Our Work</p>
+    <h2 class="section-h2">Transforming Atlanta Homes</h2>
+    <p class="section-sub" style="max-width:600px">From interior refreshes to full exterior makeovers, every project gets Fernando's personal attention to detail.</p>
+  </div>
+  <div class="work-gallery">
+    <div class="work-item reveal">
+      <img src="photos/gbp-4.jpg" alt="Interior painting with shiplap ceiling and fireplace by Pine Peach Painting" loading="lazy">
+      <div class="work-caption">Interior Painting</div>
+    </div>
+    <div class="work-item reveal">
+      <img src="photos/gbp-5.jpg" alt="Exterior siding painting on historic building" loading="lazy">
+      <div class="work-caption">Exterior Painting</div>
+    </div>
+    <div class="work-item reveal">
+      <img src="photos/gbp-2.jpg" alt="Residential exterior painting with ladder work" loading="lazy">
+      <div class="work-caption">Cabinet Painting</div>
+    </div>
+    <div class="work-item reveal">
+      <img src="photos/gbp-4.jpg" alt="Finished interior with painted shiplap ceiling" loading="lazy">
+      <div class="work-caption">Shiplap Installation</div>
+    </div>
+    <div class="work-item reveal">
+      <img src="photos/gbp-3.jpg" alt="Painter on scaffolding doing exterior detail work" loading="lazy">
+      <div class="work-caption">Deck Restoration</div>
+    </div>
+    <div class="work-item reveal">
+      <img src="photos/gbp-1.jpg" alt="Historic home exterior with columns and detailed trim painting" loading="lazy">
+      <div class="work-caption">Trim Work</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / STORY -->
+<section class="section" id="about">
+  <div class="reveal">
+    <p class="eyebrow">Meet Fernando</p>
+    <h2 class="section-h2">A Family Craft, Passed Down</h2>
+  </div>
+  <div class="story-section">
+    <div class="story-text reveal">
+      <p>When Fernando Chamorro started Pine Peach Painting in 2009, he brought something rare to the Atlanta painting scene: genuine care for every wall he touched. Over 17 years, that care has earned him a 4.8-star reputation and a loyal base of repeat customers across Sandy Springs, Brookhaven, and greater Atlanta.</p>
+      <p>Today, Fernando works alongside his son, who is learning the craft from the ground up. Together with a senior assistant known for "impeccable trim work," the Pine Peach team treats every project like it's their own home.</p>
+      <p>What sets Pine Peach apart isn't just painting. Fernando builds bookshelves, installs shiplap, repairs drywall, and restores decks. When homeowners call Fernando, they get a complete home transformation partner, not just a painter with a roller.</p>
+      <div class="story-values">
+        <div class="value-item">
+          <span class="check"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+          Family operated
+        </div>
+        <div class="value-item">
+          <span class="check"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+          17 years experience
+        </div>
+        <div class="value-item">
+          <span class="check"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+          Ahead of schedule
+        </div>
+        <div class="value-item">
+          <span class="check"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+          Reasonably priced
+        </div>
+      </div>
+    </div>
+    <div class="story-quote reveal">
+      His amazing son is being trained well by his dad. Their senior assistant does impeccable trim work. Great workmanship all around.
+      <div style="margin-top:16px;font-family:var(--font-sans);font-size:14px;font-style:normal;font-weight:600;color:var(--brand-light);">Carolyn Sherman</div>
+      <div style="font-family:var(--font-sans);font-size:12px;font-style:normal;color:var(--muted);">6.5-year client</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section-full section-alt" id="area">
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="reveal">
+      <p class="eyebrow">Where We Work</p>
+      <h2 class="section-h2">Serving Sandy Springs & Beyond</h2>
+      <p class="section-sub">From Brookhaven to Stone Mountain, we bring expert painting to homes across the Atlanta metro.</p>
+    </div>
+    <div class="area-pills reveal">
+      <span class="area-pill">Sandy Springs</span>
+      <span class="area-pill">Brookhaven</span>
+      <span class="area-pill">Atlanta</span>
+      <span class="area-pill">Chamblee</span>
+      <span class="area-pill">Dunwoody</span>
+      <span class="area-pill">Buckhead</span>
+      <span class="area-pill">Decatur</span>
+      <span class="area-pill">Stone Mountain</span>
+      <span class="area-pill">Tucker</span>
+      <span class="area-pill">Doraville</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="reveal">
+    <p class="eyebrow">Common Questions</p>
+    <h2 class="section-h2">Frequently Asked Questions</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <button class="faq-question" aria-expanded="false">How much does it cost to paint a room?<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="faq-answer"><div class="faq-answer-inner">A standard bedroom typically runs $300-$600 depending on size, ceiling height, and prep work needed. Larger rooms, vaulted ceilings, and rooms requiring extensive patching or priming will be on the higher end. We provide a detailed, no-obligation estimate before starting.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question" aria-expanded="false">Do you paint cabinets? How long does it take?<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="faq-answer"><div class="faq-answer-inner">Yes, cabinet painting is one of our specialties. A full kitchen typically takes 3-5 days depending on the number of cabinets and the finish you want. We remove doors, sand, prime, and apply multiple coats for a factory-quality finish that lasts.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question" aria-expanded="false">Do I need to move my furniture before you start?<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="faq-answer"><div class="faq-answer-inner">We handle everything. Our team moves furniture to the center of the room or out entirely, lays down protective drop cloths, and puts everything back when we're done. You don't need to lift a finger.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question" aria-expanded="false">Can you fix drywall damage before painting?<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="faq-answer"><div class="faq-answer-inner">Absolutely. Drywall repair is part of our standard prep process. We patch holes, fill cracks, skim-coat rough areas, and match existing textures before applying any paint. The result is a smooth, flawless finish.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question" aria-expanded="false">What other services do you offer besides painting?<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="faq-answer"><div class="faq-answer-inner">Fernando is a skilled carpenter as well as a painter. We build custom bookshelves, install shiplap accent walls, repair rotted wood, restore and stain decks, and do pressure washing. Many of our clients use us as their go-to home improvement partner.</div></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question" aria-expanded="false">How far in advance should I book?<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="faq-answer"><div class="faq-answer-inner">We're often booked 1-2 weeks out, but it varies by season. Spring and fall are our busiest times for exterior work. Call or submit an estimate request and we'll give you an honest timeline. For smaller jobs, we can sometimes fit you in within days.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ESTIMATE FORM -->
+<section class="section-full section-alt" id="estimate">
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="reveal" style="text-align:center;">
+      <p class="eyebrow">Ready to Transform Your Home?</p>
+      <h2 class="section-h2">Get a Free Estimate</h2>
+      <p class="section-sub" style="margin:0 auto;">Tell us about your project. Attach photos of the rooms or areas you'd like painted.</p>
+    </div>
+    <div class="form-wrap">
+      <form id="estimateForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="(678) 555-0123" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="interior">Interior Painting</option>
+            <option value="exterior">Exterior Painting</option>
+            <option value="cabinets">Cabinet Painting</option>
+            <option value="deck">Deck Staining</option>
+            <option value="drywall">Drywall Repair</option>
+            <option value="pressure-wash">Pressure Washing</option>
+            <option value="carpentry">Carpentry / Shiplap</option>
+            <option value="color-consult">Color Consultation</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="details">Project Details</label>
+          <textarea id="details" name="details" placeholder="Describe your project: rooms, square footage, colors in mind..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Photos of Your Space (Optional)</label>
+          <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <p><strong>Click to upload</strong> or drag photos here</p>
+            <p>JPG, PNG up to 10MB each</p>
+            <input type="file" id="fileUpload" accept="image/*" multiple>
+          </div>
+        </div>
+        <button type="submit" class="form-submit">Request Free Estimate</button>
+        <p class="form-consent">By submitting, you agree to be contacted by Pine Peach Painting. We respect your privacy.</p>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <h3>Estimate Request Received</h3>
+        <p>Fernando will reach out within 24 hours. Thank you!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="reveal">
+    <p class="eyebrow">Let's Talk Paint</p>
+    <h2 class="section-h2">Call Fernando Today</h2>
+    <a href="tel:6786516674" class="cta-phone">(678) 651-6674</a>
+    <p style="color:var(--muted);margin-top:12px;font-size:15px;">Mon-Thu 8AM-6PM &middot; Fri 8AM-5PM &middot; Sat 9AM-5PM</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">Pine Peach Painting</div>
+      <p class="footer-tagline">Professional painting and home improvement services serving the Atlanta metro area since 2009. Family operated by Fernando Chamorro.</p>
+    </div>
+    <div>
+      <div class="footer-heading">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#about">About Fernando</a></li>
+        <li><a href="#area">Service Area</a></li>
+        <li><a href="#estimate">Get an Estimate</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Contact</div>
+      <ul class="footer-links">
+        <li><a href="tel:6786516674">(678) 651-6674</a></li>
+        <li>3700 Buford Hwy NE, Ste 69</li>
+        <li>Atlanta, GA 30329</li>
+        <li style="margin-top:12px;">Mon-Thu: 8AM-6PM</li>
+        <li>Fri: 8AM-5PM</li>
+        <li>Sat: 9AM-5PM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Pine Peach Painting. All rights reserved.</span>
+    <span>Serving Atlanta since 2009</span>
+  </div>
+</footer>
+
+<!-- EXIT POPUP -->
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup-box">
+    <button class="popup-close" id="popupClose"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <p class="popup-eyebrow">Before You Go</p>
+    <h2 class="popup-h2">Get $49 Off Your First Project</h2>
+    <p class="popup-desc">New customers save on any painting or home improvement service. Mention this code when you call.</p>
+    <div class="popup-code">PEACH49<button id="copyCode" title="Copy code"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg></button></div>
+    <a href="#estimate" class="btn-primary" id="popupCta" style="width:100%;justify-content:center;">Claim Your $49 Discount</a>
+    <button class="popup-skip" id="popupSkip">No thanks, maybe later</button>
+  </div>
+</div>
+
+<!-- CLAIM BAR -->
+<div class="claim-bar" id="claimBar">
+  <span>New customer? Save $49 on your first project with code <strong>PEACH49</strong></span>
+  <a href="#estimate">Claim Now</a>
+</div>
+
+<!-- MOBILE PHONE -->
+<a href="tel:6786516674" class="mobile-phone" aria-label="Call Pine Peach Painting">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+</a>
+
+<!-- COOKIE -->
+<div class="cookie-banner" id="cookieBanner">
+  <span>This site uses cookies to improve your experience.</span>
+  <button class="cookie-btn" id="cookieAccept">Got it</button>
+</div>
+
+<script>
+const nav=document.getElementById('mainNav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>60)});
+
+const hamburger=document.getElementById('hamburger'),mobileMenu=document.getElementById('mobileMenu');
+hamburger.addEventListener('click',()=>{hamburger.classList.toggle('open');mobileMenu.classList.toggle('open')});
+mobileMenu.querySelectorAll('a').forEach(a=>{a.addEventListener('click',()=>{hamburger.classList.remove('open');mobileMenu.classList.remove('open')})});
+
+const reveals=document.querySelectorAll('.reveal');
+const ro=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');ro.unobserve(el.target)}})},{threshold:0.12});
+reveals.forEach(el=>ro.observe(el));
+
+document.querySelectorAll('.faq-question').forEach(btn=>{
+  btn.addEventListener('click',()=>{const item=btn.parentElement;const isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+  if(!isOpen)item.classList.add('open');btn.setAttribute('aria-expanded',!isOpen)});
+});
+
+const uploadArea=document.getElementById('uploadArea'),fileUpload=document.getElementById('fileUpload');
+uploadArea.addEventListener('click',()=>fileUpload.click());
+uploadArea.addEventListener('dragover',e=>{e.preventDefault();uploadArea.style.borderColor='var(--brand)'});
+uploadArea.addEventListener('dragleave',()=>{uploadArea.style.borderColor=''});
+uploadArea.addEventListener('drop',e=>{e.preventDefault();uploadArea.style.borderColor='';
+  const p=uploadArea.querySelector('p');p.textContent=e.dataTransfer.files.length+' file(s) selected'});
+fileUpload.addEventListener('change',()=>{const p=uploadArea.querySelector('p');p.textContent=fileUpload.files.length+' file(s) selected'});
+
+const form=document.getElementById('estimateForm'),formSuccess=document.getElementById('formSuccess');
+form.addEventListener('submit',e=>{e.preventDefault();
+  if(!form.querySelector('#name').value.trim()||!form.querySelector('#phone').value.trim()){alert('Please fill in your name and phone number.');return}
+  form.style.display='none';formSuccess.style.display='block'});
+
+const popupOverlay=document.getElementById('popupOverlay');
+let popupShown=false,graceOver=false;
+setTimeout(()=>{graceOver=true},5000);
+function showPopup(){if(popupShown||sessionStorage.getItem('popup_dismissed'))return;popupShown=true;popupOverlay.classList.add('open');document.body.style.overflow='hidden'}
+function closePopup(){popupOverlay.classList.remove('open');document.body.style.overflow='';sessionStorage.setItem('popup_dismissed','1')}
+document.addEventListener('mouseout',e=>{if(e.clientY<50&&graceOver)showPopup()});
+let maxScroll=0;
+window.addEventListener('scroll',()=>{const pct=window.scrollY/(document.body.scrollHeight-window.innerHeight);if(pct>maxScroll)maxScroll=pct;if(maxScroll>0.4&&pct<maxScroll-0.05&&graceOver)showPopup()});
+document.getElementById('popupClose').addEventListener('click',closePopup);
+document.getElementById('popupSkip').addEventListener('click',closePopup);
+document.getElementById('popupCta').addEventListener('click',closePopup);
+popupOverlay.addEventListener('click',e=>{if(e.target===popupOverlay)closePopup()});
+
+document.getElementById('copyCode').addEventListener('click',()=>{
+  navigator.clipboard.writeText('PEACH49').then(()=>{const b=document.getElementById('copyCode');b.innerHTML='<span style="font-size:12px;color:var(--brand-light)">Copied!</span>';setTimeout(()=>{b.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>'},2000)})});
+
+const claimBar=document.getElementById('claimBar');
+window.addEventListener('scroll',()=>{if(window.scrollY>400)claimBar.classList.add('visible')});
+
+if(!localStorage.getItem('cookies_accepted'))document.getElementById('cookieBanner').classList.add('visible');
+document.getElementById('cookieAccept').addEventListener('click',()=>{localStorage.setItem('cookies_accepted','1');document.getElementById('cookieBanner').classList.remove('visible')});
+</script>
+<!-- CLAIM_BAR_ANCHOR -->
+</body>
+</html>

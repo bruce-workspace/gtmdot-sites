@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cleveland Electric | Atlanta's Leading Specialty Contractor Since 1925</title>
+<meta name="description" content="Fifth-generation specialty contractor serving Atlanta and the Southeast since 1925. Electrical construction, technology systems, mechanical, and 24/7 field service. (404) 696-4550.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "Cleveland Electric Company",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3715 Northside Pkwy NW, Bldg 100-800",
+    "addressLocality": "Atlanta",
+    "addressRegion": "GA",
+    "postalCode": "30327"
+  },
+  "telephone": "(404) 696-4550",
+  "url": "https://www.clevelandelectric.com",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.1",
+    "reviewCount": "42"
+  },
+  "foundingDate": "1925",
+  "areaServed": "Southeast United States"
+}
+</script>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#06080d;--bg-alt:#0a0d14;--surface:#0e1118;
+  --brand:#f59e0b;--brand-light:#fbbf24;--brand-muted:#4a3510;
+  --brand-rgb:245,158,11;--brand-glow:rgba(245,158,11,0.12);
+  --text:#f0ece4;--muted:#8a8e96;
+  --border:rgba(245,158,11,0.15);--border-full:rgba(245,158,11,0.3);
+  --font-serif:'Cormorant Garamond',Georgia,serif;
+  --font-sans:'Plus Jakarta Sans',-apple-system,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-sans);background:var(--bg);color:var(--text);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+
+.nav{position:fixed;top:0;left:0;width:100%;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;background:rgba(6,8,13,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);z-index:900;border-bottom:1px solid var(--border);transition:background .3s}
+.nav.scrolled{background:rgba(6,8,13,0.95)}
+.nav-logo{font-family:var(--font-serif);font-size:22px;font-weight:700;display:flex;align-items:center;gap:12px}
+.nav-logo .mark{width:40px;height:40px;border-radius:10px;background:var(--brand-glow);border:1px solid var(--border-full);display:flex;align-items:center;justify-content:center;font-family:var(--font-serif);font-size:20px;font-weight:700;color:var(--brand)}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{font-size:15px;font-weight:600;letter-spacing:.04em;color:var(--muted);transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{background:var(--brand);color:#0a0d14;font-size:14px;font-weight:700;padding:10px 24px;border-radius:8px;border:none;cursor:pointer;letter-spacing:.04em;transition:background .3s,transform .2s}
+.nav-cta:hover{background:var(--brand-light);transform:translateY(-1px)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hamburger span{width:24px;height:2px;background:var(--text);border-radius:2px;transition:transform .3s,opacity .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:68px;left:0;width:100%;background:rgba(6,8,13,0.98);backdrop-filter:blur(20px);padding:24px 40px;z-index:899;border-bottom:1px solid var(--border)}
+.mobile-menu.open{display:flex;flex-direction:column;gap:20px}
+.mobile-menu a{font-size:18px;font-weight:600;color:var(--muted);padding:8px 0;border-bottom:1px solid var(--border)}
+.mobile-menu a:last-child{border:none}
+
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:120px 40px 80px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0;background:url('photos/hero-electrical.jpg') center/cover no-repeat}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(6,8,13,0.82) 0%,rgba(6,8,13,0.55) 55%,rgba(10,12,20,0.35) 100%)}
+.hero-content{position:relative;z-index:1;max-width:780px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--brand-glow);border:1px solid var(--border-full);padding:8px 16px;border-radius:100px;font-size:13px;font-weight:600;color:var(--brand-light);margin-bottom:24px;letter-spacing:.04em}
+.hero h1{font-family:var(--font-serif);font-size:clamp(42px,5.5vw,76px);font-weight:700;line-height:1.05;letter-spacing:-1px;margin-bottom:20px}
+.hero h1 .accent{color:var(--brand-light)}
+.hero-sub{font-size:18px;color:var(--muted);line-height:1.7;max-width:600px;margin-bottom:36px}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.btn-primary{background:var(--brand);color:#0a0d14;font-size:15px;font-weight:700;padding:14px 32px;border-radius:10px;border:none;cursor:pointer;letter-spacing:.04em;transition:all .3s;display:inline-flex;align-items:center;gap:8px}
+.btn-primary:hover{background:var(--brand-light);transform:translateY(-1px)}
+.btn-secondary{background:transparent;color:var(--text);font-size:15px;font-weight:600;padding:14px 32px;border-radius:10px;border:1px solid var(--border-full);cursor:pointer;transition:all .3s;display:inline-flex;align-items:center;gap:8px}
+.btn-secondary:hover{border-color:var(--brand);color:var(--brand-light)}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stat{padding:36px 24px;text-align:center;border-right:1px solid var(--border)}
+.stat:last-child{border-right:none}
+.stat-number{font-family:var(--font-serif);font-size:48px;font-weight:900;color:var(--brand);letter-spacing:-1px;line-height:1}
+.stat-label{font-size:14px;color:var(--muted);margin-top:8px;font-weight:500;letter-spacing:.04em}
+
+.marquee{overflow:hidden;background:var(--bg-alt);padding:16px 0;border-bottom:1px solid var(--border)}
+.marquee-track{display:flex;gap:48px;width:max-content;animation:marquee 35s linear infinite}
+.marquee-item{font-size:14px;font-weight:600;color:var(--muted);white-space:nowrap;display:flex;align-items:center;gap:12px;letter-spacing:.04em}
+.marquee-dot{width:6px;height:6px;border-radius:50%;background:var(--brand);flex-shrink:0}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+
+.section{padding:96px 40px;max-width:1200px;margin:0 auto}
+.section-alt{background:var(--bg-alt)}
+.section-full{padding:96px 40px}
+.eyebrow{font-family:var(--font-sans);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:4px;color:var(--brand);margin-bottom:12px}
+.section-h2{font-family:var(--font-serif);font-size:clamp(32px,3.5vw,52px);font-weight:700;letter-spacing:-.5px;line-height:1.1;margin-bottom:16px}
+.section-sub{font-size:17px;color:var(--muted);max-width:600px;line-height:1.7}
+
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.service-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 24px;transition:transform .3s ease,box-shadow .3s ease}
+.service-card:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.3)}
+.service-icon{width:56px;height:56px;display:flex;align-items:center;justify-content:center;background:var(--brand-glow);border-radius:14px;margin-bottom:20px;color:var(--brand)}
+.service-icon svg{width:28px;height:28px}
+.service-card h3{font-size:18px;font-weight:700;margin-bottom:8px;line-height:1.3}
+.service-card p{font-size:14px;color:var(--muted);line-height:1.6}
+
+/* Timeline */
+.timeline-wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-top:48px}
+.timeline-text h3{font-family:var(--font-serif);font-size:28px;font-weight:700;margin-bottom:16px}
+.timeline-text p{color:var(--muted);line-height:1.7;margin-bottom:20px}
+.timeline{position:relative;padding-left:32px}
+.timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--border-full)}
+.tl-item{position:relative;padding-bottom:32px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:'';position:absolute;left:-28px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--brand);border:3px solid var(--bg)}
+.tl-year{font-family:var(--font-serif);font-size:20px;font-weight:700;color:var(--brand);margin-bottom:4px}
+.tl-desc{font-size:15px;color:var(--muted);line-height:1.6}
+
+/* Sectors */
+.sectors{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.sector{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px 24px;display:flex;align-items:center;gap:14px;transition:all .3s}
+.sector:hover{border-color:var(--brand);transform:translateY(-1px)}
+.sector-icon{width:40px;height:40px;border-radius:10px;background:var(--brand-glow);display:flex;align-items:center;justify-content:center;color:var(--brand);flex-shrink:0}
+.sector h3{font-size:15px;font-weight:700}
+.sector p{font-size:13px;color:var(--muted);margin-top:2px}
+
+.faq-list{margin-top:48px;max-width:800px}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-question{width:100%;background:none;border:none;color:var(--text);font-family:var(--font-sans);font-size:17px;font-weight:600;padding:24px 0;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq-question svg{flex-shrink:0;transition:transform .3s;color:var(--brand)}
+.faq-item.open .faq-question svg{transform:rotate(180deg)}
+.faq-answer{display:grid;grid-template-rows:0fr;overflow:hidden;transition:grid-template-rows .4s ease}
+.faq-answer-inner{padding:0 0 24px;font-size:15px;color:var(--muted);line-height:1.7;overflow:hidden;min-height:0}
+.faq-item.open .faq-answer{grid-template-rows:1fr}
+
+.form-wrap{max-width:600px;margin:48px auto 0}
+.form-group{margin-bottom:20px}
+.form-group label{display:block;font-size:14px;font-weight:600;margin-bottom:8px}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:14px 16px;background:var(--surface);border:1px solid var(--border);border-radius:10px;color:var(--text);font-family:var(--font-sans);font-size:15px;transition:border-color .3s;-webkit-appearance:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px var(--brand-glow)}
+.form-group select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238a8e96' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:48px}
+.form-group textarea{min-height:120px;resize:vertical}
+.form-submit{width:100%;padding:16px;background:var(--brand);color:#0a0d14;font-size:16px;font-weight:700;border:none;border-radius:10px;cursor:pointer;letter-spacing:.04em;transition:all .3s}
+.form-submit:hover{background:var(--brand-light);transform:translateY(-1px)}
+.form-consent{font-size:12px;color:var(--muted);margin-top:12px;line-height:1.5}
+.form-success{display:none;text-align:center;padding:48px 24px}
+.form-success svg{color:var(--brand);margin-bottom:16px}
+.form-success h3{font-size:24px;margin-bottom:8px}
+.form-success p{color:var(--muted)}
+
+.cta-section{text-align:center;padding:96px 40px;background:var(--bg-alt)}
+.cta-phone{font-family:var(--font-serif);font-size:clamp(28px,4vw,48px);font-weight:700;color:var(--brand-light);margin-top:24px;display:inline-block;transition:color .3s}
+.cta-phone:hover{color:var(--brand)}
+.cta-emergency{font-size:15px;color:var(--muted);margin-top:8px}
+
+.footer{padding:64px 40px 32px;border-top:1px solid var(--border)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;max-width:1200px;margin:0 auto}
+.footer-brand{font-family:var(--font-serif);font-size:20px;font-weight:700;margin-bottom:12px}
+.footer-tagline{font-size:14px;color:var(--muted);line-height:1.6;max-width:360px}
+.footer-heading{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--brand);margin-bottom:16px}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-links a,.footer-links li{font-size:14px;color:var(--muted);transition:color .2s}
+.footer-links a:hover{color:var(--text)}
+.footer-bottom{border-top:1px solid var(--border);margin-top:48px;padding-top:24px;display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin-left:auto;margin-right:auto;font-size:13px;color:var(--muted)}
+
+.popup-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);z-index:1000;align-items:center;justify-content:center}
+.popup-overlay.open{display:flex}
+.popup-box{background:var(--surface);border:1px solid var(--border-full);border-radius:20px;padding:48px;max-width:520px;width:90%;position:relative;text-align:center}
+.popup-close{position:absolute;top:16px;right:16px;background:none;border:none;color:var(--muted);cursor:pointer}
+.popup-eyebrow{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:4px;color:var(--brand);margin-bottom:16px}
+.popup-h2{font-family:var(--font-serif);font-size:32px;font-weight:700;line-height:1.2;margin-bottom:12px}
+.popup-desc{font-size:15px;color:var(--muted);line-height:1.6;margin-bottom:24px}
+
+.claim-bar{position:fixed;bottom:0;left:0;width:100%;background:linear-gradient(90deg,var(--brand),var(--brand-light));padding:14px 24px;display:flex;align-items:center;justify-content:center;gap:16px;z-index:800;transform:translateY(100%);transition:transform .4s ease;font-size:14px;font-weight:600;color:#0a0d14}
+.claim-bar.visible{transform:translateY(0)}
+.claim-bar a{background:rgba(0,0,0,.15);padding:6px 16px;border-radius:6px;font-weight:700;transition:background .3s;color:#0a0d14}
+.claim-bar a:hover{background:rgba(0,0,0,.25)}
+
+.mobile-phone{display:none;position:fixed;bottom:20px;right:20px;width:56px;height:56px;background:var(--brand);border-radius:50%;align-items:center;justify-content:center;z-index:700;box-shadow:0 4px 20px rgba(245,158,11,.4);color:#0a0d14;transition:transform .3s}
+.mobile-phone:hover{transform:scale(1.1)}
+
+.cookie-banner{display:none;position:fixed;bottom:0;left:0;width:100%;background:var(--surface);border-top:1px solid var(--border);padding:16px 40px;z-index:750;align-items:center;justify-content:space-between;font-size:13px;color:var(--muted);gap:16px}
+.cookie-banner.visible{display:flex}
+.cookie-btn{background:var(--brand);color:#0a0d14;border:none;padding:8px 20px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+@media(max-width:1100px){.services-grid{grid-template-columns:repeat(2,1fr)}.sectors{grid-template-columns:repeat(2,1fr)}.timeline-wrap{grid-template-columns:1fr;gap:32px}}
+@media(max-width:768px){
+  .nav-links,.nav-cta{display:none}.hamburger{display:flex}
+  .hero{padding:100px 24px 64px}.section{padding:64px 24px}.section-full{padding:64px 24px}
+  .stats{grid-template-columns:repeat(2,1fr)}.stat{border-bottom:1px solid var(--border)}
+  .services-grid,.sectors{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr;gap:32px}
+  .footer-bottom{flex-direction:column;gap:8px;text-align:center}
+  .mobile-phone{display:flex}
+  .claim-bar{flex-direction:column;gap:8px;text-align:center}
+  .cta-section{padding:64px 24px}
+}
+@media(max-width:480px){.hero h1{font-size:36px}.hero-actions{flex-direction:column}.stat-number{font-size:36px}}
+</style>
+<!-- TRACKING_ANCHOR -->
+</head>
+<body>
+
+<nav class="nav" id="mainNav">
+  <a href="#" class="nav-logo">
+    <span class="mark">CE</span>
+    Cleveland Electric
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#sectors">Sectors</a></li>
+    <li><a href="#story">Our Story</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Request a Consultation</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services">Services</a>
+  <a href="#sectors">Sectors</a>
+  <a href="#story">Our Story</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Founded 1925 &middot; Five Generations of Excellence
+    </div>
+    <h1>Atlanta's Leading <span class="accent">Specialty Contractor</span> Since 1925</h1>
+    <p class="hero-sub">For nearly a century, Cleveland Electric has delivered the highest level of quality, safety, and integrity across commercial, industrial, healthcare, and mission-critical projects throughout the Southeast.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Request a Consultation
+      </a>
+      <a href="tel:4046964550" class="btn-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        (404) 696-4550
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat reveal"><div class="stat-number">101</div><div class="stat-label">Years in Business</div></div>
+  <div class="stat reveal"><div class="stat-number">5th</div><div class="stat-label">Generation Leadership</div></div>
+  <div class="stat reveal"><div class="stat-number">60+</div><div class="stat-label">Service Vehicles</div></div>
+  <div class="stat reveal"><div class="stat-number">24/7</div><div class="stat-label">Emergency Service</div></div>
+</div>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="marquee-item"><span class="marquee-dot"></span>Founded 1925</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Fifth Generation Family Business</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>65,000 sq ft Prefab Facility</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>24/7 Emergency Service</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Commercial &amp; Industrial</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Healthcare &amp; Mission Critical</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Southeast United States</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Safety First Culture</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Founded 1925</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Fifth Generation Family Business</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>65,000 sq ft Prefab Facility</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>24/7 Emergency Service</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Commercial &amp; Industrial</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Healthcare &amp; Mission Critical</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Southeast United States</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Safety First Culture</span>
+  </div>
+</div>
+
+<section class="section" id="services">
+  <div class="reveal">
+    <p class="eyebrow">What We Do</p>
+    <h2 class="section-h2">Comprehensive Specialty Contracting</h2>
+    <p class="section-sub">From preconstruction planning to 24/7 field service, Cleveland delivers end-to-end electrical and mechanical solutions for the most demanding projects.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div>
+      <h3>Pre-Construction</h3>
+      <p>Planning, budgeting, risk assessment, design-build, design-assist, and virtual construction modeling from schematic design through project facilitation.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/></svg></div>
+      <h3>Prefabrication</h3>
+      <p>65,000 sq ft facility with 3D modeling for electrical and mechanical prefab. Reduces costs, improves quality, and minimizes jobsite safety risks.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+      <h3>Electrical Construction</h3>
+      <p>Installing, wiring, and testing electrical systems across commercial, industrial, transit, healthcare, laboratory, and alternative energy applications.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+      <h3>Technology Systems</h3>
+      <p>Voice/data cabling, fiber optic, audio/visual, CCTV, access control, DAS, and Wi-Fi integration for modern facilities.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+      <h3>Field Service & Testing</h3>
+      <p>24/7 emergency support with 60+ fully stocked vehicles. Preventative maintenance, breaker testing, and infrared scanning.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div>
+      <h3>Mechanical Construction</h3>
+      <p>Process piping, instrumentation, and equipment installation with a focus on safety, precision, and budget adherence.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-full section-alt" id="sectors">
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="reveal">
+      <p class="eyebrow">Industries Served</p>
+      <h2 class="section-h2">Built for Complex Environments</h2>
+      <p class="section-sub">From nuclear power plants to hospital operating rooms, Cleveland brings the precision and safety standards that critical infrastructure demands.</p>
+    </div>
+    <div class="sectors">
+      <div class="sector reveal">
+        <div class="sector-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 22V4a2 2 0 012-2h8a2 2 0 012 2v18z"/><path d="M6 12H4a2 2 0 00-2 2v6a2 2 0 002 2h2"/><path d="M18 9h2a2 2 0 012 2v9a2 2 0 01-2 2h-2"/></svg></div>
+        <div><h3>Commercial</h3><p>Office, retail, hospitality</p></div>
+      </div>
+      <div class="sector reveal">
+        <div class="sector-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v1a3 3 0 006 0V7m0 0a3 3 0 006 0V7m0 0a3 3 0 006 0V7H3l2-4h14l2 4"/></svg></div>
+        <div><h3>Industrial</h3><p>Manufacturing, automotive</p></div>
+      </div>
+      <div class="sector reveal">
+        <div class="sector-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0016.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 002 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"/></svg></div>
+        <div><h3>Healthcare</h3><p>Hospitals, laboratories</p></div>
+      </div>
+      <div class="sector reveal">
+        <div class="sector-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+        <div><h3>Mission Critical</h3><p>Data centers, telecom</p></div>
+      </div>
+      <div class="sector reveal">
+        <div class="sector-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div>
+        <div><h3>Power Generation</h3><p>Nuclear, alternative energy</p></div>
+      </div>
+      <div class="sector reveal">
+        <div class="sector-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg></div>
+        <div><h3>Transit</h3><p>Rail, airport, infrastructure</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="story">
+  <div class="reveal">
+    <p class="eyebrow">Our Legacy</p>
+    <h2 class="section-h2">A Century of Building Atlanta</h2>
+  </div>
+  <div class="timeline-wrap">
+    <div class="timeline-text reveal">
+      <p>In 1925, Ras Hitson Cleveland acquired Browning Electrical Motor Repair Company after his father's passing. What began as a small motor repair shop has grown over five generations into one of the Southeast's most trusted specialty contractors.</p>
+      <p>Today, Cleveland Electric employs hundreds of skilled professionals, operates a 65,000 sq ft prefabrication facility, and maintains a fleet of 60+ fully stocked service vehicles providing 24/7 support across the region.</p>
+      <p>Through every decade and every market shift, one thing has stayed constant: Cleveland is built on family values, hard work, and constant innovation.</p>
+      <p style="font-family:var(--font-serif);font-size:22px;font-style:italic;color:var(--brand-light);margin-top:32px;padding-left:20px;border-left:2px solid var(--brand);">"What began as a motor repair company in 1925 has constantly adapted to meet changing demands in an evolving market."</p>
+    </div>
+    <div class="timeline reveal">
+      <div class="tl-item"><div class="tl-year">1925</div><div class="tl-desc">Ras Hitson Cleveland founds Cleveland Electric, acquiring Browning Electrical Motor Repair Company in Atlanta.</div></div>
+      <div class="tl-item"><div class="tl-year">1959</div><div class="tl-desc">Founder passes operations to sons Louie and James. Louie continues electrical repair; James launches specialty contracting.</div></div>
+      <div class="tl-item"><div class="tl-year">1979</div><div class="tl-desc">Awarded the landmark 10-year, $315 million contract for Vogtle Nuclear Plant's first two units.</div></div>
+      <div class="tl-item"><div class="tl-year">1980s-90s</div><div class="tl-desc">Major automotive manufacturing projects: GM facilities and Ford's Hapeville assembly plant.</div></div>
+      <div class="tl-item"><div class="tl-year">1998</div><div class="tl-desc">Strategic sale of motor repair business to focus entirely on specialty contracting.</div></div>
+      <div class="tl-item"><div class="tl-year">Today</div><div class="tl-desc">Fifth generation leads the company with 60+ service vehicles, 65,000 sq ft prefab facility, and projects across the Southeast.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-full section-alt" id="contact">
+  <div class="section" style="padding-top:0;padding-bottom:0;">
+    <div class="reveal" style="text-align:center;">
+      <p class="eyebrow">Get in Touch</p>
+      <h2 class="section-h2">Request a Consultation</h2>
+      <p class="section-sub" style="margin:0 auto;">Tell us about your project and a member of our team will reach out to discuss scope, timeline, and approach.</p>
+    </div>
+    <div class="form-wrap">
+      <form id="estimateForm">
+        <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name" placeholder="Your name" required></div>
+        <div class="form-group"><label for="company">Company</label><input type="text" id="company" name="company" placeholder="Your company name"></div>
+        <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" placeholder="(404) 555-0123" required></div>
+        <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@company.com"></div>
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="preconstruction">Pre-Construction / Design-Build</option>
+            <option value="electrical">Electrical Construction</option>
+            <option value="mechanical">Mechanical Construction</option>
+            <option value="technology">Technology Systems</option>
+            <option value="field-service">Field Service & Testing</option>
+            <option value="prefab">Prefabrication</option>
+            <option value="emergency">24/7 Emergency Service</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group"><label for="details">Project Details</label><textarea id="details" name="details" placeholder="Describe your project: scope, location, timeline..."></textarea></div>
+        <button type="submit" class="form-submit">Submit Inquiry</button>
+        <p class="form-consent">By submitting, you agree to be contacted by Cleveland Electric regarding your project. We respect your privacy.</p>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <h3>Inquiry Received</h3>
+        <p>A member of the Cleveland Electric team will reach out shortly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="reveal">
+    <p class="eyebrow">Contact Us</p>
+    <h2 class="section-h2">Ready to Start Your Project?</h2>
+    <a href="tel:4046964550" class="cta-phone">(404) 696-4550</a>
+    <p class="cta-emergency">24/7 Emergency: <a href="tel:4047316726" style="color:var(--brand-light)">(404) 731-6726</a></p>
+    <p style="color:var(--muted);margin-top:8px;font-size:14px;">contact@clevelandgroup.com</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">Cleveland Electric</div>
+      <p class="footer-tagline">Atlanta's leading specialty contractor since 1925. Five generations of family values, hard work, and constant innovation serving commercial, industrial, and healthcare clients across the Southeast.</p>
+    </div>
+    <div>
+      <div class="footer-heading">Quick Links</div>
+      <ul class="footer-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#sectors">Industries</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://www.clevelandelectric.com" target="_blank" rel="noopener">clevelandelectric.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">Contact</div>
+      <ul class="footer-links">
+        <li><a href="tel:4046964550">(404) 696-4550</a></li>
+        <li>24/7 Emergency: <a href="tel:4047316726">(404) 731-6726</a></li>
+        <li style="margin-top:8px;">3715 Northside Pkwy NW</li>
+        <li>Bldg 100-800</li>
+        <li>Atlanta, GA 30327</li>
+        <li style="margin-top:8px;"><a href="mailto:contact@clevelandgroup.com">contact@clevelandgroup.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Cleveland Electric Company, Inc. All rights reserved.</span>
+    <span>Building Atlanta since 1925</span>
+  </div>
+</footer>
+
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup-box">
+    <button class="popup-close" id="popupClose"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <p class="popup-eyebrow">Need Emergency Service?</p>
+    <h2 class="popup-h2">24/7 Field Service Available</h2>
+    <p class="popup-desc">Our 60+ fully stocked service vehicles are ready to respond. Call our emergency line or submit a request.</p>
+    <a href="tel:4047316726" class="btn-primary" style="width:100%;justify-content:center;margin-bottom:12px;">Call Emergency Line</a>
+    <a href="#contact" class="btn-secondary" id="popupCta" style="width:100%;justify-content:center;">Submit a Request</a>
+    <button class="popup-skip" id="popupSkip" style="margin-top:12px;">Close</button>
+  </div>
+</div>
+
+<div class="claim-bar" id="claimBar">
+  <span>24/7 Emergency Electrical Service Available</span>
+  <a href="tel:4047316726">Call (404) 731-6726</a>
+</div>
+
+<a href="tel:4046964550" class="mobile-phone" aria-label="Call Cleveland Electric">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+</a>
+
+<div class="cookie-banner" id="cookieBanner">
+  <span>This site uses cookies to improve your experience.</span>
+  <button class="cookie-btn" id="cookieAccept">Got it</button>
+</div>
+
+<script>
+const nav=document.getElementById('mainNav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>60)});
+const hamburger=document.getElementById('hamburger'),mobileMenu=document.getElementById('mobileMenu');
+hamburger.addEventListener('click',()=>{hamburger.classList.toggle('open');mobileMenu.classList.toggle('open')});
+mobileMenu.querySelectorAll('a').forEach(a=>{a.addEventListener('click',()=>{hamburger.classList.remove('open');mobileMenu.classList.remove('open')})});
+
+const reveals=document.querySelectorAll('.reveal');
+const ro=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('visible');ro.unobserve(el.target)}})},{threshold:0.12});
+reveals.forEach(el=>ro.observe(el));
+
+const form=document.getElementById('estimateForm'),formSuccess=document.getElementById('formSuccess');
+form.addEventListener('submit',e=>{e.preventDefault();
+  if(!form.querySelector('#name').value.trim()||!form.querySelector('#phone').value.trim()){alert('Please fill in your name and phone.');return}
+  form.style.display='none';formSuccess.style.display='block'});
+
+const popupOverlay=document.getElementById('popupOverlay');
+let popupShown=false,graceOver=false;
+setTimeout(()=>{graceOver=true},5000);
+function showPopup(){if(popupShown||sessionStorage.getItem('popup_dismissed'))return;popupShown=true;popupOverlay.classList.add('open');document.body.style.overflow='hidden'}
+function closePopup(){popupOverlay.classList.remove('open');document.body.style.overflow='';sessionStorage.setItem('popup_dismissed','1')}
+document.addEventListener('mouseout',e=>{if(e.clientY<50&&graceOver)showPopup()});
+let maxScroll=0;
+window.addEventListener('scroll',()=>{const pct=window.scrollY/(document.body.scrollHeight-window.innerHeight);if(pct>maxScroll)maxScroll=pct;if(maxScroll>.4&&pct<maxScroll-.05&&graceOver)showPopup()});
+document.getElementById('popupClose').addEventListener('click',closePopup);
+document.getElementById('popupSkip').addEventListener('click',closePopup);
+document.getElementById('popupCta').addEventListener('click',closePopup);
+popupOverlay.addEventListener('click',e=>{if(e.target===popupOverlay)closePopup()});
+
+const claimBar=document.getElementById('claimBar');
+window.addEventListener('scroll',()=>{if(window.scrollY>400)claimBar.classList.add('visible')});
+if(!localStorage.getItem('cookies_accepted'))document.getElementById('cookieBanner').classList.add('visible');
+document.getElementById('cookieAccept').addEventListener('click',()=>{localStorage.setItem('cookies_accepted','1');document.getElementById('cookieBanner').classList.remove('visible')});
+</script>
+<!-- CLAIM_BAR_ANCHOR -->
+</body>
+</html>
