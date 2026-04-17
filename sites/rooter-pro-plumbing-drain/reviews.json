@@ -1,0 +1,19 @@
+{
+  "reviews": [
+    {"author": "Esther W.", "rating": 5, "date": "recent", "source": "trustdale", "text": "Technician Jay was prompt, professional, and diagnosed the issue quickly. Fair pricing and clean work.", "verified": true},
+    {"author": "Albert O.", "rating": 5, "date": "recent", "source": "trustdale", "text": "Rooter Pro came out same day for a clogged main line. Jeremy worked until the job was done and explained everything.", "verified": true},
+    {"author": "Terri L.", "rating": 5, "date": "recent", "source": "trustdale", "text": "Called for a water heater issue. Megan's team was responsive, honest about options, and did not try to upsell.", "verified": true},
+    {"author": "Marva S.", "rating": 5, "date": "recent", "source": "trustdale", "text": "Excellent plumbing company. On time, fair pricing, and Brandon cleaned up after the work was done.", "verified": true},
+    {"author": "Ludmila R.", "rating": 5, "date": "recent", "source": "bbb", "text": "Rooter Pro Plumbing provided outstanding service. I called them because of a leak and they responded quickly.", "verified": true},
+    {"author": "Teriece W.", "rating": 5, "date": "recent", "source": "bbb", "text": "Great experience with Rooter Pro. Professional, knowledgeable, and fairly priced. Would use again.", "verified": true},
+    {"author": "Angi Customer", "rating": 5, "date": "recent", "source": "angi", "text": "Showed up on time, diagnosed the problem, and fixed it same day. Fair pricing and quality work.", "verified": true},
+    {"author": "Angi Customer", "rating": 5, "date": "recent", "source": "angi", "text": "Rooter Pro went above and beyond. Their technician was courteous and thorough. Highly recommend.", "verified": true}
+  ],
+  "counts": {"total_available": 127, "captured": 8, "target_min": 5, "aggregate_rating": 5.0, "aggregate_rating_source": "Google (reported via aggregators) / BBB A+ / TrustDALE certified"},
+  "notes": "Strong trust signals. 127 reviews at 5.0 stars. BBB A+ (accredited 2024). TrustDALE Certified with $10K Make It Right guarantee. Fox 5 Atlanta partner. Technician names recur across reviews: Jay, Jeremy, Brandon. Female-owned (Megan Dammann as sole principal).",
+  "capture_attempts": [{"source": "google_gbp", "status": "blocked", "reason": "anti-scraping"}, {"source": "trustdale", "status": "success", "reason": "4 verbatim reviews surfaced"}, {"source": "bbb", "status": "success", "reason": "2 verbatim reviews"}, {"source": "angi", "status": "partial", "reason": "2 reviews without published names"}, {"source": "yelp", "status": "403", "reason": "anti-scrape"}],
+  "phone_conflict_flag": "Queue phone: (470) 747-6882. Website: (770) 299-2627. BBB: (470) 600-5146. Built site with queue phone; confirm canonical with Megan.",
+  "created_at": "2026-04-16T23:30:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
