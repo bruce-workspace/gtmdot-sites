@@ -1,0 +1,56 @@
+{
+  "slug": "perez-pools-llc",
+  "business_name": "Perez Pools LLC",
+  "gbp_search": "Perez Pools LLC Atlanta GA",
+  "gbp_url": null,
+  "gbp_place_id": null,
+  "business_context": {
+    "trade": "pool_service",
+    "owner": "Chris Perez",
+    "location": "Atlanta/Vinings area, serves Metro Atlanta",
+    "specialties": "Weekly pool maintenance, green-to-clean recovery (specialty), pool opening/closing, equipment repair, water testing. NO new construction or resurfacing.",
+    "photo_heavy_trade": true,
+    "photo_notes": "Research noted: Chris sends post-service reports with before/after photos on every visit. Website has 'Our Work' page at perezpools.com/our-work (Wix site, content not scrapable). Thumbtack reviews reference green-to-clean before/after photos. High likelihood of strong before/after photo library."
+  },
+  "photo_count_from_gbp_estimate": "unknown — likely 10-30 based on the documented practice of including before/after photos in every service report. Green-to-clean transformations are the most visually dramatic.",
+  "hero": {
+    "search_for": "Dramatic green-to-clean pool transformation (before/after split) OR Chris Perez team at work on a pool. The green-to-clean angle is their signature — a pool that went from swamp to sparkling is the hero shot. If only separate photos exist, use the most striking 'clean clear blue pool' shot showing the result of their work.",
+    "count": 1,
+    "filename": "hero.jpg",
+    "aspect_hint": "wide landscape, full-viewport background"
+  },
+  "gallery": {
+    "search_for": "Pool service work: green-to-clean transformations (paired if possible), pool equipment (pumps, filters, plumbing), water testing in action, clean pools post-service. Chris's uniformed technicians at work. Prefer owner-uploaded over customer-uploaded for consistency.",
+    "count": 6,
+    "filename_pattern": "gbp-{n}.jpg",
+    "aspect_hint": "4:3 or 3:2 landscape preferred"
+  },
+  "specs": {
+    "format": "jpeg",
+    "max_edge_px": 1024,
+    "max_kb": 300,
+    "color_space": "sRGB",
+    "quality_hint": "JPEG quality 75-85. Pool photos may have high contrast between water and deck — preserve detail in both if possible"
+  },
+  "naming": {
+    "hero": "hero.jpg",
+    "gallery": "gbp-1.jpg through gbp-6.jpg",
+    "location": "sites/perez-pools-llc/photos/"
+  },
+  "fallback_if_unavailable": {
+    "hero": "If GBP hero is weak, check the website's 'Our Work' page (Wix-rendered, may need Bruce's broader tooling). If still nothing, contextual Unsplash 'pool cleaning service' or 'swimming pool maintenance technician'.",
+    "gallery": "If GBP under 6, check perezpools.com/our-work. If still short, deliver what's available (min 3). Do NOT pad with generic pool stock photos."
+  },
+  "acceptance_criteria": [
+    "Hero shows either a dramatic green-to-clean transformation or real Perez Pools work",
+    "Gallery shows authentic pool service, not staged stock pool scenes",
+    "Before/after pairs are ideal where available — this is THE pressure point for pool service prospects",
+    "No AI-generated pool photos (common failure mode for this trade)",
+    "File sizes under 300KB each",
+    "All JPEGs valid sRGB"
+  ],
+  "created_at": "2026-04-16T15:30:00-04:00",
+  "created_by": "r1vs",
+  "pilot": true,
+  "pilot_notes": "Mini's 'photo-heavy trade' pilot case. Pool service customers make decisions visually — before/after is the conversion moment."
+}
