@@ -14,21 +14,21 @@
   },
   "photo_count_from_gbp_estimate": "10 confirmed JPG photos on website. Additional photos may exist on GBP that require manual extraction.",
   "source_urls": {
-    "hero_url": "https://static.wixstatic.com/media/34bcc2_8117cc39468548debf998f4084828811~mv2.jpg",
+    "hero_url": "https://lh3.googleusercontent.com/places/ANXAkqEdQ8W3K4BI8Z9IyngEZzGOljs7AGIz7Jv_RPCCpSboSR0mCZZLJ-pUC2AO05b6ghxEWT7c6faZS05in_ZOMfuRxul5sU3F3lo=s1600-w1024",
     "gallery_urls": [
-      "https://static.wixstatic.com/media/34bcc2_13c5c67522084a5988891e0fad8d28fe~mv2.jpg",
-      "https://static.wixstatic.com/media/34bcc2_ebfe77ecc7ff423194511d14f89b91ed~mv2.jpg",
-      "https://static.wixstatic.com/media/34bcc2_d2c17590da3d45cba98d680895f853f8~mv2.jpg",
-      "https://static.wixstatic.com/media/34bcc2_e8d48a153fbc4cf5ab8e2888e60d52e4~mv2.jpg",
-      "https://static.wixstatic.com/media/34bcc2_4fe0281a67ac4335b014c263c06693e3~mv2.jpg",
-      "https://static.wixstatic.com/media/34bcc2_2dca2d960950418a94fd668ac3c5caa9~mv2.jpg",
-      "https://static.wixstatic.com/media/34bcc2_ad04ef9bc2f6491eb2b70c3a17d377e1~mv2.jpg",
-      "https://static.wixstatic.com/media/34bcc2_445f632568ac44b29893344165da197a~mv2.jpg",
-      "https://static.wixstatic.com/media/34bcc2_2cfa032c7d24493c84c8badb79349dd7~mv2.jpeg"
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZN7N2ZcLgtHMbKQbHI6QeL-J6VZd5qvI0IagX1mmx-op4B2VILPtacE9QM6iK70Y6G-m3Ux4h9QDXmFBokkpyTFwFj3LaMwRub5zj2ezkmPAvAzR5Vd1GepmmAQa06bNcUuTpBGley-WwRk0O9q0ZW8Cw=s1600-w1024",
+      "https://lh3.googleusercontent.com/places/ANXAkqFUHfcksKz1K5ysnbUduk2X3zAoMokBtGOd6egvlsWC_ygkhKHB29CequLmP308Cum4DiqnaU44jKQVgH-Dnlbs4IxRZ77AVHk=s1600-w1024",
+      "https://lh3.googleusercontent.com/places/ANXAkqGspiI3PIIQQp-5LylCsBqxWiUvwYSmt8V88iQf3H_-oalUh6n23EQspD8jzQsk6B6R6GBRkORtcI7U5eTUuxX910WXyHAdZZ4=s1600-w1024",
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZOCa6CzoLpcMhzN8MwAUqWhCbqv_0unFH5gy2IqNNRy6OFHZORXF3GUKNU2MhVgQh-DnSr0jRaXmJaoeYpZopZWWQs60euaX5h9h3DQcZFsysLo0up4C2XSdYaQdK1O7wrzyivbiNJyYDllbc89gkrhTg=s1600-w1024",
+      "https://lh3.googleusercontent.com/places/ANXAkqG5Op5hUf-xfWIzrsFgHK2ZFT6YwXujl8M8ueX4ylL8E0lO8z4ht87izbA94EPztfQpl83kaDqRxKLbHS8enRxOaK-8-4-FMt4=s1600-w823",
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZNmOj6j4g9tuNXVkecVbUdBfIdFyPynLmhEs5RIc8DajVVMtOn-JR93VU8NKy_FTUnUeVHQJGiC3derv2dTFW7ZcQDPCOyDFKQbah54P94CX_yLEEK1aT5P9UDSm3gafQBniKj29kn5OdIWCA=s1600-w540"
     ],
-    "source": "perezpools.com/our-work (Wix static CDN)",
-    "extracted_at": "2026-04-16T16:00:00-04:00",
-    "extraction_method": "WebFetch on perezpools.com/our-work, filtered to .jpg and .jpeg extensions from wixstatic.com CDN"
+    "source": "Google Places API (Mac Mini Layer 1, manual unblock by Mini)",
+    "extracted_at": "2026-04-16T22:40:00-04:00",
+    "extraction_method": "Places API lookup with place_id ChIJ-7XajO6Vk00Rwdi8tIMV8KE",
+    "place_id": "ChIJ-7XajO6Vk00Rwdi8tIMV8KE",
+    "rating_from_places": "4.9 (35 reviews)",
+    "previous_extraction_superseded": "Earlier Wix-CDN extraction is now replaced by authoritative Places URLs. Retained for reference only."
   },
   "hero": {
     "search_for": "Dramatic green-to-clean pool transformation (before/after split) OR Chris Perez team at work on a pool. The green-to-clean angle is their signature.",
