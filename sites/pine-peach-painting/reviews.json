@@ -1,0 +1,15 @@
+{
+  "reviews": [
+    {"author": "Vicky Fowler", "rating": 5, "date": "recent", "source": "google", "text": "Fernando and team painted interior of my new townhome before I moved in and finished early! He painted kitchen cabinets, bathroom cabinets, a majority of interior walls, handrails, as well as some construction projects. He shiplaped a powder room, back of kitchen island, and living room niches. He also built bookshelves. Outstanding work, very reasonable and record time!", "verified": true},
+    {"author": "Carolyn Sherman", "rating": 5, "date": "recent", "source": "google", "text": "If you need help with painting or other home projects, I highly recommend Pine Peach Painting. Fernando Chamarro has been a friend and helper to me since I moved into our home 6.5 years ago, and I am excited by his start-up company. His amazing son is being trained well by his dad. Their senior assistant does impeccable trim work. Great workmanship all around.", "verified": true},
+    {"author": "Lauren Reagin", "rating": 5, "date": "recent", "source": "google", "text": "Fernando and his team at Pine Peach Painting were extremely professional, thorough, and reasonably priced. Fernando delivered his services promptly and efficiently. We have had both interior and exterior painting and repairs done with this company and will call them again.", "verified": true},
+    {"author": "Alyssa Acree", "rating": 5, "date": "recent", "source": "google", "text": "Fernando and his crew are honest, reliable, affordable and do great work. I highly recommend them!", "verified": true},
+    {"author": "Alia Brown", "rating": 5, "date": "recent", "source": "google", "text": "This company restored our deck as well as did interior painting after we had multiple areas that needed paint revision after a bad paint job. Not only were they punctual but they were very meticulous and completed the job sooner than expected. I highly recommend Fernando and will be using him for other jobs in the future!", "verified": true}
+  ],
+  "counts": {"total_available": "21 Google reviews", "captured": 5, "target_min": 5, "aggregate_rating": 4.8, "aggregate_rating_source": "Google live page"},
+  "notes": "Established 2009 by Fernando Chamorro; family operation (Fernando trains his son). Interior, exterior, cabinets, deck, carpentry, drywall repair. Serves Sandy Springs, Brookhaven, Atlanta metro. Quality score 95%+ (top 1% of registered businesses).",
+  "capture_attempts": [{"source": "google_gbp", "status": "success", "reason": "5 verbatim named reviews captured"}, {"source": "facebook", "status": "partial", "reason": "page reachable, review detail blocked"}],
+  "created_at": "2026-04-17T00:00:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
