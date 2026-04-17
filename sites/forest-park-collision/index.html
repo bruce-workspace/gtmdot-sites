@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forest Park Collision — 24 Years of Auto Body Repair in Clayton County</title>
+<meta name="description" content="Collision repair, paint, frame straightening, and insurance claims in Forest Park, GA. 24 years in business, 4.8 stars from 76+ reviews. Ask for Kevin. Call (678) 647-0907.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoBodyShop",
+  "name": "Forest Park Collision",
+  "telephone": "+16786470907",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "198 Central Ave",
+    "addressLocality": "Forest Park",
+    "addressRegion": "GA",
+    "postalCode": "30297",
+    "addressCountry": "US"
+  },
+  "areaServed": ["Forest Park","Jonesboro","Morrow","Riverdale","Lake City","College Park","Hapeville","East Point","Atlanta"],
+  "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"76"},
+  "priceRange": "$$",
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"17:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"12:00","description":"Confirm Saturday hours"}
+  ]
+}
+</script>
+<style>
+:root {
+  --bg: #0b0808;
+  --surface: #16100f;
+  --surface-2: #1e1615;
+  --brand: #dc2626;
+  --brand-dark: #991b1b;
+  --brand-light: #ef4444;
+  --text: #f3ebe9;
+  --muted: #9a8a87;
+  --border: rgba(255,255,255,0.08);
+  --star: #fbbf24;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* NAV */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(11,8,8,0.75); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 18px 24px; max-width: 1200px; margin: 0 auto; }
+.logo { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; letter-spacing: -0.5px; }
+.logo span { color: var(--brand-light); }
+.nav-links { display: flex; gap: 32px; align-items: center; }
+.nav-links a { font-size: 14px; font-weight: 500; color: var(--text); opacity: 0.85; transition: opacity 0.2s; }
+.nav-links a:hover { opacity: 1; color: var(--brand-light); }
+.nav-cta { background: var(--brand); color: #fff; padding: 11px 22px; border-radius: 8px; font-weight: 600; font-size: 14px; transition: transform 0.2s, background 0.2s; }
+.nav-cta:hover { background: var(--brand-light); transform: translateY(-1px); }
+.hamburger { display: none; background: none; border: none; color: var(--text); cursor: pointer; padding: 4px; }
+
+/* HERO */
+.hero { position: relative; min-height: 92vh; display: flex; align-items: center; padding: 120px 0 80px; overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1632823471565-1ecdf5c6d7fe?w=2000&q=80') center/cover; }
+.hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(11,8,8,0.92) 0%, rgba(153,27,27,0.72) 55%, rgba(11,8,8,0.9) 100%); }
+.hero-content { position: relative; z-index: 2; max-width: 780px; }
+.eyebrow { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: var(--brand-light); margin-bottom: 20px; }
+.hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(38px, 5.5vw, 82px); font-weight: 600; line-height: 1.05; letter-spacing: -1.5px; margin-bottom: 24px; }
+.hero h1 em { font-style: italic; color: var(--brand-light); }
+.hero-sub { font-size: clamp(16px, 1.5vw, 20px); color: var(--muted); margin-bottom: 36px; max-width: 620px; line-height: 1.6; }
+.hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+.btn-primary { background: var(--brand); color: #fff; padding: 16px 32px; border-radius: 10px; font-weight: 600; font-size: 15px; border: none; cursor: pointer; transition: transform 0.2s, background 0.2s; display: inline-flex; align-items: center; gap: 10px; }
+.btn-primary:hover { background: var(--brand-light); transform: translateY(-2px); }
+.btn-secondary { background: rgba(255,255,255,0.06); color: var(--text); padding: 16px 32px; border-radius: 10px; font-weight: 600; font-size: 15px; border: 1px solid var(--border); cursor: pointer; transition: background 0.2s; display: inline-flex; align-items: center; gap: 10px; }
+.btn-secondary:hover { background: rgba(255,255,255,0.1); }
+
+/* STATS */
+.stats { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 60px 0; }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; text-align: center; }
+.stat-num { font-size: 48px; font-weight: 900; color: var(--brand-light); font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1; margin-bottom: 8px; letter-spacing: -1px; }
+.stat-label { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 2px; font-weight: 500; }
+
+/* MARQUEE */
+.marquee { background: var(--surface-2); padding: 24px 0; overflow: hidden; border-bottom: 1px solid var(--border); }
+.marquee-track { display: flex; gap: 56px; animation: scroll 32s linear infinite; white-space: nowrap; }
+.marquee-item { font-size: 14px; font-weight: 600; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 12px; }
+.marquee-item svg { color: var(--brand-light); flex-shrink: 0; }
+@keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* SECTIONS */
+section { padding: 96px 0; }
+.section-head { text-align: center; max-width: 720px; margin: 0 auto 64px; }
+.section-head h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 3.5vw, 52px); font-weight: 600; letter-spacing: -1px; margin-bottom: 16px; line-height: 1.15; }
+.section-head h2 em { font-style: italic; color: var(--brand-light); }
+.section-head p { color: var(--muted); font-size: 17px; line-height: 1.7; }
+
+/* SERVICES */
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.service-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px 28px; transition: transform 0.25s, border-color 0.25s, background 0.25s; }
+.service-card:hover { transform: translateY(-4px); border-color: var(--brand); background: var(--surface-2); }
+.service-icon { width: 56px; height: 56px; border-radius: 12px; background: rgba(220,38,38,0.14); display: flex; align-items: center; justify-content: center; color: var(--brand-light); margin-bottom: 20px; }
+.service-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 600; margin-bottom: 10px; letter-spacing: -0.5px; }
+.service-card p { color: var(--muted); font-size: 15px; line-height: 1.6; }
+.service-tag { display: inline-block; font-size: 11px; color: var(--brand-light); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-top: 14px; }
+
+/* PROCESS */
+.process { background: var(--surface); }
+.process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.process-step { background: var(--surface-2); border: 1px solid var(--border); border-radius: 16px; padding: 32px 24px; text-align: left; position: relative; }
+.process-num { font-family: 'Cormorant Garamond', serif; font-size: 56px; font-weight: 700; color: var(--brand-light); line-height: 1; margin-bottom: 16px; letter-spacing: -2px; }
+.process-step h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; margin-bottom: 8px; }
+.process-step p { color: var(--muted); font-size: 14px; line-height: 1.6; }
+
+/* REVIEWS */
+.reviews { background: var(--bg); }
+.reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.review-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px; display: flex; flex-direction: column; }
+.review-stars { color: var(--star); margin-bottom: 14px; display: flex; gap: 2px; }
+.review-text { color: var(--text); font-size: 15px; line-height: 1.7; margin-bottom: 18px; flex: 1; }
+.review-meta { display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid var(--border); }
+.review-name { font-weight: 600; font-size: 14px; }
+.review-source { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 1.5px; }
+
+/* STORY */
+.story { background: var(--surface); padding: 96px 0; }
+.story-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.story h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 3.5vw, 52px); font-weight: 600; line-height: 1.15; margin-bottom: 24px; letter-spacing: -1px; }
+.story h2 em { font-style: italic; color: var(--brand-light); }
+.story p { color: var(--muted); font-size: 17px; line-height: 1.75; margin-bottom: 20px; }
+.story-highlights { margin-top: 32px; display: flex; flex-direction: column; gap: 14px; }
+.story-highlight { display: flex; align-items: flex-start; gap: 14px; font-size: 15px; color: var(--text); }
+.story-highlight svg { color: var(--brand-light); flex-shrink: 0; margin-top: 3px; }
+.story-visual { background: linear-gradient(135deg, rgba(220,38,38,0.16) 0%, rgba(15,10,10,0.8) 100%); border: 1px solid var(--border); border-radius: 20px; padding: 48px; text-align: center; }
+.story-visual-num { font-family: 'Cormorant Garamond', serif; font-size: 120px; font-weight: 700; color: var(--brand-light); line-height: 1; letter-spacing: -3px; }
+.story-visual-label { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 3px; margin-top: 8px; font-weight: 600; }
+.story-visual-sub { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 15px; color: var(--text); line-height: 1.7; }
+.story-visual-sub strong { color: var(--brand-light); font-weight: 700; }
+
+/* AREA */
+.area-pills { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 32px; }
+.area-pill { background: var(--surface-2); border: 1px solid var(--border); padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 500; color: var(--text); transition: background 0.2s, border-color 0.2s; }
+.area-pill:hover { background: rgba(220,38,38,0.12); border-color: var(--brand); }
+
+/* FAQ */
+.faq { background: var(--surface); }
+.faq-list { max-width: 820px; margin: 0 auto; }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-q { width: 100%; background: none; border: none; color: var(--text); padding: 28px 0; font-size: 18px; font-weight: 600; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px; font-family: inherit; }
+.faq-q:hover { color: var(--brand-light); }
+.faq-icon { color: var(--brand-light); transition: transform 0.3s; flex-shrink: 0; }
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+.faq-a { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease-out; }
+.faq-item.open .faq-a { grid-template-rows: 1fr; }
+.faq-a-inner { overflow: hidden; }
+.faq-a p { padding: 0 0 28px; color: var(--muted); font-size: 16px; line-height: 1.75; }
+
+/* FORM */
+.form-section { background: linear-gradient(180deg, var(--bg) 0%, var(--surface) 100%); }
+.form-wrap { max-width: 720px; margin: 0 auto; background: var(--surface-2); border: 1px solid var(--border); border-radius: 20px; padding: 48px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.form-full { grid-column: 1 / -1; }
+.form-group label { display: block; font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 8px; letter-spacing: 0.3px; }
+.form-group input, .form-group select, .form-group textarea { width: 100%; background: var(--bg); border: 1px solid var(--border); color: var(--text); padding: 14px 16px; border-radius: 10px; font-family: inherit; font-size: 15px; transition: border-color 0.2s, background 0.2s; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--brand); background: rgba(220,38,38,0.04); }
+.form-group textarea { resize: vertical; min-height: 120px; }
+.file-drop { border: 2px dashed var(--border); border-radius: 10px; padding: 28px; text-align: center; color: var(--muted); font-size: 14px; cursor: pointer; transition: border-color 0.2s, background 0.2s; }
+.file-drop:hover { border-color: var(--brand); background: rgba(220,38,38,0.04); }
+.form-submit { margin-top: 12px; width: 100%; }
+
+/* FOOTER */
+.footer { background: #050303; padding: 72px 0 32px; border-top: 1px solid var(--border); }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+.footer h4 { font-size: 13px; color: var(--brand-light); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 18px; }
+.footer-col p, .footer-col a { display: block; color: var(--muted); font-size: 14px; margin-bottom: 10px; transition: color 0.2s; }
+.footer-col a:hover { color: var(--text); }
+.footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 700; color: var(--text); margin-bottom: 14px; }
+.footer-logo span { color: var(--brand-light); }
+.footer-bottom { padding-top: 32px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: var(--muted); flex-wrap: wrap; gap: 16px; }
+
+/* EXIT POPUP */
+.exit-popup { position: fixed; inset: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(12px); z-index: 300; display: none; align-items: center; justify-content: center; padding: 20px; }
+.exit-popup.active { display: flex; }
+.exit-popup-inner { background: var(--surface); border: 1px solid var(--border); border-radius: 24px; padding: 56px 48px; max-width: 520px; width: 100%; text-align: center; position: relative; }
+.exit-close { position: absolute; top: 16px; right: 16px; background: none; border: none; color: var(--muted); cursor: pointer; padding: 8px; }
+.exit-popup h3 { font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 600; margin-bottom: 14px; line-height: 1.15; letter-spacing: -1px; }
+.exit-popup h3 em { font-style: italic; color: var(--brand-light); }
+.exit-popup p { color: var(--muted); margin-bottom: 24px; font-size: 16px; line-height: 1.6; }
+.claim-code { background: rgba(220,38,38,0.1); border: 1px dashed var(--brand); border-radius: 10px; padding: 16px; font-size: 18px; font-weight: 700; color: var(--brand-light); letter-spacing: 4px; margin-bottom: 24px; font-family: 'Plus Jakarta Sans', monospace; }
+
+/* CLAIM BAR */
+.claim-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); padding: 14px 24px; display: none; z-index: 90; backdrop-filter: blur(20px); }
+.claim-bar.active { display: flex; align-items: center; justify-content: space-between; gap: 20px; max-width: 1200px; margin: 0 auto; }
+.claim-bar-text { font-size: 14px; color: var(--text); }
+.claim-bar-text strong { color: var(--brand-light); }
+
+/* MOBILE PHONE */
+.mobile-phone { display: none; position: fixed; bottom: 80px; right: 16px; background: var(--brand); color: #fff; width: 56px; height: 56px; border-radius: 50%; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(220,38,38,0.4); z-index: 80; }
+
+/* COOKIE */
+.cookie { position: fixed; bottom: 16px; left: 16px; right: 16px; max-width: 420px; margin: 0 auto; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px; font-size: 13px; z-index: 70; display: none; }
+.cookie.active { display: block; }
+.cookie-actions { display: flex; gap: 10px; margin-top: 12px; }
+.cookie button { background: var(--brand); color: #fff; border: none; padding: 8px 16px; border-radius: 7px; font-weight: 600; font-size: 13px; cursor: pointer; }
+.cookie button.secondary { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .services-grid, .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
+  .story-inner { grid-template-columns: 1fr; gap: 48px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hamburger { display: block; }
+  .nav-links.active { display: flex; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; background: var(--surface); padding: 20px; gap: 18px; border-bottom: 1px solid var(--border); }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 24px; }
+  .services-grid, .reviews-grid, .process-grid { grid-template-columns: 1fr; }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-wrap { padding: 32px 24px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .claim-bar.active { flex-direction: column; text-align: center; gap: 12px; padding-bottom: 14px; }
+  .mobile-phone { display: flex; }
+  .hero { padding: 100px 0 60px; }
+  section { padding: 72px 0; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">Forest Park <span>Collision</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#story">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="tel:+16786470907" class="nav-cta">(678) 647-0907</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <span class="eyebrow">Clayton County · 24 Years</span>
+    <h1>Wrecked cars. <em>Like-new results.</em> Ask for Kevin.</h1>
+    <p class="hero-sub">Collision repair, paint, frame work, and insurance claims on Central Avenue since we moved in nine years ago. 4.8 stars across 76+ reviews. Free estimates, handled by the owner.</p>
+    <div class="hero-ctas">
+      <a href="#estimate" class="btn-primary">
+        Get a Free Estimate
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+      <a href="tel:+16786470907" class="btn-secondary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        Call Kevin Direct
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container stats-grid">
+    <div><div class="stat-num">4.8★</div><div class="stat-label">Birdeye Rating</div></div>
+    <div><div class="stat-num">76+</div><div class="stat-label">Google Reviews</div></div>
+    <div><div class="stat-num">24</div><div class="stat-label">Years in Business</div></div>
+    <div><div class="stat-num">FREE</div><div class="stat-label">Every Estimate</div></div>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> 24 Years Family-Run</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Insurance Claims Handled</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Factory Paint Match</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Free Written Estimates</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> 3-Day Average Turnaround</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Kevin Owns the Shop</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> 24 Years Family-Run</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Insurance Claims Handled</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Factory Paint Match</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Free Written Estimates</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> 3-Day Average Turnaround</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Kevin Owns the Shop</span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h2>From fender-bender to <em>full frame rebuild.</em></h2>
+      <p>Every service under the same roof, backed by Kevin's own quality review before you pick up the keys.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"></path><circle cx="6.5" cy="16.5" r="2.5"></circle><circle cx="16.5" cy="16.5" r="2.5"></circle></svg></div>
+        <h3>Collision Repair</h3>
+        <p>Front-end, rear-end, side-impact. Structural assessment, parts sourcing, and the body work to put it back together right.</p>
+        <span class="service-tag">Primary Service</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg></div>
+        <h3>Paint &amp; Refinish</h3>
+        <p>Factory-match paint booth work. Multiple customers say it "looked brand new" on pickup. Color-matched to OEM spec.</p>
+        <span class="service-tag">Factory Match</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg></div>
+        <h3>Frame Straightening</h3>
+        <p>Measured frame pull on the rack. Structural realignment to factory specs so your car drives and tracks straight.</p>
+        <span class="service-tag">Structural</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg></div>
+        <h3>Paintless Dent Repair</h3>
+        <p>Hail damage, door dings, shopping-cart dents. Removed without painting when the paint is intact.</p>
+        <span class="service-tag">No Repaint Needed</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="12" rx="2" ry="2"></rect><path d="M6 19v2"></path><path d="M18 19v2"></path></svg></div>
+        <h3>Bumper Repair &amp; Replace</h3>
+        <p>Cracked covers, loose tabs, full replacements. Repainted and blended to the surrounding panels.</p>
+        <span class="service-tag">Same-Week</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8" cy="12" r="1"></circle></svg></div>
+        <h3>Door &amp; Panel Replacement</h3>
+        <p>Door skins, full doors, quarter panels, fenders, hoods. Matched paint and proper gap alignment.</p>
+        <span class="service-tag">OEM-Spec Fit</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="15" x2="15" y2="15"></line></svg></div>
+        <h3>Insurance Claim Handling</h3>
+        <p>We talk to your adjuster directly. Documentation, supplement requests, and rental-car coordination all handled.</p>
+        <span class="service-tag">All Carriers</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+        <h3>Mechanical Repair</h3>
+        <p>Post-accident mechanical work that ties into body repairs: suspension, steering, brakes, cooling. Full-service shop.</p>
+        <span class="service-tag">Full-Service</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"></rect><path d="M4 10h16"></path><path d="M10 4v16"></path></svg></div>
+        <h3>Auto Glass Replacement</h3>
+        <p>Windshields and side glass. Sealed, calibrated for ADAS sensors where applicable, and ready to drive.</p>
+        <span class="service-tag">ADAS Calibrated</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="process" class="process">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">How It Works</span>
+      <h2>Four steps. <em>No surprises.</em></h2>
+    </div>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="process-num">01</div>
+        <h3>Free Estimate</h3>
+        <p>Drive in or send photos. Kevin walks around the car and gives you a written number, usually in under 20 minutes.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">02</div>
+        <h3>Insurance Coordination</h3>
+        <p>If a claim is open, we talk directly to your adjuster. No phone-tag, no "call your insurance" runaround.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">03</div>
+        <h3>Body &amp; Paint</h3>
+        <p>Parts ordered, frame squared, panels replaced, booth paint, blend coat. Kevin inspects before it leaves his bay.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">04</div>
+        <h3>Pickup &amp; Drive</h3>
+        <p>Wash, final walk-around, keys back. Most jobs turn around in 3 days to a week depending on parts availability.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="reviews">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What Customers Say</span>
+      <h2>4.8 stars from <em>76+ real reviews.</em></h2>
+      <p>Named reviewers from Birdeye and Google. Kevin shows up in almost every one.</p>
+    </div>
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="review-stars">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </div>
+        <p class="review-text">"Mr. Kevin provided exceptional customer service and delivered high-quality work — my car looked brand new when I picked it up."</p>
+        <div class="review-meta"><span class="review-name">Ashley Preston</span><span class="review-source">Birdeye</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </div>
+        <p class="review-text">"Kevin is patient, and is willing to satisfy all of customer needs. The communication was great. He answered all my calls."</p>
+        <div class="review-meta"><span class="review-name">TJ Jones</span><span class="review-source">Birdeye</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </div>
+        <p class="review-text">"Got perfect work done on my like new Lexus. The service was great, the repairs were completed quickly, and pricing was reasonable."</p>
+        <div class="review-meta"><span class="review-name">Julia Raffetto</span><span class="review-source">Birdeye</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </div>
+        <p class="review-text">"This is the first time that I am using them, they are great. Very nice and accommodating, just all the way around AWESOME."</p>
+        <div class="review-meta"><span class="review-name">Andi Kai</span><span class="review-source">Birdeye</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </div>
+        <p class="review-text">"The gentleman was incredibly kind and attentive. His employees are super friendly and very professional."</p>
+        <div class="review-meta"><span class="review-name">Olga Mazas</span><span class="review-source">Birdeye</span></div>
+      </div>
+
+      <div class="review-card" style="background: linear-gradient(135deg, rgba(220,38,38,0.12) 0%, var(--surface) 100%);">
+        <div class="review-stars">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </div>
+        <p class="review-text" style="font-family: 'Cormorant Garamond', serif; font-size: 20px; font-style: italic; line-height: 1.5;">"4.8 stars. 76 reviews. And Kevin's name is in almost every single one of them."</p>
+        <div class="review-meta"><span class="review-name">Aggregate across platforms</span><span class="review-source">Birdeye / Google</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="story" class="story">
+  <div class="container">
+    <div class="story-inner">
+      <div>
+        <span class="eyebrow">Our Story</span>
+        <h2>Twenty-four years fixing cars. <em>Nine of them on Central Ave.</em></h2>
+        <p>Forest Park Collision has been repairing wrecks in the Atlanta south metro since 2002. The shop moved to 198 Central Avenue nine years ago. Same owner. Same standard. Kevin still walks out to shake your hand and write your estimate personally.</p>
+        <p>If you look through our reviews, you'll notice something: people use Kevin's first name. "Mr. Kevin was incredible." "Kevin is patient." That's not marketing — it's what happens when the same person has owned the same shop long enough to build a reputation on his own name.</p>
+        <div class="story-highlights">
+          <div class="story-highlight">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>24 years of collision repair; 9 years in the current Central Ave shop.</span>
+          </div>
+          <div class="story-highlight">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Kevin handles estimates, insurance coordination, and final quality review himself.</span>
+          </div>
+          <div class="story-highlight">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Typical jobs complete in 3 days to a week, not weeks like the chains.</span>
+          </div>
+          <div class="story-highlight">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>All major insurance carriers. We talk to your adjuster so you don't have to.</span>
+          </div>
+        </div>
+      </div>
+      <div class="story-visual">
+        <div class="story-visual-num">24</div>
+        <div class="story-visual-label">Years in Business</div>
+        <div class="story-visual-sub">Four-point-eight stars across <strong>76+ verified reviews.</strong> Kevin's name shows up in almost every one.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="area">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Service Area</span>
+      <h2>Forest Park at the center. <em>All south metro covered.</em></h2>
+      <p>Drop off on Central Ave. We handle tow-in from anywhere in Clayton County and surrounding areas.</p>
+    </div>
+    <div class="area-pills">
+      <span class="area-pill">Forest Park</span>
+      <span class="area-pill">Jonesboro</span>
+      <span class="area-pill">Morrow</span>
+      <span class="area-pill">Riverdale</span>
+      <span class="area-pill">Lake City</span>
+      <span class="area-pill">College Park</span>
+      <span class="area-pill">Hapeville</span>
+      <span class="area-pill">East Point</span>
+      <span class="area-pill">Rex</span>
+      <span class="area-pill">Ellenwood</span>
+      <span class="area-pill">Lovejoy</span>
+      <span class="area-pill">Conley</span>
+      <span class="area-pill">South Atlanta</span>
+      <span class="area-pill">Clayton County</span>
+      <span class="area-pill">I-75 Corridor</span>
+      <span class="area-pill">I-285 South</span>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Questions We Get</span>
+      <h2>Before you drop off <em>or call your adjuster.</em></h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q">Do you work with my insurance company?
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Yes. We work with every major carrier — State Farm, Allstate, Progressive, GEICO, Liberty Mutual, Farmers, USAA, Nationwide, and the rest. Bring your claim number and we'll coordinate directly with the adjuster.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">How long will the repair take?
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Most repairs finish in 3 days to a week. Bigger jobs with frame work or back-ordered parts can run longer. We give you a real timeline at estimate, not a "best case" one that slides every week.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Are estimates really free?
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Yes — always free, always written. Drive the car over, park it, and Kevin walks around it with you. If you've got cell-phone photos of the damage, we can give you a ballpark over text before you make the drive.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Will the paint really match my existing finish?
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Yes. We pull the paint code from your door jamb, mix to OEM spec, and blend into surrounding panels so the line disappears. Customers routinely tell us the car "looks brand new." Pearl, metallic, and tri-coat finishes all handled.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Can you remove dents without repainting?
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Yes, when the paint is intact. Paintless dent repair works for hail, door dings, and shopping-cart dents where the finish hasn't cracked. Cheaper and faster than a full repaint when it's the right fit.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Do you do frame straightening?
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Yes. Measured frame pull on the rack, compared back to factory specs. If a hit bent structure, we straighten it — we don't hide it with body panels.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Do you handle mechanical work too, or just body?
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Both. Full-service mechanical: suspension, steering, cooling, brakes, and related components that tie into collision work. One shop, one invoice, one point of contact.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Do you offer towing?
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Yes. If the car isn't drivable, call and we'll get it picked up and brought to the shop. Covered by insurance in most claim scenarios.</p></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="estimate" class="form-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Free Estimate</span>
+      <h2>Send photos. <em>Get a number back.</em></h2>
+      <p>The faster we see the damage, the faster you get a real estimate. Upload a few photos and Kevin will respond the same day.</p>
+    </div>
+    <form class="form-wrap" onsubmit="event.preventDefault(); alert('Thanks! Kevin will be in touch today.');">
+      <div class="form-grid">
+        <div class="form-group"><label>Your Name</label><input type="text" required placeholder="Jane Doe"></div>
+        <div class="form-group"><label>Phone</label><input type="tel" required placeholder="(404) 555-0100"></div>
+        <div class="form-group"><label>Email</label><input type="email" placeholder="jane@email.com"></div>
+        <div class="form-group"><label>Vehicle Year / Make / Model</label><input type="text" placeholder="2021 Toyota Camry"></div>
+        <div class="form-group"><label>Insurance Company (optional)</label><input type="text" placeholder="State Farm, Allstate, etc."></div>
+        <div class="form-group"><label>Preferred Drop-Off Day</label>
+          <select>
+            <option>ASAP</option>
+            <option>This week</option>
+            <option>Next week</option>
+            <option>Flexible</option>
+          </select>
+        </div>
+        <div class="form-group form-full"><label>Describe the Damage</label><textarea placeholder="Rear-ended at a light, bumper cracked, trunk won't close properly..."></textarea></div>
+        <div class="form-group form-full"><label>Upload Photos (the more angles the better)</label>
+          <label class="file-drop" for="photo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:6px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+            <div>Drop photos here or click to upload — multiple angles preferred</div>
+          </label>
+          <input id="photo" type="file" accept="image/*" multiple style="display:none;">
+        </div>
+        <button type="submit" class="btn-primary form-submit">Send My Free Estimate Request</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">Forest Park <span>Collision</span></div>
+        <p>Collision repair, paint, frame, and insurance claims in Forest Park, GA for 24 years. Owner Kevin still walks every estimate.</p>
+        <p>198 Central Ave<br>Forest Park, GA 30297</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#services">Collision Repair</a>
+        <a href="#services">Paint &amp; Refinish</a>
+        <a href="#services">Frame Straightening</a>
+        <a href="#services">Paintless Dent Repair</a>
+        <a href="#services">Insurance Claims</a>
+        <a href="#services">Mechanical Work</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>Mon–Fri: 8am–5pm</p>
+        <p>Saturday: 8am–12pm</p>
+        <p>Sunday: Closed</p>
+        <p>Towing available 24/7</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+16786470907">(678) 647-0907</a>
+        <a href="#estimate">Free Estimate</a>
+        <a href="#area">Service Area</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Forest Park Collision. All rights reserved.</span>
+      <span>24 Years · 4.8 Stars · 76+ Reviews</span>
+    </div>
+  </div>
+</footer>
+
+<div class="exit-popup" id="exitPopup">
+  <div class="exit-popup-inner">
+    <button class="exit-close" id="exitClose" aria-label="Close">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <h3>Before you leave, <em>send Kevin the photos.</em></h3>
+    <p>Text (678) 647-0907 with 2-3 photos of the damage and you'll have a ballpark estimate before you finish your coffee.</p>
+    <div class="claim-code">TEXT KEVIN</div>
+    <a href="tel:+16786470907" class="btn-primary" style="width:100%; justify-content:center;">Call (678) 647-0907</a>
+  </div>
+</div>
+
+<div class="claim-bar" id="claimBar">
+  <div class="claim-bar-text">Got an accident? <strong>Free written estimate</strong> in under 20 minutes. Ask for Kevin.</div>
+  <a href="tel:+16786470907" class="btn-primary" style="padding:10px 20px; font-size:14px;">Call Now</a>
+</div>
+
+<a href="tel:+16786470907" class="mobile-phone" aria-label="Call">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+</a>
+
+<div class="cookie" id="cookie">
+  <p>We use cookies to improve your experience and analyze site usage.</p>
+  <div class="cookie-actions">
+    <button onclick="document.getElementById('cookie').classList.remove('active'); localStorage.setItem('ck','1');">Accept</button>
+    <button class="secondary" onclick="document.getElementById('cookie').classList.remove('active'); localStorage.setItem('ck','1');">Decline</button>
+  </div>
+</div>
+
+<script>
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('active');
+});
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => btn.parentElement.classList.toggle('open'));
+});
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 600 && !sessionStorage.getItem('cbDismissed')) {
+    document.getElementById('claimBar').classList.add('active');
+  }
+});
+let exitShown = false;
+document.addEventListener('mouseleave', (e) => {
+  if (e.clientY < 10 && !exitShown && !sessionStorage.getItem('exitShown')) {
+    setTimeout(() => { document.getElementById('exitPopup').classList.add('active'); exitShown = true; sessionStorage.setItem('exitShown','1'); }, 5000);
+  }
+});
+document.getElementById('exitClose').addEventListener('click', () => document.getElementById('exitPopup').classList.remove('active'));
+document.getElementById('exitPopup').addEventListener('click', (e) => { if (e.target.id === 'exitPopup') e.currentTarget.classList.remove('active'); });
+if (!localStorage.getItem('ck')) setTimeout(() => document.getElementById('cookie').classList.add('active'), 2000);
+</script>
+
+</body>
+</html>

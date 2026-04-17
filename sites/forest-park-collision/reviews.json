@@ -1,0 +1,15 @@
+{
+  "reviews": [
+    {"author": "Andi Kai", "rating": 5, "date": "1 month ago", "source": "birdeye", "text": "This is the first time that I am using them, they are great. Very nice and accommodating, just all the way around AWESOME.", "verified": true},
+    {"author": "Olga Mazas", "rating": 5, "date": "2 months ago", "source": "birdeye", "text": "The gentleman was incredibly kind and attentive. His employees are super friendly and very professional.", "verified": true},
+    {"author": "Ashley Preston", "rating": 5, "date": "10 months ago", "source": "birdeye", "text": "Mr. Kevin provided exceptional customer service and delivered high-quality work — my car looked brand new when I picked it up.", "verified": true},
+    {"author": "TJ Jones", "rating": 5, "date": "11 months ago", "source": "birdeye", "text": "Kevin is patient, and is willing to satisfy all of customer needs. The communication was great. He answered all my calls.", "verified": true},
+    {"author": "Julia Raffetto", "rating": 5, "date": "11 months ago", "source": "birdeye", "text": "Got perfect work done on my like new Lexus. The service was great, the repairs were completed quickly, and pricing was reasonable.", "verified": true}
+  ],
+  "counts": {"total_available": "76 reviews (Birdeye aggregate)", "captured": 5, "target_min": 5, "aggregate_rating": 4.8, "aggregate_rating_source": "Birdeye live page aggregates Google"},
+  "notes": "24 years in business (9 at current Central Ave location). Owner/lead Kevin (last name not disclosed). Lifetime warranty on workmanship (directory-listed, verify with owner). No dedicated website currently — this build may be first. Paraphrased themes ($4,800 vs $2,860, Honda Civic door skins, Ford Mustang 'coco') intentionally excluded to avoid fabrication.",
+  "capture_attempts": [{"source": "google_gbp", "status": "redirect_protected", "reason": "share link redirects"}, {"source": "birdeye", "status": "success", "reason": "5 verbatim reviews with full names"}, {"source": "nicelocal", "status": "partial", "reason": "31 reviews listed, snippets not attributable by name"}, {"source": "yelp", "status": "partial", "reason": "low Yelp-native review volume"}, {"source": "facebook", "status": "blocked", "reason": "page content not accessible"}],
+  "created_at": "2026-04-17T00:00:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
