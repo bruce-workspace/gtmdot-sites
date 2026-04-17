@@ -1,0 +1,20 @@
+{
+  "reviews": [
+    {"author": "Andrew G.", "rating": 5, "date": "Dec 2024", "source": "yahoo_local", "text": "I had the pleasure of working with Rohan as I also had the displeasure of my heating system conking out while I was out of town. Came home and it was 60 degrees in the house.", "verified": true},
+    {"author": "Cassandra R.", "rating": 5, "date": "Dec 2024", "source": "yahoo_local", "text": "It's a very good feeling to find someone you can trust when it comes to HVAC/plumbing, and you get both here! We initially reached out because of the great Yelp reviews.", "verified": true},
+    {"author": "Nish K.", "rating": 5, "date": "Jul 2023", "source": "yahoo_local", "text": "Rohan was a life saver. Our HVAC stopped cooling one fine day making our upstairs very hot (perfect timing).", "verified": true},
+    {"author": "Tracy B.", "rating": 5, "date": "Jan 2024", "source": "yahoo_local", "text": "Thank you Rohan! Absolute life saver. After seeing so many glowing reviews (whenever you see 4.9 stars and over 50 reviews you know someone is doing something right) I immediately reached out.", "verified": true},
+    {"author": "S. N.", "rating": 5, "date": "Jan 2025", "source": "nextdoor", "text": "Rohan tells it like it is and does excellent work without any surprises.", "verified": true},
+    {"author": "R. B.", "rating": 5, "date": "Jul 2024", "source": "nextdoor", "text": "Came out on Saturday night of holiday weekend when our AC went out and system replaced on Sunday.", "verified": true},
+    {"author": "Sheila U.", "rating": 5, "date": "recent", "source": "owner_site", "text": "Rohan is prompt, offers fair pricing, and explains everything he is doing. He doesn't make you buy something unless you really need it.", "verified": true},
+    {"author": "Jennings H.", "rating": 5, "date": "recent", "source": "owner_site", "text": "They reply quickly to inquiries, provide an honest assessment. Their work is quality and affordable.", "verified": true},
+    {"author": "Renee N.", "rating": 5, "date": "recent", "source": "owner_site", "text": "HVAC Guyz ATL is extremely professional. Fair pricing and excellent customer service!", "verified": true},
+    {"author": "Freeway C.", "rating": 5, "date": "recent", "source": "ecohome", "text": "Quick and easy! Called these guys and they figured out the problem while still on the phone.", "verified": true}
+  ],
+  "counts": {"total_available": 63, "captured": 10, "target_min": 5, "aggregate_rating": 5.0, "aggregate_rating_source": "Yelp (5.0 / 63 reviews), Birdeye (4.8 / 41 reviews)"},
+  "notes": "Strong review data. Yelp 5.0/63, Birdeye 4.8/41. Most reviews mention Rohan personally. Dual HVAC+plumbing is a notable differentiator in Atlanta. 'Honest, doesn't upsell' is the consistent theme across all sources. Did NOT publish the unverified 2005/NY founding claim per research caution.",
+  "capture_attempts": [{"source": "yelp", "status": "403", "reason": "anti-scrape"}, {"source": "yahoo_local", "status": "success", "reason": "4 verbatim reviews captured"}, {"source": "nextdoor", "status": "partial", "reason": "2 recommendations with short text"}, {"source": "owner_site", "status": "success", "reason": "3 testimonials"}, {"source": "ecohome", "status": "partial", "reason": "1 full review text"}],
+  "created_at": "2026-04-16T17:00:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
