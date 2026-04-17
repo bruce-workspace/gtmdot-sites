@@ -10,17 +10,34 @@
     "location": "Atlanta/Vinings area, serves Metro Atlanta",
     "specialties": "Weekly pool maintenance, green-to-clean recovery (specialty), pool opening/closing, equipment repair, water testing. NO new construction or resurfacing.",
     "photo_heavy_trade": true,
-    "photo_notes": "Research noted: Chris sends post-service reports with before/after photos on every visit. Website has 'Our Work' page at perezpools.com/our-work (Wix site, content not scrapable). Thumbtack reviews reference green-to-clean before/after photos. High likelihood of strong before/after photo library."
+    "photo_notes": "URLs extracted from perezpools.com Wix 'Our Work' gallery via WebFetch. 10 JPG/JPEG photos confirmed. Website also has PNGs (likely graphics/logos) which were filtered out."
   },
-  "photo_count_from_gbp_estimate": "unknown — likely 10-30 based on the documented practice of including before/after photos in every service report. Green-to-clean transformations are the most visually dramatic.",
+  "photo_count_from_gbp_estimate": "10 confirmed JPG photos on website. Additional photos may exist on GBP that require manual extraction.",
+  "source_urls": {
+    "hero_url": "https://static.wixstatic.com/media/34bcc2_8117cc39468548debf998f4084828811~mv2.jpg",
+    "gallery_urls": [
+      "https://static.wixstatic.com/media/34bcc2_13c5c67522084a5988891e0fad8d28fe~mv2.jpg",
+      "https://static.wixstatic.com/media/34bcc2_ebfe77ecc7ff423194511d14f89b91ed~mv2.jpg",
+      "https://static.wixstatic.com/media/34bcc2_d2c17590da3d45cba98d680895f853f8~mv2.jpg",
+      "https://static.wixstatic.com/media/34bcc2_e8d48a153fbc4cf5ab8e2888e60d52e4~mv2.jpg",
+      "https://static.wixstatic.com/media/34bcc2_4fe0281a67ac4335b014c263c06693e3~mv2.jpg",
+      "https://static.wixstatic.com/media/34bcc2_2dca2d960950418a94fd668ac3c5caa9~mv2.jpg",
+      "https://static.wixstatic.com/media/34bcc2_ad04ef9bc2f6491eb2b70c3a17d377e1~mv2.jpg",
+      "https://static.wixstatic.com/media/34bcc2_445f632568ac44b29893344165da197a~mv2.jpg",
+      "https://static.wixstatic.com/media/34bcc2_2cfa032c7d24493c84c8badb79349dd7~mv2.jpeg"
+    ],
+    "source": "perezpools.com/our-work (Wix static CDN)",
+    "extracted_at": "2026-04-16T16:00:00-04:00",
+    "extraction_method": "WebFetch on perezpools.com/our-work, filtered to .jpg and .jpeg extensions from wixstatic.com CDN"
+  },
   "hero": {
-    "search_for": "Dramatic green-to-clean pool transformation (before/after split) OR Chris Perez team at work on a pool. The green-to-clean angle is their signature — a pool that went from swamp to sparkling is the hero shot. If only separate photos exist, use the most striking 'clean clear blue pool' shot showing the result of their work.",
+    "search_for": "Dramatic green-to-clean pool transformation (before/after split) OR Chris Perez team at work on a pool. The green-to-clean angle is their signature.",
     "count": 1,
     "filename": "hero.jpg",
     "aspect_hint": "wide landscape, full-viewport background"
   },
   "gallery": {
-    "search_for": "Pool service work: green-to-clean transformations (paired if possible), pool equipment (pumps, filters, plumbing), water testing in action, clean pools post-service. Chris's uniformed technicians at work. Prefer owner-uploaded over customer-uploaded for consistency.",
+    "search_for": "Pool service work: green-to-clean transformations, pool equipment, water testing, clean pools post-service.",
     "count": 6,
     "filename_pattern": "gbp-{n}.jpg",
     "aspect_hint": "4:3 or 3:2 landscape preferred"
@@ -30,27 +47,27 @@
     "max_edge_px": 1024,
     "max_kb": 300,
     "color_space": "sRGB",
-    "quality_hint": "JPEG quality 75-85. Pool photos may have high contrast between water and deck — preserve detail in both if possible"
+    "quality_hint": "JPEG quality 75-85. Preserve detail in both pool water and deck areas."
   },
   "naming": {
     "hero": "hero.jpg",
     "gallery": "gbp-1.jpg through gbp-6.jpg",
     "location": "sites/perez-pools-llc/photos/"
   },
-  "fallback_if_unavailable": {
-    "hero": "If GBP hero is weak, check the website's 'Our Work' page (Wix-rendered, may need Bruce's broader tooling). If still nothing, contextual Unsplash 'pool cleaning service' or 'swimming pool maintenance technician'.",
-    "gallery": "If GBP under 6, check perezpools.com/our-work. If still short, deliver what's available (min 3). Do NOT pad with generic pool stock photos."
+  "fallback_strategy": {
+    "if_insufficient_urls": "If source_urls photos turn out to be non-contextual (headshots, logos, etc.), fall back to Unsplash contextual search: 'swimming pool maintenance service' for gallery, 'pool cleaning technician' for hero. Do NOT use generic pool stock without service context."
   },
   "acceptance_criteria": [
-    "Hero shows either a dramatic green-to-clean transformation or real Perez Pools work",
+    "Hero shows either a dramatic green-to-clean transformation OR real Perez Pools work",
     "Gallery shows authentic pool service, not staged stock pool scenes",
-    "Before/after pairs are ideal where available — this is THE pressure point for pool service prospects",
-    "No AI-generated pool photos (common failure mode for this trade)",
+    "Before/after pairs are ideal where available",
+    "No AI-generated pool photos",
     "File sizes under 300KB each",
     "All JPEGs valid sRGB"
   ],
   "created_at": "2026-04-16T15:30:00-04:00",
+  "updated_at": "2026-04-16T16:00:00-04:00",
   "created_by": "r1vs",
   "pilot": true,
-  "pilot_notes": "Mini's 'photo-heavy trade' pilot case. Pool service customers make decisions visually — before/after is the conversion moment."
+  "pilot_notes": "Mini's 'photo-heavy trade' pilot case. 10 real photo URLs extracted via WebFetch. Per Mini's contract update: source_urls is primary, Bruce downloads directly."
 }
