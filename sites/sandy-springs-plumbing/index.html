@@ -68,12 +68,8 @@ a { color: inherit; text-decoration: none; }
 
 /* HERO */
 .hero { position: relative; min-height: 94vh; display: flex; align-items: center; padding: 120px 0 80px; overflow: hidden; }
-.hero-pattern { position: absolute; inset: 0; background:
-  radial-gradient(circle at 20% 40%, rgba(26,77,128,0.45) 0%, transparent 50%),
-  radial-gradient(circle at 80% 70%, rgba(200,137,63,0.18) 0%, transparent 45%),
-  linear-gradient(135deg, #060b14 0%, #0c1523 60%, #060b14 100%);
-}
-.hero-pattern::after { content: ''; position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(255,255,255,0.025) 1px, transparent 1px); background-size: 36px 36px; }
+.hero-pattern { position: absolute; inset: 0; background: url('photos/hero-bathroom-finished.webp') center/cover no-repeat; }
+.hero-pattern::after { content: ''; position: absolute; inset: 0; background: linear-gradient(110deg, rgba(6,11,20,0.94) 0%, rgba(16,53,88,0.78) 45%, rgba(6,11,20,0.5) 85%, rgba(6,11,20,0.88) 100%); }
 .hero-content { position: relative; z-index: 2; max-width: 860px; }
 .eyebrow { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: var(--accent); margin-bottom: 20px; }
 .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(40px, 5.8vw, 86px); font-weight: 600; line-height: 1.02; letter-spacing: -1.5px; margin-bottom: 24px; }
@@ -125,6 +121,16 @@ section { padding: 96px 0; }
 .review-service { font-size: 11px; color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600; text-align: right; }
 .review-tech-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(200,137,63,0.12); border: 1px solid rgba(200,137,63,0.3); padding: 4px 10px; border-radius: 999px; font-size: 11px; color: var(--accent-light); font-weight: 600; margin-bottom: 14px; width: fit-content; }
 .review-tech-badge svg { flex-shrink: 0; }
+
+/* WORK GALLERY */
+.work { background: var(--bg); }
+.work-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
+.work-item { position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 4/3; cursor: pointer; border: 1px solid var(--border); }
+.work-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.work-item:hover img { transform: scale(1.05); }
+.work-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 20px 18px 18px; background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 60%, transparent 100%); }
+.work-caption h3 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; margin-bottom: 4px; letter-spacing: -0.3px; }
+.work-caption span { font-size: 11px; color: var(--accent-light); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; }
 
 /* TRUST BAND (no-gallery Morales pattern) */
 .trust-band { background: var(--bg); position: relative; overflow: hidden; }
@@ -228,7 +234,7 @@ section { padding: 96px 0; }
 
 /* MOBILE */
 @media (max-width: 900px) {
-  .services-grid, .trust-grid, .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid, .trust-grid, .reviews-grid, .work-gallery { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 768px) {
@@ -236,7 +242,7 @@ section { padding: 96px 0; }
   .hamburger { display: block; }
   .nav-links.active { display: flex; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; background: var(--surface); padding: 20px; gap: 18px; border-bottom: 1px solid var(--border); }
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 24px; }
-  .services-grid, .trust-grid, .reviews-grid { grid-template-columns: 1fr; }
+  .services-grid, .trust-grid, .reviews-grid, .work-gallery { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
   .form-wrap { padding: 32px 24px; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
@@ -257,6 +263,7 @@ section { padding: 96px 0; }
     <div class="nav-links" id="navLinks">
       <a href="#services">Services</a>
       <a href="#reviews">Reviews</a>
+      <a href="#work">Our Work</a>
       <a href="#trust">Why Us</a>
       <a href="#story">Our Story</a>
       <a href="#area">Service Area</a>
@@ -495,6 +502,42 @@ section { padding: 96px 0; }
         <div class="review-meta"><span class="review-name">Maya K.</span><span class="review-service">Repeat Customer</span></div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<section id="work" class="work">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our Work</span>
+      <h2>Real jobs. <em>Real Atlanta homes.</em></h2>
+      <p>A snapshot of what 58 years of Sandy Springs plumbing looks like in real customer homes — residential remodels, kitchens, showers, and commercial rough-ins.</p>
+    </div>
+    <div class="work-gallery">
+      <div class="work-item">
+        <img src="photos/work-designer-shower.webp" alt="Designer black and white tile shower with matte black fixtures installed by Sandy Springs Plumbing" loading="lazy">
+        <div class="work-caption"><h3>Designer Shower</h3><span>Custom Tile + Fixture</span></div>
+      </div>
+      <div class="work-item">
+        <img src="photos/work-luxury-tub.webp" alt="Freestanding luxury tub installed with wood-look tile floors and garden window by Sandy Springs Plumbing" loading="lazy">
+        <div class="work-caption"><h3>Freestanding Tub</h3><span>Luxury Bath Install</span></div>
+      </div>
+      <div class="work-item">
+        <img src="photos/work-kitchen-plumbing.webp" alt="Modern kitchen sink with matte black spring faucet and granite counter by Sandy Springs Plumbing" loading="lazy">
+        <div class="work-caption"><h3>Kitchen Plumbing</h3><span>Sink + Fixture</span></div>
+      </div>
+      <div class="work-item">
+        <img src="photos/work-new-construction.webp" alt="New construction under-slab plumbing rough-in with trenched PVC drain lines by Sandy Springs Plumbing" loading="lazy">
+        <div class="work-caption"><h3>New Construction</h3><span>Slab Rough-In</span></div>
+      </div>
+      <div class="work-item">
+        <img src="photos/work-commercial-overhead.webp" alt="Commercial overhead PVC plumbing installation on concrete ceiling by Sandy Springs Plumbing" loading="lazy">
+        <div class="work-caption"><h3>Commercial Install</h3><span>Overhead Plumbing</span></div>
+      </div>
+      <div class="work-item">
+        <img src="photos/work-sewer-excavation.webp" alt="Sewer line and septic excavation with mini excavator by Sandy Springs Plumbing" loading="lazy">
+        <div class="work-caption"><h3>Sewer &amp; Septic</h3><span>Excavation + Repair</span></div>
+      </div>
     </div>
   </div>
 </section>

@@ -6,20 +6,42 @@
   "owner": "Jack Sr.",
   "address": "165 Hilderbrand Dr, Atlanta, GA 30328",
   "phone": "(770) 896-9852",
-  "layer_1_places_api": {"status": "PENDING", "reason": "Mac Mini Places API automation should attempt lookup by phone number + address; may have place_id and photo references", "notes": "The Google Business Profile is titled 'Sandy Springs Plumbing Heating Air Conditioning' and shows 2 publicly visible photos in screenshot (blue-tape pipe brick, sewer excavation mini-ex)"},
-  "layer_2_firecrawl": {"status": "RECOMMENDED_IF_LAYER_1_MISSES", "reason": "Try Firecrawl on the GBP listing URL once Mini surfaces it"},
-  "layer_3_unsplash": {"status": "FALLBACK_WITH_EXACT_TERMS", "fallback_search_terms": ["plumber inspecting water heater", "gas line shutoff valve copper", "sewer camera inspection drain", "residential HVAC condenser outside", "tankless water heater install wall", "plumber wrench copper pipe joint"]},
-  "owner_supplied": {"status": "PENDING", "notes": "Jack to supply phone-camera photos of recent plumbing + HVAC jobs same approach as Fernando (Pine Peach)"},
-  "gallery_photo_targets": [
-    {"slot": 1, "caption": "Emergency Service", "ideal_content": "after-hours service truck or tech working in dimly-lit home"},
-    {"slot": 2, "caption": "Sewer & Drain", "ideal_content": "camera inspection or sewer line work"},
-    {"slot": 3, "caption": "Water Heater", "ideal_content": "tank or tankless install/repair"},
-    {"slot": 4, "caption": "HVAC Service", "ideal_content": "furnace, AC condenser, or ductwork"},
-    {"slot": 5, "caption": "Gas Line Work", "ideal_content": "gas line install or shutoff valve service"},
-    {"slot": 6, "caption": "Fixture Install", "ideal_content": "faucet, toilet, or garbage disposal install"}
-  ],
-  "notes": "REVIEW-THIN on verbatim (0 captured despite 4.9/25 Google aggregate). Site built with no-gallery trust-band pattern initially. IF photos arrive via Layer 1/2/owner before publish, refactor to include gallery (gallery is permitted when non-review-thin; this site is review-thin ONLY on verbatim text, not on rating strength — judgment call at publish time).",
+  "layer_1_places_api": {"status": "SKIPPED", "reason": "owner-supplied 13 photos via Jesse 2026-04-17 satisfy Layer 1 equivalent"},
+  "layer_2_firecrawl": {"status": "SKIPPED", "reason": "not needed"},
+  "layer_3_unsplash": {"status": "NOT_APPLICABLE"},
+  "owner_supplied": {
+    "status": "SATISFIED",
+    "source": "Jesse relay 2026-04-17 — 13 phone-camera photos dropped into sites/sandy-springs-plumbing/photos/",
+    "photo_count_raw": 13,
+    "photo_count_used": 7,
+    "photo_count_alts": 5,
+    "duplicates_removed": 1,
+    "photos_used": [
+      {"file": "hero-bathroom-finished.webp", "use": "hero", "description": "Finished bathroom: marble walk-in shower with gold fixtures, floating vanity with round mirror, dark tile floor"},
+      {"file": "work-designer-shower.webp", "use": "gallery-slot-1", "caption": "Designer Shower", "description": "Black and white geometric tile shower with matte black rainfall head and controls"},
+      {"file": "work-luxury-tub.webp", "use": "gallery-slot-2", "caption": "Freestanding Tub", "description": "Freestanding luxury tub with wood-look tile floors, window overlooking greenery"},
+      {"file": "work-kitchen-plumbing.webp", "use": "gallery-slot-3", "caption": "Kitchen Plumbing", "description": "Modern kitchen sink install with matte black spring faucet, granite counter, Eat sign and KitchenAid mixer"},
+      {"file": "work-new-construction.webp", "use": "gallery-slot-4", "caption": "New Construction", "description": "Under-slab plumbing rough-in with trenched PVC drain lines on commercial/residential new build"},
+      {"file": "work-commercial-overhead.webp", "use": "gallery-slot-5", "caption": "Commercial Install", "description": "Commercial overhead PVC plumbing routing on concrete ceiling of large-scale building"},
+      {"file": "work-sewer-excavation.webp", "use": "gallery-slot-6", "caption": "Sewer & Septic", "description": "Septic tank excavation with mini-excavator, exposed septic lids, green sewer hose"}
+    ],
+    "alternates_available_for_future_swap": [
+      {"file": "alt-tile-shower.webp", "description": "Beige stone tile shower with bronze fixtures and decorative border accent row"},
+      {"file": "alt-commercial-sink.webp", "description": "Commercial stainless kitchen sink rough-in with spring faucet, unfinished concrete floor"},
+      {"file": "alt-under-vanity.webp", "description": "Under-vanity P-trap plumbing detail with matte black faucet above"},
+      {"file": "alt-onyx-shower.webp", "description": "Onyx/marble shower walls with gold fixtures, luxurious finish"},
+      {"file": "alt-sewer-yard.webp", "description": "Backyard sewer line excavation with fresh PVC trenched into ground"}
+    ]
+  },
+  "hero_strategy": {
+    "decision": "use owner-supplied real work photo",
+    "selected": "hero-bathroom-finished.webp",
+    "rationale": "Owner-supplied photo #3 was hero-worthy on its own — wide-format, crisp, high-end (marble + gold reads as premium plumbing). No AI generation needed. Defaults to owner-supplied authentic work rather than Recraft fallback.",
+    "recraft_brief_sitting": "hero-brief.json remains in place as documented fallback IF Jesse wants to regenerate later"
+  },
+  "notes": "Photos arrived AFTER v1 build went live with trust-band (no-gallery) pattern. v3 refactor adds full work-gallery section + wires hero-bathroom-finished.webp as the actual hero. Site now has: real reviews (6 verbatim) + real photos (1 hero + 6 gallery) + full timeline + trust band. Complete.",
   "created_at": "2026-04-17T15:25:00-04:00",
+  "updated_at": "2026-04-17T16:00:00-04:00",
   "created_by": "r1vs",
   "schema_version": "1.0"
 }
