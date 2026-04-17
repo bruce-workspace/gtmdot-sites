@@ -8,19 +8,27 @@
     "trade": "gutter_cleaning_exterior",
     "owner": "Shaun and Misty Tucker (husband and wife)",
     "location": "Woodstock, GA",
-    "specialties": "Gutter cleaning, gutter repair, gutter installation, gutter guards, fascia/soffit, siding repair, chimney, pressure washing, roof cleaning, wildlife exclusion. Maintenance plans 2-3x per year.",
+    "specialties": "Gutter cleaning, repair, installation, gutter guards, fascia/soffit, siding repair, chimney, pressure washing, roof cleaning, wildlife exclusion. Maintenance plans 2-3x per year.",
     "photo_heavy_trade": true,
-    "photo_notes": "Research flagged their website (tuckershomeservices.com) has a broken SSL certificate so pages won't load. Yelp only shows 5 photos. GBP status was NOT confirmed via web search — Mini's pilot note says 'rich GBP expected' but this is an educated guess based on 5.0 stars / 142 Nextdoor reviews. Could be a lean GBP."
+    "photo_notes": "Website (tuckershomeservices.com) has broken SSL certificate — WebFetch failed. Yelp returned 403 (anti-scraping). Yelp has 5 photos total. Facebook has 265 likes but content not scrapable."
   },
-  "photo_count_from_gbp_estimate": "unknown — likely 5-15 based on review volume and Nextdoor focus. Real risk: GBP may be sparse or unclaimed",
+  "photo_count_from_gbp_estimate": "Unknown. Yelp lists 5 photos but blocked from scrape. GBP status unconfirmed. Lean on Nextdoor-focused business with 142 reviews but thin photo footprint.",
+  "source_urls": {
+    "hero_url": null,
+    "gallery_urls": [],
+    "source": "NONE EXTRACTED",
+    "extracted_at": "2026-04-16T16:15:00-04:00",
+    "extraction_method": "tuckershomeservices.com SSL broken (fetch fails). Yelp returned 403. GBP anti-scraping. No accessible photo URLs.",
+    "notes": "Full Unsplash fallback required. Per Mini's pilot scope, this tests the sparse-photo-source fallback path."
+  },
   "hero": {
-    "search_for": "Shaun Tucker or a Tucker's crew member on a roof cleaning gutters, OR a hero shot of before/after gutter work showing clean gutters after debris removal. The rope-and-harness system they use is a unique visual differentiator — tech working from the roof rather than a ladder is a great shot if available.",
+    "search_for": "Technician on a roof cleaning gutters, or before/after gutter work showing clean gutters after debris removal. Shaun/Tucker crew would be ideal if available.",
     "count": 1,
     "filename": "hero.jpg",
-    "aspect_hint": "wide landscape, full-viewport background with gradient overlay"
+    "aspect_hint": "wide landscape, full-viewport background"
   },
   "gallery": {
-    "search_for": "Gutter work (clean vs clogged), fascia repair, siding work, chimney repair, roof cleaning, pressure washing driveways/walkways. Tucker's does full exterior maintenance so variety is good. Real residential properties, not stock.",
+    "search_for": "Gutter work (clean vs clogged), fascia repair, siding, chimney, roof cleaning, pressure washing.",
     "count": 6,
     "filename_pattern": "gbp-{n}.jpg",
     "aspect_hint": "4:3 or 3:2 landscape preferred"
@@ -37,19 +45,20 @@
     "gallery": "gbp-1.jpg through gbp-6.jpg",
     "location": "sites/tuckers-home-services/photos/"
   },
-  "fallback_if_unavailable": {
-    "hero": "If GBP has no usable hero, check Yelp photos (5 exist per research). If still nothing, contextual Unsplash: 'gutter cleaning technician ladder' or 'residential gutter work'. Note fallback in delivery message.",
-    "gallery": "If GBP under 6 usable: deliver what's available (min 3), supplement with Yelp photos if needed. Flag low photo count in delivery so I know to design around it."
+  "fallback_strategy": {
+    "if_insufficient_urls": "Use Unsplash contextual search. Specific terms: 'gutter cleaning technician ladder', 'residential gutter work', 'roof cleaning technician', 'fascia soffit repair home exterior'. If Tucker's specific rope-and-harness approach visible (harness system instead of ladder), that's a bonus differentiator. Deliver 7 photos or flag low count."
   },
   "acceptance_criteria": [
-    "Hero shows real gutter/exterior work OR the family team visibly at work",
-    "Gallery shows actual Tucker's work, not stock exterior maintenance scenes",
-    "Rope-and-harness system shots are a bonus — differentiator for this business",
+    "Hero shows real gutter/exterior work (Unsplash acceptable, technician visible)",
+    "Gallery shows exterior home maintenance (not generic home photos)",
+    "Rope-and-harness system shots are a bonus",
+    "No AI-generated images",
     "File sizes under 300KB each",
     "All JPEGs valid sRGB"
   ],
   "created_at": "2026-04-16T15:25:00-04:00",
+  "updated_at": "2026-04-16T16:15:00-04:00",
   "created_by": "r1vs",
   "pilot": true,
-  "pilot_notes": "This site is Mini's 'sparse-reviews fallback' pilot case — GBP photo situation is uncertain. Testing how the contract handles low-photo-count scenarios."
+  "pilot_notes": "Mini's 'sparse-photo-source' pilot case. All direct sources blocked (broken SSL, Yelp 403, GBP anti-scraping). Full Unsplash fallback expected."
 }
