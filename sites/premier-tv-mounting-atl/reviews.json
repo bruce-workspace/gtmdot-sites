@@ -1,0 +1,10 @@
+{
+  "reviews": [],
+  "counts": {"total_available": "unverified — public volume low; social proof concentrated on IG/TikTok", "captured": 0, "target_min": 3, "aggregate_rating": null, "aggregate_rating_source": "pending owner capture"},
+  "notes": "REVIEW-THIN — OWNER INPUT REQUIRED. Zero verbatim reviews captured. Yelp listing is geo-misfiled to Lugoff SC (actual market is Atlanta GA). Facebook page shows 0 FB Reviews. Google Business Profile unverified. Primary social proof is concentrated on Instagram (~5,238 followers per search snippet) and TikTok. Search summarizers returned paraphrased sentiment themes but NOT verbatim — explicitly excluded from reviews.json per no-fabrication rule. Owner Marcus to supply: GBP URL + confirmed star rating + review count + 5-8 verbatim testimonials with first names/initials (from texts/DMs/emails). Site built using no-gallery Morales-style testimonial-absent pattern per Mini directive.",
+  "capture_attempts": [{"source": "google_gbp", "status": "not_confirmed", "reason": "GBP URL not surfaced by search"}, {"source": "facebook", "status": "empty", "reason": "0 FB reviews on page"}, {"source": "yelp", "status": "geo_misfiled", "reason": "listing under Lugoff SC; aggregate not surfaced"}, {"source": "instagram", "status": "follower_count_only", "reason": "5238 followers, no testimonial text captured"}, {"source": "tiktok", "status": "partial", "reason": "video activity, no review text"}],
+  "flags": ["owner_input_required_before_publish", "no_verbatim_reviews", "rating_unverified", "founding_year_unverified", "yelp_geo_misfiled"],
+  "created_at": "2026-04-17T07:30:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}

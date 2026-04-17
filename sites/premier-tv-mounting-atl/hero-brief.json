@@ -1,0 +1,30 @@
+{
+  "slug": "premier-tv-mounting-atl",
+  "business_name": "Premier TV Mounting ATL",
+  "trade_category": "av_installation",
+  "owner_demographics": {
+    "race": "unverified",
+    "gender": "male",
+    "approx_age_bracket": "28-42"
+  },
+  "prompt": "Modern living room feature wall at dusk with a large flat-screen TV mounted perfectly flush against dark shiplap wood paneling. Soundbar mounted clean below the TV. No visible cables — seamless cable concealment. Dim ambient lighting from floor lamp at side of frame creates dramatic shadow across wall. Deep blue color grading with subtle cyan glow from TV screen showing abstract cinema content (not a recognizable show). Photojournalistic interior photography style, realistic, shot on a professional camera with shallow depth of field. Aspect 16:9 landscape cinematic composition.",
+  "style": "realistic_image",
+  "aspect": "1600x893 landscape",
+  "no_vehicles": true,
+  "acceptance_criteria": [
+    "Single wall-mounted TV as hero subject",
+    "Absolutely no visible cables or wires",
+    "Soundbar mounted cleanly (optional but strongly preferred)",
+    "Dark feature wall (shiplap, stone, or brick texture) to showcase installation quality",
+    "Interior residential setting only — no yard, vehicle, or exterior",
+    "Moody dusk lighting with dark-blue color grade",
+    "TV screen content should be abstract/ambient, not a branded show, game, or recognizable content",
+    "No people in frame",
+    "No text, logos, or brand signage",
+    "Sharp edges on TV mount and wall junction — this IS the sell",
+    "Suitable for hero overlay with gradient on left third for headline"
+  ],
+  "created_at": "2026-04-17T07:30:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
