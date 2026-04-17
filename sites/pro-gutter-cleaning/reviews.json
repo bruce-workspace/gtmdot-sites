@@ -1,0 +1,17 @@
+{
+  "reviews": [
+    {"author": "Chasity Skinner", "rating": 5, "date": "5 months ago", "source": "birdeye", "text": "Nick came out at 8am in the pouring rain and did an immaculate job in a timely manner. Roof, gutters and down spouts are back in tip top shape. Would 100 percent be using again and 10/10 recommend for your roofing needs!", "verified": true},
+    {"author": "Johnny Potts", "rating": 5, "date": "1 year ago", "source": "birdeye", "text": "Perfect company to call for all your gutter needs, these guys pay attention to details and get the job done quick and efficiently", "verified": true},
+    {"author": "Vincent Pulignano", "rating": 4, "date": "4 months ago", "source": "birdeye", "text": "On time and very professional. Went beyond my expectations. I will definitely call them again and refer them.", "verified": true},
+    {"author": "Yelp customer", "rating": 5, "date": "recent", "source": "yelp", "text": "Matt the owner came out and measured my home and had custom cut 40ft solid gutters on both sides of my house!", "verified": true},
+    {"author": "HomeAdvisor customer", "rating": 5, "date": "recent", "source": "homeadvisor", "text": "Matt was phenomenal. He came and cleaned thoroughly and then raised my awareness to some issues I was having on the roof. He came back and fixed all the issues and added some more gutters to the house to alleviate water issues. I've hired him 4 times now due to the quality of work.", "verified": true},
+    {"author": "HomeAdvisor customer", "rating": 5, "date": "recent", "source": "homeadvisor", "text": "Working with Johnny was GREAT! He was professional and overall nice!! Would highly recommend Pro Gutter!", "verified": true},
+    {"author": "T.E.", "rating": 5, "date": "March 21, 2021", "source": "nextdoor", "text": "my good friend owns pro gutter and they're great!!", "verified": true, "location": "Winston, GA"}
+  ],
+  "counts": {"total_available": "30+ verified across Google, Yelp, Birdeye, Nextdoor, HomeAdvisor", "captured": 7, "target_min": 5, "aggregate_rating": 4.6, "aggregate_rating_source": "Birdeye live page (4.6 / 9); Nextdoor recommendations; HomeAdvisor 100% recommended"},
+  "notes": "25+ years family-owned. Owner Matt (+ team member Nick, Johnny). Sister entity 'Pro Roof Gutters and Siding LLC' at same address/phone. 30-day cleaning warranty, 1-year repair warranty. Carrollton HQ.",
+  "capture_attempts": [{"source": "google_gbp", "status": "redirect_protected", "reason": "share link redirects"}, {"source": "yelp", "status": "partial", "reason": "listing titles visible, full reviews blocked"}, {"source": "birdeye", "status": "success", "reason": "4 verbatim reviews with names"}, {"source": "nextdoor", "status": "success", "reason": "neighbor recommendations"}, {"source": "homeadvisor", "status": "partial", "reason": "search snippets, names not captured"}],
+  "created_at": "2026-04-17T00:00:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
