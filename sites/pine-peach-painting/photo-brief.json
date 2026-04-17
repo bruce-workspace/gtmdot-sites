@@ -1,0 +1,37 @@
+{
+  "slug": "pine-peach-painting",
+  "business_name": "Pine Peach Painting",
+  "gbp_listing_name": "Atlanta painting company Pine Peach Painting",
+  "owner": "Fernando Chamorro",
+  "address": "3700 Buford Hwy NE, Ste 69, Atlanta, GA 30329",
+  "phone": "(678) 651-6674",
+  "layer_1_places_api": {"status": "SKIPPED", "reason": "owner supplied 7 real work photos directly via Jesse"},
+  "layer_2_firecrawl": {"status": "SKIPPED", "reason": "not needed — Layer 1 equivalent satisfied by owner"},
+  "layer_3_unsplash": {"status": "NOT_APPLICABLE"},
+  "owner_supplied": {
+    "status": "SATISFIED",
+    "source": "Jesse relay from Fernando via phone photos dropped into sites/pine-peach-painting/photos/ on 2026-04-17",
+    "photo_count": 7,
+    "photos": [
+      {"file": "hero-gable-trim.jpg", "use": "hero", "description": "painter on ladder at gable trim of white house with mint shutters"},
+      {"file": "work-interior-beam.jpg", "use": "gallery-slot-1", "description": "interior ceiling beam detail with shiplap"},
+      {"file": "work-cottage-gable.jpg", "use": "gallery-slot-2", "description": "cottage-style white home with curved copper bay, painter on ladder"},
+      {"file": "work-kitchen-cabinets.jpg", "use": "gallery-slot-3", "description": "kitchen cabinet refinish with spray masking in progress"},
+      {"file": "work-before-after-siding.jpg", "use": "gallery-slot-4", "description": "before/after siding transformation from navy to warm beige"},
+      {"file": "work-deck-finished.jpg", "use": "gallery-slot-5", "description": "finished slate-painted deck with white railings"},
+      {"file": "work-barn-in-progress.jpg", "use": "gallery-slot-6", "description": "full exterior repaint on barn-style two-story, 3 ladders staged"}
+    ]
+  },
+  "hero_brief_needed": false,
+  "hero_brief_reason": "real hero photo supplied by owner — skip Recraft generation for this site",
+  "supplementary_intel": {
+    "source": "owner-supplied Yelp screenshot (IMG_1928)",
+    "services_confirmed": ["exterior painting", "exterior staining", "interior painting", "+ 4 more services visible in Yelp 'See all' expansion"],
+    "service_area_per_yelp_map": ["Atlanta", "Sandy Springs", "Alpharetta", "Johns Creek", "Duluth", "Marietta", "Austell", "Douglasville", "Conyers", "Covington", "Carrollton"],
+    "gbp_hours_status": "NOT SET — upsell opportunity for Fernando to add business hours on Google"
+  },
+  "notes": "Owner-supplied photos are production quality (phone-camera originals, good lighting, real work in progress). Hero shot shows painter on ladder working on gable trim — real, authentic, no staging. Gallery covers interior, exterior cottage, cabinet refinish, before/after siding, deck, and full exterior repaint — demonstrates full service range in 6 tiles. Removed 5 Unsplash placeholder photos (gbp-1 through gbp-5) now that real photos are in place.",
+  "created_at": "2026-04-17T15:15:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
