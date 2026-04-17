@@ -14,12 +14,21 @@
   },
   "photo_count_from_gbp_estimate": "1 confirmed real photo on website (truck). Real work photos exist on Instagram but are not accessible via URL fetch.",
   "source_urls": {
-    "hero_url": "https://lirp.cdn-website.com/a09a83df/dms3rep/multi/opt/Truck-Trailer-1920w.png",
-    "gallery_urls": [],
-    "source": "moonstonepressurewashing.com (branded truck image only)",
-    "extracted_at": "2026-04-16T16:05:00-04:00",
-    "extraction_method": "WebFetch on moonstonepressurewashing.com, excluded Getty stock images. Only truck photo is authentic to the business.",
-    "notes": "Truck image is PNG — Bruce should convert to JPEG per specs. Was used as hero in the original build and is their real branded vehicle."
+    "hero_url": "https://lh3.googleusercontent.com/places/ANXAkqFlDtsVYhSiAbam1KqfUXliKZBkzlVR7wjn0XsD-bjEOBoA1K646tntNBryB0WIsufH09akNY3yDXNXgh4wVnI2ri8bUIvKEw=s1600-w1024",
+    "gallery_urls": [
+      "https://lh3.googleusercontent.com/places/ANXAkqFnJkFQsmR2bM6eGKgWEz4dayXpHeIqq10jh8HatOhJw_Rw3QgPFSIiJ68050cWL9vLqCg04GU3DWmOXUpLRlK6mK03iK-2Xg=s1600-w1024",
+      "https://lh3.googleusercontent.com/places/ANXAkqGoZGCANmOFyryqS-sHbdTM3ySZOCS3o9dxEmr9gztbzu7aBooNAVZ95jvuDS6XDS_lZ7zpRGuGjSSVFf_ZcVX1e43_MhaOVQ=s1600-w1024",
+      "https://lh3.googleusercontent.com/places/ANXAkqG9DwZyYo-WBEZvNbQji0YW1RIwQ_2vJKlkSFcQdEhCRn064iDeQKaWJ3EXDF1DPD9s0aRCk-QuplOi-p8-eaAIF3ZGBHsOmQ=s1600-w1024",
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZNH9KY3_82I8Y6Jlj-AKzJK7nyg5rGBOmZBWImb4RggLgQXmgCpha-8sgSHEZR_zgi4ybRJYaH3zMXq8v6igEZzj8-kMy9HgQAN3De7RCxXQRz6k9t7naBE6-OnMMwGIy4bf7BPG6EB-sbCfw=s1600-w1024",
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZNQ914_8DBvosx9c6zs_8ZjliyY7lY_XibOFTHHtZ5saYtdJJONdta6voSq-mu0MSoxdSgGhOiewYycnUHRwXWMKdP_sHo-iCavXe0zadIQnSOc30xa9QaNdU2iTxz1hM4ovH-KXPYLuUwS2Ow=s1600-w1024",
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZNosUf6_UfiikHK1-2GsrGNQo9kpkBlIlmKe-e6lDERvoBOYE1AkgQEdiTYSIX6fXZmKCZOtlnIr_9pHldWHgw4ErjE6GTJwm7IAwC0QLleT8MCXvG7WLT01Jgwl3ARhDFvtlTl1yAj8mt5zA=s1600-w1024"
+    ],
+    "source": "Google Places API (Mac Mini Layer 1, manual unblock by Mini)",
+    "extracted_at": "2026-04-16T22:40:00-04:00",
+    "extraction_method": "Places API lookup with place_id ChIJYa25boXzKkYRHjfUN0LvjYo",
+    "place_id": "ChIJYa25boXzKkYRHjfUN0LvjYo",
+    "rating_from_places": "5.0 (67 reviews)",
+    "notes": "Places API provided authoritative GBP photos. Bruce downloads directly."
   },
   "hero": {
     "search_for": "Existing truck image is serviceable as hero (from their website). Alternative: father-and-son team at work pressure washing, or dramatic before/after driveway shot.",
