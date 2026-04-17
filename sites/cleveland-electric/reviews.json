@@ -1,0 +1,12 @@
+{
+  "reviews": [
+    {"author": "Google reviewer", "rating": 5, "date": "featured", "source": "google", "text": "Knowledgeable, reliable, honest, hard working group of some of the nicest folks.", "verified": true}
+  ],
+  "counts": {"total_available": "42 Google reviews (many appear to be employee reviews)", "captured": 1, "target_min": 5, "aggregate_rating": 4.1, "aggregate_rating_source": "Google live page"},
+  "notes": "REVIEW-THIN + MARKET MISMATCH: Cleveland Electric Company (Cleveland Group Inc) is a large commercial/industrial specialty contractor — NOT a residential trade business. Founded 1925, 5th-gen family, client list includes Vogtle Nuclear Plant ($315M contract), GM, Ford. 42 Google reviews largely appear to be employee/partner reviews, not customer reviews typical of the residential trade prospect pool. Only 1 verbatim review captured. Flagged for Jesse review before publish — may not fit the local-trade outreach template.",
+  "capture_attempts": [{"source": "google_gbp", "status": "partial", "reason": "1 verbatim surfaced; others appear to be employee reviews"}, {"source": "company_website", "status": "success", "reason": "rich about-us content, no customer testimonial section"}],
+  "flags": ["market_mismatch_commercial_industrial_contractor", "review_thin_customer_reviews", "owner_input_recommended"],
+  "created_at": "2026-04-17T00:00:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
