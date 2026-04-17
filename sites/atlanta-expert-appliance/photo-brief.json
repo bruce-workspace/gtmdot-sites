@@ -1,0 +1,54 @@
+{
+  "slug": "atlanta-expert-appliance",
+  "business_name": "Atlanta Expert Appliance Repair",
+  "gbp_search": "Atlanta Expert Appliance Repair Decatur GA",
+  "gbp_url": "https://www.google.com/maps/place/Atlanta+Expert+Appliance+Repair/@33.8070215,-84.2369659",
+  "gbp_place_id": null,
+  "business_context": {
+    "trade": "appliance_repair",
+    "owner": "Steve Baker",
+    "location": "Decatur, GA (service-area business)",
+    "specialties": "Sub-Zero, Viking, Thermador, Wolf, KitchenAid, GE Monogram, JennAir, Miele, all major brands",
+    "recent_gbp_activity": "Owner posted photos approximately 9 days ago as of research date"
+  },
+  "hero": {
+    "search_for": "Technician repairing high-end kitchen appliance (refrigerator, oven, dishwasher) in a residential home. Steve Baker in uniform if available, or a generic appliance repair tech with professional demeanor. Prefer photos showing Steve's branded van or uniform.",
+    "count": 1,
+    "filename": "hero.jpg",
+    "aspect_hint": "wide landscape 1024x700 or similar; will be used as full-viewport background with dark gradient overlay"
+  },
+  "gallery": {
+    "search_for": "Completed appliance repair work: refrigerators serviced, ovens repaired, washer/dryer installations, ice machines, dishwashers. Prefer owner-uploaded photos over customer-uploaded review photos. Show variety of appliance types.",
+    "count": 6,
+    "filename_pattern": "gbp-{n}.jpg",
+    "aspect_hint": "4:3 or 3:2 landscape preferred; used in work-gallery grid"
+  },
+  "specs": {
+    "format": "jpeg",
+    "max_edge_px": 1024,
+    "max_kb": 300,
+    "color_space": "sRGB",
+    "quality_hint": "JPEG quality 75-85 is the sweet spot"
+  },
+  "naming": {
+    "hero": "hero.jpg",
+    "gallery": "gbp-1.jpg through gbp-6.jpg",
+    "location": "sites/atlanta-expert-appliance/photos/"
+  },
+  "fallback_if_unavailable": {
+    "hero": "Use contextual Unsplash: 'appliance repair technician home' or 'kitchen appliance repair'. Note in delivery message that GBP hero unavailable.",
+    "gallery": "If fewer than 6 usable gallery photos exist on GBP, deliver what's available (min 3) and note count in delivery message. Do NOT pad with stock photos."
+  },
+  "acceptance_criteria": [
+    "Hero photo is authentic to the business (real van, uniform, tech, or contextually close Unsplash)",
+    "Gallery photos show actual appliance repair work, not stock kitchen scenes",
+    "No AI-generated images",
+    "No photos of Steve himself without permission signal (owner-uploaded is fine, third-party tech photos are not)",
+    "File sizes under 300KB each",
+    "All JPEGs valid sRGB"
+  ],
+  "created_at": "2026-04-16T15:00:00-04:00",
+  "created_by": "r1vs",
+  "pilot": true,
+  "pilot_notes": "First photo brief through the git-branch-as-transport contract. Feedback on brief format is welcome alongside delivery."
+}
