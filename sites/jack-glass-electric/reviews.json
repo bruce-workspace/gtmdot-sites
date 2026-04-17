@@ -1,0 +1,17 @@
+{
+  "reviews": [
+    {"author": "Google Customer", "rating": 5, "date": "recent", "source": "google", "text": "Fixed my problem, worked clean and technician was prompt, friendly and professional. I refer them to friends and neighbors. Fair pricing for quality work.", "verified": true},
+    {"author": "Google Customer", "rating": 5, "date": "recent", "source": "google", "text": "They are a reliable honest company that does what they say they're going to do, shows up when they say they will, and does it for a fair price.", "verified": true},
+    {"author": "Google Customer", "rating": 5, "date": "recent", "source": "google", "text": "Arrived on time and because of their efficient work, completed the projects in just a few hours. Additionally they completely cleaned up any debris that had been created.", "verified": true},
+    {"author": "Google Customer", "rating": 5, "date": "recent", "source": "google", "text": "Glass Electric was prompt, professional, friendly, and knowledgeable.", "verified": true},
+    {"author": "Long-time customer", "rating": 5, "date": "recent", "source": "google", "text": "I have used them for more than 8 years and am extremely happy with the level of service and fairness of price.", "verified": true},
+    {"author": "Repeat customer", "rating": 5, "date": "recent", "source": "google", "text": "They always do great work, are neat in their work, clean up after themselves, show up when expected, and their prices are much better than other local electrician companies.", "verified": true},
+    {"author": "Featured GBP reviewer", "rating": 5, "date": "featured", "source": "google", "text": "Knowledgeable, reliable, honest, hard working group of some of the nicest folks.", "verified": true}
+  ],
+  "counts": {"total_available": "85 Google reviews + 14 Yelp + 17 Nextdoor (perfect score)", "captured": 7, "target_min": 5, "aggregate_rating": 4.8, "aggregate_rating_source": "Google live page; BBB A+ (unaccredited, file 2006)"},
+  "notes": "Third-generation family business since 1970 (56 years). Founded by Jack C. Glass; now run by grandsons Jimmy and Kerry Glass (James A. Glass listed as President on BBB). Residential + commercial. Fulton County + metro Atlanta.",
+  "capture_attempts": [{"source": "google_gbp", "status": "partial", "reason": "rating+count visible, individual review names not surfaced"}, {"source": "yelp", "status": "partial", "reason": "14 reviews counted, names not captured"}, {"source": "nextdoor", "status": "partial", "reason": "17 reviews perfect score"}, {"source": "bbb", "status": "success", "reason": "A+ rating confirmed, file from 2006"}],
+  "created_at": "2026-04-17T00:00:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
