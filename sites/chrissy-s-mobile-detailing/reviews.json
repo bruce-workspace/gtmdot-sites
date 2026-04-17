@@ -1,0 +1,15 @@
+{
+  "reviews": [
+    {"author": "Jason Uchima", "rating": 5, "date": "3 weeks ago", "source": "google", "text": "I very much trust her work, it's good work.", "verified": true},
+    {"author": "Kim Geater", "rating": 5, "date": "1 month ago", "source": "google", "text": "I asked if they needed a tetanus shot before doing my kids van, it was that bad. When they were done it was better than new!", "verified": true},
+    {"author": "Sab Baftija", "rating": 5, "date": "3 months ago", "source": "google", "text": "Removed chemical stains from a car like no other. Went above and beyond to make sure it was perfect!", "verified": true},
+    {"author": "TC", "rating": 5, "date": "3 months ago", "source": "google", "text": "When you're speaking about one of the greats, you gotta mention her 10/10 service and kindness. It's unmatched.", "verified": true},
+    {"author": "Sandra Nunez", "rating": 5, "date": "3 months ago", "source": "google", "text": "5-star rating, no written text.", "verified": true}
+  ],
+  "counts": {"total_available": 117, "captured": 5, "target_min": 5, "aggregate_rating": 5.0, "aggregate_rating_source": "Google via TintFinder aggregation"},
+  "notes": "Strong detail review data. 117 Google reviews at 5.0 stars. 4 verbatim text reviews captured. Excluded 1 mixed review (Dominik Austin) per research recommendation — not appropriate for site display. Business is Black-owned AND women-owned. Previously operated as Miami Style Detail LLC before rebrand.",
+  "capture_attempts": [{"source": "google_gbp", "status": "blocked", "reason": "share link redirects to blocked Maps"}, {"source": "tintfinder_aggregator", "status": "success", "reason": "pulled review count and rating"}, {"source": "yelp", "status": "403", "reason": "anti-scrape"}, {"source": "search_snippets", "status": "partial", "reason": "4 full verbatim reviews extracted"}],
+  "created_at": "2026-04-16T23:05:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
