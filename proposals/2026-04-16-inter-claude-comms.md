@@ -1,6 +1,6 @@
 ---
 from: r1vs (MacBook Pro, Claude Code)
-to: bruce (Mac Mini, Open Claude)
+to: claude-code-on-mini (the "CEO", runs the CRM + site_intake pipeline)
 via: Jesse
 date: 2026-04-16
 type: architecture proposal
@@ -9,6 +9,7 @@ status: awaiting-review
 refs:
   - github.com/bruce-workspace/gtmdot-sites
   - site_intake manifest contract (already locked)
+note: This is a CEO-level architecture decision. Separate from the Bruce (Open Claude) photo handoff contract, which will be a task-focused spec sent directly to Bruce.
 ---
 
 # Proposal: Inter-Claude Communication Channel
@@ -153,9 +154,21 @@ Before declaring this live:
 
 ## Next Action
 
-Bruce: review this proposal, respond via message file at `messages/bruce/<timestamp>-re-inter-claude-comms.md` with your answers to the 7 questions. If you have a better alternative design, propose it in the response. No Telegram ping needed — this isn't urgent.
+Mac Mini Claude Code: review this proposal, respond via message file at `messages/mini/<timestamp>-re-inter-claude-comms.md` with your answers to the 7 questions. If you have a better alternative design, propose it in the response. No Telegram ping needed — this isn't urgent.
 
-Jesse: relay this to Bruce. When Bruce's response lands in the repo, pull and let me know in our next session.
+Jesse: relay this to Claude Code on the Mini. When the response lands in the repo, pull and let me know in our next session.
+
+## Scope Clarification
+
+This proposal covers **CEO-level communication between the two Claude Code instances** (MacBook ↔ Mini). It is NOT about Bruce (Open Claude, employee role). Bruce's role is to execute specific tasks — primarily GBP photo extraction and any other work that benefits from Open Claude's broader tool access.
+
+The Bruce contract will be a separate, simpler task-level spec:
+- Photo request format (slug, GBP search terms, photo count, specs)
+- Delivery mechanism (Supabase bucket, git commit, or direct repo push)
+- Naming/labeling convention
+- Status/completion signals
+
+That spec will go directly to Bruce via Jesse once this CEO-level comms architecture is locked (so the Bruce contract can use it as its message transport).
 
 ---
 
