@@ -1,0 +1,10 @@
+{
+  "reviews": [],
+  "counts": {"total_available": "5 Google reviews", "captured": 0, "target_min": 5, "aggregate_rating": 4.2, "aggregate_rating_source": "Google GBP screenshot aggregate"},
+  "notes": "REVIEW-THIN: Es Tree Service has only 5 Google reviews at 4.2 stars, and NO verbatim review text was surfaced during research (Google redirect protection + no indexed snippets). Small local owner-operated crew at 5547 Kingsport Dr, Atlanta 30342. Services: tree removal, stump grinding, stump removal, trimming/pruning. Service area: Atlanta, Sandy Springs, Buckhead, Brookhaven. No founding date, no Facebook, no Thumbtack/Angi. The built index.html uses the proof-hero aggregate pattern rather than quoting reviews, since no attributed verbatim text is available. Flagged for Jesse owner-input gather before outreach.",
+  "capture_attempts": [{"source": "google_gbp", "status": "partial", "reason": "rating and count visible, no individual review text indexed"}, {"source": "yelp", "status": "not_found", "reason": "no Yelp profile located"}, {"source": "facebook", "status": "not_found", "reason": "no FB page found"}, {"source": "thumbtack", "status": "not_found", "reason": "no listing"}],
+  "flags": ["review_thin_zero_verbatim", "owner_input_required_before_publish", "small_operation_limited_online_presence"],
+  "created_at": "2026-04-17T00:00:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
