@@ -1,0 +1,29 @@
+{
+  "slug": "bravo-plumbing-solutions",
+  "business_name": "Bravo Plumbing Solutions",
+  "trade_category": "plumbing",
+  "owner_demographics": {
+    "race": "unverified",
+    "gender": "male",
+    "approx_age_bracket": "35-50"
+  },
+  "prompt": "Professional male plumber in a clean dark navy work shirt with 'Bravo Plumbing' embroidered patch, kneeling beside a residential water heater in a modern Atlanta-area home. Holding a pipe wrench, confident expression, focused on copper pipe fitting. Dramatic side lighting from a basement utility room window. Realistic, photojournalistic style. No visible service vehicles. Cool professional color grading with deep navy blue and warm copper accents. Aspect 16:9 landscape cinematic composition.",
+  "style": "realistic_image",
+  "aspect": "1600x893 landscape",
+  "no_vehicles": true,
+  "acceptance_criteria": [
+    "Single plumber subject, professional not dirty/rough",
+    "Actively working on real plumbing fixture (water heater, pipe, or valve)",
+    "No visible faces if possible, or blurred/neutral face",
+    "No vehicle or truck visible",
+    "Deep navy brand hue dominates the clothing/composition",
+    "Copper/brass accent element visible (pipe, fitting, fixture)",
+    "Interior residential setting (basement, utility room, or under-sink), not outdoor yard",
+    "No text, logos, or signage in frame",
+    "Sharp foreground detail, slightly soft background",
+    "Suitable for hero overlay with dark gradient bottom-left to top-right"
+  ],
+  "created_at": "2026-04-17T07:15:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}

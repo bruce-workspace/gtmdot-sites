@@ -1,0 +1,10 @@
+{
+  "reviews": [],
+  "counts": {"total_available": "unverified — GBP scrape blocked", "captured": 0, "target_min": 3, "aggregate_rating": null, "aggregate_rating_source": "pending owner capture"},
+  "notes": "REVIEW-THIN — OWNER INPUT REQUIRED. GBP short link (share.google/hhxm3xMS6L2CLIcjo) redirects through Google anti-scraping; Yelp has no listing; BBB not listed; Facebook page ambiguous (name used by multiple unrelated US plumbing cos). Site built using Morales-style no-gallery testimonial-absent pattern per Mini directive. Forrell Hillery (owner) to supply: exact star rating, review count, 5-8 verbatim with reviewer first names, founding year, license number, full service list. Site currently uses verifiable trust signals only (address, phone, hours, service area).",
+  "capture_attempts": [{"source": "google_gbp", "status": "redirect_blocked", "reason": "share link redirects through bot protection"}, {"source": "yelp", "status": "not_found", "reason": "no Yelp listing"}, {"source": "bbb", "status": "not_found", "reason": "not accredited at 105 Bond Drive"}, {"source": "facebook", "status": "ambiguous", "reason": "name collision with multiple US plumbing cos"}, {"source": "z1biz", "status": "partial", "reason": "directory listing found, internal 4.8 score, 0 reviews on platform"}],
+  "flags": ["owner_input_required_before_publish", "no_verbatim_reviews", "rating_unverified", "founding_year_unverified"],
+  "created_at": "2026-04-17T07:15:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
