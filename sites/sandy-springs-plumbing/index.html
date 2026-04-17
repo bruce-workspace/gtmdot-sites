@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sandy Springs Plumbing, Heating &amp; Air Conditioning — 58 Years Serving Atlanta Metro</title>
+<meta name="description" content="Family-owned plumbing, heating, and air conditioning in Sandy Springs since 1968. 24-hour emergency service. 4.9 stars across Google reviews. Call Jack at (770) 896-9852.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "Sandy Springs Plumbing, Heating, and Air Conditioning",
+  "telephone": "+17708969852",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "165 Hilderbrand Dr",
+    "addressLocality": "Atlanta",
+    "addressRegion": "GA",
+    "postalCode": "30328",
+    "addressCountry": "US"
+  },
+  "areaServed": ["Sandy Springs","Dunwoody","Roswell","Alpharetta","Brookhaven","Buckhead","Atlanta"],
+  "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"25"},
+  "priceRange": "$$",
+  "foundingDate": "1968",
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59","description":"24-hour emergency service"}
+  ]
+}
+</script>
+<style>
+:root {
+  --bg: #060b14;
+  --surface: #0c1523;
+  --surface-2: #131f33;
+  --brand: #1a4d80;
+  --brand-dark: #103558;
+  --brand-light: #3d78ae;
+  --accent: #c8893f;
+  --accent-light: #e0a660;
+  --text: #ebeef5;
+  --muted: #8b97aa;
+  --border: rgba(255,255,255,0.08);
+  --star: #fbbf24;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* NAV */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(6,11,20,0.75); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 18px 24px; max-width: 1200px; margin: 0 auto; }
+.logo { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 700; letter-spacing: -0.5px; line-height: 1.1; }
+.logo-since { display: block; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 10px; letter-spacing: 3px; color: var(--accent); text-transform: uppercase; font-weight: 600; margin-top: 2px; }
+.logo span { color: var(--brand-light); }
+.nav-links { display: flex; gap: 28px; align-items: center; }
+.nav-links a { font-size: 14px; font-weight: 500; color: var(--text); opacity: 0.85; transition: opacity 0.2s; }
+.nav-links a:hover { opacity: 1; color: var(--accent-light); }
+.nav-cta { background: var(--accent); color: #000; padding: 11px 22px; border-radius: 8px; font-weight: 700; font-size: 14px; transition: transform 0.2s, background 0.2s; }
+.nav-cta:hover { background: var(--accent-light); transform: translateY(-1px); }
+.hamburger { display: none; background: none; border: none; color: var(--text); cursor: pointer; padding: 4px; }
+
+/* HERO */
+.hero { position: relative; min-height: 94vh; display: flex; align-items: center; padding: 120px 0 80px; overflow: hidden; }
+.hero-pattern { position: absolute; inset: 0; background:
+  radial-gradient(circle at 20% 40%, rgba(26,77,128,0.45) 0%, transparent 50%),
+  radial-gradient(circle at 80% 70%, rgba(200,137,63,0.18) 0%, transparent 45%),
+  linear-gradient(135deg, #060b14 0%, #0c1523 60%, #060b14 100%);
+}
+.hero-pattern::after { content: ''; position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(255,255,255,0.025) 1px, transparent 1px); background-size: 36px 36px; }
+.hero-content { position: relative; z-index: 2; max-width: 860px; }
+.eyebrow { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: var(--accent); margin-bottom: 20px; }
+.hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(40px, 5.8vw, 86px); font-weight: 600; line-height: 1.02; letter-spacing: -1.5px; margin-bottom: 24px; }
+.hero h1 em { font-style: italic; color: var(--accent-light); }
+.hero-sub { font-size: clamp(16px, 1.5vw, 20px); color: var(--muted); margin-bottom: 36px; max-width: 660px; line-height: 1.6; }
+.hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+.btn-primary { background: var(--accent); color: #000; padding: 16px 32px; border-radius: 10px; font-weight: 700; font-size: 15px; border: none; cursor: pointer; transition: transform 0.2s, background 0.2s; display: inline-flex; align-items: center; gap: 10px; }
+.btn-primary:hover { background: var(--accent-light); transform: translateY(-2px); }
+.btn-secondary { background: rgba(255,255,255,0.06); color: var(--text); padding: 16px 32px; border-radius: 10px; font-weight: 600; font-size: 15px; border: 1px solid var(--border); cursor: pointer; transition: background 0.2s; display: inline-flex; align-items: center; gap: 10px; }
+.btn-secondary:hover { background: rgba(255,255,255,0.1); }
+
+/* STATS */
+.stats { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 60px 0; }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; text-align: center; }
+.stat-num { font-size: 48px; font-weight: 900; color: var(--accent-light); font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1; margin-bottom: 8px; letter-spacing: -1px; }
+.stat-label { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 2px; font-weight: 500; }
+
+/* MARQUEE */
+.marquee { background: var(--surface-2); padding: 24px 0; overflow: hidden; border-bottom: 1px solid var(--border); }
+.marquee-track { display: flex; gap: 56px; animation: scroll 32s linear infinite; white-space: nowrap; }
+.marquee-item { font-size: 14px; font-weight: 600; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 12px; }
+.marquee-item svg { color: var(--accent); flex-shrink: 0; }
+@keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* SECTIONS */
+section { padding: 96px 0; }
+.section-head { text-align: center; max-width: 760px; margin: 0 auto 64px; }
+.section-head h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 3.5vw, 54px); font-weight: 600; letter-spacing: -1px; margin-bottom: 16px; line-height: 1.12; }
+.section-head h2 em { font-style: italic; color: var(--accent-light); }
+.section-head p { color: var(--muted); font-size: 17px; line-height: 1.7; }
+
+/* SERVICES */
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.service-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px 28px; transition: transform 0.25s, border-color 0.25s, background 0.25s; }
+.service-card:hover { transform: translateY(-4px); border-color: var(--brand); background: var(--surface-2); }
+.service-icon { width: 56px; height: 56px; border-radius: 12px; background: rgba(26,77,128,0.2); display: flex; align-items: center; justify-content: center; color: var(--brand-light); margin-bottom: 20px; }
+.service-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 600; margin-bottom: 10px; letter-spacing: -0.5px; }
+.service-card p { color: var(--muted); font-size: 15px; line-height: 1.6; }
+.service-tag { display: inline-block; font-size: 11px; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-top: 14px; }
+
+/* TRUST BAND (no-gallery Morales pattern) */
+.trust-band { background: var(--surface); position: relative; overflow: hidden; }
+.trust-band::before { content: ''; position: absolute; inset: 0; background:
+  radial-gradient(circle at 25% 30%, rgba(26,77,128,0.18) 0%, transparent 40%),
+  radial-gradient(circle at 75% 70%, rgba(200,137,63,0.14) 0%, transparent 40%); }
+.trust-band-inner { position: relative; z-index: 1; }
+.trust-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+.trust-card { background: var(--surface-2); border: 1px solid var(--border); border-radius: 16px; padding: 32px 28px; text-align: left; }
+.trust-card-icon { color: var(--accent-light); margin-bottom: 16px; }
+.trust-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 600; margin-bottom: 10px; letter-spacing: -0.5px; }
+.trust-card p { color: var(--muted); font-size: 15px; line-height: 1.65; }
+
+/* TIMELINE */
+.timeline-section { background: var(--bg); padding: 96px 0; }
+.timeline-head { text-align: center; max-width: 760px; margin: 0 auto 72px; }
+.timeline-head h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(32px, 3.5vw, 54px); font-weight: 600; letter-spacing: -1px; margin-bottom: 16px; line-height: 1.12; }
+.timeline-head h2 em { font-style: italic; color: var(--accent-light); }
+.timeline-head p { color: var(--muted); font-size: 17px; line-height: 1.7; }
+.timeline { max-width: 920px; margin: 0 auto; position: relative; padding-left: 40px; }
+.timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: linear-gradient(180deg, var(--accent) 0%, var(--brand) 50%, var(--brand-dark) 100%); }
+.timeline-item { position: relative; padding-bottom: 48px; }
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-item::before { content: ''; position: absolute; left: -40px; top: 4px; width: 20px; height: 20px; border-radius: 50%; background: var(--accent); border: 3px solid var(--bg); box-shadow: 0 0 0 2px var(--accent); }
+.timeline-year { font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 700; color: var(--accent-light); line-height: 1; margin-bottom: 8px; letter-spacing: -1px; }
+.timeline-item h3 { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 600; margin-bottom: 10px; letter-spacing: -0.5px; }
+.timeline-item p { color: var(--muted); font-size: 16px; line-height: 1.7; max-width: 640px; }
+
+/* STORY STRIP (visual accent inside timeline) */
+.story-strip { background: linear-gradient(135deg, rgba(26,77,128,0.22) 0%, rgba(200,137,63,0.14) 100%); border: 1px solid var(--border); border-radius: 20px; padding: 40px; margin-top: 48px; text-align: center; position: relative; overflow: hidden; }
+.story-strip::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(255,255,255,0.035) 1px, transparent 1px); background-size: 24px 24px; }
+.story-strip-content { position: relative; z-index: 1; }
+.story-strip-quote { font-family: 'Cormorant Garamond', serif; font-size: clamp(24px, 2.8vw, 36px); font-weight: 500; font-style: italic; line-height: 1.3; letter-spacing: -0.5px; max-width: 760px; margin: 0 auto 16px; }
+.story-strip-attr { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 3px; font-weight: 600; }
+
+/* AREA */
+.area { background: var(--surface); }
+.area-pills { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 32px; }
+.area-pill { background: var(--surface-2); border: 1px solid var(--border); padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 500; color: var(--text); transition: background 0.2s, border-color 0.2s; }
+.area-pill:hover { background: rgba(26,77,128,0.16); border-color: var(--brand); }
+
+/* FAQ */
+.faq-list { max-width: 820px; margin: 0 auto; }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-q { width: 100%; background: none; border: none; color: var(--text); padding: 28px 0; font-size: 18px; font-weight: 600; text-align: left; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px; font-family: inherit; }
+.faq-q:hover { color: var(--accent-light); }
+.faq-icon { color: var(--accent); transition: transform 0.3s; flex-shrink: 0; }
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+.faq-a { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease-out; }
+.faq-item.open .faq-a { grid-template-rows: 1fr; }
+.faq-a-inner { overflow: hidden; }
+.faq-a p { padding: 0 0 28px; color: var(--muted); font-size: 16px; line-height: 1.75; }
+
+/* FORM */
+.form-section { background: linear-gradient(180deg, var(--bg) 0%, var(--surface) 100%); }
+.form-wrap { max-width: 720px; margin: 0 auto; background: var(--surface-2); border: 1px solid var(--border); border-radius: 20px; padding: 48px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.form-full { grid-column: 1 / -1; }
+.form-group label { display: block; font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 8px; letter-spacing: 0.3px; }
+.form-group input, .form-group select, .form-group textarea { width: 100%; background: var(--bg); border: 1px solid var(--border); color: var(--text); padding: 14px 16px; border-radius: 10px; font-family: inherit; font-size: 15px; transition: border-color 0.2s, background 0.2s; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--brand); background: rgba(26,77,128,0.06); }
+.form-group textarea { resize: vertical; min-height: 120px; }
+.form-submit { margin-top: 12px; width: 100%; }
+
+/* FOOTER */
+.footer { background: #040810; padding: 72px 0 32px; border-top: 1px solid var(--border); }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+.footer h4 { font-size: 13px; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; margin-bottom: 18px; }
+.footer-col p, .footer-col a { display: block; color: var(--muted); font-size: 14px; margin-bottom: 10px; transition: color 0.2s; }
+.footer-col a:hover { color: var(--text); }
+.footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 700; color: var(--text); margin-bottom: 6px; line-height: 1.15; }
+.footer-logo span { color: var(--brand-light); }
+.footer-since { font-size: 10px; letter-spacing: 3px; color: var(--accent); text-transform: uppercase; font-weight: 600; margin-bottom: 16px; }
+.footer-bottom { padding-top: 32px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: var(--muted); flex-wrap: wrap; gap: 16px; }
+
+/* EXIT POPUP */
+.exit-popup { position: fixed; inset: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(12px); z-index: 300; display: none; align-items: center; justify-content: center; padding: 20px; }
+.exit-popup.active { display: flex; }
+.exit-popup-inner { background: var(--surface); border: 1px solid var(--border); border-radius: 24px; padding: 56px 48px; max-width: 520px; width: 100%; text-align: center; position: relative; }
+.exit-close { position: absolute; top: 16px; right: 16px; background: none; border: none; color: var(--muted); cursor: pointer; padding: 8px; }
+.exit-popup h3 { font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 600; margin-bottom: 14px; line-height: 1.15; letter-spacing: -1px; }
+.exit-popup h3 em { font-style: italic; color: var(--accent-light); }
+.exit-popup p { color: var(--muted); margin-bottom: 24px; font-size: 16px; line-height: 1.6; }
+.claim-code { background: rgba(200,137,63,0.14); border: 1px dashed var(--accent); border-radius: 10px; padding: 16px; font-size: 18px; font-weight: 700; color: var(--accent-light); letter-spacing: 4px; margin-bottom: 24px; }
+
+/* CLAIM BAR */
+.claim-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); padding: 14px 24px; display: none; z-index: 90; backdrop-filter: blur(20px); }
+.claim-bar.active { display: flex; align-items: center; justify-content: space-between; gap: 20px; max-width: 1200px; margin: 0 auto; }
+.claim-bar-text { font-size: 14px; color: var(--text); }
+.claim-bar-text strong { color: var(--accent-light); }
+
+/* MOBILE PHONE */
+.mobile-phone { display: none; position: fixed; bottom: 80px; right: 16px; background: var(--accent); color: #000; width: 56px; height: 56px; border-radius: 50%; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(200,137,63,0.4); z-index: 80; }
+
+/* COOKIE */
+.cookie { position: fixed; bottom: 16px; left: 16px; right: 16px; max-width: 420px; margin: 0 auto; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px; font-size: 13px; z-index: 70; display: none; }
+.cookie.active { display: block; }
+.cookie-actions { display: flex; gap: 10px; margin-top: 12px; }
+.cookie button { background: var(--accent); color: #000; border: none; padding: 8px 16px; border-radius: 7px; font-weight: 700; font-size: 13px; cursor: pointer; }
+.cookie button.secondary { background: transparent; color: var(--muted); border: 1px solid var(--border); font-weight: 600; }
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .services-grid, .trust-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hamburger { display: block; }
+  .nav-links.active { display: flex; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; background: var(--surface); padding: 20px; gap: 18px; border-bottom: 1px solid var(--border); }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 24px; }
+  .services-grid, .trust-grid { grid-template-columns: 1fr; }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-wrap { padding: 32px 24px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .claim-bar.active { flex-direction: column; text-align: center; gap: 12px; padding-bottom: 14px; }
+  .mobile-phone { display: flex; }
+  .hero { padding: 100px 0 60px; }
+  section, .timeline-section { padding: 72px 0; }
+  .timeline { padding-left: 32px; }
+  .timeline-year { font-size: 32px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">Sandy <span>Springs</span> Plumbing<span class="logo-since">Since 1968</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#trust">Why Us</a>
+      <a href="#story">Our Story</a>
+      <a href="#area">Service Area</a>
+      <a href="#faq">FAQ</a>
+      <a href="tel:+17708969852" class="nav-cta">(770) 896-9852</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-pattern"></div>
+  <div class="container hero-content">
+    <span class="eyebrow">Family-Owned · Serving Atlanta Since 1968</span>
+    <h1>Fifty-eight years of Atlanta plumbing. <em>Ask for Jack.</em></h1>
+    <p class="hero-sub">Plumbing, heating, and air conditioning — under one roof, on one call. Founded in 1968 on Hilderbrand Drive and still running 24/7. Four-point-nine stars from real Atlanta homeowners.</p>
+    <div class="hero-ctas">
+      <a href="tel:+17708969852" class="btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        Call Jack (770) 896-9852
+      </a>
+      <a href="#estimate" class="btn-secondary">
+        Request Service
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container stats-grid">
+    <div><div class="stat-num">4.9★</div><div class="stat-label">Google Rating</div></div>
+    <div><div class="stat-num">25</div><div class="stat-label">Verified Reviews</div></div>
+    <div><div class="stat-num">58</div><div class="stat-label">Years Family-Owned</div></div>
+    <div><div class="stat-num">24/7</div><div class="stat-label">Emergency Service</div></div>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Family-Owned Since 1968</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Plumbing · Heating · AC</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> 24-Hour Emergency</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> 4.9★ on Google</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Sewer Camera &amp; Locate</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Gas Line Specialist</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Family-Owned Since 1968</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Plumbing · Heating · AC</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> 24-Hour Emergency</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> 4.9★ on Google</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Sewer Camera &amp; Locate</span>
+    <span class="marquee-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Gas Line Specialist</span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h2>Every pipe, every system, <em>under one roof.</em></h2>
+      <p>Fifty-eight years of doing plumbing, heating, and air conditioning means there isn't much we haven't already fixed.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+        <h3>Emergency Plumbing</h3>
+        <p>Burst lines, no hot water, sewer backing up, gas smell. Call the line — we answer, and we get on the road.</p>
+        <span class="service-tag">24 Hours</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg></div>
+        <h3>Sewer Camera &amp; Locate</h3>
+        <p>Camera inspection, line tracing, root clearance, dig repair. See the problem before we open the ground.</p>
+        <span class="service-tag">Camera Diagnostic</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="3" width="12" height="18" rx="2"></rect><line x1="12" y1="7" x2="12" y2="11"></line><circle cx="12" cy="15" r="2"></circle></svg></div>
+        <h3>Water Heaters</h3>
+        <p>Tank and tankless. Install, repair, element swap, relight, anode replacement. We'll tell you which makes sense for your house.</p>
+        <span class="service-tag">Tank + Tankless</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 -9 4 18 3 -9h4"></path></svg></div>
+        <h3>Drain Cleaning</h3>
+        <p>Kitchen, bath, laundry, mainline. Snaking, hydro-jetting, root-clearance. No recurring clogs on our clock.</p>
+        <span class="service-tag">Snake + Jet</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"></path><path d="M12 22V12"></path><circle cx="12" cy="10" r="2"></circle><path d="M5 22h14"></path></svg></div>
+        <h3>Gas Line Service</h3>
+        <p>New gas line install, leak repair, shut-off valve replacement, appliance hookup. Licensed gas work.</p>
+        <span class="service-tag">Licensed Gas</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"></rect><line x1="3" y1="12" x2="21" y2="12"></line><line x1="7" y1="9" x2="7" y2="9.01"></line><line x1="7" y1="15" x2="7" y2="15.01"></line></svg></div>
+        <h3>Heating &amp; Furnace</h3>
+        <p>Furnace diagnostic, ignitor and blower swaps, full heating replacements. Winter calls get priority scheduling.</p>
+        <span class="service-tag">HVAC</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4"></path><path d="M18 12h4"></path><path d="M12 2v4"></path><path d="M12 18v4"></path><circle cx="12" cy="12" r="4"></circle></svg></div>
+        <h3>Air Conditioning</h3>
+        <p>Condenser service, coil cleaning, refrigerant charge, compressor replacement, full AC swaps. Atlanta summers are our busy season.</p>
+        <span class="service-tag">HVAC</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="16" rx="2"></rect><line x1="9" y1="8" x2="15" y2="8"></line><line x1="12" y1="12" x2="12" y2="16"></line></svg></div>
+        <h3>Toilet Install &amp; Repair</h3>
+        <p>Flange rebuild, wax ring swap, running-tank fix, full toilet swap. In and out on most visits.</p>
+        <span class="service-tag">Residential</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v4"></path><path d="M8 11v4"></path><path d="M8 19v2"></path><rect x="4" y="7" width="8" height="4" rx="1"></rect><rect x="4" y="15" width="8" height="4" rx="1"></rect><line x1="16" y1="3" x2="16" y2="21"></line></svg></div>
+        <h3>Faucet &amp; Fixture</h3>
+        <p>Cartridge swap, full fixture replace, supply-line upgrades. Kitchen, bath, laundry, utility.</p>
+        <span class="service-tag">All Rooms</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="trust" class="trust-band">
+  <div class="container trust-band-inner">
+    <div class="section-head">
+      <span class="eyebrow">Why Sandy Springs Plumbing</span>
+      <h2>Fifty-eight years of <em>showing up.</em></h2>
+      <p>What keeps a family-owned trade shop in business for nearly six decades isn't marketing. It's the phone getting answered and the truck showing up.</p>
+    </div>
+    <div class="trust-grid">
+
+      <div class="trust-card">
+        <div class="trust-card-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg></div>
+        <h3>Since 1968</h3>
+        <p>Fifty-eight years running the same trade from 165 Hilderbrand. That's longer than most Atlanta neighborhoods have existed in their current form.</p>
+      </div>
+
+      <div class="trust-card">
+        <div class="trust-card-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+        <h3>Ask for Jack</h3>
+        <p>Jack Sr. still runs the shop. You're not getting a call-center script — you're getting the owner or one of his long-time hands.</p>
+      </div>
+
+      <div class="trust-card">
+        <div class="trust-card-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+        <h3>4.9★ on Google</h3>
+        <p>Twenty-five verified reviews, overwhelming majority five-star. Real Atlanta homeowners, real calls, real fixes.</p>
+      </div>
+
+      <div class="trust-card">
+        <div class="trust-card-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+        <h3>Open 24 Hours</h3>
+        <p>Burst line at 2 AM, furnace quits on a Sunday, gas smell after dinner. Emergency calls triage live — you won't leave a voicemail into a void.</p>
+      </div>
+
+      <div class="trust-card">
+        <div class="trust-card-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 21v-4a4 4 0 0 0-8 0v4"></path><path d="M12 3v4"></path></svg></div>
+        <h3>Plumbing + HVAC · One Shop</h3>
+        <p>Most shops are one or the other. When your water heater ties into your gas line and your furnace shares the same mechanical room, you want the same crew handling all of it.</p>
+      </div>
+
+      <div class="trust-card">
+        <div class="trust-card-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+        <h3>Sandy Springs Local</h3>
+        <p>165 Hilderbrand Drive. Not a franchise. Not a dispatched national chain. The truck that shows up has the same name on the door as the shop.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="story" class="timeline-section">
+  <div class="container">
+    <div class="timeline-head">
+      <span class="eyebrow">Our Story</span>
+      <h2>From a small Hilderbrand shop <em>to a metro Atlanta fixture.</em></h2>
+      <p>A 58-year trade company's story isn't a marketing arc. It's a series of decades where the phone kept ringing and the truck kept leaving the driveway.</p>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-year">1968</div>
+        <h3>Founded on Hilderbrand Drive</h3>
+        <p>Jack opens the shop as a one-truck plumbing operation in what's now Sandy Springs. The address on Hilderbrand Drive has been the same ever since.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">1970s</div>
+        <h3>Neighborhood plumber to metro operator</h3>
+        <p>Atlanta metro expands. We follow the growth — Dunwoody, Roswell, Buckhead, all within an hour's radius. Repeat customers become multi-generation ones.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">1990s</div>
+        <h3>Heating &amp; AC added under the same roof</h3>
+        <p>Jack recognizes that plumbing calls often tie into gas, heating, and AC. Rather than pass the work, we add HVAC to the services menu. One shop, one call, one invoice.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">2010s</div>
+        <h3>Sewer camera &amp; locate technology</h3>
+        <p>Camera inspection, line locating, and precision diagnostics become standard tools. We diagnose before we dig. Atlanta homeowners save thousands on non-invasive repairs.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-year">Today</div>
+        <h3>24-hour service. Same family. Same address.</h3>
+        <p>Fifty-eight years in, still at 165 Hilderbrand. Still answering emergency calls around the clock. Still averaging 4.9 stars on Google from the people whose pipes we actually fixed.</p>
+      </div>
+
+    </div>
+    <div class="story-strip">
+      <div class="story-strip-content">
+        <div class="story-strip-quote">"We were a family plumbing shop when Atlanta was still a city you could drive across in twenty minutes. We're still a family plumbing shop now — we just know more neighborhoods."</div>
+        <div class="story-strip-attr">— Sandy Springs Plumbing, Heating &amp; Air Conditioning</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="area" class="area">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Service Area</span>
+      <h2>Sandy Springs HQ. <em>Full metro Atlanta.</em></h2>
+      <p>Based at 165 Hilderbrand. Most jobs are inside the I-285 perimeter; we also run calls into Roswell, Alpharetta, and Dunwoody.</p>
+    </div>
+    <div class="area-pills">
+      <span class="area-pill">Sandy Springs</span>
+      <span class="area-pill">Dunwoody</span>
+      <span class="area-pill">Roswell</span>
+      <span class="area-pill">Alpharetta</span>
+      <span class="area-pill">Brookhaven</span>
+      <span class="area-pill">Buckhead</span>
+      <span class="area-pill">Chamblee</span>
+      <span class="area-pill">Vinings</span>
+      <span class="area-pill">Marietta</span>
+      <span class="area-pill">Atlanta</span>
+      <span class="area-pill">Midtown</span>
+      <span class="area-pill">North Atlanta</span>
+      <span class="area-pill">Johns Creek</span>
+      <span class="area-pill">Dunwoody Village</span>
+      <span class="area-pill">Fulton County</span>
+      <span class="area-pill">DeKalb County</span>
+      <span class="area-pill">I-285 Perimeter</span>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>What people ask <em>before the first call.</em></h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q">Are you really open 24 hours?
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Yes — the line is answered around the clock for emergency plumbing, heating, and AC calls. For non-emergency work (scheduled installs, routine service), we book into standard daytime hours. If you're not sure which you have, call and we'll tell you.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Do you do both plumbing and HVAC, or just one?
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Both. We've been a combined plumbing + heating + air conditioning shop since the 1990s. Water heaters, gas lines, furnaces, AC condensers — same crew, same warranty call, same invoice.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">What's a typical service call cost?
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Every call gets a real quote before we start work. Diagnosis time, parts, and access all factor in. Tell us what's going on when you call and we'll give a realistic ballpark.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Do you use sewer cameras to diagnose problems?
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Yes. Camera inspection on sewer and drain lines is standard on any suspected line issue. We locate before we dig. Saves Atlanta homeowners thousands in unnecessary excavation.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Are you licensed and insured?
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Yes. Georgia plumbing and HVAC licenses, bonded, insured. We show certificates on request and send them with W-9 for commercial property-management accounts.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Do you handle gas line work?
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Yes — new gas line installs, leak repair, shut-off valve replacement, appliance hookup. Gas work is licensed and permitted; we pull the permits and coordinate inspection.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">Do you warranty your work?
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Yes. Labor is warrantied; parts carry the manufacturer warranty. If something we repaired fails, call us back. We're not going anywhere — we've been at the same address for 58 years.</p></div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">How do I pay?
+          <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Credit cards accepted. Check with us for check and financing options on larger jobs (HVAC replacement, sewer line rebuild).</p></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="estimate" class="form-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Request Service</span>
+      <h2>Tell us what's happening. <em>Jack's shop calls back.</em></h2>
+      <p>For emergencies, call (770) 896-9852 directly. For scheduled work, send a few details below.</p>
+    </div>
+    <form class="form-wrap" onsubmit="event.preventDefault(); alert('Thanks — we will call you back within the day.');">
+      <div class="form-grid">
+        <div class="form-group"><label>Your Name</label><input type="text" required placeholder="Jane Doe"></div>
+        <div class="form-group"><label>Phone</label><input type="tel" required placeholder="(404) 555-0100"></div>
+        <div class="form-group"><label>Email (optional)</label><input type="email" placeholder="jane@email.com"></div>
+        <div class="form-group"><label>City / Neighborhood</label><input type="text" placeholder="Sandy Springs"></div>
+        <div class="form-group form-full"><label>What do you need?</label>
+          <select>
+            <option>Emergency (burst pipe, no hot water, gas smell, AC out in summer, furnace out in winter)</option>
+            <option>Plumbing repair</option>
+            <option>Water heater</option>
+            <option>Drain / sewer</option>
+            <option>Gas line</option>
+            <option>Toilet / fixture</option>
+            <option>Heating service</option>
+            <option>Air conditioning service</option>
+            <option>Full HVAC replacement</option>
+            <option>Not sure / estimate</option>
+          </select>
+        </div>
+        <div class="form-group form-full"><label>Describe it briefly</label><textarea placeholder="Water heater stopped giving hot water; 12-year-old 50-gallon gas tank in basement..."></textarea></div>
+        <button type="submit" class="btn-primary form-submit">Send Service Request</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">Sandy <span>Springs</span> Plumbing</div>
+        <div class="footer-since">Since 1968</div>
+        <p>Plumbing, heating, and air conditioning serving Sandy Springs and metro Atlanta from 165 Hilderbrand Drive. Family-owned, 24-hour emergency.</p>
+        <p>165 Hilderbrand Dr<br>Atlanta, GA 30328</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#services">Emergency Plumbing</a>
+        <a href="#services">Water Heaters</a>
+        <a href="#services">Drain &amp; Sewer</a>
+        <a href="#services">Gas Line Service</a>
+        <a href="#services">Heating</a>
+        <a href="#services">Air Conditioning</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <p>24-Hour Emergency Line</p>
+        <p>Scheduled service:</p>
+        <p>Mon–Fri 8am–5pm</p>
+        <p>Saturday 6am–2pm</p>
+        <p>Sunday 1pm–4:30pm</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+17708969852">(770) 896-9852</a>
+        <a href="#estimate">Request Service</a>
+        <a href="#area">Service Area</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Sandy Springs Plumbing, Heating, and Air Conditioning. All rights reserved.</span>
+      <span>58 Years · Family-Owned · Atlanta Licensed</span>
+    </div>
+  </div>
+</footer>
+
+<div class="exit-popup" id="exitPopup">
+  <div class="exit-popup-inner">
+    <button class="exit-close" id="exitClose" aria-label="Close">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <h3>One family. <em>Fifty-eight years.</em> One call.</h3>
+    <p>Call Jack's shop at (770) 896-9852 — real answer, real fix, from the same address on Hilderbrand since 1968.</p>
+    <div class="claim-code">ASK FOR JACK</div>
+    <a href="tel:+17708969852" class="btn-primary" style="width:100%; justify-content:center;">Call (770) 896-9852</a>
+  </div>
+</div>
+
+<div class="claim-bar" id="claimBar">
+  <div class="claim-bar-text">Plumbing · Heating · AC. <strong>Same family. Same shop. Since 1968.</strong></div>
+  <a href="tel:+17708969852" class="btn-primary" style="padding:10px 20px; font-size:14px;">Call Jack</a>
+</div>
+
+<a href="tel:+17708969852" class="mobile-phone" aria-label="Call">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+</a>
+
+<div class="cookie" id="cookie">
+  <p>We use cookies to improve your experience and analyze site usage.</p>
+  <div class="cookie-actions">
+    <button onclick="document.getElementById('cookie').classList.remove('active'); localStorage.setItem('ck','1');">Accept</button>
+    <button class="secondary" onclick="document.getElementById('cookie').classList.remove('active'); localStorage.setItem('ck','1');">Decline</button>
+  </div>
+</div>
+
+<script>
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('active');
+});
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => btn.parentElement.classList.toggle('open'));
+});
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 600 && !sessionStorage.getItem('cbDismissed')) {
+    document.getElementById('claimBar').classList.add('active');
+  }
+});
+let exitShown = false;
+document.addEventListener('mouseleave', (e) => {
+  if (e.clientY < 10 && !exitShown && !sessionStorage.getItem('exitShown')) {
+    setTimeout(() => { document.getElementById('exitPopup').classList.add('active'); exitShown = true; sessionStorage.setItem('exitShown','1'); }, 5000);
+  }
+});
+document.getElementById('exitClose').addEventListener('click', () => document.getElementById('exitPopup').classList.remove('active'));
+document.getElementById('exitPopup').addEventListener('click', (e) => { if (e.target.id === 'exitPopup') e.currentTarget.classList.remove('active'); });
+if (!localStorage.getItem('ck')) setTimeout(() => document.getElementById('cookie').classList.add('active'), 2000);
+</script>
+
+</body>
+</html>

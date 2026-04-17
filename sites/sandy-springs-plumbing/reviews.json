@@ -1,0 +1,10 @@
+{
+  "reviews": [],
+  "counts": {"total_available": "25 Google reviews (visible in GBP screenshot)", "captured": 0, "target_min": 3, "aggregate_rating": 4.9, "aggregate_rating_source": "Google Business Profile screenshot supplied by Jesse 2026-04-17"},
+  "notes": "IDENTITY CONSOLIDATION: Two overlapping listings consolidated into one entity per Jesse's 2026-04-17 call. Authoritative identity: Sandy Springs Plumbing, Heating, and Air Conditioning at 165 Hilderbrand Dr (Yelp address surface) owned by Jack Sr. (Yelp verified business owner). Authoritative rating: 4.9/25 from Google Business Profile. EXCLUDED from site copy: the Yelp 1.0/2 rating (stale, unrepresentative). REVIEW-THIN ON VERBATIM: 0 verbatim captured — GBP screenshot shows 4.9 aggregate but review text was not in the expanded Reviews tab. Jack or Jesse to supply 3-8 verbatim reviews with reviewer first names from the GBP Reviews tab before publish. Site built with no-gallery Morales-style trust-band pattern per Mini directive (zero verbatim = review-thin treatment regardless of aggregate rating strength).",
+  "capture_attempts": [{"source": "google_gbp_screenshot", "status": "aggregate_only", "reason": "4.9/25 rating visible, individual review text not captured in screenshot"}, {"source": "yelp", "status": "excluded", "reason": "1.0/2 rating is stale/unrepresentative; not surfaced on-site"}],
+  "flags": ["owner_input_required_before_publish", "no_verbatim_reviews", "identity_consolidated_from_two_listings", "owner_full_name_needed", "photos_pending"],
+  "created_at": "2026-04-17T15:25:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
