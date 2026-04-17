@@ -1,0 +1,30 @@
+{
+  "reviews": [
+    {
+      "author": "Herb V.",
+      "rating": 5,
+      "date": "3 months ago",
+      "source": "google",
+      "text": "I had a new garage built and needed drywall installed. Wilbur came in with a great quote and flexible timing. He is a trustworthy friendly person that truly cares about the quality of his work. Everything he and his team did was professional and expertly done. He properly prepared the space, the installation, taping, sanding and job cleanup, left the garage with perfect paint ready surfaces. I would use his services again and would recommend him to family and friends.",
+      "verified": true
+    }
+  ],
+  "counts": {
+    "total_available": 161,
+    "captured": 1,
+    "target_min": 5,
+    "aggregate_rating": 4.9,
+    "aggregate_rating_source": "Google via Birdeye aggregation"
+  },
+  "notes": "REVIEW-THIN. Business has 161 total reviews (160 Google + 1 Birdeye) at 4.9 stars, but only 1 verbatim review is retrievable via public aggregators. GBP anti-scraping blocks direct Google review text extraction. Other platforms (Yelp, Facebook) have no reviews or returned errors. Site is built with stat-frame trust signal (160+ reviews, 4.9 stars) rather than verbatim review grid. Recommend: if Jesse wants richer review coverage, ask Wilbur to screenshot or export 5-8 favorite Google reviews for inclusion.",
+  "capture_attempts": [
+    {"source": "google_gbp", "status": "blocked", "reason": "anti-scraping"},
+    {"source": "birdeye_aggregator", "status": "partial", "reason": "only 1 full review surfaced, rest truncated"},
+    {"source": "yelp", "status": "unclaimed", "reason": "no reviews"},
+    {"source": "facebook", "status": "empty", "reason": "page nearly empty"},
+    {"source": "bbb", "status": "no_listing", "reason": "not listed on BBB"}
+  ],
+  "created_at": "2026-04-16T16:40:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
