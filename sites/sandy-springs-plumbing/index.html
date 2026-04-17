@@ -114,8 +114,20 @@ section { padding: 96px 0; }
 .service-card p { color: var(--muted); font-size: 15px; line-height: 1.6; }
 .service-tag { display: inline-block; font-size: 11px; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; font-weight: 600; margin-top: 14px; }
 
+/* REVIEWS */
+.reviews { background: var(--surface); }
+.reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.review-card { background: var(--surface-2); border: 1px solid var(--border); border-radius: 16px; padding: 28px; display: flex; flex-direction: column; }
+.review-stars { color: var(--star); margin-bottom: 14px; display: flex; gap: 2px; }
+.review-text { color: var(--text); font-size: 15px; line-height: 1.7; margin-bottom: 18px; flex: 1; }
+.review-meta { display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid var(--border); gap: 12px; }
+.review-name { font-weight: 600; font-size: 14px; }
+.review-service { font-size: 11px; color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600; text-align: right; }
+.review-tech-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(200,137,63,0.12); border: 1px solid rgba(200,137,63,0.3); padding: 4px 10px; border-radius: 999px; font-size: 11px; color: var(--accent-light); font-weight: 600; margin-bottom: 14px; width: fit-content; }
+.review-tech-badge svg { flex-shrink: 0; }
+
 /* TRUST BAND (no-gallery Morales pattern) */
-.trust-band { background: var(--surface); position: relative; overflow: hidden; }
+.trust-band { background: var(--bg); position: relative; overflow: hidden; }
 .trust-band::before { content: ''; position: absolute; inset: 0; background:
   radial-gradient(circle at 25% 30%, rgba(26,77,128,0.18) 0%, transparent 40%),
   radial-gradient(circle at 75% 70%, rgba(200,137,63,0.14) 0%, transparent 40%); }
@@ -216,7 +228,7 @@ section { padding: 96px 0; }
 
 /* MOBILE */
 @media (max-width: 900px) {
-  .services-grid, .trust-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid, .trust-grid, .reviews-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 768px) {
@@ -224,7 +236,7 @@ section { padding: 96px 0; }
   .hamburger { display: block; }
   .nav-links.active { display: flex; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; background: var(--surface); padding: 20px; gap: 18px; border-bottom: 1px solid var(--border); }
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 24px; }
-  .services-grid, .trust-grid { grid-template-columns: 1fr; }
+  .services-grid, .trust-grid, .reviews-grid { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
   .form-wrap { padding: 32px 24px; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
@@ -244,6 +256,7 @@ section { padding: 96px 0; }
     <a href="#" class="logo">Sandy <span>Springs</span> Plumbing<span class="logo-since">Since 1968</span></a>
     <div class="nav-links" id="navLinks">
       <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
       <a href="#trust">Why Us</a>
       <a href="#story">Our Story</a>
       <a href="#area">Service Area</a>
@@ -260,8 +273,8 @@ section { padding: 96px 0; }
   <div class="hero-pattern"></div>
   <div class="container hero-content">
     <span class="eyebrow">Family-Owned · Serving Atlanta Since 1968</span>
-    <h1>Fifty-eight years of Atlanta plumbing. <em>Ask for Jack.</em></h1>
-    <p class="hero-sub">Plumbing, heating, and air conditioning — under one roof, on one call. Founded in 1968 on Hilderbrand Drive and still running 24/7. Four-point-nine stars from real Atlanta homeowners.</p>
+    <h1>Fifty-eight years of Atlanta plumbing. <em>Ask for Jack, Jay, or Levi.</em></h1>
+    <p class="hero-sub">Plumbing, heating, and air conditioning — under one roof, on one call. Founded in 1968 on Hilderbrand Drive and still running 24/7. Four-point-nine stars across 25 verified Google reviews from real Atlanta homeowners.</p>
     <div class="hero-ctas">
       <a href="tel:+17708969852" class="btn-primary">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
@@ -377,6 +390,115 @@ section { padding: 96px 0; }
   </div>
 </section>
 
+<section id="reviews" class="reviews">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What Atlanta Says</span>
+      <h2>4.9 stars across <em>25 Google reviews.</em></h2>
+      <p>Real names. Real techs. Real jobs. Every review below is verbatim from the GBP — not one is invented.</p>
+    </div>
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="review-stars">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </div>
+        <span class="review-tech-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Bryan
+        </span>
+        <p class="review-text">"I recently hired a plumber in Dunwoody to replace both my main water line and sewer line, and I couldn't be happier with the experience. Bryan, the plumber who helped me out, really knew his stuff and took the time to explain everything in simple terms so I understood what was happening with my pipes."</p>
+        <div class="review-meta"><span class="review-name">Aurora Trevino</span><span class="review-service">Water + Sewer Line</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </div>
+        <span class="review-tech-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Jay
+        </span>
+        <p class="review-text">"Sandy Springs Plumbing Heating Air Conditioning did an amazing job with my bathroom plumbing project. Jay was the plumber who helped me, and he explained every step of the process in a way that was easy to understand. They moved my shower, sink, and toilet to make the space work better for me, and the difference is huge."</p>
+        <div class="review-meta"><span class="review-name">Judith Stone</span><span class="review-service">Bathroom Remodel</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </div>
+        <span class="review-tech-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Levi
+        </span>
+        <p class="review-text">"I was so relieved when I called for help with my clogged kitchen sink and the plumber was able to come out to my home in Dunwoody the same day. Levi showed up right on time and was both friendly and professional. He quickly figured out what was causing the blockage and in less than an hour, my kitchen sink was draining perfectly again."</p>
+        <div class="review-meta"><span class="review-name">Brandi Snyder</span><span class="review-service">Same-Day Drain</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </div>
+        <span class="review-tech-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Jay
+        </span>
+        <p class="review-text">"The service I received was outstanding! Everyone was very professional and really went the extra mile to help with my plumbing emergency. They made sure my water issue was handled quickly and took it seriously from start to finish. Jay, the plumber who came out, was fantastic and clearly takes great pride in his work."</p>
+        <div class="review-meta"><span class="review-name">Joshua Humphrey</span><span class="review-service">Plumbing Emergency</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </div>
+        <span class="review-tech-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Todd, Jay, Levi
+        </span>
+        <p class="review-text">"I always call Sandy Springs Plumbing Heating Air Conditioning whenever I have plumbing problems. Their team does an outstanding job and gets everything fixed right the first time, so I never have to worry about calling them back. I live in an older home, and they've updated my pipes and fixtures so everything works great now."</p>
+        <div class="review-meta"><span class="review-name">Brent P.</span><span class="review-service">Repeat Customer</span></div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </div>
+        <span class="review-tech-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Levi, Pedro
+        </span>
+        <p class="review-text">"We've used this plumbing company a few times and have always been happy with the results. The first job was when Levi installed a toilet while we were building out our basement bathroom. Later, Pedro handled a shower installation, and it looked fantastic when finished!"</p>
+        <div class="review-meta"><span class="review-name">Maya K.</span><span class="review-service">Repeat Customer</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section id="trust" class="trust-band">
   <div class="container trust-band-inner">
     <div class="section-head">
@@ -393,9 +515,9 @@ section { padding: 96px 0; }
       </div>
 
       <div class="trust-card">
-        <div class="trust-card-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
-        <h3>Ask for Jack</h3>
-        <p>Jack Sr. still runs the shop. You're not getting a call-center script — you're getting the owner or one of his long-time hands.</p>
+        <div class="trust-card-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+        <h3>Ask for Jack. Or Jay. Or Levi.</h3>
+        <p>Jack Sr. still runs the shop. Jay, Levi, Bryan, Todd, and Pedro are the names customers keep mentioning by name in reviews. Real plumbers, real accountability — not dispatched contractors.</p>
       </div>
 
       <div class="trust-card">
