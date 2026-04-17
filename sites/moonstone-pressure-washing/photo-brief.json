@@ -10,46 +10,55 @@
     "location": "Lithia Springs, GA (service-area, based at 1044 Moonstone Court)",
     "specialties": "Soft washing (house, roof, fencing), pressure washing (driveways, patios, sidewalks), paver sealing, gutter cleaning, commercial washing. AMRA-compliant roof cleaning.",
     "photo_heavy_trade": true,
-    "photo_notes": "Pressure washing is THE most photo-dependent trade — the before/after transformation is the entire sales pitch. Their Instagram @moonstonepressurewashingllc has 40+ work photos. Website embeds these. GBP specifically is unknown but research suggests they document work heavily."
+    "photo_notes": "Their website is mostly Getty stock images (not usable) plus 1 real branded truck image. Instagram @moonstonepressurewashingllc has 40+ real work photos but is not web-scrapable. GBP photo situation unknown."
   },
-  "photo_count_from_gbp_estimate": "unknown — could be 10-40+. Instagram has 40+, but GBP may be smaller subset",
+  "photo_count_from_gbp_estimate": "1 confirmed real photo on website (truck). Real work photos exist on Instagram but are not accessible via URL fetch.",
+  "source_urls": {
+    "hero_url": "https://lirp.cdn-website.com/a09a83df/dms3rep/multi/opt/Truck-Trailer-1920w.png",
+    "gallery_urls": [],
+    "source": "moonstonepressurewashing.com (branded truck image only)",
+    "extracted_at": "2026-04-16T16:05:00-04:00",
+    "extraction_method": "WebFetch on moonstonepressurewashing.com, excluded Getty stock images. Only truck photo is authentic to the business.",
+    "notes": "Truck image is PNG — Bruce should convert to JPEG per specs. Was used as hero in the original build and is their real branded vehicle."
+  },
   "hero": {
-    "search_for": "Father-and-son team in action pressure washing a house or driveway, OR a dramatic before/after driveway shot with the dirty/clean split visible. Prefer real Alonzo/Alonso photo over stock. Current hero is their branded truck image (usable fallback).",
+    "search_for": "Existing truck image is serviceable as hero (from their website). Alternative: father-and-son team at work pressure washing, or dramatic before/after driveway shot.",
     "count": 1,
     "filename": "hero.jpg",
-    "aspect_hint": "wide landscape, will be full-viewport background with gradient overlay"
+    "aspect_hint": "wide landscape. Truck image is 1080x446 — works as full-width banner with gradient overlay."
   },
   "gallery": {
-    "search_for": "Before/after transformations: house washing, driveway cleaning, roof cleaning, deck cleaning, paver sealing. Ideally paired before/after shots. If only separate photos exist, prioritize the most dramatic clean-up shots (mildew removal, algae-to-clean, black-streaked roof to clean).",
+    "search_for": "Before/after transformations: house washing, driveway cleaning, roof cleaning, deck cleaning, paver sealing. Dramatic clean-up shots preferred. Try GBP first.",
     "count": 6,
     "filename_pattern": "gbp-{n}.jpg",
-    "aspect_hint": "4:3 or 3:2 landscape preferred for grid display"
+    "aspect_hint": "4:3 or 3:2 landscape preferred"
   },
   "specs": {
     "format": "jpeg",
     "max_edge_px": 1024,
     "max_kb": 300,
     "color_space": "sRGB",
-    "quality_hint": "JPEG quality 75-85"
+    "quality_hint": "JPEG quality 75-85. Convert the hero PNG to JPEG."
   },
   "naming": {
-    "hero": "hero.jpg (already exists with truck image — REPLACE if better GBP option available, KEEP if not)",
+    "hero": "hero.jpg (REPLACE existing with this source_urls hero — same image, just needs JPEG conversion and size optimization)",
     "gallery": "gbp-1.jpg through gbp-6.jpg",
     "location": "sites/moonstone-pressure-washing/photos/"
   },
-  "fallback_if_unavailable": {
-    "hero": "Keep existing hero.jpg (branded truck from their website). It's authentic to the business.",
-    "gallery": "If GBP has fewer than 6 usable photos, check Instagram @moonstonepressurewashingllc next (Bruce has broader tool access). If still under 6, deliver 3-5 and note in delivery message. Do NOT use stock pressure washing photos."
+  "fallback_strategy": {
+    "if_insufficient_urls": "Gallery: fall back to Unsplash contextual search. Best terms: 'pressure washing driveway before after', 'house soft washing technician', 'roof cleaning technician'. Deliver 3-6 photos. Pressure washing is the most visually-driven trade so photos matter — do not skip gallery."
   },
   "acceptance_criteria": [
-    "Hero shows either the family team or a dramatic before/after driveway transformation",
-    "Gallery shows real Moonstone work (recognizable property contexts, not staged stock)",
-    "No AI-generated or stock pressure washing photos",
+    "Hero shows the branded Moonstone truck (from source_urls) OR a dramatic before/after driveway",
+    "Gallery shows pressure washing work (real or authentic Unsplash), not generic exterior home stock",
+    "No Getty stock or AI-generated images",
     "Before/after pairs are ideal where available",
     "File sizes under 300KB each",
     "All JPEGs valid sRGB"
   ],
   "created_at": "2026-04-16T15:20:00-04:00",
+  "updated_at": "2026-04-16T16:05:00-04:00",
   "created_by": "r1vs",
-  "pilot": true
+  "pilot": true,
+  "pilot_notes": "Mini's 'service-area photo-heavy trade' pilot case. Real photos limited to 1 truck image (website is mostly Getty stock). Gallery will likely need Unsplash fallback."
 }
