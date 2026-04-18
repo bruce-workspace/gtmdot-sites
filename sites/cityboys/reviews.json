@@ -1,0 +1,18 @@
+{
+  "reviews": [
+    {"author": "Nicoline Collins", "rating": 5, "date": "recent", "source": "google", "text": "Technician Michael provided exceptional service. He was professional, knowledgeable, on-time, and efficient. He properly diagnosed and fixed the issues with our Bertazzoni refrigerator when other service providers could not.", "verified": true, "tech": "Michael"},
+    {"author": "Google Customer", "rating": 5, "date": "recent", "source": "google", "text": "Extremely professional, very efficient, reasonable in price, patient, and informative to the customer.", "verified": true},
+    {"author": "Google Customer", "rating": 5, "date": "recent", "source": "google", "text": "Curtis was very nice and professional. He fixed our washer in a short period of time, but took the time to explain and show us what the problem was.", "verified": true, "tech": "Curtis"},
+    {"author": "Jennifer R.", "rating": 5, "date": "recent", "source": "google", "text": "Responsive, professional, reasonably priced.", "verified": true},
+    {"author": "Angi Customer", "rating": 5, "date": "recent", "source": "angi", "text": "Very professional on the phone. Service fee was half of what other companies quoted. A $49 service call that was included in the repair with an itemized breakdown.", "verified": true},
+    {"author": "Nancy V.", "rating": 5, "date": "recent", "source": "google", "text": "Call Curtis at Cityboysrus.com $49.00 service call. He does all my work.", "verified": true, "tech": "Curtis"}
+  ],
+  "counts": {"total_available": "391 reviews", "captured": 6, "target_min": 3, "aggregate_rating": 4.3, "aggregate_rating_source": "Google aggregate"},
+  "notes": "City Boys R Us appliance repair. Owner/face Curtis; named technician Michael. Atlanta (3348 Peachtree Rd NE, Suite 700). $49 service call flat-fee pricing. 391 reviews is substantial.",
+  "capture_attempts": [{"source": "google_angi", "status": "success", "reason": "6 verbatim reviews captured from HTML inline review-feed"}],
+  "flags": [],
+  "team_from_reviews": ["Curtis", "Michael"],
+  "created_at": "2026-04-18T07:00:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
