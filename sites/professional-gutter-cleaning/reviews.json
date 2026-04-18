@@ -1,0 +1,18 @@
+{
+  "reviews": [
+    {"author": "Tony S.", "rating": 5, "date": "recent", "source": "google", "text": "Esau was a complete professional; he arrived on time and did excellent work. Though I only hired to repair a downspout, he also cleaned my gutters for very little extra. I will absolutely use him again for gutter work.", "verified": true, "tech": "Esau"},
+    {"author": "Ted B.", "rating": 5, "date": "recent", "source": "google", "text": "Professional Gutter Cleaning was great. They responded right away. They quoted me a fair price and then stuck to it. They did quality work and finished quickly. I would hire them again when needed.", "verified": true},
+    {"author": "Carmen A.", "rating": 5, "date": "recent", "source": "google", "text": "Excellent service. Gonzales was punctual and his experience showed. He also repaired a leak due to sloppy work by the company that originally installed my gutters. He cleaned up thoroughly after he completed the gutter and roof clean-up.", "verified": true, "tech": "Gonzales"},
+    {"author": "Seth S.", "rating": 5, "date": "recent", "source": "google", "text": "Fast, quality work at a price that beat the competition. PGC even went above and beyond.", "verified": true},
+    {"author": "PM W.", "rating": 5, "date": "recent", "source": "google", "text": "Excellent service, very professional! Would definitely recommend to others who are in need of gutter repair or gutter cleaning. I will certainly keep their card on file for future reference!", "verified": true},
+    {"author": "Thumbtack Customer", "rating": 5, "date": "recent", "source": "thumbtack", "text": "Excellent service. Gonzales was punctual and his experience showed. I highly recommend his services.", "verified": true, "tech": "Gonzales"}
+  ],
+  "counts": {"total_available": "45 reviews", "captured": 6, "target_min": 3, "aggregate_rating": 4.8, "aggregate_rating_source": "Google + Thumbtack aggregate"},
+  "notes": "Professional Gutter Cleaning (PGC). Atlanta. Phone (678) 923-5484. Named team: Esau, Gonzales. 4.8/45 across Google + Thumbtack. Gutter cleaning + repair + downspout work.",
+  "capture_attempts": [{"source": "google_thumbtack", "status": "success", "reason": "6 verbatim captured from HTML inline"}],
+  "flags": [],
+  "team_from_reviews": ["Esau", "Gonzales"],
+  "created_at": "2026-04-18T07:24:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
