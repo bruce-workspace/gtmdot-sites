@@ -1,0 +1,20 @@
+{
+  "reviews": [
+    {"author": "Nextdoor Neighbor", "rating": 5, "date": "recent", "source": "nextdoor", "text": "I HIGHLY recommend Shaun. You will NOT find anyone more professional, hardworking, and basically just awesomely awesome. Cannot say enough good things about Shaun and the quality of his work. You will not be disappointed!", "verified": true, "tech": "Shaun"},
+    {"author": "Angi Customer", "rating": 5, "date": "recent", "source": "angi", "text": "It is not often that you find a company that truly impresses you at every step of the process. Tucker's Home Services did just that for my home.", "verified": true},
+    {"author": "Wade S.", "rating": 5, "date": "recent", "source": "google", "text": "The scheduling process was seamless, the crew was efficient, and my gutters look great.", "verified": true},
+    {"author": "Angi Customer", "rating": 5, "date": "recent", "source": "angi", "text": "Work was completed to our satisfaction and in a very timely manner. Very ethical and did NOT try to over-sell a product or service that wasn't necessary.", "verified": true},
+    {"author": "Brenda R.", "rating": 5, "date": "recent", "source": "google", "text": "They not only arrived on time but they were early. Cleaned up afterwards. Reliable, efficient, and reasonably priced.", "verified": true},
+    {"author": "Nextdoor Neighbor", "rating": 5, "date": "recent", "source": "nextdoor", "text": "Recently used Tucker Home Services to clean our gutters. Communication was great, they were on time, reasonable and left my home and yard beautifully cleaned up.", "verified": true},
+    {"author": "Kelly B.", "rating": 5, "date": "recent", "source": "google", "text": "They did a great job clearing out gutters and downspouts. Also removed moss and cleaned surrounding areas.", "verified": true},
+    {"author": "Nextdoor Neighbor", "rating": 5, "date": "recent", "source": "nextdoor", "text": "Misty Tucker had her husband come out to clean our gutters yesterday and we were VERY pleased! My driveway hasn't looked this good.", "verified": true}
+  ],
+  "counts": {"total_available": "142 reviews aggregate across Google + Angi + Nextdoor", "captured": 8, "target_min": 3, "aggregate_rating": 5.0, "aggregate_rating_source": "Multi-platform aggregate"},
+  "notes": "Tucker's Home Services LLC. Husband-and-wife team: Shaun and Misty Tucker. Woodstock GA (3200 River Rock Pl). Phone (404) 697-7341. 5.0 / 142 across Google + Angi + Nextdoor. Gutter cleaning + repair + installation + gutter guards + fascia/soffit + siding repair + chimney + pressure washing + roof cleaning + wildlife exclusion. Nextdoor-focused business with strong neighborhood recommendations. Photos blocked at research time (broken SSL on own site, Yelp 403, Facebook unscrapable). Shipping Morales no-gallery pattern; gallery can be added later if Bruce can get photos or owner supplies.",
+  "capture_attempts": [{"source": "google_angi_nextdoor", "status": "success", "reason": "8 verbatim reviews from HTML inline"}, {"source": "photos", "status": "blocked", "reason": "website SSL broken, Yelp 403, Facebook blocked — no photo path currently"}],
+  "flags": ["photos_pending", "husband_wife_team_differentiator"],
+  "team_from_reviews": ["Shaun Tucker (owner)", "Misty Tucker (owner, scheduling)"],
+  "created_at": "2026-04-18T07:58:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
