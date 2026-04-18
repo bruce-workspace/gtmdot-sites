@@ -1,0 +1,17 @@
+{
+  "reviews": [
+    {"author": "Ian B.", "rating": 5, "date": "recent", "source": "google", "text": "Super polite and professional. On time and provided great service at an incredible value considering I didn't have to leave home!", "verified": true},
+    {"author": "Missy K.", "rating": 5, "date": "recent", "source": "google", "text": "AJ was very helpful and saved me from leaving my car some place all day to do what he did in about thirty minutes.", "verified": true, "tech": "AJ"},
+    {"author": "Rodney L.", "rating": 5, "date": "recent", "source": "google", "text": "This is my new GO TO when purchasing tires. Paid for tires and service online the day before.", "verified": true},
+    {"author": "Dave D.", "rating": 5, "date": "recent", "source": "google", "text": "Great experience with AJ yesterday! I needed new tires installed on my boat trailer.", "verified": true, "tech": "AJ"},
+    {"author": "Judene B.", "rating": 5, "date": "recent", "source": "google", "text": "Loved the convenience of this mobile service. My tire was losing air as I was driving but I made it to a gas station. AJ came right to me.", "verified": true, "tech": "AJ"}
+  ],
+  "counts": {"total_available": "6 Google reviews", "captured": 5, "target_min": 3, "aggregate_rating": 5.0, "aggregate_rating_source": "Google Business Profile"},
+  "notes": "InTire Mobile Tire Shop. Decatur GA (2425 Columbia Dr). Technician AJ named in 3 of 5 reviews. 5.0 / 6 reviews (perfect but thin).",
+  "capture_attempts": [{"source": "google_gbp", "status": "success", "reason": "5 verbatim reviews from HTML inline"}],
+  "flags": [],
+  "team_from_reviews": ["AJ (tech)"],
+  "created_at": "2026-04-18T07:11:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
