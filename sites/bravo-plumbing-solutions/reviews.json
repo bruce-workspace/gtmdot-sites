@@ -1,10 +1,50 @@
 {
-  "reviews": [],
-  "counts": {"total_available": "unverified — GBP scrape blocked", "captured": 0, "target_min": 3, "aggregate_rating": null, "aggregate_rating_source": "pending owner capture"},
-  "notes": "REVIEW-THIN — OWNER INPUT REQUIRED. GBP short link (share.google/hhxm3xMS6L2CLIcjo) redirects through Google anti-scraping; Yelp has no listing; BBB not listed; Facebook page ambiguous (name used by multiple unrelated US plumbing cos). Site built using Morales-style no-gallery testimonial-absent pattern per Mini directive. Forrell Hillery (owner) to supply: exact star rating, review count, 5-8 verbatim with reviewer first names, founding year, license number, full service list. Site currently uses verifiable trust signals only (address, phone, hours, service area).",
-  "capture_attempts": [{"source": "google_gbp", "status": "redirect_blocked", "reason": "share link redirects through bot protection"}, {"source": "yelp", "status": "not_found", "reason": "no Yelp listing"}, {"source": "bbb", "status": "not_found", "reason": "not accredited at 105 Bond Drive"}, {"source": "facebook", "status": "ambiguous", "reason": "name collision with multiple US plumbing cos"}, {"source": "z1biz", "status": "partial", "reason": "directory listing found, internal 4.8 score, 0 reviews on platform"}],
-  "flags": ["owner_input_required_before_publish", "no_verbatim_reviews", "rating_unverified", "founding_year_unverified"],
-  "created_at": "2026-04-17T07:15:00-04:00",
-  "created_by": "r1vs",
-  "schema_version": "1.0"
+  "reviews": [
+    {
+      "author": "Amber Farrie",
+      "rating": 5,
+      "date": "a year ago",
+      "source": "google",
+      "text": "I contacted the owner of the company with a last minute plumbing concern.  I had a deadline to meet and he altered his schedule to assist me in meeting that deadline.  Within less than 24 hours of our conversation, the owner arrived at my rental property and completed the job efficiently! He is extremely knowledgeable and communicative. He explained everything the job required for completion and also sent pictures during the process and of the completed task. I would definitely use him for all of my plumbing needs!",
+      "verified": true
+    },
+    {
+      "author": "Donald Andre'",
+      "rating": 5,
+      "date": "a year ago",
+      "source": "google",
+      "text": "I read the reviews and thought \u201cwow\u201d.  I called, and \u201cwow\u201d.  The reviews were spot on.  I had no expectations on my end before arrival.  The reason is, by the time I was able to schedule, the plumber had arrived. It was much less time than it takes for a pizza. Again, \u201cwow\u201d.  The service was wow.  The charge in comparison to the service was, \u201cwow\u201d.  The explanation of our problem was clear.  The follow up suggestions were clear.  The referral was, wow.  I could go on.\n\nThis will be my call on plumbing company going forward.\n\nMilitary family do not miss out on this service.  I HIGHLY RECOMMEND Bravo Plumbing\n\nOn God & Thank You Holy Spirit",
+      "verified": true
+    },
+    {
+      "author": "Dylan Burel",
+      "rating": 5,
+      "date": "8 months ago",
+      "source": "google",
+      "text": "Excellent service and timeliness, the owner arrived the very next day and had the leak fixed within 45 minutes. Will absolutely do business again.",
+      "verified": true
+    },
+    {
+      "author": "Tiffani Lassiter",
+      "rating": 5,
+      "date": "10 months ago",
+      "source": "google",
+      "text": "Rell and his team were fantastic. The professionalism was top tier and he had a personality to match. He will be my choice for all future plumbing needs.",
+      "verified": true
+    },
+    {
+      "author": "Shannon Terrell",
+      "rating": 5,
+      "date": "10 months ago",
+      "source": "google",
+      "text": "Farrell and his team very professional. Great service and a job well done. We found a great plumber. Fast service\u2026",
+      "verified": true
+    }
+  ],
+  "counts": {
+    "total_available": 64,
+    "captured": 5,
+    "target_min": 5
+  },
+  "notes": "Captured via Places API on 2026-04-17. Mac Mini direct (Bruce cron stuck)."
 }
