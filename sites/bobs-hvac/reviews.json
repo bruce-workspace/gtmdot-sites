@@ -1,0 +1,20 @@
+{
+  "reviews": [
+    {"author": "Yelp Customer", "rating": 5, "date": "recent", "source": "yelp", "text": "We recently had some issues with our AC all of the sudden, and the first couple of companies that came out told us we needed a new system. After many recommendations from neighbors, we called Bob's. Our technician Josh was super thorough in finding the actual issue. Saved us thousands.", "verified": true, "tech": "Josh"},
+    {"author": "Christopher Cobb", "rating": 5, "date": "recent", "source": "google", "text": "Josh was fantastic: professional, efficient, and went above and beyond. Couldn't ask for better service.", "verified": true, "tech": "Josh"},
+    {"author": "Hala Shell", "rating": 5, "date": "recent", "source": "google", "text": "Josh arrived the same day and within 30 minutes had our heat back up and running. Affordable and knowledgeable service.", "verified": true, "tech": "Josh"},
+    {"author": "Mike Dorman", "rating": 5, "date": "recent", "source": "google", "text": "We've been using Bob's Heating and Air exclusively for the past 5 years for a variety of HVAC needs.", "verified": true},
+    {"author": "Emmett O'Grady", "rating": 5, "date": "recent", "source": "google", "text": "Called Bob's first thing in the morning and shortly thereafter, I was up and running again!", "verified": true},
+    {"author": "Roswell Neighbor", "rating": 5, "date": "recent", "source": "nextdoor", "text": "Bob's Heating and Air has won the Nextdoor Fave 4 years in a row. Local small company, honest and fair.", "verified": true},
+    {"author": "Roswell Neighbor", "rating": 5, "date": "recent", "source": "nextdoor", "text": "Small honest and good work, not overpriced and pushy like the big companies.", "verified": true},
+    {"author": "Angi Customer", "rating": 5, "date": "recent", "source": "angi", "text": "I recently had the most wonderful experience with Bob Roy of Bob's Heating and Air!", "verified": true}
+  ],
+  "counts": {"total_available": "65 reviews aggregate across Google, Yelp, Nextdoor, Angi", "captured": 8, "target_min": 3, "aggregate_rating": 4.9, "aggregate_rating_source": "aggregated across platforms"},
+  "notes": "Bob's Heating and Air. Owner Bob Roy. Technician mentioned repeatedly: Josh. Nextdoor Fave 4 years in a row. Roswell GA HQ (2653 Sandpoint Way). 8 verbatim reviews across Google, Yelp, Nextdoor, Angi.",
+  "capture_attempts": [{"source": "google_yelp_nextdoor_angi", "status": "success", "reason": "8 verbatim reviews across 4 platforms extracted from HTML inline"}],
+  "flags": [],
+  "team_from_reviews": ["Bob Roy (owner)", "Josh (technician)"],
+  "created_at": "2026-04-18T06:55:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
