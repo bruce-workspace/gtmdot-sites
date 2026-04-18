@@ -1,0 +1,17 @@
+{
+  "reviews": [
+    {"author": "Jeremy D.", "rating": 5, "date": "recent", "source": "thumbtack", "text": "We could not be happier with Perez Pools. He was extremely attentive, knowledgeable, and determined to get our pool cleared up. He was very informative and walked me through each step of the process. If you're looking for someone professional, reasonably priced, and willing to take the time to do things right, I highly recommend Perez Pools.", "verified": true},
+    {"author": "James Christopher", "rating": 5, "date": "recent", "source": "google", "text": "Chris is fantastic! Super quick to come out and help us with the pool at our new house! He was very helpful, walked me through our system and explained what everything was. Got us up and running and picked more efficient settings to help us save more money!", "verified": true, "tech": "Chris"},
+    {"author": "Nancy B.", "rating": 5, "date": "recent", "source": "thumbtack", "text": "Outstanding! See photos! The first is what our pool looked like when Chris arrived (our old pool company seemed to stop caring). The second photo was 1.5 hrs later when Chris finished!! Astonishing! I've now had Perez Pools clean twice and I will continue working with them!", "verified": true, "tech": "Chris"},
+    {"author": "Google Customer", "rating": 5, "date": "recent", "source": "google", "text": "Mr. Perez cared for and serviced our pool as if it were his own. Excellent communication and was very good at explaining every move that was made. Upfront and honest with fair pricing. For our issue with our pool pump, he saved us tons.", "verified": true, "tech": "Chris Perez"},
+    {"author": "Jeffrey Masisak", "rating": 5, "date": "recent", "source": "google", "text": "This was our first season using Perez Pools and they were awesome. They did great work every time they showed up. Cannot wait to use them next season, they made using the pool all summer so fun and easy, always clean and looking great!", "verified": true}
+  ],
+  "counts": {"total_available": "35 Google reviews", "captured": 5, "target_min": 3, "aggregate_rating": 4.9, "aggregate_rating_source": "Google Business Profile"},
+  "notes": "Perez Pools LLC. Owner Chris Perez. Atlanta/Vinings metro, serves Metro Atlanta. Weekly maintenance + green-to-clean recovery (specialty) + pool opening/closing + equipment repair. 5 verbatim reviews across Google + Thumbtack. 7 real Places API photos downloaded and wired (hero + 6 gallery).",
+  "capture_attempts": [{"source": "google_thumbtack", "status": "success", "reason": "5 verbatim captured from inline HTML"}, {"source": "places_api_photos", "status": "success", "reason": "7 photos downloaded via direct Places CDN fetch"}],
+  "flags": [],
+  "team_from_reviews": ["Chris Perez (owner)"],
+  "created_at": "2026-04-18T07:52:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
