@@ -1,15 +1,50 @@
 {
   "reviews": [
-    {"author": "Andi Kai", "rating": 5, "date": "1 month ago", "source": "birdeye", "text": "This is the first time that I am using them, they are great. Very nice and accommodating, just all the way around AWESOME.", "verified": true},
-    {"author": "Olga Mazas", "rating": 5, "date": "2 months ago", "source": "birdeye", "text": "The gentleman was incredibly kind and attentive. His employees are super friendly and very professional.", "verified": true},
-    {"author": "Ashley Preston", "rating": 5, "date": "10 months ago", "source": "birdeye", "text": "Mr. Kevin provided exceptional customer service and delivered high-quality work — my car looked brand new when I picked it up.", "verified": true},
-    {"author": "TJ Jones", "rating": 5, "date": "11 months ago", "source": "birdeye", "text": "Kevin is patient, and is willing to satisfy all of customer needs. The communication was great. He answered all my calls.", "verified": true},
-    {"author": "Julia Raffetto", "rating": 5, "date": "11 months ago", "source": "birdeye", "text": "Got perfect work done on my like new Lexus. The service was great, the repairs were completed quickly, and pricing was reasonable.", "verified": true}
+    {
+      "author": "Andi Kai",
+      "rating": 5,
+      "date": "a month ago",
+      "source": "google",
+      "text": "This is the first time that I am using them, they are great. Very nice and accommodating, just all the way around AWESOME. I would recommend them to anyone that needs a GREAT body shop. You can not even tell that my car was wrecked on the back drivers side door.  GREAT WORK !",
+      "verified": true
+    },
+    {
+      "author": "Olga Mazas",
+      "rating": 5,
+      "date": "2 months ago",
+      "source": "google",
+      "text": "Hello everyone; I stopped by this body shop and the gentleman was incredibly kind and attentive. He was kind enough to give me an estimate, which was really important to me. I highly recommend going to him. I saw the cars, and they honestly look like they just rolled off the assembly line. His employees are super friendly and very professional. God bless his business, and thank you again.",
+      "verified": true
+    },
+    {
+      "author": "Ashley Preston",
+      "rating": 5,
+      "date": "11 months ago",
+      "source": "google",
+      "text": "If you're in need of a reliable body shop for collision repairs and this location is convenient for you, look no further! Mr. Kevin provided exceptional customer service and delivered high-quality work\u2014my car looked brand new when I picked it up. He was highly responsive, professional, and made the entire process seamless and stress-free.\n\nWhat stood out most was how understanding and accommodating Kevin was regarding my situation. His commitment to customer satisfaction is genuine\u2014he truly prioritizes people over profit. I\u2019m extremely grateful for the service I received and will absolutely return if needed. Highly recommended! #LoyalCustomer",
+      "verified": true
+    },
+    {
+      "author": "Raymanda Favourite",
+      "rating": 5,
+      "date": "4 years ago",
+      "source": "google",
+      "text": "This has definitely bin a scary yet pleasant experience. This was the first time I ever had a accident and needed my whole car done over. I have a 2019 Ford Mustang and it was scary when I had to drop her off but Kevin  at Forest Park  collision made me feel like family and worked with me and stayed I. Communication with every step of my car process. Excellent work. When I picked her up CoCo is my car name coco looked as new as the day I got her. I am forever grateful thank you so much Kevin  for taking care of my car/baby",
+      "verified": true
+    },
+    {
+      "author": "Stacy Moore",
+      "rating": 5,
+      "date": "11 months ago",
+      "source": "google",
+      "text": "Someone sideswiped my vehicle on the driver's side demolishing my side mirror. I took it to Forest Park on a recommendation, got an estimate, they ordered the part, a few hiccups on the parts company  end, took the car back, the mirror was installed and I drove away. The establishment was clean, the owner was accommodating. The employees were respectful. Everything was great and I shall be returning for some more work. The price was great as well. No complaints whatsoever!!",
+      "verified": true
+    }
   ],
-  "counts": {"total_available": "76 reviews (Birdeye aggregate)", "captured": 5, "target_min": 5, "aggregate_rating": 4.8, "aggregate_rating_source": "Birdeye live page aggregates Google"},
-  "notes": "24 years in business (9 at current Central Ave location). Owner/lead Kevin (last name not disclosed). Lifetime warranty on workmanship (directory-listed, verify with owner). No dedicated website currently — this build may be first. Paraphrased themes ($4,800 vs $2,860, Honda Civic door skins, Ford Mustang 'coco') intentionally excluded to avoid fabrication.",
-  "capture_attempts": [{"source": "google_gbp", "status": "redirect_protected", "reason": "share link redirects"}, {"source": "birdeye", "status": "success", "reason": "5 verbatim reviews with full names"}, {"source": "nicelocal", "status": "partial", "reason": "31 reviews listed, snippets not attributable by name"}, {"source": "yelp", "status": "partial", "reason": "low Yelp-native review volume"}, {"source": "facebook", "status": "blocked", "reason": "page content not accessible"}],
-  "created_at": "2026-04-17T00:00:00-04:00",
-  "created_by": "r1vs",
-  "schema_version": "1.0"
+  "counts": {
+    "total_available": 74,
+    "captured": 5,
+    "target_min": 5
+  },
+  "notes": "Captured via Places API on 2026-04-17. Mac Mini direct (Bruce cron stuck)."
 }
