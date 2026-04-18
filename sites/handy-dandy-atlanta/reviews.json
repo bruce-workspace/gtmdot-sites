@@ -1,0 +1,10 @@
+{
+  "reviews": [],
+  "counts": {"total_available": "unverified at research time", "captured": 0, "target_min": 3, "aggregate_rating": null, "aggregate_rating_source": "pending owner capture"},
+  "notes": "REVIEW-THIN / OWNER INPUT REQUIRED. Handy Dandy Atlanta LLC. Phone (404) 919-3833. Atlanta. HTML built with Morales-style no-reviews layout (built with minimal review data at research time). Owner to supply 3-8 verbatim reviews + GBP rating before outbound. HTML references 5+ years operating in the story section.",
+  "capture_attempts": [{"source": "google_gbp", "status": "not_captured", "reason": "Reviews were not surfaced during original research pass; need follow-up scrape by Bruce or owner input"}],
+  "flags": ["owner_input_required_before_publish", "no_verbatim_reviews"],
+  "created_at": "2026-04-18T07:08:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
