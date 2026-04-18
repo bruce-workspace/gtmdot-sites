@@ -1,0 +1,17 @@
+{
+  "reviews": [
+    {"author": "Diane B.", "rating": 5, "date": "recent", "source": "google", "text": "Great service. Will was very professional and courteous. He got right to the job and had me back on the road in no time. Prices were very reasonable.", "verified": true, "tech": "Will"},
+    {"author": "Amanda C.", "rating": 5, "date": "recent", "source": "google", "text": "Joshua was absolutely amazing! Professional, knowledgeable, and went above and beyond to ensure I was taken care of. Came right to my location and had my tires changed in no time.", "verified": true, "tech": "Joshua"},
+    {"author": "E.L. J.", "rating": 5, "date": "recent", "source": "google", "text": "Very professional and friendly. On time. Great job.", "verified": true},
+    {"author": "Rayvon S.", "rating": 5, "date": "recent", "source": "google", "text": "Marlo was awesome and fast when it came to changing the tires and he was very professional. You guys are the best.", "verified": true, "tech": "Marlo"},
+    {"author": "Jeremy Bush", "rating": 5, "date": "recent", "source": "google", "text": "I got a flat at midnight on a Tuesday and these guys came out and took care of it. Can't beat that.", "verified": true}
+  ],
+  "counts": {"total_available": "386 Google reviews", "captured": 5, "target_min": 3, "aggregate_rating": 4.9, "aggregate_rating_source": "Google Business Profile"},
+  "notes": "Tire and Ride Mobile. Mobile tire service with 24-hour availability. Atlanta (1192 Pryor Rd SW, Suite D). Phone (404) 749-0918. 4.9 / 386 reviews (large volume). Named techs: Will, Joshua, Marlo.",
+  "capture_attempts": [{"source": "google_gbp", "status": "success", "reason": "5 verbatim captured from HTML inline"}],
+  "flags": [],
+  "team_from_reviews": ["Will", "Joshua", "Marlo"],
+  "created_at": "2026-04-18T07:33:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
