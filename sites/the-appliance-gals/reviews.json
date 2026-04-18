@@ -1,0 +1,20 @@
+{
+  "reviews": [
+    {"author": "J. Montgomery", "rating": 5, "date": "recent", "source": "google", "text": "I was having trouble with my washer however I was afraid that the cost repair would be more than I actually paid. Thank God for Appliance Gals! These ladies are AWESOME! I was contacted in a timely fashion, the tech was here in no time.", "verified": true},
+    {"author": "Burt K.", "rating": 5, "date": "recent", "source": "google", "text": "The Appliance Gals are timely, courteous, fair and very communicative. They can handle even the tough, hard-to-find-parts-for repairs on old stuff, going the extra mile for you!", "verified": true},
+    {"author": "Heidi L.", "rating": 5, "date": "recent", "source": "google", "text": "What a great experience! So easy to communicate with Eunice, and schedule for a tech to check up on my oven issue. The tech was absolutely wonderful. Quickly diagnosed the issue.", "verified": true, "tech": "Eunice"},
+    {"author": "B. Smith", "rating": 5, "date": "recent", "source": "google", "text": "Had The Appliance Gals replace some fixtures on our older, but nice range. Terrific service, flexible, fair, honest, and super professional. Cannot recommend enough.", "verified": true},
+    {"author": "F. Younginer", "rating": 5, "date": "recent", "source": "google", "text": "I am very pleased with the service I received. I called them on Friday evening and they were able to service me on Saturday. The technician was able to give me a quote ahead of time and the job ended up costing even less as quoted.", "verified": true},
+    {"author": "W.U.", "rating": 5, "date": "recent", "source": "google", "text": "They were great! Followed through on solving a complex problem. Thoroughly professional and courteous.", "verified": true},
+    {"author": "R. Beebe", "rating": 5, "date": "recent", "source": "google", "text": "Great experience! Called on a Sunday and was serviced on Tuesday! Thanks appliance gals for getting my dryer back up and running! Gotta go... Laundry time!", "verified": true},
+    {"author": "L.P.", "rating": 5, "date": "recent", "source": "google", "text": "The Appliance Gals were very informative and punctual. They provided great customer service and the price was reasonable. We would definitely use them again.", "verified": true}
+  ],
+  "counts": {"total_available": "119 Nextdoor mentions + Google + Facebook 100% recommend", "captured": 8, "target_min": 3, "aggregate_rating": null, "aggregate_rating_source": "Multi-platform aggregate — no single star aggregate in HTML; site uses 119 Nextdoor mentions and 100% Facebook recommend as trust stats"},
+  "notes": "The Appliance Gals. Eunice handles scheduling (named in review). Atlanta (598 Orchard Court SE). Phone (678) 439-9509. Women-owned appliance repair. 15+ years in business. Trust stats: 119 Nextdoor mentions, 100% Facebook recommend.",
+  "capture_attempts": [{"source": "google_nextdoor_facebook", "status": "success", "reason": "8 verbatim captured from HTML inline"}],
+  "flags": ["female_owned_operated_callout"],
+  "team_from_reviews": ["Eunice (scheduler/coordinator)"],
+  "created_at": "2026-04-18T07:30:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
