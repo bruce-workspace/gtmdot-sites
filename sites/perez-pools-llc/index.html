@@ -81,7 +81,19 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .stat-number{font-family:var(--font-serif);font-size:48px;font-weight:900;color:var(--brand-light);letter-spacing:-1px;line-height:1}
 .stat-label{font-size:14px;color:var(--muted);margin-top:8px;font-weight:500;letter-spacing:.04em}
 .marquee{overflow:hidden;background:var(--bg-alt);padding:16px 0;border-bottom:1px solid var(--border)}
-.marquee-track{display:flex;gap:48px;width:max-content;animation:marquee 35s linear infinite}
+.marquee-track{display:flex;gap:48px;width:max-content;animation:marquee 58s linear infinite}
+.pull-quote{max-width:900px;margin:0 auto 40px;padding:40px 32px;background:linear-gradient(135deg,rgba(var(--brand-rgb,100,180,220),0.16) 0%,rgba(var(--brand-rgb,100,180,220),0.04) 100%);border:1px solid var(--border);border-left:4px solid var(--brand-light);border-radius:16px;position:relative}
+.pull-quote::before{content:'"';position:absolute;top:8px;left:24px;font-family:var(--font-serif);font-size:96px;line-height:1;color:var(--brand-light);opacity:0.45;font-weight:700}
+.pull-quote-text{font-family:var(--font-serif);font-size:clamp(22px,2.4vw,30px);font-weight:500;font-style:italic;line-height:1.35;letter-spacing:-0.3px;color:var(--text);margin-bottom:20px;padding-left:28px}
+.pull-quote-attr{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-left:28px}
+.pull-quote-attr-stars{color:#f59e0b;font-size:14px;letter-spacing:2px}
+.pull-quote-attr-name{font-weight:700;color:var(--brand-light);font-size:15px}
+.pull-quote-attr-source{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:2px}
+.team-grid{display:grid;grid-template-columns:1fr;gap:20px;margin-top:48px;max-width:480px;margin-left:auto;margin-right:auto}
+.team-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:28px;text-align:center}
+.team-avatar{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--brand) 0%,var(--brand-light) 100%);display:flex;align-items:center;justify-content:center;font-family:var(--font-serif);font-size:30px;font-weight:700;color:#fff;margin:0 auto 16px;letter-spacing:-0.5px}
+.team-card h3{font-family:var(--font-serif);font-size:22px;font-weight:600;margin-bottom:4px;letter-spacing:-0.3px}
+.team-card .team-role{font-size:12px;color:var(--brand-light);text-transform:uppercase;letter-spacing:2px;font-weight:600}
 .marquee-item{font-size:14px;font-weight:600;color:var(--muted);white-space:nowrap;display:flex;align-items:center;gap:12px;letter-spacing:.04em}
 .marquee-dot{width:6px;height:6px;border-radius:50%;background:var(--brand-light);flex-shrink:0}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
@@ -100,7 +112,7 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .service-card h3{font-size:18px;font-weight:700;margin-bottom:8px;line-height:1.3}
 .service-card p{font-size:14px;color:var(--muted);line-height:1.6}
 .review-feed{margin-top:40px;overflow:hidden;mask-image:linear-gradient(to right,transparent,black 5%,black 95%,transparent);-webkit-mask-image:linear-gradient(to right,transparent,black 5%,black 95%,transparent)}
-.review-feed-track{display:flex;gap:24px;animation:reviewScroll 55s linear infinite;width:max-content}
+.review-feed-track{display:flex;gap:24px;animation:reviewScroll 60s linear infinite;width:max-content}
 .review-feed-track:hover{animation-play-state:paused}
 @media(prefers-reduced-motion:reduce){.review-feed-track{animation:none;flex-wrap:wrap}}
 @keyframes reviewScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
@@ -156,7 +168,7 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
 @media(max-width:1024px){.services-grid{grid-template-columns:repeat(2,1fr)}.story-grid{grid-template-columns:1fr;gap:40px}.footer-inner{grid-template-columns:1fr 1fr}}
-@media(max-width:768px){.nav{padding:0 20px}.nav-links,.nav-cta{display:none}.hamburger{display:flex}.hero{padding:100px 20px 60px;min-height:auto}.hero h1{font-size:clamp(36px,8vw,52px)}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:none}.section{padding:64px 20px}.section-full{padding:64px 20px}.services-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr;gap:32px}.footer-bottom{flex-direction:column;gap:8px;text-align:center}.mobile-phone{display:flex}}
+@media(max-width:768px){.nav{padding:0 20px}.nav-links,.nav-cta{display:none}.hamburger{display:flex}.hero{padding:100px 20px 60px;min-height:auto}.hero h1{font-size:clamp(36px,8vw,52px)}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:none}.section{padding:64px 20px}.section-full{padding:64px 20px}.services-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr 1fr;gap:32px 20px}.footer-inner>*:first-child{grid-column:1 / -1}.footer-bottom{flex-direction:column;gap:8px;text-align:center}.mobile-phone{display:flex}}
 </style>
 </head>
 <body>
@@ -244,6 +256,14 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
     <h2 class="section-h2">35 Google Reviews, 4.9 Stars</h2>
     <p class="section-sub">Chris earns repeat business because he never requires a contract. Every visit proves his value all over again.</p>
   </div>
+  <div class="pull-quote reveal">
+    <p class="pull-quote-text">Outstanding! See photos! The first is what our pool looked like when Chris arrived (our old pool company seemed to stop caring). The second photo was 1.5 hrs later when Chris finished!!</p>
+    <div class="pull-quote-attr">
+      <span class="pull-quote-attr-stars">★★★★★</span>
+      <span class="pull-quote-attr-name">Nancy B.</span>
+      <span class="pull-quote-attr-source">Thumbtack · Green-to-Clean Rescue</span>
+    </div>
+  </div>
   <div class="review-feed reveal">
     <div class="review-feed-track">
       <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"We could not be happier with Perez Pools. He was extremely attentive, knowledgeable, and determined to get our pool cleared up. He was very informative and walked me through each step of the process. If you're looking for someone professional, reasonably priced, and willing to take the time to do things right, I highly recommend Perez Pools."</p><span class="review-mini-author">Jeremy D.</span><span class="review-mini-source">Thumbtack</span></div>
@@ -277,10 +297,17 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
         <p>His team sends en-route text messages so you know exactly when they're coming. Every service ends with a detailed report including before-and-after photos and water test results. Background-checked technicians. Always in uniform. It's the level of communication and transparency that made 35 homeowners leave five-star reviews.</p>
       </div>
       <div class="story-highlights">
-        <div class="story-highlight"><div class="story-highlight-number">4.9</div><div class="story-highlight-label">Google Stars</div></div>
-        <div class="story-highlight"><div class="story-highlight-number">35+</div><div class="story-highlight-label">Google Reviews</div></div>
-        <div class="story-highlight"><div class="story-highlight-number">0</div><div class="story-highlight-label">Contracts</div></div>
-        <div class="story-highlight"><div class="story-highlight-number">#1</div><div class="story-highlight-label">Pool Service in Smyrna</div></div>
+        <div class="story-highlight"><div class="story-highlight-number">No</div><div class="story-highlight-label">Contracts Required</div></div>
+        <div class="story-highlight"><div class="story-highlight-number">Same-Day</div><div class="story-highlight-label">Green-to-Clean</div></div>
+        <div class="story-highlight"><div class="story-highlight-number">BG-Checked</div><div class="story-highlight-label">Every Technician</div></div>
+        <div class="story-highlight"><div class="story-highlight-number">Before+After</div><div class="story-highlight-label">Service Reports</div></div>
+      </div>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">CP</div>
+        <h3>Chris Perez</h3>
+        <div class="team-role">Owner · Operator · Every Call</div>
       </div>
     </div>
   </div>
@@ -312,6 +339,14 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 <section class="section" id="contact">
   <div class="reveal">
     <div style="text-align:center"><div class="eyebrow">Get Started</div><h2 class="section-h2">Free Pool Quote</h2><p class="section-sub" style="margin:0 auto">Tell Chris about your pool and what it needs. No contracts, no pressure. Just honest pool service.</p></div>
+    <div class="pull-quote reveal">
+      <p class="pull-quote-text">Chris is fantastic! Super quick to come out and help us with the pool at our new house! He was very helpful, walked me through our system and explained what everything was.</p>
+      <div class="pull-quote-attr">
+        <span class="pull-quote-attr-stars">★★★★★</span>
+        <span class="pull-quote-attr-name">James Christopher</span>
+        <span class="pull-quote-attr-source">Google · New Homeowner</span>
+      </div>
+    </div>
     <div class="form-wrap">
       <form id="contactForm">
         <div class="form-row"><div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" required placeholder="Full name"></div><div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" required placeholder="(___) ___-____"></div></div>
@@ -321,6 +356,14 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
           <div class="form-group"><label for="pooltype">Pool Type</label><select id="pooltype" name="pooltype"><option value="">Select type</option><option value="inground-chlorine">In-Ground (Chlorine)</option><option value="inground-salt">In-Ground (Saltwater)</option><option value="aboveground">Above-Ground</option><option value="unsure">Not Sure</option></select></div>
         </div>
         <div class="form-group"><label for="details">Tell Us About Your Pool</label><textarea id="details" name="details" placeholder="Current condition, any issues, what service you're looking for..."></textarea></div>
+        <div class="form-group">
+          <label for="perez-media">Tap to attach photos/videos <span style="color:var(--muted);font-weight:400">(optional — a green pool shot is gold)</span></label>
+          <label for="perez-media" style="border:2px dashed var(--border);border-radius:10px;padding:28px;text-align:center;color:var(--muted);font-size:14px;cursor:pointer;display:block;transition:border-color 0.2s;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:6px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+            <div id="perez-file-label">Photo or video of your pool</div>
+          </label>
+          <input id="perez-media" type="file" accept="image/*,video/*" multiple style="display:none;" onchange="var n=this.files.length;document.getElementById('perez-file-label').textContent=n?(n+' file'+(n>1?'s':'')+' attached'):'Photo or video of your pool';">
+        </div>
         <button type="submit" class="form-submit">Request Your Free Quote</button>
         <p class="form-consent">By submitting this form you agree to be contacted about your pool service. We will never share your information.</p>
       </form>
