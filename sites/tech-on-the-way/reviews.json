@@ -1,0 +1,19 @@
+{
+  "reviews": [
+    {"author": "Lorenza Amato", "rating": 5, "date": "recent", "source": "google", "text": "Celena was very helpful, professional and thorough. She came to run diagnostics for my classic car and she made sure to check every nook and cranny while explaining everything in a comprehensive way. She has an eye for detail and knows her stuff.", "verified": true, "tech": "Celena"},
+    {"author": "Landie Thurmond", "rating": 5, "date": "recent", "source": "google", "text": "I had THE BEST experience with Tech On The Way. They were able to come to my house the day of to fix my headlights! They were so professional, worked in a timely manner, and got the job done! I'll be using only them in the future!", "verified": true},
+    {"author": "Lashon Hiley", "rating": 5, "date": "recent", "source": "google", "text": "Thank you so much to Celina once again. Prompt, Friendly and professional. I will always ask for her when I need my car serviced. And to have a female mechanic makes the experience sweeter. Thanks again Celina you rock.", "verified": true, "tech": "Celina"},
+    {"author": "Chelsea Williams", "rating": 5, "date": "recent", "source": "google", "text": "10 out of 10 RECOMMEND! Tech on the way was super helpful and made things so much easier for me! I was so happy to know I didn't have to be bothered with the hassle of getting my car towed.", "verified": true},
+    {"author": "Andre Lumpkin", "rating": 5, "date": "recent", "source": "google", "text": "Top quality experience. Booking was quick and easy. Communication was clear and responsive. My mechanic was detailed, knowledgeable and thorough. Highly recommend!", "verified": true},
+    {"author": "Lora C", "rating": 5, "date": "recent", "source": "google", "text": "Had to get my 2007 Ford Escape up and running. Cerena came the same day. She had to chase some parts but everything was working within a few hours. Would definitely call them again when needed.", "verified": true, "tech": "Celena"},
+    {"author": "Curtis Lovett", "rating": 5, "date": "recent", "source": "google", "text": "Listen to anybody who's reading this. Tech On The Way is the best. My mechanic came through when I needed her. She was professional. She was on time and I appreciate her doing her job well.", "verified": true}
+  ],
+  "counts": {"total_available": "97 Google reviews", "captured": 7, "target_min": 3, "aggregate_rating": 4.6, "aggregate_rating_source": "Google Business Profile"},
+  "notes": "Tech On The Way. Mobile mechanic service (car repair comes to you). Mableton GA. Phone (404) 926-6661. Female mechanic Celena/Celina/Cerena (name spelled inconsistently by reviewers — same person). Strong differentiator: female mechanic + mobile + same-day service.",
+  "capture_attempts": [{"source": "google_gbp", "status": "success", "reason": "7 verbatim captured from HTML inline"}],
+  "flags": ["female_owned_operated_callout"],
+  "team_from_reviews": ["Celena (spelled variously Celina/Cerena by reviewers)"],
+  "created_at": "2026-04-18T07:27:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
