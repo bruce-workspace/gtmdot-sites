@@ -1,0 +1,19 @@
+{
+  "reviews": [
+    {"author": "Nicholas S.", "rating": 5, "date": "recent", "source": "google", "text": "These guys are excellent! I will be using them in the near future for other repair needs. They are truly amazing and professional in what they do. They know what they're doing and they prove it.", "verified": true},
+    {"author": "HomeAdvisor Customer", "rating": 5, "date": "recent", "source": "homeadvisor", "text": "I was on a time crunch to get my project done and they ended up being able to come 3 days early than originally scheduled. They painted, installed my backsplash and 21 handles on my cabinets and changed my electrical socket panels in 6 to 7 hours.", "verified": true},
+    {"author": "HomeAdvisor Customer", "rating": 5, "date": "recent", "source": "homeadvisor", "text": "He is a God's sent because he's professional, listens well and understands what is needed. Called on a Sunday, he came to the house that day, completed work by Wednesday at a very good price.", "verified": true},
+    {"author": "HomeAdvisor Customer", "rating": 5, "date": "recent", "source": "homeadvisor", "text": "Very efficient and professional service. They were on time and did a great job of staining my deck and outside wood and posts. I would definitely recommend their company.", "verified": true},
+    {"author": "Networx Customer", "rating": 5, "date": "recent", "source": "networx", "text": "Hector and his helper did a really good job I highly recommend them. They were worth every penny.", "verified": true, "tech": "Hector"},
+    {"author": "HomeAdvisor Customer", "rating": 5, "date": "recent", "source": "homeadvisor", "text": "They came out right away and gave me a fair quote. I hired them they did the job in one day.", "verified": true},
+    {"author": "Networx Customer", "rating": 5, "date": "recent", "source": "networx", "text": "Mr. Hector was very courteous and professional. He did a great job.", "verified": true, "tech": "Hector"}
+  ],
+  "counts": {"total_available": "69 reviews aggregate", "captured": 7, "target_min": 3, "aggregate_rating": 4.6, "aggregate_rating_source": "Google + HomeAdvisor + Networx aggregate"},
+  "notes": "Membreno's Pro Home Repair. Owner Hector. Lawrenceville GA (26 Cedar Ridge Trail 30046). Phone (678) 462-5399. Handyman + paint + electrical + deck staining + cabinet install. 7 verbatim across Google, HomeAdvisor, Networx.",
+  "capture_attempts": [{"source": "multi_platform", "status": "success", "reason": "7 verbatim captured from HTML inline"}],
+  "flags": [],
+  "team_from_reviews": ["Hector (owner)"],
+  "created_at": "2026-04-18T07:18:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
