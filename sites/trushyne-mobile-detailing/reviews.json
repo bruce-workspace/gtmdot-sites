@@ -1,15 +1,50 @@
 {
   "reviews": [
-    {"author": "T.W.", "rating": 5, "date": "March 14, 2025", "source": "nextdoor", "text": "Trushyne is the best! Demetric is professional, prompt, shows integrity and offers reasonable rates. My X1 looks and feels brand new!", "verified": true, "location": "Ellenwood, GA"},
-    {"author": "C.M.", "rating": 5, "date": "November 14, 2022", "source": "nextdoor", "text": "Demetric did a fantastic job detailing my car today! He's incredibly professional, provides his own water and electrical hookup, and he was great at communicating to set up the appointment, determine what services I needed, and when he would arrive. Exceeded all my expectations! Highly recommend!", "verified": true, "location": "Atlanta, GA"},
-    {"author": "D.J.", "rating": 5, "date": "April 1, 2021", "source": "nextdoor", "text": "I am so grateful for Trushyne mobile detailing! They came out, last minute, same day, at the comfort of my own parking lot. My car required a lot of love and attention to detail, and they gave it! I am grateful for their professionalism, communication, and commitment to offering exactly what you are requiring!", "verified": true, "location": "Decatur, GA"},
-    {"author": "Google Customer", "rating": 5, "date": "recent", "source": "google", "text": "I called in the morning and he was onsite by the early afternoon. His customer service and detailing is top tier!", "verified": true},
-    {"author": "Google Customer", "rating": 5, "date": "recent", "source": "google", "text": "Demetric did an excellent job with my 40 MB. Many issues and he did more than I expected.", "verified": true}
+    {
+      "author": "Rashed Rahman",
+      "rating": 1,
+      "date": "3 months ago",
+      "source": "google",
+      "text": "I used this detailer in mid-November this year but was busy and only able to post this review now.\n\nI chose this service based on the overwhelming number of 5-star reviews, but my experience was the complete opposite. I paid around $250 to detail my brand-new Honda, and the quality was very disappointing. Both the interior and exterior were poorly cleaned, with visible stains, uneven wiping, and missed areas. I had to spend over an hour cleaning the car myself afterward.\n\nWhen I contacted the detailer, he did return, but instead of acknowledging the issues, he became confrontational with me and my wife and denied any problems. I also noticed new scratches after the detailing, which he completely dismissed. Based on the results, it seemed low-quality or inappropriate products may have been used.\n\nOverall, a very frustrating experience for the price. I do not recommend this service, and the high online rating does not reflect the work I received.\n\n\ud83d\udcf8 only a few photos posting showing stains after the service.",
+      "verified": true
+    },
+    {
+      "author": "Lavon Grant",
+      "rating": 5,
+      "date": "4 months ago",
+      "source": "google",
+      "text": "Demetric and his team did an awesome job detailing my Audi convertible. I can see it shining before I even got close up to it. I\u2019m so thankful they came out to me and he washed it with great precision.\nIf you need your car detailed, make sure you reach out to them for service",
+      "verified": true
+    },
+    {
+      "author": "Kamau Foderingham",
+      "rating": 5,
+      "date": "3 months ago",
+      "source": "google",
+      "text": "Demetric and his colleague did an excellent job, they were able to get to me with same-day service. Customer service was excellent. Very pleasant, helpful, just what I needed. Very professional, very reasonable, would definitely use them again.",
+      "verified": true
+    },
+    {
+      "author": "Caroline Weimar",
+      "rating": 5,
+      "date": "2 months ago",
+      "source": "google",
+      "text": "I had a great experience with Trushyne Mobile Detailing. I had a last minute urgent need for car detailing and called late on a Sunday afternoon. They were able to come to my house within the hour and did an excellent job. Very professional and thorough. Will use again and recommend to friends.",
+      "verified": true
+    },
+    {
+      "author": "Paris Rainey",
+      "rating": 5,
+      "date": "a month ago",
+      "source": "google",
+      "text": "I bought my car on Saturday, Mr. Demetric and Trushyne staff pulled up the next day (Sunday) and did a TERRIFIC job! If you want TOP quality, reliable and efficient service, BOOK THEM today!! I literally can\u2019t stop looking at my new car!!",
+      "verified": true
+    }
   ],
-  "counts": {"total_available": "200+ (website claim)", "captured": 5, "target_min": 5, "aggregate_rating": 4.5, "aggregate_rating_source": "Website aggregate claim; BBB A+ verified"},
-  "notes": "7+ years in business since June 2018. Owner Demetric R. Johnson. Fully mobile with self-contained water/power. BBB A+ accredited. 3 Nextdoor reviews with full dates/locations from Ellenwood, Atlanta, Decatur.",
-  "capture_attempts": [{"source": "google_gbp", "status": "redirect_protected", "reason": "share link redirects, not scrapable"}, {"source": "yelp", "status": "403", "reason": "anti-scrape"}, {"source": "nextdoor", "status": "success", "reason": "3 dated verbatim reviews"}, {"source": "search_snippets", "status": "partial", "reason": "2 additional Google review snippets"}],
-  "created_at": "2026-04-17T00:00:00-04:00",
-  "created_by": "r1vs",
-  "schema_version": "1.0"
+  "counts": {
+    "total_available": 248,
+    "captured": 5,
+    "target_min": 5
+  },
+  "notes": "Captured via Places API on 2026-04-17. Mac Mini direct (Bruce cron stuck)."
 }
