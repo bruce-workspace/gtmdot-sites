@@ -1,0 +1,22 @@
+{
+  "reviews": [
+    {"author": "S Seaver", "rating": 5, "date": "recent", "source": "google", "text": "Steve showed up 15 min after I contacted him. He quickly diagnosed the issue and replaced my stove's igniter. This was two days before Christmas and I was in a panic! Steve was a hero! Very professional and knowledgeable.", "verified": true, "tech": "Steve"},
+    {"author": "Shakari Brown", "rating": 5, "date": "recent", "source": "google", "text": "Steve was great very efficient. He knew what the problem was and was in and out. I appreciate Steve and his great customer service. He fixed my refrigerator and the dishwasher in a timely manner and they both are working properly now!", "verified": true, "tech": "Steve"},
+    {"author": "Blayne McDonald", "rating": 5, "date": "recent", "source": "google", "text": "Steven does a fantastic job. He has fixed our dryer, ice machine and oven efficiently and at a reasonable cost. He even went as far as finding a coupon for us so we could save a little bit after our most recent repair.", "verified": true, "tech": "Steven"},
+    {"author": "Vinny Restivo", "rating": 5, "date": "recent", "source": "google", "text": "Steve was prompt and reliable. He was very thorough with his diagnostic and taught me a lot about how my dishwasher operates. Very honest and transparent throughout the entire job. Will definitely call again!", "verified": true, "tech": "Steve"},
+    {"author": "Darrell Pinkston", "rating": 5, "date": "recent", "source": "google", "text": "Steven was awesome and great guy, he came out and did the best job. I highly recommend him, he will be my go to, from now on for any appliance repair I need. He literally had it fixed with in 45 min.", "verified": true, "tech": "Steven"},
+    {"author": "Renee' Mowatt", "rating": 5, "date": "recent", "source": "google", "text": "Had an excellent experience w/ Steve. He is very knowledgable and honest. He ran diagnostic tests and let me know about my refrigerator warranty which saved me at least $1300. Will absolutely be hiring Steve again.", "verified": true, "tech": "Steve"},
+    {"author": "Barbara Kimbro", "rating": 5, "date": "recent", "source": "google", "text": "Steven was promp, and very knowledgeable and competent. He diagnosed the issue with our fridge very quickly and was able to fix the problem. He checked with me the next day to see if everything was okay.", "verified": true, "tech": "Steven"},
+    {"author": "Jennifer Renkowski", "rating": 5, "date": "recent", "source": "google", "text": "On time, extremely personable, and explained all the work being done. Rare customer service! I live in a condo complex, so I'll be happy to share his expertise with my neighbors.", "verified": true},
+    {"author": "Tanner Byle", "rating": 5, "date": "recent", "source": "google", "text": "Just had Steven come out for a leaking freezer. Not only did he arrive quickly, but fixed it while explaining what he was doing and future preventative maintenance. Very fast, polite, and efficient.", "verified": true, "tech": "Steven"},
+    {"author": "davd jacob", "rating": 5, "date": "recent", "source": "google", "text": "This company saved me tons by working to find the best solution and the best cost. Instead of purchasing a new fridge or entire ice dispenser unit, they took away my dispenser unit and fixed the damaged components inside.", "verified": true}
+  ],
+  "counts": {"total_available": "72 Google reviews", "captured": 10, "target_min": 3, "aggregate_rating": 5.0, "aggregate_rating_source": "Google Business Profile"},
+  "notes": "Atlanta Expert Appliance Repair. Named tech: Steve/Steven (same person — reviewers spell variously). Decatur GA (1985 Shamrock Dr). Phone (404) 834-5157. 5.0 / 72 reviews. Services: refrigerator, dishwasher, stove/oven, dryer, ice machine, freezer. Pilot site — was first fully deployed, retrofit reviews.json added 2026-04-18.",
+  "capture_attempts": [{"source": "google_gbp", "status": "success", "reason": "10 verbatim captured from inline HTML"}],
+  "flags": [],
+  "team_from_reviews": ["Steve/Steven"],
+  "created_at": "2026-04-18T08:12:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
