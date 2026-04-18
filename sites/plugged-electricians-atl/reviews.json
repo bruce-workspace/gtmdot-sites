@@ -1,0 +1,13 @@
+{
+  "reviews": [
+    {"author": "Brittany L.", "rating": 5, "date": "recent", "source": "google", "text": "Reliable and great customer service!", "verified": true},
+    {"author": "C. S.", "rating": 5, "date": "recent", "source": "google", "text": "Female handywoman. Highly recommended.", "verified": true}
+  ],
+  "counts": {"total_available": "13 Google reviews", "captured": 2, "target_min": 3, "aggregate_rating": 4.9, "aggregate_rating_source": "Google Business Profile"},
+  "notes": "Plugged Electricians ATL. Atlanta (1445 Woodmont Lane NW 30318). Phone (678) 787-2022. 4.9 / 13 reviews. Female-operated electrician — notable differentiator from reviewer (C. S. says 'Female handywoman'). Review-thin on verbatim (only 2 captured). Third inline 'review' was actually mission-statement copy, excluded.",
+  "capture_attempts": [{"source": "google_gbp", "status": "partial", "reason": "Only 2 short verbatim reviews surfaced — may need Bruce follow-up scrape to get more of the 13"}],
+  "flags": ["review_thin_below_target", "female_owned_operated_callout"],
+  "created_at": "2026-04-18T07:21:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
