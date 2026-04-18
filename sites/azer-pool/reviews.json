@@ -1,0 +1,19 @@
+{
+  "reviews": [
+    {"author": "Joyce T.", "rating": 5, "date": "recent", "source": "google", "text": "What started out as a swampy mess, my pool is now the cleanest it has ever been! Mr. Azer is very thorough, happy to explain any questions you may have.", "verified": true},
+    {"author": "Ali J.", "rating": 5, "date": "recent", "source": "google", "text": "Mena did a fantastic job. The technician stayed patient, scrubbed everything thoroughly (including the covers), and left the hot tub looking brand new.", "verified": true, "tech": "Mena"},
+    {"author": "Lilian F.", "rating": 5, "date": "recent", "source": "google", "text": "He showed me how to do everything and now I can maintain my Jacuzzi.", "verified": true},
+    {"author": "Don M.", "rating": 5, "date": "recent", "source": "google", "text": "They are always very professional, and very thorough. I highly recommend their services.", "verified": true},
+    {"author": "Joel C.", "rating": 5, "date": "recent", "source": "google", "text": "He did a great job cleaning, refilling the tub, and adding chemicals. He advised us on how to better keep the water clean.", "verified": true},
+    {"author": "Bridget N.", "rating": 5, "date": "recent", "source": "google", "text": "If you're looking for a good reliable, affordable, friendly service, this is the company for you.", "verified": true},
+    {"author": "Patsy W.", "rating": 5, "date": "recent", "source": "google", "text": "They were great. Fast, affordable. Would use again. Came out quickly and were very professional.", "verified": true}
+  ],
+  "counts": {"total_available": "18 Google reviews", "captured": 7, "target_min": 3, "aggregate_rating": 4.8, "aggregate_rating_source": "Google Business Profile"},
+  "notes": "Azer Pool Services LLC. Owner Mr. Azer; technician mentioned by name: Mena. Buford GA 30519. Founded 2022. Services Buford, Lawrenceville, Sugar Hill, Suwanee, Cumming. Pool and hot tub cleaning + maintenance.",
+  "capture_attempts": [{"source": "google_gbp", "status": "success", "reason": "7 verbatim reviews extracted from HTML inline review-feed"}],
+  "flags": [],
+  "team_from_reviews": ["Mr. Azer (owner)", "Mena (technician)"],
+  "created_at": "2026-04-18T06:50:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
