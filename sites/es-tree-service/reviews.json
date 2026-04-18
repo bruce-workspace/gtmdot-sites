@@ -1,10 +1,50 @@
 {
-  "reviews": [],
-  "counts": {"total_available": "5 Google reviews", "captured": 0, "target_min": 5, "aggregate_rating": 4.2, "aggregate_rating_source": "Google GBP screenshot aggregate"},
-  "notes": "REVIEW-THIN: Es Tree Service has only 5 Google reviews at 4.2 stars, and NO verbatim review text was surfaced during research (Google redirect protection + no indexed snippets). Small local owner-operated crew at 5547 Kingsport Dr, Atlanta 30342. Services: tree removal, stump grinding, stump removal, trimming/pruning. Service area: Atlanta, Sandy Springs, Buckhead, Brookhaven. No founding date, no Facebook, no Thumbtack/Angi. The built index.html uses the proof-hero aggregate pattern rather than quoting reviews, since no attributed verbatim text is available. Flagged for Jesse owner-input gather before outreach.",
-  "capture_attempts": [{"source": "google_gbp", "status": "partial", "reason": "rating and count visible, no individual review text indexed"}, {"source": "yelp", "status": "not_found", "reason": "no Yelp profile located"}, {"source": "facebook", "status": "not_found", "reason": "no FB page found"}, {"source": "thumbtack", "status": "not_found", "reason": "no listing"}],
-  "flags": ["review_thin_zero_verbatim", "owner_input_required_before_publish", "small_operation_limited_online_presence"],
-  "created_at": "2026-04-17T00:00:00-04:00",
-  "created_by": "r1vs",
-  "schema_version": "1.0"
+  "reviews": [
+    {
+      "author": "EJ",
+      "rating": 5,
+      "date": "9 months ago",
+      "source": "google",
+      "text": "Five-Star Experience with ES Tree Service \u2013 Atlanta Area\n\nI placed a free \"Chip Drop\" request through the Chip Drop website, fully expecting to wait at least 1\u20134 weeks for delivery. The program explained that I would receive wood chips from whichever local tree service had availability\u2014and to my complete surprise, I received my free delivery on the very same day!\n\nAlex and Miguel from ES Tree Service showed up promptly and exceeded every expectation. These guys were awesome\u2014friendly, professional, and incredibly efficient. Not only did they provide a generous amount of wood chips, but they also offered to drop off a second load. Communication was smooth, their timing was perfect, and the entire experience was top-notch.\n\nChip Drop made the process easy with clear expectations about the volume of wood chips\u2014and wow, it\u2019s incredible how much you can receive for FREE!!! The optional $20 donation goes directly to the delivery team, and trust me, Alex and Miguel more than earned it. I\u2019m truly grateful ES Tree Service was the team who fulfilled my request.\n\nIf you\u2019re in the Atlanta area and need tree services or mulch delivery, I highly recommend checking out Alex and Miguel at ES Tree Service. I\u2019ll absolutely be doing business with them again!",
+      "verified": true
+    },
+    {
+      "author": "JarekQ Aloisio",
+      "rating": 5,
+      "date": "8 months ago",
+      "source": "google",
+      "text": "Juan and his team did an exemplary service on my property. They solved many of my problems I was facing that I could not handle alone. They came out with a strong and efficient crew, with all the tools & equipment needed to complete the job. They went above and beyond on my requests that I had asked for over the 2-day working period. I recommend their service for anyone local around Cobb County, Georgia.",
+      "verified": true
+    },
+    {
+      "author": "Betty Alspaugh",
+      "rating": 5,
+      "date": "3 months ago",
+      "source": "google",
+      "text": "Outstanding work all the way around - my second time using this service and I would highly recommend them to others.\nVery professional and great clean up afterwards!",
+      "verified": true
+    },
+    {
+      "author": "Jess Cause",
+      "rating": 1,
+      "date": "a year ago",
+      "source": "google",
+      "text": "Disrespectful team",
+      "verified": true
+    },
+    {
+      "author": "Lindsey Cordero",
+      "rating": 5,
+      "date": "3 weeks ago",
+      "source": "google",
+      "text": "this is the second time I used this business, Juan and his team did an outstanding job on our property, took down two big trees and trim the rest of the tree around the area that can fall branches at reasonable price, they were very clean and efficient and left me some wood to burn for fire-pit and fireplace, you can choose to have the mulch save if you like\u2026",
+      "verified": true
+    }
+  ],
+  "counts": {
+    "total_available": 5,
+    "captured": 5,
+    "target_min": 5
+  },
+  "notes": "Captured via Places API on 2026-04-17. Mac Mini direct (Bruce cron stuck)."
 }
