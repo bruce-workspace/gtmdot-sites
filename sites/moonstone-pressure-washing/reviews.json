@@ -1,0 +1,20 @@
+{
+  "reviews": [
+    {"author": "Scott Kathy L.", "rating": 5, "date": "recent", "source": "google", "text": "Moonstone did such a great job for us! They made our house look brand new again! They cleaned our driveway, patio, walkway and cleaned out the gutters. Can't thank them enough for the hard work and making us proud of our home!", "verified": true},
+    {"author": "Danielle B.", "rating": 5, "date": "recent", "source": "google", "text": "This duo did a fantastic job on our driveway and home. Gave our 1978 ranch a fresh look without paint or remodel. We will definitely use them again in the future and highly recommend them to all our friends and family.", "verified": true},
+    {"author": "Kristy H.", "rating": 5, "date": "recent", "source": "google", "text": "These guys were excellent! They went over and above. They ended up doing a job for several others neighbors who saw what a great job they did.", "verified": true},
+    {"author": "Elva A.", "rating": 5, "date": "recent", "source": "google", "text": "I really recommend Moonstone Pressure Washing. Very friendly, professional and they did an excellent job. My house and driveway looks like brand new!!", "verified": true},
+    {"author": "Erika J. I.", "rating": 5, "date": "recent", "source": "google", "text": "Alonzo and his son, Alonzo, Jr. are awesome! They responded quickly, answered all questions and did a thorough job!", "verified": true, "tech": "Alonzo + Alonzo Jr."},
+    {"author": "Bere P.", "rating": 5, "date": "recent", "source": "google", "text": "The service is excellent and they are very responsible. Especially my house and drive way looks really great, I would honestly hire them again.", "verified": true},
+    {"author": "Vicki Y.", "rating": 5, "date": "recent", "source": "google", "text": "Hard working father and son, I appreciated all the hard work and follow up.", "verified": true},
+    {"author": "Tax Girl", "rating": 5, "date": "recent", "source": "google", "text": "They were great! Very responsive caught them while they were doing another home in my community. Very professional and helpful", "verified": true}
+  ],
+  "counts": {"total_available": "67 Google reviews", "captured": 8, "target_min": 3, "aggregate_rating": 5.0, "aggregate_rating_source": "Google Business Profile via Places API (place_id ChIJYa25boXzKkYRHjfUN0LvjYo)"},
+  "notes": "Moonstone Pressure Washing. Father-and-son team: Alonzo Lara Cabrera Sr. + Alonzo Jr. Lithia Springs GA (1044 Moonstone Court — service-area). 5.0 / 67 reviews. Specialties: soft washing (house, roof, fencing), pressure washing (driveways, patios, sidewalks), paver sealing, gutter cleaning, AMRA-compliant roof cleaning. Serves Douglas County + metro Atlanta. 8 verbatim + 7 real Places API photos (1 hero + 6 gallery) downloaded and wired.",
+  "capture_attempts": [{"source": "google_gbp", "status": "success", "reason": "8 verbatim captured from inline HTML"}, {"source": "places_api_photos", "status": "success", "reason": "7 Places CDN photos fetched via direct curl; original hero already in place, 6 work photos added"}],
+  "flags": [],
+  "team_from_reviews": ["Alonzo Lara Cabrera Sr. (father)", "Alonzo Jr. (son)"],
+  "created_at": "2026-04-18T08:05:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}

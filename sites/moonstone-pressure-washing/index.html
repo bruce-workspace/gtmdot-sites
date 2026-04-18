@@ -949,6 +949,34 @@ img { max-width: 100%; display: block; }
   </div>
 </section>
 
+<!-- OUR WORK -->
+<style>
+.work-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.work-item{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/3;cursor:pointer;border:1px solid var(--border)}
+.work-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.work-item:hover img{transform:scale(1.05)}
+.work-caption{position:absolute;bottom:0;left:0;right:0;padding:20px 18px 18px;background:linear-gradient(to top,rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.5) 60%,transparent 100%)}
+.work-caption h3{font-family:var(--font-serif);font-size:20px;font-weight:600;margin-bottom:4px;letter-spacing:-0.3px;color:#fff}
+.work-caption span{font-size:11px;color:var(--brand-light);text-transform:uppercase;letter-spacing:2px;font-weight:600}
+@media(max-width:900px){.work-gallery{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.work-gallery{grid-template-columns:1fr}}
+</style>
+<section class="section" id="work">
+  <div class="reveal">
+    <div class="eyebrow">Our Work</div>
+    <h2 class="section-h2">Real Jobs, Real Results</h2>
+    <p class="section-sub">Driveways, houses, roofs, and fences restored across Douglas County. Photos from actual customer jobs.</p>
+  </div>
+  <div class="work-gallery">
+    <div class="work-item"><img src="photos/work-1.jpg" alt="Soft wash house cleaning by Moonstone Pressure Washing" loading="lazy"><div class="work-caption"><h3>House Soft Wash</h3><span>Exterior</span></div></div>
+    <div class="work-item"><img src="photos/work-2.jpg" alt="Pressure washing driveway by Moonstone" loading="lazy"><div class="work-caption"><h3>Driveway Wash</h3><span>Concrete + Pavers</span></div></div>
+    <div class="work-item"><img src="photos/work-3.jpg" alt="Roof cleaning service" loading="lazy"><div class="work-caption"><h3>Roof Cleaning</h3><span>AMRA-Compliant</span></div></div>
+    <div class="work-item"><img src="photos/work-4.jpg" alt="Patio and walkway pressure washing" loading="lazy"><div class="work-caption"><h3>Patio &amp; Walkway</h3><span>Restoration</span></div></div>
+    <div class="work-item"><img src="photos/work-5.jpg" alt="Fence cleaning service" loading="lazy"><div class="work-caption"><h3>Fence Restoration</h3><span>Wood + Vinyl</span></div></div>
+    <div class="work-item"><img src="photos/work-6.jpg" alt="Commercial pressure washing service" loading="lazy"><div class="work-caption"><h3>Full Exterior</h3><span>House + Drive</span></div></div>
+  </div>
+</section>
+
 <!-- REVIEWS -->
 <section class="section" id="reviews">
   <div class="reveal">
