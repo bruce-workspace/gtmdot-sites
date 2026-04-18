@@ -1,30 +1,50 @@
 {
   "reviews": [
     {
-      "author": "Herb V.",
+      "author": "Mr. Fat",
       "rating": 5,
-      "date": "3 months ago",
+      "date": "5 months ago",
       "source": "google",
-      "text": "I had a new garage built and needed drywall installed. Wilbur came in with a great quote and flexible timing. He is a trustworthy friendly person that truly cares about the quality of his work. Everything he and his team did was professional and expertly done. He properly prepared the space, the installation, taping, sanding and job cleanup, left the garage with perfect paint ready surfaces. I would use his services again and would recommend him to family and friends.",
+      "text": "I recently had drywall repair done at my home, and I couldn't be more pleased with the results! The team was professional, punctual, and extremely efficient. They took the time to assess the damage and explained exactly what needed to be done. The repair was flawless\u2014seamless and smooth\u2014leaving no visible signs of the original damage. I\u2019m very impressed with their work and would definitely recommend them to anyone needing drywall repair services. My new Drywall guy. Great experience overall!",
+      "verified": true
+    },
+    {
+      "author": "Meredith Mazey",
+      "rating": 5,
+      "date": "5 months ago",
+      "source": "google",
+      "text": "It was a pleasure working with Wilber and his team. I reached out to Wilber, and he came to my home and provided an estimate the same day. His team began work on our laundry room the next morning. Wilber provided updates each day along with progress photos. They did a great job, and we are very happy with the results! They were so kind, and it\u2019s clear they truly care about their work and want to provide quality service. Very thankful to have found Wilber and would recommend him to anyone.",
+      "verified": true
+    },
+    {
+      "author": "Jordan Mackenzie",
+      "rating": 5,
+      "date": "5 months ago",
+      "source": "google",
+      "text": "I found this company online and they came out really fast to fix a hole in my wall. They did an awesome job super friendly, professional, and the wall looks brand new. What really impressed me is they even fixed a small cosmetic issue nearby without me asking. That kind of extra effort is rare these days! I\u2019d definitely use them again and recommend them to anyone who needs wall repairs.",
+      "verified": true
+    },
+    {
+      "author": "Mark Holland",
+      "rating": 5,
+      "date": "8 months ago",
+      "source": "google",
+      "text": "SO FAST, kind, and does great work. Came over same day to provide an estimate and then showed up first thing the next morning with all supplies already purchased to get to work. I had water damage - so they replaced insulation, replaced/repaired drywall, replaced/repaired baseboards, and painted walls. I had to go to work and they provided photo progress updates throughout the day. The final work is fantastic. Thank you!",
+      "verified": true
+    },
+    {
+      "author": "Ortal Breen",
+      "rating": 5,
+      "date": "8 months ago",
+      "source": "google",
+      "text": "I recently had my drywell repaired in the Johns Creek, Atlanta area, and I couldn\u2019t be happier with the service! The team was professional, knowledgeable, and efficient from start to finish. They thoroughly inspected the issue, explained the repair process clearly, and completed the work quickly without any hassle. Highly recommend them if you need reliable and high-quality drywell repair in Johns Creek or the greater Atlanta area!",
       "verified": true
     }
   ],
   "counts": {
-    "total_available": 161,
-    "captured": 1,
-    "target_min": 5,
-    "aggregate_rating": 4.9,
-    "aggregate_rating_source": "Google via Birdeye aggregation"
+    "total_available": 157,
+    "captured": 5,
+    "target_min": 5
   },
-  "notes": "REVIEW-THIN. Business has 161 total reviews (160 Google + 1 Birdeye) at 4.9 stars, but only 1 verbatim review is retrievable via public aggregators. GBP anti-scraping blocks direct Google review text extraction. Other platforms (Yelp, Facebook) have no reviews or returned errors. Site is built with stat-frame trust signal (160+ reviews, 4.9 stars) rather than verbatim review grid. Recommend: if Jesse wants richer review coverage, ask Wilbur to screenshot or export 5-8 favorite Google reviews for inclusion.",
-  "capture_attempts": [
-    {"source": "google_gbp", "status": "blocked", "reason": "anti-scraping"},
-    {"source": "birdeye_aggregator", "status": "partial", "reason": "only 1 full review surfaced, rest truncated"},
-    {"source": "yelp", "status": "unclaimed", "reason": "no reviews"},
-    {"source": "facebook", "status": "empty", "reason": "page nearly empty"},
-    {"source": "bbb", "status": "no_listing", "reason": "not listed on BBB"}
-  ],
-  "created_at": "2026-04-16T16:40:00-04:00",
-  "created_by": "r1vs",
-  "schema_version": "1.0"
+  "notes": "Captured via Places API on 2026-04-17. Mac Mini direct (Bruce cron stuck)."
 }
