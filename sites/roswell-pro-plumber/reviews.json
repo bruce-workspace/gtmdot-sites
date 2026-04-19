@@ -1,0 +1,30 @@
+{
+  "reviews": [],
+  "counts": {
+    "total_available": "unknown — GBP share URL exists in rebuild-queue.json for Bruce direct retry",
+    "captured": 0,
+    "target_min": 3,
+    "aggregate_rating": null,
+    "aggregate_rating_source": "pending Bruce Places API retry"
+  },
+  "notes": "PRO Plumbers of Roswell (rebuild-queue slug: roswell-pro-plumber). Full-service Roswell-local plumbing — 24/7 emergency, sewer/sump/flood cleanup, gas line, bathroom+kitchen upgrades. Phone (770) 758-2881. Strong anti-sales-pressure positioning: 'Clear Communication — no hidden fees, no pressure, no surprises'. Own site testimonials section not surfaced on main page. HomeAdvisor/Angi/Yelp/BBB all gated. GBP share URL (https://share.google/wPR5j9LMVyn9TUJLA) is in rebuild-queue.json — Bruce Places API retry is straightforward. Claim code RSWPL847 preserved.",
+  "capture_attempts": [
+    {"source": "own_site_proplumberroswell", "status": "testimonials_not_on_main", "reason": "own-site testimonials section not exposed on main page — would need sub-page WebFetch"},
+    {"source": "homeadvisor", "status": "gated", "reason": "content gated behind search results"},
+    {"source": "angi", "status": "gated", "reason": "content gated behind search results"},
+    {"source": "yelp", "status": "not_attempted", "reason": "Yelp anti-scrape"},
+    {"source": "bbb", "status": "gated", "reason": "referenced in search results but direct content gated"},
+    {"source": "google_gbp", "status": "not_attempted_by_r1vs", "reason": "Bruce owns Places API — share URL https://share.google/wPR5j9LMVyn9TUJLA available in rebuild-queue.json"}
+  ],
+  "flags": [
+    "review_blocked_pending_bruce_retry",
+    "empty_shell_2pass_candidate",
+    "gbp_url_available_for_bruce",
+    "strong_anti_sales_pressure_positioning",
+    "24_7_emergency_actual"
+  ],
+  "team_from_reviews": [],
+  "created_at": "2026-04-19T17:22:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}

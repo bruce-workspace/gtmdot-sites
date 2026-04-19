@@ -1,0 +1,52 @@
+{
+  "slug": "roswell-pro-plumber",
+  "vertical": "plumbing",
+  "vertical_filter": "brightness(0.92) contrast(1.05) saturate(0.95)",
+  "hero": {
+    "slot": "hero.jpg",
+    "type": "plumber_at_work_residential",
+    "priority_order": [
+      "places_api_owner_uploaded",
+      "places_api_customer_uploaded",
+      "recraft_photorealistic"
+    ],
+    "recraft_prompt_if_needed": "Professional American plumber working under a residential kitchen sink or water heater in a Roswell-area suburban home, clean work uniform, tools visible, photorealistic, no text or logos, no signage, warm natural daylight.",
+    "caption_context": "Roswell-local 24/7 plumbing with strong anti-sales-pressure positioning. Hero should read trustworthy + in-home + actually working (not a marketing pose). Prefer owner/tech at a real job site over stock plumber."
+  },
+  "gallery": [
+    {
+      "slot": "gbp-1.jpg",
+      "type": "water_heater_service",
+      "context": "Water heater repair or replacement — tank or tankless. Caption 'Water heaters — repair + replace, tankless + tank'."
+    },
+    {
+      "slot": "gbp-2.jpg",
+      "type": "drain_sewer_service",
+      "context": "Drain cleaning or sewer line service — camera scope or auger. Caption 'Drains + sewer — cleaning, camera, full line repair'."
+    },
+    {
+      "slot": "gbp-3.jpg",
+      "type": "leak_detection",
+      "context": "Leak detection + pipe repair — under-slab, wall, or fixture. Caption 'Leak detection + pipe repair — under slab, walls, fixtures'."
+    },
+    {
+      "slot": "gbp-4.jpg",
+      "type": "sump_pump_flood",
+      "context": "Sump pump install or flood cleanup — basement or crawlspace. Caption 'Sump pump + flood cleanup — whole-home water response'."
+    },
+    {
+      "slot": "gbp-5.jpg",
+      "type": "gas_line_service",
+      "context": "Gas line install or repair (licensed specialty). Caption 'Gas lines — licensed install + repair'."
+    },
+    {
+      "slot": "gbp-6.jpg",
+      "type": "bath_kitchen_upgrade",
+      "context": "Bathroom or kitchen fixture upgrade — toilet, faucet, disposal, full remodel-lite. Caption 'Bath + kitchen upgrades — fixtures, toilets, full-room'."
+    }
+  ],
+  "sections": [
+    {"selector": "#area-bg", "type": "roswell_north_fulton_streetscape", "context": "Roswell / Alpharetta / Johns Creek / Sandy Springs suburban residential; Unsplash OK if no real photos"}
+  ],
+  "notes": "Plumbing vertical — clean + trustworthy is the visual tone, not aggressive-urgent. The 'no hidden fees, no pressure, no surprises' positioning should be reflected visually: real jobs, real hands, no staged-showroom energy. 24/7 emergency is a differentiator — at least one gallery slot (flood/sump or sewer) should read 'we handle the bad day'. Gas line photo reinforces full-qualification signal. Bath+kitchen upgrade signals the business is more than repair-only."
+}
