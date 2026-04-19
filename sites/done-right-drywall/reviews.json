@@ -1,0 +1,30 @@
+{
+  "reviews": [],
+  "counts": {
+    "total_available": "unknown — HomeAdvisor snippet 4.8/5, Yelp Atlanta has 17 photos, Norcross has 35 photos. Likely 15-30+ reviews across platforms.",
+    "captured": 0,
+    "target_min": 3,
+    "aggregate_rating": null,
+    "aggregate_rating_source": "pending Bruce Places API retry"
+  },
+  "notes": "Done Right Drywall Repair & Painting EXPERTS. Owner David Neel. Founded ~2020. Atlanta HQ (228 Triumph Dr NW 30327) + Norcross location (6801 Lismore Dr 30093). Phone (404) 903-3346. Email info@donerightdrywallrepair.com. Dual-trade: drywall repair + painting (including cabinets), water damage, textured ceilings. HomeAdvisor rating 4.8/5 per snippet. BBB not accredited. REVIEW-BLOCKED at research time — all review platforms content-gated. Flagged for Bruce Places API retry per HANDOFF-CONTRACT §3 Empty-shell 2-pass variant.",
+  "capture_attempts": [
+    {"source": "provenexpert", "status": "empty", "reason": "profile exists, 0 reviews on it"},
+    {"source": "bbb", "status": "empty", "reason": "not enough info for BBB rating, no review text"},
+    {"source": "homeadvisor", "status": "partial", "reason": "rating snippet 4.8/5 surfaced, full review content gated"},
+    {"source": "yelp_atlanta", "status": "not_attempted", "reason": "Yelp anti-scrape; 17 photos on listing per search"},
+    {"source": "yelp_norcross", "status": "not_attempted", "reason": "Yelp anti-scrape; 35 photos on listing per search"},
+    {"source": "facebook", "status": "not_attempted", "reason": "Facebook page access gated"},
+    {"source": "google_gbp", "status": "not_attempted", "reason": "no GBP share URL in rebuild-queue.json"}
+  ],
+  "flags": [
+    "review_blocked_pending_bruce_retry",
+    "empty_shell_2pass_candidate",
+    "dual_trade_drywall_plus_paint_differentiator",
+    "two_physical_locations_atlanta_norcross"
+  ],
+  "team_from_reviews": [],
+  "created_at": "2026-04-19T16:52:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}

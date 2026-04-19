@@ -1,0 +1,54 @@
+{
+  "slug": "done-right-drywall",
+  "vertical": "drywall_paint",
+  "vertical_filter": "brightness(0.86) contrast(1.1) saturate(0.85)",
+  "hero": {
+    "slot": "hero.jpg",
+    "type": "finished_wall_or_ceiling",
+    "priority_order": [
+      "yelp_atlanta_17_photos",
+      "yelp_norcross_35_photos",
+      "places_api_owner_uploaded",
+      "places_api_customer_uploaded",
+      "recraft_photorealistic"
+    ],
+    "recraft_prompt_if_needed": "Professional clean finished drywall repair on interior wall with fresh paint, modern residential room, natural light, photorealistic, no text or signage, no people.",
+    "caption_context": "Prefer finished-work hero (clean wall, ceiling, or painted room) over process shots. Drywall's 'before/after' is the conversion trigger — emphasize the finished state."
+  },
+  "gallery": [
+    {
+      "slot": "gbp-1.jpg",
+      "type": "before_after_drywall",
+      "context": "Before (damaged drywall/water spot/hole) next to after (seamless repair + paint). Caption 'Drywall + paint — finished seamless'."
+    },
+    {
+      "slot": "gbp-2.jpg",
+      "type": "water_damage_repair",
+      "context": "Water damage restoration in-progress or finished. Caption 'Water damage — drywall, ceiling, and paint in one trip'."
+    },
+    {
+      "slot": "gbp-3.jpg",
+      "type": "textured_ceiling",
+      "context": "Textured ceiling repair or matched texture. Caption 'Textured ceilings — matched and hidden'."
+    },
+    {
+      "slot": "gbp-4.jpg",
+      "type": "cabinet_paint",
+      "context": "Cabinet painting (kitchen/bathroom). Caption 'Cabinet painting — sprayed, sealed, cured'."
+    },
+    {
+      "slot": "gbp-5.jpg",
+      "type": "interior_paint",
+      "context": "Interior room painted with clean trim work. Caption 'Interior painting — cut-in clean, roller even'."
+    },
+    {
+      "slot": "gbp-6.jpg",
+      "type": "crew_at_work",
+      "context": "David Neel or crew member working. Caption naming David if it's him."
+    }
+  ],
+  "sections": [
+    {"selector": "#area-bg", "type": "atlanta_residential_neighborhood", "context": "Atlanta or Norcross residential exteriors; Unsplash OK"}
+  ],
+  "notes": "Drywall + paint vertical = before/after visual is THE conversion driver. Prioritize finished/fixed imagery. Water damage work photos are high-value for insurance-claim outreach angle. Two physical addresses mean likely 2x photo inventory — Bruce can pull from both Yelp listings (Atlanta 17 photos + Norcross 35 photos). Cabinet painting is the differentiator that sets this apart from dedicated drywall shops."
+}
