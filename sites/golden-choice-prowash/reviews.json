@@ -1,0 +1,33 @@
+{
+  "reviews": [],
+  "counts": {
+    "total_available": "unknown — 17-year operating history suggests 50+ reviews across GBP/Yelp/etc. Google search surfaces paraphrased review content frequently.",
+    "captured": 0,
+    "target_min": 3,
+    "aggregate_rating": null,
+    "aggregate_rating_source": "pending Bruce Places API retry (HIGH PRIORITY)"
+  },
+  "notes": "Golden Choice Pro-Wash. Owner Sheridan (last name pending). Founded January 2009 (17 years). Sandy Springs HQ at 1700 Northside Dr NW A7, Atlanta GA 30318. Phone (470) 519-1217. Email Goldenchoiceprowash@gmail.com. Full multi-page site at goldenchoiceprowash.com. Services: pressure washing, soft washing, roof cleaning, gutter cleaning, window washing, siding, deck/patio, commercial, gas station, parking lot, post-construction. Service area: Sandy Springs, Roswell, Johns Creek, Alpharetta, Brookhaven, Atlanta. REVIEW-BLOCKED at research time but PARAPHRASED review content surfaced via Google search — strong signal Bruce will find substantial verbatim content. Owner-named pull-quote material exists (Sheridan visited for gutter clean, advised not needed, no charge — HONESTY story). HIGH PRIORITY for Bruce retry.",
+  "capture_attempts": [
+    {"source": "own_site", "status": "partial", "reason": "'Some Reviews from Our Customers' section referenced but content not surfaced via WebFetch"},
+    {"source": "google_search_snippets", "status": "paraphrased_only", "reason": "Search results surfaced paraphrased review content mentioning Sheridan by name — NOT verbatim, not usable as pull quotes"},
+    {"source": "yelp", "status": "not_attempted", "reason": "Yelp anti-scrape; listing has 15 photos"},
+    {"source": "google_gbp", "status": "not_attempted", "reason": "no GBP share URL in rebuild-queue.json"}
+  ],
+  "flags": [
+    "review_blocked_pending_bruce_retry",
+    "empty_shell_2pass_candidate",
+    "high_priority_bruce_retry",
+    "paraphrased_review_signals_exist_verbatim_pending",
+    "owner_named_in_reviews_sheridan"
+  ],
+  "paraphrased_signals_for_bruce_to_find_verbatim": [
+    "Sheridan visited for gutters, advised they didn't need cleaning, did not charge (honesty differentiator)",
+    "Cleaned gutters on both first + second floors, responsive to phone + text",
+    "Customer happily surprised by price, impressed with quality"
+  ],
+  "team_from_reviews": ["Sheridan (owner — named in search-surfaced review content)"],
+  "created_at": "2026-04-19T16:55:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "golden-choice-prowash",
+  "vertical": "pressure_washing",
+  "vertical_filter": "brightness(0.88) contrast(1.12) saturate(0.95)",
+  "hero": {
+    "slot": "hero.jpg",
+    "type": "before_after_house_wash",
+    "priority_order": [
+      "own_site_photos",
+      "yelp_15_photos",
+      "places_api_owner_uploaded",
+      "places_api_customer_uploaded",
+      "recraft_photorealistic"
+    ],
+    "recraft_prompt_if_needed": "Professional clean residential house exterior freshly washed, light colored siding gleaming, blue sky, sprawling lawn, photorealistic, no people, no text.",
+    "caption_context": "Before/after is THE conversion driver for pressure washing. If photos with side-by-side are available, use those in hero. Caption reinforces 17-year history or Sheridan's personal involvement."
+  },
+  "gallery": [
+    {
+      "slot": "gbp-1.jpg",
+      "type": "before_after_house",
+      "context": "House siding before + after wash. Caption 'House washing — moss, dirt, stains, gone'."
+    },
+    {
+      "slot": "gbp-2.jpg",
+      "type": "before_after_roof",
+      "context": "Roof cleaning before + after (black streaks removed). Caption 'Roof cleaning — soft wash, no damage'."
+    },
+    {
+      "slot": "gbp-3.jpg",
+      "type": "before_after_driveway",
+      "context": "Concrete driveway or walkway pressure-washed. Caption 'Concrete + driveways — years of grime, one afternoon'."
+    },
+    {
+      "slot": "gbp-4.jpg",
+      "type": "gutter_cleaning",
+      "context": "Gutter cleaning or downspout flush. Caption 'Gutters — flushed, not just surface-cleaned'."
+    },
+    {
+      "slot": "gbp-5.jpg",
+      "type": "commercial_job",
+      "context": "Gas station or parking lot commercial job (differentiator from residential-only competitors). Caption 'Commercial — gas stations, lots, post-construction'."
+    },
+    {
+      "slot": "gbp-6.jpg",
+      "type": "owner_or_crew",
+      "context": "Sheridan personally with equipment or team. Caption naming him if it's him — reinforces 17-year owner-operator angle."
+    }
+  ],
+  "sections": [
+    {"selector": "#area-bg", "type": "atlanta_sandy_springs_streetscape", "context": "Sandy Springs / North Atlanta streetscape; Unsplash OK"}
+  ],
+  "notes": "Pressure washing vertical = before/after photos are the single biggest conversion driver. If Bruce surfaces before/after pairs, prioritize those in hero + gallery slots 1-3. Sheridan's 17-year owner-operator presence is a rare trust signal at this scale — wire him into the team/about section. Gas station + commercial work opens a B2B outreach angle worth preserving in gallery slot 5."
+}
