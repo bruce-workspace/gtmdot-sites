@@ -28,6 +28,13 @@ html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--b
 .timeline-section{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-top:48px}.timeline-text h3{font-family:var(--font-serif);font-size:28px;font-weight:700;margin-bottom:16px}.timeline-text p{color:var(--muted);line-height:1.7;margin-bottom:20px}.timeline{position:relative;padding-left:32px}.timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--border-full)}.timeline-item{position:relative;padding-bottom:32px}.timeline-item:last-child{padding-bottom:0}.timeline-item::before{content:'';position:absolute;left:-28px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--brand-light);border:3px solid var(--bg)}.timeline-year{font-family:var(--font-serif);font-size:20px;font-weight:700;color:var(--brand-light);margin-bottom:4px}.timeline-desc{font-size:15px;color:var(--muted);line-height:1.6}
 .area-pills{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.area-pill{background:var(--surface);border:1px solid var(--border);padding:10px 20px;border-radius:100px;font-size:14px;font-weight:600;color:var(--muted);transition:all .3s}.area-pill:hover{border-color:var(--brand-light);color:var(--brand-light)}
 .faq-list{margin-top:48px;max-width:800px}.faq-item{border-bottom:1px solid var(--border)}.faq-question{width:100%;background:none;border:none;color:var(--text);font-family:var(--font-sans);font-size:17px;font-weight:600;padding:24px 0;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px}.faq-question svg{flex-shrink:0;transition:transform .3s;color:var(--brand-light)}.faq-item.open .faq-question svg{transform:rotate(180deg)}.faq-answer{display:grid;grid-template-rows:0fr;overflow:hidden;transition:grid-template-rows .4s ease}.faq-answer-inner{padding:0 0 24px;font-size:15px;color:var(--muted);line-height:1.7;overflow:hidden;min-height:0}.faq-item.open .faq-answer{grid-template-rows:1fr}
+.pull-quote{max-width:900px;margin:0 auto 48px;padding:40px 32px;background:linear-gradient(135deg,var(--brand-glow) 0%,var(--bg-alt) 100%);border:1px solid var(--border);border-left:4px solid var(--brand-light);border-radius:16px;position:relative}
+.pull-quote::before{content:'"';position:absolute;top:8px;left:24px;font-family:var(--font-serif);font-size:96px;line-height:1;color:var(--brand-light);opacity:0.35;font-weight:700}
+.pull-quote-text{font-family:var(--font-serif);font-size:clamp(22px,2.4vw,30px);font-weight:500;font-style:italic;line-height:1.35;letter-spacing:-0.3px;color:var(--text);margin-bottom:20px;padding-left:28px}
+.pull-quote-attr{display:flex;align-items:center;gap:14px;padding-left:28px;flex-wrap:wrap}
+.pull-quote-attr-stars{display:flex;gap:2px;color:#f59e0b}
+.pull-quote-attr-name{font-weight:700;color:var(--brand-light);font-size:15px}
+.pull-quote-attr-source{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:2px}
 .form-wrap{max-width:600px;margin:48px auto 0}.form-group{margin-bottom:20px}.form-group label{display:block;font-size:14px;font-weight:600;margin-bottom:8px;color:var(--text)}.form-group input,.form-group select,.form-group textarea{width:100%;padding:14px 16px;background:var(--surface);border:1px solid var(--border);border-radius:10px;color:var(--text);font-family:var(--font-sans);font-size:15px;transition:border-color .3s;-webkit-appearance:none}.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--brand-light);box-shadow:0 0 0 3px var(--brand-glow)}.form-group select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238a929e' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:48px}.form-group textarea{min-height:120px;resize:vertical}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .form-submit{width:100%;padding:16px;background:var(--brand);color:#fff;font-size:16px;font-weight:700;border:none;border-radius:10px;cursor:pointer;letter-spacing:.04em;transition:all .3s}.form-submit:hover{background:var(--brand-light);transform:translateY(-1px)}.form-consent{font-size:12px;color:var(--muted);margin-top:12px;line-height:1.5}.form-success{display:none;text-align:center;padding:48px 24px}.form-success svg{color:var(--brand-light);margin:0 auto 16px}.form-success h3{font-family:var(--font-serif);font-size:28px;font-weight:700;margin-bottom:8px}.form-success p{color:var(--muted)}
 .footer{background:var(--surface);border-top:1px solid var(--border);padding:64px 40px 32px}.footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px}.footer-brand{font-family:var(--font-serif);font-size:22px;font-weight:700;margin-bottom:12px}.footer-desc{font-size:14px;color:var(--muted);line-height:1.7;max-width:360px}.footer-heading{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--brand-light);margin-bottom:16px}.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}.footer-links a,.footer-links li{font-size:14px;color:var(--muted);transition:color .2s}.footer-links a:hover{color:var(--text)}.footer-bottom{max-width:1200px;margin:32px auto 0;padding-top:24px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
@@ -94,6 +101,20 @@ html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--b
     <div class="eyebrow">What Customers Say</div>
     <h2 class="section-h2">Nextdoor Favorite 4 Years Running</h2>
     <p class="section-sub">Bob's customers are loyal because Bob earns it. Every diagnosis is honest. Every repair is fair. Every visit earns the next one.</p>
+  </div>
+  <div class="pull-quote reveal">
+    <p class="pull-quote-text">We recently had some issues with our AC all of the sudden, and the first couple of companies that came out told us we needed a new system. After many recommendations from neighbors, we called Bob's. Our technician Josh was super thorough in finding the actual issue. Saved us thousands.</p>
+    <div class="pull-quote-attr">
+      <span class="pull-quote-attr-stars">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+      </span>
+      <span class="pull-quote-attr-name">Yelp Customer</span>
+      <span class="pull-quote-attr-source">Yelp · Competitors Quoted New System, Josh Saved Thousands</span>
+    </div>
   </div>
   <div class="review-feed reveal">
     <div class="review-feed-track">
@@ -166,6 +187,20 @@ html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--b
 <section class="section" id="contact">
   <div class="reveal">
     <div style="text-align:center"><div class="eyebrow">Get Started</div><h2 class="section-h2">Free Estimate</h2><p class="section-sub" style="margin:0 auto">Tell Bob about your HVAC situation and get an honest assessment. No pressure, no upselling.</p></div>
+    <div class="pull-quote" style="margin-top:48px">
+      <p class="pull-quote-text">We've been using Bob's Heating and Air exclusively for the past 5 years for a variety of HVAC needs.</p>
+      <div class="pull-quote-attr">
+        <span class="pull-quote-attr-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </span>
+        <span class="pull-quote-attr-name">Mike Dorman</span>
+        <span class="pull-quote-attr-source">Google · 5 Years Exclusive Customer</span>
+      </div>
+    </div>
     <div class="form-wrap">
       <form id="contactForm">
         <div class="form-row"><div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" required placeholder="Full name"></div><div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" required placeholder="(___) ___-____"></div></div>
