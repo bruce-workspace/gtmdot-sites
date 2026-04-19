@@ -1,19 +1,44 @@
 {
   "reviews": [
-    {"author": "Gary Giddens", "rating": 5, "date": "recent", "source": "google", "text": "I have delt with several concrete contractors, and Maurice is best. He is honest and straight forward. No BS here. Many years of experience and it shows. I would recommend him to my family or anyone. Don't waste time if you want the job done right, you should call Maurice.", "verified": true},
-    {"author": "Wanda Garland", "rating": 5, "date": "recent", "source": "google", "text": "Maurice did a wonderful job on my screened in porch, patio and pergola. I could not imagine that anyone could have done a better job! He was very considerate of my yard and did an excellent job! I would highly recommend him!!!", "verified": true},
-    {"author": "Josh Hughes", "rating": 5, "date": "recent", "source": "google", "text": "Very satisfied with this company. I reached out and he showed up as planned and had our concrete poured within a few days. Excellent work and will be calling them back for our next projects.", "verified": true},
-    {"author": "Rory Foster", "rating": 5, "date": "recent", "source": "google", "text": "Maurice and his crew were true professionals. Outstanding communication about every aspect of the project. Will highly recommend for your masonry needs.", "verified": true},
-    {"author": "Terrie Flaherty", "rating": 5, "date": "recent", "source": "google", "text": "Exceptional customer service, arrived at prescheduled time. The quality of his work was outstanding and very reasonably priced. Would definitely hire him again.", "verified": true},
-    {"author": "Jolleen Cason", "rating": 5, "date": "recent", "source": "google", "text": "Maurice's company did a wonderful job on our back porch. They were professional, courteous and knowledgeable. I wish I had heard of him earlier so he wouldn't have had to come fix another local concrete company's mistake.", "verified": true},
-    {"author": "Matt Barker", "rating": 5, "date": "recent", "source": "google", "text": "Highly recommend using their services. Very easy to communicate with and very knowledgable. Got the work done when they said and did it well. Was a pleasure to work with. Found my concrete contractor.", "verified": true},
-    {"author": "Amanda Bowers", "rating": 5, "date": "recent", "source": "google", "text": "I hired this company to demolish and remove an old pizza oven on the back porch of my condo. It was a difficult job and they did it in one morning with one day's notice. The communication was frequent and perfect, the job site is clean, and the price was very reasonable.", "verified": true}
-  ],
-  "counts": {"total_available": "20 Google reviews", "captured": 8, "target_min": 3, "aggregate_rating": 4.8, "aggregate_rating_source": "Google Business Profile"},
-  "notes": "Owner Maurice. Owner-operated concrete contractor, Hawthorne FL (16332 NE 70th Pl). 21+ years. Driveways, patios, porches, masonry. 8 verbatim reviews extracted from existing HTML review-feed. Site is non-Atlanta (Florida) — confirm outbound list scope.",
-  "capture_attempts": [{"source": "google_gbp", "status": "success", "reason": "8 verbatim reviews with named reviewers from HTML inline"}],
-  "flags": ["non_atlanta_geography"],
-  "created_at": "2026-04-18T06:42:00-04:00",
-  "created_by": "r1vs",
-  "schema_version": "1.0"
+    {
+      "author": "Josh Hughes",
+      "rating": 5,
+      "date": "4 months ago",
+      "source": "google",
+      "text": "Very satisfied with this company.  I reached out and he showed up as planned and had our concrete poured within a few days.  Excellent work and will be calling them back for our next projects .",
+      "verified": true
+    },
+    {
+      "author": "Rory Foster",
+      "rating": 5,
+      "date": "4 months ago",
+      "source": "google",
+      "text": "Maurice and his crew were true professionals.  Outstanding communication about every aspect of the project.  Will highly recommend for your masonry needs.",
+      "verified": true
+    },
+    {
+      "author": "Wanda Garland",
+      "rating": 5,
+      "date": "9 months ago",
+      "source": "google",
+      "text": "Maurice did a wonderful job on my screened in porch, patio and pergola. I could not imagine that anyone could have done a better job! He was very considerate of my yard and did an excellent job! I would highly recommend him!!!",
+      "verified": true
+    },
+    {
+      "author": "Matt Barker",
+      "rating": 5,
+      "date": "2 months ago",
+      "source": "google",
+      "text": "Highly recommend using their services. Very easy to communicate with and very knowledgable. Got the work done when they said and did it well. Was a pleasure to work with. Found my concrete contractor.",
+      "verified": true
+    },
+    {
+      "author": "James Bruinsma",
+      "rating": 5,
+      "date": "a year ago",
+      "source": "google",
+      "text": "We hired Maurice to pour a 20' x 20' concrete pad for our carport. He came out very quickly, assessed and gave us an estimate of cost and time. He came out a few days later and started work immediately. The only slight delay for the entire job was the concrete truck availability 2 day delay). They poured the concrete the day before Christmas Eve. He has VERY reasonable rates and does incredible work! Maurice is very friendly, trustworthy and personable.\nHIGHLY recommend him for your next job!",
+      "verified": true
+    }
+  ]
 }
