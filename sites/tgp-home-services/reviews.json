@@ -1,0 +1,29 @@
+{
+  "reviews": [],
+  "counts": {
+    "total_available": "unknown — GBP share URL exists in rebuild-queue.json for Bruce direct retry",
+    "captured": 0,
+    "target_min": 3,
+    "aggregate_rating": null,
+    "aggregate_rating_source": "pending Bruce Places API retry"
+  },
+  "notes": "TGP Home Services, Chamblee GA. Phone (404) 966-5583. Remodeler trade — likely full-scope residential (kitchen/bath/full-home) plus handyman-punch-list. Own site not surfaced. BBB no listing. GBP share URL https://share.google/cAHl4gZdqFP1tlWmg is in rebuild-queue.json — Bruce Places API retry is straightforward. Claim code TGPH8214 preserved.",
+  "capture_attempts": [
+    {"source": "bbb", "status": "no_listing", "reason": "BBB search returned no results for TGP Home Services in Chamblee GA"},
+    {"source": "google_search", "status": "gated", "reason": "Google anti-scrape on SERP"},
+    {"source": "duckduckgo_search", "status": "no_match", "reason": "no direct results"},
+    {"source": "google_gbp_places_api", "status": "not_attempted_by_r1vs", "reason": "Bruce owns Places API — share URL available in rebuild-queue.json"},
+    {"source": "own_website", "status": "not_surfaced", "reason": "no business website surfaced via web search"}
+  ],
+  "flags": [
+    "review_blocked_pending_bruce_retry",
+    "empty_shell_2pass_candidate",
+    "gbp_url_available_for_bruce",
+    "chamblee_dekalb_corridor",
+    "no_own_website_surfaced"
+  ],
+  "team_from_reviews": [],
+  "created_at": "2026-04-19T17:38:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}

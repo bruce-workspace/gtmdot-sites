@@ -1,0 +1,52 @@
+{
+  "slug": "tgp-home-services",
+  "vertical": "remodeling",
+  "vertical_filter": "brightness(0.95) contrast(1.08) saturate(1.02)",
+  "hero": {
+    "slot": "hero.jpg",
+    "type": "finished_kitchen_or_bath_remodel",
+    "priority_order": [
+      "places_api_owner_uploaded",
+      "places_api_customer_uploaded",
+      "recraft_photorealistic"
+    ],
+    "recraft_prompt_if_needed": "Finished residential kitchen remodel with new cabinetry, quartz countertops, and modern fixtures in a metro Atlanta suburban home, professional contractor standing confidently in the space, photorealistic, no text or logos, no signage, warm natural daylight.",
+    "caption_context": "Remodeling is outcome-led — hero should be a finished space, not a tools-on-the-job action shot. Kitchen or bath remodel (highest-ticket categories) reinforces scope. Include owner/contractor in frame if available to reinforce 'real local crew' vs marketplace-mill."
+  },
+  "gallery": [
+    {
+      "slot": "gbp-1.jpg",
+      "type": "kitchen_remodel_before_after",
+      "context": "Kitchen before/after or finished kitchen with cabinets + counters. Caption 'Kitchen remodels — cabinets, counters, full-room'."
+    },
+    {
+      "slot": "gbp-2.jpg",
+      "type": "bathroom_remodel",
+      "context": "Bathroom remodel — tile, vanity, shower. Caption 'Bathrooms — tile, vanity, shower, full-remodel'."
+    },
+    {
+      "slot": "gbp-3.jpg",
+      "type": "flooring_install",
+      "context": "Hardwood or LVP install in progress or finished. Caption 'Flooring — hardwood, LVP, tile'."
+    },
+    {
+      "slot": "gbp-4.jpg",
+      "type": "drywall_paint",
+      "context": "Drywall finish or interior paint — punch-list or full-wall. Caption 'Drywall + paint — repair, finish, full-room'."
+    },
+    {
+      "slot": "gbp-5.jpg",
+      "type": "handyman_punch_list",
+      "context": "Handyman punch-list work — fixture install, trim, small repairs. Caption 'Handyman + punch-list — one call, one crew'."
+    },
+    {
+      "slot": "gbp-6.jpg",
+      "type": "owner_or_crew_on_site",
+      "context": "Owner or crew on a real job site. Caption names owner if surfaced — reinforces local-operator brand."
+    }
+  ],
+  "sections": [
+    {"selector": "#area-bg", "type": "chamblee_dekalb_residential", "context": "Chamblee / Brookhaven / Doraville / Dunwoody residential streetscape; Unsplash OK if no real photos"}
+  ],
+  "notes": "Remodeling vertical — outcome-led photography (finished spaces) not process-led (tools). Slightly higher contrast (1.08) than plumbing/HVAC to make before/after transformations pop. Kitchen + bath get 2 of 6 slots (highest-ticket categories). At least 1 slot for handyman/punch-list to communicate 'full scope' not just remodel-only."
+}
