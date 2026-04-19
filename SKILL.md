@@ -251,6 +251,7 @@ Always use a dark gradient overlay on hero photos for text legibility. Never pla
 
 **2d. Standard components (include on every build)**
 - **Stats widget** — pull their real numbers from GBP (review count, years in business, etc.) and display as a 3-column metric strip between hero and services. Use their actual data, not invented numbers.
+- **⚠️ HARD RULE — no stats duplication between hero and story section.** If a site has both a `.stats` widget (hero/sub-hero bar) AND a `.story-highlights` / about-section stats grid, the values must not overlap. Caught 10 of 14 sites on 2026-04-18 with 3+ duplicated stats between hero and story section — wasted real estate. The story section's metric grid should be EITHER (a) team cards of named technicians/owner, OR (b) founding-year timeline milestones, OR (c) commitment callouts ("Licensed & Insured", "NEC Certified", "No Subs"). Never repeat the rating / review-count / BBB / guarantee numbers that already appear in the hero stats bar. Enforce during build — not during polish.
 - **Emergency/availability callout** — dedicated section highlighting 24/7 availability, emergency response, parts on truck. Every service business should lead with availability.
 - **Reviews: 2-tier** — 3 curated best reviews in card grid (featured), PLUS slowly scrolling horizontal feed of all 5-star reviews below
 - **FAQ** — scrape their FAQ page via Firecrawl. If content found, render as accordion. If not found, skip — don't generate fake questions.
