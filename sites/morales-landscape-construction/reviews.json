@@ -1,0 +1,62 @@
+{
+  "reviews": [
+    {
+      "author": "Jeff H.",
+      "rating": 5,
+      "date": "May 26, 2025",
+      "source": "thumbtack",
+      "text": "I'm thrilled with the incredible transformation Morales Landscaping brought to my property! His team demonstrated professionalism, creativity, and attention to detail.",
+      "verified": true,
+      "notes": "Thumbtack profile surfaced snippet with '...' between 'property!' and 'professionalism' — may be an excerpt. Preserved as shown."
+    },
+    {
+      "author": "Ginny B.",
+      "rating": 5,
+      "date": "Apr 21, 2025",
+      "source": "thumbtack",
+      "text": "Jose was wonderful. Prompt and very timely at responding... His quality of work after my project was done was outstanding.",
+      "verified": true,
+      "tech": "Jose"
+    },
+    {
+      "author": "Marisa P.",
+      "rating": 5,
+      "date": "Jul 28, 2024",
+      "source": "thumbtack",
+      "text": "Jose was responsive, professional and did great work. Hardscaping project... went as planned and in a timely manner.",
+      "verified": true,
+      "tech": "Jose"
+    },
+    {
+      "author": "Brittany W.",
+      "rating": 5,
+      "date": "recent (4 weeks ago from capture date)",
+      "source": "thumbtack",
+      "text": "Great communication and fair pricing they leveled my yard for the kids pools and laid grass seed.",
+      "verified": true
+    }
+  ],
+  "counts": {
+    "total_available": "26 Thumbtack reviews + unknown Google/Yelp count (Yelp listing blocked, GBP URL not available)",
+    "captured": 4,
+    "target_min": 3,
+    "aggregate_rating": 4.5,
+    "aggregate_rating_source": "Thumbtack live page"
+  },
+  "notes": "Morales Landscape & Construction (MLC). Owner Jose Morales, 6 years in business (founded ~2019-2020), 5-person crew, 34 times hired on Thumbtack. Broad service scope: landscaping design + hardscaping + sod/irrigation/tree work + stump grinding + patios + excavation + junk removal. 4 verbatim reviews captured from Thumbtack. Jose personally named in 3 of 4 reviews. Meets 1-pass trigger (captured >= 3) per HANDOFF-CONTRACT §3, but HTML build deferred to dedicated pass-3 iteration.",
+  "capture_attempts": [
+    {"source": "thumbtack", "status": "success", "reason": "4 verbatim reviews with named reviewers + dates captured"},
+    {"source": "yelp", "status": "not_attempted", "reason": "Yelp anti-scrape; listing at yelp.com/biz/morales-landscape-atlanta-2 exists"},
+    {"source": "google_gbp", "status": "not_attempted", "reason": "no GBP share URL in rebuild-queue.json"},
+    {"source": "web_search_snippets", "status": "partial", "reason": "multiple Morales Landscape businesses in metro — confirmed this one via Thumbtack owner name match"}
+  ],
+  "flags": [
+    "unblocked_for_1pass_html_build_next_iteration",
+    "yelp_retry_would_add_coverage",
+    "owner_jose_personally_named_3_of_4_reviews"
+  ],
+  "team_from_reviews": ["Jose Morales (owner, on jobs personally)"],
+  "created_at": "2026-04-19T17:02:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}

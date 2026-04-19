@@ -1,0 +1,54 @@
+{
+  "slug": "morales-landscape-construction",
+  "vertical": "landscaping_hardscape",
+  "vertical_filter": "brightness(0.92) contrast(1.05) saturate(1.12)",
+  "hero": {
+    "slot": "hero.jpg",
+    "type": "finished_yard_transformation",
+    "priority_order": [
+      "places_api_owner_uploaded",
+      "thumbtack_job_photos",
+      "places_api_customer_uploaded",
+      "own_site_photos",
+      "recraft_photorealistic"
+    ],
+    "recraft_prompt_if_needed": "Professional beautifully landscaped residential yard with fresh sod, stone border, mulch beds, and a pathway, in full sunlight, photorealistic, no people, no text, no logos.",
+    "caption_context": "Landscaping is visual-first — hero should show a finished project. Reference the Jeff H. 'incredible transformation' review theme — before/after pairs are ideal if available."
+  },
+  "gallery": [
+    {
+      "slot": "gbp-1.jpg",
+      "type": "before_after_yard",
+      "context": "Before (bare/overgrown yard) + after (designed landscape with sod/mulch/beds). Caption 'Incredible transformations — start to finish'."
+    },
+    {
+      "slot": "gbp-2.jpg",
+      "type": "hardscape",
+      "context": "Patio, walkway, retaining wall, or stone feature. Caption 'Hardscape — patios, walls, walkways'."
+    },
+    {
+      "slot": "gbp-3.jpg",
+      "type": "sod_install",
+      "context": "Fresh sod laid, lines visible. Caption 'Sod — laid tight, rolled, ready'."
+    },
+    {
+      "slot": "gbp-4.jpg",
+      "type": "tree_work",
+      "context": "Tree removal, stump grinding, or trimming. Caption 'Tree work — removal, stump, trim'."
+    },
+    {
+      "slot": "gbp-5.jpg",
+      "type": "irrigation_sprinkler",
+      "context": "Sprinkler install or irrigation system. Caption 'Irrigation — zones, timers, coverage'."
+    },
+    {
+      "slot": "gbp-6.jpg",
+      "type": "jose_or_crew",
+      "context": "Jose Morales personally or his 5-person team. Caption names Jose — 'Jose on every call' reinforces 3-of-4-reviews-name-him pattern."
+    }
+  ],
+  "sections": [
+    {"selector": "#area-bg", "type": "atlanta_residential_yard_streetscape", "context": "Atlanta / Norcross residential yards; Unsplash OK but prefer real photos"}
+  ],
+  "notes": "Landscaping is a PHOTO-driven vertical. Before/after pairs are the highest-conversion content. Jose is personally named in 3 of 4 captured reviews — his photo on the team section reinforces owner-operator trust. The 5-person crew + broad scope (design + tree + hardscape + irrigation) means gallery should span service types, not just lawn-focused."
+}
