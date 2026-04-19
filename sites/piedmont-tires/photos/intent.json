@@ -1,0 +1,52 @@
+{
+  "slug": "piedmont-tires",
+  "vertical": "tire_shop",
+  "vertical_filter": "brightness(0.85) contrast(1.1) saturate(0.88)",
+  "hero": {
+    "slot": "hero.jpg",
+    "type": "shop_exterior_or_tire_rack",
+    "priority_order": [
+      "places_api_owner_uploaded",
+      "places_api_customer_uploaded",
+      "recraft_photorealistic"
+    ],
+    "recraft_prompt_if_needed": "Clean small independent tire shop exterior with tires visible and bay open, residential-commercial corridor, photorealistic, no people, no brand logos, no text signage.",
+    "caption_context": "Small local shop positioning — hero should emphasize the independent, neighborhood-scale feel. Not chain aesthetic. Andrew's personal brand ('honest, fair') is the trust anchor — if Bruce surfaces a photo of Andrew, that's better than an empty shop."
+  },
+  "gallery": [
+    {
+      "slot": "gbp-1.jpg",
+      "type": "tire_rack_new",
+      "context": "New tire inventory stacked/displayed. Caption 'New tires — major brands, reasonable price'."
+    },
+    {
+      "slot": "gbp-2.jpg",
+      "type": "tire_rack_used",
+      "context": "Used tire inventory — the differentiator from chains. Caption 'Used tires — budget option, honest quality'."
+    },
+    {
+      "slot": "gbp-3.jpg",
+      "type": "flat_repair",
+      "context": "Tech repairing a flat — Andrew ideally. Caption 'Flat repair — fixed when others tell you to replace'."
+    },
+    {
+      "slot": "gbp-4.jpg",
+      "type": "mount_balance",
+      "context": "Mounting + balancing machine at work. Caption 'Mount + balance — done right, first time'."
+    },
+    {
+      "slot": "gbp-5.jpg",
+      "type": "tow_truck",
+      "context": "Tow truck in operation — the secondary service line. Caption 'Towing — same shop, same team'."
+    },
+    {
+      "slot": "gbp-6.jpg",
+      "type": "andrew_or_crew",
+      "context": "Andrew personally. Caption names him — 'Andrew · Honest on every estimate' reinforces the 2-of-5-reviews-name-him pattern."
+    }
+  ],
+  "sections": [
+    {"selector": "#area-bg", "type": "chamblee_clairmont_corridor", "context": "Chamblee / Clairmont Rd streetscape; Unsplash OK if no specific shop-front photos available"}
+  ],
+  "notes": "Tire shop vertical = tires + shop exterior + tech-at-work. Andrew's personal brand (honest, fair, anti-upsell) is the editorial hook — surface him in the team section even though he may or may not be the owner (flag for owner intake). Used-tire option is the chain-shop differentiator — don't bury it."
+}
