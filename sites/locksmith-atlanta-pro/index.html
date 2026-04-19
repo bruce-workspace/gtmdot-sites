@@ -38,10 +38,17 @@ html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--b
 .btn-secondary{background:transparent;color:var(--text);font-size:15px;font-weight:600;padding:14px 32px;border-radius:10px;border:1px solid var(--border-full);cursor:pointer;transition:all .3s;display:inline-flex;align-items:center;gap:8px}.btn-secondary:hover{border-color:var(--brand);color:var(--brand-light)}
 .hero-quote{margin-top:48px;padding-left:20px;border-left:2px solid var(--brand-light);font-family:var(--font-serif);font-size:20px;font-style:italic;color:var(--muted);line-height:1.6;max-width:480px}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}.stat{padding:36px 24px;text-align:center;border-right:1px solid var(--border)}.stat:last-child{border-right:none}.stat-number{font-family:var(--font-serif);font-size:48px;font-weight:900;color:var(--brand-light);letter-spacing:-1px;line-height:1}.stat-label{font-size:14px;color:var(--muted);margin-top:8px;font-weight:500;letter-spacing:.04em}
-.marquee{overflow:hidden;background:var(--bg-alt);padding:16px 0;border-bottom:1px solid var(--border)}.marquee-track{display:flex;gap:48px;width:max-content;animation:marquee 35s linear infinite}.marquee-item{font-size:14px;font-weight:600;color:var(--muted);white-space:nowrap;display:flex;align-items:center;gap:12px;letter-spacing:.04em}.marquee-dot{width:6px;height:6px;border-radius:50%;background:var(--brand-light);flex-shrink:0}@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+.marquee{overflow:hidden;background:var(--bg-alt);padding:16px 0;border-bottom:1px solid var(--border)}.marquee-track{display:flex;gap:48px;width:max-content;animation:marquee 58s linear infinite}.marquee-item{font-size:14px;font-weight:600;color:var(--muted);white-space:nowrap;display:flex;align-items:center;gap:12px;letter-spacing:.04em}.marquee-dot{width:6px;height:6px;border-radius:50%;background:var(--brand-light);flex-shrink:0}@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
 .section{padding:96px 40px;max-width:1200px;margin:0 auto}.section-alt{background:var(--bg-alt)}.section-full{padding:96px 40px}.eyebrow{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:4px;color:var(--brand-light);margin-bottom:12px}.section-h2{font-family:var(--font-serif);font-size:clamp(32px,3.5vw,52px);font-weight:700;letter-spacing:-.5px;line-height:1.1;margin-bottom:16px}.section-sub{font-size:17px;color:var(--muted);max-width:560px;line-height:1.7}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}.service-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 24px;transition:transform .3s ease,box-shadow .3s ease}.service-card:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.3)}.service-icon{width:56px;height:56px;display:flex;align-items:center;justify-content:center;background:var(--brand-glow);border-radius:14px;margin-bottom:20px;color:var(--brand-light)}.service-icon svg{width:28px;height:28px}.service-card h3{font-size:18px;font-weight:700;margin-bottom:8px;line-height:1.3}.service-card p{font-size:14px;color:var(--muted);line-height:1.6}
-.review-feed{margin-top:40px;overflow:hidden;mask-image:linear-gradient(to right,transparent,black 5%,black 95%,transparent);-webkit-mask-image:linear-gradient(to right,transparent,black 5%,black 95%,transparent)}.review-feed-track{display:flex;gap:24px;animation:reviewScroll 45s linear infinite;width:max-content}.review-feed-track:hover{animation-play-state:paused}@media(prefers-reduced-motion:reduce){.review-feed-track{animation:none;flex-wrap:wrap}}@keyframes reviewScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}.review-mini{flex-shrink:0;width:360px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:10px}.review-mini-stars{color:#f59e0b;font-size:14px;letter-spacing:2px}.review-mini-text{font-size:14px;line-height:1.65;color:var(--text);font-style:italic;flex:1}.review-mini-author{font-size:13px;font-weight:600;color:var(--brand-light)}.review-mini-source{font-size:11px;color:var(--muted)}
+.review-feed{margin-top:40px;overflow:hidden;mask-image:linear-gradient(to right,transparent,black 5%,black 95%,transparent);-webkit-mask-image:linear-gradient(to right,transparent,black 5%,black 95%,transparent)}.review-feed-track{display:flex;gap:24px;animation:reviewScroll 60s linear infinite;width:max-content}.review-feed-track:hover{animation-play-state:paused}@media(prefers-reduced-motion:reduce){.review-feed-track{animation:none;flex-wrap:wrap}}@keyframes reviewScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}.review-mini{flex-shrink:0;width:360px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:10px}.review-mini-stars{color:#f59e0b;font-size:14px;letter-spacing:2px}.review-mini-text{font-size:14px;line-height:1.65;color:var(--text);font-style:italic;flex:1}.review-mini-author{font-size:13px;font-weight:600;color:var(--brand-light)}.review-mini-source{font-size:11px;color:var(--muted)}
+.pull-quote{max-width:900px;margin:0 auto 48px;padding:40px 32px;background:linear-gradient(135deg,var(--brand-glow) 0%,var(--bg-alt) 100%);border:1px solid var(--border);border-left:4px solid var(--brand-light);border-radius:16px;position:relative}
+.pull-quote::before{content:'"';position:absolute;top:8px;left:24px;font-family:var(--font-serif);font-size:96px;line-height:1;color:var(--brand-light);opacity:0.35;font-weight:700}
+.pull-quote-text{font-family:var(--font-serif);font-size:clamp(22px,2.4vw,30px);font-weight:500;font-style:italic;line-height:1.35;letter-spacing:-0.3px;color:var(--text);margin-bottom:20px;padding-left:28px}
+.pull-quote-attr{display:flex;align-items:center;gap:14px;padding-left:28px;flex-wrap:wrap}
+.pull-quote-attr-stars{display:flex;gap:2px;color:#f59e0b}
+.pull-quote-attr-name{font-weight:700;color:var(--brand-light);font-size:15px}
+.pull-quote-attr-source{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:2px}
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:48px}.story-text h3{font-family:var(--font-serif);font-size:28px;font-weight:700;margin-bottom:16px}.story-text p{color:var(--muted);line-height:1.7;margin-bottom:20px}.story-highlights{display:grid;grid-template-columns:1fr 1fr;gap:16px}.story-highlight{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center}.story-highlight-number{font-family:var(--font-serif);font-size:32px;font-weight:900;color:var(--brand-light);line-height:1}.story-highlight-label{font-size:13px;color:var(--muted);margin-top:6px;font-weight:500}
 .area-pills{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.area-pill{background:var(--surface);border:1px solid var(--border);padding:10px 20px;border-radius:100px;font-size:14px;font-weight:600;color:var(--muted);transition:all .3s}.area-pill:hover{border-color:var(--brand-light);color:var(--brand-light)}
 .faq-list{margin-top:48px;max-width:800px}.faq-item{border-bottom:1px solid var(--border)}.faq-question{width:100%;background:none;border:none;color:var(--text);font-family:var(--font-sans);font-size:17px;font-weight:600;padding:24px 0;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px}.faq-question svg{flex-shrink:0;transition:transform .3s;color:var(--brand-light)}.faq-item.open .faq-question svg{transform:rotate(180deg)}.faq-answer{display:grid;grid-template-rows:0fr;overflow:hidden;transition:grid-template-rows .4s ease}.faq-answer-inner{padding:0 0 24px;font-size:15px;color:var(--muted);line-height:1.7;overflow:hidden;min-height:0}.faq-item.open .faq-answer{grid-template-rows:1fr}
@@ -51,7 +58,7 @@ html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--b
 .mobile-phone{display:none;position:fixed;bottom:20px;right:20px;z-index:800;background:var(--brand);color:#fff;width:56px;height:56px;border-radius:50%;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(217,119,6,0.4);transition:transform .2s}.mobile-phone:hover{transform:scale(1.1)}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}
 @media(max-width:1024px){.services-grid{grid-template-columns:repeat(2,1fr)}.story-grid{grid-template-columns:1fr;gap:40px}.footer-inner{grid-template-columns:1fr 1fr}}
-@media(max-width:768px){.nav{padding:0 20px}.nav-links,.nav-cta{display:none}.hamburger{display:flex}.hero{padding:100px 20px 60px;min-height:auto}.hero h1{font-size:clamp(36px,8vw,52px)}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:none}.section{padding:64px 20px}.section-full{padding:64px 20px}.services-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr;gap:32px}.footer-bottom{flex-direction:column;gap:8px;text-align:center}.mobile-phone{display:flex}}
+@media(max-width:768px){.nav{padding:0 20px}.nav-links,.nav-cta{display:none}.hamburger{display:flex}.hero{padding:100px 20px 60px;min-height:auto}.hero h1{font-size:clamp(36px,8vw,52px)}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:none}.section{padding:64px 20px}.section-full{padding:64px 20px}.services-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr 1fr;gap:32px 20px}.footer-inner>div:first-child{grid-column:1 / -1}.footer-bottom{flex-direction:column;gap:8px;text-align:center}.mobile-phone{display:flex}}
 </style>
 </head>
 <body>
@@ -110,6 +117,20 @@ html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--b
     <h2 class="section-h2">50 Google Reviews</h2>
     <p class="section-sub">When you're locked out at midnight, you find out who the real 24-hour locksmiths are. Jeff is one of them.</p>
   </div>
+  <div class="pull-quote reveal">
+    <p class="pull-quote-text">Probably the only locksmith that's actually 24 hours in Atlanta. I called at 1am after being locked out and they came right out. Professional, fast, and fair pricing.</p>
+    <div class="pull-quote-attr">
+      <span class="pull-quote-attr-stars">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+      </span>
+      <span class="pull-quote-attr-name">Nicole Kelly</span>
+      <span class="pull-quote-attr-source">Google · 1am Lockout</span>
+    </div>
+  </div>
   <div class="review-feed reveal">
     <div class="review-feed-track">
       <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Probably the only locksmith that's actually 24 hours in Atlanta. I called at 1am after being locked out and they came right out. Professional, fast, and fair pricing."</p><span class="review-mini-author">Nicole Kelly</span><span class="review-mini-source">Google Review</span></div>
@@ -140,9 +161,9 @@ html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--b
       </div>
       <div class="story-highlights">
         <div class="story-highlight"><div class="story-highlight-number">15+</div><div class="story-highlight-label">Years Operating</div></div>
-        <div class="story-highlight"><div class="story-highlight-number">50</div><div class="story-highlight-label">Google Reviews</div></div>
-        <div class="story-highlight"><div class="story-highlight-number">24/7</div><div class="story-highlight-label">Availability</div></div>
-        <div class="story-highlight"><div class="story-highlight-number">4.7</div><div class="story-highlight-label">Facebook Stars</div></div>
+        <div class="story-highlight"><div class="story-highlight-number">Jeff</div><div class="story-highlight-label">Named Tech on Call</div></div>
+        <div class="story-highlight"><div class="story-highlight-number">&lt;30m</div><div class="story-highlight-label">Typical Arrival</div></div>
+        <div class="story-highlight"><div class="story-highlight-number">BBB+</div><div class="story-highlight-label">Chamber Member</div></div>
       </div>
     </div>
   </div>
@@ -174,12 +195,34 @@ html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--b
 <section class="section" id="contact">
   <div class="reveal">
     <div style="text-align:center"><div class="eyebrow">Get Help</div><h2 class="section-h2">Request Locksmith Service</h2><p class="section-sub" style="margin:0 auto">Tell us what you need and Jeff will respond quickly. For emergencies, call directly for the fastest response.</p></div>
+    <div class="pull-quote" style="margin-top:48px">
+      <p class="pull-quote-text">Absolutely excellent throughout. Courteous, prompt visit, informed, knowledgeable, technically proficient.</p>
+      <div class="pull-quote-attr">
+        <span class="pull-quote-attr-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </span>
+        <span class="pull-quote-attr-name">Chamber of Commerce Review</span>
+        <span class="pull-quote-attr-source">Commercial Locksmith Service</span>
+      </div>
+    </div>
     <div class="form-wrap">
       <form id="contactForm">
         <div class="form-row"><div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" required placeholder="Full name"></div><div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" required placeholder="(___) ___-____"></div></div>
         <div class="form-group"><label for="address">Your Location</label><input type="text" id="address" name="address" placeholder="Address or cross streets"></div>
         <div class="form-group"><label for="service">Service Needed</label><select id="service" name="service"><option value="">Select service</option><option value="lockout-home">Home Lockout</option><option value="lockout-car">Car Lockout</option><option value="rekey">Lock Rekeying</option><option value="new-locks">New Lock Installation</option><option value="car-key">New Car Key / Fob</option><option value="commercial">Commercial Locksmith</option><option value="high-security">High-Security Locks</option><option value="other">Other</option></select></div>
         <div class="form-group"><label for="details">Details</label><textarea id="details" name="details" placeholder="Describe your situation, type of lock or vehicle if applicable..."></textarea></div>
+        <div class="form-group">
+          <label for="media-upload">Tap to attach photos/videos <span style="color:var(--muted);font-weight:400">(optional — a photo of the lock or car helps Jeff bring the right tools)</span></label>
+          <label for="media-upload" style="border:2px dashed var(--border);border-radius:10px;padding:28px;text-align:center;color:var(--muted);font-size:14px;cursor:pointer;display:block;transition:border-color 0.2s,background 0.2s">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:6px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+            <div id="file-drop-label">Photo or video of the lock</div>
+          </label>
+          <input id="media-upload" type="file" accept="image/*,video/*" multiple style="display:none" onchange="var n=this.files.length;document.getElementById('file-drop-label').textContent=n?(n+' file'+(n>1?'s':'')+' attached'):'Photo or video of the lock'">
+        </div>
         <button type="submit" class="form-submit">Request Service</button>
         <p class="form-consent">By submitting this form you agree to be contacted about your locksmith service. For emergencies, call (770) 637-1730 directly.</p>
       </form>
