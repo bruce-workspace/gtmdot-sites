@@ -1,0 +1,29 @@
+{
+  "reviews": [],
+  "counts": {
+    "total_available": "unknown — GBP share URL exists in rebuild-queue.json for Bruce direct retry",
+    "captured": 0,
+    "target_min": 3,
+    "aggregate_rating": null,
+    "aggregate_rating_source": "pending Bruce Places API retry"
+  },
+  "notes": "Sandy Springs Plumber, Sewer & Septic. Phone (470) 394-3305. Plumbing + sewer + septic — septic is the differentiator vs generic North Fulton plumbers. Own site not surfaced via web search. BBB has no listing. GBP share URL https://share.google/IhpJHFH2wKDDUGWcR is in rebuild-queue.json — Bruce Places API retry is straightforward. Claim code SSPS4071 preserved.",
+  "capture_attempts": [
+    {"source": "bbb", "status": "no_listing", "reason": "BBB search returned no results for business name + Sandy Springs GA"},
+    {"source": "google_search", "status": "gated", "reason": "Google anti-scrape on SERP"},
+    {"source": "google_gbp_share_url", "status": "redirect_gated", "reason": "share.google URL redirects to google.com/share.google which hits anti-scrape"},
+    {"source": "google_gbp_places_api", "status": "not_attempted_by_r1vs", "reason": "Bruce owns Places API — share URL available in rebuild-queue.json"},
+    {"source": "own_website", "status": "not_surfaced", "reason": "no business website surfaced via web search"}
+  ],
+  "flags": [
+    "review_blocked_pending_bruce_retry",
+    "empty_shell_2pass_candidate",
+    "gbp_url_available_for_bruce",
+    "septic_specialty_positioning",
+    "no_own_website_surfaced"
+  ],
+  "team_from_reviews": [],
+  "created_at": "2026-04-19T17:28:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
