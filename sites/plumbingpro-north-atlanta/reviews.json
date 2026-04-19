@@ -1,0 +1,27 @@
+{
+  "reviews": [],
+  "counts": {
+    "total_available": "unknown — HomeAdvisor rating 5.0 per search snippet, Yelp listing exists (content-gated). Likely 15-30+ reviews given 24/7 service + service-area breadth.",
+    "captured": 0,
+    "target_min": 3,
+    "aggregate_rating": null,
+    "aggregate_rating_source": "pending Bruce Places API retry — HomeAdvisor snippet shows 5.0"
+  },
+  "notes": "PlumbingPro North Atlanta. 3365 West Hospital Ave Suites JK, Chamblee GA 30341. Phone (404) 382-0066. 24/7 emergency plumbing (real 24/7, not leave-a-message). Full residential + commercial scope including tankless water heater + repiping. Service area covers 17+ cities. Named plumber Jeremiah surfaced in search snippet (paraphrased, not verbatim). GBP URL https://share.google/xTLUeVqH5WmeFFGTF IS in rebuild-queue.json — Bruce retry should be direct. REVIEW-BLOCKED at research time but GBP URL available for Bruce.",
+  "capture_attempts": [
+    {"source": "homeadvisor", "status": "403", "reason": "anti-scrape blocked WebFetch despite rating snippet surfacing in search"},
+    {"source": "own_site", "status": "empty", "reason": "no testimonials on main site or north-atlanta service-area page"},
+    {"source": "yelp", "status": "not_attempted", "reason": "Yelp anti-scrape; listing exists"},
+    {"source": "google_gbp", "status": "available_not_scraped", "reason": "GBP share URL exists in rebuild-queue.json — Bruce can hit this directly"}
+  ],
+  "flags": [
+    "review_blocked_pending_bruce_retry",
+    "empty_shell_2pass_candidate",
+    "gbp_url_available_for_bruce",
+    "named_plumber_jeremiah_in_search_snippet_verbatim_pending"
+  ],
+  "team_from_reviews": [],
+  "created_at": "2026-04-19T17:10:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}

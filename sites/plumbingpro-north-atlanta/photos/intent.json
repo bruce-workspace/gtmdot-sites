@@ -1,0 +1,53 @@
+{
+  "slug": "plumbingpro-north-atlanta",
+  "vertical": "plumbing",
+  "vertical_filter": "brightness(0.85) contrast(1.05) saturate(0.8)",
+  "hero": {
+    "slot": "hero.jpg",
+    "type": "plumber_at_work_residential",
+    "priority_order": [
+      "places_api_owner_uploaded",
+      "places_api_customer_uploaded",
+      "own_site_photos",
+      "recraft_photorealistic"
+    ],
+    "recraft_prompt_if_needed": "Professional plumber in uniform working on a water heater in a residential basement, tool belt visible, clean work environment, photorealistic, no brand logos, no text.",
+    "caption_context": "24/7 + professional is the brand. Hero should show a plumber looking sharp, not in-the-middle-of-a-mess. If Bruce surfaces a Jeremiah photo, that's ideal."
+  },
+  "gallery": [
+    {
+      "slot": "gbp-1.jpg",
+      "type": "water_heater_install",
+      "context": "Tank or tankless water heater install — specialty. Caption 'Water heaters — standard + tankless'."
+    },
+    {
+      "slot": "gbp-2.jpg",
+      "type": "drain_clearing",
+      "context": "Drain cleaning / snake / hydro-jet. Caption 'Drains — snaked clean, cameras when needed'."
+    },
+    {
+      "slot": "gbp-3.jpg",
+      "type": "repipe_whole_house",
+      "context": "Repipe job — copper or PEX runs visible. Caption 'Repiping — whole house, not patched'."
+    },
+    {
+      "slot": "gbp-4.jpg",
+      "type": "leak_detection",
+      "context": "Leak detection equipment or finished repair. Caption 'Leaks — found first, fixed right'."
+    },
+    {
+      "slot": "gbp-5.jpg",
+      "type": "commercial_plumbing",
+      "context": "Commercial job — restaurant, office, multi-family. Caption 'Commercial — same truck, same team'."
+    },
+    {
+      "slot": "gbp-6.jpg",
+      "type": "jeremiah_or_crew",
+      "context": "Plumber Jeremiah (named in search snippet) or team. Caption names Jeremiah if identifiable."
+    }
+  ],
+  "sections": [
+    {"selector": "#area-bg", "type": "chamblee_buckhead_residential", "context": "North Atlanta residential corridor; Unsplash OK"}
+  ],
+  "notes": "Plumbing vertical = professionalism-focused imagery. Tankless water heater is a high-growth specialty — gallery slot 1 should feature it. Repiping is the high-ticket differentiator — slot 3 should show whole-house scale. 24/7 brand is supported by copy, not photo."
+}
