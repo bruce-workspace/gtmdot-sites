@@ -1,0 +1,52 @@
+{
+  "slug": "thermys-mobile-tire-and-brakes",
+  "vertical": "mobile_auto_specialty",
+  "vertical_filter": "brightness(0.85) contrast(1.08) saturate(0.92)",
+  "hero": {
+    "slot": "hero.jpg",
+    "type": "mobile_tire_change_at_customer_location",
+    "priority_order": [
+      "places_api_owner_uploaded",
+      "places_api_customer_uploaded",
+      "recraft_photorealistic"
+    ],
+    "recraft_prompt_if_needed": "Professional Black female American mobile tire technician working on a tire change at a customer's residential driveway, jack + tools visible, service van in background, photorealistic, no text or logos, no signage, confident and capable demeanor, warm natural daylight. [NOTE: use this prompt ONLY if Bruce confirms owner demographics via GBP or owner intake — otherwise default to gender/race-neutral prompt.]",
+    "caption_context": "Owner-operator model — Quartisha at work reinforces the brand. Mobile-at-customer-driveway is the core differentiator vs shop-based tire chains. Tire change or brake job in-frame; do not stage shop setting."
+  },
+  "gallery": [
+    {
+      "slot": "gbp-1.jpg",
+      "type": "tire_install",
+      "context": "Tire install — wheel off, new tire mounting. Caption 'Tire install — mobile, all sizes, while you wait'."
+    },
+    {
+      "slot": "gbp-2.jpg",
+      "type": "brake_pad_replacement",
+      "context": "Brake pad replacement — caliper off, pad visible. Caption 'Brakes — pads, rotors, full-service mobile'."
+    },
+    {
+      "slot": "gbp-3.jpg",
+      "type": "flat_repair_roadside",
+      "context": "Flat tire repair at roadside or driveway. Caption 'Flat repair — roadside, driveway, anywhere'."
+    },
+    {
+      "slot": "gbp-4.jpg",
+      "type": "tire_rotation_balance",
+      "context": "Tire rotation + balance. Caption 'Rotation + balance — longer tire life'."
+    },
+    {
+      "slot": "gbp-5.jpg",
+      "type": "service_van_exterior",
+      "context": "Service van with mobile-tire-shop equipment. Caption 'We come to you — metro Atlanta'."
+    },
+    {
+      "slot": "gbp-6.jpg",
+      "type": "quartisha_at_work_or_completed_job",
+      "context": "Quartisha at work OR a completed tire/brake job (wheels on, vehicle ready). Caption names Quartisha if demographics confirmed per reviews.json flag."
+    }
+  ],
+  "sections": [
+    {"selector": "#area-bg", "type": "atlanta_ITP_corridor_residential", "context": "Atlanta ITP / Decatur / East Point residential streetscape; Unsplash OK if no real photos"}
+  ],
+  "notes": "Mobile auto specialty vertical — darker filter (0.85 brightness) than detailing/plumbing to communicate 'serious auto work' not 'luxury shine'. Tire + brakes is the whole scope — do NOT include oil-change or diagnostic photos (those would dilute the specialty positioning). Owner demographic positioning flagged in reviews.json — hero prompt conditionally includes demographics only if Bruce confirms. Default to neutral if unverified."
+}
