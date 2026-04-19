@@ -889,3 +889,111 @@ photos/atlanta-skyline.jpg ← service area bg
 photos/atlanta-downtown.jpg ← CTA section bg
 ```
 Get Unsplash CDN URL: `curl -sL "https://unsplash.com/photos/[slug]" | grep -oE 'https://images\.unsplash\.com/photo-[a-z0-9-]+' | head -1`
+
+---
+
+## 🛠️ Polish Pass Rules (April 2026 — post-retrofit)
+
+These rules came out of the batch polish pass on sandy-springs-plumbing, moonstone-pressure-washing, perez-pools-llc, pine-peach-painting, and atlanta-expert-appliance. All 5 sites converged on the same patterns. Apply to every new build AND to any existing site that hasn't been retrofitted yet.
+
+### The 6 rules
+
+1. **Static pull quotes (2 per homepage).** One above the review marquee/feed (strongest named 5★ review, specific named technician if possible), one directly above the contact form. Pull quote ≠ review card — it's a giant editorial-style callout.
+
+2. **Marquee + review feed speed.** Brand marquee: **58s** full loop. Review marquee (`reviewScroll`): **60s**. Both with fade masks on edges and pause-on-hover. (Supersedes earlier "55-60s" range — we converged on exact values.)
+
+3. **About section team cards, not duplicate hero stats.** If named techs/owners exist (from reviews or site), use team cards with real names. If no named crew, use founding date + milestones. Never use 4 stats that duplicate the hero stats bar.
+
+4. **Footer mobile = 2-column grid.** Under 768px: `grid-template-columns: 1fr 1fr`. Brand/tagline cell spans full width via `grid-column: 1 / -1` on `:first-child`. Services + Contact columns pair side-by-side below brand.
+
+5. **Quote form photo/video upload field.** Add `<input type="file" accept="image/*,video/*" multiple>` with label "Tap to attach photos/videos". Context-specific helper text per vertical ("a green pool shot is gold", "show the problem, error code, or model plate"). Material to the close — owners want to see what they're quoting.
+
+6. **Story section single column under 900px.** Mobile stacks, but the breakpoint is **900px** not 768px — the story's 2-col grid gets cramped before the nav does.
+
+(Rule 7 — claim bar — is handled by the shared template on the Mini side. No per-site R1VS change.)
+
+### Component specs
+
+**Pull quote component** (consistent CSS across all 5 retrofitted sites):
+```css
+.pull-quote {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 48px 40px 56px;
+  border-left: 4px solid var(--brand);
+  position: relative;
+}
+.pull-quote::before {
+  content: '"';
+  position: absolute;
+  top: -20px;
+  left: 24px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 120px;
+  color: var(--brand);
+  opacity: 0.12;
+  line-height: 1;
+}
+.pull-quote p {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.4;
+}
+.pull-quote-attr {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  /* stars + named reviewer + source/context tag */
+}
+```
+
+**Team card component:**
+```css
+.team-card {
+  /* Circular avatar with initials on brand-color gradient */
+}
+.team-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--brand), var(--brand-light));
+  display: grid;
+  place-items: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #fff;
+}
+.team-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 22px;
+}
+.team-role {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--brand);
+  font-size: 12px;
+  font-weight: 600;
+}
+```
+
+### Stats de-duplication rule
+
+If the story-section stats repeat 3+ of the 4 hero-stat values (e.g., both show `4.9★ / 35+ years / $99 / Same-day`), replace the story stats with **commitments or differentiators that don't numerically duplicate the hero**. Examples:
+- Perez Pools: `No Contracts / Same-Day Green-to-Clean / BG-Checked / Before+After Reports`
+- Atlanta Expert Appliance: `Sub-Zero brands / $99 / Owner Answers / Same-Day`
+
+The goal: the hero proves credibility with numbers, the story section proves character with commitments.
+
+### Retrofit queue order (most-recent-first, highest-impact-first)
+
+When retrofitting existing intake branches, this is the established order:
+1. sandy-springs-plumbing ✅ (exemplar)
+2. moonstone-pressure-washing ✅
+3. perez-pools-llc ✅
+4. pine-peach-painting ✅
+5. atlanta-expert-appliance ✅
+6. Then the rest of the ~20 un-polished intake branches
+
+Sites with only 1-2 verbatim reviews (handy-dandy, plugged-electricians): use the 1-2 available as static pull quotes only, skip the marquee/feed component — not enough reviews to scroll meaningfully.
