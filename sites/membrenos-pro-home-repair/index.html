@@ -71,7 +71,7 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .stat-number{font-family:var(--font-serif);font-size:48px;font-weight:900;color:var(--brand-light);letter-spacing:-1px;line-height:1}
 .stat-label{font-size:14px;color:var(--muted);margin-top:8px;font-weight:500;letter-spacing:.04em}
 .marquee{overflow:hidden;background:var(--bg-alt);padding:16px 0;border-bottom:1px solid var(--border)}
-.marquee-track{display:flex;gap:48px;width:max-content;animation:marquee 35s linear infinite}
+.marquee-track{display:flex;gap:48px;width:max-content;animation:marquee 58s linear infinite}
 .marquee-item{font-size:14px;font-weight:600;color:var(--muted);white-space:nowrap;display:flex;align-items:center;gap:12px;letter-spacing:.04em}
 .marquee-dot{width:6px;height:6px;border-radius:50%;background:var(--brand-light);flex-shrink:0}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
@@ -154,8 +154,8 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .reveal.visible{opacity:1;transform:translateY(0)}
 .lang-badge{display:inline-flex;align-items:center;gap:6px;background:var(--surface);border:1px solid var(--border);padding:6px 14px;border-radius:100px;font-size:12px;font-weight:600;color:var(--brand-light);margin-top:16px}
 @media(max-width:1024px){.services-grid{grid-template-columns:repeat(2,1fr)}.story-grid{grid-template-columns:1fr;gap:40px}.footer-inner{grid-template-columns:1fr 1fr}}
-@media(max-width:768px){.nav{padding:0 20px}.nav-links,.nav-cta{display:none}.hamburger{display:flex}.hero{padding:100px 20px 60px;min-height:auto}.hero h1{font-size:clamp(36px,8vw,52px)}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:none}.section{padding:64px 20px}.section-full{padding:64px 20px}.services-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr;gap:32px}.footer-bottom{flex-direction:column;gap:8px;text-align:center}.mobile-phone{display:flex}}
-</style>
+@media(max-width:768px){.nav{padding:0 20px.footer-inner{grid-template-columns:1fr 1fr;gap:24px}}.nav-links,.nav-cta{display:none}.hamburger{display:flex}.hero{padding:100px 20px 60px;min-height:auto}.hero h1{font-size:clamp(36px,8vw,52px)}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:none}.section{padding:64px 20px}.section-full{padding:64px 20px}.services-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr;gap:32px}.footer-bottom{flex-direction:column;gap:8px;text-align:center}.mobile-phone{display:flex}}
+@media(max-width:900px){.story-grid{grid-template-columns:1fr!important;gap:32px!important}}.file-drop{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:24px 20px;background:var(--surface,#0f131e);border:2px dashed var(--border-full,rgba(96,165,250,0.28));border-radius:10px;color:var(--muted,#8a929a);cursor:pointer;transition:border-color .3s,color .3s,background .3s;text-align:center}.file-drop:hover{border-color:var(--brand-light,#60a5fa);color:var(--brand-light,#60a5fa)}.file-drop svg{opacity:0.8}.file-drop-text{font-size:14px;font-weight:600}.file-drop-names{font-size:12px;color:var(--text);font-weight:500;word-break:break-all}.file-drop-names:empty{display:none}</style>
 </head>
 <body>
 
@@ -333,6 +333,16 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
         <div class="form-group"><label for="address">Property Address</label><input type="text" id="address" name="address" placeholder="Street address, city"></div>
         <div class="form-group"><label for="service">Project Type</label><select id="service" name="service"><option value="">Select a service</option><option value="painting">Painting (Interior/Exterior)</option><option value="deck">Deck / Patio</option><option value="electrical">Electrical Work</option><option value="plumbing">Plumbing Repair</option><option value="drywall">Drywall / Carpentry</option><option value="kitchen">Kitchen (Backsplash/Cabinets)</option><option value="remodel">Home Remodeling</option><option value="multiple">Multiple Projects</option><option value="other">Other</option></select></div>
         <div class="form-group"><label for="details">Project Details</label><textarea id="details" name="details" placeholder="Describe what you need done, approximate scope, and any time constraints..."></textarea></div>
+        
+        <div class="form-group">
+          <label for="media">Photos or Video <span style="font-weight:400;color:var(--muted);font-size:13px">(optional — helps us quote faster)</span></label>
+          <label for="media" class="file-drop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            <span class="file-drop-text">Tap to attach photos/videos</span>
+            <span class="file-drop-names" id="fileNames"></span>
+          </label>
+          <input type="file" id="media" name="media" accept="image/*,video/*" multiple style="display:none">
+        </div>
         <button type="submit" class="form-submit">Request Your Free Estimate</button>
         <p class="form-consent">By submitting this form you agree to be contacted about your estimate. We will never share your information.</p>
       </form>
@@ -359,5 +369,7 @@ document.querySelectorAll('.faq-question').forEach(b=>{b.addEventListener('click
 document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();this.style.display='none';document.getElementById('formSuccess').style.display='block'});
 const observer=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');observer.unobserve(x.target)}})},{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 </script>
+
+<script>(function(){var i=document.getElementById("media"),n=document.getElementById("fileNames");if(!i||!n)return;i.addEventListener("change",function(){if(this.files&&this.files.length){n.textContent=this.files.length+" file"+(this.files.length>1?"s":"")+": "+Array.from(this.files).map(f=>f.name).join(", ")}else{n.textContent=""}})})();</script>
 </body>
 </html>
