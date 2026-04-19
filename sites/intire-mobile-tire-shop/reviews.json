@@ -1,17 +1,44 @@
 {
   "reviews": [
-    {"author": "Ian B.", "rating": 5, "date": "recent", "source": "google", "text": "Super polite and professional. On time and provided great service at an incredible value considering I didn't have to leave home!", "verified": true},
-    {"author": "Missy K.", "rating": 5, "date": "recent", "source": "google", "text": "AJ was very helpful and saved me from leaving my car some place all day to do what he did in about thirty minutes.", "verified": true, "tech": "AJ"},
-    {"author": "Rodney L.", "rating": 5, "date": "recent", "source": "google", "text": "This is my new GO TO when purchasing tires. Paid for tires and service online the day before.", "verified": true},
-    {"author": "Dave D.", "rating": 5, "date": "recent", "source": "google", "text": "Great experience with AJ yesterday! I needed new tires installed on my boat trailer.", "verified": true, "tech": "AJ"},
-    {"author": "Judene B.", "rating": 5, "date": "recent", "source": "google", "text": "Loved the convenience of this mobile service. My tire was losing air as I was driving but I made it to a gas station. AJ came right to me.", "verified": true, "tech": "AJ"}
-  ],
-  "counts": {"total_available": "6 Google reviews", "captured": 5, "target_min": 3, "aggregate_rating": 5.0, "aggregate_rating_source": "Google Business Profile"},
-  "notes": "InTire Mobile Tire Shop. Decatur GA (2425 Columbia Dr). Technician AJ named in 3 of 5 reviews. 5.0 / 6 reviews (perfect but thin).",
-  "capture_attempts": [{"source": "google_gbp", "status": "success", "reason": "5 verbatim reviews from HTML inline"}],
-  "flags": [],
-  "team_from_reviews": ["AJ (tech)"],
-  "created_at": "2026-04-18T07:11:00-04:00",
-  "created_by": "r1vs",
-  "schema_version": "1.0"
+    {
+      "author": "Esha Akies",
+      "rating": 5,
+      "date": "4 months ago",
+      "source": "google",
+      "text": "AJ and his son came out to fix my flat. They were very knowledgeable and had GREAT customer service. He explained what the issue was with my tire (the RIM) and he assured me if the rim cause another issue to call him back. Satisfaction guaranteed. And the best part 30 mins top for the fix 🥰",
+      "verified": true
+    },
+    {
+      "author": "Eureka Mason",
+      "rating": 5,
+      "date": "4 months ago",
+      "source": "google",
+      "text": "Needed a leak in my tire checked. AJ came right out and did an AMAZING job. Pricing was also great. You know a person is gifted at what they do when they can hear a nail in the tire of a car passing by. Anymore tire issues....I will definitely call AJ! Thank you",
+      "verified": true
+    },
+    {
+      "author": "youngswordfish",
+      "rating": 5,
+      "date": "7 months ago",
+      "source": "google",
+      "text": "He came out really fast and helped me with a popped tire and stripped bolt didn’t charge me anything crazy worth checking him professional and nice also works fast",
+      "verified": true
+    },
+    {
+      "author": "Drew",
+      "rating": 5,
+      "date": "2 months ago",
+      "source": "google",
+      "text": "I needed a tire plugged, was in and out in less than 20 minutes. Nice friendly people, will use again. Support your local business!",
+      "verified": true
+    },
+    {
+      "author": "Jon Walton",
+      "rating": 5,
+      "date": "8 months ago",
+      "source": "google",
+      "text": "AJ was very quick with his response. He came out the next day to mount some old tires on new wheels! Prices were FANTASTIC and I would recommend to anyone. Not to mention the convenience of not having to leave my home 👍",
+      "verified": true
+    }
+  ]
 }
