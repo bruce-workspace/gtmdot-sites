@@ -1,0 +1,26 @@
+{
+  "reviews": [],
+  "counts": {
+    "total_available": "unknown — no Atlanta-metro business by this name surfaces via web search",
+    "captured": 0,
+    "target_min": 3,
+    "aggregate_rating": null,
+    "aggregate_rating_source": "not_applicable_pending_jesse_review"
+  },
+  "notes": "DATA QUALITY FLAG. rebuild-queue.json entry has city=null, state=null, phone=null, email=null, owner=null. Web search for 'Posh Paws Atlanta' returns (a) Warner Robins GA business 1.5hr south of Atlanta — NOT the same, (b) poshpawsusa.com domain suspended (likely defunct), (c) 'The Poshest Pooch' which is the actual Atlanta mobile grooming business with a different name. Recommend Jesse review this slug for disqualification vs correction. See RESEARCH.md for full analysis.",
+  "capture_attempts": [
+    {"source": "web_search", "status": "no_match", "reason": "no business by exact name 'Posh Paws Atlanta' surfaces in Atlanta metro"},
+    {"source": "poshpawsusa.com", "status": "domain_suspended", "reason": "Bluehost suspension notice displayed"},
+    {"source": "google_gbp", "status": "not_attempted", "reason": "no GBP URL in rebuild-queue, no business name+city to query with confidence"}
+  ],
+  "flags": [
+    "data_quality_issue_needs_jesse_review",
+    "recommend_disqualification_pending_confirmation",
+    "possible_defunct_or_wrong_name",
+    "DO_NOT_QUEUE_BRUCE_RETRY_UNTIL_CONFIRMED"
+  ],
+  "team_from_reviews": [],
+  "created_at": "2026-04-19T17:14:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
