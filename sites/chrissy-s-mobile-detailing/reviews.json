@@ -1,15 +1,50 @@
 {
   "reviews": [
-    {"author": "Jason Uchima", "rating": 5, "date": "3 weeks ago", "source": "google", "text": "I very much trust her work, it's good work.", "verified": true},
-    {"author": "Kim Geater", "rating": 5, "date": "1 month ago", "source": "google", "text": "I asked if they needed a tetanus shot before doing my kids van, it was that bad. When they were done it was better than new!", "verified": true},
-    {"author": "Sab Baftija", "rating": 5, "date": "3 months ago", "source": "google", "text": "Removed chemical stains from a car like no other. Went above and beyond to make sure it was perfect!", "verified": true},
-    {"author": "TC", "rating": 5, "date": "3 months ago", "source": "google", "text": "When you're speaking about one of the greats, you gotta mention her 10/10 service and kindness. It's unmatched.", "verified": true},
-    {"author": "Sandra Nunez", "rating": 5, "date": "3 months ago", "source": "google", "text": "5-star rating, no written text.", "verified": true}
+    {
+      "author": "De'Andrez Voltage",
+      "rating": 5,
+      "date": "3 months ago",
+      "source": "google",
+      "text": "All I can say is Ms. Chrissy did an amazing job with the exterior detailing of my sister car. She notice the soap stains from tint installation. She said the car can\u2019t leave like that and instantly got right to detailing the car. She\u2019s great at what she does. We need to support our fellow females in the community so please don\u2019t hesitate and book your next appointment with her asap.",
+      "verified": true
+    },
+    {
+      "author": "Ashley Green",
+      "rating": 5,
+      "date": "8 months ago",
+      "source": "google",
+      "text": "Chrissy\u2019s Mobile Detailing is top-tier!\nShe recently did the tint on my car, and I couldn\u2019t be happier with the results. Super clean, professional, and detailed work, she really takes pride in what she does. Everything looks flawless, and the whole process was smooth from start to finish. Highly recommend her if you want quality work and great customer service!",
+      "verified": true
+    },
+    {
+      "author": "Marcelle Zavala",
+      "rating": 5,
+      "date": "3 months ago",
+      "source": "google",
+      "text": "I am so happy to have found Chrissy. She detailed my boyfriend\u2019s car as my Christmas gift to him, and did a phenomenal job. She was communicative, efficient, and so detail oriented. His car underwent a massive transformation, he had stains on his seats that she was able to remove so well. I would recommend her to everyone!! Thank you Chrissy!",
+      "verified": true
+    },
+    {
+      "author": "Dominik Austin",
+      "rating": 3,
+      "date": "3 months ago",
+      "source": "google",
+      "text": "The detail I got was for a Toyota Corolla, at first she did a good job since I had asked for a deep cleaning on the interior of a pretty stained interior. She told me the price of the whole detail which came out to be $285. Which is not bad but not great of a price consider the final result I received. We had stopped to check in and she got most of the stains out of the seats which was my main issue, but after the full inspection of the vehicle the next morning\u2026 the interior had a major strong chemical smell which wasn\u2019t pleasant to breath in and also they left a lot of missed spots such as, dirty glass, streaky plastic center console, and some other stuff. The exterior of the vehicle still had lots of dirt marks on it which I could scratch off with my nails. Also the interior roof wasn\u2019t even touched it still had stains that water and soap could come off and they didn\u2019t even look at that, I only saw it the next day. Not even sure if they cleaned my wheels and applied tire shine on it after. Overall I wouldn\u2019t consider booking them again especially for the price and the service I got. I wouldn\u2019t recommend them.",
+      "verified": true
+    },
+    {
+      "author": "Emilie Scheffer",
+      "rating": 5,
+      "date": "3 months ago",
+      "source": "google",
+      "text": "Chrissy did such an incredible job on my car!! It had been through a lot with my two dogs and a baby but it looked like a brand new car by the time she was done.\nHighly recommend her detailing services!",
+      "verified": true
+    }
   ],
-  "counts": {"total_available": 117, "captured": 5, "target_min": 5, "aggregate_rating": 5.0, "aggregate_rating_source": "Google via TintFinder aggregation"},
-  "notes": "Strong detail review data. 117 Google reviews at 5.0 stars. 4 verbatim text reviews captured. Excluded 1 mixed review (Dominik Austin) per research recommendation — not appropriate for site display. Business is Black-owned AND women-owned. Previously operated as Miami Style Detail LLC before rebrand.",
-  "capture_attempts": [{"source": "google_gbp", "status": "blocked", "reason": "share link redirects to blocked Maps"}, {"source": "tintfinder_aggregator", "status": "success", "reason": "pulled review count and rating"}, {"source": "yelp", "status": "403", "reason": "anti-scrape"}, {"source": "search_snippets", "status": "partial", "reason": "4 full verbatim reviews extracted"}],
-  "created_at": "2026-04-16T23:05:00-04:00",
-  "created_by": "r1vs",
-  "schema_version": "1.0"
+  "counts": {
+    "total_available": 133,
+    "captured": 5,
+    "target_min": 5
+  },
+  "notes": "Captured via Places API on 2026-04-17. Mac Mini direct (Bruce cron stuck)."
 }
