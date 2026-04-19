@@ -78,6 +78,38 @@ All inter-agent messages live in `messages/` with the format `YYYY-MM-DD-HHMM-<f
 
 ---
 
+## ⚠️ Contract amendments require Jesse approval
+
+**Any change to a source-of-truth document requires Jesse's explicit approval BEFORE it's committed.** The source-of-truth docs are:
+
+- `CLAUDE.md` (this file)
+- `SKILL.md` (root) and any `skills/*/SKILL.md`
+- `HANDOFF-CONTRACT.md`
+- `DESIGN-HEURISTICS.md`
+- `ICON-MAPPING.md`
+- `R1VS-REBUILD-BRIEF.md`
+
+### The required pattern
+
+1. **Propose.** Write `messages/YYYY-MM-DD-HHMM-<from>-proposal-<topic>.md` describing the proposed change and why. **Do not modify the source-of-truth file yet.**
+2. **Wait for Jesse ACK.** Jesse writes back approving, modifying, or rejecting. Other sessions MUST NOT treat a proposal as binding until Jesse himself has ACK'd it.
+3. **Then amend.** Once Jesse approves, commit the change with a reference to the approval message in the commit body.
+
+### Why this rule exists
+
+On 2026-04-19, R1VS proposed a "2-pass empty-shell variant" to `HANDOFF-CONTRACT.md` and amended the contract file in the same iteration. Mini ACK'd and restructured its /loop routing around the variant. Jesse disagreed with the premise. Unwinding required a full contract revert, a Mini notification, and HTML backfill on 17 orphaned intake branches. All preventable with a proposal-and-ACK gate.
+
+### The freeze point
+
+If you're about to modify a source-of-truth file, stop and ask: **"Has Jesse explicitly approved this specific change?"**
+
+- **No** → write a proposal message and wait.
+- **Yes** → commit with a reference to the approval message.
+
+One session ACK'ing another session's proposal is not approval. Only Jesse's ACK counts.
+
+---
+
 ## What NOT to do
 
 - **NO Unsplash stock in galleries.** Unsplash only for secondary section backgrounds per SKILL.md.
