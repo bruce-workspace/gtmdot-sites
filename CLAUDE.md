@@ -4,24 +4,23 @@ This repo is the shared workspace between R1VS (MacBook Claude Code), Bruce (Ope
 
 ---
 
-## ⚠️ CRITICAL RULE — READ THE SKILL FIRST
+## ⚠️ MANDATORY READ ORDER AT EVERY SESSION START
 
-**Before doing ANY work on a GTMDot site, read `SKILL.md` in this repo.**
+1. **`CLAUDE.md`** (this file) — system facts + high-level overview
+2. **`HANDOFF-CONTRACT.md`** — authoritative division of labor + communication protocol + commit conventions + /loop requirement + self-audit requirement + violation response
+3. **`SKILL.md`** — phase-by-phase workflow (research → build → polish)
+4. **`DESIGN-HEURISTICS.md`** — design + editorial judgment (icons, photos, pull quotes, stats de-dup, voice)
+5. **`ICON-MAPPING.md`** — Lucide icon source of truth
 
-It defines:
-- Photo sourcing waterfall (owner site → Places API → Recraft → Unsplash)
-- Vertical-specific CSS filters
-- Review mining (verbatim from Places API, 10 per site)
-- Standard components (stats widget, emergency callout, 2-tier reviews, FAQ)
-- Content priorities (hero headline, CTAs, verbatim reviews only)
+**`HANDOFF-CONTRACT.md` is authoritative when in conflict with anything else.** If a rule in this file (`CLAUDE.md`) or `SKILL.md` or any message disagrees with the contract doc, the contract doc wins until explicitly resolved via an ACK message.
 
-**Also read `ICON-MAPPING.md`** for correct Lucide icon per service type. No icon freestyling.
-
-If you freestyle the photo/icon/review workflow instead of using the skill, you will ship broken sites. Don't.
+Do not freestyle any photo/icon/review/copy decision. Every decision has a documented rule — read the docs.
 
 ---
 
 ## Division of labor
+
+**Full ownership table lives in `HANDOFF-CONTRACT.md` §2.** The summary below is for quick reference only — if it drifts from the contract doc, the contract doc is authoritative.
 
 ### R1VS (MacBook Claude Code) — builds the site
 - Phase 1: Research (business intel, competitive, design research) — per SKILL.md Phase 1
