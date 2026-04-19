@@ -25,6 +25,13 @@ html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--b
 .section{padding:96px 40px;max-width:1200px;margin:0 auto}.section-alt{background:var(--bg-alt)}.section-full{padding:96px 40px}.eyebrow{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:4px;color:var(--brand-light);margin-bottom:12px}.section-h2{font-family:var(--font-serif);font-size:clamp(32px,3.5vw,52px);font-weight:700;letter-spacing:-.5px;line-height:1.1;margin-bottom:16px}.section-sub{font-size:17px;color:var(--muted);max-width:560px;line-height:1.7}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}.service-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 24px;transition:transform .3s ease,box-shadow .3s ease}.service-card:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.3)}.service-icon{width:56px;height:56px;display:flex;align-items:center;justify-content:center;background:var(--brand-glow);border-radius:14px;margin-bottom:20px;color:var(--brand-light)}.service-icon svg{width:28px;height:28px}.service-card h3{font-size:18px;font-weight:700;margin-bottom:8px;line-height:1.3}.service-card p{font-size:14px;color:var(--muted);line-height:1.6}
 .review-feed{margin-top:40px;overflow:hidden;mask-image:linear-gradient(to right,transparent,black 5%,black 95%,transparent);-webkit-mask-image:linear-gradient(to right,transparent,black 5%,black 95%,transparent)}.review-feed-track{display:flex;gap:24px;animation:reviewScroll 50s linear infinite;width:max-content}.review-feed-track:hover{animation-play-state:paused}@media(prefers-reduced-motion:reduce){.review-feed-track{animation:none;flex-wrap:wrap}}@keyframes reviewScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}.review-mini{flex-shrink:0;width:360px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:10px}.review-mini-stars{color:#f59e0b;font-size:14px;letter-spacing:2px}.review-mini-text{font-size:14px;line-height:1.65;color:var(--text);font-style:italic;flex:1}.review-mini-author{font-size:13px;font-weight:600;color:var(--brand-light)}.review-mini-source{font-size:11px;color:var(--muted)}
+.pull-quote{max-width:900px;margin:0 auto 48px;padding:40px 32px;background:linear-gradient(135deg,var(--brand-glow) 0%,var(--bg-alt) 100%);border:1px solid var(--border);border-left:4px solid var(--brand-light);border-radius:16px;position:relative}
+.pull-quote::before{content:'"';position:absolute;top:8px;left:24px;font-family:var(--font-serif);font-size:96px;line-height:1;color:var(--brand-light);opacity:0.35;font-weight:700}
+.pull-quote-text{font-family:var(--font-serif);font-size:clamp(22px,2.4vw,30px);font-weight:500;font-style:italic;line-height:1.35;letter-spacing:-0.3px;color:var(--text);margin-bottom:20px;padding-left:28px}
+.pull-quote-attr{display:flex;align-items:center;gap:14px;padding-left:28px;flex-wrap:wrap}
+.pull-quote-attr-stars{display:flex;gap:2px;color:#f59e0b}
+.pull-quote-attr-name{font-weight:700;color:var(--brand-light);font-size:15px}
+.pull-quote-attr-source{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:2px}
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:48px}.story-text h3{font-family:var(--font-serif);font-size:28px;font-weight:700;margin-bottom:16px}.story-text p{color:var(--muted);line-height:1.7;margin-bottom:20px}.story-highlights{display:grid;grid-template-columns:1fr 1fr;gap:16px}.story-highlight{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center}.story-highlight-number{font-family:var(--font-serif);font-size:32px;font-weight:900;color:var(--brand-light);line-height:1}.story-highlight-label{font-size:13px;color:var(--muted);margin-top:6px;font-weight:500}
 .area-pills{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.area-pill{background:var(--surface);border:1px solid var(--border);padding:10px 20px;border-radius:100px;font-size:14px;font-weight:600;color:var(--muted);transition:all .3s}.area-pill:hover{border-color:var(--brand-light);color:var(--brand-light)}
 .faq-list{margin-top:48px;max-width:800px}.faq-item{border-bottom:1px solid var(--border)}.faq-question{width:100%;background:none;border:none;color:var(--text);font-family:var(--font-sans);font-size:17px;font-weight:600;padding:24px 0;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px}.faq-question svg{flex-shrink:0;transition:transform .3s;color:var(--brand-light)}.faq-item.open .faq-question svg{transform:rotate(180deg)}.faq-answer{display:grid;grid-template-rows:0fr;overflow:hidden;transition:grid-template-rows .4s ease}.faq-answer-inner{padding:0 0 24px;font-size:15px;color:var(--muted);line-height:1.7;overflow:hidden;min-height:0}.faq-item.open .faq-answer{grid-template-rows:1fr}
@@ -93,6 +100,20 @@ html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--b
     <h2 class="section-h2">5.0 Stars on Angi</h2>
     <p class="section-sub">Every Doctor Concrete job earns a 5-star review. The consistent themes: fast turnaround, daily communication, and concrete that actually stays level.</p>
   </div>
+  <div class="pull-quote reveal">
+    <p class="pull-quote-text">Doctor Concrete were fantastic. Quote on Wednesday and poured concrete on Friday. It looks great.</p>
+    <div class="pull-quote-attr">
+      <span class="pull-quote-attr-stars">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+      </span>
+      <span class="pull-quote-attr-name">Angi Verified Customer</span>
+      <span class="pull-quote-attr-source">Angi · Wednesday Quote, Friday Pour</span>
+    </div>
+  </div>
   <div class="review-feed reveal">
     <div class="review-feed-track">
       <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"The driveway looks great and it's leveled. We live on a busy street, and they did an awesome job making sure traffic went smooth. I would definitely hire them again and refer others to them."</p><span class="review-mini-author">Angi verified customer</span><span class="review-mini-source">Angi</span></div>
@@ -125,9 +146,9 @@ html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--b
       </div>
       <div class="story-highlights">
         <div class="story-highlight"><div class="story-highlight-number">2019</div><div class="story-highlight-label">Founded</div></div>
-        <div class="story-highlight"><div class="story-highlight-number">5.0</div><div class="story-highlight-label">Angi Stars</div></div>
-        <div class="story-highlight"><div class="story-highlight-number">1 day</div><div class="story-highlight-label">Most Driveways</div></div>
-        <div class="story-highlight"><div class="story-highlight-number">2 days</div><div class="story-highlight-label">Quote to Pour</div></div>
+        <div class="story-highlight"><div class="story-highlight-number">2-Day</div><div class="story-highlight-label">Quote to Pour</div></div>
+        <div class="story-highlight"><div class="story-highlight-number">Traffic</div><div class="story-highlight-label">Safe on Busy Streets</div></div>
+        <div class="story-highlight"><div class="story-highlight-number">Driveway</div><div class="story-highlight-label">Specialty · Most Jobs</div></div>
       </div>
     </div>
   </div>
@@ -159,6 +180,20 @@ html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--b
 <section class="section" id="contact">
   <div class="reveal">
     <div style="text-align:center"><div class="eyebrow">Get Started</div><h2 class="section-h2">Free Estimate</h2><p class="section-sub" style="margin:0 auto">Tell Hugo about your concrete project. Most estimates come back within a day.</p></div>
+    <div class="pull-quote" style="margin-top:48px">
+      <p class="pull-quote-text">I am so happy with my driveway addition. It was fast and EXACTLY what I wanted. I would absolutely hire him and his company again. The price was very reasonable for what I wanted.</p>
+      <div class="pull-quote-attr">
+        <span class="pull-quote-attr-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </span>
+        <span class="pull-quote-attr-name">Angi Verified Customer</span>
+        <span class="pull-quote-attr-source">Angi · Driveway Addition · EXACTLY What I Wanted</span>
+      </div>
+    </div>
     <div class="form-wrap">
       <form id="contactForm">
         <div class="form-row"><div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" required placeholder="Full name"></div><div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" required placeholder="(___) ___-____"></div></div>
