@@ -115,6 +115,15 @@ section { padding: 96px 0; }
 .process-step h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; margin-bottom: 8px; }
 .process-step p { color: var(--muted); font-size: 14px; line-height: 1.6; }
 
+/* PULL QUOTE */
+.pull-quote { max-width: 900px; margin: 0 auto 48px; padding: 40px 32px; background: linear-gradient(135deg, var(--brand-glow) 0%, var(--surface-2) 100%); border: 1px solid var(--border); border-left: 4px solid var(--brand-light); border-radius: 16px; position: relative; }
+.pull-quote::before { content: '"'; position: absolute; top: 8px; left: 24px; font-family: 'Cormorant Garamond', Georgia, serif; font-size: 96px; line-height: 1; color: var(--brand-light); opacity: 0.35; font-weight: 700; }
+.pull-quote-text { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(22px, 2.4vw, 30px); font-weight: 500; font-style: italic; line-height: 1.35; letter-spacing: -0.3px; color: var(--text); margin-bottom: 20px; padding-left: 28px; }
+.pull-quote-attr { display: flex; align-items: center; gap: 14px; padding-left: 28px; flex-wrap: wrap; }
+.pull-quote-attr-stars { display: flex; gap: 2px; color: #f59e0b; }
+.pull-quote-attr-name { font-weight: 700; color: var(--brand-light); font-size: 15px; }
+.pull-quote-attr-source { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 2px; }
+
 /* REVIEWS */
 .reviews { background: var(--bg); }
 .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -408,6 +417,20 @@ section { padding: 96px 0; }
       <h2>4.8 stars from <em>76+ real reviews.</em></h2>
       <p>Named reviewers from Birdeye and Google. Kevin shows up in almost every one.</p>
     </div>
+    <div class="pull-quote">
+      <p class="pull-quote-text">Mr. Kevin provided exceptional customer service and delivered high-quality work — my car looked brand new when I picked it up.</p>
+      <div class="pull-quote-attr">
+        <span class="pull-quote-attr-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </span>
+        <span class="pull-quote-attr-name">Ashley Preston</span>
+        <span class="pull-quote-attr-source">Birdeye · Car Looked Brand New · Mr. Kevin</span>
+      </div>
+    </div>
     <div class="reviews-grid">
 
       <div class="review-card">
@@ -624,6 +647,20 @@ section { padding: 96px 0; }
       <span class="eyebrow">Free Estimate</span>
       <h2>Send photos. <em>Get a number back.</em></h2>
       <p>The faster we see the damage, the faster you get a real estimate. Upload a few photos and Kevin will respond the same day.</p>
+    </div>
+    <div class="pull-quote" style="margin-bottom:40px">
+      <p class="pull-quote-text">Got perfect work done on my like new Lexus. The service was great, the repairs were completed quickly, and pricing was reasonable.</p>
+      <div class="pull-quote-attr">
+        <span class="pull-quote-attr-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </span>
+        <span class="pull-quote-attr-name">Julia Raffetto</span>
+        <span class="pull-quote-attr-source">Birdeye · Lexus · Quick + Reasonable</span>
+      </div>
     </div>
     <form class="form-wrap" onsubmit="event.preventDefault(); alert('Thanks! Kevin will be in touch today.');">
       <div class="form-grid">
