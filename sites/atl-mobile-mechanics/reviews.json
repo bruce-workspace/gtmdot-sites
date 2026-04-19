@@ -1,0 +1,27 @@
+{
+  "reviews": [],
+  "counts": {
+    "total_available": "unknown (Yelp listing exists with 13 photos, likely 10+ reviews on GBP)",
+    "captured": 0,
+    "target_min": 3,
+    "aggregate_rating": null,
+    "aggregate_rating_source": "pending Bruce Places API retry"
+  },
+  "notes": "ATL Mobile Mechanics, LLC. 24/7 mobile auto repair specializing in diesel, commercial, fire truck, emergency vehicle, ATV, motorcycle, marine, lawn equipment. Douglasville GA (8816 Countryside Way). Phone (470) 809-3146. Owner Joseph. REVIEW-BLOCKED at research time — Yelp 403, Chamber 403, no GBP URL in queue, own site has no testimonials. Bruce retry needed for Places API review pull.",
+  "capture_attempts": [
+    {"source": "yelp", "status": "403", "reason": "anti-scrape blocked WebFetch"},
+    {"source": "chamber_of_commerce", "status": "403", "reason": "anti-scrape blocked WebFetch"},
+    {"source": "google_gbp", "status": "not_attempted", "reason": "no GBP share URL in rebuild-queue.json"},
+    {"source": "owner_site", "status": "empty", "reason": "atlmobilemechanics.com homepage has no testimonials"},
+    {"source": "web_search_snippets", "status": "empty", "reason": "no review text surfaced via Google/Bing search"}
+  ],
+  "flags": [
+    "review_blocked_pending_bruce_retry",
+    "do_not_deploy_without_reviews",
+    "dupe_candidate_douglasville_mobile_mechanics_same_phone"
+  ],
+  "team_from_reviews": [],
+  "created_at": "2026-04-19T16:10:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}

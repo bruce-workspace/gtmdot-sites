@@ -1,0 +1,54 @@
+{
+  "slug": "atl-mobile-mechanics",
+  "vertical": "mobile_auto_repair",
+  "vertical_filter": "brightness(0.82) contrast(1.08) saturate(0.9)",
+  "hero": {
+    "slot": "hero.jpg",
+    "type": "technician_in_action",
+    "priority_order": [
+      "owner_site_gbp_photos",
+      "yelp_13_photos_if_accessible",
+      "places_api_owner_uploaded",
+      "places_api_customer_uploaded",
+      "recraft_photorealistic"
+    ],
+    "recraft_prompt_if_needed": "Professional male American mechanic in uniform working under the hood of a truck in a residential driveway setting, photorealistic, no text or logos, no visible signage. Mobile service van faintly visible in background.",
+    "caption_context": "Owner or technician in action. Caption should name Joseph (owner) if the photo is of him, or reference 'on every call' / 'mobile, when and where you need it' if generic tech shot."
+  },
+  "gallery": [
+    {
+      "slot": "gbp-1.jpg",
+      "type": "specialty_vehicle",
+      "context": "diesel truck or commercial vehicle — differentiator; caption 'Diesel + Commercial'"
+    },
+    {
+      "slot": "gbp-2.jpg",
+      "type": "specialty_vehicle",
+      "context": "fire truck or emergency vehicle — highest-tier differentiator; caption 'Fire Truck + Emergency Vehicle Specialty'"
+    },
+    {
+      "slot": "gbp-3.jpg",
+      "type": "specialty_vehicle",
+      "context": "motorcycle or ATV — broad scope signal; caption 'Motorcycles, ATVs, Marine'"
+    },
+    {
+      "slot": "gbp-4.jpg",
+      "type": "mobile_service_setup",
+      "context": "tech working in customer driveway with mobile equipment; caption 'Wherever you need us'"
+    },
+    {
+      "slot": "gbp-5.jpg",
+      "type": "24_7_context",
+      "context": "nighttime or evening shot if available to reinforce 24/7 positioning; caption 'Open 24/7, 365'"
+    },
+    {
+      "slot": "gbp-6.jpg",
+      "type": "completed_repair",
+      "context": "before/after or finished work; caption 'Diagnosed + Fixed · State-of-the-Art'"
+    }
+  ],
+  "sections": [
+    {"selector": "#area-bg", "type": "atlanta_metro_cityscape", "context": "Douglasville or West Atlanta visible; Unsplash OK"}
+  ],
+  "notes": "Mobile auto repair — hero should show action (not shop interior, since there isn't one). Specialty vehicles (fire truck + marine + diesel) are the single biggest differentiator — wire those prominently in gallery over standard sedan repair shots. If Bruce can access Yelp's 13 photos, prefer those over Recraft."
+}
