@@ -1,0 +1,28 @@
+{
+  "reviews": [],
+  "counts": {
+    "total_available": "unknown — no business identifiable from rebuild-queue.json entry",
+    "captured": 0,
+    "target_min": 3,
+    "aggregate_rating": null,
+    "aggregate_rating_source": "not_applicable_pending_jesse_review"
+  },
+  "notes": "DATA QUALITY FLAG — similar pattern to posh-paws-atlanta. rebuild-queue.json entry has owner=null, phone=null, email=null, gbp_url=null. Slug ends in '-share' (likely orphaned GBP share URL fragment), name includes 'Share' which is not a plausible plumbing business-name suffix. City/state mismatch (name 'Sandy Springs' but city 'Atlanta'). Possible duplicate of sandy-springs-plumber-sewer-septic (claim codes SSPS4553 vs SSPS4071 — same SSPS prefix). Recommend Jesse: disqualify OR correct rebuild-queue source. See RESEARCH.md for full analysis.",
+  "capture_attempts": [
+    {"source": "google_search", "status": "no_match", "reason": "no business by exact name 'Sandy Springs Plumbing Share' in metro Atlanta"},
+    {"source": "duckduckgo_search", "status": "no_match", "reason": "no business by that name"},
+    {"source": "bbb", "status": "no_listing", "reason": "not in BBB directory under this name"},
+    {"source": "google_gbp", "status": "no_url_in_rebuild_queue", "reason": "rebuild-queue entry has gbp_url=null — no share URL to retry"}
+  ],
+  "flags": [
+    "data_quality_issue_needs_jesse_review",
+    "recommend_disqualification_pending_confirmation",
+    "possible_duplicate_of_sandy-springs-plumber-sewer-septic",
+    "orphaned_gbp_share_slug_suspected",
+    "DO_NOT_QUEUE_BRUCE_RETRY_UNTIL_CONFIRMED"
+  ],
+  "team_from_reviews": [],
+  "created_at": "2026-04-19T17:32:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}

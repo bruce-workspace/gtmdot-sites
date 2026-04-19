@@ -1,0 +1,16 @@
+{
+  "slug": "sandy-springs-plumbing-share",
+  "vertical": "plumbing",
+  "vertical_filter": "brightness(0.92) contrast(1.05) saturate(0.95)",
+  "status": "DO_NOT_WATERFALL_UNTIL_JESSE_RESOLVES_DATA_QUALITY_FLAG",
+  "hero": {
+    "slot": "hero.jpg",
+    "type": "skeleton_only",
+    "priority_order": [],
+    "recraft_prompt_if_needed": null,
+    "caption_context": "SKELETON ONLY. Do not run photo waterfall. Slug is flagged for disqualification / rebuild-queue correction per RESEARCH.md."
+  },
+  "gallery": [],
+  "sections": [],
+  "notes": "DO NOT RUN PHOTO WATERFALL. This slug has a data-quality flag — rebuild-queue.json entry has all-null contact fields, name includes 'Share' (likely orphaned GBP share URL fragment), potential duplicate of sandy-springs-plumber-sewer-septic. Jesse review required before any photo/review/HTML work proceeds. If Jesse confirms disqualification, this slug should be dead-staged. If Jesse resolves the data to a real business, re-do intent.json with the correct service list."
+}
