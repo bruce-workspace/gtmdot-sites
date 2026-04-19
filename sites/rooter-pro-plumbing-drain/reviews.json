@@ -1,19 +1,50 @@
 {
   "reviews": [
-    {"author": "Esther W.", "rating": 5, "date": "recent", "source": "trustdale", "text": "Technician Jay was prompt, professional, and diagnosed the issue quickly. Fair pricing and clean work.", "verified": true},
-    {"author": "Albert O.", "rating": 5, "date": "recent", "source": "trustdale", "text": "Rooter Pro came out same day for a clogged main line. Jeremy worked until the job was done and explained everything.", "verified": true},
-    {"author": "Terri L.", "rating": 5, "date": "recent", "source": "trustdale", "text": "Called for a water heater issue. Megan's team was responsive, honest about options, and did not try to upsell.", "verified": true},
-    {"author": "Marva S.", "rating": 5, "date": "recent", "source": "trustdale", "text": "Excellent plumbing company. On time, fair pricing, and Brandon cleaned up after the work was done.", "verified": true},
-    {"author": "Ludmila R.", "rating": 5, "date": "recent", "source": "bbb", "text": "Rooter Pro Plumbing provided outstanding service. I called them because of a leak and they responded quickly.", "verified": true},
-    {"author": "Teriece W.", "rating": 5, "date": "recent", "source": "bbb", "text": "Great experience with Rooter Pro. Professional, knowledgeable, and fairly priced. Would use again.", "verified": true},
-    {"author": "Angi Customer", "rating": 5, "date": "recent", "source": "angi", "text": "Showed up on time, diagnosed the problem, and fixed it same day. Fair pricing and quality work.", "verified": true},
-    {"author": "Angi Customer", "rating": 5, "date": "recent", "source": "angi", "text": "Rooter Pro went above and beyond. Their technician was courteous and thorough. Highly recommend.", "verified": true}
+    {
+      "author": "Jimmy Newton",
+      "rating": 5,
+      "date": "5 months ago",
+      "source": "google",
+      "text": "Working with Rooter Pro was a real pleasure. I needed a new water heater and pressure-reducing valve, as mine were over two decades old. They were able to send out a technician on a Friday morning for an inspection and a quote. The technician, Andy, was very polite, professional, and punctual. He walked me through the process, answered all of my questions, and recommended quality upgraded replacement parts with installation, along with an extended service warranty at a very competitive price. Once I approved the quote, he was back out here on a weekend in less than 24 hours. I\u2019m very happy with the clean results and the care taken to get the job done right. If I have any other plumbing needs, I will definitely give Rooter Pro a call. Thanks again!",
+      "verified": true
+    },
+    {
+      "author": "Dawn Daniel",
+      "rating": 5,
+      "date": "2 months ago",
+      "source": "google",
+      "text": "My thanks and appreciation to all the team members that have helped me from Genisis and Jay to the techs Mikey Evans and Frankie Henson. I was totally at a loss of how or even where the issue was but they had my home back up and I will have them on my redial for anything that may come up. I recommend this business completely. THANK YOU! THANK YOU!! THANK YOU!!",
+      "verified": true
+    },
+    {
+      "author": "Craig Caldwell",
+      "rating": 5,
+      "date": "5 months ago",
+      "source": "google",
+      "text": "We made an appointment on Monday to investigate a septic tank that would not drain.  On Tuesday, Tony and Mickey showed-up inside our appointment window with all the tools needed to evaluate the tank, dig up enough to expose the lid and open it to find that the drain line leaving the tank was completely clogged with roots.\nThey pumped the tank to expose the drain, cleared the roots at the opening, then jetted the line a couple of hundred feet to verify that the drain lines were flowing properly.  They and supervisor Jay Akers were great at explaining all the steps and keeping me informed throughout the whole process.\nWhen finished, they returned the dirt where it belonged, closed and locked the gate and were gone about two hours after they arrived.  Considering it was septic tank service, it was actually a really great experience.  We're glad to have found Rooter Pro through TrustDale.com!",
+      "verified": true
+    },
+    {
+      "author": "Michael Thompson",
+      "rating": 5,
+      "date": "5 months ago",
+      "source": "google",
+      "text": "We have a common issue in my subdivision where the main water line feeding each home leaks approximately every two years due to the defective material used and improper installation by the builder. I had it fixed 3 times by another plumber at $500 for each patch. After speaking with the HOA I learned that the only permanent solution was to replace the main water line. I got a quote from the same company who fixed it 3 times prior and by the way never mentioned a full replacement was needed. I got another quote from a guy the HOA recommended who used a better material at a fair price and who they knew would be mindful of the landscaping and sod. I decided to use this guy, but before he could make it out to do the repair Mr Jerimy Jackson from Rooter Pro Plumbing knocked on my door and offered a quote to repair the line. He was in the neighborhood doing the same repair at another home and spoke with the HOA board director who mentioned I was having the same issue. He was very kind and very informative of what needed to be done and how they would do the repair right and offer a lifetime warranty. I kindly declined since I had already committed to another company. However, I did some research after hearing Jerimy describe how they would do the replacement right and even spoke to his boss, the owner of the company who reiterated and assured me I would not have to worry about this issue again if I used them and he would even match the price of the company I was going to use and honor the lifetime warranty to earn my husiness. Not to mention they are a Trust Dale company, which means they have to meet and or exceed a high level of quality. After careful thought, I decided to move forward with Rooter Pro Plumbing. I was so impressed with how carefully and how quickly they worked. They took pictures and kept me informed throuout the entire process. And the best part...I could barely tell they had to dig up my front yard when they were finished which was very important to me and my HOA. I honestly couldn't be more pleased. If you need a plumber who is professional, highly qualified and is respectful of your property then Rooter Pro and Jerimy Jackson are the guys for you. I have and will continue to recommend them to friends and family.",
+      "verified": true
+    },
+    {
+      "author": "Lona Gibson",
+      "rating": 5,
+      "date": "6 months ago",
+      "source": "google",
+      "text": "Jeremy Brodie Came out, from Rooter Pro Plumbing, about an hour after I submitted my request. I initially scheduled multiple pros to come out for estimates, but because Jeremy\u2018s estimate came in way lower than I anticipated any other pro, I selected Rooter Pro Plumbing. He was extremely thorough and professional and explaining in detail what needed to be done and I also receive a warranty! The professionalism, Responsiveness in price a second to none! I would definitely recommend Rooter Pro Plumbing For your next job! Be sure To ask for Brodie!!",
+      "verified": true
+    }
   ],
-  "counts": {"total_available": 127, "captured": 8, "target_min": 5, "aggregate_rating": 5.0, "aggregate_rating_source": "Google (reported via aggregators) / BBB A+ / TrustDALE certified"},
-  "notes": "Strong trust signals. 127 reviews at 5.0 stars. BBB A+ (accredited 2024). TrustDALE Certified with $10K Make It Right guarantee. Fox 5 Atlanta partner. Technician names recur across reviews: Jay, Jeremy, Brandon. Female-owned (Megan Dammann as sole principal).",
-  "capture_attempts": [{"source": "google_gbp", "status": "blocked", "reason": "anti-scraping"}, {"source": "trustdale", "status": "success", "reason": "4 verbatim reviews surfaced"}, {"source": "bbb", "status": "success", "reason": "2 verbatim reviews"}, {"source": "angi", "status": "partial", "reason": "2 reviews without published names"}, {"source": "yelp", "status": "403", "reason": "anti-scrape"}],
-  "phone_conflict_flag": "Queue phone: (470) 747-6882. Website: (770) 299-2627. BBB: (470) 600-5146. Built site with queue phone; confirm canonical with Megan.",
-  "created_at": "2026-04-16T23:30:00-04:00",
-  "created_by": "r1vs",
-  "schema_version": "1.0"
+  "counts": {
+    "total_available": 352,
+    "captured": 5,
+    "target_min": 5
+  },
+  "notes": "Captured via Places API on 2026-04-17. Mac Mini direct (Bruce cron stuck)."
 }
