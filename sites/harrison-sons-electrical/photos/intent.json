@@ -1,0 +1,53 @@
+{
+  "slug": "harrison-sons-electrical",
+  "vertical": "electrician",
+  "vertical_filter": "brightness(0.84) contrast(1.1) saturate(0.85)",
+  "hero": {
+    "slot": "hero.jpg",
+    "type": "electrician_at_panel_or_fixture",
+    "priority_order": [
+      "places_api_owner_uploaded",
+      "places_api_customer_uploaded",
+      "own_site_photos",
+      "recraft_photorealistic"
+    ],
+    "recraft_prompt_if_needed": "Professional licensed electrician in uniform working on an electrical panel in a clean residential garage, safety gear visible, wires routed neatly, photorealistic, no text or logos, no visible brand names.",
+    "caption_context": "Family + experience is the brand — prefer a team or father-son photo if Bruce surfaces one. Otherwise clean 'at-work' shot with caption referencing 20+ years or family lineage."
+  },
+  "gallery": [
+    {
+      "slot": "gbp-1.jpg",
+      "type": "electrical_panel",
+      "context": "Clean modern panel upgrade with labeled breakers. Caption 'Panel updates — code-compliant, labeled, inspected'."
+    },
+    {
+      "slot": "gbp-2.jpg",
+      "type": "home_theater_wiring",
+      "context": "Home theater or media room wiring (premium niche). Caption 'Home theater + media room — hidden runs, clean terminations'."
+    },
+    {
+      "slot": "gbp-3.jpg",
+      "type": "outdoor_security_lighting",
+      "context": "Motion-activated security or landscape lighting. Caption 'Security + landscape lighting — motion-triggered, weatherproof'."
+    },
+    {
+      "slot": "gbp-4.jpg",
+      "type": "kitchen_electrical",
+      "context": "Under-counter lighting, GFCI outlets, appliance circuit. Caption 'Kitchens — under-counter, GFCI, appliance-ready'."
+    },
+    {
+      "slot": "gbp-5.jpg",
+      "type": "smoke_co_detector",
+      "context": "Hardwired smoke + CO detector installation. Caption 'Safety — hardwired smoke + CO, professionally placed'."
+    },
+    {
+      "slot": "gbp-6.jpg",
+      "type": "family_or_crew",
+      "context": "Harrisons + sons together or at a job site. Caption names the family if identifiable — 'Three generations, one name on the truck'."
+    }
+  ],
+  "sections": [
+    {"selector": "#area-bg", "type": "atlanta_residential", "context": "Atlanta southwest / Cascade area residential; Unsplash OK"}
+  ],
+  "notes": "Electrician vertical = trust signals matter more than before/after. Lean into family-business + 20-year history. The 'Harrison & Sons' name is the hook. If Bruce surfaces a family photo or father-son shot, that becomes the hero. Home theater wiring (gallery slot 2) is the premium residential lane — worth wiring prominently to attract higher-end customers."
+}

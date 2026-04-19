@@ -1,0 +1,28 @@
+{
+  "reviews": [],
+  "counts": {
+    "total_available": "130+ reviews across platforms (4.7/35 one source + 4.8/102 another source — search-surfaced ratings). Actual unique-review count likely 100-130.",
+    "captured": 0,
+    "target_min": 3,
+    "aggregate_rating": null,
+    "aggregate_rating_source": "pending Bruce Places API retry — directory snippets show 4.7-4.8★"
+  },
+  "notes": "Harrison & Sons Electrical Service LLC. Atlanta (3695 Cascade Rd STE 6250, 30331). Phone (404) 574-5123. Founded 2005 (20+ years). Family-owned multi-generational (business name = '& Sons'). Full residential electrical scope including home theater + security/safety. Ratings surfaced across directories: 4.7/35 + 4.8/102 = ~130+ reviews total across platforms. REVIEW-BLOCKED at research time — individual review text not surfaced via WebFetch. HIGH VOLUME signal = strong likelihood Bruce will pull rich content.",
+  "capture_attempts": [
+    {"source": "own_site", "status": "empty", "reason": "testimonials section not surfaced via WebFetch"},
+    {"source": "google_search_snippets", "status": "rating_only", "reason": "search surfaced star ratings + review counts but no verbatim review text or author names"},
+    {"source": "leadsmart", "status": "not_attempted", "reason": "directory listing exists"},
+    {"source": "chamber_of_commerce", "status": "not_attempted", "reason": "listing exists"},
+    {"source": "google_gbp", "status": "not_attempted", "reason": "no GBP share URL in rebuild-queue.json"}
+  ],
+  "flags": [
+    "review_blocked_pending_bruce_retry",
+    "empty_shell_2pass_candidate",
+    "high_review_volume_signal_130_plus",
+    "family_owned_sons_multi_generational"
+  ],
+  "team_from_reviews": [],
+  "created_at": "2026-04-19T17:00:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
