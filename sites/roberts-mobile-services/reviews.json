@@ -1,0 +1,40 @@
+{
+  "reviews": [
+    {
+      "author": "I.V.",
+      "rating": 5,
+      "date": "Nov 9 (year unclear from Nextdoor snippet)",
+      "source": "nextdoor",
+      "location": "Atlanta, GA",
+      "text": "He was very professional, kind and helpful... He made me feel safe with the repairs",
+      "verified": true,
+      "notes": "Partial quote from Nextdoor — ellipsis represents truncation in source."
+    }
+  ],
+  "counts": {
+    "total_available": "unknown — Nextdoor presence + BBB sister listing + Mobile Mechanic Directory 5/5 on 1",
+    "captured": 1,
+    "target_min": 3,
+    "aggregate_rating": null,
+    "aggregate_rating_source": "pending Bruce Places API retry"
+  },
+  "notes": "Robert's Mobile Services. Owner Robert Stinton. Mobile auto mechanic at 1598 Donald Lee Hollowell Pkwy NW, Atlanta GA 30318. Phone (678) 663-4130. Black-owned (per buyblack.org directory). Broad mechanical scope — diagnostics, oil, brakes, tune-ups, transmission, body, AC, electrical. 1 partial verbatim captured from Nextdoor (I.V. — professional, kind, safe repairs). Below 3-threshold for 1-pass trigger; stays empty-shell 2-pass pending Bruce Places API retry.",
+  "capture_attempts": [
+    {"source": "nextdoor", "status": "partial", "reason": "1 partial verbatim (I.V.) captured; additional activity threads are neighbor requests not reviews"},
+    {"source": "mobile_mechanic_directory", "status": "rating_only", "reason": "5/5 on 1 review but review text not captured"},
+    {"source": "yelp", "status": "not_attempted", "reason": "Yelp anti-scrape; listing exists"},
+    {"source": "bbb_locust_grove", "status": "not_verified", "reason": "sister entity 'Robert's Mobile Auto Repair' listed in BBB Locust Grove — may or may not be same business"},
+    {"source": "buyblack_org", "status": "directory_entry_only", "reason": "directory confirms Black-owned status, no reviews"},
+    {"source": "google_gbp", "status": "not_attempted", "reason": "no GBP share URL in rebuild-queue.json"}
+  ],
+  "flags": [
+    "review_blocked_pending_bruce_retry",
+    "empty_shell_2pass_candidate",
+    "black_owned_positioning",
+    "one_partial_verbatim_captured_needs_two_more"
+  ],
+  "team_from_reviews": [],
+  "created_at": "2026-04-19T17:18:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}

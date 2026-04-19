@@ -1,0 +1,52 @@
+{
+  "slug": "roberts-mobile-services",
+  "vertical": "mobile_auto_repair",
+  "vertical_filter": "brightness(0.82) contrast(1.08) saturate(0.9)",
+  "hero": {
+    "slot": "hero.jpg",
+    "type": "owner_at_work",
+    "priority_order": [
+      "places_api_owner_uploaded",
+      "places_api_customer_uploaded",
+      "recraft_photorealistic"
+    ],
+    "recraft_prompt_if_needed": "Professional Black male American mobile mechanic working under the hood of a car in a residential driveway, tool belt visible, wearing clean work uniform, photorealistic, no text or logos, no signage.",
+    "caption_context": "Robert personally is the brand — prefer a photo of him in action over generic mechanic shots. Black-owned positioning is a distinctive angle; hero should reflect it authentically."
+  },
+  "gallery": [
+    {
+      "slot": "gbp-1.jpg",
+      "type": "diagnostic_under_hood",
+      "context": "Engine diagnostics with scan tool — check engine light scenario. Caption 'Diagnostics — check engine, drivability, fault codes'."
+    },
+    {
+      "slot": "gbp-2.jpg",
+      "type": "brake_service",
+      "context": "Brake pad replacement or rotor service. Caption 'Brakes — pads, rotors, full replacement'."
+    },
+    {
+      "slot": "gbp-3.jpg",
+      "type": "battery_alternator",
+      "context": "Battery replacement or alternator test. Caption 'Batteries + alternators — tested, replaced'."
+    },
+    {
+      "slot": "gbp-4.jpg",
+      "type": "transmission_work",
+      "context": "Transmission service (rare mobile specialty). Caption 'Transmission + major mechanical — mobile, same bay'."
+    },
+    {
+      "slot": "gbp-5.jpg",
+      "type": "body_or_window",
+      "context": "Body repair or window service. Caption 'Body + windows — full-scope mobile'."
+    },
+    {
+      "slot": "gbp-6.jpg",
+      "type": "robert_or_mobile_van",
+      "context": "Robert personally or his service van. Caption names Robert — reinforces owner-operator brand."
+    }
+  ],
+  "sections": [
+    {"selector": "#area-bg", "type": "atlanta_west_corridor", "context": "Donald Lee Hollowell / West Atlanta streetscape; Unsplash OK if no real photos"}
+  ],
+  "notes": "Mobile auto repair = owner-operator trust is the brand. Black-owned is a distinctive positioning — surface authentically, not tokenly. Broad mechanical scope (transmission + body) is the differentiator from oil-change-only mobile shops. If Bruce surfaces job-completion photos (finished brake jobs, etc.), those are high-conversion for the gallery."
+}
