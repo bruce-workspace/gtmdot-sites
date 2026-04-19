@@ -27,6 +27,13 @@ html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--b
 .review-feed{margin-top:40px;overflow:hidden;mask-image:linear-gradient(to right,transparent,black 5%,black 95%,transparent);-webkit-mask-image:linear-gradient(to right,transparent,black 5%,black 95%,transparent)}.review-feed-track{display:flex;gap:24px;animation:reviewScroll 45s linear infinite;width:max-content}.review-feed-track:hover{animation-play-state:paused}@media(prefers-reduced-motion:reduce){.review-feed-track{animation:none;flex-wrap:wrap}}@keyframes reviewScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}.review-mini{flex-shrink:0;width:380px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;display:flex;flex-direction:column;gap:10px}.review-mini-stars{color:#f59e0b;font-size:14px;letter-spacing:2px}.review-mini-text{font-size:14px;line-height:1.65;color:var(--text);font-style:italic;flex:1}.review-mini-author{font-size:13px;font-weight:600;color:var(--brand-light)}.review-mini-source{font-size:11px;color:var(--muted)}
 .area-pills{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.area-pill{background:var(--surface);border:1px solid var(--border);padding:10px 20px;border-radius:100px;font-size:14px;font-weight:600;color:var(--muted);transition:all .3s}.area-pill:hover{border-color:var(--brand-light);color:var(--brand-light)}
 .faq-list{margin-top:48px;max-width:800px}.faq-item{border-bottom:1px solid var(--border)}.faq-question{width:100%;background:none;border:none;color:var(--text);font-family:var(--font-sans);font-size:17px;font-weight:600;padding:24px 0;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px}.faq-question svg{flex-shrink:0;transition:transform .3s;color:var(--brand-light)}.faq-item.open .faq-question svg{transform:rotate(180deg)}.faq-answer{display:grid;grid-template-rows:0fr;overflow:hidden;transition:grid-template-rows .4s ease}.faq-answer-inner{padding:0 0 24px;font-size:15px;color:var(--muted);line-height:1.7;overflow:hidden;min-height:0}.faq-item.open .faq-answer{grid-template-rows:1fr}
+.pull-quote{max-width:900px;margin:0 auto 48px;padding:40px 32px;background:linear-gradient(135deg,var(--brand-glow) 0%,var(--bg-alt) 100%);border:1px solid var(--border);border-left:4px solid var(--brand-light);border-radius:16px;position:relative}
+.pull-quote::before{content:'"';position:absolute;top:8px;left:24px;font-family:var(--font-serif);font-size:96px;line-height:1;color:var(--brand-light);opacity:0.35;font-weight:700}
+.pull-quote-text{font-family:var(--font-serif);font-size:clamp(22px,2.4vw,30px);font-weight:500;font-style:italic;line-height:1.35;letter-spacing:-0.3px;color:var(--text);margin-bottom:20px;padding-left:28px}
+.pull-quote-attr{display:flex;align-items:center;gap:14px;padding-left:28px;flex-wrap:wrap}
+.pull-quote-attr-stars{display:flex;gap:2px;color:#f59e0b}
+.pull-quote-attr-name{font-weight:700;color:var(--brand-light);font-size:15px}
+.pull-quote-attr-source{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:2px}
 .form-wrap{max-width:600px;margin:48px auto 0}.form-group{margin-bottom:20px}.form-group label{display:block;font-size:14px;font-weight:600;margin-bottom:8px;color:var(--text)}.form-group input,.form-group select,.form-group textarea{width:100%;padding:14px 16px;background:var(--surface);border:1px solid var(--border);border-radius:10px;color:var(--text);font-family:var(--font-sans);font-size:15px;transition:border-color .3s;-webkit-appearance:none}.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--brand-light);box-shadow:0 0 0 3px var(--brand-glow)}.form-group select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238e8a85' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:48px}.form-group textarea{min-height:120px;resize:vertical}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .form-submit{width:100%;padding:16px;background:var(--brand);color:#fff;font-size:16px;font-weight:700;border:none;border-radius:10px;cursor:pointer;letter-spacing:.04em;transition:all .3s}.form-submit:hover{background:var(--brand-light);transform:translateY(-1px)}.form-consent{font-size:12px;color:var(--muted);margin-top:12px;line-height:1.5}.form-success{display:none;text-align:center;padding:48px 24px}.form-success svg{color:var(--brand-light);margin:0 auto 16px}.form-success h3{font-family:var(--font-serif);font-size:28px;font-weight:700;margin-bottom:8px}.form-success p{color:var(--muted)}
 .footer{background:var(--surface);border-top:1px solid var(--border);padding:64px 40px 32px}.footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px}.footer-brand{font-family:var(--font-serif);font-size:22px;font-weight:700;margin-bottom:12px}.footer-desc{font-size:14px;color:var(--muted);line-height:1.7;max-width:360px}.footer-heading{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--brand-light);margin-bottom:16px}.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}.footer-links a,.footer-links li{font-size:14px;color:var(--muted);transition:color .2s}.footer-links a:hover{color:var(--text)}.footer-bottom{max-width:1200px;margin:32px auto 0;padding-top:24px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)}
@@ -94,6 +101,20 @@ html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--b
     <h2 class="section-h2">200+ Reviews, 4.5 Stars</h2>
     <p class="section-sub">Demetric's customers mention him by name across Nextdoor, Google, and BBB. When the owner is the one doing the work, the standard stays consistent.</p>
   </div>
+  <div class="pull-quote reveal">
+    <p class="pull-quote-text">Trushyne is the best! Demetric is professional, prompt, shows integrity and offers reasonable rates. My X1 looks and feels brand new!</p>
+    <div class="pull-quote-attr">
+      <span class="pull-quote-attr-stars">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+      </span>
+      <span class="pull-quote-attr-name">T.W.</span>
+      <span class="pull-quote-attr-source">Nextdoor · Ellenwood · BMW X1 "Brand New"</span>
+    </div>
+  </div>
   <div class="review-feed reveal">
     <div class="review-feed-track">
       <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Trushyne is the best! Demetric is professional, prompt, shows integrity and offers reasonable rates. My X1 looks and feels brand new!"</p><span class="review-mini-author">T.W., Ellenwood GA</span><span class="review-mini-source">Nextdoor &middot; Mar 2025</span></div>
@@ -158,6 +179,20 @@ html{scroll-behavior:smooth}body{font-family:var(--font-sans);background:var(--b
 <section class="section" id="contact">
   <div class="reveal">
     <div style="text-align:center"><div class="eyebrow">Get Started</div><h2 class="section-h2">Book a Detail</h2><p class="section-sub" style="margin:0 auto">Tell us about your vehicle and what you need. Same-day availability is common.</p></div>
+    <div class="pull-quote" style="margin-top:48px">
+      <p class="pull-quote-text">Demetric did a fantastic job detailing my car today! He's incredibly professional, provides his own water and electrical hookup, and he was great at communicating to set up the appointment, determine what services I needed, and when he would arrive.</p>
+      <div class="pull-quote-attr">
+        <span class="pull-quote-attr-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </span>
+        <span class="pull-quote-attr-name">C.M.</span>
+        <span class="pull-quote-attr-source">Nextdoor · Atlanta · Self-Contained Mobile Setup</span>
+      </div>
+    </div>
     <div class="form-wrap">
       <form id="contactForm">
         <div class="form-row"><div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" required placeholder="Full name"></div><div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" required placeholder="(___) ___-____"></div></div>
