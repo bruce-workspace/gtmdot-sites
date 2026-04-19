@@ -314,7 +314,102 @@ All three verticals are chosen for "hot-weather-prep season" — the scan should
 **Do not run this skill until:**
 - This file and `staleness-score.md` and `SAMPLE-RUN.md` have been approved by Jesse
 - `prospect_cohort` field is added to the intake API (Mac Mini work)
-- Chrome DevTools MCP stability is confirmed on a single manual test (one known-stale HVAC site, full flow, dry run)
+- Chrome DevTools MCP stability is confirmed via a dry-run (see next section)
+
+---
+
+## Dry-Run Mode
+
+A dry-run executes the relevant stages against a **single nominated URL** to validate the technical pipeline end-to-end. It's the infrastructure smoke test — confirms Chrome DevTools MCP + Lighthouse + Firecrawl + scoring rubric all work against live internet before committing to a real ~90-minute batch. Dry-runs produce no R1VS handoff, no intake-API call, no CRM writes, and write to `dry-runs/<YYYY-MM-DD>-<slug>/` — never `prospects/`.
+
+### When to dry-run
+
+- Before the first real scan ever (required pre-flight check per MVP scope above)
+- After any change to `staleness-score.md` (weight adjustments, new signals)
+- After a Chrome DevTools MCP, Firecrawl, or Places API credential rotation or package update
+- When scoring output looks suspicious on a real run — sanity-check against a URL with known properties
+- After a rubric version bump (validate the new math before re-running the queue)
+
+### What a dry-run needs
+
+**Input:** one URL. Optionally a Google Place ID if known (skips the Places search step).
+
+**Good test URLs:**
+- A competitor site — zero CRM interaction risk
+- A known-stale site outside the Atlanta metro (different geo, different market — no accidental prospect)
+- An intentionally-modern site (e.g. a major brand's marketing page) as a **negative test** — rubric should return a low score and `modern` bucket
+- A training/demo site
+
+**Do NOT use:** any URL that corresponds to a real GTMDot prospect in any pipeline stage. Dry-runs must be isolated from real work — if there's any chance the URL collides with a prospect slug, pick a different site.
+
+### Dry-run invocation
+
+Conversational, same tone as real scans but with explicit dry-run framing:
+
+- *"Dry-run stale-site-identifier against https://example-hvac.com"*
+- *"Smoke-test the scanner on bobsheatingatl.com, place_id ChIJqqqq..."* (place_id optional)
+- *"Negative test — run scoring on https://apple.com. I expect modern bucket."*
+- *"Dry-run on https://competitor.com, rubric version 0.2.0-calibrated"* (version override if testing a pending rubric change)
+
+### What runs vs what skips
+
+| Stage | Real scan | Dry-run |
+|---|---|---|
+| 1. Seed | Category + geo + N | Single URL (skip category/geo parse) |
+| 2. Places API pull | 200–500 candidates | Single `Places Details` call if place_id known; skip pull otherwise |
+| 3. Stale-scan loop | All candidates, 3 concurrent | Just the one URL, verbose logging, longer timeouts |
+| 4. Rank | Sort + write top-N | Print the single score to console; skip ranking |
+| 5. Jesse triage | Approval cycle | **SKIP** — no approvals in dry-run |
+| 6. Auto-extract | Approved only | Run on the one URL — validate extraction end-to-end |
+| 7. R1VS handoff | Write `messages/*.md` | **SKIP** — never write to `messages/` from a dry-run |
+| 8. Outreach | Out of MVP scope anyway | **SKIP** |
+
+### Output path
+
+```
+dry-runs/<YYYY-MM-DD>-<slug>/
+├── dry-run-manifest.json    # URL, place_id (if any), rubric_version, timestamps, stage timings
+├── staleness-report.json    # full scored report (same shape as real)
+├── mobile-390.png
+├── desktop-1440.png
+├── sitemap-raw.json
+├── RESEARCH.md              # extraction sanity-check
+├── photos-from-old-site/    # validate download + EXIF + stock-URL filter
+└── dry-run-notes.md         # per-stage timing, errors, what worked/didn't
+```
+
+The `<slug>` derives from the URL's domain (`bobsheatingatl.com` → `bobsheatingatl-com`). If a Place ID is provided, prefer the business name: `Bob's Heating & Air` → `bobs-heating-air`.
+
+### Pass/fail checklist (open `dry-run-notes.md` after each run)
+
+A dry-run is **passing** when all of the following are true. If any fail, fix before running a real batch — a real batch failing mid-flight wastes ~90 minutes.
+
+- [ ] Chrome DevTools MCP launched, navigated, returned a complete DOM snapshot
+- [ ] Lighthouse completed within 90s timeout (if timed out, flag — may need to drop concurrency to 2 for real run)
+- [ ] Desktop + mobile screenshots are non-empty and render at correct dimensions (1440×900 and 390×844)
+- [ ] Firecrawl `map` call returned a sitemap (or an intentional empty result — not a rate-limit error)
+- [ ] SSL check completed without tooling error (even on expired certs — that's expected data, not a failure)
+- [ ] EXIF extraction succeeded on at least one sampled image (if all images strip EXIF, image_quality signals degrade but that's acceptable)
+- [ ] `staleness-report.json` is valid JSON and includes all 8 category scores
+- [ ] `total_score` and `bucket` are both present and consistent (bucket matches the score per the threshold table)
+- [ ] Auto-extract wrote `RESEARCH.md` with non-empty sections
+- [ ] At least 1 photo downloaded to `photos-from-old-site/` (or clear reason why not — e.g. site has only stock photos, all filtered)
+- [ ] Computed `total_score` matches hand-computed score within ±3 points **if** you picked a site with known properties for calibration
+
+### Negative-test expectation
+
+Run at least one negative test per rubric version. Point at a modern, well-maintained site (Apple, Stripe, a recently-launched trade-site competitor). Expected outcome: `total_score ≤ 40`, `bucket: "modern"`. If a genuinely modern site scores in `borderline` or higher, the rubric has false-positive signals — investigate before running on real prospects.
+
+### Dry-run artifacts are disposable
+
+`dry-runs/` should be gitignored. No `.gitignore` exists at repo root yet — **setup step:** create one with `dry-runs/` as an entry before the first dry-run, so test artifacts don't clutter commits. If a specific dry-run is worth keeping as a calibration record (e.g. "this is what a golden 85-score report looks like"), copy the directory into `prospects/_calibration/<name>/` manually.
+
+### Cost profile
+
+- Places API Details call: ~$0.02 per dry-run (if place_id provided)
+- Chrome DevTools MCP + Lighthouse: free
+- Firecrawl map: 1 credit (~$0.01)
+- Total per dry-run: **under $0.05** — run as many as calibration needs
 
 ---
 
