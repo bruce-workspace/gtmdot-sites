@@ -1,0 +1,53 @@
+{
+  "slug": "atlanta-pro-repairs",
+  "vertical": "handyman",
+  "vertical_filter": "brightness(0.85) contrast(1.08) saturate(0.88)",
+  "hero": {
+    "slot": "hero.jpg",
+    "type": "owner_in_action",
+    "priority_order": [
+      "owner_site_gbp_photos",
+      "places_api_owner_uploaded",
+      "places_api_customer_uploaded",
+      "recraft_photorealistic"
+    ],
+    "recraft_prompt_if_needed": "Professional Black male American handyman in clean work uniform mounting a TV in a modern residential living room, photorealistic, no text or logos. Toolbelt visible. Customer-facing stance.",
+    "caption_context": "If photo is of Wheatley, caption names him. Otherwise reference 'same hand on every job' / '1-hour window' / 'owner-answered' positioning."
+  },
+  "gallery": [
+    {
+      "slot": "gbp-1.jpg",
+      "type": "completed_job",
+      "context": "TV mounted cleanly on living room wall — the #1 stated service. Caption 'TV mounting — same day'."
+    },
+    {
+      "slot": "gbp-2.jpg",
+      "type": "completed_job",
+      "context": "Door installation or replacement with clean finish. Caption 'Door replacement — measured, hung, trimmed'."
+    },
+    {
+      "slot": "gbp-3.jpg",
+      "type": "completed_job",
+      "context": "Ceiling fan or light fixture install. Caption 'Ceiling fans + lighting — safe, tested, clean'."
+    },
+    {
+      "slot": "gbp-4.jpg",
+      "type": "completed_job",
+      "context": "Furniture or fitness equipment assembled. Caption 'Furniture + fitness — assembled and placed'."
+    },
+    {
+      "slot": "gbp-5.jpg",
+      "type": "carpentry_repair",
+      "context": "Carpentry work — trim, cabinets, shelving. Caption 'Carpentry — fix what's broken, build what isn't there'."
+    },
+    {
+      "slot": "gbp-6.jpg",
+      "type": "tool_setup",
+      "context": "Wheatley with tools/toolbelt, organized van, or clean workspace. Caption 'The clean-and-gone standard'."
+    }
+  ],
+  "sections": [
+    {"selector": "#area-bg", "type": "atlanta_residential_neighborhood", "context": "Sandy Springs or North Atlanta residential; Unsplash OK"}
+  ],
+  "notes": "Handyman vertical = hero should show action or clean completed work. Wheatley is the face of the business — prefer photos with him over generic tool shots. The 1-hour arrival window differentiator doesn't have a natural photo expression; rely on copy for that. The 60-day guarantee likewise. Photos should reinforce 'clean and professional' brand descriptor from own-site copy."
+}

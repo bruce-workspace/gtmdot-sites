@@ -1,0 +1,25 @@
+{
+  "reviews": [],
+  "counts": {
+    "total_available": "unknown (9-year operating history suggests 20+ reviews likely on GBP/Yelp/Angi)",
+    "captured": 0,
+    "target_min": 3,
+    "aggregate_rating": null,
+    "aggregate_rating_source": "pending Bruce Places API retry"
+  },
+  "notes": "Atlanta Pro Repairs LLC. Sandy Springs GA. Owner Wheatley Davis. 9 years in business (founded 2017-03-21). BBB A+ (not accredited). Handyman services — TV mounting, door replacement, home repairs, furniture/fitness assembly, ceiling fans, light fixtures, carpentry. Strong differentiators: 1-hour arrival window + 60-day satisfaction guarantee. REVIEW-BLOCKED at research time — BBB + Yelp + Angi + Thumbtack + Houzz + HomeAdvisor all 403'd or content-gated. Own site has no testimonials. Flagged for Bruce Places API retry per HANDOFF-CONTRACT §3 Empty-shell 2-pass variant.",
+  "capture_attempts": [
+    {"source": "bbb", "status": "partial", "reason": "profile fetched but review text gated"},
+    {"source": "owner_site", "status": "empty", "reason": "atlantaprorepairs.com homepage has no testimonials"},
+    {"source": "web_search_snippets", "status": "empty", "reason": "no review text surfaced via Google search"},
+    {"source": "google_gbp", "status": "not_attempted", "reason": "no GBP share URL in rebuild-queue.json"}
+  ],
+  "flags": [
+    "review_blocked_pending_bruce_retry",
+    "empty_shell_2pass_candidate"
+  ],
+  "team_from_reviews": [],
+  "created_at": "2026-04-19T16:45:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
