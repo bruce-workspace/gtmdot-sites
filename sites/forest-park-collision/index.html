@@ -228,6 +228,13 @@ section { padding: 96px 0; }
   .hero { padding: 100px 0 60px; }
   section { padding: 72px 0; }
 }
+
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.gallery-item{aspect-ratio:4/3;overflow:hidden;border-radius:12px;border:1px solid rgba(255,255,255,0.08);position:relative;background:#0f131e}
+.gallery-item img{width:100%;height:100%;object-fit:cover;filter:brightness(0.85) contrast(1.1) saturate(0.9);transition:transform .4s ease,filter .4s ease}
+.gallery-item:hover img{transform:scale(1.04)}
+.gallery-item::after{content:attr(data-caption);position:absolute;left:12px;bottom:12px;background:rgba(7,9,15,0.78);color:#fff;padding:6px 12px;border-radius:6px;font-size:12px;font-weight:600;backdrop-filter:blur(8px)}
+@media(max-width:768px){.gallery-grid{grid-template-columns:repeat(2,1fr);gap:10px}.gallery-item::after{font-size:10px;padding:4px 8px}}
 </style>
 </head>
 <body>
@@ -397,6 +404,18 @@ section { padding: 96px 0; }
         <h3>Pickup &amp; Drive</h3>
         <p>Wash, final walk-around, keys back. Most jobs turn around in 3 days to a week depending on parts availability.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="gallery">
+  <div class="reveal">
+    <div class="eyebrow">On The Job</div>
+    <h2 class="section-h2">Recent Work from Forest Park Collision</h2>
+    <p class="section-sub">A look at real jobs Forest Park Collision has completed. Every photo is authentic work, not stock.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-caption="Before"><img src="photos/gbp-1.jpg" alt="Forest Park Collision — Before" loading="lazy"></div><div class="gallery-item" data-caption="Paint Booth"><img src="photos/gbp-2.jpg" alt="Forest Park Collision — Paint Booth" loading="lazy"></div><div class="gallery-item" data-caption="Color Match"><img src="photos/gbp-3.jpg" alt="Forest Park Collision — Color Match" loading="lazy"></div><div class="gallery-item" data-caption="After"><img src="photos/gbp-4.jpg" alt="Forest Park Collision — After" loading="lazy"></div><div class="gallery-item" data-caption="Frame Work"><img src="photos/gbp-5.jpg" alt="Forest Park Collision — Frame Work" loading="lazy"></div><div class="gallery-item" data-caption="Delivered"><img src="photos/gbp-6.jpg" alt="Forest Park Collision — Delivered" loading="lazy"></div>
     </div>
   </div>
 </section>
