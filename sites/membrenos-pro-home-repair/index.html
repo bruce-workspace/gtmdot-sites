@@ -99,6 +99,13 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .review-mini-text{font-size:14px;line-height:1.65;color:var(--text);font-style:italic;flex:1}
 .review-mini-author{font-size:13px;font-weight:600;color:var(--brand-light)}
 .review-mini-source{font-size:11px;color:var(--muted)}
+.pull-quote{max-width:900px;margin:0 auto 48px;padding:40px 32px;background:linear-gradient(135deg,var(--brand-glow) 0%,var(--bg-alt) 100%);border:1px solid var(--border);border-left:4px solid var(--brand-light);border-radius:16px;position:relative}
+.pull-quote::before{content:'"';position:absolute;top:8px;left:24px;font-family:var(--font-serif);font-size:96px;line-height:1;color:var(--brand-light);opacity:0.35;font-weight:700}
+.pull-quote-text{font-family:var(--font-serif);font-size:clamp(22px,2.4vw,30px);font-weight:500;font-style:italic;line-height:1.35;letter-spacing:-0.3px;color:var(--text);margin-bottom:20px;padding-left:28px}
+.pull-quote-attr{display:flex;align-items:center;gap:14px;padding-left:28px;flex-wrap:wrap}
+.pull-quote-attr-stars{display:flex;gap:2px;color:#f59e0b}
+.pull-quote-attr-name{font-weight:700;color:var(--brand-light);font-size:15px}
+.pull-quote-attr-source{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:2px}
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:48px}
 .story-text h3{font-family:var(--font-serif);font-size:28px;font-weight:700;margin-bottom:16px}
 .story-text p{color:var(--muted);line-height:1.7;margin-bottom:20px}
@@ -224,6 +231,20 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
     <h2 class="section-h2">69 Reviews and Counting</h2>
     <p class="section-sub">Hector earns repeat business because he does what he says, when he says, at the price he quotes.</p>
   </div>
+  <div class="pull-quote reveal">
+    <p class="pull-quote-text">I was on a time crunch to get my project done and they ended up being able to come 3 days early than originally scheduled. They painted, installed my backsplash and 21 handles on my cabinets and changed my electrical socket panels in 6 to 7 hours.</p>
+    <div class="pull-quote-attr">
+      <span class="pull-quote-attr-stars">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+      </span>
+      <span class="pull-quote-attr-name">HomeAdvisor Customer</span>
+      <span class="pull-quote-attr-source">3 Days Early · Paint + Backsplash + Electrical</span>
+    </div>
+  </div>
   <div class="review-feed reveal">
     <div class="review-feed-track">
       <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"These guys are excellent! I will be using them in the near future for other repair needs. They are truly amazing and professional in what they do. They know what they're doing and they prove it."</p><span class="review-mini-author">Nicholas S.</span><span class="review-mini-source">Yelp</span></div>
@@ -257,10 +278,10 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
         <p>Hector speaks both English and Spanish, serving Gwinnett County's diverse community. He's available Monday through Saturday, 7 AM to 6 PM, and takes calls on Sundays for urgent requests.</p>
       </div>
       <div class="story-highlights">
-        <div class="story-highlight"><div class="story-highlight-number">8+</div><div class="story-highlight-label">Years in Business</div></div>
-        <div class="story-highlight"><div class="story-highlight-number">4.6</div><div class="story-highlight-label">Google Rating</div></div>
-        <div class="story-highlight"><div class="story-highlight-number">69</div><div class="story-highlight-label">Google Reviews</div></div>
-        <div class="story-highlight"><div class="story-highlight-number">6</div><div class="story-highlight-label">Days a Week</div></div>
+        <div class="story-highlight"><div class="story-highlight-number">Hector</div><div class="story-highlight-label">Named Owner · Every Job</div></div>
+        <div class="story-highlight"><div class="story-highlight-number">Multi</div><div class="story-highlight-label">Paint · Electric · Deck</div></div>
+        <div class="story-highlight"><div class="story-highlight-number">1-Day</div><div class="story-highlight-label">Typical Job Length</div></div>
+        <div class="story-highlight"><div class="story-highlight-number">Free</div><div class="story-highlight-label">On-Site Quotes</div></div>
       </div>
     </div>
   </div>
@@ -292,6 +313,20 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 <section class="section" id="contact">
   <div class="reveal">
     <div style="text-align:center"><div class="eyebrow">Get Started</div><h2 class="section-h2">Free Estimate</h2><p class="section-sub" style="margin:0 auto">Tell Hector about your project and he will get back to you quickly with a fair, straightforward quote.</p></div>
+    <div class="pull-quote" style="margin-top:48px">
+      <p class="pull-quote-text">He is a God's sent because he's professional, listens well and understands what is needed. Called on a Sunday, he came to the house that day, completed work by Wednesday at a very good price.</p>
+      <div class="pull-quote-attr">
+        <span class="pull-quote-attr-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </span>
+        <span class="pull-quote-attr-name">HomeAdvisor Customer</span>
+        <span class="pull-quote-attr-source">Sunday Call · Wednesday Done</span>
+      </div>
+    </div>
     <div class="form-wrap">
       <form id="contactForm">
         <div class="form-row"><div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" required placeholder="Full name"></div><div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" required placeholder="(___) ___-____"></div></div>
