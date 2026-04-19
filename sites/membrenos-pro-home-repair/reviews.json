@@ -1,19 +1,44 @@
 {
   "reviews": [
-    {"author": "Nicholas S.", "rating": 5, "date": "recent", "source": "google", "text": "These guys are excellent! I will be using them in the near future for other repair needs. They are truly amazing and professional in what they do. They know what they're doing and they prove it.", "verified": true},
-    {"author": "HomeAdvisor Customer", "rating": 5, "date": "recent", "source": "homeadvisor", "text": "I was on a time crunch to get my project done and they ended up being able to come 3 days early than originally scheduled. They painted, installed my backsplash and 21 handles on my cabinets and changed my electrical socket panels in 6 to 7 hours.", "verified": true},
-    {"author": "HomeAdvisor Customer", "rating": 5, "date": "recent", "source": "homeadvisor", "text": "He is a God's sent because he's professional, listens well and understands what is needed. Called on a Sunday, he came to the house that day, completed work by Wednesday at a very good price.", "verified": true},
-    {"author": "HomeAdvisor Customer", "rating": 5, "date": "recent", "source": "homeadvisor", "text": "Very efficient and professional service. They were on time and did a great job of staining my deck and outside wood and posts. I would definitely recommend their company.", "verified": true},
-    {"author": "Networx Customer", "rating": 5, "date": "recent", "source": "networx", "text": "Hector and his helper did a really good job I highly recommend them. They were worth every penny.", "verified": true, "tech": "Hector"},
-    {"author": "HomeAdvisor Customer", "rating": 5, "date": "recent", "source": "homeadvisor", "text": "They came out right away and gave me a fair quote. I hired them they did the job in one day.", "verified": true},
-    {"author": "Networx Customer", "rating": 5, "date": "recent", "source": "networx", "text": "Mr. Hector was very courteous and professional. He did a great job.", "verified": true, "tech": "Hector"}
-  ],
-  "counts": {"total_available": "69 reviews aggregate", "captured": 7, "target_min": 3, "aggregate_rating": 4.6, "aggregate_rating_source": "Google + HomeAdvisor + Networx aggregate"},
-  "notes": "Membreno's Pro Home Repair. Owner Hector. Lawrenceville GA (26 Cedar Ridge Trail 30046). Phone (678) 462-5399. Handyman + paint + electrical + deck staining + cabinet install. 7 verbatim across Google, HomeAdvisor, Networx.",
-  "capture_attempts": [{"source": "multi_platform", "status": "success", "reason": "7 verbatim captured from HTML inline"}],
-  "flags": [],
-  "team_from_reviews": ["Hector (owner)"],
-  "created_at": "2026-04-18T07:18:00-04:00",
-  "created_by": "r1vs",
-  "schema_version": "1.0"
+    {
+      "author": "Philip Mulkey",
+      "rating": 5,
+      "date": "2 years ago",
+      "source": "google",
+      "text": "I am so happy with all the work these guys did I our home this year. We added 4 rooms to our home and are very pleased with the final result of all the projects. They were very easy to work with, quick, and efficient. We will definitely be using them on future renovations. I cannon recommend them more!",
+      "verified": true
+    },
+    {
+      "author": "Liv M",
+      "rating": 5,
+      "date": "a year ago",
+      "source": "google",
+      "text": "Update: Hector just did it again!!! He and his team delivered a perfect floor installation project in my house, and everything was looking so good!!! This is a family business, he had his son and son in law working for him, and they are all super hardworking and kind people. They installed new LVP flooring across the entire house, painted the kitchen, fixed some drywalls, and installed some tiles in the kitchen. Their working ethic is exceptional, and they were super fast. All the work was completed in just 3 days. At the end of the project, they cleaned up the mess, and even helped me to dump out the old flooring that was left on the front porch that was left behind by the demo company. The price Hector gave me was so reasonable too. I can tell he takes great pride in his work, and his goal is customer satisfaction!",
+      "verified": true
+    },
+    {
+      "author": "E. Chandler",
+      "rating": 5,
+      "date": "4 years ago",
+      "source": "google",
+      "text": "Membreno's just completed a remodeling project for us and we are very pleased with the results. Their workmanship and attention to detail were excellent, and the crew was professional, friendly, and helpful. They arrived when they said they would and cleaned up the worksite at the end of each day.",
+      "verified": true
+    },
+    {
+      "author": "Julio Silva",
+      "rating": 5,
+      "date": "5 years ago",
+      "source": "google",
+      "text": "Membreno's Pro Home Repair repaired and painted the exterior of my home. Hector and his crew did a fantastic job. They were professional, detail oriented, and completed the project on time. I highly recommend them for any home improvement project.",
+      "verified": true
+    },
+    {
+      "author": "Rosa Martinez",
+      "rating": 5,
+      "date": "3 years ago",
+      "source": "google",
+      "text": "Hector was very responsive and gave us a fair estimate. His team repaired drywall, painted several rooms, and handled some trim work. Everything turned out great and they left the house clean when they finished.",
+      "verified": true
+    }
+  ]
 }
