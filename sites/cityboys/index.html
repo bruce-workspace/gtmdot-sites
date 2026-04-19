@@ -95,6 +95,13 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:48px}
 .story-text h3{font-family:var(--font-serif);font-size:28px;font-weight:700;margin-bottom:16px}
 .story-text p{color:var(--muted);line-height:1.7;margin-bottom:20px}
+.pull-quote{max-width:900px;margin:0 auto 48px;padding:40px 32px;background:linear-gradient(135deg,var(--brand-glow) 0%,var(--bg-alt) 100%);border:1px solid var(--border);border-left:4px solid var(--brand);border-radius:16px;position:relative}
+.pull-quote::before{content:'"';position:absolute;top:8px;left:24px;font-family:var(--font-serif);font-size:96px;line-height:1;color:var(--brand);opacity:0.35;font-weight:700}
+.pull-quote-text{font-family:var(--font-serif);font-size:clamp(22px,2.4vw,30px);font-weight:500;font-style:italic;line-height:1.35;letter-spacing:-0.3px;color:var(--text);margin-bottom:20px;padding-left:28px}
+.pull-quote-attr{display:flex;align-items:center;gap:14px;padding-left:28px;flex-wrap:wrap}
+.pull-quote-attr-stars{display:flex;gap:2px;color:#f59e0b}
+.pull-quote-attr-name{font-weight:700;color:var(--brand-light);font-size:15px}
+.pull-quote-attr-source{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:2px}
 .story-highlights{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .story-highlight{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center}
 .story-highlight-number{font-family:var(--font-serif);font-size:32px;font-weight:900;color:var(--brand-light);line-height:1}
@@ -213,6 +220,20 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
     <h2 class="section-h2">391 Google Reviews</h2>
     <p class="section-sub">From Buckhead to Jonesboro, homeowners across 6 counties trust Curtis and his team to fix what's broken and explain why it broke.</p>
   </div>
+  <div class="pull-quote reveal">
+    <p class="pull-quote-text">Technician Michael provided exceptional service. He was professional, knowledgeable, on-time, and efficient. He properly diagnosed and fixed the issues with our Bertazzoni refrigerator when other service providers could not.</p>
+    <div class="pull-quote-attr">
+      <span class="pull-quote-attr-stars">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+      </span>
+      <span class="pull-quote-attr-name">Nicoline Collins</span>
+      <span class="pull-quote-attr-source">Google · Bertazzoni Fridge Rescue</span>
+    </div>
+  </div>
   <div class="review-feed reveal">
     <div class="review-feed-track">
       <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"Technician Michael provided exceptional service. He was professional, knowledgeable, on-time, and efficient. He properly diagnosed and fixed the issues with our Bertazzoni refrigerator when other service providers could not."</p><span class="review-mini-author">Nicoline Collins</span><span class="review-mini-source">Google Review</span></div>
@@ -244,8 +265,8 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
         <p>In 2021, City Boys R Us became an LG Authorized Servicer, giving them access to genuine LG parts and factory training. The A+ BBB rating tells the same story the 391 Google reviews tell: Curtis does the work right, charges fairly, and explains what he's doing so you understand your appliance when he leaves.</p>
       </div>
       <div class="story-highlights">
-        <div class="story-highlight"><div class="story-highlight-number">16+</div><div class="story-highlight-label">Years in Business</div></div>
-        <div class="story-highlight"><div class="story-highlight-number">391</div><div class="story-highlight-label">Google Reviews</div></div>
+        <div class="story-highlight"><div class="story-highlight-number">Curtis</div><div class="story-highlight-label">Owner · 16+ Yrs</div></div>
+        <div class="story-highlight"><div class="story-highlight-number">Michael</div><div class="story-highlight-label">Tech · High-End Brands</div></div>
         <div class="story-highlight"><div class="story-highlight-number">A+</div><div class="story-highlight-label">BBB Rating</div></div>
         <div class="story-highlight"><div class="story-highlight-number">6</div><div class="story-highlight-label">Counties Served</div></div>
       </div>
@@ -279,6 +300,20 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 <section class="section" id="contact">
   <div class="reveal">
     <div style="text-align:center"><div class="eyebrow">Get Started</div><h2 class="section-h2">Book Your Repair</h2><p class="section-sub" style="margin:0 auto">Tell us what's broken and we'll get a technician to your door. $49 service call applied toward the repair.</p></div>
+    <div class="pull-quote" style="margin-top:48px">
+      <p class="pull-quote-text">Call Curtis at Cityboysrus.com $49.00 service call. He does all my work.</p>
+      <div class="pull-quote-attr">
+        <span class="pull-quote-attr-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </span>
+        <span class="pull-quote-attr-name">Nancy V.</span>
+        <span class="pull-quote-attr-source">Google · Repeat Customer</span>
+      </div>
+    </div>
     <div class="form-wrap">
       <form id="contactForm">
         <div class="form-row"><div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" required placeholder="Full name"></div><div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" required placeholder="(___) ___-____"></div></div>
