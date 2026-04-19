@@ -85,7 +85,7 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .stat-label{font-size:14px;color:var(--muted);margin-top:8px;font-weight:500;letter-spacing:.04em}
 
 .marquee{overflow:hidden;background:var(--bg-alt);padding:16px 0;border-bottom:1px solid var(--border)}
-.marquee-track{display:flex;gap:48px;width:max-content;animation:marquee 35s linear infinite}
+.marquee-track{display:flex;gap:48px;width:max-content;animation:marquee 58s linear infinite}
 .marquee-item{font-size:14px;font-weight:600;color:var(--muted);white-space:nowrap;display:flex;align-items:center;gap:12px;letter-spacing:.04em}
 .marquee-dot{width:6px;height:6px;border-radius:50%;background:var(--brand);flex-shrink:0}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
@@ -107,7 +107,7 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .service-card p{font-size:14px;color:var(--muted);line-height:1.6}
 
 .review-feed{margin-top:40px;overflow:hidden;mask-image:linear-gradient(to right,transparent,black 5%,black 95%,transparent);-webkit-mask-image:linear-gradient(to right,transparent,black 5%,black 95%,transparent)}
-.review-feed-track{display:flex;gap:24px;animation:reviewScroll 55s linear infinite;width:max-content}
+.review-feed-track{display:flex;gap:24px;animation:reviewScroll 60s linear infinite;width:max-content}
 .review-feed-track:hover{animation-play-state:paused}
 @media(prefers-reduced-motion:reduce){.review-feed-track{animation:none;flex-wrap:wrap}}
 @keyframes reviewScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
@@ -116,6 +116,14 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .review-mini-text{font-size:14px;line-height:1.65;color:var(--text);font-style:italic;flex:1}
 .review-mini-author{font-size:13px;font-weight:600;color:var(--brand-light)}
 .review-mini-source{font-size:11px;color:var(--muted)}
+
+.pull-quote{max-width:900px;margin:0 auto 48px;padding:40px 32px;background:linear-gradient(135deg,var(--brand-glow) 0%,var(--bg-alt) 100%);border:1px solid var(--border);border-left:4px solid var(--brand);border-radius:16px;position:relative}
+.pull-quote::before{content:'"';position:absolute;top:8px;left:24px;font-family:var(--font-serif);font-size:96px;line-height:1;color:var(--brand);opacity:0.35;font-weight:700}
+.pull-quote-text{font-family:var(--font-serif);font-size:clamp(22px,2.4vw,30px);font-weight:500;font-style:italic;line-height:1.35;letter-spacing:-0.3px;color:var(--text);margin-bottom:20px;padding-left:28px}
+.pull-quote-attr{display:flex;align-items:center;gap:14px;padding-left:28px;flex-wrap:wrap}
+.pull-quote-attr-stars{display:flex;gap:2px;color:#f59e0b}
+.pull-quote-attr-name{font-weight:700;color:var(--brand-light);font-size:15px}
+.pull-quote-attr-source{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:2px}
 
 .timeline-section{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-top:48px}
 .timeline-text h3{font-family:var(--font-serif);font-size:28px;font-weight:700;margin-bottom:16px}
@@ -174,7 +182,7 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
 @media(max-width:1024px){.services-grid{grid-template-columns:repeat(2,1fr)}.timeline-section{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr 1fr}}
-@media(max-width:768px){.nav{padding:0 20px}.nav-links,.nav-cta{display:none}.hamburger{display:flex}.hero{padding:100px 20px 60px;min-height:auto}.hero h1{font-size:clamp(36px,8vw,52px)}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:none}.section{padding:64px 20px}.section-full{padding:64px 20px}.services-grid{grid-template-columns:1fr}.timeline-section{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr;gap:32px}.footer-bottom{flex-direction:column;gap:8px;text-align:center}.mobile-phone{display:flex}}
+@media(max-width:768px){.nav{padding:0 20px}.nav-links,.nav-cta{display:none}.hamburger{display:flex}.hero{padding:100px 20px 60px;min-height:auto}.hero h1{font-size:clamp(36px,8vw,52px)}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:none}.section{padding:64px 20px}.section-full{padding:64px 20px}.services-grid{grid-template-columns:1fr}.timeline-section{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr 1fr;gap:32px 20px}.footer-inner>div:first-child{grid-column:1 / -1}.footer-bottom{flex-direction:column;gap:8px;text-align:center}.mobile-phone{display:flex}}
 </style>
 </head>
 <body>
@@ -299,6 +307,20 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
     <h2 class="section-h2">Real Reviews from Real Projects</h2>
     <p class="section-sub">Maurice responds to every review because every customer matters. Here is what people across Alachua County are saying.</p>
   </div>
+  <div class="pull-quote reveal">
+    <p class="pull-quote-text">I have delt with several concrete contractors, and Maurice is best. He is honest and straight forward. No BS here. Many years of experience and it shows. I would recommend him to my family or anyone.</p>
+    <div class="pull-quote-attr">
+      <span class="pull-quote-attr-stars">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+      </span>
+      <span class="pull-quote-attr-name">Gary Giddens</span>
+      <span class="pull-quote-attr-source">Google · Repeat Reference</span>
+    </div>
+  </div>
   <div class="review-feed reveal">
     <div class="review-feed-track">
       <div class="review-mini"><div class="review-mini-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-mini-text">"I have delt with several concrete contractors, and Maurice is best. He is honest and straight forward. No BS here. Many years of experience and it shows. I would recommend him to my family or anyone. Don't waste time if you want the job done right, you should call Maurice."</p><span class="review-mini-author">Gary Giddens</span><span class="review-mini-source">Google Review</span></div>
@@ -383,6 +405,20 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 <section class="section" id="contact">
   <div class="reveal">
     <div style="text-align:center"><div class="eyebrow">Get Started</div><h2 class="section-h2">Free Estimate</h2><p class="section-sub" style="margin:0 auto">Tell Maurice about your concrete project. He'll get back to you quickly with an honest assessment and a fair quote.</p></div>
+    <div class="pull-quote" style="margin-top:48px">
+      <p class="pull-quote-text">Maurice from Affordable Concrete just completed an amazing job on a sidewalk project for my 96 year old father. He was professional, kind, skilled and went above and beyond to make sure my father's needs were addressed.</p>
+      <div class="pull-quote-attr">
+        <span class="pull-quote-attr-stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        </span>
+        <span class="pull-quote-attr-name">Beth Williams</span>
+        <span class="pull-quote-attr-source">Google · Sidewalk for her 96-yr-old father</span>
+      </div>
+    </div>
     <div class="form-wrap">
       <form id="contactForm">
         <div class="form-row">
@@ -392,6 +428,14 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
         <div class="form-group"><label for="address">Property Address</label><input type="text" id="address" name="address" placeholder="Street address, city"></div>
         <div class="form-group"><label for="service">Project Type</label><select id="service" name="service"><option value="">Select a service</option><option value="driveway">Driveway / Slab</option><option value="patio">Patio / Porch</option><option value="sidewalk">Sidewalk / Walkway</option><option value="repair">Concrete Repair / Resurfacing</option><option value="pool-deck">Pool Deck Repair</option><option value="masonry">Masonry / Block Work</option><option value="stamped">Stamped / Decorative</option><option value="other">Other</option></select></div>
         <div class="form-group"><label for="details">Project Details</label><textarea id="details" name="details" placeholder="Approximate size, what needs to be done, any special requirements..."></textarea></div>
+        <div class="form-group">
+          <label for="media-upload">Tap to attach photos/videos <span style="color:var(--muted);font-weight:400">(optional — a photo of the area helps Maurice quote faster)</span></label>
+          <label for="media-upload" style="border:2px dashed var(--border);border-radius:10px;padding:28px;text-align:center;color:var(--muted);font-size:14px;cursor:pointer;display:block;transition:border-color 0.2s,background 0.2s">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:6px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+            <div id="file-drop-label">Photo or video of the area</div>
+          </label>
+          <input id="media-upload" type="file" accept="image/*,video/*" multiple style="display:none" onchange="var n=this.files.length;document.getElementById('file-drop-label').textContent=n?(n+' file'+(n>1?'s':'')+' attached'):'Photo or video of the area'">
+        </div>
         <button type="submit" class="form-submit">Request Your Free Estimate</button>
         <p class="form-consent">By submitting this form you agree to be contacted about your estimate. We will never share your information.</p>
       </form>
