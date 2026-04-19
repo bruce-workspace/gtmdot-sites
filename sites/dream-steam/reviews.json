@@ -1,17 +1,44 @@
 {
   "reviews": [
-    {"author": "Kimmie Snyder", "rating": 5, "date": "recent", "source": "google", "text": "Reuben was flexible with scheduling, fair with pricing, and he did beautiful work! I will definitely use him again and recommend him to friends!", "verified": true, "tech": "Reuben"},
-    {"author": "Alex Lemon", "rating": 5, "date": "recent", "source": "google", "text": "Always had a great experience with Dream Steam. Professional and got my couch clean of toddler residue!", "verified": true},
-    {"author": "Gabriella Marvin", "rating": 5, "date": "recent", "source": "google", "text": "Ruben came to our new house on a Sunday afternoon to clean a few rugs. He was on time and communicative about his process. While we were unpacking a moving truck I was injured and Ruben jumped in to help us finish unload! Great guy, and great service. 10/10 would recommend!", "verified": true, "tech": "Ruben"},
-    {"author": "Elan Rasabi", "rating": 5, "date": "recent", "source": "google", "text": "Great service! Professional and flexible. Wouldn't go anywhere else in the area.", "verified": true},
-    {"author": "Kristen Oliver", "rating": 5, "date": "recent", "source": "google", "text": "Very professional and friendly, at a fantastic price. Did a great job cleaning and sanitizing a couch I bought secondhand. I appreciated his honesty about what I could reasonably expect from the results. Overall, very happy with the finished product.", "verified": true}
-  ],
-  "counts": {"total_available": "37 Google reviews", "captured": 5, "target_min": 3, "aggregate_rating": 5.0, "aggregate_rating_source": "Google Business Profile"},
-  "notes": "Dream Steam Fabric Cleaners. Owner Reuben (also spelled Ruben in some reviews). Atlanta (2250 N Druid Hills Rd, Suite 265). 5.0 / 37 reviews. Fabric + upholstery + rug cleaning.",
-  "capture_attempts": [{"source": "google_gbp", "status": "success", "reason": "5 verbatim reviews captured from HTML inline"}],
-  "flags": [],
-  "team_from_reviews": ["Reuben (owner)"],
-  "created_at": "2026-04-18T07:05:00-04:00",
-  "created_by": "r1vs",
-  "schema_version": "1.0"
+    {
+      "author": "Kimmie Snyder",
+      "rating": 5,
+      "date": "a year ago",
+      "source": "google",
+      "text": "Reuben was flexible with scheduling, fair with pricing, and he did beautiful work! I will definitely use him again and recommend him to friends!",
+      "verified": true
+    },
+    {
+      "author": "Gabriella Marvin",
+      "rating": 5,
+      "date": "a year ago",
+      "source": "google",
+      "text": "Ruben came to our new house on a Sunday afternoon to clean a few rugs. He was on time and communicative about his process. While we were unpacking a moving truck I was injured and Ruben jumped in to help us finish unload! Great guy, and great service. 10/10 would recommend!",
+      "verified": true
+    },
+    {
+      "author": "Cindy Espinoza",
+      "rating": 5,
+      "date": "a year ago",
+      "source": "google",
+      "text": "Very happy with Dream Steam! Rueben was prompt, friendly and efficient\u2026.all at a fair price! I had a 16 foot vintage sofa cleaned along with two vintage oriental rugs. All look amazing . Would definitely call again",
+      "verified": true
+    },
+    {
+      "author": "Erin Wright",
+      "rating": 5,
+      "date": "3 years ago",
+      "source": "google",
+      "text": "Great work at a great price!!\nDream Steam Fabric Cleaners cleaned all of the carpets in our large school building. Reuben even moved the furniture to get to the kids' paint stains, etc. He did an excellent job and was very thorough. I highly recommend his services!",
+      "verified": true
+    },
+    {
+      "author": "Jessica Dill",
+      "rating": 5,
+      "date": "3 years ago",
+      "source": "google",
+      "text": "Reuben was fantastic, I\u2019m extremely pleased with his work! I really appreciate that he took the time to carefully inspect the problem areas and laid out all my options up front. He could have easily upsold/oversold me services, but that\u2019s not how he does business. And most importantly, my light beige sofa and white thick pile area rug are back to looking brand new!! Call Reuben if you want to do business with a great guy who does great work!",
+      "verified": true
+    }
+  ]
 }
