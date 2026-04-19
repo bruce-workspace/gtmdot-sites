@@ -86,6 +86,52 @@ All inter-agent messages live in `messages/` with the format `YYYY-MM-DD-HHMM-<f
 - **NO back-and-forth between R1VS and Mac Mini.** R1VS hands off once. Mac Mini + Bruce finish the site.
 - **NO deploying before Bruce waterfall runs.** A site without real photos should NOT go to ready_for_review.
 - **NO freelancing a parallel workflow.** If the skill covers it, use the skill.
+- **NO claim bar / popup / cookie banner in R1VS builds.** Mac Mini injects the shared template at `gtmdot/sites/_shared/claim-ui.html` post-build. Any R1VS-built claim UI will be suppressed by the injector's `display: none !important` block for legacy selectors (`#claimBar`, `#claim-bar`, `#exitPopup`, `#exit-popup`, `#cookieBanner`, etc.).
+- **NO `<!-- CLAIM_BAR_ANCHOR -->` comment needed.** Mini's injector finds `</body>` and inserts before it automatically.
+
+---
+
+## System facts (confirmed by Mini, Apr 2026)
+
+Do not trust documentation older than this table. These are the authoritative values.
+
+### Supabase
+- **Project ID:** `qztjoshdrxionhxeieik`
+- **`supabase/schema.sql` in brucecom-v3 is STALE** — do not read it. Migrations are authoritative.
+- R1VS never writes to Supabase directly. It POSTs to the intake API (`crm.cloakanddagger.co/api/site-intake`) per `R1VS-REBUILD-BRIEF.md`.
+
+### Pipeline stages (`public.prospects.stage`)
+Linear flow, in order:
+```
+research → site_built → ready_for_review → qa_approved → outreach_staged → outreach_sent → converted → dead
+```
+Also valid edge state: `stuck` (added 2026-04-04)
+
+**Killed stages** (migrated away 2026-04-12, DO NOT use):
+`claude_reviewed`, `design_review`, `in_window`, `follow_up`, `disqualified`
+
+### Intake API state (`public.site_intake.state`)
+Separate lifecycle from `prospects.stage`:
+```
+received → reviewing → accepted → revision_needed → rejected → built → deployed
+```
+
+### Claim bar / shared UI template
+- **Path (Mini side):** `gtmdot/sites/_shared/claim-ui.html`
+- **Current SHA:** `e59f489` ("feat(brief-7): retrofit claim bar + popup across 36 non-live sites")
+- **CSS namespace:** `.gtmdot-claim-*` (won't collide with R1VS-built site CSS)
+- **Template variables:** `{{CLAIM_CODE}}`, `{{BUSINESS_NAME}}`, `{{PRICE_FIRST_MONTH}}` (default `$49`), `{{PRICE_ONGOING}}` (default `$149`), `{{CHECKOUT_URL}}` (default `https://gtmdot.com/checkout?code={{CLAIM_CODE}}`), `{{HOW_IT_WORKS_URL}}` (default `https://gtmdot.com/how-it-works`)
+
+### Secrets
+- **`INTAKE_BEARER_TOKEN`** — required by R1VS to POST to the intake API. Set in Mini's `brucecom-v3/.env.local` (server-side verification). R1VS needs its own copy, canonically at `~/.openclaw/.env` on the MacBook. **NOT required for retrofit passes** on existing intake branches — only for new site builds.
+- **API keys** (`GOOGLE_MAPS_API_KEY`, `FIRECRAWL_API_KEY`, `RECRAFT_API_KEY`, `POPLAR_API_KEY`) — canonical location is `~/.openclaw/.env` on both machines. R1VS mostly does not need these directly (Bruce owns the waterfall), but they're there for ad-hoc research.
+
+### Bruce status
+- Bruce is **not always active.** When R1VS writes a finalization message, Bruce may not process it until the next time he's explicitly started. Don't treat enrichment as automatic.
+- "Blocked" enrichment on grandfathered sites (already deployed) is fine — Mini bypassed the Bruce gate for those at deploy time.
+
+### Outreach hold
+- When an **outreach hard hold** is active (e.g. Brief 15 pending), all email/postcard sends are frozen. Retrofitting and deploying are still fine — only send actions are gated.
 
 ---
 
