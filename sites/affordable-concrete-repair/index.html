@@ -65,8 +65,8 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .mobile-menu a{font-size:18px;font-weight:600;color:var(--muted);padding:8px 0;border-bottom:1px solid var(--border)}
 .mobile-menu a:last-child{border:none}
 
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:120px 40px 80px;overflow:hidden;background:linear-gradient(135deg,var(--bg) 0%,var(--bg-alt) 50%,#1a150d 100%)}
-.hero-content{position:relative;z-index:1;max-width:720px}
+.hero-bg{position:absolute;inset:0;background-image:url('photos/hero.jpg');background-size:cover;background-position:center;filter:brightness(0.82) contrast(1.1) saturate(0.8);z-index:0}.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(7,9,15,0.85) 0%,rgba(9,15,30,0.72) 50%,rgba(11,18,48,0.78) 100%);z-index:1}.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:120px 40px 80px;overflow:hidden;background:linear-gradient(135deg,var(--bg) 0%,var(--bg-alt) 50%,#1a150d 100%)}
+.hero-content{position:relative;z-index:2;z-index:1;max-width:720px}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--brand-glow);border:1px solid var(--border-full);padding:8px 16px;border-radius:100px;font-size:13px;font-weight:600;color:var(--brand-light);margin-bottom:24px;letter-spacing:.04em}
 .hero h1{font-family:var(--font-serif);font-size:clamp(42px,5.5vw,76px);font-weight:700;line-height:1.05;letter-spacing:-1px;margin-bottom:20px}
 .hero h1 .accent{color:var(--brand-light)}
@@ -183,6 +183,13 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 
 @media(max-width:1024px){.services-grid{grid-template-columns:repeat(2,1fr)}.timeline-section{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr 1fr}}
 @media(max-width:768px){.nav{padding:0 20px}.nav-links,.nav-cta{display:none}.hamburger{display:flex}.hero{padding:100px 20px 60px;min-height:auto}.hero h1{font-size:clamp(36px,8vw,52px)}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:none}.section{padding:64px 20px}.section-full{padding:64px 20px}.services-grid{grid-template-columns:1fr}.timeline-section{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr 1fr;gap:32px 20px}.footer-inner>div:first-child{grid-column:1 / -1}.footer-bottom{flex-direction:column;gap:8px;text-align:center}.mobile-phone{display:flex}}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.gallery-item{aspect-ratio:4/3;overflow:hidden;border-radius:12px;border:1px solid rgba(255,255,255,0.08);position:relative;background:#0f131e}
+.gallery-item img{width:100%;height:100%;object-fit:cover;filter:brightness(0.82) contrast(1.1) saturate(0.8);transition:transform .4s ease,filter .4s ease}
+.gallery-item:hover img{transform:scale(1.04)}
+.gallery-item::after{content:attr(data-caption);position:absolute;left:12px;bottom:12px;background:rgba(7,9,15,0.78);color:#fff;padding:6px 12px;border-radius:6px;font-size:12px;font-weight:600;backdrop-filter:blur(8px)}
+@media(max-width:768px){.gallery-grid{grid-template-columns:repeat(2,1fr);gap:10px}.gallery-item::after{font-size:10px;padding:4px 8px}}
 </style>
 </head>
 <body>
@@ -208,6 +215,8 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 </div>
 
 <section class="hero">
+  <div class="hero-bg" role="presentation" aria-hidden="true"></div>
+  <div class="hero-overlay" role="presentation" aria-hidden="true"></div>
   <div class="hero-content">
     <div class="hero-badge">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
@@ -297,6 +306,18 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
         <h3>Commercial Concrete</h3>
         <p>Parking pads, commercial foundations, warehouse floors, and structural concrete for business properties.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="gallery">
+  <div class="reveal">
+    <div class="eyebrow">On The Job</div>
+    <h2 class="section-h2">Recent Work from Affordable Concrete & Repair</h2>
+    <p class="section-sub">A look at real jobs Affordable Concrete & Repair has completed. Every photo is authentic work, not stock.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-caption="Pour in Progress"><img src="photos/gbp-1.jpg" alt="Affordable Concrete & Repair — Pour in Progress" loading="lazy"></div><div class="gallery-item" data-caption="Finishing"><img src="photos/gbp-2.jpg" alt="Affordable Concrete & Repair — Finishing" loading="lazy"></div><div class="gallery-item" data-caption="Formwork"><img src="photos/gbp-3.jpg" alt="Affordable Concrete & Repair — Formwork" loading="lazy"></div><div class="gallery-item" data-caption="Curing"><img src="photos/gbp-4.jpg" alt="Affordable Concrete & Repair — Curing" loading="lazy"></div><div class="gallery-item" data-caption="Completed Pour"><img src="photos/gbp-5.jpg" alt="Affordable Concrete & Repair — Completed Pour" loading="lazy"></div><div class="gallery-item" data-caption="Project Done"><img src="photos/gbp-6.jpg" alt="Affordable Concrete & Repair — Project Done" loading="lazy"></div>
     </div>
   </div>
 </section>
