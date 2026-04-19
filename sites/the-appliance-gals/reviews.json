@@ -1,20 +1,44 @@
 {
   "reviews": [
-    {"author": "J. Montgomery", "rating": 5, "date": "recent", "source": "google", "text": "I was having trouble with my washer however I was afraid that the cost repair would be more than I actually paid. Thank God for Appliance Gals! These ladies are AWESOME! I was contacted in a timely fashion, the tech was here in no time.", "verified": true},
-    {"author": "Burt K.", "rating": 5, "date": "recent", "source": "google", "text": "The Appliance Gals are timely, courteous, fair and very communicative. They can handle even the tough, hard-to-find-parts-for repairs on old stuff, going the extra mile for you!", "verified": true},
-    {"author": "Heidi L.", "rating": 5, "date": "recent", "source": "google", "text": "What a great experience! So easy to communicate with Eunice, and schedule for a tech to check up on my oven issue. The tech was absolutely wonderful. Quickly diagnosed the issue.", "verified": true, "tech": "Eunice"},
-    {"author": "B. Smith", "rating": 5, "date": "recent", "source": "google", "text": "Had The Appliance Gals replace some fixtures on our older, but nice range. Terrific service, flexible, fair, honest, and super professional. Cannot recommend enough.", "verified": true},
-    {"author": "F. Younginer", "rating": 5, "date": "recent", "source": "google", "text": "I am very pleased with the service I received. I called them on Friday evening and they were able to service me on Saturday. The technician was able to give me a quote ahead of time and the job ended up costing even less as quoted.", "verified": true},
-    {"author": "W.U.", "rating": 5, "date": "recent", "source": "google", "text": "They were great! Followed through on solving a complex problem. Thoroughly professional and courteous.", "verified": true},
-    {"author": "R. Beebe", "rating": 5, "date": "recent", "source": "google", "text": "Great experience! Called on a Sunday and was serviced on Tuesday! Thanks appliance gals for getting my dryer back up and running! Gotta go... Laundry time!", "verified": true},
-    {"author": "L.P.", "rating": 5, "date": "recent", "source": "google", "text": "The Appliance Gals were very informative and punctual. They provided great customer service and the price was reasonable. We would definitely use them again.", "verified": true}
-  ],
-  "counts": {"total_available": "119 Nextdoor mentions + Google + Facebook 100% recommend", "captured": 8, "target_min": 3, "aggregate_rating": null, "aggregate_rating_source": "Multi-platform aggregate — no single star aggregate in HTML; site uses 119 Nextdoor mentions and 100% Facebook recommend as trust stats"},
-  "notes": "The Appliance Gals. Eunice handles scheduling (named in review). Atlanta (598 Orchard Court SE). Phone (678) 439-9509. Women-owned appliance repair. 15+ years in business. Trust stats: 119 Nextdoor mentions, 100% Facebook recommend.",
-  "capture_attempts": [{"source": "google_nextdoor_facebook", "status": "success", "reason": "8 verbatim captured from HTML inline"}],
-  "flags": ["female_owned_operated_callout"],
-  "team_from_reviews": ["Eunice (scheduler/coordinator)"],
-  "created_at": "2026-04-18T07:30:00-04:00",
-  "created_by": "r1vs",
-  "schema_version": "1.0"
+    {
+      "author": "Katrina Morrison",
+      "rating": 5,
+      "date": "6 months ago",
+      "source": "google",
+      "text": "I highly recommend The Appliance Gals for all your home appliance repairs. The entire team is very professional and the services are affordable and not over priced. We used them on two separate occasions (the washing machine had a leak and our stove stopped working after running self-cleaning mode) and each time they provided a high level of service that isn't typical for home repairs. I felt very comfortable and safe with them in my home as they worked on the repairs. This service is a true gem!!!",
+      "verified": true
+    },
+    {
+      "author": "Johanna Sullivan",
+      "rating": 5,
+      "date": "2 months ago",
+      "source": "google",
+      "text": "We had a great experience with Appliance Gals from start to finish. They helped us find a Bosch double oven and handled the delivery and installation seamlessly. The team was knowledgeable, professional, and made the entire process feel easy and stress-free. Communication was clear, timelines were honored, and the installation was done carefully and efficiently. Highly recommend if you\u2019re looking for expertise and reliable service!",
+      "verified": true
+    },
+    {
+      "author": "Angela Downs",
+      "rating": 5,
+      "date": "4 months ago",
+      "source": "google",
+      "text": "I can\u2019t recommend Appliance Gals highly enough. Sharonda was punctual, professional, and incredibly efficient. She called me right at 8:00 a.m. to say she was on her way, and arrived by 8:30 \u2014 no guessing or waiting around.\n\nShe quickly diagnosed my issue (a faulty bake igniter), gave me clear part options with transparent pricing, and had the part installed in under 30 minutes. She also tested the oven, ensured everything worked, cleaned up her work area, and emailed me the invoice.\n\nBeyond the repair itself, Sharonda was friendly, knowledgeable, and clearly passionate about her work and empowering other women in the industry. Appliance Gals is a Black, woman-owned business, and it shows in the excellence of the service.\n\nThis was hands-down one of the best home service experiences I\u2019ve ever had. I\u2019ll be referring them to everyone I know!",
+      "verified": true
+    },
+    {
+      "author": "amie izaguirre",
+      "rating": 5,
+      "date": "a month ago",
+      "source": "google",
+      "text": "Everyone was so helpful! Our obscure stove brand oven did not work on installation. The company was out of business. Two other companies refused to even attempt repair. The whole crew at Appliance Gals did the research, found the parts needed and repaired the oven that is now working perfectly. Thank you Eunice, Reggie and Sharonda, you are the BEST!!!",
+      "verified": true
+    },
+    {
+      "author": "LaWanda Wright-Onley",
+      "rating": 5,
+      "date": "3 months ago",
+      "source": "google",
+      "text": "I found the Appliance Gals via ChatGPT as I inquired about repairing the baffle that fell off of of my 30 year old Maytag dryer. I received excellent customer service when I spoke to Eunice and was able to get an appointment for the same day. Reggie was kind, courteous and thorough in handling the job\u2014he was done in no time.  I was pleased to discover I can depend on Appliance Gals for other appliance repairs.",
+      "verified": true
+    }
+  ]
 }
