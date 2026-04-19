@@ -1,17 +1,44 @@
 {
   "reviews": [
-    {"author": "Nicole Kelly", "rating": 5, "date": "recent", "source": "google", "text": "Probably the only locksmith that's actually 24 hours in Atlanta. I called at 1am after being locked out and they came right out. Professional, fast, and fair pricing.", "verified": true},
-    {"author": "modern tiny", "rating": 5, "date": "recent", "source": "google", "text": "10/10. Back in my car at such a late time, and in less than 30 minutes.", "verified": true},
-    {"author": "Google Customer", "rating": 5, "date": "recent", "source": "google", "text": "Jeff did a great job and quick. Amazing customer service and affordable prices.", "verified": true, "tech": "Jeff"},
-    {"author": "ChamberOfCommerce", "rating": 5, "date": "recent", "source": "chamber", "text": "Absolutely excellent throughout. Courteous, prompt visit, informed, knowledgeable, technically proficient.", "verified": true},
-    {"author": "Yellow Pages", "rating": 5, "date": "recent", "source": "yellowpages", "text": "I called and they called me back right away and sent someone out super quick.", "verified": true}
-  ],
-  "counts": {"total_available": "50 reviews", "captured": 5, "target_min": 3, "aggregate_rating": 4.4, "aggregate_rating_source": "Google aggregate"},
-  "notes": "Atlanta Pro Locksmith. Named tech: Jeff. 24/7 locksmith service. Atlanta (1450 Wembley Ct NE 30329). Phone (770) 637-1730. 4.4/50 across Google, Chamber, Yellow Pages.",
-  "capture_attempts": [{"source": "google_chamber_yellowpages", "status": "success", "reason": "5 verbatim reviews from HTML inline"}],
-  "flags": [],
-  "team_from_reviews": ["Jeff (tech)"],
-  "created_at": "2026-04-18T07:15:00-04:00",
-  "created_by": "r1vs",
-  "schema_version": "1.0"
+    {
+      "author": "Nicole Kelly",
+      "rating": 5,
+      "date": "4 months ago",
+      "source": "google",
+      "text": "Mannnnnn. This is probably the only locksmith that\u2019s actually 24 hours in Atlanta. Got stuck at a gas station on Campbellton Road at 1am with out phones dying. After calling around, no one would have been able to solve our issue until regular business hours. Thank you so much to Chad to locate us, and make sure we also got our phones charged, and keeping us safe as we waited, being two women alone at night. And a super thanks Ben who was able to cut my friend a new key for her car. Beyond professional, super reliable, would 100% recommend regarding any key issues.",
+      "verified": true
+    },
+    {
+      "author": "Molly Malloy",
+      "rating": 1,
+      "date": "11 months ago",
+      "source": "google",
+      "text": "Very professional on the phone, until it came time for the driver to arrive. He had a little trouble finding the parking deck, which was fine, but spoke to us the entire time with an airpod in his ear. When I spoke to him on the phone, I asked how much it would cost, he said \u201cit depends.\u201d No one told me there would be a $85 fee just to have someone come out and look. It took him 45 seconds to unlock the car and it cost $295. It took him 15 to get to us but told us if we didn\u2019t pay the $295 we still owed $85 for the time it took him to drive over. He said $295 was an extremely reasonable rate given it was 10pm on a Sunday. I don\u2019t blame the poor guy working for them, but this is a ridiculous price for a locksmith. There was even a 10% for debit card fees. Call them if you need fast service- but I swear to god it would have been cheaper to break and replace a window than it was to hire this company.",
+      "verified": true
+    },
+    {
+      "author": "modern tiny",
+      "rating": 5,
+      "date": "10 months ago",
+      "source": "google",
+      "text": "10/10 thank you for getting me back in my car at such a late time, and in less than 30minutes. Would definitely recommend to others, and if I\u2019m ever in this situation again I know who to call!! Thanks again, stay blessed!! \ud83d\ude0a",
+      "verified": true
+    },
+    {
+      "author": "Brandon Harris",
+      "rating": 1,
+      "date": "2 months ago",
+      "source": "google",
+      "text": "Extremely rude on the phone would highly suggest going elsewhere!!",
+      "verified": true
+    },
+    {
+      "author": "Rodrigo Ortiz",
+      "rating": 5,
+      "date": "11 months ago",
+      "source": "google",
+      "text": "Jeffrey the locksmith is the man, he came in less than 5 minutes and got it done quick no hassle  and with experience and knowledge!! Worth it!!\nBest locksmith in town\nThank you Jeff!!!",
+      "verified": true
+    }
+  ]
 }
