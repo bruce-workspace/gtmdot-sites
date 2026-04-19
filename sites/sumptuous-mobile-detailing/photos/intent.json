@@ -1,0 +1,53 @@
+{
+  "slug": "sumptuous-mobile-detailing",
+  "vertical": "auto_detailing",
+  "vertical_filter": "brightness(1.02) contrast(1.08) saturate(1.08)",
+  "hero": {
+    "slot": "hero.jpg",
+    "type": "ceramic_coated_luxury_vehicle_showroom_shine",
+    "priority_order": [
+      "places_api_owner_uploaded",
+      "own_site_gallery",
+      "places_api_customer_uploaded",
+      "recraft_photorealistic"
+    ],
+    "recraft_prompt_if_needed": "Luxury sports car with mirror-like ceramic coating finish parked in a residential driveway, beaded water droplets showing hydrophobic coating, professional detailer in uniform finishing polishing, photorealistic, no text or logos, no signage, golden-hour natural light, premium aesthetic.",
+    "caption_context": "Luxury + ceramic coating is the positioning. Hero should read premium, not volume-economy. Cybertruck or luxury sports car reinforces own-site portfolio. Mirror shine + water-beading visual cues communicate ceramic outcome, not just wash-and-wax."
+  },
+  "gallery": [
+    {
+      "slot": "gbp-1.jpg",
+      "type": "ceramic_coating_application",
+      "context": "Professional applying ceramic coating with applicator pad on luxury vehicle. Caption 'Ceramic coating — 5-year protection, hydrophobic, UV-resistant'."
+    },
+    {
+      "slot": "gbp-2.jpg",
+      "type": "interior_detail_luxury",
+      "context": "Luxury-car leather interior after deep cleaning. Caption 'Interior — deep clean, leather conditioning, full vacuum'."
+    },
+    {
+      "slot": "gbp-3.jpg",
+      "type": "exterior_hand_wash_wax",
+      "context": "Hand wash + wax on mid-tier vehicle (not exclusively luxury). Caption 'Exterior — hand wash + wax, two-bucket method'."
+    },
+    {
+      "slot": "gbp-4.jpg",
+      "type": "mobile_setup_in_driveway",
+      "context": "Mobile detailing setup in customer driveway — water tank, tools, canopy. Caption 'Mobile — we come to you, metro Atlanta'."
+    },
+    {
+      "slot": "gbp-5.jpg",
+      "type": "headlight_restoration",
+      "context": "Before/after headlight restoration — signals premium add-on scope. Caption 'Headlight restoration — clear optics, safer night driving'."
+    },
+    {
+      "slot": "gbp-6.jpg",
+      "type": "darren_or_crew_at_work",
+      "context": "Owner Darren or crew at work on a vehicle. Caption names Darren if surfaced — reinforces owner-operator brand."
+    }
+  ],
+  "sections": [
+    {"selector": "#area-bg", "type": "north_metro_atlanta_suburban", "context": "Alpharetta / Johns Creek / Suwanee / Duluth / Roswell residential streetscape; own-site gallery has real vehicle photos that may be reusable for section backgrounds"}
+  ],
+  "notes": "Auto detailing vertical with ceramic-coating luxury positioning. Slightly brighter/more saturated filter than typical trade vertical (brightness 1.02, saturate 1.08) to reinforce premium/mirror-finish aesthetic vs the utility tone of plumbing/HVAC. Own-site gallery has real portfolio photos (Cybertruck, Lexus NX, Honda Prelude) — Bruce should preserve these over stock. At least 1 slot (mobile setup) must communicate the 'we come to you' differentiator — that's the moat vs in-shop detailers."
+}

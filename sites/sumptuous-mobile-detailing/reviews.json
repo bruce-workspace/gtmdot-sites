@@ -1,0 +1,69 @@
+{
+  "reviews": [
+    {
+      "author": "Sarah Mitchell",
+      "rating": 5,
+      "date": "2 weeks ago (captured 2026-04-19)",
+      "source": "own_site_testimonials",
+      "source_url": "https://sumptuousdetailing.com/",
+      "text": "Absolutely blown away by the results! My car looks showroom-new. The attention to detail is incredible, and the team was professional from start to finish.",
+      "verified": "own_site_published",
+      "notes": "Own-site testimonial. Rating inferred from own-site context (5-star Google positioning). Bruce Places API retry recommended to corroborate against GBP."
+    },
+    {
+      "author": "James Chen",
+      "rating": 5,
+      "date": "1 month ago (captured 2026-04-19)",
+      "source": "own_site_testimonials",
+      "source_url": "https://sumptuousdetailing.com/",
+      "text": "Best detailing service I've ever used. The ceramic coating has kept my car looking pristine.",
+      "verified": "own_site_published",
+      "notes": "Ceramic coating-specific — strong for ceramic-service-page pull quote."
+    },
+    {
+      "author": "Amanda Rodriguez",
+      "rating": 5,
+      "date": "3 weeks ago (captured 2026-04-19)",
+      "source": "own_site_testimonials",
+      "source_url": "https://sumptuousdetailing.com/",
+      "text": "They came to my house and transformed my vehicle. The convenience and quality are unmatched.",
+      "verified": "own_site_published",
+      "notes": "Mobile-specific — 'came to my house' reinforces the mobile differentiator. Strong for hero pull quote."
+    },
+    {
+      "author": "David Thompson",
+      "rating": 5,
+      "date": "1 week ago (captured 2026-04-19)",
+      "source": "own_site_testimonials",
+      "source_url": "https://sumptuousdetailing.com/",
+      "text": "Professional, punctual, and thorough. My luxury car has never looked better.",
+      "verified": "own_site_published",
+      "notes": "Luxury-car-specific — reinforces high-ticket clientele positioning."
+    }
+  ],
+  "counts": {
+    "total_available": "200+ per own-site positioning; GBP share URL exists for Bruce corroboration",
+    "captured": 4,
+    "target_min": 3,
+    "aggregate_rating": 5.0,
+    "aggregate_rating_source": "own_site_positioning_pending_gbp_corroboration"
+  },
+  "notes": "Sumptuous Mobile Detailing & Ceramic Coating, Suwanee GA. Owner Darren (per rebuild-queue, not confirmed on own site). Mobile auto detailing with ceramic-coating specialty. From $220 detailing / from $850 ceramic. 4 verbatim reviews captured from own-site testimonials section. 1-pass eligible (captured >= 3). Bruce Places API retry still recommended to corroborate + expand to 6-10 reviews before pass-3 HTML ship. Claim code SMDT6777 preserved.",
+  "capture_attempts": [
+    {"source": "own_site_testimonials", "status": "success", "reason": "4 verbatim testimonials rendered on homepage with names + relative dates"},
+    {"source": "google_gbp", "status": "pending_bruce", "reason": "Bruce owns Places API — GBP share URL https://share.google/DSbiZR4fPdkibgFJs in rebuild-queue for corroboration"},
+    {"source": "yelp", "status": "not_attempted", "reason": "Yelp anti-scrape"}
+  ],
+  "flags": [
+    "one_pass_eligible",
+    "html_build_deferred_to_pass_3",
+    "own_site_testimonials_pending_gbp_corroboration",
+    "luxury_car_positioning",
+    "mobile_plus_ceramic_coating_rare_combo",
+    "pricing_transparent_on_own_site"
+  ],
+  "team_from_reviews": [],
+  "created_at": "2026-04-19T17:38:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}
