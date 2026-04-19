@@ -1,17 +1,44 @@
 {
   "reviews": [
-    {"author": "Diane B.", "rating": 5, "date": "recent", "source": "google", "text": "Great service. Will was very professional and courteous. He got right to the job and had me back on the road in no time. Prices were very reasonable.", "verified": true, "tech": "Will"},
-    {"author": "Amanda C.", "rating": 5, "date": "recent", "source": "google", "text": "Joshua was absolutely amazing! Professional, knowledgeable, and went above and beyond to ensure I was taken care of. Came right to my location and had my tires changed in no time.", "verified": true, "tech": "Joshua"},
-    {"author": "E.L. J.", "rating": 5, "date": "recent", "source": "google", "text": "Very professional and friendly. On time. Great job.", "verified": true},
-    {"author": "Rayvon S.", "rating": 5, "date": "recent", "source": "google", "text": "Marlo was awesome and fast when it came to changing the tires and he was very professional. You guys are the best.", "verified": true, "tech": "Marlo"},
-    {"author": "Jeremy Bush", "rating": 5, "date": "recent", "source": "google", "text": "I got a flat at midnight on a Tuesday and these guys came out and took care of it. Can't beat that.", "verified": true}
-  ],
-  "counts": {"total_available": "386 Google reviews", "captured": 5, "target_min": 3, "aggregate_rating": 4.9, "aggregate_rating_source": "Google Business Profile"},
-  "notes": "Tire and Ride Mobile. Mobile tire service with 24-hour availability. Atlanta (1192 Pryor Rd SW, Suite D). Phone (404) 749-0918. 4.9 / 386 reviews (large volume). Named techs: Will, Joshua, Marlo.",
-  "capture_attempts": [{"source": "google_gbp", "status": "success", "reason": "5 verbatim captured from HTML inline"}],
-  "flags": [],
-  "team_from_reviews": ["Will", "Joshua", "Marlo"],
-  "created_at": "2026-04-18T07:33:00-04:00",
-  "created_by": "r1vs",
-  "schema_version": "1.0"
+    {
+      "author": "Ann Holt",
+      "rating": 1,
+      "date": "2 years ago",
+      "source": "google",
+      "text": "I had this nail tire in my car today went here and asked to have it patched the short dude with orange beard put a plug in my tire now mine you I asked before I drove off will it be ok his exact words were you good to ride as you want. I went home and parked I went back out to run and errand and the plug came out of the tire so I had to spend additional money to get a patch at another location went back to tell dude and he got smart and wouldn\u2019t give me a refund terrible customer service I go there every month to check my tire pressure\u2026NEVER AGAIN IN LIFE WILL I GO THERE AND I DONT RECOMMEND NOONE ELSE TO GO THER EITHER.. Now I see why people don\u2019t shop or spend money in their own neighborhoods",
+      "verified": true
+    },
+    {
+      "author": "K. McC.",
+      "rating": 1,
+      "date": "5 months ago",
+      "source": "google",
+      "text": "Don't waste your time or money, horrible,  inadequate, and very rude .Literally don't want to do there job, not sure if owner knows whats happening there at night but definitely DO NOT RECOMMEND. They will ignore you if they aren't familiar with you. Waited 30 mins n he acted like he was mad because i did.",
+      "verified": true
+    },
+    {
+      "author": "CROWN VIC",
+      "rating": 1,
+      "date": "8 months ago",
+      "source": "google",
+      "text": "I stopped in to get air in my tires after the warning light came on. When I asked the technician to confirm the correct PSI for my vehicle, he insisted on putting only 40 PSI without checking. I mentioned that the manufacturer specifies 44 PSI in the front and 45 in the rear, but he continued to argue. He also complained that it was sprinkling rain, which seemed to affect his willingness to do the job properly. Due to the lack of professionalism and refusal to follow proper specifications, I\u2019ll be taking my business elsewhere.",
+      "verified": true
+    },
+    {
+      "author": "Rayvon Shipp",
+      "rating": 5,
+      "date": "8 months ago",
+      "source": "google",
+      "text": "I recently came here up here and was provided with excellent service. I had all 4 different tires on my car and they went to the tire warehouse to get the correct fitting tires. Josh was the one to do the service and was very professional as well as attentive!",
+      "verified": true
+    },
+    {
+      "author": "Brandi Spire",
+      "rating": 5,
+      "date": "4 years ago",
+      "source": "google",
+      "text": "They came out as soon as possible. They were very nice and helped me out alot. Very low prices too. Even checked my tire to make sure it was good before putting it back on there. I highly recommend them.",
+      "verified": true
+    }
+  ]
 }
