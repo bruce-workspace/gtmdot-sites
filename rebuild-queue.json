@@ -88,7 +88,7 @@
         "phone": "(678) 462-5399",
         "owner_name": "Hector Membreno",
         "claim_code": "MEMB2247",
-        "current_stage": "outreach_sent"
+        "current_stage": "ready_for_review"
       },
       {
         "slug": "moonstone-pressure-washing",
@@ -101,7 +101,7 @@
         "phone": "(678) 749-3399",
         "owner_name": "Alonzo Cabrera Sr.",
         "claim_code": "MOON4729",
-        "current_stage": "outreach_sent"
+        "current_stage": "ready_for_review"
       },
       {
         "slug": "perez-pools-llc",
@@ -127,7 +127,7 @@
         "phone": "(678) 787-2022",
         "owner_name": "Sherea Jones",
         "claim_code": "PLUG3677",
-        "current_stage": "outreach_sent"
+        "current_stage": "ready_for_review"
       },
       {
         "slug": "professional-gutter-cleaning",
