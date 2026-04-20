@@ -273,46 +273,68 @@ Always use a dark gradient overlay on hero photos for text legibility. Never pla
 - Paper MCP is headless — Jesse must physically switch the active file at the mini
 - Do NOT update Paper during HTML iteration — only sync once the HTML is done
 
-**3b. HTML preview site — multi-page required**
+**3b. HTML preview site — single-page rich-sectioned build**
 
-Build a complete multi-page site, not a one-pager. Minimum pages:
-- `index.html` — homepage (hero, brands marquee, services grid, story + reviews, service area, CTA)
-- `services.html` — detailed service page with one card per appliance/service type + specific issues per card
-- `contact.html` — contact form + info split (phone, email, hours, service area, social links)
-- `about.html` — full founder/owner story, why us grid, reviews, CTA
+Build a single `index.html` with all standard sections inline. **Do not build multi-page** — it would break the deploy pipeline (see "Pipeline dependency" below).
 
-All pages share the same nav, footer, CSS variables, and font stack. Build nav with real page links, not anchor tags to sections.
+**Required sections (in order):**
+- Hero (badge, accent headline, sub, primary + secondary actions, optional hero-quote)
+- Stats widget — 4 tiles
+- Marquee — scrolling credentials / service list
+- Services grid — 6–8 cards with Lucide icons per `ICON-MAPPING.md`
+- Reviews section — 2-tier (pull-quote + review-feed) per `DESIGN-HEURISTICS.md` §3
+- Story / timeline / owner section
+- Area pills — cities served
+- FAQ — accordion if scrape-source FAQ content exists; skip entirely if not
+- Contact form with service-type dropdown
+- Footer — brand description + services list + contact
+
+**Nav uses `#anchor` fragments for intra-page scroll.** Mobile keeps the full section list under the hamburger menu. Do not build nav with cross-page links — there's only one page.
+
+**Reference structural pattern (shipped live):** `sites/bobs-hvac/`, `sites/cleveland-electric/`, `sites/jack-glass-electric/`, `sites/pine-peach-painting/`. Match their section coverage, density, and inline-CSS approach.
 
 **Review sections — use real data only:**
 - Pull reviews from Google Places API: `GET /maps/api/place/details/json?fields=reviews,rating,user_ratings_total`
 - Display actual rating from API (e.g. 4.4, not assumed 4.9)
-- Feature 3 best reviews (curated from 5-star pool) in a card grid with real names, real dates
-- Below the curated section, add a **slowly scrolling reviews feed** (horizontal marquee, ~60s loop) showing all 5-star reviews as cards — gives the impression of overwhelming social proof
+- Feature 1–2 best reviews as pull-quotes (curated from 5-star pool) with real names, real dates
+- Add a **slowly scrolling reviews feed** (horizontal marquee, ~50–60s loop) showing all captured 5-star reviews as cards — gives the impression of overwhelming social proof
 - NEVER use AI-generated review text. Every word in a review card must be verbatim from the API or their actual website.
 - Never fake a reviewer name. Use real names from the API response.
+- If `captured: 0` at R1VS pass, insert a `reviews-pending` scaffold card with an HTML comment marker `<!-- PULL_QUOTE_PENDING_REVIEWS -->` so Mini's DESIGN-HEURISTICS pass can swap in real pull-quotes after Bruce enrichment.
 
 **FAQ:**
 - Firecrawl scrape their site for any FAQ page or FAQ accordion
-- If FAQ content found: render as an accordion at the bottom of the homepage above the CTA
-- If no FAQ: skip the section entirely — don't generate fake questions
+- If FAQ content found: render as an accordion above the contact section
+- If no FAQ: either skip the section entirely, or synthesize 4–6 vertical-appropriate Q&As grounded in research-confirmed positioning (not invented claims)
 
-**SEO URL structure — individual service pages:**
-For every service type they offer, build a dedicated page:
-- `/refrigerator-repair-atlanta.html` → title: "Refrigerator Repair Atlanta | [Business Name]"
-- `/washer-dryer-repair-atlanta.html`
-- `/oven-range-repair-atlanta.html`
-- `/dishwasher-repair-atlanta.html`
-- etc.
-Each page: unique H1, unique meta description, service-specific content, LocalBusiness + Service schema, internal links back to homepage. These are what rank individually on Google for "[appliance] repair [city]".
+**Pipeline dependency — why single-page is mandatory:**
+
+Mini's deploy automation assumes exactly one `index.html` per site. Multi-page would silently break these scripts:
+
+- `process-intake.sh` — copies intake branch content expecting a single `index.html`
+- `pre-deploy-gate.sh` — validates claim-bar presence, title tag, popup, etc. against one file
+- `heuristics-audit.py` — greps pull-quote / blockquote / section patterns across one file
+- `wire-photos-into-html.py` — maps Bruce-dropped photos (`hero.jpg`, `gbp-1.jpg` through `gbp-N.jpg`) into one HTML
+
+Shipping multi-page would require coordinated pipeline changes first. `R1VS-REBUILD-BRIEF.md` is the authoritative scope doc and also specifies single `index.html` — it wins for scope conflicts.
 
 **HTML standards:**
 - All CSS inline (no external files except Google Fonts)
-- CSS custom properties for all colors
-- Photo paths: relative (./hero.jpg not /absolute/path)
-- Scroll reveal: IntersectionObserver, threshold 0.08, trigger elements already in viewport on load
-- Mobile responsive (breakpoint at 768px)
-- LocalBusiness schema in `<head>` on every page
+- CSS custom properties for all colors (`:root { --brand, --bg, --text, … }`)
+- Photo paths: relative (`photos/hero.jpg`, `photos/gbp-1.jpg` through `photos/gbp-6.jpg`). R1VS uses placeholder paths; Bruce drops real photos into `sites/<slug>/photos/` with these filenames.
+- Scroll reveal: IntersectionObserver, threshold 0.08–0.1, trigger elements already in viewport on load
+- Mobile responsive (breakpoint at 768px; optional intermediate at 1024px)
+- LocalBusiness (or more specific Schema.org @type) JSON-LD in `<head>`
 - Performance target: sub-2s load on mobile
+
+**Future expansion (not yet implemented — do NOT ship without coordinated pipeline work):**
+
+Per-service SEO pages (e.g. `/kitchen-remodel-atlanta.html`, `/water-heater-install-roswell.html`, `/refrigerator-repair-atlanta.html`) remain a valid ambition for SEO ranking on vertical+city long-tail queries. Shipping them requires:
+1. Extending the 4 deploy scripts above to handle multi-page sites
+2. Updating `heuristics-audit.py` patterns to run per-page
+3. Revising claim-bar injection to handle multiple `</body>` tags
+
+Until that work lands, single-page is the only shape. If the per-service pages become a priority, propose a pipeline-extension plan and coordinate with Mini before any R1VS session ships multi-page HTML.
 
 **3c. Deploy**
 - Deploy to Cloudflare Pages: `preview.gtmdot.com/[business-slug]`
