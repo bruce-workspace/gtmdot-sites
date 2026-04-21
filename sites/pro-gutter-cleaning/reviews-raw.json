@@ -1,0 +1,64 @@
+{
+  "reviews": [
+    {
+      "reviewer": "Amy M.",
+      "date": "Nov 4, 2020",
+      "rating": 5,
+      "text": "These guys were total pros! Would highly recommend them. Arrived ontime, Fair pricing and did an excellent job!",
+      "source": "yelp-listing1"
+    },
+    {
+      "reviewer": "Jason P.",
+      "date": "Aug 11, 2021",
+      "rating": 5,
+      "text": "Was very happy with Pro Gutter Cleaning and Repair! We had just moved into a new home that desperately needed clearing out of the gutters. We were able to have the team come out within a week. They were very timely, quick service, and very friendly.",
+      "source": "yelp-listing1"
+    },
+    {
+      "reviewer": "Tracy T.",
+      "date": "Aug 18, 2022",
+      "rating": 5,
+      "text": "Owner takes great pride in work. Company has a 30 day warranty and owner stands behind that.",
+      "source": "yelp-listing1"
+    },
+    {
+      "reviewer": "John D.",
+      "date": "Aug 16, 2022",
+      "rating": 1,
+      "text": "[1-star owner reply visible, not the original review \u2014 skipped]",
+      "source": "yelp-listing1"
+    }
+  ],
+  "capture_attempts": [
+    {
+      "source": "yelp-listing1",
+      "status": "partial",
+      "reason": "10 photos + 4 reviews captured (3 x 5-star, 1 x 1-star owner reply skipped)",
+      "attempted_at": "2026-04-21T09:38:54.448013Z"
+    },
+    {
+      "source": "yelp-listing2",
+      "status": "partial",
+      "reason": "10 photos captured, 0 reviews (JS rendering required for review text)",
+      "attempted_at": "2026-04-21T09:38:54.448013Z"
+    },
+    {
+      "source": "instagram",
+      "status": "not-attempted",
+      "reason": "budget-exceeded after yelp listings delivered 20 photos",
+      "attempted_at": "2026-04-21T09:38:54.448013Z"
+    },
+    {
+      "source": "facebook",
+      "status": "not-attempted",
+      "reason": "budget-exceeded",
+      "attempted_at": "2026-04-21T09:38:54.448013Z"
+    },
+    {
+      "source": "homeadvisor",
+      "status": "not-attempted",
+      "reason": "budget-exceeded",
+      "attempted_at": "2026-04-21T09:38:54.448013Z"
+    }
+  ]
+}
