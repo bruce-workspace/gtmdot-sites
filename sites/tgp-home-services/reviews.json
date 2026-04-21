@@ -1,19 +1,75 @@
 {
-  "reviews": [],
+  "reviews": [
+    {
+      "author": "Shawn Sandiford",
+      "rating": 5,
+      "text": "TGP saved my basement project, after firing my frist contractor who did a horrible job. TGP came into my home and made me love it once again. Their attention to detail, the short time frame they took to fix and completed the renovation is amazing. I appreciate the love and caring put into the job.\n\nI highly recommend TGP Home service to everyone. Gillermo is best and I couldn't ask for more",
+      "source": "google",
+      "date": "4 years ago"
+    },
+    {
+      "author": "Dareen Anderson",
+      "rating": 5,
+      "text": "I highly recommend TGP Home Services.  In a world where it is so difficult to find reliable and skilled contractors, they are too notch.  They did an entire home remodel for me and they were on time, on budget, extremely clean, did an amazing job and could be counted on no matter what.  They are the only call I make when I need anything done on my house or my rental properties.  They exceeded all my expectations and I wouldn't go anywhere else.",
+      "source": "google",
+      "date": "4 years ago"
+    },
+    {
+      "author": "Marlowe Mathis",
+      "rating": 5,
+      "text": "My home looks amazing. I had 3 bathrooms remodeled, flooring installed, tiled laundry room, full home interior painting and much more. They are extremely professional. They were on time and did all the work they said they would do. They are extremely responsive, a text or call never went unanswered. They did an excellent clean up job after my renovation. Call them for whatever you need. I will definitely be calling them back if i decide to do more work. Very reasonable prices too. Can't go wrong with TGP HOME SERVICES. .",
+      "source": "google",
+      "date": "4 years ago"
+    },
+    {
+      "author": "Aamira Goddard",
+      "rating": 5,
+      "text": "Ive used TPG Home Services for 2 years. I am happy to share that this company has exceeded every expectation. I look forward to using them for many other home repairs. I trust this company for all of my home needs. They are deserving of 100 stars. Kim A",
+      "source": "google",
+      "date": "4 years ago"
+    },
+    {
+      "author": "Britney Stark",
+      "rating": 5,
+      "text": "Amazing! Guillermo and the gang were very responsive with my project and delivered beyond my expectations. They are my go to guys when I need anything. They completed the remodeling project for my business and I continue to call them as new projects come up. Very trustworthy, reliable, and fast! Their pricing is very affordable and they literally can do it all! Thank you guys again!",
+      "source": "google",
+      "date": "4 years ago"
+    }
+  ],
   "counts": {
-    "total_available": "unknown — GBP share URL exists in rebuild-queue.json for Bruce direct retry",
+    "total_available": "unknown \u2014 GBP share URL exists in rebuild-queue.json for Bruce direct retry",
     "captured": 0,
     "target_min": 3,
     "aggregate_rating": null,
     "aggregate_rating_source": "pending Bruce Places API retry"
   },
-  "notes": "TGP Home Services, Chamblee GA. Phone (404) 966-5583. Remodeler trade — likely full-scope residential (kitchen/bath/full-home) plus handyman-punch-list. Own site not surfaced. BBB no listing. GBP share URL https://share.google/cAHl4gZdqFP1tlWmg is in rebuild-queue.json — Bruce Places API retry is straightforward. Claim code TGPH8214 preserved.",
+  "notes": "TGP Home Services, Chamblee GA. Phone (404) 966-5583. Remodeler trade \u2014 likely full-scope residential (kitchen/bath/full-home) plus handyman-punch-list. Own site not surfaced. BBB no listing. GBP share URL https://share.google/cAHl4gZdqFP1tlWmg is in rebuild-queue.json \u2014 Bruce Places API retry is straightforward. Claim code TGPH8214 preserved.",
   "capture_attempts": [
-    {"source": "bbb", "status": "no_listing", "reason": "BBB search returned no results for TGP Home Services in Chamblee GA"},
-    {"source": "google_search", "status": "gated", "reason": "Google anti-scrape on SERP"},
-    {"source": "duckduckgo_search", "status": "no_match", "reason": "no direct results"},
-    {"source": "google_gbp_places_api", "status": "not_attempted_by_r1vs", "reason": "Bruce owns Places API — share URL available in rebuild-queue.json"},
-    {"source": "own_website", "status": "not_surfaced", "reason": "no business website surfaced via web search"}
+    {
+      "source": "bbb",
+      "status": "no_listing",
+      "reason": "BBB search returned no results for TGP Home Services in Chamblee GA"
+    },
+    {
+      "source": "google_search",
+      "status": "gated",
+      "reason": "Google anti-scrape on SERP"
+    },
+    {
+      "source": "duckduckgo_search",
+      "status": "no_match",
+      "reason": "no direct results"
+    },
+    {
+      "source": "google_gbp_places_api",
+      "status": "not_attempted_by_r1vs",
+      "reason": "Bruce owns Places API \u2014 share URL available in rebuild-queue.json"
+    },
+    {
+      "source": "own_website",
+      "status": "not_surfaced",
+      "reason": "no business website surfaced via web search"
+    }
   ],
   "flags": [
     "review_blocked_pending_bruce_retry",
@@ -25,5 +81,6 @@
   "team_from_reviews": [],
   "created_at": "2026-04-19T17:38:00-04:00",
   "created_by": "r1vs",
-  "schema_version": "1.0"
+  "schema_version": "1.0",
+  "reviews_count": 5
 }
