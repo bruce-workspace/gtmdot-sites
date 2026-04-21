@@ -1,19 +1,78 @@
 {
-  "reviews": [],
+  "reviews": [
+    {
+      "author": "Norah Carter",
+      "rating": 5,
+      "date": "2 months ago",
+      "source": "google",
+      "text": "About three months ago, they put in three new outlets at my house here in atlanta and did a solid job. When my trampoline got blown into the outdoor outlet by some strong wind, they came back and fixed up the power for my fish pond really fast. i'm planning to build an office in my basement soon and probably finish the whole basement later, and honestly, i'll definitely call them again for all the electrical work. sean and the team are friendly and know what they’re doing. as a software engineer, i appreciate how easy it is to reach them through google, way better than calling during the usual business hours. recently, they came out again to add an outdoor generator plug and hooked it up to my main panel. they did great work once more. i saw someone gave them a bad review just because of masks, but with the hot weather in atlanta, it makes sense that working outside with a mask isn't comfortable. overall, they’re reliable and i really recommend them for any electrical needs.",
+      "verified": true
+    },
+    {
+      "author": "Jay Monroe",
+      "rating": 5,
+      "date": "2 months ago",
+      "source": "google",
+      "text": "I worked with Sean to review the electrical plan, wiring layout, and diagrams for my remodel. Sean took the time to really understand what I wanted to achieve with the whole project, not just the electrical side. Because of this, he was able to offer helpful suggestions and recommendations I hadn’t thought of. During the job, we faced some tight spots that needed last-minute changes, but Sean and his crew handled everything quickly and kept the budget on track. The installers were also very knowledgeable about the work. They double-checked everything to make sure it matched my specifications and even shared a few good ideas of their own. In the end, I decided to go with some of their suggestions, which added a little to the cost, but Sean made sure the final charges were fair and worked with me to stay within my budget. I would highly recommend Harrison & Sons Electrical Service LLC for any electrical wiring project.",
+      "verified": true
+    },
+    {
+      "author": "Kristopher30 M",
+      "rating": 4,
+      "date": "2 months ago",
+      "source": "google",
+      "text": "I was really happy with the service from Harrison & Sons Electrical Service LLC. Bobby made sure to keep me updated during the whole project, which I appreciated. Gabriel handled replacing and upgrading my electrical panel and did an excellent job—he went the extra mile to make sure everything was tidy and well-organized on the panel wall. The whole crew was friendly, professional, and left the work area clean. I highly recommend them and will definitely call them again for any future electrical needs.",
+      "verified": true
+    },
+    {
+      "author": "Colin Burgess",
+      "rating": 5,
+      "date": "2 months ago",
+      "source": "google",
+      "text": "as a first-time homeowner in atlanta, i found myself without electricity for more than a day and didn't know what to do. i had no idea there were two main breakers, and after calling the power company several times, no one suggested checking the exterior panel for a tripped breaker. when lawrence from harrison & sons electrical service llc arrived, he quickly figured out the problem and reset the outside breaker. he explained everything in simple terms and made sure i understood how my electrical panel works. i'm very grateful for the fast and friendly service—i really appreciate the help!",
+      "verified": true
+    },
+    {
+      "author": "Mia6 R",
+      "rating": 4,
+      "date": "2 months ago",
+      "source": "google",
+      "text": "We had an issue with a breaker that wouldn’t stop tripping, so we needed a replacement. Sean came out to our home in Atlanta really quickly—within about half an hour. He figured out the electrical problem right away and had it fixed fast. Sean was friendly and clearly knew what he was doing. We’ll definitely call again for any electrical work, and we highly recommend this company!",
+      "verified": true
+    }
+  ],
   "counts": {
-    "total_available": "130+ reviews across platforms (4.7/35 one source + 4.8/102 another source — search-surfaced ratings). Actual unique-review count likely 100-130.",
-    "captured": 0,
-    "target_min": 3,
-    "aggregate_rating": null,
-    "aggregate_rating_source": "pending Bruce Places API retry — directory snippets show 4.7-4.8★"
+    "captured": 5,
+    "google_total_reviews": 99,
+    "google_rating": 4.8
   },
-  "notes": "Harrison & Sons Electrical Service LLC. Atlanta (3695 Cascade Rd STE 6250, 30331). Phone (404) 574-5123. Founded 2005 (20+ years). Family-owned multi-generational (business name = '& Sons'). Full residential electrical scope including home theater + security/safety. Ratings surfaced across directories: 4.7/35 + 4.8/102 = ~130+ reviews total across platforms. REVIEW-BLOCKED at research time — individual review text not surfaced via WebFetch. HIGH VOLUME signal = strong likelihood Bruce will pull rich content.",
+  "notes": "Reviews pulled from Places API (place_id ChIJG6FR32Mf9YgRP06hlpa90jg, 4.8/99). 5 new reviews added.",
   "capture_attempts": [
-    {"source": "own_site", "status": "empty", "reason": "testimonials section not surfaced via WebFetch"},
-    {"source": "google_search_snippets", "status": "rating_only", "reason": "search surfaced star ratings + review counts but no verbatim review text or author names"},
-    {"source": "leadsmart", "status": "not_attempted", "reason": "directory listing exists"},
-    {"source": "chamber_of_commerce", "status": "not_attempted", "reason": "listing exists"},
-    {"source": "google_gbp", "status": "not_attempted", "reason": "no GBP share URL in rebuild-queue.json"}
+    {
+      "source": "own_site",
+      "status": "empty",
+      "reason": "testimonials section not surfaced via WebFetch"
+    },
+    {
+      "source": "google_search_snippets",
+      "status": "rating_only",
+      "reason": "search surfaced star ratings + review counts but no verbatim review text or author names"
+    },
+    {
+      "source": "leadsmart",
+      "status": "not_attempted",
+      "reason": "directory listing exists"
+    },
+    {
+      "source": "chamber_of_commerce",
+      "status": "not_attempted",
+      "reason": "listing exists"
+    },
+    {
+      "source": "google_gbp",
+      "status": "not_attempted",
+      "reason": "no GBP share URL in rebuild-queue.json"
+    }
   ],
   "flags": [
     "review_blocked_pending_bruce_retry",
