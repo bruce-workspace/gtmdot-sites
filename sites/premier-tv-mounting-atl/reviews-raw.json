@@ -1,0 +1,41 @@
+{
+  "reviews": [],
+  "capture_attempts": [
+    {
+      "source": "yelp",
+      "status": "partial",
+      "reason": "15 photos captured, 0 reviews (Yelp page has no review text visible without JS rendering)",
+      "attempted_at": "2026-04-21T09:17:07.437883Z"
+    },
+    {
+      "source": "facebook",
+      "status": "not-attempted",
+      "reason": "budget-exceeded after yelp delivered 15 photos",
+      "attempted_at": "2026-04-21T09:17:07.437883Z"
+    },
+    {
+      "source": "instagram",
+      "status": "not-attempted",
+      "reason": "budget-exceeded",
+      "attempted_at": "2026-04-21T09:17:07.437883Z"
+    },
+    {
+      "source": "tiktok",
+      "status": "not-attempted",
+      "reason": "budget-exceeded",
+      "attempted_at": "2026-04-21T09:17:07.437883Z"
+    },
+    {
+      "source": "squarebooking",
+      "status": "not-attempted",
+      "reason": "budget-exceeded",
+      "attempted_at": "2026-04-21T09:17:07.437883Z"
+    },
+    {
+      "source": "google_places",
+      "status": "failed",
+      "reason": "ZERO_RESULTS - mobile-only service without storefront, not indexed in Google Places",
+      "attempted_at": "2026-04-21T09:17:07.437883Z"
+    }
+  ]
+}
