@@ -1,18 +1,73 @@
 {
-  "reviews": [],
+  "reviews": [
+    {
+      "author": "Sheryl Pereira",
+      "rating": 5,
+      "date": "a month ago",
+      "source": "google",
+      "text": "Jeremiah was great. Very professional and honest.  He told me what to expect regarding the work that was needed and the price. The company itself was very responsive in anything I requested. I definitely will be using their service in the future.",
+      "verified": true
+    },
+    {
+      "author": "Carney Underwood",
+      "rating": 5,
+      "date": "a month ago",
+      "source": "google",
+      "text": "Great experience with PlumbingPro. The scheduling was easy and quick. Jeremiah was very personable and explained the issue thoroughly and timely repaired it. He also gave helpful advice for part info if the issue occurred again and gave some pointers on water heater maintenance and replacement. Overall, very pleased and would definitely use again.",
+      "verified": true
+    },
+    {
+      "author": "Kawaski Cheeks",
+      "rating": 5,
+      "date": "a month ago",
+      "source": "google",
+      "text": "Jeremiah Vann is an outstanding licensed plumber and someone I confidently refer to my home inspection clients. He is consistently efficient, punctual, and highly knowledgeable in his trade. My clients regularly compliment his professionalism, clear communication, and ability to explain issues in a way that is easy to understand. Jeremiah’s experience and technical expertise are evident in every interaction. I highly recommend his services.",
+      "verified": true
+    },
+    {
+      "author": "Ky Reed",
+      "rating": 5,
+      "date": "4 months ago",
+      "source": "google",
+      "text": "Jeremiah provided excellent service. Not only did he fix my problem , he also explained to me what he was doing. I felt very comfortable with him in my home! Will definitely reach out again if ever in need of plumbing service.",
+      "verified": true
+    },
+    {
+      "author": "Jesse Marinelli",
+      "rating": 5,
+      "date": "4 months ago",
+      "source": "google",
+      "text": "Great service and very knowledgeable! I was able to get an appointment quickly. Jeremiah, the plumber, showed up right in time. He took the time to understand my problem. He did a full assessment. He explained everything he was doing in easy-to-understand language. He gave me multiple options and helped me understand the pros and cons of each. He thoroughly checked the solution in multiple locations in my home to help me feel comfortable my problem was solved. It was a very good experience.",
+      "verified": true
+    }
+  ],
   "counts": {
-    "total_available": "unknown — HomeAdvisor rating 5.0 per search snippet, Yelp listing exists (content-gated). Likely 15-30+ reviews given 24/7 service + service-area breadth.",
-    "captured": 0,
-    "target_min": 3,
-    "aggregate_rating": null,
-    "aggregate_rating_source": "pending Bruce Places API retry — HomeAdvisor snippet shows 5.0"
+    "captured": 5,
+    "google_total_reviews": 37,
+    "google_rating": 5.0
   },
-  "notes": "PlumbingPro North Atlanta. 3365 West Hospital Ave Suites JK, Chamblee GA 30341. Phone (404) 382-0066. 24/7 emergency plumbing (real 24/7, not leave-a-message). Full residential + commercial scope including tankless water heater + repiping. Service area covers 17+ cities. Named plumber Jeremiah surfaced in search snippet (paraphrased, not verbatim). GBP URL https://share.google/xTLUeVqH5WmeFFGTF IS in rebuild-queue.json — Bruce retry should be direct. REVIEW-BLOCKED at research time but GBP URL available for Bruce.",
+  "notes": "Places API ChIJu-lGjWAJ9YgRFuSNzP_HV2w (5.0/37). +5 new. Jeremiah Vann confirmed as plumber/owner across 4 of 5 reviews.",
   "capture_attempts": [
-    {"source": "homeadvisor", "status": "403", "reason": "anti-scrape blocked WebFetch despite rating snippet surfacing in search"},
-    {"source": "own_site", "status": "empty", "reason": "no testimonials on main site or north-atlanta service-area page"},
-    {"source": "yelp", "status": "not_attempted", "reason": "Yelp anti-scrape; listing exists"},
-    {"source": "google_gbp", "status": "available_not_scraped", "reason": "GBP share URL exists in rebuild-queue.json — Bruce can hit this directly"}
+    {
+      "source": "homeadvisor",
+      "status": "403",
+      "reason": "anti-scrape blocked WebFetch despite rating snippet surfacing in search"
+    },
+    {
+      "source": "own_site",
+      "status": "empty",
+      "reason": "no testimonials on main site or north-atlanta service-area page"
+    },
+    {
+      "source": "yelp",
+      "status": "not_attempted",
+      "reason": "Yelp anti-scrape; listing exists"
+    },
+    {
+      "source": "google_gbp",
+      "status": "available_not_scraped",
+      "reason": "GBP share URL exists in rebuild-queue.json — Bruce can hit this directly"
+    }
   ],
   "flags": [
     "review_blocked_pending_bruce_retry",
