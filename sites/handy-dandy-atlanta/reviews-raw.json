@@ -1,0 +1,47 @@
+{
+  "reviews": [],
+  "capture_attempts": [
+    {
+      "source": "google_places",
+      "status": "failed",
+      "reason": "ZERO_RESULTS",
+      "attempted_at": "2026-04-21T06:17:00.197579Z"
+    },
+    {
+      "source": "carrd_co",
+      "status": "success",
+      "reason": "8 photos from owner's carrd.co portfolio page",
+      "attempted_at": "2026-04-21T06:17:00.197579Z"
+    },
+    {
+      "source": "facebook",
+      "status": "failed",
+      "reason": "blocked-by-robots-txt",
+      "attempted_at": "2026-04-21T06:17:00.197579Z"
+    },
+    {
+      "source": "yelp",
+      "status": "failed",
+      "reason": "not-found - no listing found via search",
+      "attempted_at": "2026-04-21T06:17:00.197579Z"
+    },
+    {
+      "source": "nextdoor",
+      "status": "not-attempted",
+      "reason": "budget-exceeded",
+      "attempted_at": "2026-04-21T06:17:00.197579Z"
+    },
+    {
+      "source": "thumbtack_angi",
+      "status": "not-attempted",
+      "reason": "budget-exceeded",
+      "attempted_at": "2026-04-21T06:17:00.197579Z"
+    },
+    {
+      "source": "instagram",
+      "status": "not-attempted",
+      "reason": "budget-exceeded",
+      "attempted_at": "2026-04-21T06:17:00.197579Z"
+    }
+  ]
+}
