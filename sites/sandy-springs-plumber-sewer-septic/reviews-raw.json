@@ -1,5 +1,5 @@
 {
-  "captured": 0,
+  "captured": 3,
   "sources": [
     {
       "source": "google_places",
@@ -18,7 +18,46 @@
       "status": "failed",
       "reason": "not-found",
       "note": "BBB search returned zero results for 'Sandy Springs Plumber Sewer Septic' in Sandy Springs, GA"
+    },
+    {
+      "source": "google_places_kgmid",
+      "status": "success",
+      "place_id": "ChIJ0TOqvecP9YgRj1XU_bFSFZc",
+      "kgmid": "/g/11mlydkkfx",
+      "reviews_captured": 3,
+      "note": "RETRY via kgmid resolved to place_id; 3 reviews captured"
     }
   ],
-  "reviews": []
+  "reviews": [
+    {
+      "source": "google_places",
+      "author_name": "Aaron Mitchell",
+      "author_url": "https://www.google.com/maps/contrib/114381676359472703977/reviews",
+      "rating": 5,
+      "text": "A major upgrade was completed smoothly when their team handled sewer line replacement while keeping everything organized.",
+      "time": 1773798227,
+      "relative_time_description": "a month ago",
+      "language": "en"
+    },
+    {
+      "source": "google_places",
+      "author_name": "Victoria Barnes",
+      "author_url": "https://www.google.com/maps/contrib/114839477821410421436/reviews",
+      "rating": 5,
+      "text": "A clog in the kitchen drain was causing water to back up. I called this plumbing service for assistance. The technician cleared the obstruction quickly. The drain works perfectly again.",
+      "time": 1773445869,
+      "relative_time_description": "a month ago",
+      "language": "en"
+    },
+    {
+      "source": "google_places",
+      "author_name": "Omar Khoury",
+      "author_url": "https://www.google.com/maps/contrib/102609817603229904902/reviews",
+      "rating": 5,
+      "text": "The sink in my kitchen stopped draining completely one evening. A plumbing technician came and removed the blockage.",
+      "time": 1773360972,
+      "relative_time_description": "a month ago",
+      "language": "en"
+    }
+  ]
 }

@@ -1,35 +1,44 @@
----
-slug: sandy-springs-plumber-sewer-septic
-collected_at: 2026-04-21T12:57:00Z
-collected_by: bruce-subagent
-photos_collected: 0
-reviews_collected: 0
----
+# Collect Run: sandy-springs-plumber-sewer-septic
 
-# Collect Run — Sandy Springs Plumber, Sewer & Septic
+**Run type:** RETRY (kgmid path)
+**Completed:** 2026-04-21
+**Place ID:** ChIJ0TOqvecP9YgRj1XU_bFSFZc
+**kgmid:** /g/11mlydkkfx
 
-## Result
+## Summary
 
-No photos or reviews collected. All three sources failed.
+| Metric | Value |
+|---|---|
+| Photos captured | 2 |
+| Reviews captured | 3 |
+| Overall rating | 5.0 (3 reviews) |
 
-## Source outcomes
+## Source Outcomes
 
-| Source | Status | Reason | Note |
-|--------|--------|--------|------|
-| Google Places (GBP share URL) | failed | unknown | Share URL https://share.google/IhpJHFH2wKDDUGWcR redirected to a generic Google Search results page — no structured business data, photos, or reviews were accessible via web fetch |
-| Yelp | failed | login-wall | Direct fetch returned 403; Yelp requires JS rendering and authenticated session. No confirmation of a listing for this exact business name. |
-| BBB | failed | not-found | BBB search returned zero results for "Sandy Springs Plumber Sewer Septic" in Sandy Springs, GA — consistent with prior report of no BBB listing |
+### google_places_kgmid — ✅ SUCCESS
+- Resolved kgmid `/g/11mlydkkfx` via Places Text Search → `place_id: ChIJ0TOqvecP9YgRj1XU_bFSFZc`
+- Photos: 2 (saved as `google-places-01.jpg`, `google-places-02.jpg`)
+- Reviews: 3 (all 5-star)
+- Address confirmed: 130 Allen Rd NE #242, Sandy Springs, GA 30328
+- Phone confirmed: (470) 394-3305
 
-## Business identity (from collect-request)
+### google_places (share URL) — ❌ FAILED (previous attempt)
+- Reason: `unknown` — GBP share URL redirected to generic Google Search
 
-- **Name:** Sandy Springs Plumber, Sewer & Septic
-- **Phone:** (470) 394-3305
-- **Address:** Sandy Springs, GA
-- **GBP share URL:** https://share.google/IhpJHFH2wKDDUGWcR
-- **Claim code:** SSPS4071
+### yelp — ❌ FAILED (previous attempt)
+- Reason: `login-wall`
 
-## Recommendations for next attempt
+### bbb — ❌ SKIPPED (previous attempt confirmed not-found)
 
-- The GBP share URL resolves to a Google Search page rather than a Places embed — the kgmid `/g/11mlydkkfx` was visible in the redirect URL. A direct Places API call using this kgmid may succeed where the share URL did not.
-- Yelp requires Scrapfly with `render_js=true` as noted in the collect-request; standard fetch will always 403.
-- Photos slots still needed per `photos/intent.json`: hero, gbp-1 through gbp-6 (priority: sewer/septic specialty shots).
+## Photos
+
+- `photos-raw/google-places-01.jpg` — 612×408px, 30KB (owner-uploaded)
+- `photos-raw/google-places-02.jpg` — 408×612px, 45KB (owner-uploaded)
+
+## Reviews
+
+| Author | Rating | Excerpt |
+|---|---|---|
+| Aaron Mitchell | ⭐⭐⭐⭐⭐ | "sewer line replacement... keeping everything organized" |
+| Victoria Barnes | ⭐⭐⭐⭐⭐ | "cleared the obstruction quickly. The drain works perfectly again." |
+| Omar Khoury | ⭐⭐⭐⭐⭐ | "plumbing technician came and removed the blockage" |
