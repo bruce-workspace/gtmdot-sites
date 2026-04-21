@@ -56,7 +56,16 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .mobile-menu a:last-child{border:none}
 
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:120px 40px 80px;overflow:hidden;background:linear-gradient(135deg,var(--bg) 0%,var(--bg-alt) 50%,#0a1510 100%)}
-.hero-content{position:relative;z-index:1;max-width:720px}
+.hero-bg{position:absolute;inset:0;z-index:0;background:url('photos/hero.jpg') center/cover no-repeat;filter:brightness(0.78) contrast(1.05) saturate(0.92)}
+.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(7,15,11,0.82) 0%,rgba(10,21,16,0.72) 50%,rgba(10,21,16,0.82) 100%)}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.gallery-item{aspect-ratio:4/3;overflow:hidden;border-radius:12px;border:1px solid rgba(255,255,255,0.08);position:relative;background:#0f131e}
+.gallery-item img{width:100%;height:100%;object-fit:cover;filter:brightness(0.9) contrast(1.06) saturate(0.95);transition:transform .4s ease}
+.gallery-item:hover img{transform:scale(1.04)}
+.gallery-item::after{content:attr(data-caption);position:absolute;left:12px;bottom:12px;background:rgba(7,9,15,0.82);color:#fff;padding:6px 12px;border-radius:6px;font-size:12px;font-weight:600;backdrop-filter:blur(8px)}
+@media(max-width:1024px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.gallery-grid{grid-template-columns:repeat(2,1fr);gap:10px}.gallery-item::after{font-size:10px;padding:4px 8px}}
+.hero-content{position:relative;z-index:2;max-width:720px}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--brand-glow);border:1px solid var(--border-full);padding:8px 16px;border-radius:100px;font-size:13px;font-weight:600;color:var(--brand-light);margin-bottom:24px;letter-spacing:.04em}
 .hero h1{font-family:var(--font-serif);font-size:clamp(42px,5.5vw,76px);font-weight:700;line-height:1.05;letter-spacing:-1px;margin-bottom:20px}
 .hero h1 .accent{color:var(--brand-light)}
@@ -185,6 +194,8 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 <div class="mobile-menu" id="mobileMenu"><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#story">About Shaun &amp; Misty</a><a href="#faq">FAQ</a><a href="#contact">Free Estimate</a><a href="tel:4046977341" style="color:var(--brand-light)">(404) 697-7341</a></div>
 
 <section class="hero">
+  <div class="hero-bg" role="presentation" aria-hidden="true"></div>
+  <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-badge"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>Family Owned Since 2005 &middot; Woodstock, GA</div>
     <h1>Your Gutters,<br><span class="accent">Our Specialty</span></h1>
@@ -237,6 +248,22 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
       <div class="service-card"><div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div><h3>Siding &amp; Chimney</h3><p>Siding repair and installation, chimney pans, shrouds, and exterior repairs. Full exterior coverage so you only need one call.</p></div>
       <div class="service-card"><div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></svg></div><h3>Pressure Washing</h3><p>Driveways, walkways, siding, and decks cleaned to remove years of buildup. Often bundled with gutter cleaning for a full exterior refresh.</p></div>
       <div class="service-card"><div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 8v4l3 3"/></svg></div><h3>Maintenance Plans</h3><p>Set it and forget it. Tucker's comes out 2-3 times per year to clean and inspect your gutters automatically. No scheduling, no reminders needed.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="reveal">
+    <div class="eyebrow">Recent Work</div>
+    <h2 class="section-h2">Real Woodstock Homes, Real Before-and-Afters</h2>
+    <p class="section-sub">A look at gutter installs, soffit repairs, and exterior transformations from actual Tucker's Home Services jobs around Metro Atlanta.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-caption="BEFORE — dated trim + shutters"><img src="photos/gbp-1.jpg" alt="Tucker's Home Services — BEFORE photo of a white brick Woodstock home with dated tan trim and weathered shutters prior to exterior refresh" loading="lazy"></div>
+      <div class="gallery-item" data-caption="AFTER — refreshed trim + new shutters"><img src="photos/gbp-2.jpg" alt="Tucker's Home Services — AFTER photo of the same Woodstock home with freshly painted trim and new dark shutters after exterior refresh" loading="lazy"></div>
+      <div class="gallery-item" data-caption="Missing-shingle roof diagnostic"><img src="photos/gbp-3.jpg" alt="Tucker's Home Services — close-up of damaged asphalt shingles with missing tabs identified during a roof inspection" loading="lazy"></div>
+      <div class="gallery-item" data-caption="Vent-pipe flashing repair — roof detail"><img src="photos/gbp-4.jpg" alt="Tucker's Home Services — rubber boot flashing around a plumbing vent pipe on an asphalt shingle roof after repair" loading="lazy"></div>
+      <div class="gallery-item" data-caption="Finished seamless gutter install"><img src="photos/gbp-5.jpg" alt="Tucker's Home Services — finished white aluminum seamless gutter installed along a roofline with clean downspout termination" loading="lazy"></div>
+      <div class="gallery-item" data-caption="Shaun Tucker — owner, 404-697-7341"><img src="photos/gbp-6.jpg" alt="Tucker's Home Services business card showing owner Shaun Tucker, phone 404-697-7341, email tuckerhomeservices@yahoo.com, and address 3200 River Rock Place Woodstock GA 30188" loading="lazy"></div>
     </div>
   </div>
 </section>
