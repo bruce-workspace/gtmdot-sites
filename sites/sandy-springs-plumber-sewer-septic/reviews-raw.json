@@ -1,0 +1,24 @@
+{
+  "captured": 0,
+  "sources": [
+    {
+      "source": "google_places",
+      "status": "failed",
+      "reason": "unknown",
+      "note": "GBP share URL https://share.google/IhpJHFH2wKDDUGWcR redirected to generic Google Search page; no structured business data extractable"
+    },
+    {
+      "source": "yelp",
+      "status": "failed",
+      "reason": "login-wall",
+      "note": "Yelp returned 403 requiring JS/cookies; no listing confirmed for this specific business name"
+    },
+    {
+      "source": "bbb",
+      "status": "failed",
+      "reason": "not-found",
+      "note": "BBB search returned zero results for 'Sandy Springs Plumber Sewer Septic' in Sandy Springs, GA"
+    }
+  ],
+  "reviews": []
+}
