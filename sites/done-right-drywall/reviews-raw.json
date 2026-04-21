@@ -1,0 +1,91 @@
+{
+  "reviews": [
+    {
+      "reviewer": "Kim C.",
+      "date": "Sep 22, 2025",
+      "rating": 5,
+      "text": "I needed drywall repaired after plumbing work. Dave was the 4th contractor I contacted. Done right gives you estimates based on photo measurements. The next morning i received a detailed and reasonably priced estimateof the work. The crew came on time, did a fantastic job, cleaned up afterwards. My walls look great. Thanks Dave!",
+      "source": "yelp_atlanta"
+    },
+    {
+      "reviewer": "Verified Customer",
+      "date": "Apr 10, 2022",
+      "rating": 5,
+      "text": "Very nice job, extremely smooth, quick work. They painted 2 rooms, fixed some baseboard, redid the ceiling in one, a patch repair in the other. No debris left, and you can't tell where the repair was.",
+      "source": "yelp_atlanta"
+    },
+    {
+      "reviewer": "Verified Customer",
+      "date": "Feb 10, 2022",
+      "rating": 5,
+      "text": "I had two places to fix due to water damage. From the start David provided input and direction to what to expect and kept me updated on timing. German was fantastic and fixed the ceiling and applied paint seamlessly.",
+      "source": "yelp_atlanta"
+    },
+    {
+      "reviewer": "Verified Customer",
+      "date": "Jul 1, 2021",
+      "rating": 5,
+      "text": "I received a quote and when I was ready to start they answered me and scheduled the job. They showed up timely and completed the job as a professional company should, paying attention to every detail.",
+      "source": "yelp_atlanta"
+    },
+    {
+      "reviewer": "Verified Customer",
+      "date": "May 24, 2023",
+      "rating": 5,
+      "text": "Great, honest work, did everything on time! Recommend to anyone who needs drywall work.",
+      "source": "yelp_norcross"
+    },
+    {
+      "reviewer": "Verified Customer",
+      "date": "Jan 21, 2022",
+      "rating": 5,
+      "text": "Honestly, better than expected. Could not see where the damaged drywall was and the fix was added. Had them replace an entire drywall in the bathroom ceiling that had water damage. Perfect finish.",
+      "source": "yelp_norcross"
+    },
+    {
+      "reviewer": "Verified Customer",
+      "date": "Jul 8, 2022",
+      "rating": 1,
+      "text": "Terrible!!! Wasted my time and money. They came out twice to still give unsuccessful results. I do not recommend or suggest anyone to spend or waste their time or money with this company. Owner told me to find someone else when I called to follow up.",
+      "source": "yelp_norcross"
+    }
+  ],
+  "capture_attempts": [
+    {
+      "source": "yelp_atlanta",
+      "status": "success",
+      "reason": "15 photos + 4 reviews captured",
+      "attempted_at": "2026-04-21T05:21:01.615874Z"
+    },
+    {
+      "source": "yelp_norcross",
+      "status": "success",
+      "reason": "10 photos + 3 reviews captured",
+      "attempted_at": "2026-04-21T05:21:01.615874Z"
+    },
+    {
+      "source": "facebook",
+      "status": "not-attempted",
+      "reason": "budget-exceeded",
+      "attempted_at": "2026-04-21T05:21:01.615874Z"
+    },
+    {
+      "source": "homeadvisor_angi",
+      "status": "not-attempted",
+      "reason": "budget-exceeded",
+      "attempted_at": "2026-04-21T05:21:01.615874Z"
+    },
+    {
+      "source": "bbb",
+      "status": "not-attempted",
+      "reason": "budget-exceeded",
+      "attempted_at": "2026-04-21T05:21:01.615874Z"
+    },
+    {
+      "source": "google_places",
+      "status": "failed",
+      "reason": "ZERO_RESULTS",
+      "attempted_at": "2026-04-21T05:21:01.615874Z"
+    }
+  ]
+}
