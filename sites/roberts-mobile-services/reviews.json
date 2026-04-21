@@ -9,23 +9,85 @@
       "text": "He was very professional, kind and helpful... He made me feel safe with the repairs",
       "verified": true,
       "notes": "Partial quote from Nextdoor — ellipsis represents truncation in source."
+    },
+    {
+      "author": "Phanesia Pharel",
+      "rating": 5,
+      "date": "5 months ago",
+      "source": "google",
+      "text": "Robert has saved me twice in the last 24 hours. Needless to say I suck with cars, but he has been kind fair and timely. He really is the best. You are in great hands. Call him.",
+      "verified": true
+    },
+    {
+      "author": "Anthony",
+      "rating": 5,
+      "date": "a month ago",
+      "source": "google",
+      "text": "Robert responded quickly to my request. Offered quick repair service the same day. He explained what my issue could be based on the symptoms I described.  When he arrived to my home, he diagnosed my vehicle and offered an estimate for repairs.  The repairs were completed in a very timely manner.  Based on my 1st experience,  I would recommend Robert's Mobile Mechanic services.",
+      "verified": true
+    },
+    {
+      "author": "Lamonda Pete",
+      "rating": 5,
+      "date": "a month ago",
+      "source": "google",
+      "text": "As a woman, I’m often concerned about mechanics getting over me. That was the complete opposite of my experience with Robert. Robert communicates clearly and showed up right on time. My friend and I replaced my car battery, but the car still wouldn’t turn on. Robert came and immediately knew what was wrong. He tightened my bolts and cleaned the connectors for me. Within 10 minutes, my car was up and running. He adjusted the price based on his service and recommended that I return the starter I bought in advance. I’ll most certainly be using Robert’s service moving forward. I can’t thank him enough!",
+      "verified": true
+    },
+    {
+      "author": "Leanne Ellerbee",
+      "rating": 5,
+      "date": "a month ago",
+      "source": "google",
+      "text": "Robert is fast and efficient with repairs, very knowledgeable and I trust he will do a great job every time. I cannot recommend him enough!!  He fixed an issue  on my mothers car that had been sitting for 2 years and we are so grateful ⭐️",
+      "verified": true
+    },
+    {
+      "author": "miranda smith",
+      "rating": 5,
+      "date": "6 months ago",
+      "source": "google",
+      "text": "This man is heaven-sent. I was very skeptical and untrusting of this stranger at first.. However, he has proven beyond measure that this is his spiritual gift (helping others by coming to their distress and working on their vehicles). I can't thank you enough for your assistance during my frustrated tribulation period. Only problem is the labor is overpriced. But it's mobile, I guess. Thank you, Mr. Roberts, for all you do. May God prosper you in all that you do!!!",
+      "verified": true
     }
   ],
   "counts": {
-    "total_available": "unknown — Nextdoor presence + BBB sister listing + Mobile Mechanic Directory 5/5 on 1",
-    "captured": 1,
-    "target_min": 3,
-    "aggregate_rating": null,
-    "aggregate_rating_source": "pending Bruce Places API retry"
+    "captured": 6,
+    "google_total_reviews": 201,
+    "google_rating": 4.8
   },
-  "notes": "Robert's Mobile Services. Owner Robert Stinton. Mobile auto mechanic at 1598 Donald Lee Hollowell Pkwy NW, Atlanta GA 30318. Phone (678) 663-4130. Black-owned (per buyblack.org directory). Broad mechanical scope — diagnostics, oil, brakes, tune-ups, transmission, body, AC, electrical. 1 partial verbatim captured from Nextdoor (I.V. — professional, kind, safe repairs). Below 3-threshold for 1-pass trigger; stays empty-shell 2-pass pending Bruce Places API retry.",
+  "notes": "Places API ChIJqVQ0jOkb9YgRozLHehFrJbQ (4.8/201). +5 new. Robert named in all 5 review texts.",
   "capture_attempts": [
-    {"source": "nextdoor", "status": "partial", "reason": "1 partial verbatim (I.V.) captured; additional activity threads are neighbor requests not reviews"},
-    {"source": "mobile_mechanic_directory", "status": "rating_only", "reason": "5/5 on 1 review but review text not captured"},
-    {"source": "yelp", "status": "not_attempted", "reason": "Yelp anti-scrape; listing exists"},
-    {"source": "bbb_locust_grove", "status": "not_verified", "reason": "sister entity 'Robert's Mobile Auto Repair' listed in BBB Locust Grove — may or may not be same business"},
-    {"source": "buyblack_org", "status": "directory_entry_only", "reason": "directory confirms Black-owned status, no reviews"},
-    {"source": "google_gbp", "status": "not_attempted", "reason": "no GBP share URL in rebuild-queue.json"}
+    {
+      "source": "nextdoor",
+      "status": "partial",
+      "reason": "1 partial verbatim (I.V.) captured; additional activity threads are neighbor requests not reviews"
+    },
+    {
+      "source": "mobile_mechanic_directory",
+      "status": "rating_only",
+      "reason": "5/5 on 1 review but review text not captured"
+    },
+    {
+      "source": "yelp",
+      "status": "not_attempted",
+      "reason": "Yelp anti-scrape; listing exists"
+    },
+    {
+      "source": "bbb_locust_grove",
+      "status": "not_verified",
+      "reason": "sister entity 'Robert's Mobile Auto Repair' listed in BBB Locust Grove — may or may not be same business"
+    },
+    {
+      "source": "buyblack_org",
+      "status": "directory_entry_only",
+      "reason": "directory confirms Black-owned status, no reviews"
+    },
+    {
+      "source": "google_gbp",
+      "status": "not_attempted",
+      "reason": "no GBP share URL in rebuild-queue.json"
+    }
   ],
   "flags": [
     "review_blocked_pending_bruce_retry",
