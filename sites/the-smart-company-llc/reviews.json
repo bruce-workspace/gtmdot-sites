@@ -1,0 +1,34 @@
+{
+  "reviews": [],
+  "counts": {
+    "total_available": "unknown — BBB A+ rating signals active review base; GBP share URL in rebuild-queue for Bruce retry",
+    "captured": 0,
+    "target_min": 3,
+    "aggregate_rating": null,
+    "aggregate_rating_source": "pending Bruce Places API retry"
+  },
+  "notes": "The Smart Company GA, LLC. Phone (678) 891-9979. Address 3223 Mill Springs Cir, Buford GA 30519. Owners Jose Figueroa + Yenire Mendoza (couple-run). BBB A+ rating (not accredited). Scope per BBB: Home Improvement + Roofing + Painting — BROADER than rebuild-queue's 'Gutter Cleaning' single-trade label. Recommend updating rebuild-queue trade_category. GBP share URL https://share.google/pbuwSF3JvNKQogq4f is in rebuild-queue — Bruce Places API retry. Claim code SMRT5293 preserved.",
+  "capture_attempts": [
+    {"source": "bbb_search", "status": "partial_success", "reason": "BBB surfaced address + A+ rating + service categories; review text not in search-page output"},
+    {"source": "bbb_detail_page", "status": "404", "reason": "direct URL guess for BBB detail page returned 404"},
+    {"source": "google_search", "status": "gated", "reason": "Google anti-scrape on SERP"},
+    {"source": "google_gbp_places_api", "status": "not_attempted_by_r1vs", "reason": "Bruce owns Places API — share URL available in rebuild-queue.json"},
+    {"source": "own_website", "status": "not_surfaced", "reason": "no business website surfaced via web search"}
+  ],
+  "flags": [
+    "review_blocked_pending_bruce_retry",
+    "empty_shell_2pass_candidate",
+    "gbp_url_available_for_bruce",
+    "couple_run_family_business_positioning",
+    "multi_trade_scope_broader_than_rebuild_queue_label",
+    "bbb_a_plus_legitimacy_signal",
+    "high_confidence_bruce_retry_will_succeed"
+  ],
+  "team_from_reviews": [
+    {"name": "Jose Figueroa", "role": "co-owner (per rebuild-queue)"},
+    {"name": "Yenire Mendoza", "role": "co-owner (per rebuild-queue)"}
+  ],
+  "created_at": "2026-04-19T17:45:00-04:00",
+  "created_by": "r1vs",
+  "schema_version": "1.0"
+}

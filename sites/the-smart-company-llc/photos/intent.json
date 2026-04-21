@@ -1,0 +1,52 @@
+{
+  "slug": "the-smart-company-llc",
+  "vertical": "exterior_home_improvement",
+  "vertical_filter": "brightness(0.96) contrast(1.08) saturate(1.02)",
+  "hero": {
+    "slot": "hero.jpg",
+    "type": "crew_working_on_home_exterior",
+    "priority_order": [
+      "places_api_owner_uploaded",
+      "places_api_customer_uploaded",
+      "recraft_photorealistic"
+    ],
+    "recraft_prompt_if_needed": "Professional contractor couple working on a residential home exterior in a Buford-area suburban neighborhood — one on a ladder at the gutter line, one prepping paint or roofing materials below, both in clean branded uniforms, photorealistic, no text or logos, no signage, warm natural daylight.",
+    "caption_context": "Couple-run crew is the trust story. Hero should if possible show Jose + Yenire (or a 2-person crew stand-in) working together on a real exterior job — not solo contractor. Exterior work (gutter/paint/roof) differentiates from interior-remodel verticals."
+  },
+  "gallery": [
+    {
+      "slot": "gbp-1.jpg",
+      "type": "gutter_clean_install",
+      "context": "Gutter cleaning or install — ladder, hose, debris removal. Caption 'Gutters — cleaning, install, repair'."
+    },
+    {
+      "slot": "gbp-2.jpg",
+      "type": "roofing_work",
+      "context": "Roofing repair or shingle replacement. Caption 'Roofing — repair, replacement, full-roof'."
+    },
+    {
+      "slot": "gbp-3.jpg",
+      "type": "exterior_paint",
+      "context": "Exterior paint in progress or finished. Caption 'Exterior paint — full-home, trim, touch-up'."
+    },
+    {
+      "slot": "gbp-4.jpg",
+      "type": "interior_paint",
+      "context": "Interior paint — room in progress or finished. Caption 'Interior paint — rooms, trim, ceilings'."
+    },
+    {
+      "slot": "gbp-5.jpg",
+      "type": "soffit_fascia_or_pressure_wash",
+      "context": "Soffit/fascia repair or pressure wash (common exterior add-on). Caption 'Exterior refresh — soffit, fascia, pressure wash'."
+    },
+    {
+      "slot": "gbp-6.jpg",
+      "type": "jose_and_yenire_or_finished_home",
+      "context": "Owners Jose + Yenire together OR a fully-refreshed home exterior (gutter + paint + roof all done). Caption names owners if surfaced — reinforces couple-run brand."
+    }
+  ],
+  "sections": [
+    {"selector": "#area-bg", "type": "north_gwinnett_buford_suburban", "context": "Buford / Sugar Hill / Suwanee residential streetscape; Unsplash OK if no real photos"}
+  ],
+  "notes": "Exterior home-improvement vertical with multi-trade scope. Hero priority: show the couple-run crew signal if photos support it. Gutter + roof + paint each get a dedicated slot because rebuild-queue undersold the scope. North Gwinnett corridor has 2000s-2010s vintage homes due for full exterior refresh — the site should invite the gutter+roof+paint bundle call, not just single-service."
+}
