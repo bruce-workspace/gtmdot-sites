@@ -1,0 +1,35 @@
+{
+  "reviews": [],
+  "capture_attempts": [
+    {
+      "source": "instagram",
+      "status": "failed",
+      "reason": "site-blocked",
+      "attempted_at": "2026-04-21T03:37:34.179722Z"
+    },
+    {
+      "source": "facebook",
+      "status": "failed",
+      "reason": "site-blocked",
+      "attempted_at": "2026-04-21T03:37:34.179722Z"
+    },
+    {
+      "source": "yelp",
+      "status": "success",
+      "reason": "12 photos extracted via Firecrawl scrape",
+      "attempted_at": "2026-04-21T03:37:34.179722Z"
+    },
+    {
+      "source": "thumbtack",
+      "status": "not-attempted",
+      "reason": "budget-exceeded",
+      "attempted_at": "2026-04-21T03:37:34.179722Z"
+    },
+    {
+      "source": "nextdoor",
+      "status": "not-attempted",
+      "reason": "budget-exceeded",
+      "attempted_at": "2026-04-21T03:37:34.179722Z"
+    }
+  ]
+}
