@@ -68,7 +68,14 @@ a { color: inherit; text-decoration: none; }
 
 /* HERO */
 .hero { position: relative; min-height: 92vh; display: flex; align-items: center; padding: 120px 0 80px; overflow: hidden; }
-.hero-bg { position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=2000&q=80') center/cover; }
+.hero-bg { position: absolute; inset: 0; background: url('photos/hero.jpg') center/cover; filter: brightness(0.88) contrast(1.05) saturate(0.92); }
+.gallery-section { padding: 96px 0; background: #0a0d12; }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
+.gallery-grid .gallery-item { aspect-ratio: 4/3; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); position: relative; background: #0f131e; }
+.gallery-grid .gallery-item img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.88) contrast(1.05) saturate(0.92); transition: transform .4s ease, filter .4s ease; }
+.gallery-grid .gallery-item:hover img { transform: scale(1.04); }
+.gallery-grid .gallery-item::after { content: attr(data-caption); position: absolute; left: 12px; bottom: 12px; background: rgba(7,9,15,0.78); color: #fff; padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; backdrop-filter: blur(8px); }
+@media(max-width:768px) { .gallery-grid { grid-template-columns: repeat(2,1fr); gap: 10px; } .gallery-grid .gallery-item::after { font-size: 10px; padding: 4px 8px; } }
 .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(8,13,20,0.92) 0%, rgba(31,78,121,0.75) 60%, rgba(8,13,20,0.85) 100%); }
 .hero-content { position: relative; z-index: 2; max-width: 780px; }
 .eyebrow { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: var(--brand-light); margin-bottom: 20px; }
@@ -369,6 +376,24 @@ section { padding: 96px 0; }
         <span class="service-tag">Foundation Protection</span>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Real Jobs Around Carrollton</span>
+      <h2>Gutters, roofs, <em>and the storm cleanup in between.</em></h2>
+      <p>Every photo is an actual Matt-and-crew job. No stock.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-caption="Branded service card — 404-606-2950"><img src="photos/gbp-1.jpg" alt="Pro Gutter Cleaning and Repair — branded service card overlay with phone 404-606-2950 on an aerial autumn-forest photo" loading="lazy"></div>
+      <div class="gallery-item" data-caption="Finished gutter + weathervane"><img src="photos/gbp-2.jpg" alt="Pro Gutter Cleaning and Repair — new white gutter on a beige-sided two-story home with a weathervane on the roofline" loading="lazy"></div>
+      <div class="gallery-item" data-caption="Finished gutter corner + downspout"><img src="photos/gbp-3.jpg" alt="Pro Gutter Cleaning and Repair — white gutter corner and downspout cleanly finished on a cream-siding ranch home" loading="lazy"></div>
+      <div class="gallery-item" data-caption="Roof-level gutter inspection"><img src="photos/gbp-4.jpg" alt="Pro Gutter Cleaning and Repair — aerial view of a roof line with shingles and gutter section, service ladder and bins visible below" loading="lazy"></div>
+      <div class="gallery-item" data-caption="Storm damage — tree through roof"><img src="photos/gbp-5.jpg" alt="Pro Gutter Cleaning and Repair — storm-damage scene of a large tree crashed through a residential roof, branches and debris visible" loading="lazy"></div>
+      <div class="gallery-item" data-caption="Storm-damaged shingles close-up"><img src="photos/gbp-6.jpg" alt="Pro Gutter Cleaning and Repair — close-up of curled and wind-damaged asphalt shingles ready for roof repair" loading="lazy"></div>
     </div>
   </div>
 </section>
