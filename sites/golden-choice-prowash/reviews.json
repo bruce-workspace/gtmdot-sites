@@ -1,18 +1,73 @@
 {
-  "reviews": [],
+  "reviews": [
+    {
+      "author": "GC Vintage",
+      "rating": 5,
+      "date": "3 months ago",
+      "source": "google",
+      "text": "When it comes to Roof Washing and House Washing, these guys are the pros. They were professional every step of the way. They offered property protection to ensure my plants were safe. I couldn't be happier! I prebooked an annual appointment with them to get my house wash every year because the results are just that good. 5 stars!",
+      "verified": true
+    },
+    {
+      "author": "Suhas Apte",
+      "rating": 5,
+      "date": "8 months ago",
+      "source": "google",
+      "text": "Sheridan and his team did an excellent job cleaning the 30 roofs for our association. Their service was outstanding—they kept both management and residents well-informed from the initial planning stage through execution and the final report. Sheridan was always responsive, professional, and a pleasure to work with. I would highly recommend him to anyone looking for roof cleaning services.",
+      "verified": true
+    },
+    {
+      "author": "Marcia Scott",
+      "rating": 5,
+      "date": "a year ago",
+      "source": "google",
+      "text": "This is the best service I ever had. I was thinking that I had to put up new siding, but after he cleaned it, I don’t think I do. My house looks amazing. Looks like a brand new home. I will definitely have him back to do more work. I tried other services so glad it didn’t work out so thankfully I was able to get him to come out. I am so pleased with the service I am very OCD and so is HE I have Sky window  that were just black and he cleaned them. As well  They look  so beautiful didn’t know I liked  till  now can’t wait for him to come do my fence and around my pool. I will stay with this company for forever. The price great",
+      "verified": true
+    },
+    {
+      "author": "Matthew Schultz",
+      "rating": 5,
+      "date": "9 months ago",
+      "source": "google",
+      "text": "Sheridan provided excellent service at a fair price. My home exterior needed some significant cleaning. Sheridan provided a detailed overview of the work that was needed and did a walk around afterward to make sure I was satisfied with the outcome.  The results were amazing. Highly recommended.",
+      "verified": true
+    },
+    {
+      "author": "Alena Nguyen",
+      "rating": 5,
+      "date": "a year ago",
+      "source": "google",
+      "text": "Sheridan was wonderful. The service was GREAT. Answer phone and all my questions very quickly with very nice manner. I’m very happy with the service. Definitely will do business with them again. Highly recommend!!!!!",
+      "verified": true
+    }
+  ],
   "counts": {
-    "total_available": "unknown — 17-year operating history suggests 50+ reviews across GBP/Yelp/etc. Google search surfaces paraphrased review content frequently.",
-    "captured": 0,
-    "target_min": 3,
-    "aggregate_rating": null,
-    "aggregate_rating_source": "pending Bruce Places API retry (HIGH PRIORITY)"
+    "captured": 5,
+    "google_total_reviews": 107,
+    "google_rating": 5.0
   },
-  "notes": "Golden Choice Pro-Wash. Owner Sheridan (last name pending). Founded January 2009 (17 years). Sandy Springs HQ at 1700 Northside Dr NW A7, Atlanta GA 30318. Phone (470) 519-1217. Email Goldenchoiceprowash@gmail.com. Full multi-page site at goldenchoiceprowash.com. Services: pressure washing, soft washing, roof cleaning, gutter cleaning, window washing, siding, deck/patio, commercial, gas station, parking lot, post-construction. Service area: Sandy Springs, Roswell, Johns Creek, Alpharetta, Brookhaven, Atlanta. REVIEW-BLOCKED at research time but PARAPHRASED review content surfaced via Google search — strong signal Bruce will find substantial verbatim content. Owner-named pull-quote material exists (Sheridan visited for gutter clean, advised not needed, no charge — HONESTY story). HIGH PRIORITY for Bruce retry.",
+  "notes": "Reviews pulled from Places API (place_id ChIJE4uEKof5xEsRm4R0WkC_wlc, 5.0 stars / 107 total reviews). 5 new review(s) added this cycle.",
   "capture_attempts": [
-    {"source": "own_site", "status": "partial", "reason": "'Some Reviews from Our Customers' section referenced but content not surfaced via WebFetch"},
-    {"source": "google_search_snippets", "status": "paraphrased_only", "reason": "Search results surfaced paraphrased review content mentioning Sheridan by name — NOT verbatim, not usable as pull quotes"},
-    {"source": "yelp", "status": "not_attempted", "reason": "Yelp anti-scrape; listing has 15 photos"},
-    {"source": "google_gbp", "status": "not_attempted", "reason": "no GBP share URL in rebuild-queue.json"}
+    {
+      "source": "own_site",
+      "status": "partial",
+      "reason": "'Some Reviews from Our Customers' section referenced but content not surfaced via WebFetch"
+    },
+    {
+      "source": "google_search_snippets",
+      "status": "paraphrased_only",
+      "reason": "Search results surfaced paraphrased review content mentioning Sheridan by name — NOT verbatim, not usable as pull quotes"
+    },
+    {
+      "source": "yelp",
+      "status": "not_attempted",
+      "reason": "Yelp anti-scrape; listing has 15 photos"
+    },
+    {
+      "source": "google_gbp",
+      "status": "not_attempted",
+      "reason": "no GBP share URL in rebuild-queue.json"
+    }
   ],
   "flags": [
     "review_blocked_pending_bruce_retry",
@@ -26,7 +81,9 @@
     "Cleaned gutters on both first + second floors, responsive to phone + text",
     "Customer happily surprised by price, impressed with quality"
   ],
-  "team_from_reviews": ["Sheridan (owner — named in search-surfaced review content)"],
+  "team_from_reviews": [
+    "Sheridan (owner — named in search-surfaced review content)"
+  ],
   "created_at": "2026-04-19T16:55:00-04:00",
   "created_by": "r1vs",
   "schema_version": "1.0"
