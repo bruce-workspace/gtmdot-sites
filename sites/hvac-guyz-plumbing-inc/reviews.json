@@ -13,7 +13,7 @@
       "rating": 5,
       "date": "6 months ago",
       "source": "google",
-      "text": "By far the best HVAC company I\u2019ve ever worked with. They took the time to truly help me with my system when other companies turned me down. I highly recommend.",
+      "text": "By far the best HVAC company I’ve ever worked with. They took the time to truly help me with my system when other companies turned me down. I highly recommend.",
       "verified": true
     },
     {
@@ -29,7 +29,7 @@
       "rating": 5,
       "date": "2 years ago",
       "source": "google",
-      "text": "Absolutely phenomenal service! We really appreciated Rohan\u2019s attention to detail, detailed and transparent assessment, honest feedback and effort to provide best advice. He went above and beyond in diagnosing our heating issues, was thorough, took photos, and explained everything. Reasonable prices too!! Its a wonderful thing to find a company you know you can trust. We will be using HVAC Guyz for all of our HVAC needs going forward.",
+      "text": "Absolutely phenomenal service! We really appreciated Rohan’s attention to detail, detailed and transparent assessment, honest feedback and effort to provide best advice. He went above and beyond in diagnosing our heating issues, was thorough, took photos, and explained everything. Reasonable prices too!! Its a wonderful thing to find a company you know you can trust. We will be using HVAC Guyz for all of our HVAC needs going forward.",
       "verified": true
     },
     {
@@ -42,9 +42,10 @@
     }
   ],
   "counts": {
-    "total_available": 38,
     "captured": 5,
-    "target_min": 5
+    "google_total_reviews": 38,
+    "google_rating": 4.8,
+    "yelp_total_reviews_pending": 63
   },
-  "notes": "Captured via Places API on 2026-04-17. Mac Mini direct (Bruce cron stuck)."
+  "notes": "Reviews pulled from Places API place_id ChIJ8cpWfjQF9YgRPHbr1ol2SWs (4.8/38). 0 new Google reviews added this cycle. Yelp has 63 reviews + 18 photos still pending Bruce scrape."
 }
