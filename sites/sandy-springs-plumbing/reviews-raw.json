@@ -1,0 +1,19 @@
+{
+  "captured": 0,
+  "note": "Collect-request indicated 6 reviews already captured in index.html. No new reviews were collected this run.",
+  "sources": [
+    {
+      "source": "google_places",
+      "status": "failed",
+      "reason": "unknown",
+      "note": "GBP share URL https://share.google/IhpJHFH2wKDDUGWcR redirected to generic Google Search page; no review data extractable"
+    },
+    {
+      "source": "yelp",
+      "status": "skipped",
+      "reason": "not-authoritative",
+      "note": "The matching Yelp listing (sandysprings-heating-plumbing-atlanta-3) has a 1.0/2 rating and collect-request explicitly says to ignore the 1.0/2 Yelp listing as stale and unrepresentative"
+    }
+  ],
+  "reviews": []
+}
