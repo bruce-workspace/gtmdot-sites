@@ -1,0 +1,23 @@
+{
+  "reviews": [],
+  "capture_attempts": [
+    {
+      "source": "yelp",
+      "status": "partial",
+      "reason": "photos extracted successfully but review text not accessible without JS render",
+      "attempted_at": "2026-04-21T03:36:31.225354Z"
+    },
+    {
+      "source": "facebook",
+      "status": "failed",
+      "reason": "site-blocked",
+      "attempted_at": "2026-04-21T03:36:31.225354Z"
+    },
+    {
+      "source": "nextdoor",
+      "status": "failed",
+      "reason": "not-found",
+      "attempted_at": "2026-04-21T03:36:31.225354Z"
+    }
+  ]
+}
