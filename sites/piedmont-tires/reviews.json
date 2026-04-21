@@ -44,25 +44,41 @@
     }
   ],
   "counts": {
-    "total_available": "20 reviews on autoshoplookup + unknown Google/Yelp count",
     "captured": 5,
-    "target_min": 3,
-    "aggregate_rating": 4.7,
-    "aggregate_rating_source": "autoshoplookup.com live page"
+    "google_total_reviews": 74,
+    "google_rating": 4.7
   },
-  "notes": "Piedmont Tires (New/Used). Chamblee-area tire shop at 3483 Clairmont Rd, Atlanta GA 30319. Phone (404) 990-1088. Named technician Andrew appears in 2 of 5 captured reviews as honest + fair + anti-upsell. 4.7★ / 20 reviews on autoshoplookup. New + used tire sales, flat repair, towing. Meets 1-pass trigger (captured >= 3) per HANDOFF-CONTRACT §3; HTML build deferred to dedicated pass-3 iteration.",
+  "notes": "Places API pull ChIJ4e9z2cYJ9YgRMJkEnhv__EM (4.7/74). 0 new reviews this cycle.",
   "capture_attempts": [
-    {"source": "autoshoplookup", "status": "success", "reason": "5 verbatim reviews with named reviewers + dates + ratings captured"},
-    {"source": "wheree", "status": "403", "reason": "anti-scrape"},
-    {"source": "yelp", "status": "not_attempted", "reason": "results showed different 'Tires Plus' result, not Piedmont Tires"},
-    {"source": "google_gbp", "status": "not_attempted", "reason": "no GBP share URL in rebuild-queue.json"}
+    {
+      "source": "autoshoplookup",
+      "status": "success",
+      "reason": "5 verbatim reviews with named reviewers + dates + ratings captured"
+    },
+    {
+      "source": "wheree",
+      "status": "403",
+      "reason": "anti-scrape"
+    },
+    {
+      "source": "yelp",
+      "status": "not_attempted",
+      "reason": "results showed different 'Tires Plus' result, not Piedmont Tires"
+    },
+    {
+      "source": "google_gbp",
+      "status": "not_attempted",
+      "reason": "no GBP share URL in rebuild-queue.json"
+    }
   ],
   "flags": [
     "unblocked_for_1pass_html_build_next_iteration",
     "andrew_named_tech_honest_anti_upsell_angle",
     "google_gbp_retry_would_add_coverage"
   ],
-  "team_from_reviews": ["Andrew (technician, possibly owner — named in 2 of 5 reviews)"],
+  "team_from_reviews": [
+    "Andrew (technician, possibly owner — named in 2 of 5 reviews)"
+  ],
   "created_at": "2026-04-19T17:06:00-04:00",
   "created_by": "r1vs",
   "schema_version": "1.0"
