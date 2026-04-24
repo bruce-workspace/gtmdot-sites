@@ -1,0 +1,17 @@
+{
+  "vertical": "electrical",
+  "service_cards": {
+    "electrical-repair": "zap",
+    "panel-upgrade": "battery-charging",
+    "ev-charger-installation": "plug-zap",
+    "ceiling-fan-installation": "lightbulb"
+  },
+  "hero": null,
+  "nav": {
+    "menu": "menu"
+  },
+  "contact": {
+    "upload": "upload-cloud"
+  },
+  "notes": "Electrical vertical uses distinct tools, not hammer/wrench. zap=repair, battery-charging=panel, plug-zap=EV, lightbulb=ceiling-fan+lighting. Matches ICON-MAPPING.md."
+}

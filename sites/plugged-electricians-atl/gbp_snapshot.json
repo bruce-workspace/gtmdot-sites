@@ -1,0 +1,46 @@
+{
+  "slug": "plugged-electricians-atl",
+  "fetched_at": "2026-04-24T03:03:12Z",
+  "original_fetched_at": "2026-04-24T03:03:12Z",
+  "source": "google_places_api_v1",
+  "refresh_count": 0,
+  "refresh_log": [],
+  "place_id": "ChIJC3_VtuzT6WkR9psfNzHcAWo",
+  "business_name": "Plugged Electricians Atl LLc",
+  "formatted_address": "1445 Woodmont Ln NW, Atlanta, GA 30318, USA",
+  "rating": 4.9,
+  "review_count_total": 13,
+  "reviews_captured": 5,
+  "reviews_captured_sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 5,
+      "fetched_at": "2026-04-24T03:03:12Z"
+    }
+  ],
+  "last_review_date": "2025-08-11",
+  "earliest_review_date": "2024-02-28",
+  "photo_count_on_gbp": 6,
+  "primary_phone": "+16787872022",
+  "primary_phone_formatted": "(678) 787-2022",
+  "hours_summary": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+  "hours_structured": [
+    {
+      "dayOfWeek": "Sunday",
+      "opens": "00:00",
+      "closes": null
+    }
+  ],
+  "website_url": null,
+  "categories": [
+    "electrician",
+    "establishment",
+    "point_of_interest"
+  ],
+  "gbp_match_verified": true,
+  "gbp_url": "https://maps.google.com/?cid=7638628546933398518",
+  "staleness_policy": {
+    "soft_stale_days": 14,
+    "hard_stale_days": 30
+  }
+}

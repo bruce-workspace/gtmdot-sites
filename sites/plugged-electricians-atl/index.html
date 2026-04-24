@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plugged Electricians Atl LLC — Electrical services in Atlanta, GA</title>
+  <meta name="description" content="Licensed Atlanta electrician serving Buckhead, Decatur, Sandy Springs. Free estimates on repairs, panel upgrades, EV chargers. 4.9★ on Google. Call (678) 787-2022.">
+  <link rel="canonical" href="https://plugged-electricians-atl.gtmdot.com/">
+  <link rel="stylesheet" href="_base.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Plugged Electricians Atl LLC — Electrical services in Atlanta">
+  <meta property="og:description" content="Licensed Atlanta electrician serving Buckhead, Decatur, Sandy Springs. Free estimates on repairs, panel upgrades, EV chargers. 4.9★ on Google. Call (678) 787-2022.">
+  <meta property="og:url" content="https://plugged-electricians-atl.gtmdot.com/">
+
+  <!-- JSON-LD LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Plugged Electricians Atl LLC",
+    "image": "https://plugged-electricians-atl.gtmdot.com/photos/hero.jpg",
+    "telephone": "(678) 787-2022",
+    "email": "contact@pluggedelectriciansatl.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1445 Woodmont Ln NW",
+      "addressLocality": "Atlanta",
+      "addressRegion": "GA",
+      "postalCode": "30318",
+      "addressCountry": "US"
+    },
+    "url": "https://plugged-electricians-atl.gtmdot.com/",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "13"
+    },
+    "areaServed": "Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a class="site-logo" href="/">Plugged Electricians</a>
+    <nav class="site-nav">
+      <a href="/services.html">Services</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a class="cta-btn" href="/contact.html">Get a Free Estimate</a>
+    </nav>
+    <button class="hamburger" aria-label="Open menu" onclick="document.querySelector('.site-nav').classList.toggle('open')">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <h1>Atlanta electrical repair and installation, done right the first time</h1>
+    <p class="lede">Licensed, insured, and trusted by 4.9★-rated homeowners across Buckhead, Decatur, and Sandy Springs. Free estimates within the hour.</p>
+    <a class="cta-btn" href="/contact.html">Get a Free Estimate</a>
+  </div>
+</section>
+
+<!-- HERO PHOTO SLOT (resolved post-handoff) -->
+<div class="wrap" style="padding: 0; margin-top: -32px; margin-bottom: 32px;">
+  <figure class="gtmdot-photo-slot"
+          data-slot-id="HERO"
+          data-context="electrician-at-work-OK|service-van-OK|panel-install-OK"
+          data-resolved="false"
+          style="aspect-ratio: 16/9;">
+    <img src="photos/hero.jpg" alt="">
+  </figure>
+</div>
+
+<!-- SERVICES TEASER -->
+<section>
+  <div class="wrap">
+    <h2>What we do</h2>
+    <div class="service-grid">
+      <!-- Replace this block per service. Each card links to its own SEO page. -->
+      <a class="service-card" href="/electrical-repair-atlanta.html">
+        <i class="icon" data-lucide="zap"></i>
+        <h3>Electrical Repair</h3>
+        <p>Tripping breakers, dead outlets, flickering lights — diagnosed and fixed the same day, most of the time.</p>
+      </a>
+      <a class="service-card" href="/panel-upgrade-atlanta.html">
+        <i class="icon" data-lucide="battery-charging"></i>
+        <h3>Panel Upgrades</h3>
+        <p>200-amp service upgrades, subpanel additions, and whole-home rewires. Priced up front, permitted properly.</p>
+      </a>
+      <a class="service-card" href="/ev-charger-installation-atlanta.html">
+        <i class="icon" data-lucide="plug-zap"></i>
+        <h3>EV Charger Installation</h3>
+        <p>Level 2 home chargers (Tesla, ChargePoint, Wallbox) installed and inspected. Panel load check included.</p>
+      </a>
+      <!-- Add more service cards as needed; duplicate pattern -->
+    </div>
+    <p style="margin-top: 24px; text-align: center;">
+      <a href="/services.html" style="color: var(--accent); font-weight: 600;">See all services →</a>
+    </p>
+  </div>
+</section>
+
+<!-- REVIEWS BAR -->
+<!--
+  CONTRACT (per R1VS introspection fix #1):
+  - If reviews.json captured >= 3: render reviews-track with mini cards below
+  - If captured 1-2: render a single mini card + "See all on Google" link
+  - If captured 0: render the reviews-empty-state block (NO fabrication)
+  -->
+<section class="reviews-bar" id="reviews">
+  <div class="wrap">
+    <h2>What our customers say</h2>
+
+    <!-- WHEN CAPTURED >= 3: -->
+    <div class="reviews-track">
+      <!-- Each review-mini = one VERBATIM review from reviews.json.
+           reviewer-name slot must NOT contain: "Google Customer", "Angi Customer",
+           "Verified Homeowner", "Company Mission", "Our Story", etc. -->
+      <div class="review-mini">
+        <p class="review-mini-text">I highly recommend this company they have done electrical work throughout my house both inside and out.She was extremely knowledgeable and has great work ethic. She was punctual, competent and trustworthy. She answers all questions and provides suggestions as needed. I would
+Trul</p>
+        <div class="review-meta">
+          <span class="review-name">Kecia Sanders</span>
+          <span class="review-source">Google Review</span>
+        </div>
+      </div>
+      <!-- duplicate review-mini blocks per review up to captured count -->
+    </div>
+
+    <!-- WHEN CAPTURED 0 (uncomment to use, delete reviews-track above):
+    <div class="reviews-empty-state">
+      <p>Featured in 4.9★ Google reviews (13).</p>
+      <a class="gbp-link" href="https://maps.google.com/?cid=7638628546933398518" target="_blank" rel="noopener">Read reviews on Google →</a>
+    </div>
+    -->
+  </div>
+</section>
+
+<!-- GALLERY (ambiguous photo slots) -->
+<section>
+  <div class="wrap">
+    <h2>Recent work</h2>
+    <div class="gtmdot-photo-gallery">
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="GALLERY_1"
+              data-context="electrical-panel-OK|breaker-box-OK|wiring-OK"
+              data-resolved="false">
+        <img src="photos/gbp-1.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="GALLERY_2"
+              data-context="light-fixture-OK|ceiling-fan-OK|interior-OK"
+              data-resolved="false">
+        <img src="photos/gbp-2.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="GALLERY_3"
+              data-context="ev-charger-OK|outdoor-wiring-OK|garage-install-OK"
+              data-resolved="false">
+        <img src="photos/gbp-3.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="GALLERY_4"
+              data-context="outlet-OK|switch-OK|before-after-OK"
+              data-resolved="false">
+        <img src="photos/gbp-4.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="GALLERY_5"
+              data-context="electrician-at-work-OK|residential-interior-OK"
+              data-resolved="false">
+        <img src="photos/gbp-5.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="GALLERY_6"
+              data-context="truck-OK|team-OK|uniform-OK"
+              data-resolved="false">
+        <img src="photos/gbp-6.jpg" alt="">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FOOTER -->
+<section style="background: var(--accent-soft); text-align: center;">
+  <div class="wrap">
+    <h2>Ready to get started?</h2>
+    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">Free estimates, no pressure. We show up when we say we will.</p>
+    <a class="cta-btn" href="/contact.html">Get a Free Estimate</a>
+    <p style="margin-top: 16px;">or call <a href="tel:+16787872022" style="color: var(--accent); font-weight: 600;">(678) 787-2022</a></p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Plugged Electricians</h4>
+        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Atlanta's trusted electrical team</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="/services.html">All services</a>
+        <a href="/electrical-repair-atlanta.html">Electrical Repair</a>
+        <a href="/panel-upgrade-atlanta.html">Panel Upgrades</a>
+        <a href="/ev-charger-installation-atlanta.html">EV Charger Installation</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+16787872022">(678) 787-2022</a>
+        <a href="mailto:contact@pluggedelectriciansatl.com">contact@pluggedelectriciansatl.com</a>
+        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Plugged Electricians Atl LLC. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  if (window.lucide) window.lucide.createIcons();
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.lucide) window.lucide.createIcons();
+  });
+</script>
+
+</body>
+</html>

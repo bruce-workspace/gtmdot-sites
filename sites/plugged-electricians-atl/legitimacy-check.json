@@ -1,0 +1,22 @@
+{
+  "slug": "plugged-electricians-atl",
+  "passed": true,
+  "reasons": [],
+  "snapshot_at": "2026-04-24T03:03:07.256664+00:00",
+  "rules_applied": {
+    "min_rating": 4.5,
+    "min_reviews": 10,
+    "farm_window_days": 30,
+    "farm_window_fraction": 0.5,
+    "dormant_months": 24
+  },
+  "snapshot_data": {
+    "name": "Plugged Electricians Atl LLc",
+    "address": "1445 Woodmont Ln NW, Atlanta, GA 30318, USA",
+    "rating": 4.9,
+    "total_reviews": 13,
+    "reviews_captured": 5,
+    "gbp_match": true,
+    "place_id": "ChIJC3_VtuzT6WkR9psfNzHcAWo"
+  }
+}

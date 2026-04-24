@@ -1,0 +1,229 @@
+<!doctype html>
+<!--
+  PER-SERVICE SEO PAGE TEMPLATE
+  Copy this once per service in the vertical and rename to /{service-slug}-{city}.html
+  Example filenames:
+    /refrigerator-repair-atlanta.html
+    /ac-repair-atlanta.html
+    /drain-cleaning-atlanta.html
+
+  Every per-service page MUST have:
+    - Unique <title> with service + city
+    - Unique <meta name="description"> (140-160 chars)
+    - Unique <h1> matching title intent
+    - JSON-LD Service schema linked to LocalBusiness
+    - 400-600 words of unique content (not duplicated from other service pages)
+    - Specific photos via .gtmdot-photo-slot with service-relevant data-context
+    - 3-5 service-specific FAQs for long-tail queries
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Electrical Repair in Atlanta, GA — Plugged Electricians</title>
+  <meta name="description" content="Licensed Atlanta electrician for tripping breakers, dead outlets, flickering lights. Free estimates. 4.9★ on Google. Call Plugged Electricians: (678) 787-2022.">
+  <link rel="canonical" href="https://plugged-electricians-atl.gtmdot.com/electrical-repair-atlanta.html">
+  <link rel="stylesheet" href="_base.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+  <!-- JSON-LD Service schema, linked to parent LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Electrical Repair in Atlanta",
+    "serviceType": "Electrical Repair",
+    "description": "Licensed Atlanta electrician for tripping breakers, dead outlets, flickering lights. Free estimates. 4.9★ on Google. Call Plugged Electricians: (678) 787-2022.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Plugged Electricians Atl LLC",
+      "telephone": "(678) 787-2022",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1445 Woodmont Ln NW",
+        "addressLocality": "Atlanta",
+        "addressRegion": "GA",
+        "postalCode": "30318",
+        "addressCountry": "US"
+      },
+      "url": "https://plugged-electricians-atl.gtmdot.com/"
+    },
+    "areaServed": "Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody",
+    "url": "https://plugged-electricians-atl.gtmdot.com/electrical-repair-atlanta.html"
+  }
+  </script>
+
+  <!-- JSON-LD FAQPage schema (use ONLY if the page has 3+ FAQs) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does an electrical repair cost in Atlanta?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most straightforward repairs (outlet replacement, breaker swap, switch fix) are in the $150–$300 range including parts. Bigger repairs involving rewiring or panel work are quoted after diagnosis — always before we start." }
+      },
+      {
+        "@type": "Question",
+        "name": "Are you licensed and insured in Georgia?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. We're a licensed electrical contractor in the state of Georgia and carry general liability plus workers' comp insurance. Happy to send copies before we come out." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you handle emergency calls?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We answer the phone 24/7 for emergencies. A true emergency (sparks, smoke, smell of burning, complete power loss) gets a same-night visit. Non-emergencies get scheduled for next available slot." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a class="site-logo" href="/">Plugged Electricians</a>
+    <nav class="site-nav">
+      <a href="/services.html">Services</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a class="cta-btn" href="/contact.html">Get a Free Estimate</a>
+    </nav>
+    <button class="hamburger" aria-label="Open menu" onclick="document.querySelector('.site-nav').classList.toggle('open')">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</header>
+
+<!-- HERO (service-specific) -->
+<section class="hero">
+  <div class="wrap">
+    <p style="font-size: 14px; color: var(--ink-soft); margin: 0 0 12px;">
+      <a href="/services.html" style="color: var(--ink-soft); text-decoration: none;">Services</a> / Electrical Repair
+    </p>
+    <h1>Electrical repair in Atlanta, done same-day</h1>
+    <p class="lede">Tripping breakers, dead outlets, flickering lights — diagnosed and fixed the same day, most of the time.</p>
+    <a class="cta-btn" href="/contact.html">Get a Free Estimate</a>
+  </div>
+</section>
+
+<!-- SERVICE BODY — 400-600 words of unique content -->
+<section>
+  <div class="wrap" style="max-width: 840px;">
+    <h2>What we fix</h2>
+    <p style="font-size: 17px; line-height: 1.65;">Most electrical problems in older Atlanta homes trace back to one of four things: a failing breaker, a loose connection behind a switch or outlet, overloaded circuits, or worn wiring in a wet area (kitchen, bathroom, outdoor). We start every repair call with a load check and a visual on the panel — that usually narrows the cause in under 15 minutes.</p>
+    <p style="font-size: 17px; line-height: 1.65;">We quote the repair before we start. If what you need is a breaker replacement, that's one number. If the diagnosis reveals something bigger — say, aluminum wiring in a 1970s home, or a panel that's been flagged by an inspection — we'll tell you what the full scope looks like and let you decide whether to fix it now or phase it.</p>
+
+    <h3>How diagnosis works</h3>
+    <p style="font-size: 17px; line-height: 1.65;">Flickering lights are the most common call. About 60% of the time the cause is a loose neutral on the circuit, which is a quick fix. The other 40% splits between an overloaded circuit (especially in old homes where one 15-amp circuit is feeding half a floor), a failing light fixture, or — in the worst case — a utility-side voltage fluctuation that needs Georgia Power to look at.</p>
+    <p style="font-size: 17px; line-height: 1.65;">Dead outlets are usually a tripped GFCI somewhere else on the same circuit, a wire that's come loose behind the outlet, or a failed outlet that needs replacement. We carry common-replacement outlets on the truck so we can usually fix it on the first visit.</p>
+
+    <h3>What to expect</h3>
+    <ol style="font-size: 17px; line-height: 1.7;">
+      <li>Call (678) 787-2022 or submit the form. We'll get you a same-day slot if you're in the Atlanta metro.</li>
+      <li>We arrive with diagnostic tools, do a load check, and walk the problem with you in plain English.</li>
+      <li>Before touching anything, we quote the repair. You say yes or no. Nothing's started without your go-ahead.</li>
+      <li>We fix it, test it, clean up, and you get a written summary of what was done.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- SERVICE-SPECIFIC GALLERY -->
+<section style="background: var(--paper-soft);">
+  <div class="wrap">
+    <h2>Electrical Repair — recent work</h2>
+    <div class="gtmdot-photo-gallery">
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="SERVICE_GALLERY_1"
+              data-context="electrical-panel-OK|breaker-box-OK|outlet-OK|wiring-OK|residential-interior-OK"
+              data-resolved="false">
+        <img src="photos/gbp-1.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="SERVICE_GALLERY_2"
+              data-context="electrical-panel-OK|breaker-box-OK|outlet-OK|wiring-OK|residential-interior-OK"
+              data-resolved="false">
+        <img src="photos/gbp-2.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="SERVICE_GALLERY_3"
+              data-context="electrical-panel-OK|breaker-box-OK|outlet-OK|wiring-OK|residential-interior-OK"
+              data-resolved="false">
+        <img src="photos/gbp-3.jpg" alt="">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- FAQs -->
+<section>
+  <div class="wrap" style="max-width: 840px;">
+    <h2>Frequently asked questions</h2>
+
+    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
+      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">How much does an electrical repair cost in Atlanta?</summary>
+      <p style="margin: 12px 0 0; line-height: 1.6;">Most straightforward repairs (outlet replacement, breaker swap, switch fix) are in the $150–$300 range including parts. Bigger repairs involving rewiring or panel work are quoted after diagnosis — always before we start.</p>
+    </details>
+
+    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
+      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">Are you licensed and insured in Georgia?</summary>
+      <p style="margin: 12px 0 0; line-height: 1.6;">Yes. We're a licensed electrical contractor in the state of Georgia and carry general liability plus workers' comp insurance. Happy to send copies before we come out.</p>
+    </details>
+
+    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
+      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">Can you handle emergency calls?</summary>
+      <p style="margin: 12px 0 0; line-height: 1.6;">We answer the phone 24/7 for emergencies. A true emergency (sparks, smoke, smell of burning, complete power loss) gets a same-night visit. Non-emergencies get scheduled for next available slot.</p>
+    </details>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background: var(--accent-soft); text-align: center;">
+  <div class="wrap">
+    <h2>Ready for Electrical Repair in Atlanta?</h2>
+    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">Most repairs are same-day. Tell us what's going on and we'll send someone out.</p>
+    <a class="cta-btn" href="/contact.html">Get a Free Estimate</a>
+    <p style="margin-top: 16px;">or call <a href="tel:+16787872022" style="color: var(--accent); font-weight: 600;">(678) 787-2022</a></p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Plugged Electricians</h4>
+        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Atlanta's trusted electrical team</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="/services.html">All services</a>
+        <a href="/electrical-repair-atlanta.html">Electrical Repair</a>
+        <a href="/panel-upgrade-atlanta.html">Panel Upgrades</a>
+        <a href="/ev-charger-installation-atlanta.html">EV Charger Installation</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+16787872022">(678) 787-2022</a>
+        <a href="mailto:contact@pluggedelectriciansatl.com">contact@pluggedelectriciansatl.com</a>
+        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Plugged Electricians Atl LLC. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.lucide) window.lucide.createIcons();
+  });
+</script>
+
+</body>
+</html>

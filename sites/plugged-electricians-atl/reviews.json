@@ -1,0 +1,55 @@
+{
+  "captured": 5,
+  "total_reviews": 13,
+  "overall_rating": 4.9,
+  "sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 5,
+      "fetched_at": "2026-04-24T03:03:59.006277Z"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Kecia Sanders",
+      "rating": 5,
+      "date": "2024-02-28",
+      "source": "google",
+      "text": "I highly recommend this company they have done electrical work throughout my house both inside and out.She was extremely knowledgeable and has great work ethic. She was punctual, competent and trustworthy. She answers all questions and provides suggestions as needed. I would\nTruly recommend this company with any electrical project.",
+      "verified": true
+    },
+    {
+      "author": "Sharonda Hector",
+      "rating": 5,
+      "date": "2024-02-28",
+      "source": "google",
+      "text": "I recently purchased a house and needed a lot of electrical work done. This young lady was on time, very professional, knowledgeable, had reasonable prices, and best of all DID an AMAZING job!!!\nYou will not be disappointed.\nIt\u2019s refreshing to find a true professional who takes pride in their work.",
+      "verified": true
+    },
+    {
+      "author": "latronia sanders",
+      "rating": 5,
+      "date": "2024-02-28",
+      "source": "google",
+      "text": "Only 5 stars?! if I could give them 10 stars I would.Very professional, Work was clean  on time, on budget, extremely professional, absolutely fair and honest! THIS COMPANY IS STUCK WITH ME and any electrical needs",
+      "verified": true
+    },
+    {
+      "author": "S Morrison",
+      "rating": 5,
+      "date": "2025-08-11",
+      "source": "google",
+      "text": "PLUGGED Electricians recently serviced one of my properties, delivering high-quality electrical work at a very competitive rate. They demonstrated professionalism, efficiency and clear communication from start to finish.",
+      "verified": true
+    },
+    {
+      "author": "Courtney Bozeman",
+      "rating": 5,
+      "date": "2024-02-28",
+      "source": "google",
+      "text": "Plugged Electricians is top tier!! The professionalism & expertise allowed for an amazing & informative experience. I will definitely use their services again if ever needed & highly recommend them for all electrical needs!",
+      "verified": true
+    }
+  ],
+  "captured_at": "2026-04-24T03:03:59.006283Z"
+}

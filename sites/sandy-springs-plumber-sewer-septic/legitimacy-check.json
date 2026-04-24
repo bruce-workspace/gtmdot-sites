@@ -1,0 +1,24 @@
+{
+  "slug": "sandy-springs-plumber-sewer-septic",
+  "passed": false,
+  "reasons": [
+    "total_reviews 4 < 10 (insufficient signal)"
+  ],
+  "snapshot_at": "2026-04-24T03:02:05.833197+00:00",
+  "rules_applied": {
+    "min_rating": 4.5,
+    "min_reviews": 10,
+    "farm_window_days": 30,
+    "farm_window_fraction": 0.5,
+    "dormant_months": 24
+  },
+  "snapshot_data": {
+    "name": "Sandy Springs Plumber, Sewer & Septic",
+    "address": "130 Allen Rd NE #242, Sandy Springs, GA 30328, USA",
+    "rating": 5,
+    "total_reviews": 4,
+    "reviews_captured": 4,
+    "gbp_match": true,
+    "place_id": "ChIJ0TOqvecP9YgRj1XU_bFSFZc"
+  }
+}
