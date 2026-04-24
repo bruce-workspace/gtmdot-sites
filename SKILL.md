@@ -2,6 +2,34 @@
 
 Automated local business website generation + direct mail pipeline. Two workflows: Group A (no website) and Group B (bad/outdated website). Output: personalized preview site + 6x9 postcard with QR code.
 
+**Last major revision:** 2026-04-23 — added Phase 0 (legitimacy pre-screen), Phase 4 (pre-push gate), Phase 5 (verify + handoff). Updated Phase 1 (now requires `gbp_snapshot.json` + `BUILD-STATE.md` artifacts) and Phase 3 (multi-page replaces single-page; ambiguous photo slots; conditional review UI; no fabrication). Ratified per R1VS + Mini proposals in `messages/r1vs/2026-04-23-231000-r1vs-proposal-skill-md-restructure.md` and `messages/2026-04-23-2350-mini-to-r1vs-ack-both-proposals.md`, Jesse ACK in session.
+
+**Phase flow (R1VS → Master Site Builder → Postcard):**
+
+```
+Phase 0  Legitimacy pre-screen     [R1VS]    auto-DQ before research
+Phase 1  Research                  [R1VS]    + gbp_snapshot.json + BUILD-STATE.md
+Phase 2  Design                    [R1VS]    brand / content / vertical palette
+Phase 3  Build (multi-page)        [R1VS]    templates/multi-page/ scaffold
+Phase 4  Pre-push gate             [R1VS]    ./scripts/pre-push-gate.sh
+Phase 5  Verify + handoff          [R1VS]    ./scripts/verify-build.sh + finalization message
+──── handoff to Master Site Builder ────
+         QA / photo resolution /   [MSB]     claim-bar injection, deploy, Supabase advance
+         claim-bar / deploy
+Phase 6  Postcard                  [MSB]     outreach
+```
+
+**Supporting scripts + templates (all live on main):**
+
+- `scripts/legitimacy-screen.py` — Phase 0 auto-DQ rules
+- `scripts/pre-push-gate.sh` — Phase 4 six checks
+- `scripts/verify-build.sh` — Phase 5 six checks (add `--live <url>` for post-deploy)
+- `scripts/bootstrap.sh` — session-start state reconciliation
+- `scripts/write-gbp-snapshot.py` — Phase 1 GBP snapshot writer (Mini schema ACK 2026-04-23)
+- `templates/BUILD-STATE.template.md` — per-site build state tracker
+- `templates/multi-page/*` — Phase 3 scaffold (index, services, about, contact, service-page, _base.css)
+- `templates/photo-slot.css` + `templates/photo-slot.md` — ambiguous photo slot contract
+
 ---
 
 ## ⚠️ MANDATORY WORKFLOW GATES (Non-Skippable)
@@ -90,9 +118,83 @@ API keys (all in `~/.openclaw/.env`):
 
 ---
 
+## Phase 0 — Legitimacy pre-screen (runs BEFORE research, both groups)
+
+**Ratified 2026-04-23 per Mini pipeline review finding #1 + R1VS introspection fix #4. Jesse ACK in session 2026-04-23 late evening.**
+
+Kills a build cycle up front if the prospect is a review farm, a dormant business, a rep-too-thin prospect, a ghost GBP listing, or a non-local-trade lead-gen pattern. The overnight QA pass on 2026-04-22 found three sites that should never have been built (AI review farm, no GBP at address, 4.2★ thin rep). Each cost a full build cycle. Phase 0 prevents that.
+
+### How to run
+
+```bash
+# Option A — live Places API lookup (preferred)
+python3 scripts/legitimacy-screen.py <slug> \
+  --places-api \
+  --name "Business Name" \
+  --address "123 Main St, Atlanta, GA 30309" \
+  --vertical hvac
+
+# Option B — offline, from pre-captured JSON (useful in tests or when Places API is down)
+python3 scripts/legitimacy-screen.py <slug> \
+  --gbp-json sites/<slug>/gbp-input.json \
+  --vertical hvac
+```
+
+### Auto-DQ rules
+
+| Rule | Threshold | Reason |
+|---|---|---|
+| Rating | < 4.5 | Thin rep — won't convert well, may harm GTMDot brand |
+| Total reviews | < 10 | Insufficient signal |
+| Farm pattern | > 50% of reviews in any 30-day window | Probable astroturf / review farm |
+| GBP address match | No match | Ghost listing — the business isn't actually at the claimed address |
+| Dormancy | Latest review > 24 months old | Business may be defunct |
+| Vertical blocklist | `lead-gen-broker`, `franchise-unverified`, `referral-funnel` | Not a local-trade business |
+
+### Output
+
+`sites/<slug>/legitimacy-check.json`:
+
+```json
+{
+  "slug": "...",
+  "passed": true,
+  "reasons": [],
+  "snapshot_at": "2026-04-23T22:00:00Z",
+  "rules_applied": { ... },
+  "snapshot_data": { ... }
+}
+```
+
+### On pass
+
+Proceed to Phase 1 research.
+
+### On fail
+
+1. **Stop the build.** Do not advance to Phase 1.
+2. Write `messages/YYYY-MM-DD-HHMM-r1vs-<slug>-legitimacy-flag.md` with the failure reasons + the `legitimacy-check.json` contents.
+3. Flag the prospect in Supabase (`stage: dead` + `disqualified_reason` with the first reason from the check).
+4. Jesse decides whether to override (rare) or accept the DQ (default).
+
+### Edge cases
+
+- **Rating = exactly 4.5:** passes (threshold is `<`, not `<=`).
+- **Reviews captured from Places API returns fewer than `review_count_total` says exist:** OK — Places Details API caps at 5 reviews per call. The farm-pattern check uses what's captured; it's a conservative rule (false-negatives on farms with 100+ reviews are acceptable, false-positives on legit businesses are not).
+- **No address in CRM intake record:** legitimacy screen cannot run. Flag back to Jesse for manual address entry before any Phase 0 attempt.
+
+---
+
 ## Group B Workflow (has bad site)
 
 ### Phase 1: Research
+
+**Prerequisite:** Phase 0 legitimacy screen MUST have passed (`sites/<slug>/legitimacy-check.json` exists with `"passed": true`). Do not start Phase 1 research if Phase 0 failed or hasn't run.
+
+**Required artifacts written during Phase 1 (initialize early, fill as phases advance):**
+
+1. `sites/<slug>/gbp_snapshot.json` — pinned GBP data (rating, review counts, dates, phone, hours, place_id) so later phases don't chase drift. Schema + writer: `scripts/write-gbp-snapshot.py`. Re-fetched by Mini on soft-stale (>14d) or hard-stale (>30d).
+2. `sites/<slug>/BUILD-STATE.md` — per-site checkbox list per `templates/BUILD-STATE.template.md`. Check boxes the moment work is done, not when "mostly done." Crash recovery = find first unchecked box.
 
 **1a. Site audit — scrape ALL pages, not just homepage**
 
@@ -273,25 +375,64 @@ Always use a dark gradient overlay on hero photos for text legibility. Never pla
 - Paper MCP is headless — Jesse must physically switch the active file at the mini
 - Do NOT update Paper during HTML iteration — only sync once the HTML is done
 
-**3b. HTML preview site — single-page rich-sectioned build**
+**3b. HTML preview site — multi-page build (SKILL §3b updated 2026-04-23 per Mini ACK)**
 
-Build a single `index.html` with all standard sections inline. **Do not build multi-page** — it would break the deploy pipeline (see "Pipeline dependency" below).
+Build multi-page from the `templates/multi-page/` scaffold. Owners Google `[service] [city]` and that rewards dedicated per-service URLs with unique content. One-pagers don't compete. **The old "single-page rich-sectioned" pattern is retired** — see archive in `HANDOFF-CONTRACT-ARCHIVE.md` for legacy reference.
 
-**Required sections (in order):**
-- Hero (badge, accent headline, sub, primary + secondary actions, optional hero-quote)
+**How to start a new build:**
+
+```bash
+cp -r templates/multi-page/* sites/<slug>/
+# then fill {{TOKEN}} placeholders; pre-push-gate will reject any that remain
+```
+
+**Pages every site must ship with:**
+
+- `index.html` — homepage (hero, 3-5 service teasers, reviews bar, gallery, CTA)
+- `services.html` — full service listing with links to per-service pages
+- `about.html` — owner bio + service area + team
+- `contact.html` — form with upload module + hours + phone
+- One per-service SEO page per service in the vertical (e.g., `/refrigerator-repair-atlanta.html`, `/ac-repair-atlanta.html`) — copy `service-page.html` once per service
+
+**Per-service SEO page requirements (non-negotiable):**
+
+1. Unique `<title>` — includes service + city keywords
+2. Unique `<meta name="description">` — 140-160 chars, includes service + city + trust signal
+3. Unique `<h1>` matching title intent
+4. JSON-LD `Service` schema linked to parent `LocalBusiness`
+5. URL slug with keyword (`/refrigerator-repair-atlanta.html`, not `/service-1.html`)
+6. 400-600 words of unique content — not duplicated across service pages
+7. Service-relevant photos via `.gtmdot-photo-slot` with matching `data-context`
+8. 3-5 service-specific FAQs for long-tail queries (gets FAQPage schema)
+
+**Ambiguous photo slots (no pre-written captions):**
+
+R1VS reserves photo slots with `data-slot-id` + `data-context` attributes only. Master Site Builder writes the `<figcaption>` after seeing what Bruce actually scraped. See `templates/photo-slot.md` for the full contract and `templates/photo-slot.css` for the CSS class (also included in `templates/multi-page/_base.css`).
+
+**Conditional review UI (the anti-fabrication rule):**
+
+Reviews render based on `reviews.json` `captured` count. Never fabricate to fill slots.
+
+- `captured >= 3` → full `.reviews-track` with mini cards, one per VERBATIM review
+- `captured 1-2` → single mini card + "See all on Google" link to the GBP
+- `captured 0` → `.reviews-empty-state` block with "Featured in {rating}★ Google reviews" + GBP link
+
+If `captured < 3` or GBP `photo_count_on_gbp < 3`, R1VS writes `sites/<slug>/collect-request.md` so Bruce enriches via Yelp / Nextdoor / Thumbtack / Firecrawl before Master Site Builder deploys.
+
+**Sections every homepage still needs** (now split across multi-page — this is the content coverage bar):
+
+- Hero (on `index.html`)
 - Stats widget — 4 tiles
 - Marquee — scrolling credentials / service list
-- Services grid — 6–8 cards with Lucide icons per `ICON-MAPPING.md`
-- Reviews section — 2-tier (pull-quote + review-feed) per `DESIGN-HEURISTICS.md` §3
-- Story / timeline / owner section
+- Services grid — 6-8 cards with Lucide icons per `ICON-MAPPING.md`
+- Reviews bar — conditional per above rule
+- Story / timeline / owner section (on `about.html`)
 - Area pills — cities served
-- FAQ — accordion if scrape-source FAQ content exists; skip entirely if not
-- Contact form with service-type dropdown
+- FAQ — accordion on the relevant per-service page if content exists
+- Contact form with upload module (on `contact.html`)
 - Footer — brand description + services list + contact
 
-**Nav uses `#anchor` fragments for intra-page scroll.** Mobile keeps the full section list under the hamburger menu. Do not build nav with cross-page links — there's only one page.
-
-**Reference structural pattern (shipped live):** `sites/bobs-hvac/`, `sites/cleveland-electric/`, `sites/jack-glass-electric/`, `sites/pine-peach-painting/`. Match their section coverage, density, and inline-CSS approach.
+**Reference structural pattern (the new standard):** `templates/multi-page/`. Legacy one-pagers at `sites/bobs-hvac/`, `sites/cleveland-electric/`, `sites/jack-glass-electric/`, `sites/pine-peach-painting/` remain as DESIGN reference (typography, spacing, density), but their STRUCTURE is retired — future builds are multi-page.
 
 **Review sections — use real data only:**
 - Pull reviews from Google Places API: `GET /maps/api/place/details/json?fields=reviews,rating,user_ratings_total`
@@ -344,7 +485,66 @@ Until that work lands, single-page is the only shape. If the per-service pages b
 
 ---
 
-### Phase 4: Postcard
+### Phase 4: Pre-push gate (R1VS-owned, non-skippable)
+
+**Ratified 2026-04-23 per R1VS introspection fixes #1/#6/#7/#8/#10 + Mini pipeline review finding #2. Jesse ACK in session 2026-04-23 late evening.**
+
+Before pushing any `intake/<slug>` branch to origin, run the pre-push gate. It's a safety net that refuses to let a build with known-bad patterns leave R1VS's machine.
+
+```bash
+./scripts/pre-push-gate.sh <slug>
+```
+
+Six checks, all must pass:
+
+1. **fabrication-grep** — hard-block strings ("Yahoo Local," "Verbatim customer quotes are being consolidated") + context-aware reviewer-name slot check (catches "Google Customer," "Angi Customer," "Verified Homeowner," etc. when used as a reviewer name, not when used as a source label).
+2. **stock-image-grep** — blocks `unsplash.com`, `istockphoto.com`, `pravatar.cc`, `placeholder.com`, `picsum.photos`, and other stock / placeholder hosts.
+3. **claim-bar-grep** — R1VS must not inject claim bar, popup, or cookie banner. Mini injects at deploy time per CLAUDE.md.
+4. **review-count-audit** — `reviews.json` `captured` count must match the number of rendered `.review-mini` / `.review-card` elements in HTML. If `captured < 3`, HTML must use `.reviews-empty-state` instead.
+5. **icon-intent-diff** — every `<i data-lucide="X">` in HTML must be listed in `icon-intent.json` per `ICON-MAPPING.md`. No icon freestyling.
+6. **proposal-gate** — if the commit touches any source-of-truth doc (`CLAUDE.md`, `SKILL.md`, `HANDOFF-CONTRACT.md`, `DESIGN-HEURISTICS.md`, `ICON-MAPPING.md`, `TERMINOLOGY-MAPPING.md`, `R1VS-REBUILD-BRIEF.md`), a matching `messages/*proposal*.md` + `messages/*jesse-ack*.md` must exist. Enforces CLAUDE.md §80-99.
+
+Exit 0 means push is safe. Exit 1 means fix before pushing. Never bypass with `--no-verify`.
+
+---
+
+### Phase 5: Verify + handoff (R1VS-owned, non-skippable)
+
+**Ratified 2026-04-23 per R1VS introspection fix #6 + Mini pipeline review findings on claim-code / hero / asset resolution.**
+
+After Phase 4 passes, run verify-build before declaring the build complete.
+
+```bash
+# Local verification (pre-push)
+./scripts/verify-build.sh <slug>
+
+# Post-deploy verification (after Mini deploys to preview.gtmdot.com/<slug>)
+./scripts/verify-build.sh <slug> --live https://preview.gtmdot.com/<slug>
+```
+
+Six checks:
+
+1. **Asset resolution** — every `src=` and `href=` resolves (no 404s, no broken relative paths).
+2. **Reviews audit** — `reviews.json` `captured` count vs rendered review UI count (same rule as pre-push, re-checked at verify).
+3. **Claim code** — present in HTML, plausible pattern (`[A-Z]{3,7}[0-9]{3,4}`), single value only (no mismatched codes across pages).
+4. **Stock image hosts** — same blocklist as pre-push, re-checked.
+5. **Fabrication patterns** — hard-block + reviewer-name-slot check, re-checked.
+6. **Hero image exists** — referenced hero file must exist at path (catches the missing-hero pattern Mini found on 2 sites).
+
+### Handoff checklist (after Phase 5 passes)
+
+1. Push the intake branch: `git push origin intake/<slug>`
+2. Write the finalization message: `messages/YYYY-MM-DD-HHMM-r1vs-<slug>-finalized.md` including:
+   - `## Sources Attempted` table (per Mini's 2026-04-20 architecture update) — every source R1VS tried, status, photos/reviews count, notes. Lets Master Site Builder decide which sources Bruce should cover.
+   - Reviews summary: captured count + sources + whether `collect-request.md` was written.
+   - Photo slot inventory: every `data-slot-id` + `data-context` pair, no captions (Master Site Builder writes captions post-photo-resolution).
+   - Any YELLOW ⚠ warnings from Phases 4 or 5 that weren't blockers.
+3. Flip `ready_for_next_stage: true` in the BUILD-STATE.md frontmatter.
+4. Hand off. **R1VS does not come back to this site.** Master Site Builder owns from here forward.
+
+---
+
+### Phase 6: Postcard (Mini-owned, post-handoff)
 
 **4a. Design**
 - Front (2775x1875px): business name, headline, hero photo with overlay, before/after visual, GTMDot corner badge
@@ -381,9 +581,10 @@ This data feeds into the final build.
 
 **1d. Design research** (same as Group B 1d)
 
-### Phase 2-4
-Same as Group B, except:
-- No site audit / PageSpeed / SSL steps
+### Phase 2-6
+
+Same as Group B (design → build → pre-push gate → verify + handoff → postcard), except:
+- No site audit / PageSpeed / SSL steps in Phase 1 (there's no existing site)
 - Hero copy leads with "You have 5 stars and no website. You're losing jobs." angle
 - Postcard headline: "You have [X] five-star reviews and no website."
 
