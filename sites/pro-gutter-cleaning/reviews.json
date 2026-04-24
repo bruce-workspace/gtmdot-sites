@@ -1,0 +1,39 @@
+{
+  "reviews": [
+    {
+      "author": "",
+      "rating": 5,
+      "text": "These guys were total pros! Would highly recommend them. Arrived ontime, Fair pricing and did an excellent job!",
+      "source": "yelp-listing1",
+      "date": "Nov 4, 2020"
+    },
+    {
+      "author": "",
+      "rating": 5,
+      "text": "Was very happy with Pro Gutter Cleaning and Repair! We had just moved into a new home that desperately needed clearing out of the gutters. We were able to have the team come out within a week. They were very timely, quick service, and very friendly.",
+      "source": "yelp-listing1",
+      "date": "Aug 11, 2021"
+    },
+    {
+      "author": "",
+      "rating": 5,
+      "text": "Owner takes great pride in work. Company has a 30 day warranty and owner stands behind that.",
+      "source": "yelp-listing1",
+      "date": "Aug 18, 2022"
+    },
+    {
+      "author": "",
+      "rating": 1,
+      "text": "[1-star owner reply visible, not the original review \u2014 skipped]",
+      "source": "yelp-listing1",
+      "date": "Aug 16, 2022"
+    }
+  ],
+  "counts": {
+    "captured": 4,
+    "target_min": 3,
+    "total_available": "unknown"
+  },
+  "notes": "Initialized by integrate-bruce-collected.py",
+  "capture_attempts": []
+}

@@ -1,18 +1,70 @@
 {
-  "reviews": [],
+  "reviews": [
+    {
+      "author": "Betty",
+      "rating": 5,
+      "text": "He\u2019s officially my go to! Very professional very fast , communicates well is knowledgeable and great prices! I would recommend him to anyone. Was having issues with my brakes and he did not leave until he figured it out and fixed it!",
+      "source": "google",
+      "date": ""
+    },
+    {
+      "author": "Serena Virani",
+      "rating": 5,
+      "text": "Thermy provided outstanding service from start to finish. My brake pads were repaired quickly and efficiently, and the entire process was smooth and stress-free. In addition to the excellent workmanship, the customer service was exceptional\u2014we had a great conversation that made the experience even better. I truly appreciated the professionalism, speed, and attention to detail. I will absolutely be returning for future service and highly recommend Thermy to anyone in need of reliable auto repairs.",
+      "source": "google",
+      "date": ""
+    },
+    {
+      "author": "trudy Jackson",
+      "rating": 5,
+      "text": "My name is Miss Jackson, My appointment was at 9:00 AM Thermys called me approximately at 8:45 AM and told me he was 15 minutes away on time. He was very respectful and did an awesome job. I woke my son up and asked him. Did he need any mechanic work on his vehicle? Sure enough he did Thermys Took a look at his vehicle and did the work,I would genuinely like to say if anything forbid if it does happen to our vehicle he would be the man we will call\nThank You much",
+      "source": "google",
+      "date": ""
+    },
+    {
+      "author": "Anqwanette Grant",
+      "rating": 5,
+      "text": "Great experience he came quick did my brakes fast with no problems. He even picked up my parts for me I didn\u2019t have to do anything but pay him which is also a plus because it was a very reasonable price.. will definitely recommend and use him again\u2026 thanks Thermy!!!\ud83e\udd70",
+      "source": "google",
+      "date": ""
+    },
+    {
+      "author": "Jasmine Jones",
+      "rating": 5,
+      "text": "Was in atl for the weekend looked on google for someone who could put my rotors on fast that being I had to be on the road to travel back home.. He was very professional he def went above and beyond making sure ALL MY TIRES were tighten and got before I left out!! I\u2019ll def recommend him for anything def my go to when I\u2019m in town thank you!!",
+      "source": "google",
+      "date": ""
+    }
+  ],
   "counts": {
-    "total_available": "unknown — no GBP URL in rebuild-queue; Bruce retry by name+phone lookup",
-    "captured": 0,
+    "total_available": "unknown \u2014 no GBP URL in rebuild-queue; Bruce retry by name+phone lookup",
+    "captured": 5,
     "target_min": 3,
     "aggregate_rating": null,
     "aggregate_rating_source": "pending Bruce Places API retry"
   },
-  "notes": "Thermys Mobile Tire and Brakes LLC. Phone (770) 273-2197. Owner Quartisha Williams (per rebuild-queue). Mobile auto specialty — tire + brakes only (not full-service mechanical). Atlanta metro. Own site not surfaced. BBB no listing. No GBP URL in rebuild-queue — Bruce Places API retry via name+phone lookup. Claim code THMY-QW01 (note owner-initial suffix format differs from other claim codes). Possible woman-owned (and possibly Black-owned per name heuristic) — DO NOT surface demographic positioning publicly until Bruce verifies via GBP or owner intake.",
+  "notes": "Thermys Mobile Tire and Brakes LLC. Phone (770) 273-2197. Owner Quartisha Williams (per rebuild-queue). Mobile auto specialty \u2014 tire + brakes only (not full-service mechanical). Atlanta metro. Own site not surfaced. BBB no listing. No GBP URL in rebuild-queue \u2014 Bruce Places API retry via name+phone lookup. Claim code THMY-QW01 (note owner-initial suffix format differs from other claim codes). Possible woman-owned (and possibly Black-owned per name heuristic) \u2014 DO NOT surface demographic positioning publicly until Bruce verifies via GBP or owner intake.",
   "capture_attempts": [
-    {"source": "google_search", "status": "gated", "reason": "Google anti-scrape on SERP"},
-    {"source": "bbb", "status": "no_listing", "reason": "BBB search returned no results for Thermys Mobile Tire in Atlanta GA"},
-    {"source": "duckduckgo_search", "status": "no_match", "reason": "no direct results"},
-    {"source": "google_gbp", "status": "no_url_in_rebuild_queue", "reason": "rebuild-queue gbp_url=null — Bruce needs Places API by name+phone"}
+    {
+      "source": "google_search",
+      "status": "gated",
+      "reason": "Google anti-scrape on SERP"
+    },
+    {
+      "source": "bbb",
+      "status": "no_listing",
+      "reason": "BBB search returned no results for Thermys Mobile Tire in Atlanta GA"
+    },
+    {
+      "source": "duckduckgo_search",
+      "status": "no_match",
+      "reason": "no direct results"
+    },
+    {
+      "source": "google_gbp",
+      "status": "no_url_in_rebuild_queue",
+      "reason": "rebuild-queue gbp_url=null \u2014 Bruce needs Places API by name+phone"
+    }
   ],
   "flags": [
     "review_blocked_pending_bruce_retry",
@@ -23,7 +75,10 @@
     "DO_NOT_SURFACE_DEMOGRAPHIC_POSITIONING_PUBLICLY_UNTIL_VERIFIED"
   ],
   "team_from_reviews": [
-    {"name": "Quartisha Williams", "role": "owner (per rebuild-queue)"}
+    {
+      "name": "Quartisha Williams",
+      "role": "owner (per rebuild-queue)"
+    }
   ],
   "created_at": "2026-04-19T17:52:00-04:00",
   "created_by": "r1vs",

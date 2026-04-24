@@ -1,0 +1,32 @@
+{
+  "reviews": [
+    {
+      "author": "",
+      "rating": 5,
+      "text": "A major upgrade was completed smoothly when their team handled sewer line replacement while keeping everything organized.",
+      "source": "google_places",
+      "date": ""
+    },
+    {
+      "author": "",
+      "rating": 5,
+      "text": "A clog in the kitchen drain was causing water to back up. I called this plumbing service for assistance. The technician cleared the obstruction quickly. The drain works perfectly again.",
+      "source": "google_places",
+      "date": ""
+    },
+    {
+      "author": "",
+      "rating": 5,
+      "text": "The sink in my kitchen stopped draining completely one evening. A plumbing technician came and removed the blockage.",
+      "source": "google_places",
+      "date": ""
+    }
+  ],
+  "counts": {
+    "captured": 3,
+    "target_min": 3,
+    "total_available": "unknown"
+  },
+  "notes": "Initialized by integrate-bruce-collected.py",
+  "capture_attempts": []
+}

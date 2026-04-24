@@ -1,0 +1,74 @@
+{
+  "reviews": [
+    {
+      "author": "",
+      "rating": 5,
+      "text": "It's a very good feeling to find someone you can trust when it comes to HVAC/plumbing, and you get both here! We initially reached out because of the great Yelp reviews, and Yelp helped us out big time here!",
+      "source": "yelp",
+      "date": "Dec 20, 2024"
+    },
+    {
+      "author": "",
+      "rating": 5,
+      "text": "I had the pleasure of working with Rohan as I also had the displeasure of my heating system conking out while I was out of town. Came home and it was 60 degrees in the house when the thermostat was set to 70. Thank you Rohan!!",
+      "source": "yelp",
+      "date": "Dec 12, 2024"
+    },
+    {
+      "author": "",
+      "rating": 5,
+      "text": "Words are inadequate to describe the amazing service I received from these guys! I had another company tell me my HVAC needed to be replaced but I felt as though I was getting a sales pitch. I just didn't get a feeling of trust.",
+      "source": "yelp",
+      "date": "Jan 1, 2025"
+    },
+    {
+      "author": "",
+      "rating": 5,
+      "text": "Thank you Rohan!! Absolute life saver...after seeing so many glowing reviews (whenever you see 4.9 stars and over 50 reviews you know someone is doing something right) I immediately reached out to Rohan after our HVAC heat stopped working on the coldest day of the year (so far!). It was after 5pm, and within a short time Rohan called me back that night and set up something that next day.",
+      "source": "yelp",
+      "date": "Jan 22, 2024"
+    },
+    {
+      "author": "",
+      "rating": 5,
+      "text": "HVAC Guyz are fantastic! I was able to schedule a visit all over text message and they came out in a timely manner. They were very throughout in their service and made sure to explain everything they were doing. He also provided more detailed information about my specific system and how I can maintain it in the future. Great service at an extremely reasonable price!",
+      "source": "yelp",
+      "date": "Jan 23, 2024"
+    },
+    {
+      "author": "",
+      "rating": 5,
+      "text": "I called and Rohan was quick to respond. I had been repairing my AC for two years myself. Replacing capacitors and so forth. My fan motor died and I was going to replace it and just didn't have time, and it was HOT in August. Rohan showed up and saw my total mess and put it all together very professionally. Explained a lot to me.",
+      "source": "yelp",
+      "date": "Sep 1, 2023"
+    },
+    {
+      "author": "",
+      "rating": 5,
+      "text": "Rohan and his team are exceptional, responsive, knowledgeable and reasonably priced. They provide the services requested and do not try to upsell services and equipment. I recommend them unconditionally.",
+      "source": "yelp",
+      "date": "Aug 3, 2024"
+    },
+    {
+      "author": "",
+      "rating": 5,
+      "text": "Rohan was a life saver. Our HVAC stopped cooling one fine day making our upstairs very hot (perfect timing). Home warranty was an option but you know you always get scheduled with the worst of the worst, and they couldn't schedule me in for a few days.",
+      "source": "yelp",
+      "date": "Jul 9, 2023"
+    },
+    {
+      "author": "",
+      "rating": 1,
+      "text": "[1-star review - content not captured]",
+      "source": "yelp",
+      "date": "Aug 5, 2022"
+    }
+  ],
+  "counts": {
+    "captured": 9,
+    "target_min": 3,
+    "total_available": "unknown"
+  },
+  "notes": "Initialized by integrate-bruce-collected.py",
+  "capture_attempts": []
+}
