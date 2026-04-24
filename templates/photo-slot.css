@@ -1,0 +1,79 @@
+/* ───────────────────────────────────────────────────────────────
+   .gtmdot-photo-slot — ambiguous photo slot for R1VS → Master Site Builder handoff.
+   ───────────────────────────────────────────────────────────────
+   R1VS leaves these slots in HTML with a data-context describing what *kind* of
+   photo fits, but NO pre-written caption. Master Site Builder fills the photo
+   and writes the caption after seeing what Bruce actually scraped.
+
+   Usage in HTML:
+     <div class="gtmdot-photo-slot"
+          data-slot-id="GALLERY_3"
+          data-context="any-exterior-work-OK|landscape-OK|before-after-OK"
+          data-resolved="false">
+       <img src="photos/gbp-3.jpg" alt="">
+       <!-- <figcaption> added by Master Site Builder post-photo-resolution -->
+     </div>
+
+   When Master Site Builder drops a real photo in and writes the caption,
+   it flips data-resolved="true" to hide the pre-publish diagnostic overlay.
+   ─────────────────────────────────────────────────────────────── */
+
+.gtmdot-photo-slot {
+  aspect-ratio: 4 / 3;
+  background: #f5f5f5;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.gtmdot-photo-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gtmdot-photo-slot[data-resolved="false"]::before {
+  /* Pre-publish diagnostic — shows slot id + context so reviewers can see
+     what kind of photo is expected. Hidden once data-resolved="true". */
+  content: "📷 " attr(data-slot-id) " — " attr(data-context);
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: ui-monospace, Menlo, Monaco, "Courier New", monospace;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.gtmdot-photo-slot[data-resolved="true"]::before {
+  display: none;
+}
+
+/* Figcaption styling (when Master Site Builder adds one) */
+.gtmdot-photo-slot figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+  color: white;
+  padding: 16px 12px 10px;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+/* Gallery grid helper — a common container for multiple photo slots */
+.gtmdot-photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
