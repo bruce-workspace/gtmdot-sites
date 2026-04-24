@@ -89,6 +89,7 @@ mode = sys.argv[2]
 live_url = sys.argv[3] if len(sys.argv) > 3 else ''
 
 broken = []
+slot_held = []   # photos/ files that don't exist but are legitimate slots in local mode
 checked = 0
 
 for html_path in site_dir.glob('**/*.html'):
@@ -116,20 +117,34 @@ for html_path in site_dir.glob('**/*.html'):
                 site_dir / rel,
             ]
             if not any(c.exists() for c in candidates):
-                broken.append(f'{html_path.name}: {url}')
+                # In LOCAL mode: photos/* slots are legitimately empty until Master Site
+                # Builder fills them post-handoff. Track separately; don't fail.
+                if mode == 'local' and clean.startswith('photos/'):
+                    slot_held.append(f'{html_path.name}: {url}')
+                else:
+                    broken.append(f'{html_path.name}: {url}')
 
 print(f'CHECKED:{checked}')
+print(f'SLOT_HELD:{len(slot_held)}')
 for b in broken:
     print(f'BROKEN:{b}')
+for s in slot_held:
+    print(f'HELD:{s}')
 PY
 
 CHECKED=$(grep '^CHECKED:' /tmp/verify-assets-$$.out | sed 's/^CHECKED://' | head -1)
 CHECKED="${CHECKED:-0}"
+SLOT_HELD=$(grep '^SLOT_HELD:' /tmp/verify-assets-$$.out | sed 's/^SLOT_HELD://' | head -1)
+SLOT_HELD="${SLOT_HELD:-0}"
 BROKEN_COUNT=$(grep -c '^BROKEN:' /tmp/verify-assets-$$.out 2>/dev/null | head -1)
 BROKEN_COUNT="${BROKEN_COUNT:-0}"
 
 if [[ "$BROKEN_COUNT" == "0" ]]; then
-  pass "all $CHECKED relative assets resolve"
+  if [[ "$SLOT_HELD" != "0" ]]; then
+    pass "all $CHECKED relative assets resolve ($SLOT_HELD photos/ slots held open for Master Site Builder — OK in local mode)"
+  else
+    pass "all $CHECKED relative assets resolve"
+  fi
 else
   fail "$BROKEN_COUNT broken asset(s) out of $CHECKED checked:"
   grep '^BROKEN:' /tmp/verify-assets-$$.out | sed 's/^BROKEN:/    /' | head -20
@@ -159,17 +174,21 @@ except Exception:
     print(0)
 " 2>/dev/null || echo 0)
 
-  # count rendered review UI via python (reliable single int)
+  # count rendered review UI — match whole class tokens, not substrings.
+  # (Earlier bug: "review-mini-text" double-counted against "review-mini".)
   REVIEW_UI=$(python3 - "$SITE_DIR" <<'PY'
 import re, sys
 from pathlib import Path
 site_dir = Path(sys.argv[1])
-patterns = [r'class="[^"]*review-mini[^"]*"', r'class="[^"]*review-card[^"]*"']
+attr_re = re.compile(r'class="([^"]+)"')
+target_tokens = {"review-mini", "review-card"}
 total = 0
 for html_path in site_dir.glob('**/*.html'):
     text = html_path.read_text()
-    for p in patterns:
-        total += len(re.findall(p, text))
+    for m in attr_re.finditer(text):
+        tokens = set(m.group(1).split())
+        if tokens & target_tokens:
+            total += 1
 print(total)
 PY
   )
@@ -315,19 +334,29 @@ if [[ -z "$UNIQUE_HEROES" ]]; then
   warn "no hero image reference found in HTML (OK if hero is a section background only)"
 else
   BAD_HEROES=0
+  HELD_HEROES=0
   while IFS= read -r h; do
     [[ -z "$h" ]] && continue
     [[ "$h" =~ ^https?:// ]] && continue  # external, skip
     clean=$(echo "$h" | sed 's/[?#].*//')
     rel="${clean#/}"
     if [[ ! -f "$SITE_DIR/$rel" ]] && [[ ! -f "$rel" ]]; then
-      fail "hero image referenced but not found: $h"
-      BAD_HEROES=$((BAD_HEROES + 1))
+      # In local mode: photos/ hero is a slot for Master Site Builder; not a failure.
+      if [[ "$MODE" == "local" && "$clean" == photos/* ]]; then
+        HELD_HEROES=$((HELD_HEROES + 1))
+      else
+        fail "hero image referenced but not found: $h"
+        BAD_HEROES=$((BAD_HEROES + 1))
+      fi
     fi
   done <<< "$UNIQUE_HEROES"
   if [[ $BAD_HEROES -eq 0 ]]; then
     HERO_COUNT=$(echo "$UNIQUE_HEROES" | grep -c '^' || echo 0)
-    pass "$HERO_COUNT hero image(s) resolve"
+    if [[ $HELD_HEROES -gt 0 ]]; then
+      pass "$HERO_COUNT hero reference(s) — $HELD_HEROES held for Master Site Builder (local mode OK)"
+    else
+      pass "$HERO_COUNT hero image(s) resolve"
+    fi
   fi
 fi
 

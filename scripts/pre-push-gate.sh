@@ -239,17 +239,22 @@ except Exception as e:
     print(0)
 " 2>/dev/null || echo 0)
 
-  # count review UI elements in HTML via python (reliable number, no grep -c flakiness)
+  # count review UI elements via python — match WHOLE class tokens, not substrings.
+  # (Earlier bug: "review-mini-text" substring-matched "review-mini" and double-counted.)
   REVIEW_UI_COUNT=$(python3 - "$SITE_DIR" <<'PY'
 import re, sys
 from pathlib import Path
 site_dir = Path(sys.argv[1])
-patterns = [r'class="[^"]*review-mini[^"]*"', r'class="[^"]*review-card[^"]*"']
+# Match class attribute contents and check for exact-token hits
+attr_re = re.compile(r'class="([^"]+)"')
+target_tokens = {"review-mini", "review-card"}
 total = 0
 for html_path in site_dir.glob('**/*.html'):
     text = html_path.read_text()
-    for p in patterns:
-        total += len(re.findall(p, text))
+    for m in attr_re.finditer(text):
+        tokens = set(m.group(1).split())
+        if tokens & target_tokens:
+            total += 1
 print(total)
 PY
   )
