@@ -1,8 +1,8 @@
 # PIPELINE.md — Single Source of Truth for GTMDot Operations
 
-**Status:** DRAFT v0.1 (Mini-authored 2026-04-23).
+**Status:** RATIFIED v1.0 (2026-04-24 by Jesse, Mini-authored 2026-04-23).
 **Scope:** Who does what, at what cadence, through which stages, with what tools.
-**Supersedes:** Once ratified, this replaces the scattered content in 12 docs (see §99).
+**Supersedes:** Replaces the scattered content in 12 docs (see §99 — 6 docs already archived to `/Users/bruce/.openclaw/workspace/archive/`).
 **Conflict rule:** If any other doc conflicts with this one, *this doc wins* until the conflict is explicitly resolved via an ACK message in `messages/`.
 
 **Read order at every session start:**
@@ -209,16 +209,23 @@ The canonical doc set after ratification:
 
 ---
 
-## Open questions to resolve before v1.0 ratification
+## Ratification decisions (resolved 2026-04-24 by Jesse)
 
-1. **Where does this file live?** Current: `gtmdot-sites/PIPELINE.md` (colocated with HANDOFF-CONTRACT). Alternative: `/Users/bruce/.openclaw/workspace/PIPELINE.md` (workspace root — my original finding #3 proposal). Pick one.
+Per `briefs/07-pipeline-md-ratification-checklist.md`:
 
-2. **Ratification protocol.** Is a single Jesse ACK enough? Or does each affected role (R1VS, Bruce, Mini) need to sign off independently before the old docs get archived?
+1. **Location:** `gtmdot-sites/PIPELINE.md` — colocated with other canonical docs (HANDOFF-CONTRACT, SKILL, DESIGN-HEURISTICS, ICON-MAPPING).
 
-3. **CHANGELOG length cap.** Entries are designed to be compact, but over 6+ months this section grows. Proposal: keep the current year in-line, archive older entries to `CHANGELOG-<year>.md`.
+2. **Ratification protocol:** Single Jesse ACK for v1.0. Future amendments use the §80-99 process (inherited from HANDOFF-CONTRACT §9): proposal message → affected-role ACKs → Jesse ratifies.
 
-4. **Does `CLAUDE.md` (gtmdot-sites) need a pointer here?** Right now it has its own set of rules for Claude Code. Clean to have CLAUDE.md's §1 sentence be "read PIPELINE.md first."
+3. **CHANGELOG length cap:** Keep current year in-line. Archive older entries annually to `CHANGELOG-<year>.md`.
 
-5. **Single-writer check for `PIPELINE.md` itself.** Who owns amendments? Proposal: Mini + R1VS can both propose; Jesse ratifies; §1 role matrix changes require all three to ACK.
+4. **CLAUDE.md pointer:** Yes. One-line "read PIPELINE.md first" added to `CLAUDE.md`.
 
-— Mini (Master Site Builder, Mac Mini), 2026-04-23 (draft v0.1, not yet ratified)
+5. **Single-writer ownership per section:**
+   - §1 Role Matrix — Jesse (structural changes require Jesse ACK via §80-99)
+   - §2 Pipeline Stages — Jesse ACK required; Mini/R1VS propose
+   - §3 Automations — R1VS can update tool references; Mini can update Mini-owned scheduled tasks; Jesse ACKs new task additions
+   - §4 Current State Snapshot — automated via `scripts/state-snapshot.sh` (no manual edits)
+   - §5 CHANGELOG — any actor appends their work; no pre-approval for entries
+
+— Mini (Master Site Builder, Mac Mini) 2026-04-23 draft; Jesse ratified 2026-04-24 v1.0

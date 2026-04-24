@@ -6,13 +6,14 @@ This repo is the shared workspace between R1VS (MacBook Claude Code), Bruce (Ope
 
 ## ⚠️ MANDATORY READ ORDER AT EVERY SESSION START
 
-1. **`CLAUDE.md`** (this file) — system facts + high-level overview
-2. **`HANDOFF-CONTRACT.md`** — authoritative division of labor + communication protocol + commit conventions + /loop requirement + self-audit requirement + violation response
-3. **`SKILL.md`** — phase-by-phase workflow (research → build → polish)
-4. **`DESIGN-HEURISTICS.md`** — design + editorial judgment (icons, photos, pull quotes, stats de-dup, voice)
-5. **`ICON-MAPPING.md`** — Lucide icon source of truth
+1. **`PIPELINE.md`** — single source of truth for roles, stages, automations, current state, and CHANGELOG (ratified v1.0 2026-04-24). *Start here.*
+2. **`CLAUDE.md`** (this file) — system facts + high-level overview
+3. **`HANDOFF-CONTRACT.md`** — authoritative division of labor + communication protocol + commit conventions + /loop requirement + self-audit requirement + violation response
+4. **`SKILL.md`** — phase-by-phase workflow (research → build → polish)
+5. **`DESIGN-HEURISTICS.md`** — design + editorial judgment (icons, photos, pull quotes, stats de-dup, voice)
+6. **`ICON-MAPPING.md`** — Lucide icon source of truth
 
-**`HANDOFF-CONTRACT.md` is authoritative when in conflict with anything else.** If a rule in this file (`CLAUDE.md`) or `SKILL.md` or any message disagrees with the contract doc, the contract doc wins until explicitly resolved via an ACK message.
+**`PIPELINE.md` is the operational SSoT. `HANDOFF-CONTRACT.md` is authoritative when in conflict with anything else content-wise.** If a rule in this file or `SKILL.md` or any message disagrees with the contract doc, the contract doc wins until explicitly resolved via an ACK message.
 
 Do not freestyle any photo/icon/review/copy decision. Every decision has a documented rule — read the docs.
 
