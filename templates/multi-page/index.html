@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{BUSINESS_NAME}} — {{PRIMARY_SERVICE_CATEGORY}} in {{CITY}}, GA</title>
+  <meta name="description" content="{{META_DESCRIPTION_HOMEPAGE}}">
+  <link rel="canonical" href="https://{{DOMAIN}}/">
+  <link rel="stylesheet" href="_base.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{BUSINESS_NAME}} — {{PRIMARY_SERVICE_CATEGORY}} in {{CITY}}">
+  <meta property="og:description" content="{{META_DESCRIPTION_HOMEPAGE}}">
+  <meta property="og:url" content="https://{{DOMAIN}}/">
+
+  <!-- JSON-LD LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "{{BUSINESS_NAME}}",
+    "image": "https://{{DOMAIN}}/photos/hero.jpg",
+    "telephone": "{{PHONE}}",
+    "email": "{{EMAIL}}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{STREET_ADDRESS}}",
+      "addressLocality": "{{CITY}}",
+      "addressRegion": "GA",
+      "postalCode": "{{ZIP}}",
+      "addressCountry": "US"
+    },
+    "url": "https://{{DOMAIN}}/",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "{{GBP_RATING}}",
+      "reviewCount": "{{GBP_REVIEW_COUNT}}"
+    },
+    "areaServed": "{{SERVICE_AREAS}}",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a class="site-logo" href="/">{{BUSINESS_NAME_SHORT}}</a>
+    <nav class="site-nav">
+      <a href="/services.html">Services</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a class="cta-btn" href="/contact.html">{{PRIMARY_CTA}}</a>
+    </nav>
+    <button class="hamburger" aria-label="Open menu" onclick="document.querySelector('.site-nav').classList.toggle('open')">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <h1>{{HERO_HEADLINE}}</h1>
+    <p class="lede">{{HERO_SUBHEAD}}</p>
+    <a class="cta-btn" href="/contact.html">{{PRIMARY_CTA}}</a>
+  </div>
+</section>
+
+<!-- HERO PHOTO SLOT (resolved post-handoff) -->
+<div class="wrap" style="padding: 0; margin-top: -32px; margin-bottom: 32px;">
+  <figure class="gtmdot-photo-slot"
+          data-slot-id="HERO"
+          data-context="{{HERO_PHOTO_CONTEXT}}"
+          data-resolved="false"
+          style="aspect-ratio: 16/9;">
+    <img src="photos/hero.jpg" alt="">
+  </figure>
+</div>
+
+<!-- SERVICES TEASER -->
+<section>
+  <div class="wrap">
+    <h2>What we do</h2>
+    <div class="service-grid">
+      <!-- Replace this block per service. Each card links to its own SEO page. -->
+      <a class="service-card" href="/{{SERVICE_1_SLUG}}.html">
+        <i class="icon" data-lucide="{{SERVICE_1_ICON}}"></i>
+        <h3>{{SERVICE_1_NAME}}</h3>
+        <p>{{SERVICE_1_TEASER}}</p>
+      </a>
+      <a class="service-card" href="/{{SERVICE_2_SLUG}}.html">
+        <i class="icon" data-lucide="{{SERVICE_2_ICON}}"></i>
+        <h3>{{SERVICE_2_NAME}}</h3>
+        <p>{{SERVICE_2_TEASER}}</p>
+      </a>
+      <a class="service-card" href="/{{SERVICE_3_SLUG}}.html">
+        <i class="icon" data-lucide="{{SERVICE_3_ICON}}"></i>
+        <h3>{{SERVICE_3_NAME}}</h3>
+        <p>{{SERVICE_3_TEASER}}</p>
+      </a>
+      <!-- Add more service cards as needed; duplicate pattern -->
+    </div>
+    <p style="margin-top: 24px; text-align: center;">
+      <a href="/services.html" style="color: var(--accent); font-weight: 600;">See all services →</a>
+    </p>
+  </div>
+</section>
+
+<!-- REVIEWS BAR -->
+<!--
+  CONTRACT (per R1VS introspection fix #1):
+  - If reviews.json captured >= 3: render reviews-track with mini cards below
+  - If captured 1-2: render a single mini card + "See all on Google" link
+  - If captured 0: render the reviews-empty-state block (NO fabrication)
+  -->
+<section class="reviews-bar" id="reviews">
+  <div class="wrap">
+    <h2>What our customers say</h2>
+
+    <!-- WHEN CAPTURED >= 3: -->
+    <div class="reviews-track">
+      <!-- Each review-mini = one VERBATIM review from reviews.json.
+           reviewer-name slot must NOT contain: "Google Customer", "Angi Customer",
+           "Verified Homeowner", "Company Mission", "Our Story", etc. -->
+      <div class="review-mini">
+        <p class="review-mini-text">{{REVIEW_1_TEXT}}</p>
+        <div class="review-meta">
+          <span class="review-name">{{REVIEW_1_AUTHOR}}</span>
+          <span class="review-source">{{REVIEW_1_SOURCE}}</span>
+        </div>
+      </div>
+      <!-- duplicate review-mini blocks per review up to captured count -->
+    </div>
+
+    <!-- WHEN CAPTURED 0 (uncomment to use, delete reviews-track above):
+    <div class="reviews-empty-state">
+      <p>Featured in {{GBP_RATING}}★ Google reviews ({{GBP_REVIEW_COUNT}}).</p>
+      <a class="gbp-link" href="{{GBP_URL}}" target="_blank" rel="noopener">Read reviews on Google →</a>
+    </div>
+    -->
+  </div>
+</section>
+
+<!-- GALLERY (ambiguous photo slots) -->
+<section>
+  <div class="wrap">
+    <h2>Recent work</h2>
+    <div class="gtmdot-photo-gallery">
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="GALLERY_1"
+              data-context="{{GALLERY_1_CONTEXT}}"
+              data-resolved="false">
+        <img src="photos/gbp-1.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="GALLERY_2"
+              data-context="{{GALLERY_2_CONTEXT}}"
+              data-resolved="false">
+        <img src="photos/gbp-2.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="GALLERY_3"
+              data-context="{{GALLERY_3_CONTEXT}}"
+              data-resolved="false">
+        <img src="photos/gbp-3.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="GALLERY_4"
+              data-context="{{GALLERY_4_CONTEXT}}"
+              data-resolved="false">
+        <img src="photos/gbp-4.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="GALLERY_5"
+              data-context="{{GALLERY_5_CONTEXT}}"
+              data-resolved="false">
+        <img src="photos/gbp-5.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="GALLERY_6"
+              data-context="{{GALLERY_6_CONTEXT}}"
+              data-resolved="false">
+        <img src="photos/gbp-6.jpg" alt="">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FOOTER -->
+<section style="background: var(--accent-soft); text-align: center;">
+  <div class="wrap">
+    <h2>Ready to get started?</h2>
+    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">{{CTA_SUBHEAD}}</p>
+    <a class="cta-btn" href="/contact.html">{{PRIMARY_CTA}}</a>
+    <p style="margin-top: 16px;">or call <a href="tel:{{PHONE_TEL}}" style="color: var(--accent); font-weight: 600;">{{PHONE}}</a></p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>{{BUSINESS_NAME_SHORT}}</h4>
+        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">{{BUSINESS_TAGLINE}}</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="/services.html">All services</a>
+        <a href="/{{SERVICE_1_SLUG}}.html">{{SERVICE_1_NAME}}</a>
+        <a href="/{{SERVICE_2_SLUG}}.html">{{SERVICE_2_NAME}}</a>
+        <a href="/{{SERVICE_3_SLUG}}.html">{{SERVICE_3_NAME}}</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:{{PHONE_TEL}}">{{PHONE}}</a>
+        <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving {{SERVICE_AREAS}}</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © {{CURRENT_YEAR}} {{BUSINESS_NAME}}. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  if (window.lucide) window.lucide.createIcons();
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.lucide) window.lucide.createIcons();
+  });
+</script>
+
+</body>
+</html>
