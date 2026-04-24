@@ -1,17 +1,17 @@
 ---
-slug: thermys-mobile-tire-and-brakes
+slug: pine-peach-painting
 signaled_by: mini-integrate-bruce-collected
-signaled_at: 2026-04-24T03:49:51.580753+00:00
+signaled_at: 2026-04-24T03:49:51.577721+00:00
 bruce_collected_at: unknown
 reviews_added: 0
-photos_added: 6
+photos_added: 10
 ---
 
 # needs-repolish
 
 Bruce enrichment landed. Mini integrated:
 - 0 new reviews into reviews.json
-- 6 new photos into photos/inbox/
+- 10 new photos into photos/inbox/
 
 On your next polish pass, please:
 1. Re-render review UI section of index.html per the new counts.captured
