@@ -1,7 +1,7 @@
 {
   "slug": "plugged-electricians-atl",
-  "fetched_at": "2026-04-25T03:59:57Z",
-  "original_fetched_at": "2026-04-25T03:59:57Z",
+  "fetched_at": "2026-04-25T04:01:27Z",
+  "original_fetched_at": "2026-04-25T04:01:27Z",
   "source": "google_places_api_v1",
   "refresh_count": 0,
   "refresh_log": [],
@@ -15,7 +15,7 @@
     {
       "source": "google_places_api_v1",
       "count": 5,
-      "fetched_at": "2026-04-25T03:59:57Z"
+      "fetched_at": "2026-04-25T04:01:27Z"
     }
   ],
   "last_review_date": "2025-08-11",
@@ -28,7 +28,44 @@
     {
       "dayOfWeek": "Sunday",
       "opens": "00:00",
-      "closes": null
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Monday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Tuesday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Wednesday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Thursday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Friday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Saturday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
     }
   ],
   "website_url": null,

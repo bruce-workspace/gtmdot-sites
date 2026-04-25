@@ -142,8 +142,27 @@ def parse_hours_weekday_text(weekday_text: List[str]) -> List[Dict[str, str]]:
 
 
 def parse_hours_periods(periods: List[Dict]) -> List[Dict[str, str]]:
-    """Places API 'periods' array — preferred source, always 24h structured."""
+    """Places API 'periods' array — preferred source, always 24h structured.
+
+    Special case: when Places API returns a single period with open.day=0,
+    open.time='0000', and no close field, the business is 24/7. We expand
+    that single entry into all 7 days as 'open all day'. Without this fix
+    the snapshot showed only Sunday for 24/7 businesses (item 7).
+    """
     day_names = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+    # Detect the 24/7 special case
+    if (
+        len(periods or []) == 1
+        and (periods[0].get("open") or {}).get("day") == 0
+        and (periods[0].get("open") or {}).get("time") == "0000"
+        and not periods[0].get("close")
+    ):
+        return [
+            {"dayOfWeek": d, "opens": "00:00", "closes": "23:59", "open_24h": True}
+            for d in day_names
+        ]
+
     out = []
     for p in periods or []:
         o = p.get("open") or {}
