@@ -109,22 +109,34 @@
   </div>
 </section>
 
-<!-- REVIEWS BAR -->
-<!--
-  CONTRACT (per R1VS introspection fix #1):
-  - If reviews.json captured >= 3: render reviews-track with mini cards below
-  - If captured 1-2: render a single mini card + "See all on Google" link
-  - If captured 0: render the reviews-empty-state block (NO fabrication)
-  -->
+<!-- REVIEWS BAR — render-reviews-bar.py picks one of three paths based on
+     reviews.json captured count and DELETES the other two blocks.
+     Run: python3 scripts/render-reviews-bar.py <slug>
+     Path A (>=3): expand the loop block below per captured review.
+     Path B (1-2): activate the few-reviews fallback block.
+     Path C (0):   activate the empty-state block (no fabrication).
+     Reviewer-name slots must NEVER contain "Google Customer",
+     "Angi Customer", "Verified Homeowner", "Company Mission",
+     "Our Story" — pre-push-gate enforces. -->
 <section class="reviews-bar" id="reviews">
   <div class="wrap">
     <h2>What our customers say</h2>
 
-    <!-- WHEN CAPTURED >= 3: -->
+    <!-- PATH A — reviews-track for captured >= 3 -->
     <div class="reviews-track">
-      <!-- Each review-mini = one VERBATIM review from reviews.json.
-           reviewer-name slot must NOT contain: "Google Customer", "Angi Customer",
-           "Verified Homeowner", "Company Mission", "Our Story", etc. -->
+      <!-- REVIEWS_LOOP_START -->
+      <div class="review-mini">
+        <p class="review-mini-text">{{REVIEW_TEXT}}</p>
+        <div class="review-meta">
+          <span class="review-name">{{REVIEW_AUTHOR}}</span>
+          <span class="review-source">{{REVIEW_SOURCE}}</span>
+        </div>
+      </div>
+      <!-- REVIEWS_LOOP_END -->
+    </div>
+
+    <!-- PATH B — FEW_REVIEWS_FALLBACK_START
+    <div class="reviews-few">
       <div class="review-mini">
         <p class="review-mini-text">{{REVIEW_1_TEXT}}</p>
         <div class="review-meta">
@@ -132,15 +144,18 @@
           <span class="review-source">{{REVIEW_1_SOURCE}}</span>
         </div>
       </div>
-      <!-- duplicate review-mini blocks per review up to captured count -->
+      <p class="reviews-cta-link">
+        <a href="{{GBP_URL}}" target="_blank" rel="noopener">See all reviews on Google →</a>
+      </p>
     </div>
+    FEW_REVIEWS_FALLBACK_END -->
 
-    <!-- WHEN CAPTURED 0 (uncomment to use, delete reviews-track above):
+    <!-- PATH C — EMPTY_STATE_START
     <div class="reviews-empty-state">
-      <p>Featured in {{GBP_RATING}}★ Google reviews ({{GBP_REVIEW_COUNT}}).</p>
+      <p>Featured in {{GBP_RATING}}★ Google reviews ({{GBP_REVIEW_COUNT}} customers).</p>
       <a class="gbp-link" href="{{GBP_URL}}" target="_blank" rel="noopener">Read reviews on Google →</a>
     </div>
-    -->
+    EMPTY_STATE_END -->
   </div>
 </section>
 

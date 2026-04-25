@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Plugged Electricians Atl LLC — Electrical services in Atlanta, GA</title>
-  <meta name="description" content="Licensed Atlanta electrician serving Buckhead, Decatur, Sandy Springs. Free estimates on repairs, panel upgrades, EV chargers. 4.9★ on Google. Call (678) 787-2022.">
+  <meta name="description" content="Licensed Atlanta electrician serving Buckhead, Decatur, Sandy Springs. Free estimates on repairs, panel upgrades, EV chargers. 4.9 stars on Google. Call (678) 787-2022.">
   <link rel="canonical" href="https://plugged-electricians-atl.gtmdot.com/">
   <link rel="stylesheet" href="_base.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
@@ -12,7 +12,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Plugged Electricians Atl LLC — Electrical services in Atlanta">
-  <meta property="og:description" content="Licensed Atlanta electrician serving Buckhead, Decatur, Sandy Springs. Free estimates on repairs, panel upgrades, EV chargers. 4.9★ on Google. Call (678) 787-2022.">
+  <meta property="og:description" content="Licensed Atlanta electrician serving Buckhead, Decatur, Sandy Springs. Free estimates on repairs, panel upgrades, EV chargers. 4.9 stars on Google. Call (678) 787-2022.">
   <meta property="og:url" content="https://plugged-electricians-atl.gtmdot.com/">
 
   <!-- JSON-LD LocalBusiness schema -->
@@ -64,7 +64,7 @@
 <section class="hero">
   <div class="wrap">
     <h1>Atlanta electrical repair and installation, done right the first time</h1>
-    <p class="lede">Licensed, insured, and trusted by 4.9★-rated homeowners across Buckhead, Decatur, and Sandy Springs. Free estimates within the hour.</p>
+    <p class="lede">Licensed, insured, and trusted by 4.9-star-rated homeowners across Buckhead, Decatur, and Sandy Springs. Free estimates within the hour.</p>
     <a class="cta-btn" href="/contact.html">Get a Free Estimate</a>
   </div>
 </section>
@@ -109,39 +109,69 @@
   </div>
 </section>
 
-<!-- REVIEWS BAR -->
-<!--
-  CONTRACT (per R1VS introspection fix #1):
-  - If reviews.json captured >= 3: render reviews-track with mini cards below
-  - If captured 1-2: render a single mini card + "See all on Google" link
-  - If captured 0: render the reviews-empty-state block (NO fabrication)
-  -->
+<!-- REVIEWS BAR — render-reviews-bar.py picks one of three paths based on
+     reviews.json captured count and DELETES the other two blocks.
+     Run: python3 scripts/render-reviews-bar.py <slug>
+     Path A (>=3): expand the loop block below per captured review.
+     Path B (1-2): activate the few-reviews fallback block.
+     Path C (0):   activate the empty-state block (no fabrication).
+     Reviewer-name slots must NEVER contain "Google Customer",
+     "Angi Customer", "Verified Homeowner", "Company Mission",
+     "Our Story" — pre-push-gate enforces. -->
 <section class="reviews-bar" id="reviews">
   <div class="wrap">
     <h2>What our customers say</h2>
 
-    <!-- WHEN CAPTURED >= 3: -->
+    <!-- PATH A — reviews-track for captured >= 3 -->
     <div class="reviews-track">
-      <!-- Each review-mini = one VERBATIM review from reviews.json.
-           reviewer-name slot must NOT contain: "Google Customer", "Angi Customer",
-           "Verified Homeowner", "Company Mission", "Our Story", etc. -->
+      <!-- REVIEWS_LOOP_START -->
       <div class="review-mini">
         <p class="review-mini-text">I highly recommend this company they have done electrical work throughout my house both inside and out.She was extremely knowledgeable and has great work ethic. She was punctual, competent and trustworthy. She answers all questions and provides suggestions as needed. I would
-Trul</p>
+Truly recommend this company with any electrical project.</p>
         <div class="review-meta">
           <span class="review-name">Kecia Sanders</span>
-          <span class="review-source">Google Review</span>
+          <span class="review-source">Google</span>
         </div>
       </div>
-      <!-- duplicate review-mini blocks per review up to captured count -->
+      
+      <div class="review-mini">
+        <p class="review-mini-text">I recently purchased a house and needed a lot of electrical work done. This young lady was on time, very professional, knowledgeable, had reasonable prices, and best of all DID an AMAZING job!!!
+You will not be disappointed.
+It’s refreshing to find a true professional who takes pride in their work.</p>
+        <div class="review-meta">
+          <span class="review-name">Sharonda Hector</span>
+          <span class="review-source">Google</span>
+        </div>
+      </div>
+      
+      <div class="review-mini">
+        <p class="review-mini-text">Only 5 stars?! if I could give them 10 stars I would.Very professional, Work was clean  on time, on budget, extremely professional, absolutely fair and honest! THIS COMPANY IS STUCK WITH ME and any electrical needs</p>
+        <div class="review-meta">
+          <span class="review-name">latronia sanders</span>
+          <span class="review-source">Google</span>
+        </div>
+      </div>
+      
+      <div class="review-mini">
+        <p class="review-mini-text">PLUGGED Electricians recently serviced one of my properties, delivering high-quality electrical work at a very competitive rate. They demonstrated professionalism, efficiency and clear communication from start to finish.</p>
+        <div class="review-meta">
+          <span class="review-name">S Morrison</span>
+          <span class="review-source">Google</span>
+        </div>
+      </div>
+      
+      <div class="review-mini">
+        <p class="review-mini-text">Plugged Electricians is top tier!! The professionalism &amp; expertise allowed for an amazing &amp; informative experience. I will definitely use their services again if ever needed &amp; highly recommend them for all electrical needs!</p>
+        <div class="review-meta">
+          <span class="review-name">Courtney Bozeman</span>
+          <span class="review-source">Google</span>
+        </div>
+      </div>
+      
+      <!-- REVIEWS_LOOP_END -->
     </div>
 
-    <!-- WHEN CAPTURED 0 (uncomment to use, delete reviews-track above):
-    <div class="reviews-empty-state">
-      <p>Featured in 4.9★ Google reviews (13).</p>
-      <a class="gbp-link" href="https://maps.google.com/?cid=7638628546933398518" target="_blank" rel="noopener">Read reviews on Google →</a>
-    </div>
-    -->
+
   </div>
 </section>
 
