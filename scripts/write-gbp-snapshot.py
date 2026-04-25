@@ -252,6 +252,26 @@ def fetch_places_api(name: str, address: str) -> Dict[str, Any]:
     # Photos count
     photo_count = len(detail.get("photos") or [])
 
+    # Normalize verbatim review bodies for downstream reviews.json writer.
+    # Keep raw text + author + rating + date so the homepage can render real reviews.
+    normalized_reviews: List[Dict[str, Any]] = []
+    for r in reviews:
+        ts = r.get("time")
+        date_iso = None
+        if ts:
+            date_iso = datetime.fromtimestamp(ts, tz=timezone.utc).strftime("%Y-%m-%d")
+        normalized_reviews.append({
+            "author": r.get("author_name"),
+            "rating": r.get("rating"),
+            "date": date_iso,
+            "source": "google",
+            "text": r.get("text"),
+            "verified": True,
+            "language": r.get("language"),
+            "relative_time_description": r.get("relative_time_description"),
+            "profile_photo_url": r.get("profile_photo_url"),
+        })
+
     return {
         "place_id": place_id,
         "business_name": detail.get("name") or name,
@@ -269,12 +289,44 @@ def fetch_places_api(name: str, address: str) -> Dict[str, Any]:
         "website_url": detail.get("website"),
         "categories": detail.get("types") or [],
         "gbp_match_verified": gbp_match,
-        "gbp_url": detail.get("url"),  # Google Maps URL for the listing
+        "gbp_url": detail.get("url"),
+        # Verbatim bodies for the reviews.json companion artifact (NOT in
+        # gbp_snapshot.json — that file stores metadata only).
+        "_normalized_reviews": normalized_reviews,
     }
 
 
+def write_reviews_json(slug: str, fetched: Dict[str, Any], site_dir: Path, source: str) -> Optional[Path]:
+    """
+    Write sites/<slug>/reviews.json companion artifact with verbatim review
+    bodies. Called automatically when --places-api fetched real reviews.
+
+    Returns the path written, or None if no reviews to write.
+    """
+    raw = fetched.get("_normalized_reviews") or []
+    if not raw:
+        return None
+
+    out = {
+        "slug": slug,
+        "captured": len(raw),
+        "total_reviews": fetched.get("review_count_total"),
+        "overall_rating": fetched.get("rating"),
+        "captured_at": now_iso(),
+        "sources": [
+            {"source": source, "count": len(raw), "fetched_at": now_iso()}
+        ],
+        "reviews": raw,
+    }
+    path = site_dir / "reviews.json"
+    with open(path, "w") as f:
+        json.dump(out, f, indent=2)
+    return path
+
+
 def build_snapshot(slug: str, fetched: Dict[str, Any], source: str = "google_places_api_v1") -> Dict[str, Any]:
-    """Wrap fetched Places data in the full schema with provenance + staleness defaults."""
+    """Wrap fetched Places data in the full schema with provenance + staleness defaults.
+    Strips _normalized_reviews — that field is for the reviews.json writer only."""
     now = now_iso()
     return {
         "slug": slug,
@@ -368,6 +420,8 @@ def main():
                     help="refresh scope: soft = 4 staleness fields; hard = all")
     ap.add_argument("--source", default="google_places_api_v1",
                     help="source id for captured reviews (used in reviews_captured_sources)")
+    ap.add_argument("--no-write-reviews-json", action="store_true",
+                    help="skip writing the companion reviews.json (default: write it whenever Places returns review bodies)")
     args = ap.parse_args()
 
     if not any([args.places_api, args.refresh, args.from_legitimacy_check]):
@@ -460,10 +514,26 @@ def main():
         snapshot = build_snapshot(args.slug, fetched, source="derived_from_legitimacy_check")
         log_pass("derived initial snapshot from legitimacy-check.json (some fields null — refresh to populate)")
 
-    # Write
+    # Write the snapshot
     with open(snapshot_path, "w") as f:
         json.dump(snapshot, f, indent=2)
     log_info(f"wrote {snapshot_path}")
+
+    # Companion: write reviews.json with verbatim bodies if Places returned them
+    # and the user didn't opt out. Skipped for --from-legitimacy-check since that
+    # path doesn't have review bodies to write.
+    if not args.no_write_reviews_json and (args.places_api or args.refresh):
+        # 'fetched' is in scope from above (places-api / refresh branches)
+        try:
+            written = write_reviews_json(args.slug, fetched, site_dir, source=args.source)
+            if written:
+                count = len(fetched.get("_normalized_reviews") or [])
+                log_pass(f"wrote {written} ({count} verbatim review{'s' if count != 1 else ''})")
+            else:
+                log_info("no review bodies returned by Places API — reviews.json not written")
+        except Exception as e:
+            log_warn(f"reviews.json write failed (snapshot still saved): {e}")
+
     print(f"{BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{NC}")
     sys.exit(0)
 

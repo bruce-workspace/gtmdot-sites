@@ -1,12 +1,14 @@
 {
+  "slug": "plugged-electricians-atl",
   "captured": 5,
   "total_reviews": 13,
   "overall_rating": 4.9,
+  "captured_at": "2026-04-25T03:51:19Z",
   "sources": [
     {
       "source": "google_places_api_v1",
       "count": 5,
-      "fetched_at": "2026-04-24T03:03:59.006277Z"
+      "fetched_at": "2026-04-25T03:51:19Z"
     }
   ],
   "reviews": [
@@ -16,7 +18,10 @@
       "date": "2024-02-28",
       "source": "google",
       "text": "I highly recommend this company they have done electrical work throughout my house both inside and out.She was extremely knowledgeable and has great work ethic. She was punctual, competent and trustworthy. She answers all questions and provides suggestions as needed. I would\nTruly recommend this company with any electrical project.",
-      "verified": true
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "2 years ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV9b4tDMKuDoQ2DAMQ73XFvvd5vGEwNprwVvM7qxFzE06n86jSm=s128-c0x00000000-cc-rp-mo"
     },
     {
       "author": "Sharonda Hector",
@@ -24,7 +29,10 @@
       "date": "2024-02-28",
       "source": "google",
       "text": "I recently purchased a house and needed a lot of electrical work done. This young lady was on time, very professional, knowledgeable, had reasonable prices, and best of all DID an AMAZING job!!!\nYou will not be disappointed.\nIt\u2019s refreshing to find a true professional who takes pride in their work.",
-      "verified": true
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "2 years ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJu4HcMe6YYmrl6d7h8-KpUemY41Iql1m9KHWsmLPuTHFcYvA=s128-c0x00000000-cc-rp-mo"
     },
     {
       "author": "latronia sanders",
@@ -32,7 +40,10 @@
       "date": "2024-02-28",
       "source": "google",
       "text": "Only 5 stars?! if I could give them 10 stars I would.Very professional, Work was clean  on time, on budget, extremely professional, absolutely fair and honest! THIS COMPANY IS STUCK WITH ME and any electrical needs",
-      "verified": true
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "2 years ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK0EhRjbG4XMEHiNb-wL5L2PF9oklE9uaqIwPjog9nOBAwc8w=s128-c0x00000000-cc-rp-mo"
     },
     {
       "author": "S Morrison",
@@ -40,7 +51,10 @@
       "date": "2025-08-11",
       "source": "google",
       "text": "PLUGGED Electricians recently serviced one of my properties, delivering high-quality electrical work at a very competitive rate. They demonstrated professionalism, efficiency and clear communication from start to finish.",
-      "verified": true
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "8 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK5YYDTI8GHMNDOwSfQnkWxDS4Dy89KF5PklEBpJ9DxyC5VcQ=s128-c0x00000000-cc-rp-mo"
     },
     {
       "author": "Courtney Bozeman",
@@ -48,8 +62,10 @@
       "date": "2024-02-28",
       "source": "google",
       "text": "Plugged Electricians is top tier!! The professionalism & expertise allowed for an amazing & informative experience. I will definitely use their services again if ever needed & highly recommend them for all electrical needs!",
-      "verified": true
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "2 years ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIclD-lAjC5eKk2icnEaKtkjWCECxw7tm4KNJOfkGvWlmsvnA=s128-c0x00000000-cc-rp-mo"
     }
-  ],
-  "captured_at": "2026-04-24T03:03:59.006283Z"
+  ]
 }

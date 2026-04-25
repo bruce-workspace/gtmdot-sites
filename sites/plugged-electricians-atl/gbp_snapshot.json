@@ -1,7 +1,7 @@
 {
   "slug": "plugged-electricians-atl",
-  "fetched_at": "2026-04-24T03:03:12Z",
-  "original_fetched_at": "2026-04-24T03:03:12Z",
+  "fetched_at": "2026-04-25T03:51:19Z",
+  "original_fetched_at": "2026-04-25T03:51:19Z",
   "source": "google_places_api_v1",
   "refresh_count": 0,
   "refresh_log": [],
@@ -15,7 +15,7 @@
     {
       "source": "google_places_api_v1",
       "count": 5,
-      "fetched_at": "2026-04-24T03:03:12Z"
+      "fetched_at": "2026-04-25T03:51:19Z"
     }
   ],
   "last_review_date": "2025-08-11",
