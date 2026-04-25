@@ -1,0 +1,216 @@
+{
+  "site": {
+    "BUSINESS_NAME": "Plugged Electricians Atl LLC",
+    "BUSINESS_NAME_SHORT": "Plugged Electricians",
+    "BUSINESS_TAGLINE": "Atlanta's trusted electrical team",
+    "CITY": "Atlanta",
+    "PHONE": "(678) 787-2022",
+    "PHONE_TEL": "+16787872022",
+    "EMAIL": "contact@pluggedelectriciansatl.com",
+    "STREET_ADDRESS": "1445 Woodmont Ln NW",
+    "ZIP": "30318",
+    "DOMAIN": "plugged-electricians-atl.gtmdot.com",
+    "SERVICE_AREAS": "Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody",
+    "PRIMARY_CTA": "Get a Free Estimate",
+    "CTA_VERB_LOWER": "get a free estimate",
+    "CURRENT_YEAR": "2026",
+    "VERTICAL_ACCENT_COLOR": "#0B60D6",
+    "PRIMARY_SERVICE_CATEGORY": "Electrical services",
+    "META_DESCRIPTION_HOMEPAGE": "Licensed Atlanta electrician serving Buckhead, Decatur, Sandy Springs. Free estimates on repairs, panel upgrades, EV chargers. 4.9 stars on Google. Call (678) 787-2022.",
+    "HERO_HEADLINE": "Atlanta electrical repair and installation, done right the first time",
+    "HERO_SUBHEAD": "Licensed, insured, and trusted by 4.9-star-rated homeowners across Buckhead, Decatur, and Sandy Springs. Free estimates within the hour.",
+    "HERO_PHOTO_CONTEXT": "electrician-at-work-OK|service-van-OK|panel-install-OK",
+    "CTA_SUBHEAD": "Free estimates, no pressure. We show up when we say we will.",
+    "GBP_RATING": "4.9",
+    "GBP_REVIEW_COUNT": "13",
+    "GBP_URL": "https://maps.google.com/?cid=7638628546933398518",
+    "OWNER_NAME": "the Plugged Electricians team",
+    "OWNER_BIO": "Plugged Electricians ATL is a licensed, insured electrical contractor serving Atlanta and surrounding neighborhoods. Whether you're dealing with a flickering breaker or planning a full panel upgrade for an EV charger, the team shows up on time, diagnoses the problem clearly, and prices the work before starting. No mystery bills.",
+    "ABOUT_INTRO": "Plugged Electricians ATL has been serving Atlanta homeowners since 2019 with straightforward electrical work — diagnosis first, price up front, clean job every time.",
+    "ABOUT_DETAIL_1": "Every technician on the team is licensed and insured. We don't subcontract; the person who shows up is the person who does the work. That's how we keep 4.9 stars across 13+ Google reviews — customers meet the same face they'll see next time.",
+    "ABOUT_DETAIL_2": "We handle everything from tripping breakers to whole-panel upgrades to EV charger installs. If it involves wire and code, it's in our wheelhouse.",
+    "BUSINESS_HOURS": "24/7 — we answer calls around the clock for electrical emergencies",
+    "RADIUS": "25 miles",
+    "FORM_ACTION": "https://crm.cloakanddagger.co/api/site-intake",
+    "FORM_HEADING": "Tell us what you need",
+    "FORM_SUBHEAD": "We'll reach out within the hour during business hours, or first thing in the morning if it's overnight.",
+    "FORM_MESSAGE_LABEL": "Tell us about your project",
+    "CONTACT_HEADLINE": "Get a free estimate",
+    "CONTACT_SUBHEAD": "Tell us what's going on and we'll get you a straight answer on cost and timing — usually same day.",
+    "SERVICES_LIST_TEASER": "Electrical repairs, panel upgrades, EV charger installs, ceiling fan and lighting work.",
+    "SERVICES_PAGE_INTRO": "We handle residential electrical work across metro Atlanta — from a single tripping breaker up to a full-panel upgrade for an EV charger. Every job starts with a free estimate.",
+    "YEAR_FOUNDED": "2019",
+    "GALLERY_1_CONTEXT": "electrical-panel-OK|breaker-box-OK|wiring-OK",
+    "GALLERY_2_CONTEXT": "light-fixture-OK|ceiling-fan-OK|interior-OK",
+    "GALLERY_3_CONTEXT": "ev-charger-OK|outdoor-wiring-OK|garage-install-OK",
+    "GALLERY_4_CONTEXT": "outlet-OK|switch-OK|before-after-OK",
+    "GALLERY_5_CONTEXT": "electrician-at-work-OK|residential-interior-OK",
+    "GALLERY_6_CONTEXT": "truck-OK|team-OK|uniform-OK"
+  },
+  "services": [
+    {
+      "slug": "electrical-repair-atlanta",
+      "name": "Electrical Repair",
+      "icon": "zap",
+      "teaser": "Tripping breakers, dead outlets, flickering lights — diagnosed and fixed the same day, most of the time.",
+      "page": {
+        "h1": "Electrical repair in Atlanta, done same-day",
+        "meta_description": "Licensed Atlanta electrician for tripping breakers, dead outlets, flickering lights. Free estimates. 4.9-star Google reviews. Call Plugged Electricians: (678) 787-2022.",
+        "hero_subhead": "Tripping breakers, dead outlets, flickering lights — diagnosed and fixed the same day, most of the time.",
+        "body_h2": "What we fix",
+        "subsection_h3": "How diagnosis works",
+        "body_paragraphs": [
+          "Most electrical problems in older Atlanta homes trace back to one of four things: a failing breaker, a loose connection behind a switch or outlet, overloaded circuits, or worn wiring in a wet area (kitchen, bathroom, outdoor). We start every repair call with a load check and a visual on the panel — that usually narrows the cause in under 15 minutes.",
+          "We quote the repair before we start. If what you need is a breaker replacement, that's one number. If the diagnosis reveals something bigger — say, aluminum wiring in a 1970s home, or a panel that's been flagged by an inspection — we'll tell you what the full scope looks like and let you decide whether to fix it now or phase it.",
+          "Flickering lights are the most common call. About 60% of the time the cause is a loose neutral on the circuit, which is a quick fix. The other 40% splits between an overloaded circuit (especially in old homes where one 15-amp circuit is feeding half a floor), a failing light fixture, or a utility-side voltage fluctuation that needs Georgia Power to look at.",
+          "Dead outlets are usually a tripped GFCI somewhere else on the same circuit, a wire that's come loose behind the outlet, or a failed outlet that needs replacement. We carry common-replacement outlets on the truck so we can usually fix it on the first visit."
+        ],
+        "steps": [
+          "Call (678) 787-2022 or submit the form. We'll get you a same-day slot if you're in the Atlanta metro.",
+          "We arrive with diagnostic tools, do a load check, and walk the problem with you in plain English.",
+          "Before touching anything, we quote the repair. You say yes or no. Nothing's started without your go-ahead.",
+          "We fix it, test it, clean up, and you get a written summary of what was done."
+        ],
+        "photo_context": "electrical-panel-OK|breaker-box-OK|outlet-OK|wiring-OK|residential-interior-OK",
+        "cta_subhead": "Most repairs are same-day. Tell us what's going on and we'll send someone out.",
+        "faqs": [
+          {
+            "q": "How much does an electrical repair cost in Atlanta?",
+            "a": "Most straightforward repairs (outlet replacement, breaker swap, switch fix) are in the $150–$300 range including parts. Bigger repairs involving rewiring or panel work are quoted after diagnosis — always before we start."
+          },
+          {
+            "q": "Are you licensed and insured in Georgia?",
+            "a": "Yes. We're a licensed electrical contractor in the state of Georgia and carry general liability plus workers' comp insurance. Happy to send copies before we come out."
+          },
+          {
+            "q": "Can you handle emergency calls?",
+            "a": "We answer the phone 24/7 for emergencies. A true emergency (sparks, smoke, smell of burning, complete power loss) gets a same-night visit. Non-emergencies get scheduled for next available slot."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "panel-upgrade-atlanta",
+      "name": "Panel Upgrades",
+      "icon": "battery-charging",
+      "teaser": "200-amp service upgrades, subpanel additions, and whole-home rewires. Priced up front, permitted properly.",
+      "page": {
+        "h1": "200-amp panel upgrades in Atlanta",
+        "meta_description": "Atlanta panel upgrades from licensed electrician. 200-amp service, subpanels, whole-home rewires. Permitted properly. 4.9-star Google. (678) 787-2022.",
+        "hero_subhead": "Upgrading to 200-amp service, adding a subpanel, or planning for an EV charger? Priced up front, permitted properly.",
+        "body_h2": "When you need a panel upgrade",
+        "subsection_h3": "What the upgrade involves",
+        "body_paragraphs": [
+          "Most Atlanta homes built before 2005 have a 100-amp or 150-amp main panel. That was plenty when the only big loads were a stove, an HVAC unit, and a water heater. Add an EV charger, a heat pump water heater, or a finished basement with a mini-split, and you run out of service capacity fast.",
+          "Signs you need an upgrade: breakers tripping when multiple large appliances run; no room in the panel for new circuits; aluminum bus bar with corrosion; Federal Pacific or Zinsco panel (both are safety recalls and a frequent insurance disqualifier in Georgia).",
+          "The upgrade itself is a day's work on most homes. We coordinate with Georgia Power for the temporary disconnect, install a new 200-amp main panel with modern Square D or Siemens hardware, transfer all circuits, and have the inspection scheduled the same week. You're without power for about 4 hours on the cutover day.",
+          "Permit and inspection fees are itemized separately so you see the true breakdown. We pull the permit, we schedule the inspection, we deal with any corrections. You get a signed-off permit card at the end."
+        ],
+        "steps": [
+          "Free on-site assessment — we look at the existing panel, the service drop, and your future load plans.",
+          "Written quote including parts, labor, permit, and Georgia Power coordination.",
+          "Scheduled install day — typically 1 day of work with ~4 hours of power-off.",
+          "Inspection coordinated through the city; you get the signed permit card for your records."
+        ],
+        "photo_context": "electrical-panel-OK|breaker-box-OK|main-panel-OK|200-amp-OK",
+        "cta_subhead": "Free on-site assessment. We'll tell you honestly whether you need a full upgrade or just a subpanel.",
+        "faqs": [
+          {
+            "q": "How much does a 200-amp panel upgrade cost in Atlanta?",
+            "a": "Most residential 200-amp upgrades fall in the $2,500–$4,500 range including permit fees and Georgia Power coordination. Price varies based on the length of the service drop, how much relocation is needed, and whether the grounding/bonding system needs updating. We quote after the on-site assessment so there are no surprises."
+          },
+          {
+            "q": "How long does it take?",
+            "a": "Most upgrades are one day of work. Your power is off for about 4 hours during the cutover; the rest of the time we're working inside the panel with the main breaker off."
+          },
+          {
+            "q": "Do you pull the permit?",
+            "a": "Yes. We pull the electrical permit with the City of Atlanta (or whichever jurisdiction applies) and schedule the inspection. You get the signed-off permit card at completion — useful for home resale and insurance."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "ev-charger-installation-atlanta",
+      "name": "EV Charger Installation",
+      "icon": "plug-zap",
+      "teaser": "Level 2 home chargers (Tesla, ChargePoint, Wallbox) installed and inspected. Panel load check included.",
+      "page": {
+        "h1": "Level 2 EV charger installation in Atlanta",
+        "meta_description": "Tesla, ChargePoint, Wallbox EV chargers installed and inspected. Panel load check included. Atlanta licensed electrician. 4.9-star Google. (678) 787-2022.",
+        "hero_subhead": "Home EV chargers installed and inspected — Tesla Wall Connector, ChargePoint, Wallbox, whatever you have or want.",
+        "body_h2": "What gets installed",
+        "subsection_h3": "Panel load check comes first",
+        "body_paragraphs": [
+          "A Level 2 charger (240V, typically 40 or 48 amps) is the practical home standard — gives you about 25–30 miles of range per hour of charging. Everyone we install is code-compliant, GFCI-protected at the breaker, and grounded properly.",
+          "We install whatever you buy: Tesla Wall Connector, ChargePoint Home Flex, Wallbox Pulsar Plus, Grizzl-E, Emporia. If you don't have one yet, we'll tell you which makes sense for your car and panel capacity.",
+          "Before anything gets wired, we do a panel load calculation per NEC Article 220. The question is whether your existing panel can handle a 40 or 48-amp continuous draw on top of your current load. About 30% of Atlanta homes we look at need a subpanel or a panel upgrade first.",
+          "If your panel has room, installation is a half-day job: new 240V circuit, conduit run from panel to charger location (garage, driveway, side of house), hardware mount, and a quick test with your car. We pull the permit and schedule the inspection."
+        ],
+        "steps": [
+          "Free on-site load calc — we measure your existing panel capacity and tell you straight up if it'll handle the EV charger.",
+          "If load is fine: quote the install. If load is marginal: we quote both the EV install AND the subpanel or main upgrade needed.",
+          "Install day — typically half a day of work, starting with panel-off time.",
+          "Permit inspection + a test charge with your car. You plug in and we confirm it's delivering full amperage."
+        ],
+        "photo_context": "ev-charger-OK|charger-on-wall-OK|tesla-wall-connector-OK|garage-install-OK|outdoor-install-OK",
+        "cta_subhead": "Free on-site load calculation. If your panel can handle it, we'll install same week.",
+        "faqs": [
+          {
+            "q": "How much does EV charger installation cost?",
+            "a": "A straightforward Level 2 install with a short conduit run is typically $700–$1,200 including permit. Longer runs, trenching, or panel work push it higher. We quote after we see the site."
+          },
+          {
+            "q": "Will I need a panel upgrade?",
+            "a": "About 30% of Atlanta homes we assess do. If your panel is 200-amp and not already loaded up, you're probably fine. If it's 100-amp or you've already added a lot of circuits (finished basement, heat pump, etc.), you may need a subpanel or main upgrade."
+          },
+          {
+            "q": "Do you handle the permit?",
+            "a": "Yes. We pull the electrical permit and schedule the inspection. You get the signed permit card — helps with home resale and some EV rebate programs."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "ceiling-fan-installation-atlanta",
+      "name": "Ceiling Fans & Lighting",
+      "icon": "lightbulb",
+      "teaser": "Ceiling fan installs, recessed lighting, chandelier hangs, and outdoor fixture work across Atlanta.",
+      "page": {
+        "h1": "Ceiling fan and lighting installation in Atlanta",
+        "meta_description": "Ceiling fan installs, recessed lighting, chandeliers, outdoor fixtures. Atlanta licensed electrician, 4.9-star Google, free estimates. (678) 787-2022.",
+        "hero_subhead": "Ceiling fan installs, recessed lighting retrofits, chandelier hangs, and outdoor lighting — across Atlanta.",
+        "body_h2": "What we install",
+        "subsection_h3": "What to expect on install day",
+        "body_paragraphs": [
+          "Ceiling fans look simple but the wiring matters. We check that the existing box is fan-rated (most older Atlanta homes aren't — we'll upgrade to a fan-rated box as part of the install). If the circuit doesn't have a dedicated neutral, we work with what's there or suggest a smart-fan control that doesn't need one.",
+          "Recessed lighting retrofits are a before-and-after moment for most rooms. We cut in, wire, trim, and aim every can. The modern LED trims pull about one-sixth the wattage of old incandescent cans, so you can add more lights without upsizing the circuit.",
+          "Chandelier and pendant hangs look easy until you're hanging something heavy over a dining room table. We add proper blocking and fan-rated boxes where needed, and we level the fixture to the table — not the ceiling.",
+          "Outdoor fixtures (sconces, spotlights, porch ceiling fans) need weatherproof boxes and GFCI protection. We handle the fixture install plus any rewiring needed to bring an outdoor circuit up to current code."
+        ],
+        "steps": [
+          "Send us a photo of the location and what you want installed — we'll give you a ballpark over text.",
+          "Schedule an install window. Most single-fixture jobs take 60–90 minutes.",
+          "We do the install, test the switch, clean up, and take the old fixture/box with us.",
+          "Done. Usually done the same visit unless we discover a wiring surprise."
+        ],
+        "photo_context": "ceiling-fan-OK|light-fixture-OK|chandelier-OK|recessed-lighting-OK|outdoor-fixture-OK|interior-room-OK",
+        "cta_subhead": "Most fixture installs are same-day. Text us a photo for a quick quote.",
+        "faqs": [
+          {
+            "q": "How much does ceiling fan installation cost?",
+            "a": "A standard ceiling fan install (existing fan-rated box, working switch) is $125–$175. If the box needs upgrading to fan-rated, add $75. If we need to run a new switch leg, that's quoted separately."
+          },
+          {
+            "q": "Do you install lights I buy from Home Depot or Amazon?",
+            "a": "Yes. We'll install whatever fixture you buy. If the instructions are missing or the fixture is defective, we'll pause and let you know — won't force-install something that's broken out of the box."
+          },
+          {
+            "q": "Can you do recessed lighting retrofits?",
+            "a": "Yes — new-construction cans or retrofit trims in existing ceilings. We cut in, wire, and aim every light. Typical 6-can living room install is 3–4 hours."
+          }
+        ]
+      }
+    }
+  ]
+}
