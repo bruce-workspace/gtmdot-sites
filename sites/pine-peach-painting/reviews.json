@@ -1,0 +1,71 @@
+{
+  "slug": "pine-peach-painting",
+  "captured": 5,
+  "total_reviews": 21,
+  "overall_rating": 4.8,
+  "captured_at": "2026-04-25T04:04:46Z",
+  "sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 5,
+      "fetched_at": "2026-04-25T04:04:46Z"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Vicky Fowler",
+      "rating": 5,
+      "date": "2025-08-24",
+      "source": "google",
+      "text": "Fernando and team pained interior of my new townhome before I moved in and finished early!  He painted kitchen cabinets, bathroom cabinets, a majority of interior walls, handrails,  as well as some construction projects.  He shiplaped  a powder room, back of kitchen island, and living room niches. He also built bookshelves.  Outstanding work, very reasonable and record time!",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "8 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVtf83hBHcX9j6aNe6f7FNAheNQzaDg60_ClaUrQozsRFD-Klo9=s128-c0x00000000-cc-rp-mo"
+    },
+    {
+      "author": "Carolyn Sherman",
+      "rating": 5,
+      "date": "2024-06-04",
+      "source": "google",
+      "text": "If you need help with painting or other home projects, I highly recommend Pine Peach Painting. Fernando Chamarro has been a friend and helper to me since I moved into our home 6.5 years ago, and I am excited by his start-up company. His amazing son is being trained well by his dad. Their senior assistant does impeccable trim work. Great workmanship all around.",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "a year ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW4QwYcIOCQjL22-6pSOABxWgXYQjxpFZ9LMTkXx0nfQgotaJfa=s128-c0x00000000-cc-rp-mo-ba2"
+    },
+    {
+      "author": "Lauren Reagin",
+      "rating": 5,
+      "date": "2024-01-15",
+      "source": "google",
+      "text": "Fernando and his team at Pine Peach Painting were extremely professional, thorough, and reasonably priced. Fernando delivered his services promptly and efficiently. We have had both interior and exterior painting and repairs done with this company and will call them again.",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "2 years ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVBUJIUkzoMMQsFjX6_IHRfl-IE5oE1CeCnUtVv-kq1pwK2NvU=s128-c0x00000000-cc-rp-mo"
+    },
+    {
+      "author": "Alyssa Acree",
+      "rating": 5,
+      "date": "2025-08-15",
+      "source": "google",
+      "text": "Fernando and his crew are honest, reliable, affordable and do great work. I highly recommend them!",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "8 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWQ4wkQoDJb1qWMvLNJoKjodUGp5OiiWUKUjeiJ4t806E5kauyy=s128-c0x00000000-cc-rp-mo"
+    },
+    {
+      "author": "Alia Brown",
+      "rating": 5,
+      "date": "2020-01-15",
+      "source": "google",
+      "text": "This company restored our deck as well as did interior painting after we had multiple areas that needed paint revision after a bad paint job. Not only were they punctual but they were very meticulous and completed the job sooner than expected. I highly recommend Fernando and will be using him for other jobs in the future!",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "6 years ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVj9abGCp_lbmmv7FfZmOY9HUgXlunKXBp5oxJgN1YWQrSsNtHlig=s128-c0x00000000-cc-rp-mo-ba2"
+    }
+  ]
+}

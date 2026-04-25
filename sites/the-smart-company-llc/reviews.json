@@ -1,96 +1,71 @@
 {
+  "slug": "the-smart-company-llc",
+  "captured": 5,
+  "total_reviews": 30,
+  "overall_rating": 5,
+  "captured_at": "2026-04-25T04:04:51Z",
+  "sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 5,
+      "fetched_at": "2026-04-25T04:04:51Z"
+    }
+  ],
   "reviews": [
     {
       "author": "Marie Carmel Mo\u00efse",
       "rating": 5,
-      "text": "I just got my roof replaced by the Smart Company they are the best,  good treatment , great customer service.  They kept me updated on everything,  very profesional. They expedite the process and it was done at no time. Great job, good price I am very please with the work. Excellent,  I strongly recommend.",
+      "date": "2023-06-01",
       "source": "google",
-      "date": ""
+      "text": "I just got my roof replaced by the Smart Company they are the best,  good treatment , great customer service.  They kept me updated on everything,  very profesional. They expedite the process and it was done at no time. Great job, good price I am very please with the work. Excellent,  I strongly recommend.",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "2 years ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIUbtLmGZEfLjpwAJ11fH05Y4yPQv8LZOEuA65l741UQHRo6A=s128-c0x00000000-cc-rp-mo"
     },
     {
       "author": "A. M. Covin",
       "rating": 5,
-      "text": "The Smart Company restored, and painted our deck and fence. They did an amazing job and will definitely use them in the future.",
+      "date": "2021-04-18",
       "source": "google",
-      "date": ""
+      "text": "The Smart Company restored, and painted our deck and fence. They did an amazing job and will definitely use them in the future.",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "5 years ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKyBpj8j9xBzXHRxgsKsIICGht4yj6qU1s-YoZl0rNDPXmr5w=s128-c0x00000000-cc-rp-mo-ba2"
     },
     {
       "author": "Bill Beckstrand",
       "rating": 5,
-      "text": "Used  The Smart Compant to repaint my house very high quailty and time effienct, would recommend them to anyone who needs there house painted",
+      "date": "2021-05-16",
       "source": "google",
-      "date": ""
+      "text": "Used  The Smart Compant to repaint my house very high quailty and time effienct, would recommend them to anyone who needs there house painted",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "4 years ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXZ8wPB8r8cAJr2evpBeBR4mcurxnjc6gewI80E9r-mCHduMs7M=s128-c0x00000000-cc-rp-mo"
     },
     {
       "author": "John Duran Toyota (John Duran Autos)",
       "rating": 5,
-      "text": "Thanks to Zeta I came across this team of professionals that help me and my family to fix my roof, great service.",
+      "date": "2020-10-30",
       "source": "google",
-      "date": ""
+      "text": "Thanks to Zeta I came across this team of professionals that help me and my family to fix my roof, great service.",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "5 years ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWiw2zKCq0qJRVEH69DUSQVeQhGJJv1tSeU97Y7DYNWmzI34NCFtA=s128-c0x00000000-cc-rp-mo-ba5"
     },
     {
       "author": "m s",
       "rating": 5,
-      "text": "Great customer service kept me updated on on how the process was going even though the insurance took a while they were patient and understanding. Thank you !!!!",
+      "date": "2021-06-22",
       "source": "google",
-      "date": ""
+      "text": "Great customer service kept me updated on on how the process was going even though the insurance took a while they were patient and understanding. Thank you !!!!",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "4 years ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKlAYM2Yt_2nswBlpREQMN_FCsVqLrqkTFU1Zh_qxiPxdUAeg=s128-c0x00000000-cc-rp-mo"
     }
-  ],
-  "counts": {
-    "total_available": "unknown \u2014 BBB A+ rating signals active review base; GBP share URL in rebuild-queue for Bruce retry",
-    "captured": 5,
-    "target_min": 3,
-    "aggregate_rating": null,
-    "aggregate_rating_source": "pending Bruce Places API retry"
-  },
-  "notes": "The Smart Company GA, LLC. Phone (678) 891-9979. Address 3223 Mill Springs Cir, Buford GA 30519. Owners Jose Figueroa + Yenire Mendoza (couple-run). BBB A+ rating (not accredited). Scope per BBB: Home Improvement + Roofing + Painting \u2014 BROADER than rebuild-queue's 'Gutter Cleaning' single-trade label. Recommend updating rebuild-queue trade_category. GBP share URL https://share.google/pbuwSF3JvNKQogq4f is in rebuild-queue \u2014 Bruce Places API retry. Claim code SMRT5293 preserved.",
-  "capture_attempts": [
-    {
-      "source": "bbb_search",
-      "status": "partial_success",
-      "reason": "BBB surfaced address + A+ rating + service categories; review text not in search-page output"
-    },
-    {
-      "source": "bbb_detail_page",
-      "status": "404",
-      "reason": "direct URL guess for BBB detail page returned 404"
-    },
-    {
-      "source": "google_search",
-      "status": "gated",
-      "reason": "Google anti-scrape on SERP"
-    },
-    {
-      "source": "google_gbp_places_api",
-      "status": "not_attempted_by_r1vs",
-      "reason": "Bruce owns Places API \u2014 share URL available in rebuild-queue.json"
-    },
-    {
-      "source": "own_website",
-      "status": "not_surfaced",
-      "reason": "no business website surfaced via web search"
-    }
-  ],
-  "flags": [
-    "review_blocked_pending_bruce_retry",
-    "empty_shell_2pass_candidate",
-    "gbp_url_available_for_bruce",
-    "couple_run_family_business_positioning",
-    "multi_trade_scope_broader_than_rebuild_queue_label",
-    "bbb_a_plus_legitimacy_signal",
-    "high_confidence_bruce_retry_will_succeed"
-  ],
-  "team_from_reviews": [
-    {
-      "name": "Jose Figueroa",
-      "role": "co-owner (per rebuild-queue)"
-    },
-    {
-      "name": "Yenire Mendoza",
-      "role": "co-owner (per rebuild-queue)"
-    }
-  ],
-  "created_at": "2026-04-19T17:45:00-04:00",
-  "created_by": "r1vs",
-  "schema_version": "1.0"
+  ]
 }

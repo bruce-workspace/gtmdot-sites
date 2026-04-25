@@ -1,0 +1,71 @@
+{
+  "slug": "jack-glass-electric",
+  "captured": 5,
+  "total_reviews": 90,
+  "overall_rating": 4.9,
+  "captured_at": "2026-04-25T04:04:45Z",
+  "sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 5,
+      "fetched_at": "2026-04-25T04:04:45Z"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Harmony Blackwell",
+      "rating": 5,
+      "date": "2024-06-13",
+      "source": "google",
+      "text": "My husband and I have been working with Kerry and his team for the past five years during each phase of updating our vintage fixer upper. Most recently, they did extensive electrical work during a gut renovation of the upper level of our home and have 'future proofed' us for the next phase of basement updates. I can't say enough wonderful things about them. They are a small operation, which we prefer, and are always pleasant to work with. CJ is simply one of the best electricians there is. Our job was challenging and contained a lot of aesthetic detail, which they tackled with no problem. They are true professionals and take great pride in their work and a job well done.",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "a year ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX5hhdBW-7Kj6QtAhhDUTQ71GNmZofLOWMgsw4owi1sgC-JAw-s=s128-c0x00000000-cc-rp-mo-ba2"
+    },
+    {
+      "author": "Kaitlynn Jan",
+      "rating": 5,
+      "date": "2026-03-02",
+      "source": "google",
+      "text": "Affordable, efficient, and professional service. My home\u2019s wiring is flawless.",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "a month ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL7gscU0qozMsjc2Ed4KLU7_swsAdCawUhIEDWmrdDKz6bBDA=s128-c0x00000000-cc-rp-mo"
+    },
+    {
+      "author": "Frank Frank",
+      "rating": 5,
+      "date": "2025-08-05",
+      "source": "google",
+      "text": "We're so pleased with Jack C. Glass Electric, Inc.   in Mableton, GA ! They offered exceptional value for the quality of service. Their electrician was courteous, professional, and completed the repair so efficiently. Our electrical system is now perfect. Very, very satisfied!",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "8 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIhgqqh6QkOMFFlNRLObFGuVWIf-xP1edNxfv_qHenNtUWwpA=s128-c0x00000000-cc-rp-mo"
+    },
+    {
+      "author": "Eliezer Ty",
+      "rating": 5,
+      "date": "2026-02-10",
+      "source": "google",
+      "text": "Great communication and top-quality work. I felt confident hiring them.",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "2 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ5h6eGnVJEswqa9zxbaSSYBN-vepRhuooc5nVMhqt4WtaJeg=s128-c0x00000000-cc-rp-mo"
+    },
+    {
+      "author": "Jayvion Davian",
+      "rating": 5,
+      "date": "2026-02-19",
+      "source": "google",
+      "text": "Quick response and efficient electrical service. Highly recommend.",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "2 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJ3XcW1drwcVPCilLPXky6DNqZhOMSHQa5c-ESIPcTF4sxwtw=s128-c0x00000000-cc-rp-mo"
+    }
+  ]
+}

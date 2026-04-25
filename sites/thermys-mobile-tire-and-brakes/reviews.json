@@ -1,86 +1,71 @@
 {
+  "slug": "thermys-mobile-tire-and-brakes",
+  "captured": 5,
+  "total_reviews": 82,
+  "overall_rating": 5,
+  "captured_at": "2026-04-25T04:04:52Z",
+  "sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 5,
+      "fetched_at": "2026-04-25T04:04:52Z"
+    }
+  ],
   "reviews": [
     {
       "author": "Betty",
       "rating": 5,
-      "text": "He\u2019s officially my go to! Very professional very fast , communicates well is knowledgeable and great prices! I would recommend him to anyone. Was having issues with my brakes and he did not leave until he figured it out and fixed it!",
+      "date": "2026-03-05",
       "source": "google",
-      "date": ""
+      "text": "He\u2019s officially my go to! Very professional very fast , communicates well is knowledgeable and great prices! I would recommend him to anyone. Was having issues with my brakes and he did not leave until he figured it out and fixed it!",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "a month ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWYLpB-LBi7WXbIHUfyyDe9u2WNs__le9c4GjZXy-I49gv8seQ=s128-c0x00000000-cc-rp-mo"
     },
     {
       "author": "Serena Virani",
       "rating": 5,
-      "text": "Thermy provided outstanding service from start to finish. My brake pads were repaired quickly and efficiently, and the entire process was smooth and stress-free. In addition to the excellent workmanship, the customer service was exceptional\u2014we had a great conversation that made the experience even better. I truly appreciated the professionalism, speed, and attention to detail. I will absolutely be returning for future service and highly recommend Thermy to anyone in need of reliable auto repairs.",
+      "date": "2025-12-05",
       "source": "google",
-      "date": ""
+      "text": "Thermy provided outstanding service from start to finish. My brake pads were repaired quickly and efficiently, and the entire process was smooth and stress-free. In addition to the excellent workmanship, the customer service was exceptional\u2014we had a great conversation that made the experience even better. I truly appreciated the professionalism, speed, and attention to detail. I will absolutely be returning for future service and highly recommend Thermy to anyone in need of reliable auto repairs.",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "4 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJGvl6Ok-7Xt1heiJJQwxTJbycrIi69b2Z6rFmKKeMrZM2aPA=s128-c0x00000000-cc-rp-mo"
     },
     {
       "author": "trudy Jackson",
       "rating": 5,
-      "text": "My name is Miss Jackson, My appointment was at 9:00 AM Thermys called me approximately at 8:45 AM and told me he was 15 minutes away on time. He was very respectful and did an awesome job. I woke my son up and asked him. Did he need any mechanic work on his vehicle? Sure enough he did Thermys Took a look at his vehicle and did the work,I would genuinely like to say if anything forbid if it does happen to our vehicle he would be the man we will call\nThank You much",
+      "date": "2025-12-20",
       "source": "google",
-      "date": ""
+      "text": "My name is Miss Jackson, My appointment was at 9:00 AM Thermys called me approximately at 8:45 AM and told me he was 15 minutes away on time. He was very respectful and did an awesome job. I woke my son up and asked him. Did he need any mechanic work on his vehicle? Sure enough he did Thermys Took a look at his vehicle and did the work,I would genuinely like to say if anything forbid if it does happen to our vehicle he would be the man we will call\nThank You much",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "4 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJbHpbOKKQb_jI4aIJv2XH7l6jj-5XWuRR5ZR95OJCs7MBWZw=s128-c0x00000000-cc-rp-mo"
     },
     {
       "author": "Anqwanette Grant",
       "rating": 5,
-      "text": "Great experience he came quick did my brakes fast with no problems. He even picked up my parts for me I didn\u2019t have to do anything but pay him which is also a plus because it was a very reasonable price.. will definitely recommend and use him again\u2026 thanks Thermy!!!\ud83e\udd70",
+      "date": "2025-11-14",
       "source": "google",
-      "date": ""
+      "text": "Great experience he came quick did my brakes fast with no problems. He even picked up my parts for me I didn\u2019t have to do anything but pay him which is also a plus because it was a very reasonable price.. will definitely recommend and use him again\u2026 thanks Thermy!!!\ud83e\udd70",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "5 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUVI5JqT_zrRBPEYEsoWCJ9m5yeWQaxn7N_HuvIyvpx_xl10Y9a=s128-c0x00000000-cc-rp-mo"
     },
     {
       "author": "Jasmine Jones",
       "rating": 5,
-      "text": "Was in atl for the weekend looked on google for someone who could put my rotors on fast that being I had to be on the road to travel back home.. He was very professional he def went above and beyond making sure ALL MY TIRES were tighten and got before I left out!! I\u2019ll def recommend him for anything def my go to when I\u2019m in town thank you!!",
+      "date": "2026-01-18",
       "source": "google",
-      "date": ""
+      "text": "Was in atl for the weekend looked on google for someone who could put my rotors on fast that being I had to be on the road to travel back home.. He was very professional he def went above and beyond making sure ALL MY TIRES were tighten and got before I left out!! I\u2019ll def recommend him for anything def my go to when I\u2019m in town thank you!!",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "3 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIKBl17Vk2uic_EyicFTkQmIQVqv1tTt_2p240FFA9OUn9wIQ=s128-c0x00000000-cc-rp-mo"
     }
-  ],
-  "counts": {
-    "total_available": "unknown \u2014 no GBP URL in rebuild-queue; Bruce retry by name+phone lookup",
-    "captured": 5,
-    "target_min": 3,
-    "aggregate_rating": null,
-    "aggregate_rating_source": "pending Bruce Places API retry"
-  },
-  "notes": "Thermys Mobile Tire and Brakes LLC. Phone (770) 273-2197. Owner Quartisha Williams (per rebuild-queue). Mobile auto specialty \u2014 tire + brakes only (not full-service mechanical). Atlanta metro. Own site not surfaced. BBB no listing. No GBP URL in rebuild-queue \u2014 Bruce Places API retry via name+phone lookup. Claim code THMY-QW01 (note owner-initial suffix format differs from other claim codes). Possible woman-owned (and possibly Black-owned per name heuristic) \u2014 DO NOT surface demographic positioning publicly until Bruce verifies via GBP or owner intake.",
-  "capture_attempts": [
-    {
-      "source": "google_search",
-      "status": "gated",
-      "reason": "Google anti-scrape on SERP"
-    },
-    {
-      "source": "bbb",
-      "status": "no_listing",
-      "reason": "BBB search returned no results for Thermys Mobile Tire in Atlanta GA"
-    },
-    {
-      "source": "duckduckgo_search",
-      "status": "no_match",
-      "reason": "no direct results"
-    },
-    {
-      "source": "google_gbp",
-      "status": "no_url_in_rebuild_queue",
-      "reason": "rebuild-queue gbp_url=null \u2014 Bruce needs Places API by name+phone"
-    }
-  ],
-  "flags": [
-    "review_blocked_pending_bruce_retry",
-    "empty_shell_2pass_candidate",
-    "no_gbp_url_in_rebuild_queue_needs_places_api_name_lookup",
-    "tire_brake_specialty_mobile_positioning",
-    "possible_woman_owned_pending_bruce_verification",
-    "DO_NOT_SURFACE_DEMOGRAPHIC_POSITIONING_PUBLICLY_UNTIL_VERIFIED"
-  ],
-  "team_from_reviews": [
-    {
-      "name": "Quartisha Williams",
-      "role": "owner (per rebuild-queue)"
-    }
-  ],
-  "created_at": "2026-04-19T17:52:00-04:00",
-  "created_by": "r1vs",
-  "schema_version": "1.0"
+  ]
 }

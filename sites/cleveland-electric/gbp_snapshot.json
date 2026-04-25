@@ -1,0 +1,66 @@
+{
+  "slug": "cleveland-electric",
+  "fetched_at": "2026-04-25T04:04:41Z",
+  "original_fetched_at": "2026-04-25T04:04:41Z",
+  "source": "google_places_api_v1",
+  "refresh_count": 0,
+  "refresh_log": [],
+  "place_id": "ChIJ97i5nb8b9YgRbzoMhAnCXgA",
+  "business_name": "Cleveland Electric Co",
+  "formatted_address": "3715 Northside Pkwy NW Bldg 100-800, Atlanta, GA 30327, USA",
+  "rating": 4.1,
+  "review_count_total": 42,
+  "reviews_captured": 5,
+  "reviews_captured_sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 5,
+      "fetched_at": "2026-04-25T04:04:41Z"
+    }
+  ],
+  "last_review_date": "2021-12-08",
+  "earliest_review_date": "2017-06-05",
+  "photo_count_on_gbp": 1,
+  "primary_phone": "+14046964550",
+  "primary_phone_formatted": "(404) 696-4550",
+  "hours_summary": "Monday: 7:30\u202fAM\u2009\u2013\u20094:30\u202fPM; Tuesday: 7:30\u202fAM\u2009\u2013\u20094:30\u202fPM; Wednesday: 7:30\u202fAM\u2009\u2013\u20094:30\u202fPM; Thursday: 7:30\u202fAM\u2009\u2013\u20094:30\u202fPM; Friday: 7:30\u202fAM\u2009\u2013\u20094:30\u202fPM; Saturday: Closed; Sunday: Closed",
+  "hours_structured": [
+    {
+      "dayOfWeek": "Monday",
+      "opens": "07:30",
+      "closes": "16:30"
+    },
+    {
+      "dayOfWeek": "Tuesday",
+      "opens": "07:30",
+      "closes": "16:30"
+    },
+    {
+      "dayOfWeek": "Wednesday",
+      "opens": "07:30",
+      "closes": "16:30"
+    },
+    {
+      "dayOfWeek": "Thursday",
+      "opens": "07:30",
+      "closes": "16:30"
+    },
+    {
+      "dayOfWeek": "Friday",
+      "opens": "07:30",
+      "closes": "16:30"
+    }
+  ],
+  "website_url": null,
+  "categories": [
+    "electrician",
+    "establishment",
+    "point_of_interest"
+  ],
+  "gbp_match_verified": false,
+  "gbp_url": "https://maps.google.com/?cid=26671993936689775",
+  "staleness_policy": {
+    "soft_stale_days": 14,
+    "hard_stale_days": 30
+  }
+}

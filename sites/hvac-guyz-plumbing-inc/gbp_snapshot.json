@@ -1,0 +1,78 @@
+{
+  "slug": "hvac-guyz-plumbing-inc",
+  "fetched_at": "2026-04-25T04:04:44Z",
+  "original_fetched_at": "2026-04-25T04:04:44Z",
+  "source": "google_places_api_v1",
+  "refresh_count": 0,
+  "refresh_log": [],
+  "place_id": "ChIJ8cpWfjQF9YgRPHbr1ol2SWs",
+  "business_name": "HVAC Guyz & Plumbing Inc",
+  "formatted_address": "Atlanta, GA 30324, USA",
+  "rating": 4.8,
+  "review_count_total": 38,
+  "reviews_captured": 5,
+  "reviews_captured_sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 5,
+      "fetched_at": "2026-04-25T04:04:44Z"
+    }
+  ],
+  "last_review_date": "2025-12-11",
+  "earliest_review_date": "2024-01-23",
+  "photo_count_on_gbp": 1,
+  "primary_phone": "+14702554535",
+  "primary_phone_formatted": "(470) 255-4535",
+  "hours_summary": "Monday: 9:00\u202fAM\u2009\u2013\u20099:00\u202fPM; Tuesday: 9:00\u202fAM\u2009\u2013\u20097:00\u202fPM; Wednesday: 9:00\u202fAM\u2009\u2013\u20095:00\u202fPM; Thursday: Open 24 hours; Friday: 8:00\u202fAM\u2009\u2013\u20098:00\u202fPM; Saturday: 9:00\u202fAM\u2009\u2013\u20095:00\u202fPM; Sunday: 10:00\u202fAM\u2009\u2013\u20095:00\u202fPM",
+  "hours_structured": [
+    {
+      "dayOfWeek": "Sunday",
+      "opens": "10:00",
+      "closes": "17:00"
+    },
+    {
+      "dayOfWeek": "Monday",
+      "opens": "09:00",
+      "closes": "21:00"
+    },
+    {
+      "dayOfWeek": "Tuesday",
+      "opens": "09:00",
+      "closes": "19:00"
+    },
+    {
+      "dayOfWeek": "Wednesday",
+      "opens": "09:00",
+      "closes": "17:00"
+    },
+    {
+      "dayOfWeek": "Thursday",
+      "opens": "00:00",
+      "closes": "00:00"
+    },
+    {
+      "dayOfWeek": "Friday",
+      "opens": "08:00",
+      "closes": "20:00"
+    },
+    {
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "website_url": null,
+  "categories": [
+    "electrician",
+    "establishment",
+    "general_contractor",
+    "plumber",
+    "point_of_interest"
+  ],
+  "gbp_match_verified": false,
+  "gbp_url": "https://maps.google.com/?cid=7730840569746519612",
+  "staleness_policy": {
+    "soft_stale_days": 14,
+    "hard_stale_days": 30
+  }
+}

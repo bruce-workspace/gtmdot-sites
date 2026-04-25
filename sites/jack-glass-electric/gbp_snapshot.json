@@ -1,0 +1,66 @@
+{
+  "slug": "jack-glass-electric",
+  "fetched_at": "2026-04-25T04:04:45Z",
+  "original_fetched_at": "2026-04-25T04:04:45Z",
+  "source": "google_places_api_v1",
+  "refresh_count": 0,
+  "refresh_log": [],
+  "place_id": "ChIJc-qhyzca9YgRdHCsA7QT3Hs",
+  "business_name": "Jack C. Glass Electric, Inc.",
+  "formatted_address": "5640 Nickajack Park Rd, Mableton, GA 30126, USA",
+  "rating": 4.9,
+  "review_count_total": 90,
+  "reviews_captured": 5,
+  "reviews_captured_sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 5,
+      "fetched_at": "2026-04-25T04:04:45Z"
+    }
+  ],
+  "last_review_date": "2026-03-02",
+  "earliest_review_date": "2024-06-13",
+  "photo_count_on_gbp": 9,
+  "primary_phone": "+16783700753",
+  "primary_phone_formatted": "(678) 370-0753",
+  "hours_summary": "Monday: 8:00\u202fAM\u2009\u2013\u20098:00\u202fPM; Tuesday: 8:00\u202fAM\u2009\u2013\u20098:00\u202fPM; Wednesday: 8:00\u202fAM\u2009\u2013\u20098:00\u202fPM; Thursday: 8:00\u202fAM\u2009\u2013\u20098:00\u202fPM; Friday: 8:00\u202fAM\u2009\u2013\u20098:00\u202fPM; Saturday: Closed; Sunday: Closed",
+  "hours_structured": [
+    {
+      "dayOfWeek": "Monday",
+      "opens": "08:00",
+      "closes": "20:00"
+    },
+    {
+      "dayOfWeek": "Tuesday",
+      "opens": "08:00",
+      "closes": "20:00"
+    },
+    {
+      "dayOfWeek": "Wednesday",
+      "opens": "08:00",
+      "closes": "20:00"
+    },
+    {
+      "dayOfWeek": "Thursday",
+      "opens": "08:00",
+      "closes": "20:00"
+    },
+    {
+      "dayOfWeek": "Friday",
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "website_url": null,
+  "categories": [
+    "electrician",
+    "establishment",
+    "point_of_interest"
+  ],
+  "gbp_match_verified": false,
+  "gbp_url": "https://maps.google.com/?cid=8925030225418154100",
+  "staleness_policy": {
+    "soft_stale_days": 14,
+    "hard_stale_days": 30
+  }
+}

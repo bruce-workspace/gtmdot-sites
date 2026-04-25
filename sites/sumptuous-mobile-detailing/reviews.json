@@ -1,83 +1,71 @@
 {
+  "slug": "sumptuous-mobile-detailing",
+  "captured": 5,
+  "total_reviews": 190,
+  "overall_rating": 5,
+  "captured_at": "2026-04-25T04:04:49Z",
+  "sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 5,
+      "fetched_at": "2026-04-25T04:04:49Z"
+    }
+  ],
   "reviews": [
-    {
-      "author": "Sarah Mitchell",
-      "rating": 5,
-      "text": "Absolutely blown away by the results! My car looks showroom-new. The attention to detail is incredible, and the team was professional from start to finish. Highly recommend!",
-      "source": "owner-site",
-      "date": "",
-      "source_url": "https://sumptuousdetailing.com"
-    },
-    {
-      "author": "James Chen",
-      "rating": 5,
-      "text": "Best detailing service I've ever used. The ceramic coating has kept my car looking pristine. Worth every penny!",
-      "source": "owner-site",
-      "date": "",
-      "source_url": "https://sumptuousdetailing.com"
-    },
-    {
-      "author": "Amanda Rodriguez",
-      "rating": 5,
-      "text": "They came to my house and transformed my vehicle. The convenience and quality are unmatched. Will definitely book again!",
-      "source": "owner-site",
-      "date": "",
-      "source_url": "https://sumptuousdetailing.com"
-    },
-    {
-      "author": "David Thompson",
-      "rating": 5,
-      "text": "Professional, punctual, and thorough. My luxury car has never looked better. Sumptuous Mobile Detailing is the real deal.",
-      "source": "owner-site",
-      "date": "",
-      "source_url": "https://sumptuousdetailing.com"
-    },
     {
       "author": "Brad Goldberg",
       "rating": 5,
-      "text": "Amazing attention to details and pride in their work!!! Kept me updated throughout the entire process!! The car looks incredible!!!",
+      "date": "2025-11-06",
       "source": "google",
-      "date": "",
-      "source_url": "https://www.google.com/maps/place/Sumptuous+Mobile+Detailing+%26+Ceramic+Coating/@34.0523003,-84.0711637,17z"
+      "text": "Amazing attention to details and pride in their work!!! Kept me updated throughout the process.. My car was a tragic mess inside and he far exceeded my expectations!!!!! Highly highly recommend!!! Support local business!!!!",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "5 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL51EObxfWzwNovKPPWMTPBl1e4Hpc33hJSG_-9iI27i6Cw6Q=s128-c0x00000000-cc-rp-mo"
     },
     {
       "author": "Pat soderquist",
       "rating": 5,
-      "text": "What an absolute amazing job . Logan made my 9 years old car look brand new . Would highly recommend .",
+      "date": "2025-09-23",
       "source": "google",
-      "date": "",
-      "source_url": "https://www.google.com/maps/place/Sumptuous+Mobile+Detailing+%26+Ceramic+Coating/@34.0523003,-84.0711637,17z"
+      "text": "What an absolute amazing job . Logan made my 9 years old car look brand new . Would truly recommend him to do your detailing .",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "7 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJHFOpDUqsQUfKe1oHzIVS9fDYU7W3BW1V-RYqZyz9e-F-K-w=s128-c0x00000000-cc-rp-mo"
     },
     {
       "author": "Lily H",
       "rating": 5,
-      "text": "Shout out to Logan! He did an incredible job detailing our car. He is a lifesaver - we needed to clean up our car after having it for a few years with a baby and a dog. The car smells great and looks brand new.",
+      "date": "2025-10-14",
       "source": "google",
-      "date": "",
-      "source_url": "https://www.google.com/maps/place/Sumptuous+Mobile+Detailing+%26+Ceramic+Coating/@34.0523003,-84.0711637,17z"
+      "text": "Shout out to Logan! He did an incredible job detailing our car. He is a lifesaver!!!  Check out Sumptuous Mobile Detailing if you need a mobile car detailing service or same day detailing!!",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "6 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKrgpNozk1Z-R0Rjw6367vpDIzS0u_x-Ehwj6HBxOfvpQfkiA=s128-c0x00000000-cc-rp-mo"
     },
     {
       "author": "Mike D",
       "rating": 5,
-      "text": "Darren was very professional and very reasonable with his prices.  I did a 3 year ceramic coating and they nailed it!  Would highly recommend.",
+      "date": "2025-06-30",
       "source": "google",
-      "date": "",
-      "source_url": "https://www.google.com/maps/place/Sumptuous+Mobile+Detailing+%26+Ceramic+Coating/@34.0523003,-84.0711637,17z"
+      "text": "Darren was very professional and very reasonable with his prices.  I did a 3 year ceramic coat and it looks amazing.  I will definitely be in touch in the future",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "9 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIQLpejkZqnZYzh8niLD_MaEvadxujTKn1HLtsBfYQGe82MLA=s128-c0x00000000-cc-rp-mo"
     },
     {
       "author": "Adele Garza",
       "rating": 5,
-      "text": "Logan was amazing and easy to schedule with. He answered all of my questions to the very end. I could tell he had a passion for his craft and was very detail oriented.",
+      "date": "2025-10-27",
       "source": "google",
-      "date": "",
-      "source_url": "https://www.google.com/maps/place/Sumptuous+Mobile+Detailing+%26+Ceramic+Coating/@34.0523003,-84.0711637,17z"
+      "text": "Logan was amazing and easy to schedule with. He answered all of my questions to my satisfaction and wasn\u2019t pushy at all. Though we sold our vehicle before we could detail it, if I\u2019m ever in need for a detail on my 2024 Blazer I will use him for certain! He\u2019s very reasonable and responsive! Thank you Logan. We will be in touch again soon! \u263a\ufe0f",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "5 months ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJdWECoAsu5NaOgy9p6NukGa5B1QMbGVGklEgqqJKDPVVeGiw=s128-c0x00000000-cc-rp-mo-ba3"
     }
-  ],
-  "counts": {
-    "captured": 9,
-    "target_min": 3,
-    "total_available": "unknown"
-  },
-  "notes": "Initialized by integrate-bruce-collected.py",
-  "capture_attempts": []
+  ]
 }

@@ -1,0 +1,41 @@
+{
+  "slug": "pine-peach-painting",
+  "fetched_at": "2026-04-25T04:04:46Z",
+  "original_fetched_at": "2026-04-25T04:04:46Z",
+  "source": "google_places_api_v1",
+  "refresh_count": 0,
+  "refresh_log": [],
+  "place_id": "ChIJW6s0kIEJ9YgR-VS5hSw_c2g",
+  "business_name": "Atlanta painting company Pine Peach Painting",
+  "formatted_address": "3700 Buford Highway =69 Northeast, Atlanta, GA 30329, USA",
+  "rating": 4.8,
+  "review_count_total": 21,
+  "reviews_captured": 5,
+  "reviews_captured_sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 5,
+      "fetched_at": "2026-04-25T04:04:46Z"
+    }
+  ],
+  "last_review_date": "2025-08-24",
+  "earliest_review_date": "2020-01-15",
+  "photo_count_on_gbp": 10,
+  "primary_phone": "+16786516674",
+  "primary_phone_formatted": "(678) 651-6674",
+  "hours_summary": null,
+  "hours_structured": [],
+  "website_url": null,
+  "categories": [
+    "establishment",
+    "general_contractor",
+    "painter",
+    "point_of_interest"
+  ],
+  "gbp_match_verified": false,
+  "gbp_url": "https://maps.google.com/?cid=7526428862720857337",
+  "staleness_policy": {
+    "soft_stale_days": 14,
+    "hard_stale_days": 30
+  }
+}

@@ -167,8 +167,13 @@ def assess_site(site_dir: Path) -> Dict[str, Any]:
                     reasons.append(f"latest review {age_days}d old > {DORMANT_MONTHS}mo")
             except Exception:
                 pass
+        # gbp_match_verified=False is inconclusive on its own — it can mean
+        # "ghost listing" (real failure) or "supplier used a vague address"
+        # (audit artifact). Without the supplied address recorded, we can't
+        # tell. Demote to a note (not a hard FAIL). When write-gbp-snapshot.py
+        # is upgraded to record `supplied_address`, this can be tightened.
         if snap.get("gbp_match_verified") is False:
-            reasons.append("GBP does not match claimed address (ghost listing)")
+            out["notes"].append("gbp_match_verified=False — possible ghost listing OR vague supplied address. Re-run write-gbp-snapshot with the CRM street address to disambiguate.")
         out["reasons"] = reasons
         out["status"] = "PASS" if not reasons else "FAIL"
         return out

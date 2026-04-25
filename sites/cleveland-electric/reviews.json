@@ -1,0 +1,71 @@
+{
+  "slug": "cleveland-electric",
+  "captured": 5,
+  "total_reviews": 42,
+  "overall_rating": 4.1,
+  "captured_at": "2026-04-25T04:04:41Z",
+  "sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 5,
+      "fetched_at": "2026-04-25T04:04:41Z"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Brian Conlon",
+      "rating": 5,
+      "date": "2019-02-08",
+      "source": "google",
+      "text": "Best electrical contractors in the country! Knowledgeable,  reliable,  honest, hard working group of some of the nicest folks.",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "7 years ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW2bYrya6-DuVZymp3xYnkDfWnDXkAq4TGADd_Z0XOHzI4DoFvm=s128-c0x00000000-cc-rp-mo-ba6"
+    },
+    {
+      "author": "Trey H.",
+      "rating": 1,
+      "date": "2017-06-05",
+      "source": "google",
+      "text": "On my way back home, I saw 2 trucks traveling over 90mph I-75 north. Very Reckless.",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "8 years ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJQruDmrbmPhu0hJy89_eK0WXxwrY76P8VMKo9jbFkm-ydRbMGS=s128-c0x00000000-cc-rp-mo-ba3"
+    },
+    {
+      "author": "David Whalen",
+      "rating": 5,
+      "date": "2021-05-11",
+      "source": "google",
+      "text": "Best electrical contractor in the state.  Great quality, great people, great value.",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "4 years ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIDbK3TIvqyueKQoYo_U3ofn_ERWS6q_O3VuThGFMrncqRhEQ=s128-c0x00000000-cc-rp-mo-ba3"
+    },
+    {
+      "author": "Danielle Bass",
+      "rating": 1,
+      "date": "2020-11-18",
+      "source": "google",
+      "text": "beware their workers don\u2019t wear masks",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "5 years ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJZPoVm-ub6xl2ZyC8zc3RETLgvc0-kP9_v3GaUF3pSQ8HTbQ=s128-c0x00000000-cc-rp-mo-ba3"
+    },
+    {
+      "author": "michael flam",
+      "rating": 5,
+      "date": "2021-12-08",
+      "source": "google",
+      "text": "Great company to work with",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "4 years ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJMAyCiHZJTFScd25WxnT3cUGmkZkQB5iY0i54Yhp9IKlVi1g=s128-c0x00000000-cc-rp-mo-ba3"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "tgp-home-services",
+  "fetched_at": "2026-04-25T04:04:50Z",
+  "original_fetched_at": "2026-04-25T04:04:50Z",
+  "source": "google_places_api_v1",
+  "refresh_count": 0,
+  "refresh_log": [],
+  "place_id": "ChIJdwHQPtMJ9YgRp7FsSmwv_Ak",
+  "business_name": "TGP Home Services LLC",
+  "formatted_address": "5126 Peachtree Blvd, Chamblee, GA 30341, USA",
+  "rating": 5,
+  "review_count_total": 13,
+  "reviews_captured": 5,
+  "reviews_captured_sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 5,
+      "fetched_at": "2026-04-25T04:04:50Z"
+    }
+  ],
+  "last_review_date": "2021-12-14",
+  "earliest_review_date": "2021-05-25",
+  "photo_count_on_gbp": 10,
+  "primary_phone": "+14049665583",
+  "primary_phone_formatted": "(404) 966-5583",
+  "hours_summary": "Monday: 8:00\u202fAM\u2009\u2013\u20097:00\u202fPM; Tuesday: 8:00\u202fAM\u2009\u2013\u20097:00\u202fPM; Wednesday: 8:00\u202fAM\u2009\u2013\u20097:00\u202fPM; Thursday: 8:00\u202fAM\u2009\u2013\u20097:00\u202fPM; Friday: 8:00\u202fAM\u2009\u2013\u20097:00\u202fPM; Saturday: 8:00\u202fAM\u2009\u2013\u20093:30\u202fPM; Sunday: Closed",
+  "hours_structured": [
+    {
+      "dayOfWeek": "Monday",
+      "opens": "08:00",
+      "closes": "19:00"
+    },
+    {
+      "dayOfWeek": "Tuesday",
+      "opens": "08:00",
+      "closes": "19:00"
+    },
+    {
+      "dayOfWeek": "Wednesday",
+      "opens": "08:00",
+      "closes": "19:00"
+    },
+    {
+      "dayOfWeek": "Thursday",
+      "opens": "08:00",
+      "closes": "19:00"
+    },
+    {
+      "dayOfWeek": "Friday",
+      "opens": "08:00",
+      "closes": "19:00"
+    },
+    {
+      "dayOfWeek": "Saturday",
+      "opens": "08:00",
+      "closes": "15:30"
+    }
+  ],
+  "website_url": null,
+  "categories": [
+    "establishment",
+    "point_of_interest"
+  ],
+  "gbp_match_verified": false,
+  "gbp_url": "https://maps.google.com/?cid=719502182624047527",
+  "staleness_policy": {
+    "soft_stale_days": 14,
+    "hard_stale_days": 30
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "sandy-springs-plumbing",
+  "captured": 4,
+  "total_reviews": 4,
+  "overall_rating": 5,
+  "captured_at": "2026-04-25T04:04:48Z",
+  "sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 4,
+      "fetched_at": "2026-04-25T04:04:48Z"
+    }
+  ],
+  "reviews": [
+    {
+      "author": "Ruby Phillips",
+      "rating": 5,
+      "date": "2026-04-21",
+      "source": "google",
+      "text": "From the kitchen faucet, water flow became uneven. Their technician cleaned internal parts and restored balance. He tested it thoroughly before leaving. It flows evenly now.",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "in the last week",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKwB8nWy4QWTZiyBfFIuNeMDE4ATD5VbH6SRvmPfBduCWyhgA=s128-c0x00000000-cc-rp-mo"
+    },
+    {
+      "author": "Aaron Mitchell",
+      "rating": 5,
+      "date": "2026-03-18",
+      "source": "google",
+      "text": "A major upgrade was completed smoothly when their team handled sewer line replacement while keeping everything organized.",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "a month ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocImY7a-_O3E7g3VoIIHaphA6qjK5uXjmqVrjX287TkRwIri_Q=s128-c0x00000000-cc-rp-mo"
+    },
+    {
+      "author": "Victoria Barnes",
+      "rating": 5,
+      "date": "2026-03-13",
+      "source": "google",
+      "text": "A clog in the kitchen drain was causing water to back up. I called this plumbing service for assistance. The technician cleared the obstruction quickly. The drain works perfectly again.",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "a month ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK1SmRHEAUXCzT7Vt4tbqAtVfDmJ7xtUex4jOxtcZEby4IpWw=s128-c0x00000000-cc-rp-mo"
+    },
+    {
+      "author": "Omar Khoury",
+      "rating": 5,
+      "date": "2026-03-13",
+      "source": "google",
+      "text": "The sink in my kitchen stopped draining completely one evening. A plumbing technician came and removed the blockage.",
+      "verified": true,
+      "language": "en",
+      "relative_time_description": "a month ago",
+      "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIUyTLQLvmd3DtG9q8LuRozG0kIN-xPPrwBVFwjHIsbzLT1YA=s128-c0x00000000-cc-rp-mo"
+    }
+  ]
+}

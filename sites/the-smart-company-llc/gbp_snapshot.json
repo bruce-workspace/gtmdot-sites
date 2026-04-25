@@ -1,0 +1,67 @@
+{
+  "slug": "the-smart-company-llc",
+  "fetched_at": "2026-04-25T04:04:51Z",
+  "original_fetched_at": "2026-04-25T04:04:51Z",
+  "source": "google_places_api_v1",
+  "refresh_count": 0,
+  "refresh_log": [],
+  "place_id": "ChIJV3JDw22V9YgROdRjZRQQ94g",
+  "business_name": "THE SMART COMPANY LLC",
+  "formatted_address": "923 Peachtree St NE UNIT 2029, Atlanta, GA 30309, USA",
+  "rating": 5,
+  "review_count_total": 30,
+  "reviews_captured": 5,
+  "reviews_captured_sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 5,
+      "fetched_at": "2026-04-25T04:04:51Z"
+    }
+  ],
+  "last_review_date": "2023-06-01",
+  "earliest_review_date": "2020-10-30",
+  "photo_count_on_gbp": 10,
+  "primary_phone": "+16788919979",
+  "primary_phone_formatted": "(678) 891-9979",
+  "hours_summary": "Monday: 9:00\u202fAM\u2009\u2013\u20095:00\u202fPM; Tuesday: 9:00\u202fAM\u2009\u2013\u20095:00\u202fPM; Wednesday: 9:00\u202fAM\u2009\u2013\u20095:00\u202fPM; Thursday: 9:00\u202fAM\u2009\u2013\u20095:00\u202fPM; Friday: 9:00\u202fAM\u2009\u2013\u20095:00\u202fPM; Saturday: Closed; Sunday: Closed",
+  "hours_structured": [
+    {
+      "dayOfWeek": "Monday",
+      "opens": "09:00",
+      "closes": "17:00"
+    },
+    {
+      "dayOfWeek": "Tuesday",
+      "opens": "09:00",
+      "closes": "17:00"
+    },
+    {
+      "dayOfWeek": "Wednesday",
+      "opens": "09:00",
+      "closes": "17:00"
+    },
+    {
+      "dayOfWeek": "Thursday",
+      "opens": "09:00",
+      "closes": "17:00"
+    },
+    {
+      "dayOfWeek": "Friday",
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "website_url": null,
+  "categories": [
+    "establishment",
+    "general_contractor",
+    "point_of_interest",
+    "roofing_contractor"
+  ],
+  "gbp_match_verified": false,
+  "gbp_url": "https://maps.google.com/?cid=9869374788192162873",
+  "staleness_policy": {
+    "soft_stale_days": 14,
+    "hard_stale_days": 30
+  }
+}

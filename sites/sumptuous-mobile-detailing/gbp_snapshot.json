@@ -1,0 +1,75 @@
+{
+  "slug": "sumptuous-mobile-detailing",
+  "fetched_at": "2026-04-25T04:04:48Z",
+  "original_fetched_at": "2026-04-25T04:04:48Z",
+  "source": "google_places_api_v1",
+  "refresh_count": 0,
+  "refresh_log": [],
+  "place_id": "ChIJUb05nsaT9YgRnctVI37JRqs",
+  "business_name": "Sumptuous Mobile Detailing & Ceramic Coating",
+  "formatted_address": "500 Buford Hwy NE Ste. 1001, Suwanee, GA 30024, USA",
+  "rating": 5,
+  "review_count_total": 190,
+  "reviews_captured": 5,
+  "reviews_captured_sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 5,
+      "fetched_at": "2026-04-25T04:04:48Z"
+    }
+  ],
+  "last_review_date": "2025-11-06",
+  "earliest_review_date": "2025-06-30",
+  "photo_count_on_gbp": 10,
+  "primary_phone": "+17706090138",
+  "primary_phone_formatted": "(770) 609-0138",
+  "hours_summary": "Monday: 5:00\u202fAM\u2009\u2013\u20099:00\u202fPM; Tuesday: 5:00\u202fAM\u2009\u2013\u20099:00\u202fPM; Wednesday: 5:00\u202fAM\u2009\u2013\u20099:00\u202fPM; Thursday: 5:00\u202fAM\u2009\u2013\u20099:00\u202fPM; Friday: 5:00\u202fAM\u2009\u2013\u20099:00\u202fPM; Saturday: 5:00\u202fAM\u2009\u2013\u20099:00\u202fPM; Sunday: 5:00\u202fAM\u2009\u2013\u20099:00\u202fPM",
+  "hours_structured": [
+    {
+      "dayOfWeek": "Sunday",
+      "opens": "05:00",
+      "closes": "21:00"
+    },
+    {
+      "dayOfWeek": "Monday",
+      "opens": "05:00",
+      "closes": "21:00"
+    },
+    {
+      "dayOfWeek": "Tuesday",
+      "opens": "05:00",
+      "closes": "21:00"
+    },
+    {
+      "dayOfWeek": "Wednesday",
+      "opens": "05:00",
+      "closes": "21:00"
+    },
+    {
+      "dayOfWeek": "Thursday",
+      "opens": "05:00",
+      "closes": "21:00"
+    },
+    {
+      "dayOfWeek": "Friday",
+      "opens": "05:00",
+      "closes": "21:00"
+    },
+    {
+      "dayOfWeek": "Saturday",
+      "opens": "05:00",
+      "closes": "21:00"
+    }
+  ],
+  "website_url": "http://sumptuousdetailing.com/",
+  "categories": [
+    "establishment",
+    "point_of_interest"
+  ],
+  "gbp_match_verified": false,
+  "gbp_url": "https://maps.google.com/?cid=12341773372451310493",
+  "staleness_policy": {
+    "soft_stale_days": 14,
+    "hard_stale_days": 30
+  }
+}

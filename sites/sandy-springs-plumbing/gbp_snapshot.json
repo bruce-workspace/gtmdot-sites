@@ -1,0 +1,83 @@
+{
+  "slug": "sandy-springs-plumbing",
+  "fetched_at": "2026-04-25T04:04:48Z",
+  "original_fetched_at": "2026-04-25T04:04:48Z",
+  "source": "google_places_api_v1",
+  "refresh_count": 0,
+  "refresh_log": [],
+  "place_id": "ChIJ0TOqvecP9YgRj1XU_bFSFZc",
+  "business_name": "Sandy Springs Plumber, Sewer & Septic",
+  "formatted_address": "130 Allen Rd NE #242, Sandy Springs, GA 30328, USA",
+  "rating": 5,
+  "review_count_total": 4,
+  "reviews_captured": 4,
+  "reviews_captured_sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 4,
+      "fetched_at": "2026-04-25T04:04:48Z"
+    }
+  ],
+  "last_review_date": "2026-04-21",
+  "earliest_review_date": "2026-03-13",
+  "photo_count_on_gbp": 2,
+  "primary_phone": "+14703943305",
+  "primary_phone_formatted": "(470) 394-3305",
+  "hours_summary": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+  "hours_structured": [
+    {
+      "dayOfWeek": "Sunday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Monday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Tuesday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Wednesday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Thursday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Friday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Saturday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    }
+  ],
+  "website_url": null,
+  "categories": [
+    "establishment",
+    "plumber",
+    "point_of_interest"
+  ],
+  "gbp_match_verified": false,
+  "gbp_url": "https://maps.google.com/?cid=10886698598659282319",
+  "staleness_policy": {
+    "soft_stale_days": 14,
+    "hard_stale_days": 30
+  }
+}

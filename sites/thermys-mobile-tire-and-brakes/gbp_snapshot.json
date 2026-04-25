@@ -1,0 +1,83 @@
+{
+  "slug": "thermys-mobile-tire-and-brakes",
+  "fetched_at": "2026-04-25T04:04:52Z",
+  "original_fetched_at": "2026-04-25T04:04:52Z",
+  "source": "google_places_api_v1",
+  "refresh_count": 0,
+  "refresh_log": [],
+  "place_id": "ChIJ3e4MqOMD9YgRSTTKyGSvHxg",
+  "business_name": "Thermys Mobile tire and brakes llc",
+  "formatted_address": "125 Milton Ave SE, Atlanta, GA 30315, USA",
+  "rating": 5,
+  "review_count_total": 82,
+  "reviews_captured": 5,
+  "reviews_captured_sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 5,
+      "fetched_at": "2026-04-25T04:04:52Z"
+    }
+  ],
+  "last_review_date": "2026-03-05",
+  "earliest_review_date": "2025-11-14",
+  "photo_count_on_gbp": 1,
+  "primary_phone": "+13369209439",
+  "primary_phone_formatted": "(336) 920-9439",
+  "hours_summary": "Monday: Open 24 hours; Tuesday: Open 24 hours; Wednesday: Open 24 hours; Thursday: Open 24 hours; Friday: Open 24 hours; Saturday: Open 24 hours; Sunday: Open 24 hours",
+  "hours_structured": [
+    {
+      "dayOfWeek": "Sunday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Monday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Tuesday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Wednesday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Thursday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Friday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    },
+    {
+      "dayOfWeek": "Saturday",
+      "opens": "00:00",
+      "closes": "23:59",
+      "open_24h": true
+    }
+  ],
+  "website_url": null,
+  "categories": [
+    "car_repair",
+    "establishment",
+    "point_of_interest"
+  ],
+  "gbp_match_verified": false,
+  "gbp_url": "https://maps.google.com/?cid=1738300828588586057",
+  "staleness_policy": {
+    "soft_stale_days": 14,
+    "hard_stale_days": 30
+  }
+}
