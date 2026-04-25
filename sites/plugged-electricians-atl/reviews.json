@@ -3,12 +3,12 @@
   "captured": 5,
   "total_reviews": 13,
   "overall_rating": 4.9,
-  "captured_at": "2026-04-25T03:51:19Z",
+  "captured_at": "2026-04-25T03:59:57Z",
   "sources": [
     {
       "source": "google_places_api_v1",
       "count": 5,
-      "fetched_at": "2026-04-25T03:51:19Z"
+      "fetched_at": "2026-04-25T03:59:57Z"
     }
   ],
   "reviews": [

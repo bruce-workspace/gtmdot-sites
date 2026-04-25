@@ -1,0 +1,14 @@
+{
+  "merged_at": "2026-04-25T03:59:44Z",
+  "kept_from_existing": 5,
+  "kept_from_raw": 3,
+  "dups_dropped": 1,
+  "duplicates": [
+    {
+      "kept_source": "google",
+      "dropped_source": "yelp",
+      "author": "Kecia Sanders",
+      "text_prefix": "I highly recommend this company they have done electrical wo"
+    }
+  ]
+}
