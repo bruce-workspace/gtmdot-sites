@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # verify-build.sh
-# R1VS post-build verification. Proves the build actually works before declaring done.
+# R1VS post-build verification. Proves the build actually works before declaring done. Runs 7 checks.
 #
 # Usage:
 #   ./scripts/verify-build.sh <slug>                    # local file-tree mode
@@ -13,6 +13,7 @@
 #   4. no stock image hosts referenced
 #   5. no fabrication patterns (calls pre-push-gate.sh under the hood)
 #   6. hero image exists at referenced path (catches broken-hero pattern Mini flagged)
+#   7. generated-image proportion <= 30% per §11.11.5 guardrail 5
 #
 # Exit 0 on full pass, 1 on any failure.
 
@@ -78,7 +79,7 @@ echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━�
 
 # ───── Check 1: asset resolution ─────
 echo ""
-echo -e "${BLUE}[1/6] asset resolution${NC} — every src/href must resolve"
+echo -e "${BLUE}[1/7] asset resolution${NC} — every src/href must resolve"
 
 python3 - "$SITE_DIR" "$MODE" "$LIVE_URL" <<'PY' > /tmp/verify-assets-$$.out
 import re, sys, os
@@ -153,7 +154,7 @@ rm -f /tmp/verify-assets-$$.out
 
 # ───── Check 2: reviews.json vs review UI ─────
 echo ""
-echo -e "${BLUE}[2/6] reviews.json vs review UI${NC} — captured count must match rendered count"
+echo -e "${BLUE}[2/7] reviews.json vs review UI${NC} — captured count must match rendered count"
 
 REVIEWS_JSON="$SITE_DIR/reviews.json"
 if [[ ! -f "$REVIEWS_JSON" ]]; then
@@ -206,7 +207,7 @@ fi
 
 # ───── Check 3: claim code presence + pattern ─────
 echo ""
-echo -e "${BLUE}[3/6] claim code${NC} — present in HTML, plausible pattern, single value"
+echo -e "${BLUE}[3/7] claim code${NC} — present in HTML, plausible pattern, single value"
 
 # Claim codes in GTMDot follow pattern: 3-7 uppercase letters + 3-4 digits (e.g., RSWPL847, POSH3847)
 # Extract unique codes via python for reliability
@@ -245,7 +246,7 @@ fi
 
 # ───── Check 4: stock image hosts ─────
 echo ""
-echo -e "${BLUE}[4/6] stock image hosts${NC} — no external stock / placeholder"
+echo -e "${BLUE}[4/7] stock image hosts${NC} — no external stock / placeholder"
 
 STOCK_HOSTS=(unsplash.com images.unsplash.com istockphoto.com gettyimages.com pravatar.cc placeimg.com placeholder.com via.placeholder.com picsum.photos shutterstock.com pixabay.com pexels.com)
 STOCK_HITS=0
@@ -262,7 +263,7 @@ fi
 
 # ───── Check 5: fabrication patterns ─────
 echo ""
-echo -e "${BLUE}[5/6] fabrication patterns${NC} — no known hallucination strings"
+echo -e "${BLUE}[5/7] fabrication patterns${NC} — no known hallucination strings"
 
 # Hard-block: always wrong (Yahoo Local shut down in 2017; placeholder copy is always wrong)
 HARD_BLOCK=(
@@ -317,7 +318,7 @@ fi
 
 # ───── Check 6: hero image exists ─────
 echo ""
-echo -e "${BLUE}[6/6] hero image${NC} — referenced hero must exist at path"
+echo -e "${BLUE}[6/7] hero image${NC} — referenced hero must exist at path"
 
 HERO_PATHS=()
 for html in $HTML_FILES; do
@@ -358,6 +359,67 @@ else
       pass "$HERO_COUNT hero image(s) resolve"
     fi
   fi
+fi
+
+# ───── Check 7: generated-image proportion (§11.11.5 guardrail 5) ─────
+echo ""
+echo -e "${BLUE}[7/7] generated-image proportion${NC} — §11.11.5 guardrail 5: <=30% generated"
+
+GEN_PROPORTION_OUT=$(python3 - "$SITE_DIR" <<'PY'
+import re, sys
+from pathlib import Path
+
+site_dir = Path(sys.argv[1])
+
+# Match <img ...> tags
+IMG_RE = re.compile(r'<img\b([^>]*)/?>', re.IGNORECASE | re.DOTALL)
+ATTR_RE = re.compile(r'(\w[\w-]*)\s*=\s*"([^"]*)"')
+
+total_imgs = 0
+generated_imgs = 0
+
+for html_path in site_dir.glob('**/*.html'):
+    text = html_path.read_text()
+    for img_match in IMG_RE.finditer(text):
+        attrs_text = img_match.group(1)
+        attrs = dict((m.group(1).lower(), m.group(2)) for m in ATTR_RE.finditer(attrs_text))
+        # Skip imgs with no src (e.g., open template slot still empty)
+        if not attrs.get('src'):
+            continue
+        total_imgs += 1
+        if attrs.get('data-source', '').strip().lower() == 'generated':
+            generated_imgs += 1
+        # Also count imgs whose src points at photos-generated/ regardless of attribute
+        elif 'photos-generated/' in (attrs.get('src') or ''):
+            generated_imgs += 1
+
+if total_imgs == 0:
+    print("TOTAL:0")
+    print("GENERATED:0")
+    print("PCT:0")
+else:
+    pct = (generated_imgs / total_imgs) * 100
+    print(f"TOTAL:{total_imgs}")
+    print(f"GENERATED:{generated_imgs}")
+    print(f"PCT:{pct:.1f}")
+PY
+)
+
+GEN_TOTAL=$(echo "$GEN_PROPORTION_OUT" | grep '^TOTAL:' | sed 's/^TOTAL://' | head -1)
+GEN_GEN=$(echo "$GEN_PROPORTION_OUT" | grep '^GENERATED:' | sed 's/^GENERATED://' | head -1)
+GEN_PCT=$(echo "$GEN_PROPORTION_OUT" | grep '^PCT:' | sed 's/^PCT://' | head -1)
+GEN_TOTAL="${GEN_TOTAL:-0}"
+GEN_GEN="${GEN_GEN:-0}"
+GEN_PCT="${GEN_PCT:-0}"
+
+info "total <img> with src: $GEN_TOTAL — generated: $GEN_GEN ($GEN_PCT%)"
+
+# Compare GEN_PCT to 30 — use python because bash can't do float comparison reliably
+OVER=$(python3 -c "print(1 if float('$GEN_PCT') > 30.0 else 0)")
+if [[ "$OVER" == "1" ]]; then
+  fail "generated-image proportion $GEN_PCT% exceeds 30% cap (§11.11.5 guardrail 5). Reduce generated count or get Jesse approval per §11.11.7 generated_cap_exception_recommended field."
+else
+  pass "generated-image proportion within 30% cap"
 fi
 
 # ───── optional: live URL check ─────

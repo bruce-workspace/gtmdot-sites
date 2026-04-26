@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # pre-push-gate.sh
-# R1VS pre-push safety net. Runs 6 checks on a slug's build output.
+# R1VS pre-push safety net. Runs 7 checks on a slug's build output.
 # Exits non-zero on any failure — commit/push should be blocked.
 #
 # Usage:
@@ -8,12 +8,14 @@
 #   ./scripts/pre-push-gate.sh               # defaults to current intake/<slug> branch
 #
 # Checks:
-#   1. fabrication-grep   — known hallucinated review strings
-#   2. stock-image-grep   — unsplash / istock / pravatar / placeholder hosts
-#   3. claim-bar-grep     — R1VS must not inject claim bar / popup / cookie banner
-#   4. review-count-audit — reviews.json captured count must match rendered review UI
-#   5. icon-intent-diff   — icon-intent.json must match actual icons in HTML
-#   6. proposal-gate      — source-of-truth doc changes require visible Jesse ACK
+#   1. fabrication-grep        — known hallucinated review strings
+#   2. stock-image-grep        — unsplash / istock / pravatar / placeholder hosts
+#   3. claim-bar-grep          — R1VS must not inject claim bar / popup / cookie banner
+#   4. review-count-audit      — reviews.json captured count must match rendered review UI
+#   5. icon-intent-diff        — icon-intent.json must match actual icons in HTML
+#   6. proposal-gate           — source-of-truth doc changes require visible Jesse ACK
+#   7. generated-image-rules   — §11.11.5 guardrails 1, 2, 3 (data-source attr,
+#                                slot-context restrictions, alt-text constraints)
 #
 # Each check writes a PASS / FAIL line. Final exit code = 0 if all pass, 1 if any fail.
 
@@ -67,7 +69,7 @@ echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━�
 
 # ───── Check 1: fabrication-grep ─────
 echo ""
-echo -e "${BLUE}[1/6] fabrication-grep${NC} — known hallucinated review strings"
+echo -e "${BLUE}[1/7] fabrication-grep${NC} — known hallucinated review strings"
 
 # Hard-block: always wrong, no legitimate use
 HARD_BLOCK_PATTERNS=(
@@ -148,7 +150,7 @@ fi
 
 # ───── Check 2: stock-image-grep ─────
 echo ""
-echo -e "${BLUE}[2/6] stock-image-grep${NC} — external stock / placeholder hosts"
+echo -e "${BLUE}[2/7] stock-image-grep${NC} — external stock / placeholder hosts"
 
 STOCK_HOSTS=(
   'unsplash.com'
@@ -180,7 +182,7 @@ fi
 
 # ───── Check 3: claim-bar-grep ─────
 echo ""
-echo -e "${BLUE}[3/6] claim-bar-grep${NC} — R1VS must not inject claim bar / popup / cookie banner"
+echo -e "${BLUE}[3/7] claim-bar-grep${NC} — R1VS must not inject claim bar / popup / cookie banner"
 
 CLAIM_BAR_SELECTORS=(
   'id="claimBar"'
@@ -212,7 +214,7 @@ fi
 
 # ───── Check 4: review-count-audit ─────
 echo ""
-echo -e "${BLUE}[4/6] review-count-audit${NC} — reviews.json captured count must match rendered review UI"
+echo -e "${BLUE}[4/7] review-count-audit${NC} — reviews.json captured count must match rendered review UI"
 
 REVIEWS_JSON="$SITE_DIR/reviews.json"
 if [[ ! -f "$REVIEWS_JSON" ]]; then
@@ -272,7 +274,7 @@ fi
 
 # ───── Check 5: icon-intent-diff ─────
 echo ""
-echo -e "${BLUE}[5/6] icon-intent-diff${NC} — icon-intent.json must match actual icons in HTML"
+echo -e "${BLUE}[5/7] icon-intent-diff${NC} — icon-intent.json must match actual icons in HTML"
 
 ICON_INTENT="$SITE_DIR/icon-intent.json"
 if [[ ! -f "$ICON_INTENT" ]]; then
@@ -339,7 +341,7 @@ fi
 
 # ───── Check 6: proposal-gate ─────
 echo ""
-echo -e "${BLUE}[6/6] proposal-gate${NC} — source-of-truth doc changes require Jesse ACK message"
+echo -e "${BLUE}[6/7] proposal-gate${NC} — source-of-truth doc changes require Jesse ACK message"
 
 SOURCE_OF_TRUTH_FILES=(
   'CLAUDE.md'
@@ -379,6 +381,149 @@ else
       pass "$f: proposal + ACK found ($PROPOSAL, $JESSE_ACK)"
     fi
   done
+fi
+
+# ───── Check 7: generated-image-rules (§11.11.5 guardrails 1, 2, 3) ─────
+echo ""
+echo -e "${BLUE}[7/7] generated-image-rules${NC} — §11.11.5: data-source attr + slot-context + alt-text"
+
+# Forbidden data-context tokens for generated images (§11.11.5 guardrail 2)
+# A generated <img> may NOT live in a slot whose data-context contains any of these.
+GEN_FORBIDDEN_CONTEXTS=(
+  'team-OK'
+  'owner-portrait-OK'
+  'real-customer-OK'
+  'real-job-OK'
+  'before-after-OK'
+  'proof-OK'
+)
+
+# Forbidden alt-text phrases for generated images (§11.11.5 guardrail 3)
+# Generated images may NOT claim authenticity in alt text.
+GEN_FORBIDDEN_ALT_PHRASES=(
+  'our team'
+  'our truck'
+  'our crew'
+  'our technician'
+  'completed by us'
+  'real customer'
+  'our job'
+  'actual job site'
+)
+
+python3 - "$SITE_DIR" <<'PY' > /tmp/gen-img-check-$$.out
+import re, sys
+from pathlib import Path
+
+site_dir = Path(sys.argv[1])
+
+# Parse <figure class="...gtmdot-photo-slot..." data-slot-id=... data-context=...>...<img ...></figure>
+# AND standalone <img ...> with data-source="generated"
+forbidden_contexts = {'team-OK', 'owner-portrait-OK', 'real-customer-OK',
+                      'real-job-OK', 'before-after-OK', 'proof-OK'}
+forbidden_alt = ['our team', 'our truck', 'our crew', 'our technician',
+                 'completed by us', 'real customer', 'our job', 'actual job site']
+
+# Match <img ...> tags broadly; we'll inspect attributes
+IMG_RE = re.compile(r'<img\b([^>]*)/?>', re.IGNORECASE | re.DOTALL)
+ATTR_RE = re.compile(r'(\w[\w-]*)\s*=\s*"([^"]*)"')
+
+# Match the enclosing <figure class="gtmdot-photo-slot" ...> if any; we walk up from img
+SLOT_RE = re.compile(
+    r'<figure\b[^>]*class="[^"]*gtmdot-photo-slot[^"]*"[^>]*>.*?</figure>',
+    re.IGNORECASE | re.DOTALL
+)
+
+for html_path in site_dir.glob('**/*.html'):
+    text = html_path.read_text()
+    fname = html_path.name
+
+    # Iterate all gtmdot-photo-slot figures and inspect inner img elements
+    for slot_match in SLOT_RE.finditer(text):
+        slot_block = slot_match.group(0)
+        # Pull data-context off the figure tag (first 1000 chars usually contains the opening tag)
+        opening = slot_block.split('>', 1)[0]
+        ctx_match = re.search(r'data-context="([^"]*)"', opening, re.IGNORECASE)
+        slot_context = ctx_match.group(1) if ctx_match else ''
+        ctx_tokens = set(t.strip() for t in slot_context.split('|') if t.strip())
+
+        # Inspect inner imgs
+        for img_match in IMG_RE.finditer(slot_block):
+            attrs_text = img_match.group(1)
+            attrs = dict((m.group(1).lower(), m.group(2)) for m in ATTR_RE.finditer(attrs_text))
+            if attrs.get('data-source', '').strip().lower() != 'generated':
+                continue
+            # This is a generated image inside a gtmdot-photo-slot
+            # Guardrail 2: slot-context must not include forbidden tokens
+            forbidden_hits = ctx_tokens & forbidden_contexts
+            if forbidden_hits:
+                print(f'CONTEXT|{fname}|{img_match.group(0)[:80]}|{",".join(sorted(forbidden_hits))}')
+            # Guardrail 3: alt-text must not claim authenticity
+            alt = attrs.get('alt', '').lower()
+            for phrase in forbidden_alt:
+                if phrase in alt:
+                    print(f'ALTTEXT|{fname}|{phrase}|{alt[:80]}')
+                    break
+
+    # Also check standalone <img> tags outside gtmdot-photo-slot for data-source="generated"
+    # (catches the case where Mini integrated a generated image into a non-slot location)
+    # We do this by scanning ALL imgs and skipping those inside any slot block.
+    slot_spans = [(m.start(), m.end()) for m in SLOT_RE.finditer(text)]
+    def in_slot(pos):
+        return any(s <= pos < e for s, e in slot_spans)
+
+    for img_match in IMG_RE.finditer(text):
+        if in_slot(img_match.start()):
+            continue
+        attrs_text = img_match.group(1)
+        attrs = dict((m.group(1).lower(), m.group(2)) for m in ATTR_RE.finditer(attrs_text))
+        if attrs.get('data-source', '').strip().lower() != 'generated':
+            continue
+        # Standalone generated img: still must satisfy guardrail 3 (alt text)
+        alt = attrs.get('alt', '').lower()
+        for phrase in forbidden_alt:
+            if phrase in alt:
+                print(f'ALTTEXT|{fname}|{phrase}|{alt[:80]}')
+                break
+        # Note: guardrail 2 (slot context) doesn't apply to standalone imgs because there's no slot.
+
+# Guardrail 1 check: any <img> whose src points to photos-generated/ MUST have data-source="generated"
+# (this catches Mini's integration step missing the attribute when copying from photos-generated/
+# into the canonical photos/ path — which shouldn't happen since the contract says generated
+# files stay under photos-generated/, but the check is cheap insurance.)
+for html_path in site_dir.glob('**/*.html'):
+    text = html_path.read_text()
+    fname = html_path.name
+    for img_match in IMG_RE.finditer(text):
+        attrs_text = img_match.group(1)
+        attrs = dict((m.group(1).lower(), m.group(2)) for m in ATTR_RE.finditer(attrs_text))
+        src = attrs.get('src', '')
+        if 'photos-generated/' in src and attrs.get('data-source', '').strip().lower() != 'generated':
+            print(f'MISSING_DATASOURCE|{fname}|{src}')
+PY
+
+GEN_HITS=0
+while IFS='|' read -r kind file detail extra; do
+  [[ -z "$kind" ]] && continue
+  case "$kind" in
+    CONTEXT)
+      fail "generated <img> in slot with forbidden data-context tokens [$extra] in: $file ($detail)"
+      GEN_HITS=$((GEN_HITS + 1))
+      ;;
+    ALTTEXT)
+      fail "generated <img> alt-text claims authenticity ('$detail') in: $file (alt: $extra)"
+      GEN_HITS=$((GEN_HITS + 1))
+      ;;
+    MISSING_DATASOURCE)
+      fail "<img src=\"$detail\"> points at photos-generated/ but lacks data-source=\"generated\" in: $file"
+      GEN_HITS=$((GEN_HITS + 1))
+      ;;
+  esac
+done < /tmp/gen-img-check-$$.out
+rm -f /tmp/gen-img-check-$$.out
+
+if [[ $GEN_HITS -eq 0 ]]; then
+  pass "no generated-image rule violations"
 fi
 
 # ───── final tally ─────

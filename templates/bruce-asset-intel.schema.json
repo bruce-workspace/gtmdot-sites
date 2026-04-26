@@ -1,0 +1,168 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://gtmdot.com/schemas/bruce-asset-intel.json",
+  "title": "Bruce Asset Intelligence",
+  "description": "Schema for sites/<slug>/bruce-asset-intel.json per HANDOFF-CONTRACT.md §11.11.7",
+  "type": "object",
+  "required": [
+    "slug",
+    "generated_at",
+    "status",
+    "model_stack"
+  ],
+  "properties": {
+    "slug": {
+      "type": "string",
+      "description": "Site slug, must match parent folder name."
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 UTC timestamp."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["success", "partial", "failed"]
+    },
+    "collect_request_ref": {
+      "type": "string",
+      "description": "Path to the triggering collect-request.md."
+    },
+    "model_stack": {
+      "type": "object",
+      "required": ["reasoning", "image_generation"],
+      "properties": {
+        "reasoning": { "type": "string", "description": "e.g. openai-codex-gpt-5.5" },
+        "image_generation": { "type": "string", "description": "e.g. openai-gpt-image-2" }
+      }
+    },
+    "photo_quality": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "label", "confidence"],
+        "properties": {
+          "path": { "type": "string", "description": "Path under sites/<slug>/, typically photos-raw/* or photos-generated/*." },
+          "label": {
+            "type": "string",
+            "enum": ["hero-candidate", "proof-candidate", "gallery-candidate", "discard"]
+          },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "reasoning": { "type": "string" },
+          "object_tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "hero_recommendation": {
+      "type": "object",
+      "required": ["preferred_path", "preferred_source", "reasoning"],
+      "properties": {
+        "preferred_path": { "type": "string" },
+        "preferred_source": {
+          "type": "string",
+          "enum": ["real", "generated"]
+        },
+        "fallback_path": { "type": "string" },
+        "reasoning": { "type": "string" }
+      }
+    },
+    "icon_warnings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["current_data_lucide", "html_path", "recommended"],
+        "properties": {
+          "current_data_lucide": { "type": "string" },
+          "html_path": { "type": "string" },
+          "service_context": { "type": "string" },
+          "recommended": { "type": "string" },
+          "reasoning": { "type": "string" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      }
+    },
+    "object_verification": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim", "evidence", "confidence"],
+        "properties": {
+          "claim": { "type": "string" },
+          "evidence": { "type": "string" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      }
+    },
+    "review_coverage": {
+      "type": "object",
+      "required": ["captured_total", "sufficiency"],
+      "properties": {
+        "captured_total": { "type": "integer", "minimum": 0 },
+        "sources_present": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "sources_recommended_for_enrichment": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "sufficiency": {
+          "type": "string",
+          "enum": ["sufficient", "borderline", "insufficient"]
+        },
+        "reasoning": { "type": "string" }
+      }
+    },
+    "generated_images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "purpose", "prompt", "model", "license_note", "intended_slot_context"],
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^photos-generated/",
+            "description": "Must live under sites/<slug>/photos-generated/ per §11.11.5 guardrail 6."
+          },
+          "purpose": {
+            "type": "string",
+            "enum": ["hero", "brand", "service-card-bg", "atmosphere"]
+          },
+          "prompt": { "type": "string" },
+          "model": { "type": "string", "description": "e.g. gpt-image-2" },
+          "model_revision": { "type": "string" },
+          "license_note": {
+            "type": "string",
+            "description": "Required per §11.11.5 guardrail 4. Canonical: 'Synthetic image. Do not represent as actual company work.'"
+          },
+          "intended_slot_context": {
+            "type": "string",
+            "description": "Pipe-delimited list of acceptable slot data-context values. Must NOT include team-OK, owner-portrait-OK, real-customer-OK, real-job-OK, before-after-OK, proof-OK per §11.11.5 guardrail 2."
+          },
+          "safety_flags": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Optional. Model/provider warnings, awkward hands/faces/logos, accidental text, etc. Bruce input 2026-04-26 — deferred enforcement until 3-5 production sites."
+          },
+          "prompt_revision_count": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Optional. Number of prompt iterations before final image. Bruce input 2026-04-26 — deferred enforcement."
+          }
+        }
+      }
+    },
+    "generated_cap_exception_recommended": {
+      "type": "boolean",
+      "description": "Optional. Bruce sets to true ONLY when business has zero usable real imagery and exceeding the §11.11.5 30%-cap is recommended. Requires Jesse approval before R1VS/Mini act on it."
+    },
+    "generated_cap_exception_reasoning": {
+      "type": "string",
+      "description": "Required if generated_cap_exception_recommended is true. Why exceeding the cap is justified for this site."
+    }
+  },
+  "additionalProperties": false
+}

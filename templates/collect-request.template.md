@@ -4,12 +4,30 @@ requested_at: REPLACE_ME_ISO_TIMESTAMP
 requested_by: REPLACE_ME_REQUESTER  # one of: r1vs | mini
 deadline: REPLACE_ME_ISO_TIMESTAMP  # abandon after this; pipeline assumes failed if Bruce hasn't responded
 priority: normal  # one of: normal | high
+hero_intent: aspirational  # one of: aspirational | documentary | either — REQUIRED per §11.11
+generated_images_allowed: yes  # one of: yes | no | atmosphere-only — REQUIRED per §11.11
 ---
 
 # Collect Request — REPLACE_ME_BUSINESS_NAME
 
 Drop-in template. Copy to `sites/<slug>/collect-request.md` when R1VS or Mini
 needs Bruce to scrape additional sources beyond Google Places API.
+
+## Hero intent + generated-image policy (REQUIRED per §11.11)
+
+**`hero_intent`** in the frontmatter tells Bruce whether to prefer real photos or generated:
+
+- **`documentary`** — only real, scraped, owner/GBP photos count. Trust comes from "this is the actual technician at the actual job." Use for: businesses with strong real photos already, services where authenticity proof matters most (e.g., before/after for collision shops).
+- **`aspirational`** — generated imagery preferred for the hero specifically. Use when GBP photos are documentary-grade (truck-in-parking-lot) and the site needs a brand-tone hero. Bruce will generate via gpt-image-2 per §11.11.5 guardrails.
+- **`either`** — Bruce uses judgment. Default if you genuinely don't know.
+
+**`generated_images_allowed`** scopes Bruce's image-generation authority for THIS request:
+
+- **`yes`** — Bruce may generate hero, brand, service-card-bg, atmosphere images per §11.11.1.
+- **`no`** — collection only. No generated images. Use when site needs documentary integrity end-to-end.
+- **`atmosphere-only`** — Bruce may generate `atmosphere` and `service-card-bg` but NOT `hero` or `brand`. Use when you want a real hero but accept generated section backgrounds.
+
+If both fields are missing or the values aren't in the enum, Bruce treats the request as `documentary` + `no` — the most conservative default.
 
 ## Business context
 
