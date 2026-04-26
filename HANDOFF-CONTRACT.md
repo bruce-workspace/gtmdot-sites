@@ -577,6 +577,183 @@ Until then, Bruce-as-Collector remains the contract.
 
 ---
 
+## §11.11 — Asset Intelligence Layer (added 2026-04-26)
+
+**Status:** Active per Jesse ACK in chat 2026-04-26 ("ACK §11.9 - works for me").
+**Supersedes:** nothing — extends §11.1 and §11.2.
+**Drivers:** Bruce stack upgrade to OpenAI Codex GPT-5.5 + gpt-image-2.
+**Proposal source:** `messages/2026-04-26-1155-bruce-proposal-collector-asset-intelligence.md` + `messages/r1vs/2026-04-26-120000-r1vs-ack-bruce-asset-intelligence-with-counter.md` + `messages/r1vs/2026-04-26-130000-r1vs-proposal-handoff-contract-§11-amendment.md`.
+
+*Note on numbering:* Jesse's ACK referenced the proposal text as "§11.9". This section is committed as §11.11 because §11.9 (Invocation Lifecycle) and §11.10 (Retirement Path) already exist. Sub-section numbering is renumbered correspondingly (`§11.11.1` ... `§11.11.8`). Content is unchanged from the ACK'd proposal.
+
+### §11.11.1 — What Bruce additionally MAY do
+
+In addition to the scrape-and-collect scope in §11.1, Bruce MAY:
+
+- Generate atmospheric, hero, and brand images via OpenAI gpt-image-2, saved to `sites/<slug>/photos-generated/<purpose>-NN.<ext>` where `<purpose>` is one of: `hero`, `brand`, `service-card-bg`, `atmosphere`.
+- Apply photo-quality labels to scraped raw images: `hero-candidate`, `proof-candidate`, `gallery-candidate`, `discard`.
+- Detect icon mismatches (HTML `data-lucide` value vs business context) and flag them in advisory output. Bruce MUST NOT modify `icon-intent.json` directly — flags route to R1VS for resolution per §11.11.4.
+- Verify object/context claims (e.g., confirm a photo shows actual HVAC equipment, not appliance-store imagery).
+- Provide review-coverage advisory notes (sufficient / borderline / insufficient) with recommendations for which sources to enrich.
+- Write the above to `sites/<slug>/bruce-asset-intel.md` (human-readable) and `sites/<slug>/bruce-asset-intel.json` (machine-readable, schema in §11.11.7).
+
+### §11.11.2 — What Bruce STILL MAY NOT do
+
+The §11.1 "DOES NOT" list remains in full force. Specifically Bruce MAY NOT:
+
+- Touch HTML, CSS, or any site source files
+- Write user-visible captions, alt text, or copy
+- Decide final photo placement (which file fills `photos/hero.jpg` etc.)
+- Modify `icon-intent.json` (must flag for R1VS instead per §11.11.4)
+- Write to `sites/<slug>/photos/` directly — generated images stay in `photos-generated/`, scraped raw stays in `photos-raw/`. Mini does the integration copy.
+- Modify any source-of-truth doc (CLAUDE.md, SKILL.md, HANDOFF-CONTRACT.md, DESIGN-HEURISTICS.md, ICON-MAPPING.md, TERMINOLOGY-MAPPING.md, R1VS-REBUILD-BRIEF.md)
+- Bypass the budget caps in §11.7 (image generation counts against `max_wall_clock_minutes` and a new `max_generated_images` cap, default 4)
+
+### §11.11.3 — Mini's default behavior (operational reweighting)
+
+Per Jesse direction 2026-04-26: when `bruce-asset-intel.md` includes recommendations (hero choice real-or-generated, photo labels, etc.), Mini's default action is to **ACCEPT** Bruce's recommendation.
+
+Override threshold: Mini overrides only when QA finds a specific issue (wrong subject, wrong vertical, image quality genuinely poor, brand mismatch). When Mini overrides, Mini documents the override reason in the deploy commit message or in a `messages/<date>-mini-to-r1vs-<slug>-asset-override.md` if the override changes a slot R1VS pre-specified.
+
+This shifts Mini from "decide fresh from raw materials each build" to "ratify Bruce's call by default, override on specific cause." Single-writer-per-asset preserved (Mini still owns the integration copy into `photos/`); the shift is operational, not jurisdictional.
+
+### §11.11.4 — Icon mismatch routing
+
+When Bruce detects an icon mismatch in `bruce-asset-intel.md`, the routing is:
+
+1. Bruce writes the warning into `bruce-asset-intel.md` and `.json`
+2. Mini, during QA pass, files a flag message: `messages/<date>-mini-to-r1vs-<slug>-icon-flag.md` referencing the specific HTML file + current `data-lucide` + Bruce's recommended replacement
+3. R1VS picks up the flag, updates `icon-intent.json`, regenerates the affected HTML, re-runs `pre-push-gate.sh` to verify, pushes
+4. Mini redeploys the corrected build
+
+Mini MAY NOT edit `icon-intent.json` directly. R1VS owns it.
+
+### §11.11.5 — Generated image rules (the six guardrails)
+
+All HTML `<img>` elements pointing at a generated image MUST satisfy:
+
+1. **`data-source="generated"` attribute** is present on the `<img>`.
+2. **The slot's `data-context`** does NOT include any of: `team-OK`, `owner-portrait-OK`, `real-customer-OK`, `real-job-OK`, `before-after-OK`, `proof-OK`. (Generated images may only fill aspirational/atmospheric slots.)
+3. **The `alt` attribute** does not contain claims of authenticity: "our team", "our truck", "our crew", "completed by us", "real customer", or close variants.
+4. **The corresponding `bruce-asset-intel.json` `generated_images[]` entry** includes a `license_note` string (canonical: `"Synthetic image. Do not represent as actual company work."`).
+5. **The proportion of generated `<img>` tags** does not exceed 30% of total visible `<img>` tags across all pages of the site.
+6. **All generated files** live under `sites/<slug>/photos-generated/` in their original form. Mini's integration copy into `sites/<slug>/photos/` preserves the `data-source="generated"` attribute on the HTML side.
+
+R1VS's `pre-push-gate.sh` adds Check #7 to enforce 1, 2, 3.
+R1VS's `verify-build.sh` adds Check #7 to enforce 5.
+Bruce enforces 4 at write time. Mini enforces 6 at integration time.
+
+### §11.11.6 — Required content of `bruce-asset-intel.md`
+
+Human-readable companion to the JSON. Required sections:
+
+```markdown
+---
+slug: <slug>
+generated_at: <ISO 8601 UTC>
+status: success | partial | failed
+collect_request_ref: <path to triggering collect-request.md>
+---
+
+# Bruce Asset Intelligence — <Business Name>
+
+## Photo Quality Assessment
+(Per-photo labels with reasoning, including the path under photos-raw/
+or photos-generated/ and a confidence score 0.0-1.0)
+
+## Hero Recommendation
+(Real GBP photo OR generated, with reasoning. If recommending generated,
+include the prompt used and reference the generated_images entry in JSON.)
+
+## Icon Verification
+(Any mismatches found between data-lucide values in HTML and business
+context, with recommended replacements per ICON-MAPPING.md.)
+
+## Object/Context Verification
+(Confirmation that photos depict the claimed business — e.g., HVAC
+equipment vs appliance-store imagery, real fleet vs stock truck.)
+
+## Review Coverage Notes
+(Sufficient / borderline / insufficient + which sources to enrich next.)
+
+## Generated Images
+(List of files in photos-generated/ with purpose, prompt, intended slot.)
+```
+
+### §11.11.7 — `bruce-asset-intel.json` schema (machine-readable)
+
+```json
+{
+  "slug": "<slug>",
+  "generated_at": "<ISO 8601 UTC>",
+  "status": "success | partial | failed",
+  "model_stack": {
+    "reasoning": "openai-codex-gpt-5.5",
+    "image_generation": "openai-gpt-image-2"
+  },
+  "photo_quality": [
+    {
+      "path": "photos-raw/yelp-01.jpg",
+      "label": "hero-candidate | proof-candidate | gallery-candidate | discard",
+      "confidence": 0.85,
+      "reasoning": "string",
+      "object_tags": ["technician", "service-van"]
+    }
+  ],
+  "hero_recommendation": {
+    "preferred_path": "photos-generated/hero-aspirational.jpg",
+    "preferred_source": "generated | real",
+    "fallback_path": "photos-raw/yelp-04.jpg",
+    "reasoning": "string"
+  },
+  "icon_warnings": [
+    {
+      "current_data_lucide": "hammer",
+      "html_path": "sites/<slug>/services.html",
+      "service_context": "electrical-repair",
+      "recommended": "zap",
+      "reasoning": "string",
+      "confidence": 0.9
+    }
+  ],
+  "object_verification": [
+    {
+      "claim": "appliance-repair vertical",
+      "evidence": "string",
+      "confidence": 0.9
+    }
+  ],
+  "review_coverage": {
+    "captured_total": 5,
+    "sources_present": ["google"],
+    "sources_recommended_for_enrichment": ["yelp", "nextdoor"],
+    "sufficiency": "sufficient | borderline | insufficient",
+    "reasoning": "string"
+  },
+  "generated_images": [
+    {
+      "path": "photos-generated/hero-aspirational.jpg",
+      "purpose": "hero | brand | service-card-bg | atmosphere",
+      "prompt": "string",
+      "model": "gpt-image-2",
+      "model_revision": "string",
+      "license_note": "Synthetic image. Do not represent as actual company work.",
+      "intended_slot_context": "any-aspirational-OK | atmosphere-OK"
+    }
+  ]
+}
+```
+
+### §11.11.8 — Budget addition
+
+§11.7's budget caps gain one new field:
+
+- `max_generated_images: 4` (default)
+
+Bruce stops at the cap. Generation cost (gpt-image-2) counts against `max_wall_clock_minutes` regardless of count.
+
+---
+
 ## What this replaces in the old HANDOFF-CONTRACT.md §11
 
 Everything. The old §11 described Bruce as owning a "post-build enrichment phase" with responsibility for scanning existing state, deciding whether to enrich, committing with specific formats, and handing back a fully-integrated site. That's retired. This is a clean-sheet narrow-scope replacement.
