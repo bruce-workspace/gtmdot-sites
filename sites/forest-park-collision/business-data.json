@@ -1,0 +1,216 @@
+{
+  "site": {
+    "BUSINESS_NAME": "Forest Park Collision",
+    "BUSINESS_NAME_SHORT": "Forest Park Collision",
+    "BUSINESS_TAGLINE": "Atlanta's family-feel body shop, built on referrals",
+    "CITY": "Forest Park",
+    "PHONE": "(678) 647-0907",
+    "PHONE_TEL": "+16786470907",
+    "EMAIL": "service@forestparkcollision.com",
+    "STREET_ADDRESS": "198 Central Ave",
+    "ZIP": "30297",
+    "DOMAIN": "forest-park-collision.pages.dev",
+    "SERVICE_AREAS": "Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro",
+    "PRIMARY_CTA": "Get an Estimate",
+    "CTA_VERB_LOWER": "get an estimate",
+    "CURRENT_YEAR": "2026",
+    "VERTICAL_ACCENT_COLOR": "#1A5490",
+    "PRIMARY_SERVICE_CATEGORY": "Collision Repair",
+    "META_DESCRIPTION_HOMEPAGE": "Family-run collision shop serving Forest Park, College Park, and South Atlanta. 4.8 stars on Google, 70+ reviews. Free estimates. Call Kevin: (678) 647-0907.",
+    "HERO_HEADLINE": "Forest Park collision repair, done so well you can't tell it happened",
+    "HERO_SUBHEAD": "Family-run body shop trusted by 70+ Atlanta drivers. Free estimates, insurance work welcome, and every car leaves looking like it just rolled off the assembly line.",
+    "HERO_PHOTO_CONTEXT": "shop-exterior-OK|finished-vehicle-OK|owner-portrait-OK|aspirational-body-shop-OK|atmosphere-OK",
+    "CTA_SUBHEAD": "Free estimates, no pressure. Drop by during business hours or send us photos to start.",
+    "GBP_RATING": "4.8",
+    "GBP_REVIEW_COUNT": "74",
+    "GBP_URL": "https://maps.google.com/?cid=4262659531138535018",
+    "OWNER_NAME": "Kevin and the Forest Park Collision team",
+    "OWNER_BIO": "Kevin runs Forest Park Collision the way his customers tell him they wish every body shop ran: clear estimates, honest timelines, and cars that come back looking better than the day before the accident. Dozens of Google reviews call him out by name — not because he asks for it, but because customers remember the way he treated them.",
+    "ABOUT_INTRO": "Forest Park Collision has been quietly fixing Atlanta cars on Central Avenue for years, building a 70+ five-star reputation almost entirely on word-of-mouth.",
+    "ABOUT_DETAIL_1": "Kevin and his team handle the full range of collision and body work — fender benders, sideswipes, full-quarter-panel rebuilds, paint matching, dent removal, and insurance-claim work. They don't subcontract paint or body work; everything happens in-house, which is why customers consistently say the cars come back looking 'brand new.'",
+    "ABOUT_DETAIL_2": "If you've never been through an accident before, the process can feel intimidating. Kevin walks you through it — what your insurance covers, what a fair estimate looks like, what the timeline actually is. No surprises, no upsells, no pressure.",
+    "BUSINESS_HOURS": "Monday–Friday 8:30 AM – 5:30 PM. Closed weekends.",
+    "RADIUS": "20 miles south of downtown Atlanta",
+    "FORM_ACTION": "https://crm.cloakanddagger.co/api/site-intake",
+    "FORM_HEADING": "Tell us about the damage",
+    "FORM_SUBHEAD": "Send photos if you can — it speeds up the estimate. We'll get back to you within one business day.",
+    "FORM_MESSAGE_LABEL": "Describe the damage (or what happened)",
+    "CONTACT_HEADLINE": "Get an estimate for your collision repair",
+    "CONTACT_SUBHEAD": "We'll review the damage, work with your insurance if needed, and get you a fair number quickly. No obligation — drop in or send photos.",
+    "SERVICES_LIST_TEASER": "Collision repair, auto body painting, dent and bumper work, and insurance claim support — all in-house.",
+    "SERVICES_PAGE_INTRO": "Forest Park Collision handles every step of body and collision work in-house — no subcontracting paint or panel work to outside shops. Free estimates, fair pricing, and insurance work welcome.",
+    "YEAR_FOUNDED": "2008",
+    "GALLERY_1_CONTEXT": "shop-interior-OK|vehicle-on-lift-OK|repair-in-progress-OK",
+    "GALLERY_2_CONTEXT": "completed-vehicle-OK|fresh-paint-OK|finished-quality-OK",
+    "GALLERY_3_CONTEXT": "before-after-OK|damage-shot-OK|repair-progress-OK",
+    "GALLERY_4_CONTEXT": "owner-portrait-OK|technician-OK|team-OK",
+    "GALLERY_5_CONTEXT": "shop-exterior-OK|signage-OK|atmosphere-OK",
+    "GALLERY_6_CONTEXT": "tools-OK|paint-booth-OK|atmosphere-OK"
+  },
+  "services": [
+    {
+      "slug": "collision-repair-atlanta",
+      "name": "Collision Repair",
+      "icon": "car",
+      "teaser": "Fender benders to full-panel rebuilds. We handle insurance claims, order the parts, and deliver a car you can't tell was wrecked.",
+      "page": {
+        "h1": "Collision repair in Forest Park & South Atlanta",
+        "meta_description": "Forest Park collision repair from Kevin's team. 4.8 stars across 70+ Google reviews. Insurance work welcome, free estimates. Call (678) 647-0907.",
+        "hero_subhead": "From a tap in the parking lot to a major rear-end — we make the car look like it never happened.",
+        "body_h2": "What collision repair actually involves",
+        "subsection_h3": "How insurance work flows here",
+        "body_paragraphs": [
+          "Collision repair is rarely just one thing. A side-impact accident might mean a new door, a new fender, frame realignment, paint matching across two panels, and replacing a side mirror or trim piece. Every quote we write breaks the work down item-by-item so you see what's parts, what's labor, and what's paint, instead of one mystery number.",
+          "We do all of it in-house: bodywork, frame measurement, paint mixing, paint application, blending into adjacent panels. Subcontracting any part of that out is where most shops lose quality control — when the panel comes back from a paint subcontractor and doesn't match the shop's bodywork. That's not how we run this place.",
+          "Most collision repairs are 5–10 business days, but the timeline depends on parts. If your car needs a specific OEM panel from a regional warehouse, we'll tell you up front whether that's a 2-day part or a 2-week part. We don't pad timelines to cover ourselves.",
+          "We work with every major insurance carrier in Georgia. State Farm, Allstate, Progressive, GEICO, USAA, Nationwide, Liberty Mutual, Farmers — we've billed all of them. We handle the supplements, the photos, the rental coordination if your policy covers it. You sign the work order; we handle the back-and-forth."
+        ],
+        "steps": [
+          "Stop by during business hours, or text (678) 647-0907 with photos of the damage. We'll give you a free estimate same-day if it's a daylight visit, next-day on photos.",
+          "If you're filing through insurance, we'll walk you through the claim process and coordinate with your adjuster. If you're paying out of pocket, we'll quote a flat number with no surprises.",
+          "We order parts, schedule the repair, and get to work. You can check in any time — the shop is open M-F 8:30-5:30 and Kevin will tell you exactly where your car is in the process.",
+          "Pickup. Final QC walk-around so we both see the work. We don't release the car until you're satisfied with the body line, the paint match, and the overall finish."
+        ],
+        "photo_context": "shop-interior-OK|vehicle-on-lift-OK|completed-vehicle-OK|paint-booth-OK|atmosphere-OK",
+        "cta_subhead": "Tell us what happened. We'll get you back on the road.",
+        "faqs": [
+          {
+            "q": "How much does collision repair cost in Forest Park?",
+            "a": "It depends entirely on the damage. A scuffed bumper might be $400–$800. A door + fender + paint blend is closer to $1,500–$3,500. Major panel work with frame measurement runs $4,000+. We always provide a written estimate before any work starts — and if insurance is paying, we work with the adjuster's number directly."
+          },
+          {
+            "q": "Do you work with my insurance company?",
+            "a": "Yes. We work with every major Georgia carrier — State Farm, Allstate, Progressive, GEICO, USAA, Nationwide, Liberty Mutual, Farmers, and others. We handle supplements (additional damage discovered during repair), photos, and adjuster coordination. You don't have to be the middleman."
+          },
+          {
+            "q": "How long will the repair take?",
+            "a": "Most jobs are 5–10 business days. The biggest variable is parts availability. Common parts ship in 2 days; specific OEM body panels can take 1–2 weeks. We'll tell you up front exactly what's needed so the timeline is honest, not optimistic."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "auto-body-paint-atlanta",
+      "name": "Auto Body Paint",
+      "icon": "paintbrush",
+      "teaser": "Color matching that disappears into the rest of the car. Full repaints, panel blends, fresh clear coats. Done in our own paint booth.",
+      "page": {
+        "h1": "Auto body painting in Forest Park, GA",
+        "meta_description": "Auto body paint and refinish work in Forest Park GA. Color matching, panel blending, full repaints — all done in our paint booth. Free estimates: (678) 647-0907.",
+        "hero_subhead": "Whether it's a single panel that needs to match or a full repaint, the goal is the same: you can't tell anyone painted anything.",
+        "body_h2": "Paint work that actually matches",
+        "subsection_h3": "When a panel blend is the right call",
+        "body_paragraphs": [
+          "The hardest part of auto body painting isn't applying the paint — it's matching the color of a 5-year-old factory finish that's seen sun, weather, and a few car washes. We mix paint in-house using the manufacturer's color code as a starting point, then adjust by eye against the actual panel until the new paint disappears into the surrounding factory color.",
+          "On collision work, we usually blend paint into the panel adjacent to the repaired one. If we just paint the new panel and stop at the seam, you'll see a slight color line because the factory clear coat above and below has aged. Blending the paint a few inches into the next panel hides that line completely.",
+          "Full repaints are a different conversation. If your car's clear coat is failing (peeling, yellowing, chalky from sun damage), a full repaint can make a 10-year-old car look like a 1-year-old car. We do those in our own booth with single-stage or two-stage urethane systems depending on the original finish.",
+          "We work with every modern automotive paint chemistry — solvent-borne, water-borne, the works. If your manufacturer (Honda, Toyota, GM, Ford, Mercedes, BMW, Tesla) uses a specific color or finish system, we have the formula data and the equipment to match it."
+        ],
+        "steps": [
+          "Bring the car by — we need to see the actual panel under shop lighting. Photos help for an initial estimate but the final color match has to happen in person.",
+          "We scan the color code from the door jamb sticker, mix a base, and test-spray on a card. We compare to the panel and adjust until the match is invisible.",
+          "Prep work: surface sanding, masking, primer application where needed. This is 50% of the actual paint job — skipping it is what makes paint peel later.",
+          "Spray, blend into adjacent panels, clear coat, bake. Final QC under shop and natural lighting. Pick-up only when the match is clean."
+        ],
+        "photo_context": "paint-booth-OK|color-matching-OK|finished-paint-OK|clean-shop-OK|fresh-paint-OK",
+        "cta_subhead": "Bring it by — let's see the panel and figure out what it needs.",
+        "faqs": [
+          {
+            "q": "How much does auto body paint cost?",
+            "a": "Single panel paint with a blend into adjacent panels typically runs $500–$900 depending on size and finish. Full repaints range $3,500–$6,500 for a sedan or compact, more for larger vehicles or premium finishes. The biggest variables are panel size, color complexity (metallics and pearls cost more), and whether prep work is needed beyond standard surface sanding."
+          },
+          {
+            "q": "Will the new paint match the rest of the car?",
+            "a": "Yes — that's our job. Modern automotive paint matching uses the manufacturer's color code plus eyeballed adjustment under shop lighting. We test-spray cards before committing, and we blend into adjacent panels so there's no visible color line at the seam. If the match isn't right, we redo it. You shouldn't be able to tell which panel was painted."
+          },
+          {
+            "q": "How long does paint work take?",
+            "a": "A single-panel repaint with blend is typically 3–5 business days from drop-off to pickup. Full repaints are 7–14 days depending on prep work. Most of that time is prep and dry/cure cycles, not active painting — fresh paint needs 24+ hours between coats."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "dent-bumper-repair-atlanta",
+      "name": "Dent & Bumper Repair",
+      "icon": "shield",
+      "teaser": "Door dings, parking-lot dents, scuffed bumpers, cracked covers. Quick turnaround on small jobs, often same-week.",
+      "page": {
+        "h1": "Dent and bumper repair in Forest Park, GA",
+        "meta_description": "Dent removal, bumper repair, scratch and scuff fixes in Forest Park. Quick turnaround on small jobs. Free estimates from Kevin's team: (678) 647-0907.",
+        "hero_subhead": "The small stuff — door dings, fender benders, scuffed bumpers, cracked covers. Often done in 2-3 days.",
+        "body_h2": "What counts as a dent or bumper job",
+        "subsection_h3": "When a small job becomes a paint job",
+        "body_paragraphs": [
+          "Most cars on Atlanta roads pick up small damage that isn't worth filing an insurance claim over but ruins the look of the car. A door ding from a parking lot. A scuffed bumper from a curb. A scratched panel from another car backing into yours. These are exactly the kind of jobs we turn around quickly — usually 2–3 business days, often without insurance involvement.",
+          "For shallow dents that haven't broken the paint, we can sometimes pull them out without any paint work — paintless dent repair (PDR) preserves your factory finish. We assess this on every dent and tell you whether PDR is realistic or whether the panel needs paint.",
+          "Bumper work is its own category. Modern plastic bumper covers crack, scuff, and lose paint differently than metal panels. We can repair small cracks with plastic welding, repaint scuffed bumpers, or replace the whole cover if the damage is too big. We'll tell you which makes sense for the cost.",
+          "Scratch repair depends on depth. A surface scratch in the clear coat can sometimes be polished out without any paint. Deeper scratches that go through to the color coat or primer need spot-paint and blend. We test the depth before we commit to a fix path."
+        ],
+        "steps": [
+          "Stop by or text photos. Most small jobs we can quote from a photo if the angle and lighting are clear.",
+          "We assess in person whether the dent can be pulled (PDR) or needs paint, and whether the bumper can be repaired or needs replacement.",
+          "Most small jobs are 2–3 business days. Larger bumper work or multi-panel scratches are 4–5 days.",
+          "Pickup. Walk-around to confirm the work. Often these jobs feel like the car wasn't damaged at all."
+        ],
+        "photo_context": "small-dent-OK|bumper-detail-OK|before-after-OK|fresh-finish-OK|atmosphere-OK",
+        "cta_subhead": "Send a photo of the damage — we'll tell you if it's a 2-day job or bigger.",
+        "faqs": [
+          {
+            "q": "How much does dent or bumper repair cost?",
+            "a": "Small paintless dent repair (PDR) is typically $100–$250 per dent depending on size. Bumper scuff repaint is $300–$600. Bumper cover replacement with paint is $700–$1,200. Quotes are free and quick — text or stop by."
+          },
+          {
+            "q": "Can you do paintless dent repair?",
+            "a": "On dents that haven't broken the paint, often yes. PDR works best on shallow door dings, hail dents, and small parking-lot dings where the metal is creased but the paint is intact. We assess each dent in person before committing to PDR — if the metal is too creased or the paint has lifted, the panel will need paint."
+          },
+          {
+            "q": "Should I just do it through insurance?",
+            "a": "For small jobs (under $1,000-ish), often it's not worth filing a claim. Your deductible is probably $500-$1,000, and insurance claims can affect your premium. We'll tell you honestly whether the job is in claim-worthy range or whether you're better off paying out of pocket."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "insurance-claim-help-atlanta",
+      "name": "Insurance Claim Help",
+      "icon": "file-text",
+      "teaser": "We handle the adjuster, the supplements, the photos, the rental coordination. You sign the work order — we deal with the paperwork.",
+      "page": {
+        "h1": "Insurance claim help for collision repair in Forest Park",
+        "meta_description": "Forest Park collision shop that handles your insurance claim end-to-end. Adjuster coordination, supplements, photos, rentals. Call Kevin: (678) 647-0907.",
+        "hero_subhead": "Filing a claim, dealing with adjusters, getting a rental — it's a part-time job. We do all of it for you.",
+        "body_h2": "What we handle on the insurance side",
+        "subsection_h3": "Why supplements matter",
+        "body_paragraphs": [
+          "If you've ever filed an auto insurance claim, you know the work doesn't end when you sign the work order. Adjusters miss damage on the initial inspection. Parts cost more than the original estimate. Hidden frame issues turn up once the panel is off. Each of those becomes a 'supplement' — additional billing the shop submits to the insurance carrier mid-repair. Doing supplements right is the difference between getting paid fairly and eating the loss.",
+          "We handle every major Georgia auto carrier and have direct billing relationships with most: State Farm, Allstate, Progressive, GEICO, USAA, Nationwide, Liberty Mutual, Farmers, AAA, and others. We document with photos at every stage — at intake, mid-repair, and at completion — so the adjuster has everything they need to approve supplements quickly.",
+          "If your policy covers a rental car during the repair, we'll coordinate with Enterprise, Hertz, or whichever provider your insurance prefers. You don't have to call the rental company; we handle the pickup window and the return.",
+          "For drivers who aren't sure whether to even file a claim, we'll give you an honest read. Sometimes paying out of pocket is cheaper than the deductible plus the long-term premium hit. We don't push you toward filing if it's not in your interest."
+        ],
+        "steps": [
+          "Bring the car by or send photos. We'll give you a free estimate that you can use to decide whether to file a claim.",
+          "If you're filing, give us your insurance info. We contact your carrier, get the claim number, and coordinate with the adjuster. You don't have to be the go-between.",
+          "We document with photos at intake, before each repair stage, and at completion. Submitted to the insurer for approval and payment.",
+          "Final inspection with you. Direct billing to your insurer settles the rest. You pay your deductible and that's it."
+        ],
+        "photo_context": "paperwork-OK|adjuster-meeting-OK|shop-clean-OK|atmosphere-OK|professional-OK",
+        "cta_subhead": "We do the paperwork. You drive away in a fixed car.",
+        "faqs": [
+          {
+            "q": "Do I have to use my insurance company's preferred shop?",
+            "a": "No. In Georgia (and every U.S. state), you have the legal right to choose any licensed body shop for your collision repair. Insurance companies sometimes suggest 'preferred' shops because they have direct billing arrangements, but you're not obligated. We work with every major carrier and can direct-bill almost all of them."
+          },
+          {
+            "q": "What if the adjuster's first estimate is too low?",
+            "a": "Common — initial inspections often miss damage that's only visible once a panel is off. We file what's called a 'supplement' to add the missed work. Insurance companies are accustomed to this; supplements are part of standard process. We do the documentation so the supplement gets approved quickly."
+          },
+          {
+            "q": "Will my insurance cover a rental while the car is being repaired?",
+            "a": "Depends on your policy. Most full-coverage policies include rental reimbursement, typically $30–$50/day for up to 30 days. Liability-only policies usually don't. Check your declarations page or call your agent. If you have rental coverage, we'll coordinate it for you."
+          }
+        ]
+      }
+    }
+  ]
+}

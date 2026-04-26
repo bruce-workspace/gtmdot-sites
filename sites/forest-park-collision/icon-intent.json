@@ -1,0 +1,18 @@
+{
+  "vertical": "collision",
+  "trade_category": "Collision Repair",
+  "service_cards": {
+    "collision-repair": "car",
+    "auto-body-paint": "paintbrush",
+    "dent-bumper-repair": "shield",
+    "insurance-claims": "file-text"
+  },
+  "hero": null,
+  "nav": {
+    "menu": "menu"
+  },
+  "contact": {
+    "upload": "upload-cloud"
+  },
+  "notes": "Collision vertical icons per ICON-MAPPING.md §Auto Body & Collision. car=primary collision/dent repair, paintbrush=full paint/refinish, shield=bumper repair (covers dent+bumper combo), file-text=insurance claim/estimate. Magnet (PDR) and pen-line (scratch) are valid alternatives but reserved for sites with those as headline services."
+}

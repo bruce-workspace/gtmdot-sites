@@ -1,0 +1,229 @@
+<!doctype html>
+<!--
+  PER-SERVICE SEO PAGE TEMPLATE
+  Copy this once per service in the vertical and rename to /{service-slug}-{city}.html
+  Example filenames:
+    /refrigerator-repair-atlanta.html
+    /ac-repair-atlanta.html
+    /drain-cleaning-atlanta.html
+
+  Every per-service page MUST have:
+    - Unique <title> with service + city
+    - Unique <meta name="description"> (140-160 chars)
+    - Unique <h1> matching title intent
+    - JSON-LD Service schema linked to LocalBusiness
+    - 400-600 words of unique content (not duplicated from other service pages)
+    - Specific photos via .gtmdot-photo-slot with service-relevant data-context
+    - 3-5 service-specific FAQs for long-tail queries
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Auto Body Paint in Forest Park, GA — Forest Park Collision</title>
+  <meta name="description" content="Auto body paint and refinish work in Forest Park GA. Color matching, panel blending, full repaints — all done in our paint booth. Free estimates: (678) 647-0907.">
+  <link rel="canonical" href="https://forest-park-collision.pages.dev/auto-body-paint-atlanta.html">
+  <link rel="stylesheet" href="_base.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+  <!-- JSON-LD Service schema, linked to parent LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Auto Body Paint in Forest Park",
+    "serviceType": "Auto Body Paint",
+    "description": "Auto body paint and refinish work in Forest Park GA. Color matching, panel blending, full repaints — all done in our paint booth. Free estimates: (678) 647-0907.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Forest Park Collision",
+      "telephone": "(678) 647-0907",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "198 Central Ave",
+        "addressLocality": "Forest Park",
+        "addressRegion": "GA",
+        "postalCode": "30297",
+        "addressCountry": "US"
+      },
+      "url": "https://forest-park-collision.pages.dev/"
+    },
+    "areaServed": "Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro",
+    "url": "https://forest-park-collision.pages.dev/auto-body-paint-atlanta.html"
+  }
+  </script>
+
+  <!-- JSON-LD FAQPage schema (use ONLY if the page has 3+ FAQs) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does auto body paint cost?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Single panel paint with a blend into adjacent panels typically runs $500–$900 depending on size and finish. Full repaints range $3,500–$6,500 for a sedan or compact, more for larger vehicles or premium finishes. The biggest variables are panel size, color complexity (metallics and pearls cost more), and whether prep work is needed beyond standard surface sanding." }
+      },
+      {
+        "@type": "Question",
+        "name": "Will the new paint match the rest of the car?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — that's our job. Modern automotive paint matching uses the manufacturer's color code plus eyeballed adjustment under shop lighting. We test-spray cards before committing, and we blend into adjacent panels so there's no visible color line at the seam. If the match isn't right, we redo it. You shouldn't be able to tell which panel was painted." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does paint work take?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A single-panel repaint with blend is typically 3–5 business days from drop-off to pickup. Full repaints are 7–14 days depending on prep work. Most of that time is prep and dry/cure cycles, not active painting — fresh paint needs 24+ hours between coats." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a class="site-logo" href="/">Forest Park Collision</a>
+    <nav class="site-nav">
+      <a href="/services.html">Services</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a class="cta-btn" href="/contact.html">Get an Estimate</a>
+    </nav>
+    <button class="hamburger" aria-label="Open menu" onclick="document.querySelector('.site-nav').classList.toggle('open')">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</header>
+
+<!-- HERO (service-specific) -->
+<section class="hero">
+  <div class="wrap">
+    <p style="font-size: 14px; color: var(--ink-soft); margin: 0 0 12px;">
+      <a href="/services.html" style="color: var(--ink-soft); text-decoration: none;">Services</a> / Auto Body Paint
+    </p>
+    <h1>Auto body painting in Forest Park, GA</h1>
+    <p class="lede">Whether it's a single panel that needs to match or a full repaint, the goal is the same: you can't tell anyone painted anything.</p>
+    <a class="cta-btn" href="/contact.html">Get an Estimate</a>
+  </div>
+</section>
+
+<!-- SERVICE BODY — 400-600 words of unique content -->
+<section>
+  <div class="wrap" style="max-width: 840px;">
+    <h2>Paint work that actually matches</h2>
+    <p style="font-size: 17px; line-height: 1.65;">The hardest part of auto body painting isn't applying the paint — it's matching the color of a 5-year-old factory finish that's seen sun, weather, and a few car washes. We mix paint in-house using the manufacturer's color code as a starting point, then adjust by eye against the actual panel until the new paint disappears into the surrounding factory color.</p>
+    <p style="font-size: 17px; line-height: 1.65;">On collision work, we usually blend paint into the panel adjacent to the repaired one. If we just paint the new panel and stop at the seam, you'll see a slight color line because the factory clear coat above and below has aged. Blending the paint a few inches into the next panel hides that line completely.</p>
+
+    <h3>When a panel blend is the right call</h3>
+    <p style="font-size: 17px; line-height: 1.65;">Full repaints are a different conversation. If your car's clear coat is failing (peeling, yellowing, chalky from sun damage), a full repaint can make a 10-year-old car look like a 1-year-old car. We do those in our own booth with single-stage or two-stage urethane systems depending on the original finish.</p>
+    <p style="font-size: 17px; line-height: 1.65;">We work with every modern automotive paint chemistry — solvent-borne, water-borne, the works. If your manufacturer (Honda, Toyota, GM, Ford, Mercedes, BMW, Tesla) uses a specific color or finish system, we have the formula data and the equipment to match it.</p>
+
+    <h3>What to expect</h3>
+    <ol style="font-size: 17px; line-height: 1.7;">
+      <li>Bring the car by — we need to see the actual panel under shop lighting. Photos help for an initial estimate but the final color match has to happen in person.</li>
+      <li>We scan the color code from the door jamb sticker, mix a base, and test-spray on a card. We compare to the panel and adjust until the match is invisible.</li>
+      <li>Prep work: surface sanding, masking, primer application where needed. This is 50% of the actual paint job — skipping it is what makes paint peel later.</li>
+      <li>Spray, blend into adjacent panels, clear coat, bake. Final QC under shop and natural lighting. Pick-up only when the match is clean.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- SERVICE-SPECIFIC GALLERY -->
+<section style="background: var(--paper-soft);">
+  <div class="wrap">
+    <h2>Auto Body Paint — recent work</h2>
+    <div class="gtmdot-photo-gallery">
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="SERVICE_GALLERY_1"
+              data-context="paint-booth-OK|color-matching-OK|finished-paint-OK|clean-shop-OK|fresh-paint-OK"
+              data-resolved="false">
+        <img src="photos/gbp-1.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="SERVICE_GALLERY_2"
+              data-context="paint-booth-OK|color-matching-OK|finished-paint-OK|clean-shop-OK|fresh-paint-OK"
+              data-resolved="false">
+        <img src="photos/gbp-2.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="SERVICE_GALLERY_3"
+              data-context="paint-booth-OK|color-matching-OK|finished-paint-OK|clean-shop-OK|fresh-paint-OK"
+              data-resolved="false">
+        <img src="photos/gbp-3.jpg" alt="">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- FAQs -->
+<section>
+  <div class="wrap" style="max-width: 840px;">
+    <h2>Frequently asked questions</h2>
+
+    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
+      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">How much does auto body paint cost?</summary>
+      <p style="margin: 12px 0 0; line-height: 1.6;">Single panel paint with a blend into adjacent panels typically runs $500–$900 depending on size and finish. Full repaints range $3,500–$6,500 for a sedan or compact, more for larger vehicles or premium finishes. The biggest variables are panel size, color complexity (metallics and pearls cost more), and whether prep work is needed beyond standard surface sanding.</p>
+    </details>
+
+    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
+      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">Will the new paint match the rest of the car?</summary>
+      <p style="margin: 12px 0 0; line-height: 1.6;">Yes — that's our job. Modern automotive paint matching uses the manufacturer's color code plus eyeballed adjustment under shop lighting. We test-spray cards before committing, and we blend into adjacent panels so there's no visible color line at the seam. If the match isn't right, we redo it. You shouldn't be able to tell which panel was painted.</p>
+    </details>
+
+    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
+      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">How long does paint work take?</summary>
+      <p style="margin: 12px 0 0; line-height: 1.6;">A single-panel repaint with blend is typically 3–5 business days from drop-off to pickup. Full repaints are 7–14 days depending on prep work. Most of that time is prep and dry/cure cycles, not active painting — fresh paint needs 24+ hours between coats.</p>
+    </details>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background: var(--accent-soft); text-align: center;">
+  <div class="wrap">
+    <h2>Ready for Auto Body Paint in Forest Park?</h2>
+    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">Bring it by — let's see the panel and figure out what it needs.</p>
+    <a class="cta-btn" href="/contact.html">Get an Estimate</a>
+    <p style="margin-top: 16px;">or call <a href="tel:+16786470907" style="color: var(--accent); font-weight: 600;">(678) 647-0907</a></p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Forest Park Collision</h4>
+        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Atlanta's family-feel body shop, built on referrals</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="/services.html">All services</a>
+        <a href="/collision-repair-atlanta.html">Collision Repair</a>
+        <a href="/auto-body-paint-atlanta.html">Auto Body Paint</a>
+        <a href="/dent-bumper-repair-atlanta.html">Dent & Bumper Repair</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+16786470907">(678) 647-0907</a>
+        <a href="mailto:service@forestparkcollision.com">service@forestparkcollision.com</a>
+        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Forest Park Collision. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.lucide) window.lucide.createIcons();
+  });
+</script>
+
+</body>
+</html>
