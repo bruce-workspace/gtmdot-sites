@@ -60,6 +60,16 @@ Checked visible `data-lucide` values against `icon-intent.json`: `car`, `paintbr
 | Generated hero is synthetic aspirational atmosphere, not actual company work. | Generated via image model from a text prompt. It contains no people, logos, license plates, or readable text and should only be used in aspirational-body-shop-OK or atmosphere-OK contexts. | 1.00 |
 | Existing icons match collision vertical intent. | HTML uses car, paintbrush, shield, and file-text for collision repair, paint, dent/bumper, and insurance claims. These align with `icon-intent.json` and the collision mapping notes. | 0.90 |
 
+
+## Design Port v2 Revalidation — 2026-04-27
+
+Revalidated against `messages/r1vs/2026-04-27-061500-r1vs-design-port-v2-shipped.md`.
+
+- **Hero recommendation:** unchanged. `photos-generated/hero-01.png` remains strongest under the darker overlay and more prominent kicker treatment. The added overlay helps the synthetic hero read as atmosphere while preserving copy legibility; no `photos-raw/` image beats it for a polished homepage hero. `photos-raw/gbp-04.jpg` remains the real-photo fallback.
+- **Object/context verification:** unchanged. The hero is still appropriate for `aspirational-body-shop-OK|atmosphere-OK`; it remains synthetic atmosphere only and should not be represented as actual Forest Park Collision work.
+- **Photo-quality labels:** labels stay valid, but v2 hover captions create bottom-third overlay risk. Flagged images where primary detail sits low: `photos-raw/gbp-02.jpg`, `photos-raw/gbp-03.jpg`, `photos-raw/gbp-05.jpg`, `photos-raw/gbp-06.jpg`, `photos-raw/gbp-07.jpg`, `photos-raw/gbp-09.jpg`, `photos-raw/yelp-02.jpg`, `photos-raw/yelp-03.jpg`. Lower-risk for captions: `photos-raw/gbp-01.jpg`, `photos-raw/gbp-04.jpg`, `photos-raw/gbp-08.jpg`; Yelp discard labels remain unchanged.
+- **Icon flags:** unchanged. `car`, `paintbrush`, `shield`, and `file-text` still match Collision Repair, Auto Body Paint, Dent & Bumper Repair, and Insurance Claim Help.
+
 ## Review Coverage Notes
 
 Sufficient.
