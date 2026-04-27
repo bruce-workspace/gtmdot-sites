@@ -201,17 +201,81 @@
   </div>
 </section>
 
-<!-- CTA -->
+<!-- ESTIMATE BAND — present on every page except contact.html -->
+<section class="estimate-band">
+  <div class="wrap estimate-band-grid">
+    <div class="estimate-band-copy">
+      <span class="eyebrow">Get an estimate</span>
+      <h2>Free quote, usually same week.</h2>
+      <p class="lede">Tell us about the job. We'll get back to you with a written estimate — no obligation, no upsell.</p>
+      <ul class="trust-row">
+        <li>Free written estimates, every time</li>
+        <li>Same-week scheduling for most jobs</li>
+        <li>4.8★ from 74 Forest Park customers</li>
+        <li>Serving Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</li>
+      </ul>
+      <div class="direct-line">
+        <span class="label">Or call us direct</span>
+        <a class="phone" href="tel:+16786470907">(678) 647-0907</a>
+      </div>
+    </div>
+
+    <form class="estimate-form" method="post" action="https://crm.cloakanddagger.co/api/site-intake">
+      <div class="form-head">
+        <h3>Tell us about the damage</h3>
+        <span class="response-time"><span class="dot"></span>Replies same day</span>
+      </div>
+
+      <div class="row-2">
+        <div>
+          <label for="estimate-name">Name</label>
+          <input id="estimate-name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="estimate-phone">Phone</label>
+          <input id="estimate-phone" name="phone" type="tel">
+        </div>
+      </div>
+
+      <div>
+        <label for="estimate-email">Email</label>
+        <input id="estimate-email" name="email" type="email" required>
+      </div>
+
+      <div>
+        <label for="estimate-service">Service needed</label>
+        <select id="estimate-service" name="service" required>
+          <option value="">Select a service…</option>
+          <option value="collision-repair-atlanta">Collision Repair</option>
+          <option value="auto-body-paint-atlanta">Auto Body Paint</option>
+          <option value="dent-bumper-repair-atlanta">Dent & Bumper Repair</option>
+          <option value="insurance-claim-help-atlanta">Insurance Claim Help</option>
+          <option value="other">Other / not sure</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="estimate-message">Describe the damage (or what happened)</label>
+        <textarea id="estimate-message" name="message" required></textarea>
+      </div>
+
+      <div class="form-foot">
+        <p class="privacy">We never share your info. By submitting, you agree we may text or email about your estimate.</p>
+        <button type="submit" class="submit">
+          <i data-lucide="send"></i>
+          Get an Estimate
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- CTA BAND -->
 <section class="cta-band">
   <div class="wrap">
-    <span class="eyebrow">Ready when you are</span>
-    <h2>Need Insurance Claim Help in Forest Park?</h2>
-    <p>We do the paperwork. You drive away in a fixed car.</p>
-    <a class="cta-btn" href="/contact.html">
-      <i data-lucide="message-circle"></i>
-      Get an Estimate
-    </a>
-    <p class="cta-tail">or call <a href="tel:+16786470907">(678) 647-0907</a></p>
+    <span class="eyebrow">Or just give us a call</span>
+    <h2>Free estimates, no pressure. Drop by during business hours or send us photos to start.</h2>
+    <p class="cta-tail"><a class="cta-phone" href="tel:+16786470907">(678) 647-0907</a></p>
   </div>
 </section>
 

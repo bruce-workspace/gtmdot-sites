@@ -122,6 +122,29 @@
   </div>
 </div>
 
+<!-- MARQUEE — rotating taglines, doubled for seamless loop -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">{{SERVICE_1_NAME}}<span class="dot"></span></span>
+    <span class="marquee-item">{{SERVICE_2_NAME}}<span class="dot"></span></span>
+    <span class="marquee-item">{{SERVICE_3_NAME}}<span class="dot"></span></span>
+    <span class="marquee-item">{{SERVICE_4_NAME}}<span class="dot"></span></span>
+    <span class="marquee-item">FREE ESTIMATES<span class="dot"></span></span>
+    <span class="marquee-item">SAME-WEEK SCHEDULING<span class="dot"></span></span>
+    <span class="marquee-item">SERVING {{CITY}} SINCE {{YEAR_FOUNDED}}<span class="dot"></span></span>
+    <span class="marquee-item">{{GBP_RATING}}★ · {{GBP_REVIEW_COUNT}} REVIEWS<span class="dot"></span></span>
+    <!-- duplicated for seamless loop -->
+    <span class="marquee-item">{{SERVICE_1_NAME}}<span class="dot"></span></span>
+    <span class="marquee-item">{{SERVICE_2_NAME}}<span class="dot"></span></span>
+    <span class="marquee-item">{{SERVICE_3_NAME}}<span class="dot"></span></span>
+    <span class="marquee-item">{{SERVICE_4_NAME}}<span class="dot"></span></span>
+    <span class="marquee-item">FREE ESTIMATES<span class="dot"></span></span>
+    <span class="marquee-item">SAME-WEEK SCHEDULING<span class="dot"></span></span>
+    <span class="marquee-item">SERVING {{CITY}} SINCE {{YEAR_FOUNDED}}<span class="dot"></span></span>
+    <span class="marquee-item">{{GBP_RATING}}★ · {{GBP_REVIEW_COUNT}} REVIEWS<span class="dot"></span></span>
+  </div>
+</div>
+
 <!-- SERVICES TEASER -->
 <section>
   <div class="wrap">
@@ -228,52 +251,140 @@
               data-context="{{GALLERY_1_CONTEXT}}"
               data-resolved="false">
         <img src="photos/gbp-1.jpg" alt="">
+        <figcaption class="work-caption">
+          <span class="work-caption-tag">{{PRIMARY_SERVICE_CATEGORY}}</span>
+          {{CITY}} · Job #1
+        </figcaption>
       </figure>
       <figure class="gtmdot-photo-slot"
               data-slot-id="GALLERY_2"
               data-context="{{GALLERY_2_CONTEXT}}"
               data-resolved="false">
         <img src="photos/gbp-2.jpg" alt="">
+        <figcaption class="work-caption">
+          <span class="work-caption-tag">{{PRIMARY_SERVICE_CATEGORY}}</span>
+          {{CITY}} · Job #2
+        </figcaption>
       </figure>
       <figure class="gtmdot-photo-slot"
               data-slot-id="GALLERY_3"
               data-context="{{GALLERY_3_CONTEXT}}"
               data-resolved="false">
         <img src="photos/gbp-3.jpg" alt="">
+        <figcaption class="work-caption">
+          <span class="work-caption-tag">{{PRIMARY_SERVICE_CATEGORY}}</span>
+          {{CITY}} · Job #3
+        </figcaption>
       </figure>
       <figure class="gtmdot-photo-slot"
               data-slot-id="GALLERY_4"
               data-context="{{GALLERY_4_CONTEXT}}"
               data-resolved="false">
         <img src="photos/gbp-4.jpg" alt="">
+        <figcaption class="work-caption">
+          <span class="work-caption-tag">{{PRIMARY_SERVICE_CATEGORY}}</span>
+          {{CITY}} · Job #4
+        </figcaption>
       </figure>
       <figure class="gtmdot-photo-slot"
               data-slot-id="GALLERY_5"
               data-context="{{GALLERY_5_CONTEXT}}"
               data-resolved="false">
         <img src="photos/gbp-5.jpg" alt="">
+        <figcaption class="work-caption">
+          <span class="work-caption-tag">{{PRIMARY_SERVICE_CATEGORY}}</span>
+          {{CITY}} · Job #5
+        </figcaption>
       </figure>
       <figure class="gtmdot-photo-slot"
               data-slot-id="GALLERY_6"
               data-context="{{GALLERY_6_CONTEXT}}"
               data-resolved="false">
         <img src="photos/gbp-6.jpg" alt="">
+        <figcaption class="work-caption">
+          <span class="work-caption-tag">{{PRIMARY_SERVICE_CATEGORY}}</span>
+          {{CITY}} · Job #6
+        </figcaption>
       </figure>
     </div>
+  </div>
+</section>
+
+<!-- ESTIMATE BAND — present on every page except contact.html -->
+<section class="estimate-band">
+  <div class="wrap estimate-band-grid">
+    <div class="estimate-band-copy">
+      <span class="eyebrow">Get an estimate</span>
+      <h2>Free quote, usually same week.</h2>
+      <p class="lede">Tell us about the job. We'll get back to you with a written estimate — no obligation, no upsell.</p>
+      <ul class="trust-row">
+        <li>Free written estimates, every time</li>
+        <li>Same-week scheduling for most jobs</li>
+        <li>{{GBP_RATING}}★ from {{GBP_REVIEW_COUNT}} {{CITY}} customers</li>
+        <li>Serving {{SERVICE_AREAS}}</li>
+      </ul>
+      <div class="direct-line">
+        <span class="label">Or call us direct</span>
+        <a class="phone" href="tel:{{PHONE_TEL}}">{{PHONE}}</a>
+      </div>
+    </div>
+
+    <form class="estimate-form" method="post" action="{{FORM_ACTION}}">
+      <div class="form-head">
+        <h3>{{FORM_HEADING}}</h3>
+        <span class="response-time"><span class="dot"></span>Replies same day</span>
+      </div>
+
+      <div class="row-2">
+        <div>
+          <label for="estimate-name">Name</label>
+          <input id="estimate-name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="estimate-phone">Phone</label>
+          <input id="estimate-phone" name="phone" type="tel">
+        </div>
+      </div>
+
+      <div>
+        <label for="estimate-email">Email</label>
+        <input id="estimate-email" name="email" type="email" required>
+      </div>
+
+      <div>
+        <label for="estimate-service">Service needed</label>
+        <select id="estimate-service" name="service" required>
+          <option value="">Select a service…</option>
+          <option value="{{SERVICE_1_SLUG}}">{{SERVICE_1_NAME}}</option>
+          <option value="{{SERVICE_2_SLUG}}">{{SERVICE_2_NAME}}</option>
+          <option value="{{SERVICE_3_SLUG}}">{{SERVICE_3_NAME}}</option>
+          <option value="{{SERVICE_4_SLUG}}">{{SERVICE_4_NAME}}</option>
+          <option value="other">Other / not sure</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="estimate-message">{{FORM_MESSAGE_LABEL}}</label>
+        <textarea id="estimate-message" name="message" required></textarea>
+      </div>
+
+      <div class="form-foot">
+        <p class="privacy">We never share your info. By submitting, you agree we may text or email about your estimate.</p>
+        <button type="submit" class="submit">
+          <i data-lucide="send"></i>
+          {{PRIMARY_CTA}}
+        </button>
+      </div>
+    </form>
   </div>
 </section>
 
 <!-- CTA BAND -->
 <section class="cta-band">
   <div class="wrap">
-    <span class="eyebrow">Ready when you are</span>
+    <span class="eyebrow">Or just give us a call</span>
     <h2>{{CTA_SUBHEAD}}</h2>
-    <p>Free estimates. Same-week scheduling for most jobs.</p>
-    <a class="cta-btn" href="/contact.html">
-      <i data-lucide="message-circle"></i>
-      {{PRIMARY_CTA}}
-    </a>
-    <p class="cta-tail">or call <a href="tel:{{PHONE_TEL}}">{{PHONE}}</a></p>
+    <p class="cta-tail"><a class="cta-phone" href="tel:{{PHONE_TEL}}">{{PHONE}}</a></p>
   </div>
 </section>
 

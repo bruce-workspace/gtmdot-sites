@@ -256,31 +256,23 @@ button.cta-btn:hover {
   font-weight: 700;
   color: var(--text);
   display: inline-flex;
-  align-items: center;
+  align-items: baseline;
   gap: 10px;
   letter-spacing: -0.3px;
 }
 
+/* Single typographic mark — accent dot before the wordmark.
+   No tile, no duplicate; just one breathing accent character. */
 .site-logo::before {
   content: '';
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  background: var(--accent-glow);
-  border: 1px solid var(--border-strong);
   display: inline-block;
-  position: relative;
-}
-
-.site-logo::after {
-  content: '';
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
   background: var(--accent);
-  margin-left: -25px;
-  margin-top: 11px;
+  align-self: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 14px var(--accent-edge);
 }
 
 .site-nav {
@@ -468,15 +460,28 @@ body { padding-top: 68px; }
 }
 
 .hero-quote {
+  position: relative;
   margin-top: 36px;
-  padding-left: 22px;
-  border-left: 2px solid var(--accent);
+  padding-left: 36px;
   font-family: var(--font-serif);
-  font-size: 19px;
+  font-size: 20px;
   font-style: italic;
   color: var(--text-soft);
   line-height: 1.55;
-  max-width: 480px;
+  max-width: 520px;
+}
+
+.hero-quote::before {
+  content: '\201C';
+  position: absolute;
+  top: -18px;
+  left: -2px;
+  font-family: var(--font-serif);
+  font-size: 64px;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.7;
+  pointer-events: none;
 }
 
 /* ───── Trust strip (4-up stat band, sits just under hero) ───── */
@@ -1304,11 +1309,332 @@ section {
   }
 }
 
+/* ───── Marquee strip (rotating service taglines under trust-bar) ───── */
+
+.marquee {
+  overflow: hidden;
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 18px 0;
+  margin-bottom: var(--section-pad);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 56px;
+  width: max-content;
+  animation: marquee 38s linear infinite;
+}
+
+.marquee:hover .marquee-track { animation-play-state: paused; }
+
+.marquee-item {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.marquee-item .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; flex-wrap: wrap; gap: 24px; padding: 0 var(--pad-x); }
+}
+
+/* ───── Estimate band (form on every page except contact) ───── */
+
+.estimate-band {
+  background:
+    radial-gradient(900px 500px at 100% 0%, var(--accent-soft), transparent 65%),
+    var(--bg-alt);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 80px 0;
+}
+
+.estimate-band-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.estimate-band-copy { padding-top: 8px; }
+
+.estimate-band-copy h2 { margin: 0 0 16px; }
+
+.estimate-band-copy p.lede {
+  margin: 0 0 28px;
+  max-width: 460px;
+}
+
+.estimate-band-copy .trust-row {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  display: grid;
+  gap: 10px;
+}
+
+.estimate-band-copy .trust-row li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  color: var(--text-soft);
+  line-height: 1.5;
+}
+
+.estimate-band-copy .trust-row li::before {
+  content: '✓';
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent-glow);
+  color: var(--accent-light);
+  font-size: 12px;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  margin-top: 1px;
+}
+
+.estimate-band-copy .direct-line {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 12px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.estimate-band-copy .direct-line .label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-light);
+}
+
+.estimate-band-copy .direct-line .phone {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 3vw, 36px);
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.5px;
+  transition: color var(--dur-fast) var(--ease);
+}
+
+.estimate-band-copy .direct-line .phone:hover { color: var(--accent-light); }
+
+/* The form within the band — tighter than the full contact-form */
+.estimate-band .estimate-form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  display: grid;
+  gap: 14px;
+  box-shadow: var(--shadow-md);
+}
+
+.estimate-band .estimate-form .form-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+
+.estimate-band .estimate-form h3 {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.3px;
+  color: var(--text);
+}
+
+.estimate-band .estimate-form .response-time {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-light);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.estimate-band .estimate-form .response-time .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+.estimate-band .estimate-form label {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.estimate-band .estimate-form .row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.estimate-band .estimate-form input,
+.estimate-band .estimate-form textarea,
+.estimate-band .estimate-form select {
+  width: 100%;
+  padding: 12px 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  transition: border-color var(--dur-fast) var(--ease),
+              box-shadow var(--dur-fast) var(--ease);
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.estimate-band .estimate-form input:focus,
+.estimate-band .estimate-form textarea:focus,
+.estimate-band .estimate-form select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.estimate-band .estimate-form select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238e8a96' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 40px;
+}
+
+.estimate-band .estimate-form textarea {
+  min-height: 88px;
+  resize: vertical;
+  line-height: 1.55;
+}
+
+.estimate-band .estimate-form .form-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.estimate-band .estimate-form .privacy {
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  color: var(--muted-2);
+  line-height: 1.5;
+  flex: 1;
+  margin: 0;
+}
+
+.estimate-band .estimate-form .submit {
+  padding: 12px 22px;
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  border-radius: var(--radius-md);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background var(--dur-fast) var(--ease),
+              transform var(--dur-fast) var(--ease);
+  box-shadow: var(--shadow-sm);
+}
+
+.estimate-band .estimate-form .submit:hover {
+  background: var(--accent-light);
+  transform: translateY(-1px);
+}
+
+/* ───── Work caption (gallery hover label) ───── */
+
+.gtmdot-photo-slot[data-resolved="true"] .work-caption,
+.gtmdot-photo-slot.has-photo .work-caption {
+  position: absolute;
+  inset: auto 0 0 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent 75%);
+  color: #fff;
+  padding: 24px 18px 16px;
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: -0.1px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity var(--dur-med) var(--ease),
+              transform var(--dur-med) var(--ease);
+  pointer-events: none;
+}
+
+.gtmdot-photo-slot:hover .work-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.work-caption .work-caption-tag {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-light);
+  margin-bottom: 4px;
+  opacity: 0.9;
+}
+
 /* ───── Responsive ───── */
 
 @media (max-width: 1024px) {
   :root { --section-pad: 80px; --pad-x: 24px; }
   .service-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .estimate-band-grid { grid-template-columns: 1fr; gap: 40px; }
+  .estimate-band-copy { max-width: 600px; }
 }
 
 @media (max-width: 768px) {
@@ -1321,6 +1647,12 @@ section {
   .reviews-bar h2 { text-align: left; }
   .review-mini { flex: 0 0 80vw; max-width: 320px; }
   .gtmdot-photo-gallery { grid-template-columns: 1fr; }
+  .estimate-band { padding: 56px 0; }
+  .estimate-band .estimate-form { padding: 24px; }
+  .estimate-band .estimate-form .row-2 { grid-template-columns: 1fr; }
+  .estimate-band .estimate-form .form-foot { flex-direction: column; align-items: stretch; }
+  .estimate-band .estimate-form .submit { width: 100%; justify-content: center; }
+  .marquee { padding: 14px 0; }
 }
 
 @media (max-width: 480px) {
