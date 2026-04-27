@@ -23,6 +23,8 @@
   <title>Dent & Bumper Repair in Forest Park, GA — Forest Park Collision</title>
   <meta name="description" content="Dent removal, bumper repair, scratch and scuff fixes in Forest Park. Quick turnaround on small jobs. Free estimates from Kevin's team: (678) 647-0907.">
   <link rel="canonical" href="https://forest-park-collision.pages.dev/dent-bumper-repair-atlanta.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="_base.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 
@@ -80,8 +82,8 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap site-header-inner">
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
     <a class="site-logo" href="/">Forest Park Collision</a>
     <nav class="site-nav">
       <a href="/services.html">Services</a>
@@ -96,42 +98,62 @@
 </header>
 
 <!-- HERO (service-specific) -->
-<section class="hero">
+<section class="hero" style="min-height: 60vh;">
   <div class="wrap">
-    <p style="font-size: 14px; color: var(--ink-soft); margin: 0 0 12px;">
-      <a href="/services.html" style="color: var(--ink-soft); text-decoration: none;">Services</a> / Dent & Bumper Repair
-    </p>
-    <h1>Dent and bumper repair in Forest Park, GA</h1>
-    <p class="lede">The small stuff — door dings, fender benders, scuffed bumpers, cracked covers. Often done in 2-3 days.</p>
-    <a class="cta-btn" href="/contact.html">Get an Estimate</a>
+    <div class="hero-content">
+      <div class="hero-stamps">
+        <span class="hero-kicker">Collision Repair · Forest Park</span>
+      </div>
+      <p class="prose breadcrumb" style="margin: 0 0 16px;">
+        <a href="/services.html">Services</a> / Dent & Bumper Repair
+      </p>
+      <h1>Dent and bumper repair in Forest Park, GA</h1>
+      <p class="lede">The small stuff — door dings, fender benders, scuffed bumpers, cracked covers. Often done in 2-3 days.</p>
+      <div class="hero-actions">
+        <a class="cta-btn" href="/contact.html">
+          <i data-lucide="message-circle"></i>
+          Get an Estimate
+        </a>
+        <a class="btn-ghost" href="tel:+16786470907">
+          <i data-lucide="phone"></i>
+          (678) 647-0907
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- SERVICE BODY — 400-600 words of unique content -->
 <section>
-  <div class="wrap" style="max-width: 840px;">
-    <h2>What counts as a dent or bumper job</h2>
-    <p style="font-size: 17px; line-height: 1.65;">Most cars on Atlanta roads pick up small damage that isn't worth filing an insurance claim over but ruins the look of the car. A door ding from a parking lot. A scuffed bumper from a curb. A scratched panel from another car backing into yours. These are exactly the kind of jobs we turn around quickly — usually 2–3 business days, often without insurance involvement.</p>
-    <p style="font-size: 17px; line-height: 1.65;">For shallow dents that haven't broken the paint, we can sometimes pull them out without any paint work — paintless dent repair (PDR) preserves your factory finish. We assess this on every dent and tell you whether PDR is realistic or whether the panel needs paint.</p>
+  <div class="wrap">
+    <div class="prose">
+      <span class="eyebrow">About this service</span>
+      <h2>What counts as a dent or bumper job</h2>
+      <p>Most cars on Atlanta roads pick up small damage that isn't worth filing an insurance claim over but ruins the look of the car. A door ding from a parking lot. A scuffed bumper from a curb. A scratched panel from another car backing into yours. These are exactly the kind of jobs we turn around quickly — usually 2–3 business days, often without insurance involvement.</p>
+      <p>For shallow dents that haven't broken the paint, we can sometimes pull them out without any paint work — paintless dent repair (PDR) preserves your factory finish. We assess this on every dent and tell you whether PDR is realistic or whether the panel needs paint.</p>
 
-    <h3>When a small job becomes a paint job</h3>
-    <p style="font-size: 17px; line-height: 1.65;">Bumper work is its own category. Modern plastic bumper covers crack, scuff, and lose paint differently than metal panels. We can repair small cracks with plastic welding, repaint scuffed bumpers, or replace the whole cover if the damage is too big. We'll tell you which makes sense for the cost.</p>
-    <p style="font-size: 17px; line-height: 1.65;">Scratch repair depends on depth. A surface scratch in the clear coat can sometimes be polished out without any paint. Deeper scratches that go through to the color coat or primer need spot-paint and blend. We test the depth before we commit to a fix path.</p>
+      <h3>When a small job becomes a paint job</h3>
+      <p>Bumper work is its own category. Modern plastic bumper covers crack, scuff, and lose paint differently than metal panels. We can repair small cracks with plastic welding, repaint scuffed bumpers, or replace the whole cover if the damage is too big. We'll tell you which makes sense for the cost.</p>
+      <p>Scratch repair depends on depth. A surface scratch in the clear coat can sometimes be polished out without any paint. Deeper scratches that go through to the color coat or primer need spot-paint and blend. We test the depth before we commit to a fix path.</p>
 
-    <h3>What to expect</h3>
-    <ol style="font-size: 17px; line-height: 1.7;">
-      <li>Stop by or text photos. Most small jobs we can quote from a photo if the angle and lighting are clear.</li>
-      <li>We assess in person whether the dent can be pulled (PDR) or needs paint, and whether the bumper can be repaired or needs replacement.</li>
-      <li>Most small jobs are 2–3 business days. Larger bumper work or multi-panel scratches are 4–5 days.</li>
-      <li>Pickup. Walk-around to confirm the work. Often these jobs feel like the car wasn't damaged at all.</li>
-    </ol>
+      <h3>What to expect</h3>
+      <ol>
+        <li>Stop by or text photos. Most small jobs we can quote from a photo if the angle and lighting are clear.</li>
+        <li>We assess in person whether the dent can be pulled (PDR) or needs paint, and whether the bumper can be repaired or needs replacement.</li>
+        <li>Most small jobs are 2–3 business days. Larger bumper work or multi-panel scratches are 4–5 days.</li>
+        <li>Pickup. Walk-around to confirm the work. Often these jobs feel like the car wasn't damaged at all.</li>
+      </ol>
+    </div>
   </div>
 </section>
 
 <!-- SERVICE-SPECIFIC GALLERY -->
-<section style="background: var(--paper-soft);">
+<section class="section-alt">
   <div class="wrap">
-    <h2>Dent & Bumper Repair — recent work</h2>
+    <div class="section-head">
+      <span class="eyebrow">Recent work</span>
+      <h2>Dent & Bumper Repair jobs.</h2>
+    </div>
     <div class="gtmdot-photo-gallery">
       <figure class="gtmdot-photo-slot"
               data-slot-id="SERVICE_GALLERY_1"
@@ -157,33 +179,39 @@
 
 <!-- FAQs -->
 <section>
-  <div class="wrap" style="max-width: 840px;">
-    <h2>Frequently asked questions</h2>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">How much does dent or bumper repair cost?</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">Small paintless dent repair (PDR) is typically $100–$250 per dent depending on size. Bumper scuff repaint is $300–$600. Bumper cover replacement with paint is $700–$1,200. Quotes are free and quick — text or stop by.</p>
-    </details>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">Can you do paintless dent repair?</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">On dents that haven't broken the paint, often yes. PDR works best on shallow door dings, hail dents, and small parking-lot dings where the metal is creased but the paint is intact. We assess each dent in person before committing to PDR — if the metal is too creased or the paint has lifted, the panel will need paint.</p>
-    </details>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">Should I just do it through insurance?</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">For small jobs (under $1,000-ish), often it's not worth filing a claim. Your deductible is probably $500-$1,000, and insurance claims can affect your premium. We'll tell you honestly whether the job is in claim-worthy range or whether you're better off paying out of pocket.</p>
-    </details>
+  <div class="wrap">
+    <div class="section-head" style="text-align: center; margin-left: auto; margin-right: auto;">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions about Dent & Bumper Repair.</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>How much does dent or bumper repair cost?</summary>
+        <p>Small paintless dent repair (PDR) is typically $100–$250 per dent depending on size. Bumper scuff repaint is $300–$600. Bumper cover replacement with paint is $700–$1,200. Quotes are free and quick — text or stop by.</p>
+      </details>
+      <details>
+        <summary>Can you do paintless dent repair?</summary>
+        <p>On dents that haven't broken the paint, often yes. PDR works best on shallow door dings, hail dents, and small parking-lot dings where the metal is creased but the paint is intact. We assess each dent in person before committing to PDR — if the metal is too creased or the paint has lifted, the panel will need paint.</p>
+      </details>
+      <details>
+        <summary>Should I just do it through insurance?</summary>
+        <p>For small jobs (under $1,000-ish), often it's not worth filing a claim. Your deductible is probably $500-$1,000, and insurance claims can affect your premium. We'll tell you honestly whether the job is in claim-worthy range or whether you're better off paying out of pocket.</p>
+      </details>
+    </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section style="background: var(--accent-soft); text-align: center;">
+<section class="cta-band">
   <div class="wrap">
-    <h2>Ready for Dent & Bumper Repair in Forest Park?</h2>
-    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">Send a photo of the damage — we'll tell you if it's a 2-day job or bigger.</p>
-    <a class="cta-btn" href="/contact.html">Get an Estimate</a>
-    <p style="margin-top: 16px;">or call <a href="tel:+16786470907" style="color: var(--accent); font-weight: 600;">(678) 647-0907</a></p>
+    <span class="eyebrow">Ready when you are</span>
+    <h2>Need Dent & Bumper Repair in Forest Park?</h2>
+    <p>Send a photo of the damage — we'll tell you if it's a 2-day job or bigger.</p>
+    <a class="cta-btn" href="/contact.html">
+      <i data-lucide="message-circle"></i>
+      Get an Estimate
+    </a>
+    <p class="cta-tail">or call <a href="tel:+16786470907">(678) 647-0907</a></p>
   </div>
 </section>
 
@@ -192,7 +220,7 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Forest Park Collision</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Atlanta's family-feel body shop, built on referrals</p>
+        <p>Atlanta's family-feel body shop, built on referrals</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -210,7 +238,7 @@
         <h4>Contact</h4>
         <a href="tel:+16786470907">(678) 647-0907</a>
         <a href="mailto:service@forestparkcollision.com">service@forestparkcollision.com</a>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</p>
+        <p style="margin-top: 8px;">Serving Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -220,8 +248,15 @@
 </footer>
 
 <script>
+  if (window.lucide) window.lucide.createIcons();
   document.addEventListener('DOMContentLoaded', () => {
     if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
   });
 </script>
 

@@ -23,6 +23,8 @@
   <title>Insurance Claim Help in Forest Park, GA — Forest Park Collision</title>
   <meta name="description" content="Forest Park collision shop that handles your insurance claim end-to-end. Adjuster coordination, supplements, photos, rentals. Call Kevin: (678) 647-0907.">
   <link rel="canonical" href="https://forest-park-collision.pages.dev/insurance-claim-help-atlanta.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="_base.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 
@@ -80,8 +82,8 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap site-header-inner">
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
     <a class="site-logo" href="/">Forest Park Collision</a>
     <nav class="site-nav">
       <a href="/services.html">Services</a>
@@ -96,42 +98,62 @@
 </header>
 
 <!-- HERO (service-specific) -->
-<section class="hero">
+<section class="hero" style="min-height: 60vh;">
   <div class="wrap">
-    <p style="font-size: 14px; color: var(--ink-soft); margin: 0 0 12px;">
-      <a href="/services.html" style="color: var(--ink-soft); text-decoration: none;">Services</a> / Insurance Claim Help
-    </p>
-    <h1>Insurance claim help for collision repair in Forest Park</h1>
-    <p class="lede">Filing a claim, dealing with adjusters, getting a rental — it's a part-time job. We do all of it for you.</p>
-    <a class="cta-btn" href="/contact.html">Get an Estimate</a>
+    <div class="hero-content">
+      <div class="hero-stamps">
+        <span class="hero-kicker">Collision Repair · Forest Park</span>
+      </div>
+      <p class="prose breadcrumb" style="margin: 0 0 16px;">
+        <a href="/services.html">Services</a> / Insurance Claim Help
+      </p>
+      <h1>Insurance claim help for collision repair in Forest Park</h1>
+      <p class="lede">Filing a claim, dealing with adjusters, getting a rental — it's a part-time job. We do all of it for you.</p>
+      <div class="hero-actions">
+        <a class="cta-btn" href="/contact.html">
+          <i data-lucide="message-circle"></i>
+          Get an Estimate
+        </a>
+        <a class="btn-ghost" href="tel:+16786470907">
+          <i data-lucide="phone"></i>
+          (678) 647-0907
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- SERVICE BODY — 400-600 words of unique content -->
 <section>
-  <div class="wrap" style="max-width: 840px;">
-    <h2>What we handle on the insurance side</h2>
-    <p style="font-size: 17px; line-height: 1.65;">If you've ever filed an auto insurance claim, you know the work doesn't end when you sign the work order. Adjusters miss damage on the initial inspection. Parts cost more than the original estimate. Hidden frame issues turn up once the panel is off. Each of those becomes a 'supplement' — additional billing the shop submits to the insurance carrier mid-repair. Doing supplements right is the difference between getting paid fairly and eating the loss.</p>
-    <p style="font-size: 17px; line-height: 1.65;">We handle every major Georgia auto carrier and have direct billing relationships with most: State Farm, Allstate, Progressive, GEICO, USAA, Nationwide, Liberty Mutual, Farmers, AAA, and others. We document with photos at every stage — at intake, mid-repair, and at completion — so the adjuster has everything they need to approve supplements quickly.</p>
+  <div class="wrap">
+    <div class="prose">
+      <span class="eyebrow">About this service</span>
+      <h2>What we handle on the insurance side</h2>
+      <p>If you've ever filed an auto insurance claim, you know the work doesn't end when you sign the work order. Adjusters miss damage on the initial inspection. Parts cost more than the original estimate. Hidden frame issues turn up once the panel is off. Each of those becomes a 'supplement' — additional billing the shop submits to the insurance carrier mid-repair. Doing supplements right is the difference between getting paid fairly and eating the loss.</p>
+      <p>We handle every major Georgia auto carrier and have direct billing relationships with most: State Farm, Allstate, Progressive, GEICO, USAA, Nationwide, Liberty Mutual, Farmers, AAA, and others. We document with photos at every stage — at intake, mid-repair, and at completion — so the adjuster has everything they need to approve supplements quickly.</p>
 
-    <h3>Why supplements matter</h3>
-    <p style="font-size: 17px; line-height: 1.65;">If your policy covers a rental car during the repair, we'll coordinate with Enterprise, Hertz, or whichever provider your insurance prefers. You don't have to call the rental company; we handle the pickup window and the return.</p>
-    <p style="font-size: 17px; line-height: 1.65;">For drivers who aren't sure whether to even file a claim, we'll give you an honest read. Sometimes paying out of pocket is cheaper than the deductible plus the long-term premium hit. We don't push you toward filing if it's not in your interest.</p>
+      <h3>Why supplements matter</h3>
+      <p>If your policy covers a rental car during the repair, we'll coordinate with Enterprise, Hertz, or whichever provider your insurance prefers. You don't have to call the rental company; we handle the pickup window and the return.</p>
+      <p>For drivers who aren't sure whether to even file a claim, we'll give you an honest read. Sometimes paying out of pocket is cheaper than the deductible plus the long-term premium hit. We don't push you toward filing if it's not in your interest.</p>
 
-    <h3>What to expect</h3>
-    <ol style="font-size: 17px; line-height: 1.7;">
-      <li>Bring the car by or send photos. We'll give you a free estimate that you can use to decide whether to file a claim.</li>
-      <li>If you're filing, give us your insurance info. We contact your carrier, get the claim number, and coordinate with the adjuster. You don't have to be the go-between.</li>
-      <li>We document with photos at intake, before each repair stage, and at completion. Submitted to the insurer for approval and payment.</li>
-      <li>Final inspection with you. Direct billing to your insurer settles the rest. You pay your deductible and that's it.</li>
-    </ol>
+      <h3>What to expect</h3>
+      <ol>
+        <li>Bring the car by or send photos. We'll give you a free estimate that you can use to decide whether to file a claim.</li>
+        <li>If you're filing, give us your insurance info. We contact your carrier, get the claim number, and coordinate with the adjuster. You don't have to be the go-between.</li>
+        <li>We document with photos at intake, before each repair stage, and at completion. Submitted to the insurer for approval and payment.</li>
+        <li>Final inspection with you. Direct billing to your insurer settles the rest. You pay your deductible and that's it.</li>
+      </ol>
+    </div>
   </div>
 </section>
 
 <!-- SERVICE-SPECIFIC GALLERY -->
-<section style="background: var(--paper-soft);">
+<section class="section-alt">
   <div class="wrap">
-    <h2>Insurance Claim Help — recent work</h2>
+    <div class="section-head">
+      <span class="eyebrow">Recent work</span>
+      <h2>Insurance Claim Help jobs.</h2>
+    </div>
     <div class="gtmdot-photo-gallery">
       <figure class="gtmdot-photo-slot"
               data-slot-id="SERVICE_GALLERY_1"
@@ -157,33 +179,39 @@
 
 <!-- FAQs -->
 <section>
-  <div class="wrap" style="max-width: 840px;">
-    <h2>Frequently asked questions</h2>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">Do I have to use my insurance company's preferred shop?</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">No. In Georgia (and every U.S. state), you have the legal right to choose any licensed body shop for your collision repair. Insurance companies sometimes suggest 'preferred' shops because they have direct billing arrangements, but you're not obligated. We work with every major carrier and can direct-bill almost all of them.</p>
-    </details>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">What if the adjuster's first estimate is too low?</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">Common — initial inspections often miss damage that's only visible once a panel is off. We file what's called a 'supplement' to add the missed work. Insurance companies are accustomed to this; supplements are part of standard process. We do the documentation so the supplement gets approved quickly.</p>
-    </details>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">Will my insurance cover a rental while the car is being repaired?</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">Depends on your policy. Most full-coverage policies include rental reimbursement, typically $30–$50/day for up to 30 days. Liability-only policies usually don't. Check your declarations page or call your agent. If you have rental coverage, we'll coordinate it for you.</p>
-    </details>
+  <div class="wrap">
+    <div class="section-head" style="text-align: center; margin-left: auto; margin-right: auto;">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions about Insurance Claim Help.</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>Do I have to use my insurance company's preferred shop?</summary>
+        <p>No. In Georgia (and every U.S. state), you have the legal right to choose any licensed body shop for your collision repair. Insurance companies sometimes suggest 'preferred' shops because they have direct billing arrangements, but you're not obligated. We work with every major carrier and can direct-bill almost all of them.</p>
+      </details>
+      <details>
+        <summary>What if the adjuster's first estimate is too low?</summary>
+        <p>Common — initial inspections often miss damage that's only visible once a panel is off. We file what's called a 'supplement' to add the missed work. Insurance companies are accustomed to this; supplements are part of standard process. We do the documentation so the supplement gets approved quickly.</p>
+      </details>
+      <details>
+        <summary>Will my insurance cover a rental while the car is being repaired?</summary>
+        <p>Depends on your policy. Most full-coverage policies include rental reimbursement, typically $30–$50/day for up to 30 days. Liability-only policies usually don't. Check your declarations page or call your agent. If you have rental coverage, we'll coordinate it for you.</p>
+      </details>
+    </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section style="background: var(--accent-soft); text-align: center;">
+<section class="cta-band">
   <div class="wrap">
-    <h2>Ready for Insurance Claim Help in Forest Park?</h2>
-    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">We do the paperwork. You drive away in a fixed car.</p>
-    <a class="cta-btn" href="/contact.html">Get an Estimate</a>
-    <p style="margin-top: 16px;">or call <a href="tel:+16786470907" style="color: var(--accent); font-weight: 600;">(678) 647-0907</a></p>
+    <span class="eyebrow">Ready when you are</span>
+    <h2>Need Insurance Claim Help in Forest Park?</h2>
+    <p>We do the paperwork. You drive away in a fixed car.</p>
+    <a class="cta-btn" href="/contact.html">
+      <i data-lucide="message-circle"></i>
+      Get an Estimate
+    </a>
+    <p class="cta-tail">or call <a href="tel:+16786470907">(678) 647-0907</a></p>
   </div>
 </section>
 
@@ -192,7 +220,7 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Forest Park Collision</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Atlanta's family-feel body shop, built on referrals</p>
+        <p>Atlanta's family-feel body shop, built on referrals</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -210,7 +238,7 @@
         <h4>Contact</h4>
         <a href="tel:+16786470907">(678) 647-0907</a>
         <a href="mailto:service@forestparkcollision.com">service@forestparkcollision.com</a>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</p>
+        <p style="margin-top: 8px;">Serving Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -220,8 +248,15 @@
 </footer>
 
 <script>
+  if (window.lucide) window.lucide.createIcons();
   document.addEventListener('DOMContentLoaded', () => {
     if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
   });
 </script>
 

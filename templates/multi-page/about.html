@@ -6,13 +6,15 @@
   <title>About {{BUSINESS_NAME}} — {{CITY}}, GA</title>
   <meta name="description" content="{{BUSINESS_NAME}} has served {{CITY}} since {{YEAR_FOUNDED}}. Meet {{OWNER_NAME}} and learn what makes our {{PRIMARY_SERVICE_CATEGORY}} work different.">
   <link rel="canonical" href="https://{{DOMAIN}}/about.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="_base.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap site-header-inner">
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
     <a class="site-logo" href="/">{{BUSINESS_NAME_SHORT}}</a>
     <nav class="site-nav">
       <a href="/services.html">Services</a>
@@ -26,49 +28,67 @@
   </div>
 </header>
 
-<section>
+<section style="padding-top: 88px;">
   <div class="wrap">
-    <h1 style="font-size: clamp(32px, 5vw, 48px); margin: 48px 0 24px;">About {{BUSINESS_NAME_SHORT}}</h1>
+    <div class="section-head">
+      <span class="eyebrow">About us</span>
+      <h1>The team behind {{BUSINESS_NAME_SHORT}}.</h1>
+    </div>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;">
+    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: start;">
       <div>
-        <p style="font-size: 18px; line-height: 1.65;">{{ABOUT_INTRO}}</p>
-        <p style="font-size: 16px; line-height: 1.65; color: var(--ink-soft);">{{ABOUT_DETAIL_1}}</p>
-        <p style="font-size: 16px; line-height: 1.65; color: var(--ink-soft);">{{ABOUT_DETAIL_2}}</p>
+        <p style="font-family: var(--font-serif); font-size: 22px; font-style: italic; line-height: 1.55; color: var(--text); margin: 0 0 24px;">{{ABOUT_INTRO}}</p>
+        <p style="font-size: 17px; line-height: 1.75; color: var(--text-soft); margin: 0 0 20px;">{{ABOUT_DETAIL_1}}</p>
+        <p style="font-size: 17px; line-height: 1.75; color: var(--text-soft); margin: 0 0 24px;">{{ABOUT_DETAIL_2}}</p>
       </div>
       <figure class="gtmdot-photo-slot"
               data-slot-id="ABOUT_PHOTO"
-              data-context="owner-portrait-OK|team-OK|storefront-OK"
-              data-resolved="false">
+              data-context="{{ABOUT_PHOTO_CONTEXT}}"
+              data-resolved="false"
+              style="aspect-ratio: 3/4;">
         <img src="photos/gbp-1.jpg" alt="">
       </figure>
     </div>
   </div>
 </section>
 
-<section style="background: var(--paper-soft);">
+<section class="section-alt">
   <div class="wrap">
-    <h2>Service area</h2>
-    <p style="max-width: 720px; margin: 0 0 24px; font-size: 17px;">
-      We serve {{SERVICE_AREAS}}. If you're within {{RADIUS}} of {{CITY}},
-      we can typically be on-site same week.
-    </p>
+    <div class="section-head">
+      <span class="eyebrow">Service area</span>
+      <h2>Where we work.</h2>
+      <p class="lede">We serve {{SERVICE_AREAS}}. If you're within {{RADIUS}}, we can typically be on-site same week.</p>
+    </div>
+    <div class="area-pills">
+      <span class="area-pill">{{CITY}}</span>
+      <span class="area-pill">Atlanta metro</span>
+      <span class="area-pill">{{RADIUS}}</span>
+    </div>
   </div>
 </section>
 
 <section>
-  <div class="wrap" style="max-width: 720px;">
-    <h2>Meet {{OWNER_NAME}}</h2>
-    <p style="font-size: 17px; line-height: 1.65;">{{OWNER_BIO}}</p>
+  <div class="wrap" style="max-width: var(--max-prose);">
+    <div class="section-head" style="margin-bottom: 36px;">
+      <span class="eyebrow">Meet the team</span>
+      <h2>{{OWNER_NAME}}</h2>
+    </div>
+    <p style="font-size: 17.5px; line-height: 1.75; color: var(--text-soft); margin: 0 0 32px;">{{OWNER_BIO}}</p>
+    <div class="story-callout">
+      <em>"{{BUSINESS_TAGLINE}}"</em>
+    </div>
   </div>
 </section>
 
-<section style="background: var(--accent-soft); text-align: center;">
+<section class="cta-band">
   <div class="wrap">
-    <h2>Ready to work with us?</h2>
-    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">{{CTA_SUBHEAD}}</p>
-    <a class="cta-btn" href="/contact.html">{{PRIMARY_CTA}}</a>
-    <p style="margin-top: 16px;">or call <a href="tel:{{PHONE_TEL}}" style="color: var(--accent); font-weight: 600;">{{PHONE}}</a></p>
+    <span class="eyebrow">Let's talk</span>
+    <h2>{{CTA_SUBHEAD}}</h2>
+    <a class="cta-btn" href="/contact.html">
+      <i data-lucide="message-circle"></i>
+      {{PRIMARY_CTA}}
+    </a>
+    <p class="cta-tail">or call <a href="tel:{{PHONE_TEL}}">{{PHONE}}</a></p>
   </div>
 </section>
 
@@ -77,7 +97,7 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>{{BUSINESS_NAME_SHORT}}</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">{{BUSINESS_TAGLINE}}</p>
+        <p>{{BUSINESS_TAGLINE}}</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -95,7 +115,7 @@
         <h4>Contact</h4>
         <a href="tel:{{PHONE_TEL}}">{{PHONE}}</a>
         <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving {{SERVICE_AREAS}}</p>
+        <p style="margin-top: 8px;">Serving {{SERVICE_AREAS}}</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -105,8 +125,15 @@
 </footer>
 
 <script>
+  if (window.lucide) window.lucide.createIcons();
   document.addEventListener('DOMContentLoaded', () => {
     if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
   });
 </script>
 

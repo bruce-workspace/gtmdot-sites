@@ -6,13 +6,15 @@
   <title>About Forest Park Collision — Forest Park, GA</title>
   <meta name="description" content="Forest Park Collision has served Forest Park since 2008. Meet Kevin and the Forest Park Collision team and learn what makes our Collision Repair work different.">
   <link rel="canonical" href="https://forest-park-collision.pages.dev/about.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="_base.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap site-header-inner">
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
     <a class="site-logo" href="/">Forest Park Collision</a>
     <nav class="site-nav">
       <a href="/services.html">Services</a>
@@ -26,49 +28,67 @@
   </div>
 </header>
 
-<section>
+<section style="padding-top: 88px;">
   <div class="wrap">
-    <h1 style="font-size: clamp(32px, 5vw, 48px); margin: 48px 0 24px;">About Forest Park Collision</h1>
+    <div class="section-head">
+      <span class="eyebrow">About us</span>
+      <h1>The team behind Forest Park Collision.</h1>
+    </div>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;">
+    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: start;">
       <div>
-        <p style="font-size: 18px; line-height: 1.65;">Forest Park Collision has been quietly fixing Atlanta cars on Central Avenue for years, building a 70+ five-star reputation almost entirely on word-of-mouth.</p>
-        <p style="font-size: 16px; line-height: 1.65; color: var(--ink-soft);">Kevin and his team handle the full range of collision and body work — fender benders, sideswipes, full-quarter-panel rebuilds, paint matching, dent removal, and insurance-claim work. They don't subcontract paint or body work; everything happens in-house, which is why customers consistently say the cars come back looking 'brand new.'</p>
-        <p style="font-size: 16px; line-height: 1.65; color: var(--ink-soft);">If you've never been through an accident before, the process can feel intimidating. Kevin walks you through it — what your insurance covers, what a fair estimate looks like, what the timeline actually is. No surprises, no upsells, no pressure.</p>
+        <p style="font-family: var(--font-serif); font-size: 22px; font-style: italic; line-height: 1.55; color: var(--text); margin: 0 0 24px;">Forest Park Collision has been quietly fixing Atlanta cars on Central Avenue for years, building a 70+ five-star reputation almost entirely on word-of-mouth.</p>
+        <p style="font-size: 17px; line-height: 1.75; color: var(--text-soft); margin: 0 0 20px;">Kevin and his team handle the full range of collision and body work — fender benders, sideswipes, full-quarter-panel rebuilds, paint matching, dent removal, and insurance-claim work. They don't subcontract paint or body work; everything happens in-house, which is why customers consistently say the cars come back looking 'brand new.'</p>
+        <p style="font-size: 17px; line-height: 1.75; color: var(--text-soft); margin: 0 0 24px;">If you've never been through an accident before, the process can feel intimidating. Kevin walks you through it — what your insurance covers, what a fair estimate looks like, what the timeline actually is. No surprises, no upsells, no pressure.</p>
       </div>
       <figure class="gtmdot-photo-slot"
               data-slot-id="ABOUT_PHOTO"
               data-context="owner-portrait-OK|team-OK|storefront-OK"
-              data-resolved="false">
+              data-resolved="false"
+              style="aspect-ratio: 3/4;">
         <img src="photos/gbp-1.jpg" alt="">
       </figure>
     </div>
   </div>
 </section>
 
-<section style="background: var(--paper-soft);">
+<section class="section-alt">
   <div class="wrap">
-    <h2>Service area</h2>
-    <p style="max-width: 720px; margin: 0 0 24px; font-size: 17px;">
-      We serve Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro. If you're within 20 miles south of downtown Atlanta of Forest Park,
-      we can typically be on-site same week.
-    </p>
+    <div class="section-head">
+      <span class="eyebrow">Service area</span>
+      <h2>Where we work.</h2>
+      <p class="lede">We serve Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro. If you're within 20 miles south of downtown Atlanta, we can typically be on-site same week.</p>
+    </div>
+    <div class="area-pills">
+      <span class="area-pill">Forest Park</span>
+      <span class="area-pill">Atlanta metro</span>
+      <span class="area-pill">20 miles south of downtown Atlanta</span>
+    </div>
   </div>
 </section>
 
 <section>
-  <div class="wrap" style="max-width: 720px;">
-    <h2>Meet Kevin and the Forest Park Collision team</h2>
-    <p style="font-size: 17px; line-height: 1.65;">Kevin runs Forest Park Collision the way his customers tell him they wish every body shop ran: clear estimates, honest timelines, and cars that come back looking better than the day before the accident. Dozens of Google reviews call him out by name — not because he asks for it, but because customers remember the way he treated them.</p>
+  <div class="wrap" style="max-width: var(--max-prose);">
+    <div class="section-head" style="margin-bottom: 36px;">
+      <span class="eyebrow">Meet the team</span>
+      <h2>Kevin and the Forest Park Collision team</h2>
+    </div>
+    <p style="font-size: 17.5px; line-height: 1.75; color: var(--text-soft); margin: 0 0 32px;">Kevin runs Forest Park Collision the way his customers tell him they wish every body shop ran: clear estimates, honest timelines, and cars that come back looking better than the day before the accident. Dozens of Google reviews call him out by name — not because he asks for it, but because customers remember the way he treated them.</p>
+    <div class="story-callout">
+      <em>"Atlanta's family-feel body shop, built on referrals"</em>
+    </div>
   </div>
 </section>
 
-<section style="background: var(--accent-soft); text-align: center;">
+<section class="cta-band">
   <div class="wrap">
-    <h2>Ready to work with us?</h2>
-    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">Free estimates, no pressure. Drop by during business hours or send us photos to start.</p>
-    <a class="cta-btn" href="/contact.html">Get an Estimate</a>
-    <p style="margin-top: 16px;">or call <a href="tel:+16786470907" style="color: var(--accent); font-weight: 600;">(678) 647-0907</a></p>
+    <span class="eyebrow">Let's talk</span>
+    <h2>Free estimates, no pressure. Drop by during business hours or send us photos to start.</h2>
+    <a class="cta-btn" href="/contact.html">
+      <i data-lucide="message-circle"></i>
+      Get an Estimate
+    </a>
+    <p class="cta-tail">or call <a href="tel:+16786470907">(678) 647-0907</a></p>
   </div>
 </section>
 
@@ -77,7 +97,7 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Forest Park Collision</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Atlanta's family-feel body shop, built on referrals</p>
+        <p>Atlanta's family-feel body shop, built on referrals</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -95,7 +115,7 @@
         <h4>Contact</h4>
         <a href="tel:+16786470907">(678) 647-0907</a>
         <a href="mailto:service@forestparkcollision.com">service@forestparkcollision.com</a>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</p>
+        <p style="margin-top: 8px;">Serving Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -105,8 +125,15 @@
 </footer>
 
 <script>
+  if (window.lucide) window.lucide.createIcons();
   document.addEventListener('DOMContentLoaded', () => {
     if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
   });
 </script>
 

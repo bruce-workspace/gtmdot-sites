@@ -6,13 +6,15 @@
   <title>Contact {{BUSINESS_NAME}} — {{PRIMARY_CTA}} in {{CITY}}, GA</title>
   <meta name="description" content="Contact {{BUSINESS_NAME}} to {{CTA_VERB_LOWER}}. Serving {{CITY}} and surrounding areas. Call {{PHONE}} or use the form — we usually respond same day.">
   <link rel="canonical" href="https://{{DOMAIN}}/contact.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="_base.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap site-header-inner">
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
     <a class="site-logo" href="/">{{BUSINESS_NAME_SHORT}}</a>
     <nav class="site-nav">
       <a href="/services.html">Services</a>
@@ -26,19 +28,20 @@
   </div>
 </header>
 
-<section>
+<section style="padding-top: 88px;">
   <div class="wrap">
-    <h1 style="font-size: clamp(32px, 5vw, 48px); margin: 48px 0 16px;">{{CONTACT_HEADLINE}}</h1>
-    <p style="font-size: 18px; color: var(--ink-soft); margin: 0 0 40px; max-width: 640px;">
-      {{CONTACT_SUBHEAD}}
-    </p>
+    <div class="section-head">
+      <span class="eyebrow">Contact</span>
+      <h1>{{CONTACT_HEADLINE}}</h1>
+      <p class="lede">{{CONTACT_SUBHEAD}}</p>
+    </div>
 
-    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: start;">
+    <div style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 56px; align-items: start;">
 
       <!-- ESTIMATE FORM -->
       <form class="contact-form" method="post" action="{{FORM_ACTION}}" enctype="multipart/form-data">
-        <h2 style="margin: 0 0 8px;">{{FORM_HEADING}}</h2>
-        <p style="margin: 0 0 24px; color: var(--ink-soft);">{{FORM_SUBHEAD}}</p>
+        <h2>{{FORM_HEADING}}</h2>
+        <p>{{FORM_SUBHEAD}}</p>
 
         <div>
           <label for="name">Name</label>
@@ -58,7 +61,7 @@
         <div>
           <label for="service">Service needed</label>
           <select id="service" name="service" required>
-            <option value="">Select a service...</option>
+            <option value="">Select a service…</option>
             <option value="{{SERVICE_1_SLUG}}">{{SERVICE_1_NAME}}</option>
             <option value="{{SERVICE_2_SLUG}}">{{SERVICE_2_NAME}}</option>
             <option value="{{SERVICE_3_SLUG}}">{{SERVICE_3_NAME}}</option>
@@ -76,39 +79,40 @@
         <div>
           <label for="uploads">Photos or video of the job (optional but helpful)</label>
           <div class="upload-area" id="uploadArea">
-            <i data-lucide="upload-cloud" style="display: block; margin: 0 auto 8px;"></i>
-            <p style="margin: 0; font-size: 14px; color: var(--ink-soft);">
-              Drop photos or video here, or click to choose files
-            </p>
+            <i data-lucide="upload-cloud"></i>
+            <p>Drop photos or video here, or click to choose files</p>
             <input type="file" id="uploads" name="uploads[]" accept="image/*,video/*" multiple style="display: none;">
           </div>
         </div>
 
-        <button type="submit" class="cta-btn" style="justify-self: start;">{{PRIMARY_CTA}}</button>
+        <button type="submit" class="cta-btn">
+          <i data-lucide="send"></i>
+          {{PRIMARY_CTA}}
+        </button>
       </form>
 
       <!-- CONTACT DETAILS -->
-      <aside>
-        <h2 style="margin: 0 0 24px;">Other ways to reach us</h2>
+      <aside class="contact-aside">
+        <h2>Other ways to reach us</h2>
 
-        <div style="margin-bottom: 24px;">
-          <h4 style="margin: 0 0 4px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft);">Phone</h4>
-          <p style="margin: 0;"><a href="tel:{{PHONE_TEL}}" style="color: var(--accent); font-size: 20px; font-weight: 600;">{{PHONE}}</a></p>
+        <div class="row">
+          <h4>Phone</h4>
+          <a class="phone-strong" href="tel:{{PHONE_TEL}}">{{PHONE}}</a>
         </div>
 
-        <div style="margin-bottom: 24px;">
-          <h4 style="margin: 0 0 4px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft);">Email</h4>
-          <p style="margin: 0;"><a href="mailto:{{EMAIL}}" style="color: var(--accent); font-weight: 500;">{{EMAIL}}</a></p>
+        <div class="row">
+          <h4>Email</h4>
+          <a class="email-strong" href="mailto:{{EMAIL}}">{{EMAIL}}</a>
         </div>
 
-        <div style="margin-bottom: 24px;">
-          <h4 style="margin: 0 0 4px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft);">Hours</h4>
-          <p style="margin: 0; line-height: 1.6;">{{BUSINESS_HOURS}}</p>
+        <div class="row">
+          <h4>Hours</h4>
+          <p>{{BUSINESS_HOURS}}</p>
         </div>
 
-        <div>
-          <h4 style="margin: 0 0 4px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft);">Service area</h4>
-          <p style="margin: 0; line-height: 1.6;">{{SERVICE_AREAS}}</p>
+        <div class="row">
+          <h4>Service area</h4>
+          <p>{{SERVICE_AREAS}}</p>
         </div>
       </aside>
     </div>
@@ -120,7 +124,7 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>{{BUSINESS_NAME_SHORT}}</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">{{BUSINESS_TAGLINE}}</p>
+        <p>{{BUSINESS_TAGLINE}}</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -138,7 +142,7 @@
         <h4>Contact</h4>
         <a href="tel:{{PHONE_TEL}}">{{PHONE}}</a>
         <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving {{SERVICE_AREAS}}</p>
+        <p style="margin-top: 8px;">Serving {{SERVICE_AREAS}}</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -151,21 +155,30 @@
   // Upload drag/drop behavior
   const uploadArea = document.getElementById('uploadArea');
   const fileInput = document.getElementById('uploads');
-  uploadArea.addEventListener('click', () => fileInput.click());
-  ['dragover', 'dragleave', 'drop'].forEach(evt => {
-    uploadArea.addEventListener(evt, e => { e.preventDefault(); e.stopPropagation(); });
-  });
-  uploadArea.addEventListener('dragover', () => uploadArea.classList.add('dragover'));
-  uploadArea.addEventListener('dragleave', () => uploadArea.classList.remove('dragover'));
-  uploadArea.addEventListener('drop', e => {
-    uploadArea.classList.remove('dragover');
-    fileInput.files = e.dataTransfer.files;
-    const n = fileInput.files.length;
-    uploadArea.querySelector('p').textContent = `${n} file${n === 1 ? '' : 's'} selected`;
-  });
+  if (uploadArea && fileInput) {
+    uploadArea.addEventListener('click', () => fileInput.click());
+    ['dragover', 'dragleave', 'drop'].forEach(evt => {
+      uploadArea.addEventListener(evt, e => { e.preventDefault(); e.stopPropagation(); });
+    });
+    uploadArea.addEventListener('dragover', () => uploadArea.classList.add('dragover'));
+    uploadArea.addEventListener('dragleave', () => uploadArea.classList.remove('dragover'));
+    uploadArea.addEventListener('drop', e => {
+      uploadArea.classList.remove('dragover');
+      fileInput.files = e.dataTransfer.files;
+      const n = fileInput.files.length;
+      uploadArea.querySelector('p').textContent = `${n} file${n === 1 ? '' : 's'} selected`;
+    });
+  }
 
+  if (window.lucide) window.lucide.createIcons();
   document.addEventListener('DOMContentLoaded', () => {
     if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
   });
 </script>
 

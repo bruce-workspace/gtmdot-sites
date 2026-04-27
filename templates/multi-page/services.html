@@ -6,13 +6,15 @@
   <title>Services — {{BUSINESS_NAME}} in {{CITY}}, GA</title>
   <meta name="description" content="Full list of services from {{BUSINESS_NAME}} serving {{CITY}} and surrounding areas. {{SERVICES_LIST_TEASER}}">
   <link rel="canonical" href="https://{{DOMAIN}}/services.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="_base.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap site-header-inner">
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
     <a class="site-logo" href="/">{{BUSINESS_NAME_SHORT}}</a>
     <nav class="site-nav">
       <a href="/services.html">Services</a>
@@ -26,46 +28,52 @@
   </div>
 </header>
 
-<section>
+<section style="padding-top: 88px;">
   <div class="wrap">
-    <h1 style="font-size: clamp(32px, 5vw, 48px); margin: 48px 0 16px;">Services we offer</h1>
-    <p style="color: var(--ink-soft); font-size: 18px; margin: 0 0 32px; max-width: 720px;">
-      {{SERVICES_PAGE_INTRO}}
-    </p>
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h1>What we do for {{CITY}}.</h1>
+      <p class="lede">{{SERVICES_PAGE_INTRO}}</p>
+    </div>
 
     <div class="service-grid">
-      <!-- One card per service in this vertical. Each links to its own SEO page. -->
       <a class="service-card" href="/{{SERVICE_1_SLUG}}.html">
-        <i class="icon" data-lucide="{{SERVICE_1_ICON}}"></i>
+        <span class="icon"><i data-lucide="{{SERVICE_1_ICON}}"></i></span>
         <h3>{{SERVICE_1_NAME}}</h3>
         <p>{{SERVICE_1_TEASER}}</p>
+        <span class="svc-foot">View service</span>
       </a>
       <a class="service-card" href="/{{SERVICE_2_SLUG}}.html">
-        <i class="icon" data-lucide="{{SERVICE_2_ICON}}"></i>
+        <span class="icon"><i data-lucide="{{SERVICE_2_ICON}}"></i></span>
         <h3>{{SERVICE_2_NAME}}</h3>
         <p>{{SERVICE_2_TEASER}}</p>
+        <span class="svc-foot">View service</span>
       </a>
       <a class="service-card" href="/{{SERVICE_3_SLUG}}.html">
-        <i class="icon" data-lucide="{{SERVICE_3_ICON}}"></i>
+        <span class="icon"><i data-lucide="{{SERVICE_3_ICON}}"></i></span>
         <h3>{{SERVICE_3_NAME}}</h3>
         <p>{{SERVICE_3_TEASER}}</p>
+        <span class="svc-foot">View service</span>
       </a>
       <a class="service-card" href="/{{SERVICE_4_SLUG}}.html">
-        <i class="icon" data-lucide="{{SERVICE_4_ICON}}"></i>
+        <span class="icon"><i data-lucide="{{SERVICE_4_ICON}}"></i></span>
         <h3>{{SERVICE_4_NAME}}</h3>
         <p>{{SERVICE_4_TEASER}}</p>
+        <span class="svc-foot">View service</span>
       </a>
-      <!-- Add more as needed; minimum 4 service cards to justify multi-page -->
     </div>
   </div>
 </section>
 
-<section style="background: var(--accent-soft); text-align: center;">
+<section class="cta-band">
   <div class="wrap">
-    <h2>Not sure which service you need?</h2>
-    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">We'll help you figure it out.</p>
-    <a class="cta-btn" href="/contact.html">{{PRIMARY_CTA}}</a>
-    <p style="margin-top: 16px;">or call <a href="tel:{{PHONE_TEL}}" style="color: var(--accent); font-weight: 600;">{{PHONE}}</a></p>
+    <span class="eyebrow">Not sure which one?</span>
+    <h2>Tell us about the job. We'll point you to the right service.</h2>
+    <a class="cta-btn" href="/contact.html">
+      <i data-lucide="message-circle"></i>
+      {{PRIMARY_CTA}}
+    </a>
+    <p class="cta-tail">or call <a href="tel:{{PHONE_TEL}}">{{PHONE}}</a></p>
   </div>
 </section>
 
@@ -74,7 +82,7 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>{{BUSINESS_NAME_SHORT}}</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">{{BUSINESS_TAGLINE}}</p>
+        <p>{{BUSINESS_TAGLINE}}</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -92,7 +100,7 @@
         <h4>Contact</h4>
         <a href="tel:{{PHONE_TEL}}">{{PHONE}}</a>
         <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving {{SERVICE_AREAS}}</p>
+        <p style="margin-top: 8px;">Serving {{SERVICE_AREAS}}</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -102,8 +110,15 @@
 </footer>
 
 <script>
+  if (window.lucide) window.lucide.createIcons();
   document.addEventListener('DOMContentLoaded', () => {
     if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
   });
 </script>
 

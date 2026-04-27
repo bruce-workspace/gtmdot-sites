@@ -6,13 +6,15 @@
   <title>Services — Forest Park Collision in Forest Park, GA</title>
   <meta name="description" content="Full list of services from Forest Park Collision serving Forest Park and surrounding areas. Collision repair, auto body painting, dent and bumper work, and insurance claim support — all in-house.">
   <link rel="canonical" href="https://forest-park-collision.pages.dev/services.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="_base.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap site-header-inner">
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
     <a class="site-logo" href="/">Forest Park Collision</a>
     <nav class="site-nav">
       <a href="/services.html">Services</a>
@@ -26,46 +28,52 @@
   </div>
 </header>
 
-<section>
+<section style="padding-top: 88px;">
   <div class="wrap">
-    <h1 style="font-size: clamp(32px, 5vw, 48px); margin: 48px 0 16px;">Services we offer</h1>
-    <p style="color: var(--ink-soft); font-size: 18px; margin: 0 0 32px; max-width: 720px;">
-      Forest Park Collision handles every step of body and collision work in-house — no subcontracting paint or panel work to outside shops. Free estimates, fair pricing, and insurance work welcome.
-    </p>
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h1>What we do for Forest Park.</h1>
+      <p class="lede">Forest Park Collision handles every step of body and collision work in-house — no subcontracting paint or panel work to outside shops. Free estimates, fair pricing, and insurance work welcome.</p>
+    </div>
 
     <div class="service-grid">
-      <!-- One card per service in this vertical. Each links to its own SEO page. -->
       <a class="service-card" href="/collision-repair-atlanta.html">
-        <i class="icon" data-lucide="car"></i>
+        <span class="icon"><i data-lucide="car"></i></span>
         <h3>Collision Repair</h3>
         <p>Fender benders to full-panel rebuilds. We handle insurance claims, order the parts, and deliver a car you can't tell was wrecked.</p>
+        <span class="svc-foot">View service</span>
       </a>
       <a class="service-card" href="/auto-body-paint-atlanta.html">
-        <i class="icon" data-lucide="paintbrush"></i>
+        <span class="icon"><i data-lucide="paintbrush"></i></span>
         <h3>Auto Body Paint</h3>
         <p>Color matching that disappears into the rest of the car. Full repaints, panel blends, fresh clear coats. Done in our own paint booth.</p>
+        <span class="svc-foot">View service</span>
       </a>
       <a class="service-card" href="/dent-bumper-repair-atlanta.html">
-        <i class="icon" data-lucide="shield"></i>
+        <span class="icon"><i data-lucide="shield"></i></span>
         <h3>Dent & Bumper Repair</h3>
         <p>Door dings, parking-lot dents, scuffed bumpers, cracked covers. Quick turnaround on small jobs, often same-week.</p>
+        <span class="svc-foot">View service</span>
       </a>
       <a class="service-card" href="/insurance-claim-help-atlanta.html">
-        <i class="icon" data-lucide="file-text"></i>
+        <span class="icon"><i data-lucide="file-text"></i></span>
         <h3>Insurance Claim Help</h3>
         <p>We handle the adjuster, the supplements, the photos, the rental coordination. You sign the work order — we deal with the paperwork.</p>
+        <span class="svc-foot">View service</span>
       </a>
-      <!-- Add more as needed; minimum 4 service cards to justify multi-page -->
     </div>
   </div>
 </section>
 
-<section style="background: var(--accent-soft); text-align: center;">
+<section class="cta-band">
   <div class="wrap">
-    <h2>Not sure which service you need?</h2>
-    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">We'll help you figure it out.</p>
-    <a class="cta-btn" href="/contact.html">Get an Estimate</a>
-    <p style="margin-top: 16px;">or call <a href="tel:+16786470907" style="color: var(--accent); font-weight: 600;">(678) 647-0907</a></p>
+    <span class="eyebrow">Not sure which one?</span>
+    <h2>Tell us about the job. We'll point you to the right service.</h2>
+    <a class="cta-btn" href="/contact.html">
+      <i data-lucide="message-circle"></i>
+      Get an Estimate
+    </a>
+    <p class="cta-tail">or call <a href="tel:+16786470907">(678) 647-0907</a></p>
   </div>
 </section>
 
@@ -74,7 +82,7 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Forest Park Collision</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Atlanta's family-feel body shop, built on referrals</p>
+        <p>Atlanta's family-feel body shop, built on referrals</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -92,7 +100,7 @@
         <h4>Contact</h4>
         <a href="tel:+16786470907">(678) 647-0907</a>
         <a href="mailto:service@forestparkcollision.com">service@forestparkcollision.com</a>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</p>
+        <p style="margin-top: 8px;">Serving Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -102,8 +110,15 @@
 </footer>
 
 <script>
+  if (window.lucide) window.lucide.createIcons();
   document.addEventListener('DOMContentLoaded', () => {
     if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
   });
 </script>
 

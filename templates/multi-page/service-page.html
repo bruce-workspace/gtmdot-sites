@@ -23,6 +23,8 @@
   <title>{{SERVICE_NAME}} in {{CITY}}, GA — {{BUSINESS_NAME_SHORT}}</title>
   <meta name="description" content="{{SERVICE_META_DESCRIPTION}}">
   <link rel="canonical" href="https://{{DOMAIN}}/{{SERVICE_SLUG}}.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="_base.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 
@@ -80,8 +82,8 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap site-header-inner">
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
     <a class="site-logo" href="/">{{BUSINESS_NAME_SHORT}}</a>
     <nav class="site-nav">
       <a href="/services.html">Services</a>
@@ -96,42 +98,62 @@
 </header>
 
 <!-- HERO (service-specific) -->
-<section class="hero">
+<section class="hero" style="min-height: 60vh;">
   <div class="wrap">
-    <p style="font-size: 14px; color: var(--ink-soft); margin: 0 0 12px;">
-      <a href="/services.html" style="color: var(--ink-soft); text-decoration: none;">Services</a> / {{SERVICE_NAME}}
-    </p>
-    <h1>{{SERVICE_H1}}</h1>
-    <p class="lede">{{SERVICE_HERO_SUBHEAD}}</p>
-    <a class="cta-btn" href="/contact.html">{{PRIMARY_CTA}}</a>
+    <div class="hero-content">
+      <div class="hero-stamps">
+        <span class="hero-kicker">{{PRIMARY_SERVICE_CATEGORY}} · {{CITY}}</span>
+      </div>
+      <p class="prose breadcrumb" style="margin: 0 0 16px;">
+        <a href="/services.html">Services</a> / {{SERVICE_NAME}}
+      </p>
+      <h1>{{SERVICE_H1}}</h1>
+      <p class="lede">{{SERVICE_HERO_SUBHEAD}}</p>
+      <div class="hero-actions">
+        <a class="cta-btn" href="/contact.html">
+          <i data-lucide="message-circle"></i>
+          {{PRIMARY_CTA}}
+        </a>
+        <a class="btn-ghost" href="tel:{{PHONE_TEL}}">
+          <i data-lucide="phone"></i>
+          {{PHONE}}
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- SERVICE BODY — 400-600 words of unique content -->
 <section>
-  <div class="wrap" style="max-width: 840px;">
-    <h2>{{SERVICE_BODY_H2}}</h2>
-    <p style="font-size: 17px; line-height: 1.65;">{{SERVICE_BODY_PARAGRAPH_1}}</p>
-    <p style="font-size: 17px; line-height: 1.65;">{{SERVICE_BODY_PARAGRAPH_2}}</p>
+  <div class="wrap">
+    <div class="prose">
+      <span class="eyebrow">About this service</span>
+      <h2>{{SERVICE_BODY_H2}}</h2>
+      <p>{{SERVICE_BODY_PARAGRAPH_1}}</p>
+      <p>{{SERVICE_BODY_PARAGRAPH_2}}</p>
 
-    <h3>{{SERVICE_SUBSECTION_H3}}</h3>
-    <p style="font-size: 17px; line-height: 1.65;">{{SERVICE_BODY_PARAGRAPH_3}}</p>
-    <p style="font-size: 17px; line-height: 1.65;">{{SERVICE_BODY_PARAGRAPH_4}}</p>
+      <h3>{{SERVICE_SUBSECTION_H3}}</h3>
+      <p>{{SERVICE_BODY_PARAGRAPH_3}}</p>
+      <p>{{SERVICE_BODY_PARAGRAPH_4}}</p>
 
-    <h3>What to expect</h3>
-    <ol style="font-size: 17px; line-height: 1.7;">
-      <li>{{SERVICE_STEP_1}}</li>
-      <li>{{SERVICE_STEP_2}}</li>
-      <li>{{SERVICE_STEP_3}}</li>
-      <li>{{SERVICE_STEP_4}}</li>
-    </ol>
+      <h3>What to expect</h3>
+      <ol>
+        <li>{{SERVICE_STEP_1}}</li>
+        <li>{{SERVICE_STEP_2}}</li>
+        <li>{{SERVICE_STEP_3}}</li>
+        <li>{{SERVICE_STEP_4}}</li>
+      </ol>
+    </div>
   </div>
 </section>
 
 <!-- SERVICE-SPECIFIC GALLERY -->
-<section style="background: var(--paper-soft);">
+<section class="section-alt">
   <div class="wrap">
-    <h2>{{SERVICE_NAME}} — recent work</h2>
+    <div class="section-head">
+      <span class="eyebrow">Recent work</span>
+      <h2>{{SERVICE_NAME}} jobs.</h2>
+    </div>
     <div class="gtmdot-photo-gallery">
       <figure class="gtmdot-photo-slot"
               data-slot-id="SERVICE_GALLERY_1"
@@ -157,33 +179,39 @@
 
 <!-- FAQs -->
 <section>
-  <div class="wrap" style="max-width: 840px;">
-    <h2>Frequently asked questions</h2>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">{{FAQ_1_QUESTION}}</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">{{FAQ_1_ANSWER}}</p>
-    </details>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">{{FAQ_2_QUESTION}}</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">{{FAQ_2_ANSWER}}</p>
-    </details>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">{{FAQ_3_QUESTION}}</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">{{FAQ_3_ANSWER}}</p>
-    </details>
+  <div class="wrap">
+    <div class="section-head" style="text-align: center; margin-left: auto; margin-right: auto;">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions about {{SERVICE_NAME}}.</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>{{FAQ_1_QUESTION}}</summary>
+        <p>{{FAQ_1_ANSWER}}</p>
+      </details>
+      <details>
+        <summary>{{FAQ_2_QUESTION}}</summary>
+        <p>{{FAQ_2_ANSWER}}</p>
+      </details>
+      <details>
+        <summary>{{FAQ_3_QUESTION}}</summary>
+        <p>{{FAQ_3_ANSWER}}</p>
+      </details>
+    </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section style="background: var(--accent-soft); text-align: center;">
+<section class="cta-band">
   <div class="wrap">
-    <h2>Ready for {{SERVICE_NAME}} in {{CITY}}?</h2>
-    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">{{SERVICE_CTA_SUBHEAD}}</p>
-    <a class="cta-btn" href="/contact.html">{{PRIMARY_CTA}}</a>
-    <p style="margin-top: 16px;">or call <a href="tel:{{PHONE_TEL}}" style="color: var(--accent); font-weight: 600;">{{PHONE}}</a></p>
+    <span class="eyebrow">Ready when you are</span>
+    <h2>Need {{SERVICE_NAME}} in {{CITY}}?</h2>
+    <p>{{SERVICE_CTA_SUBHEAD}}</p>
+    <a class="cta-btn" href="/contact.html">
+      <i data-lucide="message-circle"></i>
+      {{PRIMARY_CTA}}
+    </a>
+    <p class="cta-tail">or call <a href="tel:{{PHONE_TEL}}">{{PHONE}}</a></p>
   </div>
 </section>
 
@@ -192,7 +220,7 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>{{BUSINESS_NAME_SHORT}}</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">{{BUSINESS_TAGLINE}}</p>
+        <p>{{BUSINESS_TAGLINE}}</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -210,7 +238,7 @@
         <h4>Contact</h4>
         <a href="tel:{{PHONE_TEL}}">{{PHONE}}</a>
         <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving {{SERVICE_AREAS}}</p>
+        <p style="margin-top: 8px;">Serving {{SERVICE_AREAS}}</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -220,8 +248,15 @@
 </footer>
 
 <script>
+  if (window.lucide) window.lucide.createIcons();
   document.addEventListener('DOMContentLoaded', () => {
     if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
   });
 </script>
 

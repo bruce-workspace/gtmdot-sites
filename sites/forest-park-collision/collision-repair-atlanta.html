@@ -23,6 +23,8 @@
   <title>Collision Repair in Forest Park, GA — Forest Park Collision</title>
   <meta name="description" content="Forest Park collision repair from Kevin's team. 4.8 stars across 70+ Google reviews. Insurance work welcome, free estimates. Call (678) 647-0907.">
   <link rel="canonical" href="https://forest-park-collision.pages.dev/collision-repair-atlanta.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="_base.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 
@@ -80,8 +82,8 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap site-header-inner">
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
     <a class="site-logo" href="/">Forest Park Collision</a>
     <nav class="site-nav">
       <a href="/services.html">Services</a>
@@ -96,42 +98,62 @@
 </header>
 
 <!-- HERO (service-specific) -->
-<section class="hero">
+<section class="hero" style="min-height: 60vh;">
   <div class="wrap">
-    <p style="font-size: 14px; color: var(--ink-soft); margin: 0 0 12px;">
-      <a href="/services.html" style="color: var(--ink-soft); text-decoration: none;">Services</a> / Collision Repair
-    </p>
-    <h1>Collision repair in Forest Park & South Atlanta</h1>
-    <p class="lede">From a tap in the parking lot to a major rear-end — we make the car look like it never happened.</p>
-    <a class="cta-btn" href="/contact.html">Get an Estimate</a>
+    <div class="hero-content">
+      <div class="hero-stamps">
+        <span class="hero-kicker">Collision Repair · Forest Park</span>
+      </div>
+      <p class="prose breadcrumb" style="margin: 0 0 16px;">
+        <a href="/services.html">Services</a> / Collision Repair
+      </p>
+      <h1>Collision repair in Forest Park & South Atlanta</h1>
+      <p class="lede">From a tap in the parking lot to a major rear-end — we make the car look like it never happened.</p>
+      <div class="hero-actions">
+        <a class="cta-btn" href="/contact.html">
+          <i data-lucide="message-circle"></i>
+          Get an Estimate
+        </a>
+        <a class="btn-ghost" href="tel:+16786470907">
+          <i data-lucide="phone"></i>
+          (678) 647-0907
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- SERVICE BODY — 400-600 words of unique content -->
 <section>
-  <div class="wrap" style="max-width: 840px;">
-    <h2>What collision repair actually involves</h2>
-    <p style="font-size: 17px; line-height: 1.65;">Collision repair is rarely just one thing. A side-impact accident might mean a new door, a new fender, frame realignment, paint matching across two panels, and replacing a side mirror or trim piece. Every quote we write breaks the work down item-by-item so you see what's parts, what's labor, and what's paint, instead of one mystery number.</p>
-    <p style="font-size: 17px; line-height: 1.65;">We do all of it in-house: bodywork, frame measurement, paint mixing, paint application, blending into adjacent panels. Subcontracting any part of that out is where most shops lose quality control — when the panel comes back from a paint subcontractor and doesn't match the shop's bodywork. That's not how we run this place.</p>
+  <div class="wrap">
+    <div class="prose">
+      <span class="eyebrow">About this service</span>
+      <h2>What collision repair actually involves</h2>
+      <p>Collision repair is rarely just one thing. A side-impact accident might mean a new door, a new fender, frame realignment, paint matching across two panels, and replacing a side mirror or trim piece. Every quote we write breaks the work down item-by-item so you see what's parts, what's labor, and what's paint, instead of one mystery number.</p>
+      <p>We do all of it in-house: bodywork, frame measurement, paint mixing, paint application, blending into adjacent panels. Subcontracting any part of that out is where most shops lose quality control — when the panel comes back from a paint subcontractor and doesn't match the shop's bodywork. That's not how we run this place.</p>
 
-    <h3>How insurance work flows here</h3>
-    <p style="font-size: 17px; line-height: 1.65;">Most collision repairs are 5–10 business days, but the timeline depends on parts. If your car needs a specific OEM panel from a regional warehouse, we'll tell you up front whether that's a 2-day part or a 2-week part. We don't pad timelines to cover ourselves.</p>
-    <p style="font-size: 17px; line-height: 1.65;">We work with every major insurance carrier in Georgia. State Farm, Allstate, Progressive, GEICO, USAA, Nationwide, Liberty Mutual, Farmers — we've billed all of them. We handle the supplements, the photos, the rental coordination if your policy covers it. You sign the work order; we handle the back-and-forth.</p>
+      <h3>How insurance work flows here</h3>
+      <p>Most collision repairs are 5–10 business days, but the timeline depends on parts. If your car needs a specific OEM panel from a regional warehouse, we'll tell you up front whether that's a 2-day part or a 2-week part. We don't pad timelines to cover ourselves.</p>
+      <p>We work with every major insurance carrier in Georgia. State Farm, Allstate, Progressive, GEICO, USAA, Nationwide, Liberty Mutual, Farmers — we've billed all of them. We handle the supplements, the photos, the rental coordination if your policy covers it. You sign the work order; we handle the back-and-forth.</p>
 
-    <h3>What to expect</h3>
-    <ol style="font-size: 17px; line-height: 1.7;">
-      <li>Stop by during business hours, or text (678) 647-0907 with photos of the damage. We'll give you a free estimate same-day if it's a daylight visit, next-day on photos.</li>
-      <li>If you're filing through insurance, we'll walk you through the claim process and coordinate with your adjuster. If you're paying out of pocket, we'll quote a flat number with no surprises.</li>
-      <li>We order parts, schedule the repair, and get to work. You can check in any time — the shop is open M-F 8:30-5:30 and Kevin will tell you exactly where your car is in the process.</li>
-      <li>Pickup. Final QC walk-around so we both see the work. We don't release the car until you're satisfied with the body line, the paint match, and the overall finish.</li>
-    </ol>
+      <h3>What to expect</h3>
+      <ol>
+        <li>Stop by during business hours, or text (678) 647-0907 with photos of the damage. We'll give you a free estimate same-day if it's a daylight visit, next-day on photos.</li>
+        <li>If you're filing through insurance, we'll walk you through the claim process and coordinate with your adjuster. If you're paying out of pocket, we'll quote a flat number with no surprises.</li>
+        <li>We order parts, schedule the repair, and get to work. You can check in any time — the shop is open M-F 8:30-5:30 and Kevin will tell you exactly where your car is in the process.</li>
+        <li>Pickup. Final QC walk-around so we both see the work. We don't release the car until you're satisfied with the body line, the paint match, and the overall finish.</li>
+      </ol>
+    </div>
   </div>
 </section>
 
 <!-- SERVICE-SPECIFIC GALLERY -->
-<section style="background: var(--paper-soft);">
+<section class="section-alt">
   <div class="wrap">
-    <h2>Collision Repair — recent work</h2>
+    <div class="section-head">
+      <span class="eyebrow">Recent work</span>
+      <h2>Collision Repair jobs.</h2>
+    </div>
     <div class="gtmdot-photo-gallery">
       <figure class="gtmdot-photo-slot"
               data-slot-id="SERVICE_GALLERY_1"
@@ -157,33 +179,39 @@
 
 <!-- FAQs -->
 <section>
-  <div class="wrap" style="max-width: 840px;">
-    <h2>Frequently asked questions</h2>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">How much does collision repair cost in Forest Park?</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">It depends entirely on the damage. A scuffed bumper might be $400–$800. A door + fender + paint blend is closer to $1,500–$3,500. Major panel work with frame measurement runs $4,000+. We always provide a written estimate before any work starts — and if insurance is paying, we work with the adjuster's number directly.</p>
-    </details>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">Do you work with my insurance company?</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">Yes. We work with every major Georgia carrier — State Farm, Allstate, Progressive, GEICO, USAA, Nationwide, Liberty Mutual, Farmers, and others. We handle supplements (additional damage discovered during repair), photos, and adjuster coordination. You don't have to be the middleman.</p>
-    </details>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">How long will the repair take?</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">Most jobs are 5–10 business days. The biggest variable is parts availability. Common parts ship in 2 days; specific OEM body panels can take 1–2 weeks. We'll tell you up front exactly what's needed so the timeline is honest, not optimistic.</p>
-    </details>
+  <div class="wrap">
+    <div class="section-head" style="text-align: center; margin-left: auto; margin-right: auto;">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions about Collision Repair.</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>How much does collision repair cost in Forest Park?</summary>
+        <p>It depends entirely on the damage. A scuffed bumper might be $400–$800. A door + fender + paint blend is closer to $1,500–$3,500. Major panel work with frame measurement runs $4,000+. We always provide a written estimate before any work starts — and if insurance is paying, we work with the adjuster's number directly.</p>
+      </details>
+      <details>
+        <summary>Do you work with my insurance company?</summary>
+        <p>Yes. We work with every major Georgia carrier — State Farm, Allstate, Progressive, GEICO, USAA, Nationwide, Liberty Mutual, Farmers, and others. We handle supplements (additional damage discovered during repair), photos, and adjuster coordination. You don't have to be the middleman.</p>
+      </details>
+      <details>
+        <summary>How long will the repair take?</summary>
+        <p>Most jobs are 5–10 business days. The biggest variable is parts availability. Common parts ship in 2 days; specific OEM body panels can take 1–2 weeks. We'll tell you up front exactly what's needed so the timeline is honest, not optimistic.</p>
+      </details>
+    </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section style="background: var(--accent-soft); text-align: center;">
+<section class="cta-band">
   <div class="wrap">
-    <h2>Ready for Collision Repair in Forest Park?</h2>
-    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">Tell us what happened. We'll get you back on the road.</p>
-    <a class="cta-btn" href="/contact.html">Get an Estimate</a>
-    <p style="margin-top: 16px;">or call <a href="tel:+16786470907" style="color: var(--accent); font-weight: 600;">(678) 647-0907</a></p>
+    <span class="eyebrow">Ready when you are</span>
+    <h2>Need Collision Repair in Forest Park?</h2>
+    <p>Tell us what happened. We'll get you back on the road.</p>
+    <a class="cta-btn" href="/contact.html">
+      <i data-lucide="message-circle"></i>
+      Get an Estimate
+    </a>
+    <p class="cta-tail">or call <a href="tel:+16786470907">(678) 647-0907</a></p>
   </div>
 </section>
 
@@ -192,7 +220,7 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Forest Park Collision</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Atlanta's family-feel body shop, built on referrals</p>
+        <p>Atlanta's family-feel body shop, built on referrals</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -210,7 +238,7 @@
         <h4>Contact</h4>
         <a href="tel:+16786470907">(678) 647-0907</a>
         <a href="mailto:service@forestparkcollision.com">service@forestparkcollision.com</a>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</p>
+        <p style="margin-top: 8px;">Serving Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -220,8 +248,15 @@
 </footer>
 
 <script>
+  if (window.lucide) window.lucide.createIcons();
   document.addEventListener('DOMContentLoaded', () => {
     if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
   });
 </script>
 

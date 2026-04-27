@@ -6,13 +6,15 @@
   <title>Contact Forest Park Collision — Get an Estimate in Forest Park, GA</title>
   <meta name="description" content="Contact Forest Park Collision to get an estimate. Serving Forest Park and surrounding areas. Call (678) 647-0907 or use the form — we usually respond same day.">
   <link rel="canonical" href="https://forest-park-collision.pages.dev/contact.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="_base.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap site-header-inner">
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
     <a class="site-logo" href="/">Forest Park Collision</a>
     <nav class="site-nav">
       <a href="/services.html">Services</a>
@@ -26,19 +28,20 @@
   </div>
 </header>
 
-<section>
+<section style="padding-top: 88px;">
   <div class="wrap">
-    <h1 style="font-size: clamp(32px, 5vw, 48px); margin: 48px 0 16px;">Get an estimate for your collision repair</h1>
-    <p style="font-size: 18px; color: var(--ink-soft); margin: 0 0 40px; max-width: 640px;">
-      We'll review the damage, work with your insurance if needed, and get you a fair number quickly. No obligation — drop in or send photos.
-    </p>
+    <div class="section-head">
+      <span class="eyebrow">Contact</span>
+      <h1>Get an estimate for your collision repair</h1>
+      <p class="lede">We'll review the damage, work with your insurance if needed, and get you a fair number quickly. No obligation — drop in or send photos.</p>
+    </div>
 
-    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: start;">
+    <div style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 56px; align-items: start;">
 
       <!-- ESTIMATE FORM -->
       <form class="contact-form" method="post" action="https://crm.cloakanddagger.co/api/site-intake" enctype="multipart/form-data">
-        <h2 style="margin: 0 0 8px;">Tell us about the damage</h2>
-        <p style="margin: 0 0 24px; color: var(--ink-soft);">Send photos if you can — it speeds up the estimate. We'll get back to you within one business day.</p>
+        <h2>Tell us about the damage</h2>
+        <p>Send photos if you can — it speeds up the estimate. We'll get back to you within one business day.</p>
 
         <div>
           <label for="name">Name</label>
@@ -58,7 +61,7 @@
         <div>
           <label for="service">Service needed</label>
           <select id="service" name="service" required>
-            <option value="">Select a service...</option>
+            <option value="">Select a service…</option>
             <option value="collision-repair-atlanta">Collision Repair</option>
             <option value="auto-body-paint-atlanta">Auto Body Paint</option>
             <option value="dent-bumper-repair-atlanta">Dent & Bumper Repair</option>
@@ -76,39 +79,40 @@
         <div>
           <label for="uploads">Photos or video of the job (optional but helpful)</label>
           <div class="upload-area" id="uploadArea">
-            <i data-lucide="upload-cloud" style="display: block; margin: 0 auto 8px;"></i>
-            <p style="margin: 0; font-size: 14px; color: var(--ink-soft);">
-              Drop photos or video here, or click to choose files
-            </p>
+            <i data-lucide="upload-cloud"></i>
+            <p>Drop photos or video here, or click to choose files</p>
             <input type="file" id="uploads" name="uploads[]" accept="image/*,video/*" multiple style="display: none;">
           </div>
         </div>
 
-        <button type="submit" class="cta-btn" style="justify-self: start;">Get an Estimate</button>
+        <button type="submit" class="cta-btn">
+          <i data-lucide="send"></i>
+          Get an Estimate
+        </button>
       </form>
 
       <!-- CONTACT DETAILS -->
-      <aside>
-        <h2 style="margin: 0 0 24px;">Other ways to reach us</h2>
+      <aside class="contact-aside">
+        <h2>Other ways to reach us</h2>
 
-        <div style="margin-bottom: 24px;">
-          <h4 style="margin: 0 0 4px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft);">Phone</h4>
-          <p style="margin: 0;"><a href="tel:+16786470907" style="color: var(--accent); font-size: 20px; font-weight: 600;">(678) 647-0907</a></p>
+        <div class="row">
+          <h4>Phone</h4>
+          <a class="phone-strong" href="tel:+16786470907">(678) 647-0907</a>
         </div>
 
-        <div style="margin-bottom: 24px;">
-          <h4 style="margin: 0 0 4px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft);">Email</h4>
-          <p style="margin: 0;"><a href="mailto:service@forestparkcollision.com" style="color: var(--accent); font-weight: 500;">service@forestparkcollision.com</a></p>
+        <div class="row">
+          <h4>Email</h4>
+          <a class="email-strong" href="mailto:service@forestparkcollision.com">service@forestparkcollision.com</a>
         </div>
 
-        <div style="margin-bottom: 24px;">
-          <h4 style="margin: 0 0 4px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft);">Hours</h4>
-          <p style="margin: 0; line-height: 1.6;">Monday–Friday 8:30 AM – 5:30 PM. Closed weekends.</p>
+        <div class="row">
+          <h4>Hours</h4>
+          <p>Monday–Friday 8:30 AM – 5:30 PM. Closed weekends.</p>
         </div>
 
-        <div>
-          <h4 style="margin: 0 0 4px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft);">Service area</h4>
-          <p style="margin: 0; line-height: 1.6;">Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</p>
+        <div class="row">
+          <h4>Service area</h4>
+          <p>Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</p>
         </div>
       </aside>
     </div>
@@ -120,7 +124,7 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Forest Park Collision</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Atlanta's family-feel body shop, built on referrals</p>
+        <p>Atlanta's family-feel body shop, built on referrals</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -138,7 +142,7 @@
         <h4>Contact</h4>
         <a href="tel:+16786470907">(678) 647-0907</a>
         <a href="mailto:service@forestparkcollision.com">service@forestparkcollision.com</a>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</p>
+        <p style="margin-top: 8px;">Serving Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -151,21 +155,30 @@
   // Upload drag/drop behavior
   const uploadArea = document.getElementById('uploadArea');
   const fileInput = document.getElementById('uploads');
-  uploadArea.addEventListener('click', () => fileInput.click());
-  ['dragover', 'dragleave', 'drop'].forEach(evt => {
-    uploadArea.addEventListener(evt, e => { e.preventDefault(); e.stopPropagation(); });
-  });
-  uploadArea.addEventListener('dragover', () => uploadArea.classList.add('dragover'));
-  uploadArea.addEventListener('dragleave', () => uploadArea.classList.remove('dragover'));
-  uploadArea.addEventListener('drop', e => {
-    uploadArea.classList.remove('dragover');
-    fileInput.files = e.dataTransfer.files;
-    const n = fileInput.files.length;
-    uploadArea.querySelector('p').textContent = `${n} file${n === 1 ? '' : 's'} selected`;
-  });
+  if (uploadArea && fileInput) {
+    uploadArea.addEventListener('click', () => fileInput.click());
+    ['dragover', 'dragleave', 'drop'].forEach(evt => {
+      uploadArea.addEventListener(evt, e => { e.preventDefault(); e.stopPropagation(); });
+    });
+    uploadArea.addEventListener('dragover', () => uploadArea.classList.add('dragover'));
+    uploadArea.addEventListener('dragleave', () => uploadArea.classList.remove('dragover'));
+    uploadArea.addEventListener('drop', e => {
+      uploadArea.classList.remove('dragover');
+      fileInput.files = e.dataTransfer.files;
+      const n = fileInput.files.length;
+      uploadArea.querySelector('p').textContent = `${n} file${n === 1 ? '' : 's'} selected`;
+    });
+  }
 
+  if (window.lucide) window.lucide.createIcons();
   document.addEventListener('DOMContentLoaded', () => {
     if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
   });
 </script>
 

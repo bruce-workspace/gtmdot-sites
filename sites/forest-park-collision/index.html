@@ -6,6 +6,8 @@
   <title>Forest Park Collision — Collision Repair in Forest Park, GA</title>
   <meta name="description" content="Family-run collision shop serving Forest Park, College Park, and South Atlanta. 4.8 stars on Google, 70+ reviews. Free estimates. Call Kevin: (678) 647-0907.">
   <link rel="canonical" href="https://forest-park-collision.pages.dev/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="_base.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 
@@ -14,6 +16,7 @@
   <meta property="og:title" content="Forest Park Collision — Collision Repair in Forest Park">
   <meta property="og:description" content="Family-run collision shop serving Forest Park, College Park, and South Atlanta. 4.8 stars on Google, 70+ reviews. Free estimates. Call Kevin: (678) 647-0907.">
   <meta property="og:url" content="https://forest-park-collision.pages.dev/">
+  <meta property="og:image" content="https://forest-park-collision.pages.dev/photos/hero.jpg">
 
   <!-- JSON-LD LocalBusiness schema -->
   <script type="application/ld+json">
@@ -39,14 +42,15 @@
       "reviewCount": "74"
     },
     "areaServed": "Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro",
-    "priceRange": "$$"
+    "priceRange": "$$",
+    "foundingDate": "2008"
   }
   </script>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap site-header-inner">
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
     <a class="site-logo" href="/">Forest Park Collision</a>
     <nav class="site-nav">
       <a href="/services.html">Services</a>
@@ -62,49 +66,98 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="wrap">
-    <h1>Forest Park collision repair, done so well you can't tell it happened</h1>
-    <p class="lede">Family-run body shop trusted by 70+ Atlanta drivers. Free estimates, insurance work welcome, and every car leaves looking like it just rolled off the assembly line.</p>
-    <a class="cta-btn" href="/contact.html">Get an Estimate</a>
-  </div>
-</section>
-
-<!-- HERO PHOTO SLOT (resolved post-handoff) -->
-<div class="wrap" style="padding: 0; margin-top: -32px; margin-bottom: 32px;">
-  <figure class="gtmdot-photo-slot"
+  <figure class="gtmdot-photo-slot hero-bg has-photo"
           data-slot-id="HERO"
           data-context="shop-exterior-OK|finished-vehicle-OK|owner-portrait-OK|aspirational-body-shop-OK|atmosphere-OK"
           data-resolved="false"
-          style="aspect-ratio: 16/9;">
+          aria-hidden="true"
+          style="position: absolute; inset: 0; aspect-ratio: auto; border: 0; border-radius: 0; z-index: -2;">
     <img src="photos/hero.jpg" alt="">
   </figure>
+
+  <div class="wrap">
+    <div class="hero-content">
+      <div class="hero-stamps">
+        <span class="hero-kicker">EST. 2008 · Collision Repair</span>
+        <span class="hero-status"><span class="dot"></span>NOW SERVING Forest Park</span>
+      </div>
+      <h1>Forest Park collision repair, done so well you can't tell it happened</h1>
+      <p class="lede">Family-run body shop trusted by 70+ Atlanta drivers. Free estimates, insurance work welcome, and every car leaves looking like it just rolled off the assembly line.</p>
+      <div class="hero-actions">
+        <a class="cta-btn" href="/contact.html">
+          <i data-lucide="message-circle"></i>
+          Get an Estimate
+        </a>
+        <a class="btn-ghost" href="tel:+16786470907">
+          <i data-lucide="phone"></i>
+          (678) 647-0907
+        </a>
+      </div>
+      <p class="hero-quote">Atlanta's family-feel body shop, built on referrals</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-bar">
+  <div class="wrap">
+    <div class="trust-grid">
+      <div class="trust-pill">
+        <div class="k">2008</div>
+        <div class="v">FOUNDED</div>
+      </div>
+      <div class="trust-pill">
+        <div class="k">4.8<span class="unit">★</span></div>
+        <div class="v">GOOGLE RATING</div>
+      </div>
+      <div class="trust-pill">
+        <div class="k">74</div>
+        <div class="v">CUSTOMER REVIEWS</div>
+      </div>
+      <div class="trust-pill">
+        <div class="k">$0</div>
+        <div class="v">FREE ESTIMATES</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- SERVICES TEASER -->
 <section>
   <div class="wrap">
-    <h2>What we do</h2>
+    <div class="section-head">
+      <span class="eyebrow">What we do</span>
+      <h2>Collision Repair, done right.</h2>
+      <p class="lede">Collision repair, auto body painting, dent and bumper work, and insurance claim support — all in-house.</p>
+    </div>
     <div class="service-grid">
-      <!-- Replace this block per service. Each card links to its own SEO page. -->
       <a class="service-card" href="/collision-repair-atlanta.html">
-        <i class="icon" data-lucide="car"></i>
+        <span class="icon"><i data-lucide="car"></i></span>
         <h3>Collision Repair</h3>
         <p>Fender benders to full-panel rebuilds. We handle insurance claims, order the parts, and deliver a car you can't tell was wrecked.</p>
+        <span class="svc-foot">View service</span>
       </a>
       <a class="service-card" href="/auto-body-paint-atlanta.html">
-        <i class="icon" data-lucide="paintbrush"></i>
+        <span class="icon"><i data-lucide="paintbrush"></i></span>
         <h3>Auto Body Paint</h3>
         <p>Color matching that disappears into the rest of the car. Full repaints, panel blends, fresh clear coats. Done in our own paint booth.</p>
+        <span class="svc-foot">View service</span>
       </a>
       <a class="service-card" href="/dent-bumper-repair-atlanta.html">
-        <i class="icon" data-lucide="shield"></i>
+        <span class="icon"><i data-lucide="shield"></i></span>
         <h3>Dent & Bumper Repair</h3>
         <p>Door dings, parking-lot dents, scuffed bumpers, cracked covers. Quick turnaround on small jobs, often same-week.</p>
+        <span class="svc-foot">View service</span>
       </a>
-      <!-- Add more service cards as needed; duplicate pattern -->
+      <a class="service-card" href="/insurance-claim-help-atlanta.html">
+        <span class="icon"><i data-lucide="file-text"></i></span>
+        <h3>Insurance Claim Help</h3>
+        <p>We handle the adjuster, the supplements, the photos, the rental coordination. You sign the work order — we deal with the paperwork.</p>
+        <span class="svc-foot">View service</span>
+      </a>
     </div>
-    <p style="margin-top: 24px; text-align: center;">
-      <a href="/services.html" style="color: var(--accent); font-weight: 600;">See all services →</a>
+    <p style="margin-top: 32px; text-align: center;">
+      <a href="/services.html" style="color: var(--accent-light); font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase;">See all services →</a>
     </p>
   </div>
 </section>
@@ -120,7 +173,10 @@
      "Our Story" — pre-push-gate enforces. -->
 <section class="reviews-bar" id="reviews">
   <div class="wrap">
-    <h2>What our customers say</h2>
+    <div class="section-head" style="text-align: center; margin-left: auto; margin-right: auto;">
+      <span class="eyebrow">What customers say</span>
+      <h2>Real words from real Forest Park customers.</h2>
+    </div>
 
     <!-- PATH A — reviews-track for captured >= 3 -->
     <div class="reviews-track">
@@ -175,9 +231,12 @@ What stood out most was how understanding and accommodating Kevin was regarding 
 </section>
 
 <!-- GALLERY (ambiguous photo slots) -->
-<section>
+<section class="section-alt">
   <div class="wrap">
-    <h2>Recent work</h2>
+    <div class="section-head">
+      <span class="eyebrow">Recent work</span>
+      <h2>Collision Repair jobs around Forest Park.</h2>
+    </div>
     <div class="gtmdot-photo-gallery">
       <figure class="gtmdot-photo-slot"
               data-slot-id="GALLERY_1"
@@ -219,13 +278,17 @@ What stood out most was how understanding and accommodating Kevin was regarding 
   </div>
 </section>
 
-<!-- CTA FOOTER -->
-<section style="background: var(--accent-soft); text-align: center;">
+<!-- CTA BAND -->
+<section class="cta-band">
   <div class="wrap">
-    <h2>Ready to get started?</h2>
-    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">Free estimates, no pressure. Drop by during business hours or send us photos to start.</p>
-    <a class="cta-btn" href="/contact.html">Get an Estimate</a>
-    <p style="margin-top: 16px;">or call <a href="tel:+16786470907" style="color: var(--accent); font-weight: 600;">(678) 647-0907</a></p>
+    <span class="eyebrow">Ready when you are</span>
+    <h2>Free estimates, no pressure. Drop by during business hours or send us photos to start.</h2>
+    <p>Free estimates. Same-week scheduling for most jobs.</p>
+    <a class="cta-btn" href="/contact.html">
+      <i data-lucide="message-circle"></i>
+      Get an Estimate
+    </a>
+    <p class="cta-tail">or call <a href="tel:+16786470907">(678) 647-0907</a></p>
   </div>
 </section>
 
@@ -234,7 +297,7 @@ What stood out most was how understanding and accommodating Kevin was regarding 
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Forest Park Collision</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Atlanta's family-feel body shop, built on referrals</p>
+        <p>Atlanta's family-feel body shop, built on referrals</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -252,7 +315,7 @@ What stood out most was how understanding and accommodating Kevin was regarding 
         <h4>Contact</h4>
         <a href="tel:+16786470907">(678) 647-0907</a>
         <a href="mailto:service@forestparkcollision.com">service@forestparkcollision.com</a>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</p>
+        <p style="margin-top: 8px;">Serving Forest Park, College Park, East Point, Hapeville, South Atlanta, Riverdale, Morrow, Jonesboro</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -262,9 +325,24 @@ What stood out most was how understanding and accommodating Kevin was regarding 
 </footer>
 
 <script>
+  // Init lucide icons (replaces all <i data-lucide="..."> with SVGs)
   if (window.lucide) window.lucide.createIcons();
   document.addEventListener('DOMContentLoaded', () => {
     if (window.lucide) window.lucide.createIcons();
+
+    // Sticky-nav state on scroll (adds .scrolled past 8px)
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
+
+    // Reveal-on-scroll for any .reveal element
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => e.isIntersecting && e.target.classList.add('visible'));
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   });
 </script>
 
