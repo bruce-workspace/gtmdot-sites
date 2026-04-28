@@ -1,0 +1,165 @@
+{
+  "slug": "smart-wire-solutions",
+  "generated_at": "2026-04-28T15:58:48Z",
+  "status": "partial_success",
+  "model_stack": {
+    "reasoning": "openai-codex-gpt-5.5",
+    "image_generation_requested": "google/gemini-3-pro-image-preview",
+    "image_generation_actual": "openai/gpt-image-2",
+    "google_image_generation_status": "blocked: RESOURCE_EXHAUSTED monthly spending cap"
+  },
+  "photo_quality": [
+    {
+      "path": "photos-generated/hero-01.png",
+      "label": "hero-candidate",
+      "confidence": 0.9,
+      "reasoning": "Generated editorial residential electrical panel/tools hero. Created because real source photos are proof/service references rather than hero-quality. No people/logos/text requested in prompt; Mini should visually QA after integration.",
+      "object_tags": [
+        "electrical-panel",
+        "tools",
+        "residential",
+        "generated"
+      ]
+    },
+    {
+      "path": "photos-raw/alignable-service-01.jpg",
+      "label": "proof-candidate",
+      "confidence": 0.82,
+      "reasoning": "Owner-controlled Alignable electrical repairs image. Strongest real service proof; use for electrical repair/troubleshooting gallery, not hero. Caption-overlay risk low to moderate due central subject detail.",
+      "object_tags": [
+        "electrical-repair",
+        "troubleshooting",
+        "owner-controlled"
+      ]
+    },
+    {
+      "path": "photos-raw/alignable-service-02.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.74,
+      "reasoning": "Owner-controlled ceiling fan installation image. Small/compressed but directly matches service page. Best for ceiling fan gallery/service slot. Caption-overlay risk low if caption kept below image or over dark gradient.",
+      "object_tags": [
+        "ceiling-fan",
+        "service-photo",
+        "owner-controlled"
+      ]
+    },
+    {
+      "path": "photos-raw/alignable-service-03.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.72,
+      "reasoning": "Owner-controlled recessed lighting image. Small/compressed but directly matches service page. Best for recessed lighting gallery/service slot. Caption-overlay risk low.",
+      "object_tags": [
+        "recessed-lighting",
+        "service-photo",
+        "owner-controlled"
+      ]
+    },
+    {
+      "path": "photos-raw/alignable-service-04.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.76,
+      "reasoning": "Owner-controlled electrical panel upgrade image. Confirms panel/circuit capacity service, but R1VS intentionally did not build a panel-upgrade service page. Use only as supporting proof/gallery if needed, not as a primary service claim unless copy is updated.",
+      "object_tags": [
+        "panel",
+        "circuit",
+        "owner-controlled"
+      ]
+    },
+    {
+      "path": "photos-raw/alignable-service-05.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.66,
+      "reasoning": "Additional Alignable service image, likely related service card. Low resolution/compressed. Use only if Mini needs extra gallery depth after stronger service images.",
+      "object_tags": [
+        "electrical",
+        "owner-controlled"
+      ]
+    },
+    {
+      "path": "photos-raw/alignable-service-06.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.66,
+      "reasoning": "Additional Alignable service image, likely related service card. Low resolution/compressed. Use only if Mini needs extra gallery depth after stronger service images.",
+      "object_tags": [
+        "electrical",
+        "owner-controlled"
+      ]
+    },
+    {
+      "path": "photos-raw/alignable-brand-01.jpg",
+      "label": "logo-reference",
+      "confidence": 0.85,
+      "reasoning": "SmartWire logo/profile image from Alignable. Use as brand/color reference only unless Mini needs a small logo mark. Not a hero/gallery photo.",
+      "object_tags": [
+        "logo",
+        "brand"
+      ]
+    },
+    {
+      "path": "photos-raw/alignable-brand-02.jpg",
+      "label": "brand-reference",
+      "confidence": 0.75,
+      "reasoning": "Business-card/banner crop. Useful for brand audit and contact consistency; not a visible site photo unless cropped carefully.",
+      "object_tags": [
+        "business-card",
+        "brand"
+      ]
+    },
+    {
+      "path": "photos-raw/alignable-brand-03.jpg",
+      "label": "brand-reference",
+      "confidence": 0.8,
+      "reasoning": "Wider business-card/banner image from Alignable. Useful for brand color/contact validation; avoid using as gallery because it contains text and design artifacts.",
+      "object_tags": [
+        "business-card",
+        "brand",
+        "text"
+      ]
+    }
+  ],
+  "hero_recommendation": {
+    "preferred_path": "photos-generated/hero-01.png",
+    "preferred_source": "generated",
+    "fallback_path": "photos-raw/alignable-service-01.jpg",
+    "reasoning": "Generated hero is the only hero-quality asset. Alignable service images are real but small and service-specific; use them as proof/gallery/service images."
+  },
+  "review_coverage": {
+    "captured_total": 3,
+    "google_total": 17,
+    "overall_rating": 5.0,
+    "sources_present": [
+      "alignable",
+      "linkedin-snippet",
+      "google-kp-rating-only"
+    ],
+    "sources_recommended_for_enrichment": [
+      "google-reviews-direct-browser",
+      "facebook-reviews"
+    ],
+    "sufficiency": "partial",
+    "reasoning": "Rating/count are verified from Google KP, but Google verbatim review text could not be pulled from Places cid in Bruce runtime. Three real verbatim recommendations are captured from Alignable/LinkedIn snippets. Do not present these as Google reviews."
+  },
+  "object_verification": [
+    {
+      "claim": "SmartWire is a real residential electrical services business",
+      "evidence": "GBP KP 5.0/17; Alignable profile and service pages with owner-controlled service descriptions/images; BBB/Yelp/KP address/phone cross-confirmed by R1VS.",
+      "confidence": 0.95
+    },
+    {
+      "claim": "Owner/founder Terry Henry is core proof point",
+      "evidence": "Alignable copy, LinkedIn snippet, BBB officers, KP description from R1VS Phase 1.",
+      "confidence": 0.9
+    }
+  ],
+  "icon_warnings": [],
+  "generated_images": [
+    {
+      "path": "photos-generated/hero-01.png",
+      "purpose": "hero",
+      "prompt": "Photorealistic editorial website hero image for a premium Atlanta residential electrician. A clean modern residential electrical panel and neatly arranged insulated electrician tools in a warm Atlanta home interior, with subtle recessed lighting and an Air Force blue color mood. Professional, trustworthy, family-owned service feel. No people, no faces, no text, no logos, no signage, no vehicles. Wide 16:9 composition with darker negative space on the left for white headline text overlay, crisp detail, natural warm light, magazine-quality photography.",
+      "model": "openai/gpt-image-2",
+      "license_note": "Synthetic image. Do not represent as actual SmartWire work.",
+      "intended_slot_context": "aspirational-electrician-OK"
+    }
+  ]
+}

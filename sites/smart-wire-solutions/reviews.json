@@ -1,16 +1,34 @@
 {
-  "slug": "smart-wire-solutions",
-  "captured": 0,
-  "total_reviews": 17,
+  "business_name": "SmartWire Solutions",
   "overall_rating": 5.0,
-  "captured_at": "2026-04-28T15:30:00Z",
-  "sources": [
+  "total_reviews": 17,
+  "captured": 3,
+  "capture_status": "partial_secondary_sources_google_text_blocked",
+  "google_reviews_note": "Google KP confirms 5.0 across 17 reviews, but Place Details cid lookup returned INVALID_REQUEST and browser access to Google share URL is policy-blocked from Bruce runtime. Captured verbatim secondary recommendations instead; Mini should keep Path C or use these as proof quotes only unless Google verbatims are later extracted.",
+  "reviews": [
     {
-      "source": "google_places_api_v1",
-      "count": 0,
-      "fetched_at": "2026-04-28T15:30:00Z",
-      "note": "Places API findplacefromtext + textsearch return ZERO_RESULTS for this listing — SmartWire's GBP is a service-area-business with ftid=0x0. Bruce §11.11 collection should pull verbatim reviews via Place Details endpoint using cid 0x41524a050c3d29f4 (decimal 4706905946096216564) or kgmid /g/11j61b1qy5. Until then, reviews-bar renders Path C (empty state, links to Google)."
+      "author_name": "Dr. Troye Washington-Clanton",
+      "rating": 5,
+      "relative_time_description": "Alignable recommendation",
+      "text": "Experienced and knowledgeable, prompt and hard working. Terry Henry @ SmartWire Solutions LLC can fix your electrical problem when all other can’t!",
+      "source": "alignable",
+      "url": "https://www.alignable.com/midtown-atlanta-atlanta-ga/smartwire-solutions-llc"
+    },
+    {
+      "author_name": "LinkedIn recommender",
+      "rating": 5,
+      "relative_time_description": "LinkedIn recommendation snippet",
+      "text": "Terry has great work ethics, integrity, and gives great customer service. I have known him for 10+ years, and he is the only electrician I would hire, or recommend.",
+      "source": "linkedin_snippet",
+      "url": "https://www.linkedin.com/in/terry-henry-b761bb25/"
+    },
+    {
+      "author_name": "LinkedIn recommender",
+      "rating": 5,
+      "relative_time_description": "LinkedIn recommendation snippet",
+      "text": "Over the last ten years I have hired Terry for any and all electrical needs. He has done everything from rewiring houses to trouble shooting small electrical problems. I have found him to be fast accurate and very fair with his pricing.",
+      "source": "linkedin_snippet",
+      "url": "https://www.linkedin.com/in/terry-henry-b761bb25/"
     }
-  ],
-  "reviews": []
+  ]
 }
