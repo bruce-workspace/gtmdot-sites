@@ -1,0 +1,167 @@
+{
+  "slug": "plugged-electricians-atl",
+  "generated_at": "2026-04-28T02:45:00Z",
+  "status": "success",
+  "model_stack": {
+    "reasoning": "openai-codex-gpt-5.5",
+    "image_generation": "minimax/image-01"
+  },
+  "photo_quality": [
+    {
+      "path": "photos-generated/hero-01.png",
+      "label": "hero-candidate",
+      "confidence": 0.95,
+      "reasoning": "Editorial breaker panel — new construction, precise wiring, bright ambient light. Aspirational intent satisfied directly. No people, no logos.",
+      "object_tags": ["breaker-panel", "electrical", "aspirational"]
+    },
+    {
+      "path": "photos-raw/yelp-01.jpg",
+      "label": "proof-candidate",
+      "confidence": 0.75,
+      "reasoning": "Residential interior with wiring visible. Real electrical work. Some surrounding room noise. Low caption-overlay risk.",
+      "object_tags": ["wiring", "residential"]
+    },
+    {
+      "path": "photos-raw/yelp-02.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.70,
+      "reasoning": "Electrical panel — clean professional install. GALLERY_1 or GALLERY_6 (panel/meter context). Low caption-overlay risk.",
+      "object_tags": ["panel", "electrical"]
+    },
+    {
+      "path": "photos-raw/yelp-03.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.70,
+      "reasoning": "Electrical outlet and wall. Workmanlike. GALLERY_6 or atmosphere slots. Low caption-overlay risk.",
+      "object_tags": ["outlet", "wall"]
+    },
+    {
+      "path": "photos-raw/yelp-04.jpg",
+      "label": "proof-candidate",
+      "confidence": 0.78,
+      "reasoning": "Wiring detail — confirms real electrical work. GALLERY_2 or GALLERY_6. Good detail density, bottom third clear. Low caption-overlay risk.",
+      "object_tags": ["wiring", "detail"]
+    },
+    {
+      "path": "photos-raw/yelp-05.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.68,
+      "reasoning": "Switch/panel work. Adequate proof but not dramatic. Low caption-overlay risk.",
+      "object_tags": ["switch", "panel"]
+    },
+    {
+      "path": "photos-raw/yelp-06.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.72,
+      "reasoning": "Ceiling fan install. GALLERY_3 (ceiling-fan-OK). Clean install photo. Low caption-overlay risk.",
+      "object_tags": ["ceiling-fan", "fixture"]
+    },
+    {
+      "path": "photos-raw/yelp-07.jpg",
+      "label": "proof-candidate",
+      "confidence": 0.80,
+      "reasoning": "Panel + circuit wiring, well-lit. Strongest real photo. GALLERY_1 or GALLERY_6. Low caption-overlay risk.",
+      "object_tags": ["panel", "circuit", "electrical"]
+    },
+    {
+      "path": "photos-raw/yelp-08.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.65,
+      "reasoning": "Electrical fixture in room. Atmospheric but not distinctive. Low caption-overlay risk.",
+      "object_tags": ["fixture", "room"]
+    },
+    {
+      "path": "photos-raw/yelp-09.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.68,
+      "reasoning": "Outdoor meter/service. GALLERY_5 (outdoor-electrical-OK, meter-OK). Some background clutter. Low caption-overlay risk.",
+      "object_tags": ["outdoor", "meter", "service"]
+    },
+    {
+      "path": "photos-raw/yelp-10.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.70,
+      "reasoning": "Service panel with cover off. Technical. GALLERY_6 (tools/meter-on-panel-OK). Low caption-overlay risk.",
+      "object_tags": ["panel", "open", "technical"]
+    },
+    {
+      "path": "photos-raw/gbp-01.jpg",
+      "label": "discard",
+      "confidence": 0.40,
+      "reasoning": "Office/staff shot. GBP-sourced. Not gallery quality.",
+      "object_tags": ["office", "documentary"]
+    },
+    {
+      "path": "photos-raw/gbp-02.jpg",
+      "label": "discard",
+      "confidence": 0.45,
+      "reasoning": "Staff headshot. Staged. Not proof-quality.",
+      "object_tags": ["staff", "portrait"]
+    },
+    {
+      "path": "photos-raw/gbp-03.jpg",
+      "label": "discard",
+      "confidence": 0.40,
+      "reasoning": "Exterior signage. Documentary only.",
+      "object_tags": ["signage", "exterior"]
+    },
+    {
+      "path": "photos-raw/gbp-04.jpg",
+      "label": "discard",
+      "confidence": 0.55,
+      "reasoning": "Least bad gbp. Some context but cropped-feeling. Not gallery threshold.",
+      "object_tags": ["documentary"]
+    },
+    {
+      "path": "photos-raw/gbp-05.jpg",
+      "label": "discard",
+      "confidence": 0.40,
+      "reasoning": "Appointments page. Not usable.",
+      "object_tags": ["documentary"]
+    },
+    {
+      "path": "photos-raw/gbp-06.jpg",
+      "label": "discard",
+      "confidence": 0.50,
+      "reasoning": "Second-least-bad gbp. Not recommended for any visible slot.",
+      "object_tags": ["documentary"]
+    }
+  ],
+  "hero_recommendation": {
+    "preferred_path": "photos-generated/hero-01.png",
+    "preferred_source": "generated",
+    "fallback_path": null,
+    "reasoning": "Generated editorial breaker panel satisfies hero_intent:aspirational directly. No real photo in photos-raw/ meets aspirational editorial threshold. gbp photos are all discard; yelp-07.jpg (0.80 proof-candidate) is strongest but lacks hero compositional quality."
+  },
+  "icon_warnings": [],
+  "object_verification": [
+    {
+      "claim": "Electrical services business (owner-operated, real work)",
+      "evidence": "13 GBP reviews referencing panel upgrades, EV charger install, wiring, outlet work; yelp-01..10.jpg show real residential electrical work; Trell Black confirmed as owner-operator",
+      "confidence": 0.95
+    },
+    {
+      "claim": "Not stock/appliance-store imagery",
+      "evidence": "Yelp photos consistent with GBP review context — actual residential panel and wiring work",
+      "confidence": 0.90
+    }
+  ],
+  "review_coverage": {
+    "captured_total": 5,
+    "sources_present": ["google-places"],
+    "sources_recommended_for_enrichment": ["yelp", "thumbtack"],
+    "sufficiency": "borderline",
+    "reasoning": "5 high-quality named reviews captured. GBP shows ~13 total. Yelp primary gap — no yelp reviews yet. Yelp and Thumbtack enrichment would bring social proof to credible level."
+  },
+  "generated_images": [
+    {
+      "path": "photos-generated/hero-01.png",
+      "purpose": "hero",
+      "prompt": "Editorial photograph of a clean modern residential electrical breaker panel in a new construction home, neatly wired with professional cable management. Bright ambient light through nearby windows, warm white interior finishes, subtle depth of field. The panel reads as high-quality residential electrical work — orderly, precise, trustworthy. No people. No text visible. No logos. No brand markings. Photorealistic, magazine-quality editorial style. 16:9 landscape aspect ratio.",
+      "model": "minimax/image-01",
+      "model_revision": "image-1",
+      "license_note": "Synthetic image. Do not represent as actual company work.",
+      "intended_slot_context": "aspirational-electrician-OK"
+    }
+  ]
+}
