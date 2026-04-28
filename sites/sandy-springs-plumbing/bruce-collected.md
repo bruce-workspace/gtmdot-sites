@@ -1,30 +1,37 @@
 ---
 slug: sandy-springs-plumbing
 request_id: 2026-04-28T02:33:45Z
-collected_at: 2026-04-28T02:45:00Z
+collected_at: 2026-04-28T04:19:00Z
 status: success
 ---
 
 # Bruce Collected — Sandy Springs Plumbing
 
 ## Summary
-Generation-only request per Jesse's explicit brief. Hero image generated per tight prompt. No scraping performed — existing 5 GBP photos and 5 reviews are sufficient per scope.
+Generation-only request. One hero image produced via gpt-image-2. No scraping performed per request scope.
 
-## Results
+## Results by source
 
-### photos-generated/ — SUCCESS
-- `photos-generated/hero-01.jpg` — editorial kitchen-faucet hero: polished brushed-nickel pull-down faucet, white farmhouse sink, marble countertop, morning light, shallow DOF. Exactly per Jesse's primary prompt. 16:9 landscape. No people, no logos.
+### gpt-image-2 (generated hero) — SUCCESS
+- 1 photo → `sites/sandy-springs-plumbing/photos-generated/hero-01.png`
+- Per §11.11.1 + §11.11.5 guardrails applied
 
-### photos-raw/ (pre-existing) — NO CHANGE
-- 5 GBP photos present. Photo-quality labels applied to bruce-asset-intel.json.
+### yelp — NOT-ATTEMPTED
+- Per request: no additional scraping needed, existing GBP set sufficient
 
-### reviews-raw.json (pre-existing) — NO CHANGE
-- 5 strong Google reviews. No enrichment per collect-request scope.
+### nextdoor — NOT-ATTEMPTED
+- Per request: no additional scraping needed
+
+### thumbtack — NOT-ATTEMPTED
+- Per request: no additional scraping needed
+
+### bbb — NOT-ATTEMPTED
+- Per request: no additional scraping needed
 
 ## Totals
-- Photos: 0 new scraped + 1 generated = 1 new asset
-- Reviews: 5 (pre-existing, no change)
-- Wall-clock used: ~3m 30s (well within 4m cap for generation-only request)
+- Photos collected: 1 (within budget)
+- Reviews collected: 0 (not needed per request)
+- Wall-clock used: ~1m
 
 ## Handing back to Mini
-Per §11.11.3, default-accept applies. `bruce-asset-intel.{md,json}` + `photos-generated/hero-01.jpg` are in place. Ready for integration. Over to you.
+Asset intel shipped. Over to you for integration.
