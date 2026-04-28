@@ -1,0 +1,32 @@
+{
+  "_source_note": "Manually extracted from Google Knowledge Panel rendered for kgmid /g/11j61b1qy5, after share URL https://share.google/odJwB0uvcD08lbYxb resolved to a search-results page with a backing Maps record. Places API findplacefromtext + textsearch both returned ZERO_RESULTS (a known artifact of service-area-business GBP listings whose ftid is 0x0). Evidence screenshot at sites/smart-wire-solutions/phase-0-evidence-google-kp.png.",
+  "name": "SmartWire Solutions",
+  "address": "730 Peachtree St NE, Ste 570, Atlanta, GA 30308",
+  "address_source": "Yelp business page (smartwire-solutions-atlanta), cross-referenced by phone match and KP linking — Atlanta address consistent with the Knowledge Panel's local context",
+  "rating": 5.0,
+  "total_reviews": 17,
+  "reviews": [],
+  "_reviews_note": "Individual review dates were not extracted because the Knowledge Panel does not expose them without further interaction; total_reviews=17 from the 'See 17 Google reviews' button. Phase 0 farm-pattern + dormancy rules safely skip when reviews array is empty.",
+  "gbp_match": true,
+  "place_id": "0x0:0x41524a050c3d29f4",
+  "_place_id_note": "cid (hex) extracted from Google Maps link in the KP. The leading 0x0 ftid indicates a service-area-business GBP without a verified storefront geocode, which is why standard Places API findplacefromtext / textsearch returns ZERO_RESULTS even though the listing is real.",
+  "kgmid": "/g/11j61b1qy5",
+  "phone_kp": "(404) 635-6301",
+  "phone_jesse_supplied": "(404) 382-9847",
+  "_phone_note": "Two phone numbers reference the business across surfaces. (404) 635-6301 is shown on the Google KP. (404) 382-9847 is shown on Yelp + Facebook + the business's own description. Both consistent — likely main + direct line.",
+  "hours": "Open 24 hours",
+  "owner": "Terry Henry",
+  "owner_role": "Master Electrician, US Air Force veteran, owner-operator (per KP description)",
+  "secondary_contact": "Maria Henry, VP (per BBB)",
+  "vertical": "electrical",
+  "cross_source_signals": {
+    "facebook": "https://www.facebook.com/SmartWire365 (480+ followers)",
+    "instagram": "https://www.instagram.com/smartwire365/ (230+ followers)",
+    "youtube": "https://www.youtube.com/@smartwiresolutions6624",
+    "yelp": "https://www.yelp.com/biz/smartwire-solutions-atlanta",
+    "bbb": "https://www.bbb.org/us/ga/atlanta/profile/electrical-contractors/smartwire-solutions-llc-0443-28141526",
+    "linkedin_owner": "https://www.linkedin.com/in/terry-henry-b761bb25"
+  },
+  "website": "https://smartwire365.com",
+  "_website_note": "Per Jesse's handoff: appears parked/broken. Cross-source bio sections still reference smartwire365.com, suggesting the site WAS live and is currently down rather than never existing."
+}

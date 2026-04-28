@@ -1,12 +1,8 @@
 {
   "slug": "smart-wire-solutions",
-  "passed": false,
-  "reasons": [
-    "no rating in data",
-    "total_reviews 0 < 10 (insufficient signal)",
-    "GBP does not match claimed address (ghost listing)"
-  ],
-  "snapshot_at": "2026-04-28T14:04:35.967361+00:00",
+  "passed": true,
+  "reasons": [],
+  "snapshot_at": "2026-04-28T14:50:29.803801+00:00",
   "rules_applied": {
     "min_rating": 4.5,
     "min_reviews": 10,
@@ -15,12 +11,12 @@
     "dormant_months": 24
   },
   "snapshot_data": {
-    "name": "SmartWire Solutions LLC",
-    "address": "Atlanta, GA",
-    "rating": null,
-    "total_reviews": null,
+    "name": "SmartWire Solutions",
+    "address": "730 Peachtree St NE, Ste 570, Atlanta, GA 30308",
+    "rating": 5.0,
+    "total_reviews": 17,
     "reviews_captured": 0,
-    "gbp_match": false,
-    "place_id": null
+    "gbp_match": true,
+    "place_id": "0x0:0x41524a050c3d29f4"
   }
 }
