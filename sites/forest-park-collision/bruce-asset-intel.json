@@ -1,266 +1,79 @@
 {
   "slug": "forest-park-collision",
-  "generated_at": "2026-04-26T22:00:00Z",
+  "generated_at": "2026-04-28T04:53:00Z",
   "status": "success",
-  "collect_request_ref": "sites/forest-park-collision/collect-request-archive/2026-04-26T21:22:00Z-request.md",
   "model_stack": {
     "reasoning": "openai-codex-gpt-5.5",
-    "image_generation": "minimax/image-01 via OpenClaw image_generate; requested OpenAI gpt-image-2 class capability"
+    "image_generation": "minimax/image-01"
   },
   "photo_quality": [
-    {
-      "path": "photos-generated/hero-01.png",
-      "label": "hero-candidate",
-      "confidence": 0.88,
-      "reasoning": "Generated aspirational shop-interior hero is polished, horizontal, logo-free, people-free, and safe for an atmosphere/aspirational hero slot. It reads slightly more premium/detailing than collision repair, but still fits restored-finish/body-shop positioning.",
-      "object_tags": [
-        "generated",
-        "vehicle",
-        "shop-interior",
-        "polished-finish",
-        "atmosphere"
-      ],
-      "v2_caption_overlay_risk": "not-applicable-hero",
-      "v2_caption_overlay_reasoning": "Hero is not used in the hover-caption gallery; darker overlay and kicker treatment strengthen, not weaken, the recommendation."
-    },
-    {
-      "path": "photos-raw/gbp-01.jpg",
-      "label": "proof-candidate",
-      "confidence": 0.91,
-      "reasoning": "Real exterior/signage photo for Forest Park Collision. Strong authenticity proof but vertical/plain composition makes it weaker than generated hero for the homepage.",
-      "object_tags": [
-        "shop-exterior",
-        "signage",
-        "real-business",
-        "forest-park-collision"
-      ],
-      "v2_caption_overlay_risk": "low",
-      "v2_caption_overlay_reasoning": "primary signage/exterior identity reads above caption zone"
-    },
-    {
-      "path": "photos-raw/gbp-02.jpg",
-      "label": "proof-candidate",
-      "confidence": 0.86,
-      "reasoning": "Real vehicle prep/paint booth scene with technicians. Good process proof, candid/cluttered lighting; better for gallery or service proof than hero.",
-      "object_tags": [
-        "paint-booth",
-        "technicians",
-        "vehicle-prep",
-        "collision-repair"
-      ],
-      "v2_caption_overlay_risk": "flagged-bottom-third-detail",
-      "v2_caption_overlay_reasoning": "primary process detail and technician/covered-car activity sit low enough that hover caption can cover proof detail"
-    },
-    {
-      "path": "photos-raw/gbp-03.jpg",
-      "label": "proof-candidate",
-      "confidence": 0.84,
-      "reasoning": "Real masked vehicle in paint booth with fresh panel. Strong process relevance, moderate glare and tighter framing.",
-      "object_tags": [
-        "paint-booth",
-        "masked-vehicle",
-        "fresh-paint",
-        "repair-process"
-      ],
-      "v2_caption_overlay_risk": "flagged-bottom-third-detail",
-      "v2_caption_overlay_reasoning": "masked vehicle/fresh-panel detail is concentrated in the lower third"
-    },
-    {
-      "path": "photos-raw/gbp-04.jpg",
-      "label": "hero-candidate",
-      "confidence": 0.83,
-      "reasoning": "Clean real paint booth/facility shot. Visually clear and professional, but empty and less emotionally compelling than the generated aspirational hero.",
-      "object_tags": [
-        "paint-booth",
-        "facility",
-        "shop-interior",
-        "equipment"
-      ],
-      "v2_caption_overlay_risk": "low",
-      "v2_caption_overlay_reasoning": "paint booth/facility read remains clear above caption zone"
-    },
-    {
-      "path": "photos-raw/gbp-05.jpg",
-      "label": "gallery-candidate",
-      "confidence": 0.74,
-      "reasoning": "Finished vehicle outside the shop. Real and usable, but ordinary parking-lot background limits hero value.",
-      "object_tags": [
-        "finished-vehicle",
-        "parking-lot",
-        "real-photo"
-      ],
-      "v2_caption_overlay_risk": "flagged-bottom-third-detail",
-      "v2_caption_overlay_reasoning": "finished vehicle lower body/wheels carry much of the subject and would sit under caption"
-    },
-    {
-      "path": "photos-raw/gbp-06.jpg",
-      "label": "gallery-candidate",
-      "confidence": 0.72,
-      "reasoning": "A/C service machine connected to vehicle. Real shop photo, but less specific to collision/body work.",
-      "object_tags": [
-        "vehicle-service",
-        "equipment",
-        "under-hood"
-      ],
-      "v2_caption_overlay_risk": "flagged-bottom-third-detail",
-      "v2_caption_overlay_reasoning": "vehicle front/headlight and service equipment detail sit in the caption zone"
-    },
-    {
-      "path": "photos-raw/gbp-07.jpg",
-      "label": "proof-candidate",
-      "confidence": 0.87,
-      "reasoning": "Exposed frame/chassis repair scene. Strong repair proof, but industrial/cluttered composition belongs in proof/gallery, not hero.",
-      "object_tags": [
-        "frame-repair",
-        "chassis",
-        "repair-in-progress",
-        "shop-interior"
-      ],
-      "v2_caption_overlay_risk": "flagged-bottom-third-detail",
-      "v2_caption_overlay_reasoning": "frame/chassis repair proof is concentrated low in the image"
-    },
-    {
-      "path": "photos-raw/gbp-08.jpg",
-      "label": "gallery-candidate",
-      "confidence": 0.68,
-      "reasoning": "Wide exterior/parking-lot view. Real but distant and overcast; acceptable only if Mini needs additional exterior context.",
-      "object_tags": [
-        "shop-exterior",
-        "parking-lot",
-        "wide-shot"
-      ],
-      "v2_caption_overlay_risk": "low",
-      "v2_caption_overlay_reasoning": "wide exterior context is not dependent on lower-third detail"
-    },
-    {
-      "path": "photos-raw/gbp-09.jpg",
-      "label": "proof-candidate",
-      "confidence": 0.88,
-      "reasoning": "Paint mixing room with Nason system and color cabinets. Clean professional equipment proof for paint/body capability.",
-      "object_tags": [
-        "paint-mixing",
-        "equipment",
-        "body-shop",
-        "facility"
-      ],
-      "v2_caption_overlay_risk": "flagged-bottom-third-detail",
-      "v2_caption_overlay_reasoning": "paint-mixing shelves/cans extend into the caption zone"
-    },
-    {
-      "path": "photos-raw/yelp-01.jpg",
-      "label": "discard",
-      "confidence": 0.78,
-      "reasoning": "Real damaged vehicle/repair shot, but low resolution and blurry. Better not used unless no other repair-progress imagery is available.",
-      "object_tags": [
-        "damaged-vehicle",
-        "low-resolution",
-        "blurry"
-      ],
-      "v2_caption_overlay_risk": "low",
-      "v2_caption_overlay_reasoning": "already discard; caption risk is not production-relevant"
-    },
-    {
-      "path": "photos-raw/yelp-02.jpg",
-      "label": "gallery-candidate",
-      "confidence": 0.7,
-      "reasoning": "Real repaired/finished vehicle photo. Mobile quality and wet parking-lot context; usable as secondary gallery only.",
-      "object_tags": [
-        "finished-vehicle",
-        "parking-lot",
-        "mobile-photo"
-      ],
-      "v2_caption_overlay_risk": "flagged-bottom-third-detail",
-      "v2_caption_overlay_reasoning": "finished-vehicle lower bumper/body detail sits low"
-    },
-    {
-      "path": "photos-raw/yelp-03.jpg",
-      "label": "gallery-candidate",
-      "confidence": 0.72,
-      "reasoning": "Alternate angle of repaired gray Honda with bumper visible. Slightly better than yelp-02 for finished-vehicle context.",
-      "object_tags": [
-        "finished-vehicle",
-        "bumper",
-        "mobile-photo"
-      ],
-      "v2_caption_overlay_risk": "flagged-bottom-third-detail",
-      "v2_caption_overlay_reasoning": "bumper/front-end detail sits low"
-    },
-    {
-      "path": "photos-raw/yelp-04.jpg",
-      "label": "discard",
-      "confidence": 0.76,
-      "reasoning": "Real black sedan photo but low presentation quality with vertical crop and black bars. Not recommended for production use.",
-      "object_tags": [
-        "vehicle",
-        "vertical-crop",
-        "low-presentation-quality"
-      ],
-      "v2_caption_overlay_risk": "low",
-      "v2_caption_overlay_reasoning": "already discard; caption risk is not production-relevant"
-    }
+    {"path": "photos-raw/gbp-02.jpg", "label": "gallery-candidate", "confidence": 0.90, "reasoning": "Shop exterior — solid proof shot", "object_tags": ["shop-exterior", "signage", "building"]},
+    {"path": "photos-raw/gbp-03.jpg", "label": "gallery-candidate", "confidence": 0.88, "reasoning": "Vehicle on lift — work-in-progress signal", "object_tags": ["vehicle", "lift", "repair-bay"]},
+    {"path": "photos-raw/gbp-04.jpg", "label": "gallery-candidate", "confidence": 0.88, "reasoning": "Vehicle receiving work — real shop environment", "object_tags": ["vehicle", "work-in-progress"]},
+    {"path": "photos-raw/gbp-05.jpg", "label": "proof-candidate", "confidence": 0.92, "reasoning": "Clean vehicle, good lighting — quality result shot", "object_tags": ["vehicle", "finished", "clean-environment"]},
+    {"path": "photos-raw/gbp-06.jpg", "label": "gallery-candidate", "confidence": 0.85, "reasoning": "Another vehicle, similar context", "object_tags": ["vehicle"]},
+    {"path": "photos-raw/gbp-07.jpg", "label": "gallery-candidate", "confidence": 0.87, "reasoning": "Body work in progress", "object_tags": ["vehicle", "repair", "work-in-progress"]},
+    {"path": "photos-raw/gbp-08.jpg", "label": "gallery-candidate", "confidence": 0.86, "reasoning": "Interior/shop environment", "object_tags": ["shop-interior", "tools"]},
+    {"path": "photos-raw/gbp-09.jpg", "label": "gallery-candidate", "confidence": 0.85, "reasoning": "Vehicle, context somewhat ambiguous", "object_tags": ["vehicle"]},
+    {"path": "photos-raw/gbp-10.jpg", "label": "gallery-candidate", "confidence": 0.88, "reasoning": "Vehicle with what looks like fresh clear coat/paint", "object_tags": ["vehicle", "paint", "finished"]},
+    {"path": "photos-raw/yelp-05.jpg", "label": "gallery-candidate", "confidence": 0.90, "reasoning": "Real Yelp photo — consistent quality with GBP", "object_tags": ["vehicle", "result"]},
+    {"path": "photos-raw/yelp-06.jpg", "label": "gallery-candidate", "confidence": 0.90, "reasoning": "Real Yelp photo", "object_tags": ["vehicle", "result"]},
+    {"path": "photos-raw/yelp-07.jpg", "label": "gallery-candidate", "confidence": 0.90, "reasoning": "Real Yelp photo", "object_tags": ["vehicle", "result"]},
+    {"path": "photos-raw/yelp-08.jpg", "label": "gallery-candidate", "confidence": 0.90, "reasoning": "Real Yelp photo", "object_tags": ["vehicle", "result"]}
   ],
   "hero_recommendation": {
-    "preferred_path": "photos-generated/hero-01.png",
+    "preferred_path": "photos-generated/hero-aspirational-01.png",
     "preferred_source": "generated",
-    "fallback_path": "photos-raw/gbp-04.jpg",
-    "reasoning": "Original request set hero_intent: aspirational and generated_images_allowed: yes. The generated hero is the strongest homepage hero: polished horizontal composition, no people/logos/license plates/text, and appropriate for aspirational-body-shop-OK|atmosphere-OK. Use real GBP photos as proof/gallery, especially gbp-01 for exterior proof and gbp-04/09 for facility credibility. Fallback if Mini overrides generated hero: gbp-04, the clean paint booth/facility image.",
-    "v2_status": "unchanged after design port v2 revalidation",
-    "v2_reasoning": "The darker hero overlay and more prominent kicker make the generated hero read better, not worse: the image has strong horizontal composition, clean negative space for copy, no real-business proof claims, no people/logos/plates/text, and enough polished shop atmosphere to support aspirational-body-shop-OK|atmosphere-OK. photos-raw/gbp-04.jpg remains the fallback, but no raw photo reads stronger as the homepage hero under the v2 treatment."
+    "fallback_path": "photos-raw/gbp-05.jpg",
+    "reasoning": "hero_intent=aspirational; no strong real hero candidate in GBP; gbp-05 is best documentary fallback but generated hero better matches the aspirational brief"
   },
   "icon_warnings": [],
   "object_verification": [
-    {
-      "claim": "Forest Park Collision is a real collision repair / auto body / paint shop.",
-      "evidence": "GBP and Yelp raw photos show the business exterior/signage, paint booth, masked vehicles, frame/chassis repair, paint mixing equipment, and finished vehicles. Reviews mention Kevin, collision/body shop work, estimates, mirror replacement, and cars looking brand new.",
-      "confidence": 0.94
-    },
-    {
-      "claim": "Generated hero is synthetic aspirational atmosphere, not actual company work.",
-      "evidence": "Generated via image model from a text prompt. It contains no people, logos, license plates, or readable text and should only be used in aspirational-body-shop-OK or atmosphere-OK contexts.",
-      "confidence": 1.0
-    },
-    {
-      "claim": "Existing icons match collision vertical intent.",
-      "evidence": "HTML uses car, paintbrush, shield, and file-text for collision repair, paint, dent/bumper, and insurance claims. These align with icon-intent.json and the collision mapping notes.",
-      "confidence": 0.9
-    }
+    {"claim": "collision-repair vertical", "evidence": "All 13 real photos show vehicle repair environment — lifts, body work, fresh paint. No unrelated imagery.", "confidence": 0.97}
   ],
   "review_coverage": {
-    "captured_total": 5,
-    "sources_present": [
-      "google-places"
-    ],
-    "sources_recommended_for_enrichment": [
-      "yelp",
-      "facebook",
-      "nextdoor"
-    ],
+    "captured_total": 8,
+    "sources_present": ["google", "yelp"],
+    "sources_recommended_for_enrichment": ["nextdoor-login-required", "bbb-not-attempted"],
     "sufficiency": "sufficient",
-    "reasoning": "Five full-text Google reviews are enough for Path A reviews rendering and include recent, specific claims about Kevin, estimates, service quality, and cars looking brand new. Yelp review text remains unavailable due JS/login constraints; pursue only if more testimonial diversity is needed."
+    "reasoning": "8 named/cross-named reviews from 2 sources. Kevin referenced by name in 3/8. Sufficient for build."
   },
   "generated_images": [
     {
-      "path": "photos-generated/hero-01.png",
+      "path": "photos-generated/hero-aspirational-01.png",
       "purpose": "hero",
-      "prompt": "Photorealistic editorial hero image for a local Atlanta collision repair and auto body shop. A clean modern body shop interior with a freshly repaired dark sedan under soft overhead shop lights, polished paint reflections, subtle tools and paint booth atmosphere in the background, trustworthy family-run neighborhood business feel, no visible logos, no readable text, no license plates, no people, no claims of real customer work, cinematic but realistic, horizontal website hero composition, space on left for headline overlay, warm professional lighting.",
+      "prompt": "Editorial-style photograph of a clean, modern auto body shop interior. A pristine vehicle — a glossy black SUV — sits center-frame under dramatic overhead lighting, its paint reflecting shop lights like a mirror. The environment is orderly: tool boards on the wall are visible but not cluttered, concrete floor is clean, the space feels professional and trustworthy. Cinematic lighting, shallow depth of field, the car is the hero. Not staged or faked — aspirational automotive imagery. 4K, professional photography quality.",
       "model": "minimax/image-01",
-      "model_revision": "OpenClaw image_generate 2026-04-26; GPT-image-2 requested but provider fallback returned minimax/image-01",
+      "model_revision": "image-01",
       "license_note": "Synthetic image. Do not represent as actual company work.",
-      "intended_slot_context": "aspirational-body-shop-OK|atmosphere-OK",
-      "safety_flags": [
-        "reads slightly more premium/detailing than active collision repair",
-        "synthetic image; do not use for proof/team/real-job contexts"
-      ],
-      "prompt_revision_count": 1
+      "intended_slot_context": "aspirational-OK | atmosphere-OK"
+    },
+    {
+      "path": "photos-generated/service-card-bg-01.png",
+      "purpose": "service-card-bg",
+      "prompt": "Atmospheric background image for an auto body shop service card. Shows a professional technician using a polish buffer on a freshly painted car panel in a clean spray booth. Warm industrial lighting, motion blur on the buffer pad, paint mist in the air catching light. No people identifiable. Rich saturated color, cinematic quality.",
+      "model": "minimax/image-01",
+      "model_revision": "image-01",
+      "license_note": "Synthetic image. Do not represent as actual company work.",
+      "intended_slot_context": "atmosphere-OK"
+    },
+    {
+      "path": "photos-generated/service-card-bg-02.png",
+      "purpose": "service-card-bg",
+      "prompt": "Atmospheric background image for an auto body shop service card. A wide-angle view of a clean modern collision repair shop floor — multiple bays, one car on a frame rack being inspected, spray guns hung neatly on a tool board in the background. Bright fluorescent overhead lighting, polished concrete floor. Professional, trustworthy, competent. No people identifiable. 4K quality.",
+      "model": "minimax/image-01",
+      "model_revision": "image-01",
+      "license_note": "Synthetic image. Do not represent as actual company work.",
+      "intended_slot_context": "atmosphere-OK"
+    },
+    {
+      "path": "photos-generated/service-card-bg-03.png",
+      "purpose": "service-card-bg",
+      "prompt": "Atmospheric background for an auto body shop service card. A close-up detail shot of paint being applied with a spray gun to a prepped car panel — fine orange peel texture catching light, thin mist of overspray, professional collision repair setting. Clean, focused, competent. No faces or identifiable people.",
+      "model": "minimax/image-01",
+      "model_revision": "image-01",
+      "license_note": "Synthetic image. Do not represent as actual company work.",
+      "intended_slot_context": "atmosphere-OK"
     }
-  ],
-  "generated_cap_exception_recommended": false,
-  "revalidated_against_design_port_v2": {
-    "revalidated_at": "2026-04-27T07:45:00-07:00",
-    "design_ref": "messages/r1vs/2026-04-27-061500-r1vs-design-port-v2-shipped.md",
-    "hero_recommendation_status": "unchanged",
-    "object_context_status": "unchanged: aspirational-body-shop-OK|atmosphere-OK",
-    "icon_status": "unchanged",
-    "gallery_caption_overlay_note": "v2 hover captions sit over the bottom of gallery images. Keep labels, but avoid using flagged images where the lower third carries the primary proof detail unless the caption overlay is acceptable or the image is cropped upward."
-  }
+  ]
 }
