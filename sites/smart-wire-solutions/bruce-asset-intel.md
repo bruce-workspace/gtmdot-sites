@@ -9,7 +9,7 @@ collect_type: Bruce §11.11 asset-intel pass
 
 ## Result
 
-Asset pass complete with one caveat: Google image generation was blocked by the project monthly spend cap, so the hero was generated with OpenAI `gpt-image-2` instead. Google KP confirms 5.0★ across 17 reviews, but direct Place Details via `cid:4706905946096216564` returned `INVALID_REQUEST` from Bruce's runtime, so I captured real verbatim secondary recommendations and left the Google-verbatim gap explicit.
+Asset pass complete. OpenAI `gpt-image-2` is now the preferred hero-generation path for this SmartWire handoff; Google image generation was attempted first only because that was the prior plan, and it was blocked by the project monthly spend cap. Google KP confirms 5.0★ across 17 reviews, but direct Place Details via `cid:4706905946096216564` returned `INVALID_REQUEST` from Bruce's runtime, so I captured real verbatim secondary recommendations and left the Google-verbatim gap explicit.
 
 ## Hero Recommendation
 
@@ -52,6 +52,6 @@ Captured quotes:
 
 ## Blockers / Caveats
 
-- Google Image Gen 2/3 path failed due monthly spending cap: `RESOURCE_EXHAUSTED`. Fallback OpenAI hero generated successfully.
+- OpenAI `gpt-image-2` hero is preferred going forward. Google Image Gen 2/3 failed due monthly spending cap: `RESOURCE_EXHAUSTED`, but no replacement is needed unless Jesse dislikes the OpenAI hero.
 - Google Place Details lookup by `cid:<decimal>` failed from Bruce runtime even though KP confirms the listing. SAB/KP path remains brittle.
 - Browser navigation to Google share URL is blocked by Bruce runtime policy, so Google verbatim review extraction needs Mini/browser or a patched collector.

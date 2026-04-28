@@ -6,7 +6,9 @@
     "reasoning": "openai-codex-gpt-5.5",
     "image_generation_requested": "google/gemini-3-pro-image-preview",
     "image_generation_actual": "openai/gpt-image-2",
-    "google_image_generation_status": "blocked: RESOURCE_EXHAUSTED monthly spending cap"
+    "google_image_generation_status": "blocked: RESOURCE_EXHAUSTED monthly spending cap",
+    "image_generation_preferred_default": "openai/gpt-image-2",
+    "image_generation_note": "OpenAI hero is preferred going forward; Google was attempted only because of the earlier plan and failed on spending cap."
   },
   "photo_quality": [
     {
