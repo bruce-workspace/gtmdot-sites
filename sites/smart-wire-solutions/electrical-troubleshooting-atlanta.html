@@ -1,0 +1,328 @@
+<!doctype html>
+<!--
+  PER-SERVICE SEO PAGE TEMPLATE
+  Copy this once per service in the vertical and rename to /{service-slug}-{city}.html
+  Example filenames:
+    /refrigerator-repair-atlanta.html
+    /ac-repair-atlanta.html
+    /drain-cleaning-atlanta.html
+
+  Every per-service page MUST have:
+    - Unique <title> with service + city
+    - Unique <meta name="description"> (140-160 chars)
+    - Unique <h1> matching title intent
+    - JSON-LD Service schema linked to LocalBusiness
+    - 400-600 words of unique content (not duplicated from other service pages)
+    - Specific photos via .gtmdot-photo-slot with service-relevant data-context
+    - 3-5 service-specific FAQs for long-tail queries
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Residential Electrical Troubleshooting in Atlanta, GA — SmartWire Solutions</title>
+  <meta name="description" content="Atlanta electrical troubleshooting from a Master Electrician with 30+ years experience. Terry Henry — fixes the problems other electricians can't. Call (404) 382-9847.">
+  <link rel="canonical" href="https://smart-wire-solutions.pages.dev/electrical-troubleshooting-atlanta.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="_base.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+  <!-- JSON-LD Service schema, linked to parent LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Residential Electrical Troubleshooting in Atlanta",
+    "serviceType": "Residential Electrical Troubleshooting",
+    "description": "Atlanta electrical troubleshooting from a Master Electrician with 30+ years experience. Terry Henry — fixes the problems other electricians can't. Call (404) 382-9847.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "SmartWire Solutions LLC",
+      "telephone": "(404) 382-9847",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "730 Peachtree St NE, Ste 570",
+        "addressLocality": "Atlanta",
+        "addressRegion": "GA",
+        "postalCode": "30308",
+        "addressCountry": "US"
+      },
+      "url": "https://smart-wire-solutions.pages.dev/"
+    },
+    "areaServed": "Midtown Atlanta, Buckhead, Inman Park, Decatur, Sandy Springs, Brookhaven, South Fulton, and surrounding Metro Atlanta neighborhoods",
+    "url": "https://smart-wire-solutions.pages.dev/electrical-troubleshooting-atlanta.html"
+  }
+  </script>
+
+  <!-- JSON-LD FAQPage schema (use ONLY if the page has 3+ FAQs) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why hire a troubleshooter instead of just having the problem fixed?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Because most electrical problems aren't what they look like. The kitchen outlet that doesn't work might be a tripped GFCI in the bathroom. The flickering light might be a loose neutral in the panel. Diagnosing first means you only pay for the fix you actually need — instead of paying an electrician to guess." }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the diagnostic fee?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Flat $150 for the first hour of diagnostic work, $75 each additional hour. If you decide to have us do the repair, the diagnostic fee gets applied toward the repair cost. No charge for problems we can't reproduce or that turn out to be something simple you can fix yourself." }
+      },
+      {
+        "@type": "Question",
+        "name": "What if you can't figure it out?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It's rare, but it happens. If we can't isolate the cause within the diagnostic visit, we'll tell you what we ruled out, what's still possible, and recommend next steps. You'll have a written report you can hand to anyone else. We won't keep you on a meter chasing something we don't understand." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
+    <a class="site-logo" href="/">SmartWire Solutions</a>
+    <nav class="site-nav">
+      <a href="/services.html">Services</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a class="cta-btn" href="/contact.html">Get an Estimate</a>
+    </nav>
+    <button class="hamburger" aria-label="Open menu" onclick="document.querySelector('.site-nav').classList.toggle('open')">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</header>
+
+<!-- HERO (service-specific) -->
+<section class="hero" style="min-height: 60vh;">
+  <div class="wrap">
+    <div class="hero-content">
+      <div class="hero-stamps">
+        <span class="hero-kicker">Electrical services · Atlanta</span>
+      </div>
+      <p class="prose breadcrumb" style="margin: 0 0 16px;">
+        <a href="/services.html">Services</a> / Residential Electrical Troubleshooting
+      </p>
+      <h1>Atlanta electrical troubleshooting — figuring out what nobody else could.</h1>
+      <p class="lede">When the breaker keeps tripping, the lights flicker for no reason, half the kitchen is out — that's our specialty. We diagnose, explain, and fix.</p>
+      <div class="hero-actions">
+        <a class="cta-btn" href="/contact.html">
+          <i data-lucide="message-circle"></i>
+          Get an Estimate
+        </a>
+        <a class="btn-ghost" href="tel:+14043829847">
+          <i data-lucide="phone"></i>
+          (404) 382-9847
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE BODY — 400-600 words of unique content -->
+<section>
+  <div class="wrap">
+    <div class="prose">
+      <span class="eyebrow">About this service</span>
+      <h2>When other electricians have given up</h2>
+      <p>Some electrical problems are obvious — a bad outlet, a failed switch, a tripped GFCI. Others aren't. The light that flickers only when the AC kicks on. The breaker that trips at 3 AM but never during the day. The dead circuit that doesn't show on any panel label. Those are the calls we get most.</p>
+      <p>Troubleshooting is the part of electrical work that takes the most experience and the least equipment. Mostly it's a methodical process of elimination — testing voltage at known points, isolating circuits, checking continuity, and most of all knowing what to look for based on what's been seen before. Terry's been doing this for thirty years. He's seen a lot.</p>
+
+      <h3>How troubleshooting actually works</h3>
+      <p>The reason we list this as its own service is that diagnostic calls aren't the same as repair calls. Sometimes we figure out the problem in twenty minutes and the actual fix is something you can do yourself. Sometimes the problem points to a deeper rewiring need we couldn't have predicted. Either way, we'll explain what we found in plain language and write up the recommendation — even if the work itself isn't ours to do.</p>
+      <p>If your previous electrician told you you'll have to live with it, or quoted you a six-thousand-dollar full-house rewire when you don't think the problem is that big — we're worth a second opinion. We won't oversell. We will figure it out.</p>
+
+      <h3>What to expect</h3>
+      <ol>
+        <li>Tell us what's happening — when it happens, where, what triggered it the first time you noticed.</li>
+        <li>We schedule a diagnostic visit. Usually one to two hours. Flat-rate diagnostic fee, applied to the work if you decide to have us fix it.</li>
+        <li>We test, isolate, and explain what's going on — in writing — including what would and wouldn't fix it.</li>
+        <li>You decide. We can fix it on the spot, schedule a return visit, or walk you through fixing it yourself if it's that simple. No hard sell.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE-SPECIFIC GALLERY -->
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Recent work</span>
+      <h2>Residential Electrical Troubleshooting jobs.</h2>
+    </div>
+    <div class="gtmdot-photo-gallery">
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="SERVICE_GALLERY_1"
+              data-context="panel-troubleshooting-OK | meter-testing-OK | breaker-box-OK | electrician-tools-OK"
+              data-resolved="false">
+        <img src="photos/gbp-1.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="SERVICE_GALLERY_2"
+              data-context="panel-troubleshooting-OK | meter-testing-OK | breaker-box-OK | electrician-tools-OK"
+              data-resolved="false">
+        <img src="photos/gbp-2.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="SERVICE_GALLERY_3"
+              data-context="panel-troubleshooting-OK | meter-testing-OK | breaker-box-OK | electrician-tools-OK"
+              data-resolved="false">
+        <img src="photos/gbp-3.jpg" alt="">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- FAQs -->
+<section>
+  <div class="wrap">
+    <div class="section-head" style="text-align: center; margin-left: auto; margin-right: auto;">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions about Residential Electrical Troubleshooting.</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>Why hire a troubleshooter instead of just having the problem fixed?</summary>
+        <p>Because most electrical problems aren't what they look like. The kitchen outlet that doesn't work might be a tripped GFCI in the bathroom. The flickering light might be a loose neutral in the panel. Diagnosing first means you only pay for the fix you actually need — instead of paying an electrician to guess.</p>
+      </details>
+      <details>
+        <summary>What's the diagnostic fee?</summary>
+        <p>Flat $150 for the first hour of diagnostic work, $75 each additional hour. If you decide to have us do the repair, the diagnostic fee gets applied toward the repair cost. No charge for problems we can't reproduce or that turn out to be something simple you can fix yourself.</p>
+      </details>
+      <details>
+        <summary>What if you can't figure it out?</summary>
+        <p>It's rare, but it happens. If we can't isolate the cause within the diagnostic visit, we'll tell you what we ruled out, what's still possible, and recommend next steps. You'll have a written report you can hand to anyone else. We won't keep you on a meter chasing something we don't understand.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ESTIMATE BAND — present on every page except contact.html -->
+<section class="estimate-band">
+  <div class="wrap estimate-band-grid">
+    <div class="estimate-band-copy">
+      <span class="eyebrow">Get an estimate</span>
+      <h2>Free quote, usually same week.</h2>
+      <p class="lede">Tell us about the job. We'll get back to you with a written estimate — no obligation, no upsell.</p>
+      <ul class="trust-row">
+        <li>Free written estimates, every time</li>
+        <li>Same-week scheduling for most jobs</li>
+        <li>5.0★ from 17 Atlanta customers</li>
+        <li>Serving Midtown Atlanta, Buckhead, Inman Park, Decatur, Sandy Springs, Brookhaven, South Fulton, and surrounding Metro Atlanta neighborhoods</li>
+      </ul>
+      <div class="direct-line">
+        <span class="label">Or call us direct</span>
+        <a class="phone" href="tel:+14043829847">(404) 382-9847</a>
+      </div>
+    </div>
+
+    <form class="estimate-form" method="post" action="https://crm.cloakanddagger.co/api/site-intake">
+      <div class="form-head">
+        <h3>Tell us about the job</h3>
+        <span class="response-time"><span class="dot"></span>Replies same day</span>
+      </div>
+
+      <div class="row-2">
+        <div>
+          <label for="estimate-name">Name</label>
+          <input id="estimate-name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="estimate-phone">Phone</label>
+          <input id="estimate-phone" name="phone" type="tel">
+        </div>
+      </div>
+
+      <div>
+        <label for="estimate-email">Email</label>
+        <input id="estimate-email" name="email" type="email" required>
+      </div>
+
+      <div>
+        <label for="estimate-service">Service needed</label>
+        <select id="estimate-service" name="service" required>
+          <option value="">Select a service…</option>
+          <option value="electrical-repair-atlanta">Electrical Repairs</option>
+          <option value="ceiling-fan-installation-atlanta">Ceiling Fan Installation</option>
+          <option value="recessed-lighting-atlanta">Recessed Lighting</option>
+          <option value="electrical-troubleshooting-atlanta">Residential Electrical Troubleshooting</option>
+          <option value="other">Other / not sure</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="estimate-message">What do you need? (the more detail, the better the estimate)</label>
+        <textarea id="estimate-message" name="message" required></textarea>
+      </div>
+
+      <div class="form-foot">
+        <p class="privacy">We never share your info. By submitting, you agree we may text or email about your estimate.</p>
+        <button type="submit" class="submit">
+          <i data-lucide="send"></i>
+          Get an Estimate
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="wrap">
+    <span class="eyebrow">Or just give us a call</span>
+    <h2>Free estimates. Same-week scheduling. Most jobs done in one visit.</h2>
+    <p class="cta-tail"><a class="cta-phone" href="tel:+14043829847">(404) 382-9847</a></p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>SmartWire Solutions</h4>
+        <p>Atlanta's family electrician since 2004 — master-credentialed, veteran-owned.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="/services.html">All services</a>
+        <a href="/electrical-repair-atlanta.html">Electrical Repairs</a>
+        <a href="/ceiling-fan-installation-atlanta.html">Ceiling Fan Installation</a>
+        <a href="/recessed-lighting-atlanta.html">Recessed Lighting</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+14043829847">(404) 382-9847</a>
+        <a href="mailto:info@smartwiresolutions.com">info@smartwiresolutions.com</a>
+        <p style="margin-top: 8px;">Serving Midtown Atlanta, Buckhead, Inman Park, Decatur, Sandy Springs, Brookhaven, South Fulton, and surrounding Metro Atlanta neighborhoods</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 SmartWire Solutions LLC. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  if (window.lucide) window.lucide.createIcons();
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
+  });
+</script>
+
+</body>
+</html>

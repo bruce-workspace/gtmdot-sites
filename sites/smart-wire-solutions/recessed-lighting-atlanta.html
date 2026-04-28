@@ -1,0 +1,328 @@
+<!doctype html>
+<!--
+  PER-SERVICE SEO PAGE TEMPLATE
+  Copy this once per service in the vertical and rename to /{service-slug}-{city}.html
+  Example filenames:
+    /refrigerator-repair-atlanta.html
+    /ac-repair-atlanta.html
+    /drain-cleaning-atlanta.html
+
+  Every per-service page MUST have:
+    - Unique <title> with service + city
+    - Unique <meta name="description"> (140-160 chars)
+    - Unique <h1> matching title intent
+    - JSON-LD Service schema linked to LocalBusiness
+    - 400-600 words of unique content (not duplicated from other service pages)
+    - Specific photos via .gtmdot-photo-slot with service-relevant data-context
+    - 3-5 service-specific FAQs for long-tail queries
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recessed Lighting in Atlanta, GA — SmartWire Solutions</title>
+  <meta name="description" content="Atlanta recessed lighting from a Master Electrician. Even spacing, dimmable LED, no patch-and-paint mess. Family business since 2004. Call (404) 382-9847.">
+  <link rel="canonical" href="https://smart-wire-solutions.pages.dev/recessed-lighting-atlanta.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="_base.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+  <!-- JSON-LD Service schema, linked to parent LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Recessed Lighting in Atlanta",
+    "serviceType": "Recessed Lighting",
+    "description": "Atlanta recessed lighting from a Master Electrician. Even spacing, dimmable LED, no patch-and-paint mess. Family business since 2004. Call (404) 382-9847.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "SmartWire Solutions LLC",
+      "telephone": "(404) 382-9847",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "730 Peachtree St NE, Ste 570",
+        "addressLocality": "Atlanta",
+        "addressRegion": "GA",
+        "postalCode": "30308",
+        "addressCountry": "US"
+      },
+      "url": "https://smart-wire-solutions.pages.dev/"
+    },
+    "areaServed": "Midtown Atlanta, Buckhead, Inman Park, Decatur, Sandy Springs, Brookhaven, South Fulton, and surrounding Metro Atlanta neighborhoods",
+    "url": "https://smart-wire-solutions.pages.dev/recessed-lighting-atlanta.html"
+  }
+  </script>
+
+  <!-- JSON-LD FAQPage schema (use ONLY if the page has 3+ FAQs) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many recessed lights do I need in my room?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Rule of thumb: ceiling height divided by two equals the spacing between cans. So a 9-foot ceiling wants cans about 4.5 feet apart, and you'd want a can roughly every 20 to 25 square feet of floor. For a 12-by-14 living room you're typically looking at 4 to 6 cans. We'll lay out the right number for your room before any work starts." }
+      },
+      {
+        "@type": "Question",
+        "name": "Will my ceiling need to be patched?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sometimes — depends on whether we can fish wire from existing access (an attic above) or have to make a small access hole. If we do open the ceiling, we patch and primer it. Final paint match is on you (or a painter), since we don't carry your wall color." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can the lights dim?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — recessed LED is best when paired with a smart dimmer rated for LEDs. Cheap dimmers cause LED buzzing and flickering. We'll spec the right dimmer for your bulbs and install it as part of the job." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
+    <a class="site-logo" href="/">SmartWire Solutions</a>
+    <nav class="site-nav">
+      <a href="/services.html">Services</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a class="cta-btn" href="/contact.html">Get an Estimate</a>
+    </nav>
+    <button class="hamburger" aria-label="Open menu" onclick="document.querySelector('.site-nav').classList.toggle('open')">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</header>
+
+<!-- HERO (service-specific) -->
+<section class="hero" style="min-height: 60vh;">
+  <div class="wrap">
+    <div class="hero-content">
+      <div class="hero-stamps">
+        <span class="hero-kicker">Electrical services · Atlanta</span>
+      </div>
+      <p class="prose breadcrumb" style="margin: 0 0 16px;">
+        <a href="/services.html">Services</a> / Recessed Lighting
+      </p>
+      <h1>Recessed lighting installation in Atlanta — clean ceilings, real light.</h1>
+      <p class="lede">Add four cans to a kitchen, six to a living room, twelve across an open floor plan — we space them evenly, run the wire cleanly, and finish the ceiling so you can't tell we were there.</p>
+      <div class="hero-actions">
+        <a class="cta-btn" href="/contact.html">
+          <i data-lucide="message-circle"></i>
+          Get an Estimate
+        </a>
+        <a class="btn-ghost" href="tel:+14043829847">
+          <i data-lucide="phone"></i>
+          (404) 382-9847
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE BODY — 400-600 words of unique content -->
+<section>
+  <div class="wrap">
+    <div class="prose">
+      <span class="eyebrow">About this service</span>
+      <h2>Recessed lighting is mostly about the ceiling</h2>
+      <p>If you've ever had recessed lights installed and ended up with patches of drywall mud on the ceiling, you already know the hard part isn't the wiring — it's the holes. We cut holes carefully, fish wire through joists without opening up the ceiling more than we have to, and finish so you don't need to repaint the whole room.</p>
+      <p>The default for residential is four-inch or six-inch LED downlights, dimmable, in a warm color temperature (2700K to 3000K) so the room doesn't feel like an office. We can do anything else you want — adjustable gimbals, square trims, larger eight-inch cans for high ceilings, color-tunable smart bulbs — but for most Atlanta homes the default works beautifully.</p>
+
+      <h3>What we do differently</h3>
+      <p>We plan the layout before we cut anything. Even spacing matters. The rule of thumb is height-of-ceiling divided by two for the spacing between cans, and half that distance from the wall — but the right answer depends on the furniture below, where you actually need light, and where the joists are running. We'll walk through it with you before we touch the drywall.</p>
+      <p>For dimming, we strongly recommend a smart dimmer that's compatible with whatever LED you're using. Cheap LED-incompatible dimmers are the leading cause of buzzing recessed lights in Atlanta homes. We'll spec the right dimmer for the bulbs you're using.</p>
+
+      <h3>What to expect</h3>
+      <ol>
+        <li>Walkthrough: we look at the room, talk about how you use it, and sketch a layout. Free.</li>
+        <li>Written estimate: number of cans, trim style, bulb spec, dimmer, drywall cleanup, total cost.</li>
+        <li>Install: typical kitchen or living-room install runs four to six hours. Most of that is fishing wire, not cutting holes.</li>
+        <li>Cleanup and walkthrough: we patch and primer any necessary drywall, vacuum, and walk through the dimming and switching with you.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE-SPECIFIC GALLERY -->
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Recent work</span>
+      <h2>Recessed Lighting jobs.</h2>
+    </div>
+    <div class="gtmdot-photo-gallery">
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="SERVICE_GALLERY_1"
+              data-context="recessed-lighting-finished-OK | living-room-OK | kitchen-OK | clean-ceiling-OK"
+              data-resolved="false">
+        <img src="photos/gbp-1.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="SERVICE_GALLERY_2"
+              data-context="recessed-lighting-finished-OK | living-room-OK | kitchen-OK | clean-ceiling-OK"
+              data-resolved="false">
+        <img src="photos/gbp-2.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="SERVICE_GALLERY_3"
+              data-context="recessed-lighting-finished-OK | living-room-OK | kitchen-OK | clean-ceiling-OK"
+              data-resolved="false">
+        <img src="photos/gbp-3.jpg" alt="">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- FAQs -->
+<section>
+  <div class="wrap">
+    <div class="section-head" style="text-align: center; margin-left: auto; margin-right: auto;">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions about Recessed Lighting.</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>How many recessed lights do I need in my room?</summary>
+        <p>Rule of thumb: ceiling height divided by two equals the spacing between cans. So a 9-foot ceiling wants cans about 4.5 feet apart, and you'd want a can roughly every 20 to 25 square feet of floor. For a 12-by-14 living room you're typically looking at 4 to 6 cans. We'll lay out the right number for your room before any work starts.</p>
+      </details>
+      <details>
+        <summary>Will my ceiling need to be patched?</summary>
+        <p>Sometimes — depends on whether we can fish wire from existing access (an attic above) or have to make a small access hole. If we do open the ceiling, we patch and primer it. Final paint match is on you (or a painter), since we don't carry your wall color.</p>
+      </details>
+      <details>
+        <summary>Can the lights dim?</summary>
+        <p>Yes — recessed LED is best when paired with a smart dimmer rated for LEDs. Cheap dimmers cause LED buzzing and flickering. We'll spec the right dimmer for your bulbs and install it as part of the job.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ESTIMATE BAND — present on every page except contact.html -->
+<section class="estimate-band">
+  <div class="wrap estimate-band-grid">
+    <div class="estimate-band-copy">
+      <span class="eyebrow">Get an estimate</span>
+      <h2>Free quote, usually same week.</h2>
+      <p class="lede">Tell us about the job. We'll get back to you with a written estimate — no obligation, no upsell.</p>
+      <ul class="trust-row">
+        <li>Free written estimates, every time</li>
+        <li>Same-week scheduling for most jobs</li>
+        <li>5.0★ from 17 Atlanta customers</li>
+        <li>Serving Midtown Atlanta, Buckhead, Inman Park, Decatur, Sandy Springs, Brookhaven, South Fulton, and surrounding Metro Atlanta neighborhoods</li>
+      </ul>
+      <div class="direct-line">
+        <span class="label">Or call us direct</span>
+        <a class="phone" href="tel:+14043829847">(404) 382-9847</a>
+      </div>
+    </div>
+
+    <form class="estimate-form" method="post" action="https://crm.cloakanddagger.co/api/site-intake">
+      <div class="form-head">
+        <h3>Tell us about the job</h3>
+        <span class="response-time"><span class="dot"></span>Replies same day</span>
+      </div>
+
+      <div class="row-2">
+        <div>
+          <label for="estimate-name">Name</label>
+          <input id="estimate-name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="estimate-phone">Phone</label>
+          <input id="estimate-phone" name="phone" type="tel">
+        </div>
+      </div>
+
+      <div>
+        <label for="estimate-email">Email</label>
+        <input id="estimate-email" name="email" type="email" required>
+      </div>
+
+      <div>
+        <label for="estimate-service">Service needed</label>
+        <select id="estimate-service" name="service" required>
+          <option value="">Select a service…</option>
+          <option value="electrical-repair-atlanta">Electrical Repairs</option>
+          <option value="ceiling-fan-installation-atlanta">Ceiling Fan Installation</option>
+          <option value="recessed-lighting-atlanta">Recessed Lighting</option>
+          <option value="electrical-troubleshooting-atlanta">Residential Electrical Troubleshooting</option>
+          <option value="other">Other / not sure</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="estimate-message">What do you need? (the more detail, the better the estimate)</label>
+        <textarea id="estimate-message" name="message" required></textarea>
+      </div>
+
+      <div class="form-foot">
+        <p class="privacy">We never share your info. By submitting, you agree we may text or email about your estimate.</p>
+        <button type="submit" class="submit">
+          <i data-lucide="send"></i>
+          Get an Estimate
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="wrap">
+    <span class="eyebrow">Or just give us a call</span>
+    <h2>Free estimates. Same-week scheduling. Most jobs done in one visit.</h2>
+    <p class="cta-tail"><a class="cta-phone" href="tel:+14043829847">(404) 382-9847</a></p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>SmartWire Solutions</h4>
+        <p>Atlanta's family electrician since 2004 — master-credentialed, veteran-owned.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="/services.html">All services</a>
+        <a href="/electrical-repair-atlanta.html">Electrical Repairs</a>
+        <a href="/ceiling-fan-installation-atlanta.html">Ceiling Fan Installation</a>
+        <a href="/recessed-lighting-atlanta.html">Recessed Lighting</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+14043829847">(404) 382-9847</a>
+        <a href="mailto:info@smartwiresolutions.com">info@smartwiresolutions.com</a>
+        <p style="margin-top: 8px;">Serving Midtown Atlanta, Buckhead, Inman Park, Decatur, Sandy Springs, Brookhaven, South Fulton, and surrounding Metro Atlanta neighborhoods</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 SmartWire Solutions LLC. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  if (window.lucide) window.lucide.createIcons();
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
+  });
+</script>
+
+</body>
+</html>

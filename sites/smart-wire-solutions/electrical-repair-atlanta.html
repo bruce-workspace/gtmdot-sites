@@ -1,0 +1,328 @@
+<!doctype html>
+<!--
+  PER-SERVICE SEO PAGE TEMPLATE
+  Copy this once per service in the vertical and rename to /{service-slug}-{city}.html
+  Example filenames:
+    /refrigerator-repair-atlanta.html
+    /ac-repair-atlanta.html
+    /drain-cleaning-atlanta.html
+
+  Every per-service page MUST have:
+    - Unique <title> with service + city
+    - Unique <meta name="description"> (140-160 chars)
+    - Unique <h1> matching title intent
+    - JSON-LD Service schema linked to LocalBusiness
+    - 400-600 words of unique content (not duplicated from other service pages)
+    - Specific photos via .gtmdot-photo-slot with service-relevant data-context
+    - 3-5 service-specific FAQs for long-tail queries
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Electrical Repairs in Atlanta, GA — SmartWire Solutions</title>
+  <meta name="description" content="Atlanta electrical repair from a Master Electrician — Terry Henry, Air Force veteran, family business since 2004. Outlets, lights, breakers, troubleshooting. Call (404) 382-9847.">
+  <link rel="canonical" href="https://smart-wire-solutions.pages.dev/electrical-repair-atlanta.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="_base.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+  <!-- JSON-LD Service schema, linked to parent LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Electrical Repairs in Atlanta",
+    "serviceType": "Electrical Repairs",
+    "description": "Atlanta electrical repair from a Master Electrician — Terry Henry, Air Force veteran, family business since 2004. Outlets, lights, breakers, troubleshooting. Call (404) 382-9847.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "SmartWire Solutions LLC",
+      "telephone": "(404) 382-9847",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "730 Peachtree St NE, Ste 570",
+        "addressLocality": "Atlanta",
+        "addressRegion": "GA",
+        "postalCode": "30308",
+        "addressCountry": "US"
+      },
+      "url": "https://smart-wire-solutions.pages.dev/"
+    },
+    "areaServed": "Midtown Atlanta, Buckhead, Inman Park, Decatur, Sandy Springs, Brookhaven, South Fulton, and surrounding Metro Atlanta neighborhoods",
+    "url": "https://smart-wire-solutions.pages.dev/electrical-repair-atlanta.html"
+  }
+  </script>
+
+  <!-- JSON-LD FAQPage schema (use ONLY if the page has 3+ FAQs) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does an electrical repair call cost?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We don't quote until we've looked at the problem — repair work is too variable. What we promise is a free, written estimate before any work starts. Most residential repair calls fall in a $150 to $600 range; bigger jobs (rewires, panel work) can run more. You won't be surprised by a bill at the end." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you fix electrical work other electricians have done?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Probably more than half our calls are diagnosing and fixing problems someone else introduced — bad junction boxes, mis-wired switches, panels that grew ad-hoc over the years. Terry's been doing this for thirty years; he doesn't get judgmental about it. He just fixes it." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you come out the same day?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Often, yes — especially for safety issues like burning smells, sparking outlets, or panels that won't reset. Call (404) 382-9847 and tell us what's going on. We'll be straight with you about whether it's a same-day call." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
+    <a class="site-logo" href="/">SmartWire Solutions</a>
+    <nav class="site-nav">
+      <a href="/services.html">Services</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a class="cta-btn" href="/contact.html">Get an Estimate</a>
+    </nav>
+    <button class="hamburger" aria-label="Open menu" onclick="document.querySelector('.site-nav').classList.toggle('open')">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</header>
+
+<!-- HERO (service-specific) -->
+<section class="hero" style="min-height: 60vh;">
+  <div class="wrap">
+    <div class="hero-content">
+      <div class="hero-stamps">
+        <span class="hero-kicker">Electrical services · Atlanta</span>
+      </div>
+      <p class="prose breadcrumb" style="margin: 0 0 16px;">
+        <a href="/services.html">Services</a> / Electrical Repairs
+      </p>
+      <h1>Atlanta electrical repairs — fast, fair, and family-feel.</h1>
+      <p class="lede">From a single dead outlet to a panel that's been wired wrong for twenty years — Terry's seen all of it. We diagnose, repair, and explain.</p>
+      <div class="hero-actions">
+        <a class="cta-btn" href="/contact.html">
+          <i data-lucide="message-circle"></i>
+          Get an Estimate
+        </a>
+        <a class="btn-ghost" href="tel:+14043829847">
+          <i data-lucide="phone"></i>
+          (404) 382-9847
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE BODY — 400-600 words of unique content -->
+<section>
+  <div class="wrap">
+    <div class="prose">
+      <span class="eyebrow">About this service</span>
+      <h2>What “electrical repair” actually means to us</h2>
+      <p>Most calls start the same way: half the kitchen is out, or the breaker won't reset, or the lights flicker every time the AC kicks on. We've heard it all. Terry's been doing residential electrical work in Atlanta for over twenty years, and the truth is most repair calls turn out to be one of about a dozen things — but you can't know which one until someone with experience looks.</p>
+      <p>We don't quote a price before we diagnose. The difference between a five-minute fix and a four-hour rewire can come down to one bad junction box behind a wall, and we won't know which one it is until we're there. What we do is show up when we said we would, look carefully, explain what we're seeing in plain English, and write you a real estimate.</p>
+
+      <h3>How we work</h3>
+      <p>Our specialty is the residential repair work most electrical companies don't want — the troubleshooting calls, the “this never worked right since we moved in” jobs, the wiring left over from decades of well-meaning DIY. If your house was built before 1985, there's a decent chance someone's already invented a clever fix for whatever's wrong. We've seen most of those clever fixes.</p>
+      <p>We carry insurance, we pull permits where the city requires them, and we don't leave a job until you understand what we did. That's the family-feel half of family-electrician — we're not in a hurry to get to the next call.</p>
+
+      <h3>What to expect</h3>
+      <ol>
+        <li>Call (404) 382-9847 or use the form below — we usually answer the same day, even after hours.</li>
+        <li>We schedule a time that works for your house. Most repair calls fit in a one- or two-hour window.</li>
+        <li>Terry shows up, looks at the problem, explains what's going on, and writes you a written estimate. No pressure to say yes on the spot.</li>
+        <li>If you say yes, we do the work, walk you through what we changed, and clean up before we leave.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE-SPECIFIC GALLERY -->
+<section class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Recent work</span>
+      <h2>Electrical Repairs jobs.</h2>
+    </div>
+    <div class="gtmdot-photo-gallery">
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="SERVICE_GALLERY_1"
+              data-context="panel-work-OK | outlet-repair-OK | breaker-box-OK | clean-residential-OK | atmosphere-OK"
+              data-resolved="false">
+        <img src="photos/gbp-1.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="SERVICE_GALLERY_2"
+              data-context="panel-work-OK | outlet-repair-OK | breaker-box-OK | clean-residential-OK | atmosphere-OK"
+              data-resolved="false">
+        <img src="photos/gbp-2.jpg" alt="">
+      </figure>
+      <figure class="gtmdot-photo-slot"
+              data-slot-id="SERVICE_GALLERY_3"
+              data-context="panel-work-OK | outlet-repair-OK | breaker-box-OK | clean-residential-OK | atmosphere-OK"
+              data-resolved="false">
+        <img src="photos/gbp-3.jpg" alt="">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- FAQs -->
+<section>
+  <div class="wrap">
+    <div class="section-head" style="text-align: center; margin-left: auto; margin-right: auto;">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions about Electrical Repairs.</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>What does an electrical repair call cost?</summary>
+        <p>We don't quote until we've looked at the problem — repair work is too variable. What we promise is a free, written estimate before any work starts. Most residential repair calls fall in a $150 to $600 range; bigger jobs (rewires, panel work) can run more. You won't be surprised by a bill at the end.</p>
+      </details>
+      <details>
+        <summary>Do you fix electrical work other electricians have done?</summary>
+        <p>Yes. Probably more than half our calls are diagnosing and fixing problems someone else introduced — bad junction boxes, mis-wired switches, panels that grew ad-hoc over the years. Terry's been doing this for thirty years; he doesn't get judgmental about it. He just fixes it.</p>
+      </details>
+      <details>
+        <summary>Can you come out the same day?</summary>
+        <p>Often, yes — especially for safety issues like burning smells, sparking outlets, or panels that won't reset. Call (404) 382-9847 and tell us what's going on. We'll be straight with you about whether it's a same-day call.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ESTIMATE BAND — present on every page except contact.html -->
+<section class="estimate-band">
+  <div class="wrap estimate-band-grid">
+    <div class="estimate-band-copy">
+      <span class="eyebrow">Get an estimate</span>
+      <h2>Free quote, usually same week.</h2>
+      <p class="lede">Tell us about the job. We'll get back to you with a written estimate — no obligation, no upsell.</p>
+      <ul class="trust-row">
+        <li>Free written estimates, every time</li>
+        <li>Same-week scheduling for most jobs</li>
+        <li>5.0★ from 17 Atlanta customers</li>
+        <li>Serving Midtown Atlanta, Buckhead, Inman Park, Decatur, Sandy Springs, Brookhaven, South Fulton, and surrounding Metro Atlanta neighborhoods</li>
+      </ul>
+      <div class="direct-line">
+        <span class="label">Or call us direct</span>
+        <a class="phone" href="tel:+14043829847">(404) 382-9847</a>
+      </div>
+    </div>
+
+    <form class="estimate-form" method="post" action="https://crm.cloakanddagger.co/api/site-intake">
+      <div class="form-head">
+        <h3>Tell us about the job</h3>
+        <span class="response-time"><span class="dot"></span>Replies same day</span>
+      </div>
+
+      <div class="row-2">
+        <div>
+          <label for="estimate-name">Name</label>
+          <input id="estimate-name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="estimate-phone">Phone</label>
+          <input id="estimate-phone" name="phone" type="tel">
+        </div>
+      </div>
+
+      <div>
+        <label for="estimate-email">Email</label>
+        <input id="estimate-email" name="email" type="email" required>
+      </div>
+
+      <div>
+        <label for="estimate-service">Service needed</label>
+        <select id="estimate-service" name="service" required>
+          <option value="">Select a service…</option>
+          <option value="electrical-repair-atlanta">Electrical Repairs</option>
+          <option value="ceiling-fan-installation-atlanta">Ceiling Fan Installation</option>
+          <option value="recessed-lighting-atlanta">Recessed Lighting</option>
+          <option value="electrical-troubleshooting-atlanta">Residential Electrical Troubleshooting</option>
+          <option value="other">Other / not sure</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="estimate-message">What do you need? (the more detail, the better the estimate)</label>
+        <textarea id="estimate-message" name="message" required></textarea>
+      </div>
+
+      <div class="form-foot">
+        <p class="privacy">We never share your info. By submitting, you agree we may text or email about your estimate.</p>
+        <button type="submit" class="submit">
+          <i data-lucide="send"></i>
+          Get an Estimate
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="wrap">
+    <span class="eyebrow">Or just give us a call</span>
+    <h2>Free estimates. Same-week scheduling. Most jobs done in one visit.</h2>
+    <p class="cta-tail"><a class="cta-phone" href="tel:+14043829847">(404) 382-9847</a></p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>SmartWire Solutions</h4>
+        <p>Atlanta's family electrician since 2004 — master-credentialed, veteran-owned.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="/services.html">All services</a>
+        <a href="/electrical-repair-atlanta.html">Electrical Repairs</a>
+        <a href="/ceiling-fan-installation-atlanta.html">Ceiling Fan Installation</a>
+        <a href="/recessed-lighting-atlanta.html">Recessed Lighting</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+14043829847">(404) 382-9847</a>
+        <a href="mailto:info@smartwiresolutions.com">info@smartwiresolutions.com</a>
+        <p style="margin-top: 8px;">Serving Midtown Atlanta, Buckhead, Inman Park, Decatur, Sandy Springs, Brookhaven, South Fulton, and surrounding Metro Atlanta neighborhoods</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 SmartWire Solutions LLC. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  if (window.lucide) window.lucide.createIcons();
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
+  });
+</script>
+
+</body>
+</html>

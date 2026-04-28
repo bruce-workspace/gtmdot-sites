@@ -1,0 +1,23 @@
+{
+  "vertical": "electrical",
+  "trade_category": "Electrical services",
+  "service_cards": {
+    "electrical-repair": "zap",
+    "ceiling-fan-installation": "fan",
+    "recessed-lighting": "lightbulb",
+    "electrical-troubleshooting": "search"
+  },
+  "hero": null,
+  "nav": {
+    "menu": "menu"
+  },
+  "actions": {
+    "primary-cta": "message-circle",
+    "phone-cta": "phone",
+    "form-submit": "send"
+  },
+  "contact": {
+    "upload": "upload-cloud"
+  },
+  "notes": "Electrical vertical icons per ICON-MAPPING.md §Electrical. zap=general electrical repair (matches FPC + Plugged ATL convention for the broad repair card), fan=ceiling fan install (per ICON-MAPPING), lightbulb=lighting incl. recessed (per ICON-MAPPING), search=electrical inspection / troubleshooting (per ICON-MAPPING — this is the diagnose-don't-fix service). Action icons (message-circle, phone, send) are scaffold-level and appear on every multi-page site — listed under actions so they don't get confused with vertical icon choices."
+}

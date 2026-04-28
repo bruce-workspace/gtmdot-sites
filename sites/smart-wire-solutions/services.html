@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services — SmartWire Solutions LLC in Atlanta, GA</title>
+  <meta name="description" content="Full list of services from SmartWire Solutions LLC serving Atlanta and surrounding areas. From a flickering light to a full home rewire — Terry's been at it for thirty years and counting.">
+  <link rel="canonical" href="https://smart-wire-solutions.pages.dev/services.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="_base.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
+    <a class="site-logo" href="/">SmartWire Solutions</a>
+    <nav class="site-nav">
+      <a href="/services.html">Services</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a class="cta-btn" href="/contact.html">Get an Estimate</a>
+    </nav>
+    <button class="hamburger" aria-label="Open menu" onclick="document.querySelector('.site-nav').classList.toggle('open')">
+      <i data-lucide="menu"></i>
+    </button>
+  </div>
+</header>
+
+<section style="padding-top: 88px;">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h1>What we do for Atlanta.</h1>
+      <p class="lede">We're well versed in all aspects of residential electrical service and repair. Below is a quick guide to what we do most for Atlanta homeowners — but if your job isn't here, call. We've probably done it before.</p>
+    </div>
+
+    <div class="service-grid">
+      <a class="service-card" href="/electrical-repair-atlanta.html">
+        <span class="icon"><i data-lucide="zap"></i></span>
+        <h3>Electrical Repairs</h3>
+        <p>Outlets, lights, breakers, weird flickering, half-the-kitchen-is-out — the everyday electrical problems that keep showing up.</p>
+        <span class="svc-foot">View service</span>
+      </a>
+      <a class="service-card" href="/ceiling-fan-installation-atlanta.html">
+        <span class="icon"><i data-lucide="fan"></i></span>
+        <h3>Ceiling Fan Installation</h3>
+        <p>Replacement, new install, vaulted ceilings, smart fans — installed tight, balanced, no wobble or hum.</p>
+        <span class="svc-foot">View service</span>
+      </a>
+      <a class="service-card" href="/recessed-lighting-atlanta.html">
+        <span class="icon"><i data-lucide="lightbulb"></i></span>
+        <h3>Recessed Lighting</h3>
+        <p>Layout, install, dimmer, drywall cleanup — we plan it before we cut a single hole.</p>
+        <span class="svc-foot">View service</span>
+      </a>
+      <a class="service-card" href="/electrical-troubleshooting-atlanta.html">
+        <span class="icon"><i data-lucide="search"></i></span>
+        <h3>Residential Electrical Troubleshooting</h3>
+        <p>When the breaker keeps tripping, the lights flicker for no reason, half the kitchen is out — that's our specialty. Diagnose, explain, fix.</p>
+        <span class="svc-foot">View service</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ESTIMATE BAND — present on every page except contact.html -->
+<section class="estimate-band">
+  <div class="wrap estimate-band-grid">
+    <div class="estimate-band-copy">
+      <span class="eyebrow">Get an estimate</span>
+      <h2>Free quote, usually same week.</h2>
+      <p class="lede">Tell us about the job. We'll get back to you with a written estimate — no obligation, no upsell.</p>
+      <ul class="trust-row">
+        <li>Free written estimates, every time</li>
+        <li>Same-week scheduling for most jobs</li>
+        <li>5.0★ from 17 Atlanta customers</li>
+        <li>Serving Midtown Atlanta, Buckhead, Inman Park, Decatur, Sandy Springs, Brookhaven, South Fulton, and surrounding Metro Atlanta neighborhoods</li>
+      </ul>
+      <div class="direct-line">
+        <span class="label">Or call us direct</span>
+        <a class="phone" href="tel:+14043829847">(404) 382-9847</a>
+      </div>
+    </div>
+
+    <form class="estimate-form" method="post" action="https://crm.cloakanddagger.co/api/site-intake">
+      <div class="form-head">
+        <h3>Tell us about the job</h3>
+        <span class="response-time"><span class="dot"></span>Replies same day</span>
+      </div>
+
+      <div class="row-2">
+        <div>
+          <label for="estimate-name">Name</label>
+          <input id="estimate-name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="estimate-phone">Phone</label>
+          <input id="estimate-phone" name="phone" type="tel">
+        </div>
+      </div>
+
+      <div>
+        <label for="estimate-email">Email</label>
+        <input id="estimate-email" name="email" type="email" required>
+      </div>
+
+      <div>
+        <label for="estimate-service">Service needed</label>
+        <select id="estimate-service" name="service" required>
+          <option value="">Select a service…</option>
+          <option value="electrical-repair-atlanta">Electrical Repairs</option>
+          <option value="ceiling-fan-installation-atlanta">Ceiling Fan Installation</option>
+          <option value="recessed-lighting-atlanta">Recessed Lighting</option>
+          <option value="electrical-troubleshooting-atlanta">Residential Electrical Troubleshooting</option>
+          <option value="other">Other / not sure</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="estimate-message">What do you need? (the more detail, the better the estimate)</label>
+        <textarea id="estimate-message" name="message" required></textarea>
+      </div>
+
+      <div class="form-foot">
+        <p class="privacy">We never share your info. By submitting, you agree we may text or email about your estimate.</p>
+        <button type="submit" class="submit">
+          <i data-lucide="send"></i>
+          Get an Estimate
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="wrap">
+    <span class="eyebrow">Or just give us a call</span>
+    <h2>Free estimates. Same-week scheduling. Most jobs done in one visit.</h2>
+    <p class="cta-tail"><a class="cta-phone" href="tel:+14043829847">(404) 382-9847</a></p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>SmartWire Solutions</h4>
+        <p>Atlanta's family electrician since 2004 — master-credentialed, veteran-owned.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="/services.html">All services</a>
+        <a href="/electrical-repair-atlanta.html">Electrical Repairs</a>
+        <a href="/ceiling-fan-installation-atlanta.html">Ceiling Fan Installation</a>
+        <a href="/recessed-lighting-atlanta.html">Recessed Lighting</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+14043829847">(404) 382-9847</a>
+        <a href="mailto:info@smartwiresolutions.com">info@smartwiresolutions.com</a>
+        <p style="margin-top: 8px;">Serving Midtown Atlanta, Buckhead, Inman Park, Decatur, Sandy Springs, Brookhaven, South Fulton, and surrounding Metro Atlanta neighborhoods</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 SmartWire Solutions LLC. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  if (window.lucide) window.lucide.createIcons();
+  document.addEventListener('DOMContentLoaded', () => {
+    if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
+  });
+</script>
+
+</body>
+</html>

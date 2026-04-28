@@ -1,0 +1,217 @@
+{
+  "site": {
+    "BUSINESS_NAME": "SmartWire Solutions LLC",
+    "BUSINESS_NAME_SHORT": "SmartWire Solutions",
+    "BUSINESS_TAGLINE": "Atlanta's family electrician since 2004 — master-credentialed, veteran-owned.",
+    "CITY": "Atlanta",
+    "PHONE": "(404) 382-9847",
+    "PHONE_TEL": "+14043829847",
+    "EMAIL": "info@smartwiresolutions.com",
+    "STREET_ADDRESS": "730 Peachtree St NE, Ste 570",
+    "ZIP": "30308",
+    "DOMAIN": "smart-wire-solutions.pages.dev",
+    "SERVICE_AREAS": "Midtown Atlanta, Buckhead, Inman Park, Decatur, Sandy Springs, Brookhaven, South Fulton, and surrounding Metro Atlanta neighborhoods",
+    "PRIMARY_CTA": "Get an Estimate",
+    "CURRENT_YEAR": "2026",
+    "VERTICAL_ACCENT_COLOR": "#1e40af",
+    "PRIMARY_SERVICE_CATEGORY": "Electrical services",
+    "META_DESCRIPTION_HOMEPAGE": "Atlanta family electrician since 2004. Master Electrician Terry Henry — Air Force veteran. 5.0 stars on Google. Electrical repairs, ceiling fans, recessed lighting. Call (404) 382-9847.",
+    "HERO_HEADLINE": "Terry Henry's been wiring Atlanta homes since 2004.",
+    "HERO_SUBHEAD": "Master Electrician, Air Force veteran, family business. Our specialty isn't just wiring — it's making Atlanta homeowners feel like part of the family.",
+    "HERO_PHOTO_CONTEXT": "clean-residential-panel-OK | recessed-lighting-OK | ceiling-fan-install-OK | aspirational-electrician-OK | atmosphere-OK",
+    "CTA_SUBHEAD": "Free estimates. Same-week scheduling. Most jobs done in one visit.",
+    "GBP_RATING": "5.0",
+    "GBP_REVIEW_COUNT": "17",
+    "GBP_URL": "https://maps.google.com/?cid=4706905946096216564",
+    "OWNER_NAME": "Terry Henry",
+    "OWNER_BIO": "Terry Henry is a Master Electrician with over thirty years of experience — trained in the U.S. Air Force, mentored a generation of Atlanta electricians as an instructor for the Independent Electrical Contractors Association, and has wired everything from kitchen circuits to large-format projects across the city. In 2004 he founded what would become SmartWire Solutions to focus on the residential work he could put his name on. His wife Maria runs operations as Vice President. The two of them have been treating Atlanta homeowners like family for over twenty years.",
+    "ABOUT_INTRO": "Terry Henry started wiring Atlanta homes in 2004. Twenty-plus years later, he's still the one showing up to most of the jobs.",
+    "ABOUT_DETAIL_1": "Terry's a Master Electrician — trained in the U.S. Air Force, taught a generation of Atlanta electricians through the Independent Electrical Contractors Association. But his real specialty is the unglamorous stuff: the flickering kitchen light, the dead outlet behind the dresser, the panel that was wired wrong twenty years ago.",
+    "ABOUT_DETAIL_2": "SmartWire is family-run. Terry's the President; his wife Maria handles operations as Vice President. We pick up our own phone, show up when we say we will, and write you a real estimate before we touch a wire. After two decades, we'd rather build a 20-year relationship with you than rush in and out.",
+    "ABOUT_PHOTO_CONTEXT": "owner-portrait-OK | terry-henry-headshot-OK | family-business-OK",
+    "BUSINESS_HOURS": "24/7 emergency line. Most non-emergency jobs scheduled within one to three business days.",
+    "RADIUS": "25 miles of Midtown Atlanta",
+    "FORM_ACTION": "https://crm.cloakanddagger.co/api/site-intake",
+    "FORM_HEADING": "Tell us about the job",
+    "FORM_SUBHEAD": "We'll get back to you the same day with a written estimate.",
+    "FORM_MESSAGE_LABEL": "What do you need? (the more detail, the better the estimate)",
+    "CONTACT_HEADLINE": "Let's get your electrical figured out.",
+    "CONTACT_SUBHEAD": "We answer calls around the clock. Most non-emergency jobs scheduled within the same week.",
+    "SERVICES_LIST_TEASER": "From a flickering light to a full home rewire — Terry's been at it for thirty years and counting.",
+    "SERVICES_PAGE_INTRO": "We're well versed in all aspects of residential electrical service and repair. Below is a quick guide to what we do most for Atlanta homeowners — but if your job isn't here, call. We've probably done it before.",
+    "CTA_VERB_LOWER": "get an estimate",
+    "YEAR_FOUNDED": "2004",
+    "GALLERY_1_CONTEXT": "panel-work-OK | breaker-box-OK | clean-wiring-OK",
+    "GALLERY_2_CONTEXT": "ceiling-fan-installed-OK | finished-living-room-OK",
+    "GALLERY_3_CONTEXT": "recessed-lighting-finished-OK | kitchen-OK | living-room-OK",
+    "GALLERY_4_CONTEXT": "owner-portrait-OK | technician-at-work-OK | service-truck-OK",
+    "GALLERY_5_CONTEXT": "outdoor-electrical-OK | smart-home-install-OK",
+    "GALLERY_6_CONTEXT": "tools-on-truck-OK | atmosphere-OK | electrician-tools-OK"
+  },
+  "services": [
+    {
+      "slug": "electrical-repair-atlanta",
+      "name": "Electrical Repairs",
+      "icon": "zap",
+      "teaser": "Outlets, lights, breakers, weird flickering, half-the-kitchen-is-out — the everyday electrical problems that keep showing up.",
+      "page": {
+        "h1": "Atlanta electrical repairs — fast, fair, and family-feel.",
+        "meta_description": "Atlanta electrical repair from a Master Electrician — Terry Henry, Air Force veteran, family business since 2004. Outlets, lights, breakers, troubleshooting. Call (404) 382-9847.",
+        "hero_subhead": "From a single dead outlet to a panel that's been wired wrong for twenty years — Terry's seen all of it. We diagnose, repair, and explain.",
+        "body_h2": "What “electrical repair” actually means to us",
+        "subsection_h3": "How we work",
+        "body_paragraphs": [
+          "Most calls start the same way: half the kitchen is out, or the breaker won't reset, or the lights flicker every time the AC kicks on. We've heard it all. Terry's been doing residential electrical work in Atlanta for over twenty years, and the truth is most repair calls turn out to be one of about a dozen things — but you can't know which one until someone with experience looks.",
+          "We don't quote a price before we diagnose. The difference between a five-minute fix and a four-hour rewire can come down to one bad junction box behind a wall, and we won't know which one it is until we're there. What we do is show up when we said we would, look carefully, explain what we're seeing in plain English, and write you a real estimate.",
+          "Our specialty is the residential repair work most electrical companies don't want — the troubleshooting calls, the “this never worked right since we moved in” jobs, the wiring left over from decades of well-meaning DIY. If your house was built before 1985, there's a decent chance someone's already invented a clever fix for whatever's wrong. We've seen most of those clever fixes.",
+          "We carry insurance, we pull permits where the city requires them, and we don't leave a job until you understand what we did. That's the family-feel half of family-electrician — we're not in a hurry to get to the next call."
+        ],
+        "steps": [
+          "Call (404) 382-9847 or use the form below — we usually answer the same day, even after hours.",
+          "We schedule a time that works for your house. Most repair calls fit in a one- or two-hour window.",
+          "Terry shows up, looks at the problem, explains what's going on, and writes you a written estimate. No pressure to say yes on the spot.",
+          "If you say yes, we do the work, walk you through what we changed, and clean up before we leave."
+        ],
+        "photo_context": "panel-work-OK | outlet-repair-OK | breaker-box-OK | clean-residential-OK | atmosphere-OK",
+        "cta_subhead": "Tell us what's not working. We'll be honest about whether you need an electrician or not.",
+        "faqs": [
+          {
+            "q": "What does an electrical repair call cost?",
+            "a": "We don't quote until we've looked at the problem — repair work is too variable. What we promise is a free, written estimate before any work starts. Most residential repair calls fall in a $150 to $600 range; bigger jobs (rewires, panel work) can run more. You won't be surprised by a bill at the end."
+          },
+          {
+            "q": "Do you fix electrical work other electricians have done?",
+            "a": "Yes. Probably more than half our calls are diagnosing and fixing problems someone else introduced — bad junction boxes, mis-wired switches, panels that grew ad-hoc over the years. Terry's been doing this for thirty years; he doesn't get judgmental about it. He just fixes it."
+          },
+          {
+            "q": "Can you come out the same day?",
+            "a": "Often, yes — especially for safety issues like burning smells, sparking outlets, or panels that won't reset. Call (404) 382-9847 and tell us what's going on. We'll be straight with you about whether it's a same-day call."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "ceiling-fan-installation-atlanta",
+      "name": "Ceiling Fan Installation",
+      "icon": "fan",
+      "teaser": "Replacement, new install, vaulted ceilings, smart fans — installed tight, balanced, no wobble or hum.",
+      "page": {
+        "h1": "Ceiling fan installation in Atlanta — done right, done quietly.",
+        "meta_description": "Atlanta ceiling fan installation from a Master Electrician. Terry Henry — Air Force veteran, 20+ years residential experience. Tight, balanced, no wobble. Call (404) 382-9847.",
+        "hero_subhead": "From a basic three-blade in the den to a remote-controlled fan over a 14-foot vaulted ceiling — we install it tight, balance it, and leave you with a fan that doesn't wobble or hum.",
+        "body_h2": "Ceiling fans aren't all the same",
+        "subsection_h3": "What you should know",
+        "body_paragraphs": [
+          "Most ceiling-fan installs we do are replacements — there was already a fan or light fixture there, and you bought a new fan. Easy job, usually about an hour, sometimes two if the existing box isn't fan-rated.",
+          "The catch is the existing box. A regular light-fixture electrical box isn't built to support the weight of a fan or the side-to-side motion when it spins. If the previous installer used the wrong box, your fan will wobble, hum, or eventually fall. We check the box first. If it's wrong, we replace it. If you're putting a fan where there used to be just a light, the box almost certainly needs to be swapped.",
+          "On vaulted ceilings, sloped ceilings, or ceilings higher than ten feet, things get more involved — we may need to add a downrod, modify the fan-mount adapter, or work from a ladder higher than most homeowners want to climb. We bring the ladder.",
+          "Smart fans, remote-controlled fans, app-controlled fans — most of them work fine if they're wired correctly. The remote-control modules need a neutral wire in the wall switch box, which a lot of older Atlanta homes don't have. We'll let you know up front if we need to run a neutral or use a different switch type."
+        ],
+        "steps": [
+          "You buy the fan you want — we don't upsell on hardware. (We're happy to recommend models if you're stuck.)",
+          "Call us with the model number and a quick description of where it's going. We'll give you a written estimate including the fan-rated box swap if needed.",
+          "We show up at the scheduled time, install the fan, balance it, test all speeds and the light kit if it has one, and clean up the cardboard.",
+          "Walk-through: we make sure you know how to use the remote, the wall switch behaves the way you expect, and there's nothing weird about how the fan sounds at full speed."
+        ],
+        "photo_context": "ceiling-fan-installed-OK | living-room-OK | residential-OK | clean-finished-install-OK",
+        "cta_subhead": "Got a fan in the box? We'll have it spinning by tomorrow.",
+        "faqs": [
+          {
+            "q": "Do you supply the fan, or do I?",
+            "a": "You supply. We don't mark up hardware — buy whatever you want at any retailer, and we'll install it. If you want a recommendation for your room size or ceiling type, we're happy to give you one before you buy."
+          },
+          {
+            "q": "How long does it take?",
+            "a": "Typical replacement: about an hour. New install (no fan there before): one and a half to two hours. Vaulted or high ceilings: two to three hours. We'll give you a real time estimate before we start."
+          },
+          {
+            "q": "Why does my old fan wobble?",
+            "a": "Almost always one of three things: wrong electrical box (not fan-rated), unbalanced blades, or loose mounting. We can usually tell which one within a minute or two of looking. Sometimes it's an easy fix; sometimes it's a box swap."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "recessed-lighting-atlanta",
+      "name": "Recessed Lighting",
+      "icon": "lightbulb",
+      "teaser": "Layout, install, dimmer, drywall cleanup — we plan it before we cut a single hole.",
+      "page": {
+        "h1": "Recessed lighting installation in Atlanta — clean ceilings, real light.",
+        "meta_description": "Atlanta recessed lighting from a Master Electrician. Even spacing, dimmable LED, no patch-and-paint mess. Family business since 2004. Call (404) 382-9847.",
+        "hero_subhead": "Add four cans to a kitchen, six to a living room, twelve across an open floor plan — we space them evenly, run the wire cleanly, and finish the ceiling so you can't tell we were there.",
+        "body_h2": "Recessed lighting is mostly about the ceiling",
+        "subsection_h3": "What we do differently",
+        "body_paragraphs": [
+          "If you've ever had recessed lights installed and ended up with patches of drywall mud on the ceiling, you already know the hard part isn't the wiring — it's the holes. We cut holes carefully, fish wire through joists without opening up the ceiling more than we have to, and finish so you don't need to repaint the whole room.",
+          "The default for residential is four-inch or six-inch LED downlights, dimmable, in a warm color temperature (2700K to 3000K) so the room doesn't feel like an office. We can do anything else you want — adjustable gimbals, square trims, larger eight-inch cans for high ceilings, color-tunable smart bulbs — but for most Atlanta homes the default works beautifully.",
+          "We plan the layout before we cut anything. Even spacing matters. The rule of thumb is height-of-ceiling divided by two for the spacing between cans, and half that distance from the wall — but the right answer depends on the furniture below, where you actually need light, and where the joists are running. We'll walk through it with you before we touch the drywall.",
+          "For dimming, we strongly recommend a smart dimmer that's compatible with whatever LED you're using. Cheap LED-incompatible dimmers are the leading cause of buzzing recessed lights in Atlanta homes. We'll spec the right dimmer for the bulbs you're using."
+        ],
+        "steps": [
+          "Walkthrough: we look at the room, talk about how you use it, and sketch a layout. Free.",
+          "Written estimate: number of cans, trim style, bulb spec, dimmer, drywall cleanup, total cost.",
+          "Install: typical kitchen or living-room install runs four to six hours. Most of that is fishing wire, not cutting holes.",
+          "Cleanup and walkthrough: we patch and primer any necessary drywall, vacuum, and walk through the dimming and switching with you."
+        ],
+        "photo_context": "recessed-lighting-finished-OK | living-room-OK | kitchen-OK | clean-ceiling-OK",
+        "cta_subhead": "We'll lay it out before you commit to a single hole.",
+        "faqs": [
+          {
+            "q": "How many recessed lights do I need in my room?",
+            "a": "Rule of thumb: ceiling height divided by two equals the spacing between cans. So a 9-foot ceiling wants cans about 4.5 feet apart, and you'd want a can roughly every 20 to 25 square feet of floor. For a 12-by-14 living room you're typically looking at 4 to 6 cans. We'll lay out the right number for your room before any work starts."
+          },
+          {
+            "q": "Will my ceiling need to be patched?",
+            "a": "Sometimes — depends on whether we can fish wire from existing access (an attic above) or have to make a small access hole. If we do open the ceiling, we patch and primer it. Final paint match is on you (or a painter), since we don't carry your wall color."
+          },
+          {
+            "q": "Can the lights dim?",
+            "a": "Yes — recessed LED is best when paired with a smart dimmer rated for LEDs. Cheap dimmers cause LED buzzing and flickering. We'll spec the right dimmer for your bulbs and install it as part of the job."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "electrical-troubleshooting-atlanta",
+      "name": "Residential Electrical Troubleshooting",
+      "icon": "search",
+      "teaser": "When the breaker keeps tripping, the lights flicker for no reason, half the kitchen is out — that's our specialty. Diagnose, explain, fix.",
+      "page": {
+        "h1": "Atlanta electrical troubleshooting — figuring out what nobody else could.",
+        "meta_description": "Atlanta electrical troubleshooting from a Master Electrician with 30+ years experience. Terry Henry — fixes the problems other electricians can't. Call (404) 382-9847.",
+        "hero_subhead": "When the breaker keeps tripping, the lights flicker for no reason, half the kitchen is out — that's our specialty. We diagnose, explain, and fix.",
+        "body_h2": "When other electricians have given up",
+        "subsection_h3": "How troubleshooting actually works",
+        "body_paragraphs": [
+          "Some electrical problems are obvious — a bad outlet, a failed switch, a tripped GFCI. Others aren't. The light that flickers only when the AC kicks on. The breaker that trips at 3 AM but never during the day. The dead circuit that doesn't show on any panel label. Those are the calls we get most.",
+          "Troubleshooting is the part of electrical work that takes the most experience and the least equipment. Mostly it's a methodical process of elimination — testing voltage at known points, isolating circuits, checking continuity, and most of all knowing what to look for based on what's been seen before. Terry's been doing this for thirty years. He's seen a lot.",
+          "The reason we list this as its own service is that diagnostic calls aren't the same as repair calls. Sometimes we figure out the problem in twenty minutes and the actual fix is something you can do yourself. Sometimes the problem points to a deeper rewiring need we couldn't have predicted. Either way, we'll explain what we found in plain language and write up the recommendation — even if the work itself isn't ours to do.",
+          "If your previous electrician told you you'll have to live with it, or quoted you a six-thousand-dollar full-house rewire when you don't think the problem is that big — we're worth a second opinion. We won't oversell. We will figure it out."
+        ],
+        "steps": [
+          "Tell us what's happening — when it happens, where, what triggered it the first time you noticed.",
+          "We schedule a diagnostic visit. Usually one to two hours. Flat-rate diagnostic fee, applied to the work if you decide to have us fix it.",
+          "We test, isolate, and explain what's going on — in writing — including what would and wouldn't fix it.",
+          "You decide. We can fix it on the spot, schedule a return visit, or walk you through fixing it yourself if it's that simple. No hard sell."
+        ],
+        "photo_context": "panel-troubleshooting-OK | meter-testing-OK | breaker-box-OK | electrician-tools-OK",
+        "cta_subhead": "Tell us what's not working. We'll figure it out.",
+        "faqs": [
+          {
+            "q": "Why hire a troubleshooter instead of just having the problem fixed?",
+            "a": "Because most electrical problems aren't what they look like. The kitchen outlet that doesn't work might be a tripped GFCI in the bathroom. The flickering light might be a loose neutral in the panel. Diagnosing first means you only pay for the fix you actually need — instead of paying an electrician to guess."
+          },
+          {
+            "q": "What's the diagnostic fee?",
+            "a": "Flat $150 for the first hour of diagnostic work, $75 each additional hour. If you decide to have us do the repair, the diagnostic fee gets applied toward the repair cost. No charge for problems we can't reproduce or that turn out to be something simple you can fix yourself."
+          },
+          {
+            "q": "What if you can't figure it out?",
+            "a": "It's rare, but it happens. If we can't isolate the cause within the diagnostic visit, we'll tell you what we ruled out, what's still possible, and recommend next steps. You'll have a written report you can hand to anyone else. We won't keep you on a meter chasing something we don't understand."
+          }
+        ]
+      }
+    }
+  ]
+}

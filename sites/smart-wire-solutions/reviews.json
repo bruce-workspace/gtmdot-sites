@@ -1,0 +1,16 @@
+{
+  "slug": "smart-wire-solutions",
+  "captured": 0,
+  "total_reviews": 17,
+  "overall_rating": 5.0,
+  "captured_at": "2026-04-28T15:30:00Z",
+  "sources": [
+    {
+      "source": "google_places_api_v1",
+      "count": 0,
+      "fetched_at": "2026-04-28T15:30:00Z",
+      "note": "Places API findplacefromtext + textsearch return ZERO_RESULTS for this listing — SmartWire's GBP is a service-area-business with ftid=0x0. Bruce §11.11 collection should pull verbatim reviews via Place Details endpoint using cid 0x41524a050c3d29f4 (decimal 4706905946096216564) or kgmid /g/11j61b1qy5. Until then, reviews-bar renders Path C (empty state, links to Google)."
+    }
+  ],
+  "reviews": []
+}
