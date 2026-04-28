@@ -6,13 +6,15 @@
   <title>About Plugged Electricians Atl LLC — Atlanta, GA</title>
   <meta name="description" content="Plugged Electricians Atl LLC has served Atlanta since 2019. Meet the Plugged Electricians team and learn what makes our Electrical services work different.">
   <link rel="canonical" href="https://plugged-electricians-atl.gtmdot.com/about.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="_base.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap site-header-inner">
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
     <a class="site-logo" href="/">Plugged Electricians</a>
     <nav class="site-nav">
       <a href="/services.html">Services</a>
@@ -26,49 +28,133 @@
   </div>
 </header>
 
-<section>
+<section style="padding-top: 88px;">
   <div class="wrap">
-    <h1 style="font-size: clamp(32px, 5vw, 48px); margin: 48px 0 24px;">About Plugged Electricians</h1>
+    <div class="section-head">
+      <span class="eyebrow">About us</span>
+      <h1>The team behind Plugged Electricians.</h1>
+    </div>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;">
+    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: start;">
       <div>
-        <p style="font-size: 18px; line-height: 1.65;">Plugged Electricians ATL has been serving Atlanta homeowners since 2019 with straightforward electrical work — diagnosis first, price up front, clean job every time.</p>
-        <p style="font-size: 16px; line-height: 1.65; color: var(--ink-soft);">Every technician on the team is licensed and insured. We don't subcontract; the person who shows up is the person who does the work. That's how we keep 4.9 stars across 13+ Google reviews — customers meet the same face they'll see next time.</p>
-        <p style="font-size: 16px; line-height: 1.65; color: var(--ink-soft);">We handle everything from tripping breakers to whole-panel upgrades to EV charger installs. If it involves wire and code, it's in our wheelhouse.</p>
+        <p style="font-family: var(--font-serif); font-size: 22px; font-style: italic; line-height: 1.55; color: var(--text); margin: 0 0 24px;">Plugged Electricians ATL has been serving Atlanta homeowners since 2019 with straightforward electrical work — diagnosis first, price up front, clean job every time.</p>
+        <p style="font-size: 17px; line-height: 1.75; color: var(--text-soft); margin: 0 0 20px;">Every technician on the team is licensed and insured. We don't subcontract; the person who shows up is the person who does the work. That's how we keep 4.9 stars across 13+ Google reviews — customers meet the same face they'll see next time.</p>
+        <p style="font-size: 17px; line-height: 1.75; color: var(--text-soft); margin: 0 0 24px;">We handle everything from tripping breakers to whole-panel upgrades to EV charger installs. If it involves wire and code, it's in our wheelhouse.</p>
       </div>
       <figure class="gtmdot-photo-slot"
               data-slot-id="ABOUT_PHOTO"
               data-context="owner-portrait-OK|team-OK|storefront-OK"
-              data-resolved="false">
+              data-resolved="false"
+              style="aspect-ratio: 3/4;">
         <img src="photos/gbp-1.jpg" alt="">
       </figure>
     </div>
   </div>
 </section>
 
-<section style="background: var(--paper-soft);">
+<section class="section-alt">
   <div class="wrap">
-    <h2>Service area</h2>
-    <p style="max-width: 720px; margin: 0 0 24px; font-size: 17px;">
-      We serve Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody. If you're within 25 miles of Atlanta,
-      we can typically be on-site same week.
-    </p>
+    <div class="section-head">
+      <span class="eyebrow">Service area</span>
+      <h2>Where we work.</h2>
+      <p class="lede">We serve Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody. If you're within 25 miles, we can typically be on-site same week.</p>
+    </div>
+    <div class="area-pills">
+      <span class="area-pill">Atlanta</span>
+      <span class="area-pill">Atlanta metro</span>
+      <span class="area-pill">25 miles</span>
+    </div>
   </div>
 </section>
 
 <section>
-  <div class="wrap" style="max-width: 720px;">
-    <h2>Meet the Plugged Electricians team</h2>
-    <p style="font-size: 17px; line-height: 1.65;">Plugged Electricians ATL is a licensed, insured electrical contractor serving Atlanta and surrounding neighborhoods. Whether you're dealing with a flickering breaker or planning a full panel upgrade for an EV charger, the team shows up on time, diagnoses the problem clearly, and prices the work before starting. No mystery bills.</p>
+  <div class="wrap" style="max-width: var(--max-prose);">
+    <div class="section-head" style="margin-bottom: 36px;">
+      <span class="eyebrow">Meet the team</span>
+      <h2>the Plugged Electricians team</h2>
+    </div>
+    <p style="font-size: 17.5px; line-height: 1.75; color: var(--text-soft); margin: 0 0 32px;">Plugged Electricians ATL is a licensed, insured electrical contractor serving Atlanta and surrounding neighborhoods. Whether you're dealing with a flickering breaker or planning a full panel upgrade for an EV charger, the team shows up on time, diagnoses the problem clearly, and prices the work before starting. No mystery bills.</p>
+    <div class="story-callout">
+      <em>"Atlanta's trusted electrical team"</em>
+    </div>
   </div>
 </section>
 
-<section style="background: var(--accent-soft); text-align: center;">
+<!-- ESTIMATE BAND — present on every page except contact.html -->
+<section class="estimate-band">
+  <div class="wrap estimate-band-grid">
+    <div class="estimate-band-copy">
+      <span class="eyebrow">Get an estimate</span>
+      <h2>Free quote, usually same week.</h2>
+      <p class="lede">Tell us about the job. We'll get back to you with a written estimate — no obligation, no upsell.</p>
+      <ul class="trust-row">
+        <li>Free written estimates, every time</li>
+        <li>Same-week scheduling for most jobs</li>
+        <li>4.9★ from 13 Atlanta customers</li>
+        <li>Serving Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody</li>
+      </ul>
+      <div class="direct-line">
+        <span class="label">Or call us direct</span>
+        <a class="phone" href="tel:+16787872022">(678) 787-2022</a>
+      </div>
+    </div>
+
+    <form class="estimate-form" method="post" action="https://crm.cloakanddagger.co/api/site-intake">
+      <div class="form-head">
+        <h3>Tell us what you need</h3>
+        <span class="response-time"><span class="dot"></span>Replies same day</span>
+      </div>
+
+      <div class="row-2">
+        <div>
+          <label for="estimate-name">Name</label>
+          <input id="estimate-name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="estimate-phone">Phone</label>
+          <input id="estimate-phone" name="phone" type="tel">
+        </div>
+      </div>
+
+      <div>
+        <label for="estimate-email">Email</label>
+        <input id="estimate-email" name="email" type="email" required>
+      </div>
+
+      <div>
+        <label for="estimate-service">Service needed</label>
+        <select id="estimate-service" name="service" required>
+          <option value="">Select a service…</option>
+          <option value="electrical-repair-atlanta">Electrical Repair</option>
+          <option value="panel-upgrade-atlanta">Panel Upgrades</option>
+          <option value="ev-charger-installation-atlanta">EV Charger Installation</option>
+          <option value="ceiling-fan-installation-atlanta">Ceiling Fans & Lighting</option>
+          <option value="other">Other / not sure</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="estimate-message">Tell us about your project</label>
+        <textarea id="estimate-message" name="message" required></textarea>
+      </div>
+
+      <div class="form-foot">
+        <p class="privacy">We never share your info. By submitting, you agree we may text or email about your estimate.</p>
+        <button type="submit" class="submit">
+          <i data-lucide="send"></i>
+          Get a Free Estimate
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
   <div class="wrap">
-    <h2>Ready to work with us?</h2>
-    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">Free estimates, no pressure. We show up when we say we will.</p>
-    <a class="cta-btn" href="/contact.html">Get a Free Estimate</a>
-    <p style="margin-top: 16px;">or call <a href="tel:+16787872022" style="color: var(--accent); font-weight: 600;">(678) 787-2022</a></p>
+    <span class="eyebrow">Or just give us a call</span>
+    <h2>Free estimates, no pressure. We show up when we say we will.</h2>
+    <p class="cta-tail"><a class="cta-phone" href="tel:+16787872022">(678) 787-2022</a></p>
   </div>
 </section>
 
@@ -77,7 +163,7 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Plugged Electricians</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Atlanta's trusted electrical team</p>
+        <p>Atlanta's trusted electrical team</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -95,7 +181,7 @@
         <h4>Contact</h4>
         <a href="tel:+16787872022">(678) 787-2022</a>
         <a href="mailto:contact@pluggedelectriciansatl.com">contact@pluggedelectriciansatl.com</a>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody</p>
+        <p style="margin-top: 8px;">Serving Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -105,8 +191,15 @@
 </footer>
 
 <script>
+  if (window.lucide) window.lucide.createIcons();
   document.addEventListener('DOMContentLoaded', () => {
     if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
   });
 </script>
 

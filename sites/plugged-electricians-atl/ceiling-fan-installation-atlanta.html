@@ -23,6 +23,8 @@
   <title>Ceiling Fans & Lighting in Atlanta, GA — Plugged Electricians</title>
   <meta name="description" content="Ceiling fan installs, recessed lighting, chandeliers, outdoor fixtures. Atlanta licensed electrician, 4.9-star Google, free estimates. (678) 787-2022.">
   <link rel="canonical" href="https://plugged-electricians-atl.gtmdot.com/ceiling-fan-installation-atlanta.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="_base.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 
@@ -80,8 +82,8 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap site-header-inner">
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
     <a class="site-logo" href="/">Plugged Electricians</a>
     <nav class="site-nav">
       <a href="/services.html">Services</a>
@@ -96,42 +98,62 @@
 </header>
 
 <!-- HERO (service-specific) -->
-<section class="hero">
+<section class="hero" style="min-height: 60vh;">
   <div class="wrap">
-    <p style="font-size: 14px; color: var(--ink-soft); margin: 0 0 12px;">
-      <a href="/services.html" style="color: var(--ink-soft); text-decoration: none;">Services</a> / Ceiling Fans & Lighting
-    </p>
-    <h1>Ceiling fan and lighting installation in Atlanta</h1>
-    <p class="lede">Ceiling fan installs, recessed lighting retrofits, chandelier hangs, and outdoor lighting — across Atlanta.</p>
-    <a class="cta-btn" href="/contact.html">Get a Free Estimate</a>
+    <div class="hero-content">
+      <div class="hero-stamps">
+        <span class="hero-kicker">Electrical services · Atlanta</span>
+      </div>
+      <p class="prose breadcrumb" style="margin: 0 0 16px;">
+        <a href="/services.html">Services</a> / Ceiling Fans & Lighting
+      </p>
+      <h1>Ceiling fan and lighting installation in Atlanta</h1>
+      <p class="lede">Ceiling fan installs, recessed lighting retrofits, chandelier hangs, and outdoor lighting — across Atlanta.</p>
+      <div class="hero-actions">
+        <a class="cta-btn" href="/contact.html">
+          <i data-lucide="message-circle"></i>
+          Get a Free Estimate
+        </a>
+        <a class="btn-ghost" href="tel:+16787872022">
+          <i data-lucide="phone"></i>
+          (678) 787-2022
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- SERVICE BODY — 400-600 words of unique content -->
 <section>
-  <div class="wrap" style="max-width: 840px;">
-    <h2>What we install</h2>
-    <p style="font-size: 17px; line-height: 1.65;">Ceiling fans look simple but the wiring matters. We check that the existing box is fan-rated (most older Atlanta homes aren't — we'll upgrade to a fan-rated box as part of the install). If the circuit doesn't have a dedicated neutral, we work with what's there or suggest a smart-fan control that doesn't need one.</p>
-    <p style="font-size: 17px; line-height: 1.65;">Recessed lighting retrofits are a before-and-after moment for most rooms. We cut in, wire, trim, and aim every can. The modern LED trims pull about one-sixth the wattage of old incandescent cans, so you can add more lights without upsizing the circuit.</p>
+  <div class="wrap">
+    <div class="prose">
+      <span class="eyebrow">About this service</span>
+      <h2>What we install</h2>
+      <p>Ceiling fans look simple but the wiring matters. We check that the existing box is fan-rated (most older Atlanta homes aren't — we'll upgrade to a fan-rated box as part of the install). If the circuit doesn't have a dedicated neutral, we work with what's there or suggest a smart-fan control that doesn't need one.</p>
+      <p>Recessed lighting retrofits are a before-and-after moment for most rooms. We cut in, wire, trim, and aim every can. The modern LED trims pull about one-sixth the wattage of old incandescent cans, so you can add more lights without upsizing the circuit.</p>
 
-    <h3>What to expect on install day</h3>
-    <p style="font-size: 17px; line-height: 1.65;">Chandelier and pendant hangs look easy until you're hanging something heavy over a dining room table. We add proper blocking and fan-rated boxes where needed, and we level the fixture to the table — not the ceiling.</p>
-    <p style="font-size: 17px; line-height: 1.65;">Outdoor fixtures (sconces, spotlights, porch ceiling fans) need weatherproof boxes and GFCI protection. We handle the fixture install plus any rewiring needed to bring an outdoor circuit up to current code.</p>
+      <h3>What to expect on install day</h3>
+      <p>Chandelier and pendant hangs look easy until you're hanging something heavy over a dining room table. We add proper blocking and fan-rated boxes where needed, and we level the fixture to the table — not the ceiling.</p>
+      <p>Outdoor fixtures (sconces, spotlights, porch ceiling fans) need weatherproof boxes and GFCI protection. We handle the fixture install plus any rewiring needed to bring an outdoor circuit up to current code.</p>
 
-    <h3>What to expect</h3>
-    <ol style="font-size: 17px; line-height: 1.7;">
-      <li>Send us a photo of the location and what you want installed — we'll give you a ballpark over text.</li>
-      <li>Schedule an install window. Most single-fixture jobs take 60–90 minutes.</li>
-      <li>We do the install, test the switch, clean up, and take the old fixture/box with us.</li>
-      <li>Done. Usually done the same visit unless we discover a wiring surprise.</li>
-    </ol>
+      <h3>What to expect</h3>
+      <ol>
+        <li>Send us a photo of the location and what you want installed — we'll give you a ballpark over text.</li>
+        <li>Schedule an install window. Most single-fixture jobs take 60–90 minutes.</li>
+        <li>We do the install, test the switch, clean up, and take the old fixture/box with us.</li>
+        <li>Done. Usually done the same visit unless we discover a wiring surprise.</li>
+      </ol>
+    </div>
   </div>
 </section>
 
 <!-- SERVICE-SPECIFIC GALLERY -->
-<section style="background: var(--paper-soft);">
+<section class="section-alt">
   <div class="wrap">
-    <h2>Ceiling Fans & Lighting — recent work</h2>
+    <div class="section-head">
+      <span class="eyebrow">Recent work</span>
+      <h2>Ceiling Fans & Lighting jobs.</h2>
+    </div>
     <div class="gtmdot-photo-gallery">
       <figure class="gtmdot-photo-slot"
               data-slot-id="SERVICE_GALLERY_1"
@@ -157,33 +179,103 @@
 
 <!-- FAQs -->
 <section>
-  <div class="wrap" style="max-width: 840px;">
-    <h2>Frequently asked questions</h2>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">How much does ceiling fan installation cost?</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">A standard ceiling fan install (existing fan-rated box, working switch) is $125–$175. If the box needs upgrading to fan-rated, add $75. If we need to run a new switch leg, that's quoted separately.</p>
-    </details>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">Do you install lights I buy from Home Depot or Amazon?</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">Yes. We'll install whatever fixture you buy. If the instructions are missing or the fixture is defective, we'll pause and let you know — won't force-install something that's broken out of the box.</p>
-    </details>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">Can you do recessed lighting retrofits?</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">Yes — new-construction cans or retrofit trims in existing ceilings. We cut in, wire, and aim every light. Typical 6-can living room install is 3–4 hours.</p>
-    </details>
+  <div class="wrap">
+    <div class="section-head" style="text-align: center; margin-left: auto; margin-right: auto;">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions about Ceiling Fans & Lighting.</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>How much does ceiling fan installation cost?</summary>
+        <p>A standard ceiling fan install (existing fan-rated box, working switch) is $125–$175. If the box needs upgrading to fan-rated, add $75. If we need to run a new switch leg, that's quoted separately.</p>
+      </details>
+      <details>
+        <summary>Do you install lights I buy from Home Depot or Amazon?</summary>
+        <p>Yes. We'll install whatever fixture you buy. If the instructions are missing or the fixture is defective, we'll pause and let you know — won't force-install something that's broken out of the box.</p>
+      </details>
+      <details>
+        <summary>Can you do recessed lighting retrofits?</summary>
+        <p>Yes — new-construction cans or retrofit trims in existing ceilings. We cut in, wire, and aim every light. Typical 6-can living room install is 3–4 hours.</p>
+      </details>
+    </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section style="background: var(--accent-soft); text-align: center;">
+<!-- ESTIMATE BAND — present on every page except contact.html -->
+<section class="estimate-band">
+  <div class="wrap estimate-band-grid">
+    <div class="estimate-band-copy">
+      <span class="eyebrow">Get an estimate</span>
+      <h2>Free quote, usually same week.</h2>
+      <p class="lede">Tell us about the job. We'll get back to you with a written estimate — no obligation, no upsell.</p>
+      <ul class="trust-row">
+        <li>Free written estimates, every time</li>
+        <li>Same-week scheduling for most jobs</li>
+        <li>4.9★ from 13 Atlanta customers</li>
+        <li>Serving Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody</li>
+      </ul>
+      <div class="direct-line">
+        <span class="label">Or call us direct</span>
+        <a class="phone" href="tel:+16787872022">(678) 787-2022</a>
+      </div>
+    </div>
+
+    <form class="estimate-form" method="post" action="https://crm.cloakanddagger.co/api/site-intake">
+      <div class="form-head">
+        <h3>Tell us what you need</h3>
+        <span class="response-time"><span class="dot"></span>Replies same day</span>
+      </div>
+
+      <div class="row-2">
+        <div>
+          <label for="estimate-name">Name</label>
+          <input id="estimate-name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="estimate-phone">Phone</label>
+          <input id="estimate-phone" name="phone" type="tel">
+        </div>
+      </div>
+
+      <div>
+        <label for="estimate-email">Email</label>
+        <input id="estimate-email" name="email" type="email" required>
+      </div>
+
+      <div>
+        <label for="estimate-service">Service needed</label>
+        <select id="estimate-service" name="service" required>
+          <option value="">Select a service…</option>
+          <option value="electrical-repair-atlanta">Electrical Repair</option>
+          <option value="panel-upgrade-atlanta">Panel Upgrades</option>
+          <option value="ev-charger-installation-atlanta">EV Charger Installation</option>
+          <option value="ceiling-fan-installation-atlanta">Ceiling Fans & Lighting</option>
+          <option value="other">Other / not sure</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="estimate-message">Tell us about your project</label>
+        <textarea id="estimate-message" name="message" required></textarea>
+      </div>
+
+      <div class="form-foot">
+        <p class="privacy">We never share your info. By submitting, you agree we may text or email about your estimate.</p>
+        <button type="submit" class="submit">
+          <i data-lucide="send"></i>
+          Get a Free Estimate
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
   <div class="wrap">
-    <h2>Ready for Ceiling Fans & Lighting in Atlanta?</h2>
-    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">Most fixture installs are same-day. Text us a photo for a quick quote.</p>
-    <a class="cta-btn" href="/contact.html">Get a Free Estimate</a>
-    <p style="margin-top: 16px;">or call <a href="tel:+16787872022" style="color: var(--accent); font-weight: 600;">(678) 787-2022</a></p>
+    <span class="eyebrow">Or just give us a call</span>
+    <h2>Free estimates, no pressure. We show up when we say we will.</h2>
+    <p class="cta-tail"><a class="cta-phone" href="tel:+16787872022">(678) 787-2022</a></p>
   </div>
 </section>
 
@@ -192,7 +284,7 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Plugged Electricians</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Atlanta's trusted electrical team</p>
+        <p>Atlanta's trusted electrical team</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -210,7 +302,7 @@
         <h4>Contact</h4>
         <a href="tel:+16787872022">(678) 787-2022</a>
         <a href="mailto:contact@pluggedelectriciansatl.com">contact@pluggedelectriciansatl.com</a>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody</p>
+        <p style="margin-top: 8px;">Serving Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -220,8 +312,15 @@
 </footer>
 
 <script>
+  if (window.lucide) window.lucide.createIcons();
   document.addEventListener('DOMContentLoaded', () => {
     if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
   });
 </script>
 

@@ -6,6 +6,8 @@
   <title>Plugged Electricians Atl LLC — Electrical services in Atlanta, GA</title>
   <meta name="description" content="Licensed Atlanta electrician serving Buckhead, Decatur, Sandy Springs. Free estimates on repairs, panel upgrades, EV chargers. 4.9 stars on Google. Call (678) 787-2022.">
   <link rel="canonical" href="https://plugged-electricians-atl.gtmdot.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="_base.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 
@@ -14,6 +16,7 @@
   <meta property="og:title" content="Plugged Electricians Atl LLC — Electrical services in Atlanta">
   <meta property="og:description" content="Licensed Atlanta electrician serving Buckhead, Decatur, Sandy Springs. Free estimates on repairs, panel upgrades, EV chargers. 4.9 stars on Google. Call (678) 787-2022.">
   <meta property="og:url" content="https://plugged-electricians-atl.gtmdot.com/">
+  <meta property="og:image" content="https://plugged-electricians-atl.gtmdot.com/photos/hero.jpg">
 
   <!-- JSON-LD LocalBusiness schema -->
   <script type="application/ld+json">
@@ -39,14 +42,15 @@
       "reviewCount": "13"
     },
     "areaServed": "Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody",
-    "priceRange": "$$"
+    "priceRange": "$$",
+    "foundingDate": "2019"
   }
   </script>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap site-header-inner">
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
     <a class="site-logo" href="/">Plugged Electricians</a>
     <nav class="site-nav">
       <a href="/services.html">Services</a>
@@ -62,49 +66,121 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="wrap">
-    <h1>Atlanta electrical repair and installation, done right the first time</h1>
-    <p class="lede">Licensed, insured, and trusted by 4.9-star-rated homeowners across Buckhead, Decatur, and Sandy Springs. Free estimates within the hour.</p>
-    <a class="cta-btn" href="/contact.html">Get a Free Estimate</a>
-  </div>
-</section>
-
-<!-- HERO PHOTO SLOT (resolved post-handoff) -->
-<div class="wrap" style="padding: 0; margin-top: -32px; margin-bottom: 32px;">
-  <figure class="gtmdot-photo-slot"
+  <figure class="gtmdot-photo-slot hero-bg has-photo"
           data-slot-id="HERO"
           data-context="electrician-at-work-OK|service-van-OK|panel-install-OK"
           data-resolved="false"
-          style="aspect-ratio: 16/9;">
+          aria-hidden="true"
+          style="position: absolute; inset: 0; aspect-ratio: auto; border: 0; border-radius: 0; z-index: -2;">
     <img src="photos/hero.jpg" alt="">
   </figure>
+
+  <div class="wrap">
+    <div class="hero-content">
+      <div class="hero-stamps">
+        <span class="hero-kicker">EST. 2019 · Electrical services</span>
+        <span class="hero-status"><span class="dot"></span>NOW SERVING Atlanta</span>
+      </div>
+      <h1>Atlanta electrical repair and installation, done right the first time</h1>
+      <p class="lede">Licensed, insured, and trusted by 4.9-star-rated homeowners across Buckhead, Decatur, and Sandy Springs. Free estimates within the hour.</p>
+      <div class="hero-actions">
+        <a class="cta-btn" href="/contact.html">
+          <i data-lucide="message-circle"></i>
+          Get a Free Estimate
+        </a>
+        <a class="btn-ghost" href="tel:+16787872022">
+          <i data-lucide="phone"></i>
+          (678) 787-2022
+        </a>
+      </div>
+      <p class="hero-quote">Atlanta's trusted electrical team</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-bar">
+  <div class="wrap">
+    <div class="trust-grid">
+      <div class="trust-pill">
+        <div class="k">2019</div>
+        <div class="v">FOUNDED</div>
+      </div>
+      <div class="trust-pill">
+        <div class="k">4.9<span class="unit">★</span></div>
+        <div class="v">GOOGLE RATING</div>
+      </div>
+      <div class="trust-pill">
+        <div class="k">13</div>
+        <div class="v">CUSTOMER REVIEWS</div>
+      </div>
+      <div class="trust-pill">
+        <div class="k">$0</div>
+        <div class="v">FREE ESTIMATES</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MARQUEE — rotating taglines, doubled for seamless loop -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">Electrical Repair<span class="dot"></span></span>
+    <span class="marquee-item">Panel Upgrades<span class="dot"></span></span>
+    <span class="marquee-item">EV Charger Installation<span class="dot"></span></span>
+    <span class="marquee-item">Ceiling Fans & Lighting<span class="dot"></span></span>
+    <span class="marquee-item">FREE ESTIMATES<span class="dot"></span></span>
+    <span class="marquee-item">SAME-WEEK SCHEDULING<span class="dot"></span></span>
+    <span class="marquee-item">SERVING Atlanta SINCE 2019<span class="dot"></span></span>
+    <span class="marquee-item">4.9★ · 13 REVIEWS<span class="dot"></span></span>
+    <!-- duplicated for seamless loop -->
+    <span class="marquee-item">Electrical Repair<span class="dot"></span></span>
+    <span class="marquee-item">Panel Upgrades<span class="dot"></span></span>
+    <span class="marquee-item">EV Charger Installation<span class="dot"></span></span>
+    <span class="marquee-item">Ceiling Fans & Lighting<span class="dot"></span></span>
+    <span class="marquee-item">FREE ESTIMATES<span class="dot"></span></span>
+    <span class="marquee-item">SAME-WEEK SCHEDULING<span class="dot"></span></span>
+    <span class="marquee-item">SERVING Atlanta SINCE 2019<span class="dot"></span></span>
+    <span class="marquee-item">4.9★ · 13 REVIEWS<span class="dot"></span></span>
+  </div>
 </div>
 
 <!-- SERVICES TEASER -->
 <section>
   <div class="wrap">
-    <h2>What we do</h2>
+    <div class="section-head">
+      <span class="eyebrow">What we do</span>
+      <h2>Electrical services, done right.</h2>
+      <p class="lede">Electrical repairs, panel upgrades, EV charger installs, ceiling fan and lighting work.</p>
+    </div>
     <div class="service-grid">
-      <!-- Replace this block per service. Each card links to its own SEO page. -->
       <a class="service-card" href="/electrical-repair-atlanta.html">
-        <i class="icon" data-lucide="zap"></i>
+        <span class="icon"><i data-lucide="zap"></i></span>
         <h3>Electrical Repair</h3>
         <p>Tripping breakers, dead outlets, flickering lights — diagnosed and fixed the same day, most of the time.</p>
+        <span class="svc-foot">View service</span>
       </a>
       <a class="service-card" href="/panel-upgrade-atlanta.html">
-        <i class="icon" data-lucide="battery-charging"></i>
+        <span class="icon"><i data-lucide="battery-charging"></i></span>
         <h3>Panel Upgrades</h3>
         <p>200-amp service upgrades, subpanel additions, and whole-home rewires. Priced up front, permitted properly.</p>
+        <span class="svc-foot">View service</span>
       </a>
       <a class="service-card" href="/ev-charger-installation-atlanta.html">
-        <i class="icon" data-lucide="plug-zap"></i>
+        <span class="icon"><i data-lucide="plug-zap"></i></span>
         <h3>EV Charger Installation</h3>
         <p>Level 2 home chargers (Tesla, ChargePoint, Wallbox) installed and inspected. Panel load check included.</p>
+        <span class="svc-foot">View service</span>
       </a>
-      <!-- Add more service cards as needed; duplicate pattern -->
+      <a class="service-card" href="/ceiling-fan-installation-atlanta.html">
+        <span class="icon"><i data-lucide="lightbulb"></i></span>
+        <h3>Ceiling Fans & Lighting</h3>
+        <p>Ceiling fan installs, recessed lighting, chandelier hangs, and outdoor fixture work across Atlanta.</p>
+        <span class="svc-foot">View service</span>
+      </a>
     </div>
-    <p style="margin-top: 24px; text-align: center;">
-      <a href="/services.html" style="color: var(--accent); font-weight: 600;">See all services →</a>
+    <p style="margin-top: 32px; text-align: center;">
+      <a href="/services.html" style="color: var(--accent-light); font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase;">See all services →</a>
     </p>
   </div>
 </section>
@@ -120,7 +196,10 @@
      "Our Story" — pre-push-gate enforces. -->
 <section class="reviews-bar" id="reviews">
   <div class="wrap">
-    <h2>What our customers say</h2>
+    <div class="section-head" style="text-align: center; margin-left: auto; margin-right: auto;">
+      <span class="eyebrow">What customers say</span>
+      <h2>Real words from real Atlanta customers.</h2>
+    </div>
 
     <!-- PATH A — reviews-track for captured >= 3 -->
     <div class="reviews-track">
@@ -176,57 +255,152 @@ It’s refreshing to find a true professional who takes pride in their work.</p>
 </section>
 
 <!-- GALLERY (ambiguous photo slots) -->
-<section>
+<section class="section-alt">
   <div class="wrap">
-    <h2>Recent work</h2>
+    <div class="section-head">
+      <span class="eyebrow">Recent work</span>
+      <h2>Electrical services jobs around Atlanta.</h2>
+    </div>
     <div class="gtmdot-photo-gallery">
       <figure class="gtmdot-photo-slot"
               data-slot-id="GALLERY_1"
               data-context="electrical-panel-OK|breaker-box-OK|wiring-OK"
               data-resolved="false">
         <img src="photos/gbp-1.jpg" alt="">
+        <figcaption class="work-caption">
+          <span class="work-caption-tag">Electrical services</span>
+          Atlanta · Job #1
+        </figcaption>
       </figure>
       <figure class="gtmdot-photo-slot"
               data-slot-id="GALLERY_2"
               data-context="light-fixture-OK|ceiling-fan-OK|interior-OK"
               data-resolved="false">
         <img src="photos/gbp-2.jpg" alt="">
+        <figcaption class="work-caption">
+          <span class="work-caption-tag">Electrical services</span>
+          Atlanta · Job #2
+        </figcaption>
       </figure>
       <figure class="gtmdot-photo-slot"
               data-slot-id="GALLERY_3"
               data-context="ev-charger-OK|outdoor-wiring-OK|garage-install-OK"
               data-resolved="false">
         <img src="photos/gbp-3.jpg" alt="">
+        <figcaption class="work-caption">
+          <span class="work-caption-tag">Electrical services</span>
+          Atlanta · Job #3
+        </figcaption>
       </figure>
       <figure class="gtmdot-photo-slot"
               data-slot-id="GALLERY_4"
               data-context="outlet-OK|switch-OK|before-after-OK"
               data-resolved="false">
         <img src="photos/gbp-4.jpg" alt="">
+        <figcaption class="work-caption">
+          <span class="work-caption-tag">Electrical services</span>
+          Atlanta · Job #4
+        </figcaption>
       </figure>
       <figure class="gtmdot-photo-slot"
               data-slot-id="GALLERY_5"
               data-context="electrician-at-work-OK|residential-interior-OK"
               data-resolved="false">
         <img src="photos/gbp-5.jpg" alt="">
+        <figcaption class="work-caption">
+          <span class="work-caption-tag">Electrical services</span>
+          Atlanta · Job #5
+        </figcaption>
       </figure>
       <figure class="gtmdot-photo-slot"
               data-slot-id="GALLERY_6"
               data-context="truck-OK|team-OK|uniform-OK"
               data-resolved="false">
         <img src="photos/gbp-6.jpg" alt="">
+        <figcaption class="work-caption">
+          <span class="work-caption-tag">Electrical services</span>
+          Atlanta · Job #6
+        </figcaption>
       </figure>
     </div>
   </div>
 </section>
 
-<!-- CTA FOOTER -->
-<section style="background: var(--accent-soft); text-align: center;">
+<!-- ESTIMATE BAND — present on every page except contact.html -->
+<section class="estimate-band">
+  <div class="wrap estimate-band-grid">
+    <div class="estimate-band-copy">
+      <span class="eyebrow">Get an estimate</span>
+      <h2>Free quote, usually same week.</h2>
+      <p class="lede">Tell us about the job. We'll get back to you with a written estimate — no obligation, no upsell.</p>
+      <ul class="trust-row">
+        <li>Free written estimates, every time</li>
+        <li>Same-week scheduling for most jobs</li>
+        <li>4.9★ from 13 Atlanta customers</li>
+        <li>Serving Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody</li>
+      </ul>
+      <div class="direct-line">
+        <span class="label">Or call us direct</span>
+        <a class="phone" href="tel:+16787872022">(678) 787-2022</a>
+      </div>
+    </div>
+
+    <form class="estimate-form" method="post" action="https://crm.cloakanddagger.co/api/site-intake">
+      <div class="form-head">
+        <h3>Tell us what you need</h3>
+        <span class="response-time"><span class="dot"></span>Replies same day</span>
+      </div>
+
+      <div class="row-2">
+        <div>
+          <label for="estimate-name">Name</label>
+          <input id="estimate-name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="estimate-phone">Phone</label>
+          <input id="estimate-phone" name="phone" type="tel">
+        </div>
+      </div>
+
+      <div>
+        <label for="estimate-email">Email</label>
+        <input id="estimate-email" name="email" type="email" required>
+      </div>
+
+      <div>
+        <label for="estimate-service">Service needed</label>
+        <select id="estimate-service" name="service" required>
+          <option value="">Select a service…</option>
+          <option value="electrical-repair-atlanta">Electrical Repair</option>
+          <option value="panel-upgrade-atlanta">Panel Upgrades</option>
+          <option value="ev-charger-installation-atlanta">EV Charger Installation</option>
+          <option value="ceiling-fan-installation-atlanta">Ceiling Fans & Lighting</option>
+          <option value="other">Other / not sure</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="estimate-message">Tell us about your project</label>
+        <textarea id="estimate-message" name="message" required></textarea>
+      </div>
+
+      <div class="form-foot">
+        <p class="privacy">We never share your info. By submitting, you agree we may text or email about your estimate.</p>
+        <button type="submit" class="submit">
+          <i data-lucide="send"></i>
+          Get a Free Estimate
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
   <div class="wrap">
-    <h2>Ready to get started?</h2>
-    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">Free estimates, no pressure. We show up when we say we will.</p>
-    <a class="cta-btn" href="/contact.html">Get a Free Estimate</a>
-    <p style="margin-top: 16px;">or call <a href="tel:+16787872022" style="color: var(--accent); font-weight: 600;">(678) 787-2022</a></p>
+    <span class="eyebrow">Or just give us a call</span>
+    <h2>Free estimates, no pressure. We show up when we say we will.</h2>
+    <p class="cta-tail"><a class="cta-phone" href="tel:+16787872022">(678) 787-2022</a></p>
   </div>
 </section>
 
@@ -235,7 +409,7 @@ It’s refreshing to find a true professional who takes pride in their work.</p>
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Plugged Electricians</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Atlanta's trusted electrical team</p>
+        <p>Atlanta's trusted electrical team</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -253,7 +427,7 @@ It’s refreshing to find a true professional who takes pride in their work.</p>
         <h4>Contact</h4>
         <a href="tel:+16787872022">(678) 787-2022</a>
         <a href="mailto:contact@pluggedelectriciansatl.com">contact@pluggedelectriciansatl.com</a>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody</p>
+        <p style="margin-top: 8px;">Serving Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -263,9 +437,24 @@ It’s refreshing to find a true professional who takes pride in their work.</p>
 </footer>
 
 <script>
+  // Init lucide icons (replaces all <i data-lucide="..."> with SVGs)
   if (window.lucide) window.lucide.createIcons();
   document.addEventListener('DOMContentLoaded', () => {
     if (window.lucide) window.lucide.createIcons();
+
+    // Sticky-nav state on scroll (adds .scrolled past 8px)
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
+
+    // Reveal-on-scroll for any .reveal element
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => e.isIntersecting && e.target.classList.add('visible'));
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   });
 </script>
 

@@ -6,13 +6,15 @@
   <title>Services — Plugged Electricians Atl LLC in Atlanta, GA</title>
   <meta name="description" content="Full list of services from Plugged Electricians Atl LLC serving Atlanta and surrounding areas. Electrical repairs, panel upgrades, EV charger installs, ceiling fan and lighting work.">
   <link rel="canonical" href="https://plugged-electricians-atl.gtmdot.com/services.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="_base.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap site-header-inner">
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
     <a class="site-logo" href="/">Plugged Electricians</a>
     <nav class="site-nav">
       <a href="/services.html">Services</a>
@@ -26,46 +28,118 @@
   </div>
 </header>
 
-<section>
+<section style="padding-top: 88px;">
   <div class="wrap">
-    <h1 style="font-size: clamp(32px, 5vw, 48px); margin: 48px 0 16px;">Services we offer</h1>
-    <p style="color: var(--ink-soft); font-size: 18px; margin: 0 0 32px; max-width: 720px;">
-      We handle residential electrical work across metro Atlanta — from a single tripping breaker up to a full-panel upgrade for an EV charger. Every job starts with a free estimate.
-    </p>
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h1>What we do for Atlanta.</h1>
+      <p class="lede">We handle residential electrical work across metro Atlanta — from a single tripping breaker up to a full-panel upgrade for an EV charger. Every job starts with a free estimate.</p>
+    </div>
 
     <div class="service-grid">
-      <!-- One card per service in this vertical. Each links to its own SEO page. -->
       <a class="service-card" href="/electrical-repair-atlanta.html">
-        <i class="icon" data-lucide="zap"></i>
+        <span class="icon"><i data-lucide="zap"></i></span>
         <h3>Electrical Repair</h3>
         <p>Tripping breakers, dead outlets, flickering lights — diagnosed and fixed the same day, most of the time.</p>
+        <span class="svc-foot">View service</span>
       </a>
       <a class="service-card" href="/panel-upgrade-atlanta.html">
-        <i class="icon" data-lucide="battery-charging"></i>
+        <span class="icon"><i data-lucide="battery-charging"></i></span>
         <h3>Panel Upgrades</h3>
         <p>200-amp service upgrades, subpanel additions, and whole-home rewires. Priced up front, permitted properly.</p>
+        <span class="svc-foot">View service</span>
       </a>
       <a class="service-card" href="/ev-charger-installation-atlanta.html">
-        <i class="icon" data-lucide="plug-zap"></i>
+        <span class="icon"><i data-lucide="plug-zap"></i></span>
         <h3>EV Charger Installation</h3>
         <p>Level 2 home chargers (Tesla, ChargePoint, Wallbox) installed and inspected. Panel load check included.</p>
+        <span class="svc-foot">View service</span>
       </a>
       <a class="service-card" href="/ceiling-fan-installation-atlanta.html">
-        <i class="icon" data-lucide="lightbulb"></i>
+        <span class="icon"><i data-lucide="lightbulb"></i></span>
         <h3>Ceiling Fans & Lighting</h3>
         <p>Ceiling fan installs, recessed lighting, chandelier hangs, and outdoor fixture work across Atlanta.</p>
+        <span class="svc-foot">View service</span>
       </a>
-      <!-- Add more as needed; minimum 4 service cards to justify multi-page -->
     </div>
   </div>
 </section>
 
-<section style="background: var(--accent-soft); text-align: center;">
+<!-- ESTIMATE BAND — present on every page except contact.html -->
+<section class="estimate-band">
+  <div class="wrap estimate-band-grid">
+    <div class="estimate-band-copy">
+      <span class="eyebrow">Get an estimate</span>
+      <h2>Free quote, usually same week.</h2>
+      <p class="lede">Tell us about the job. We'll get back to you with a written estimate — no obligation, no upsell.</p>
+      <ul class="trust-row">
+        <li>Free written estimates, every time</li>
+        <li>Same-week scheduling for most jobs</li>
+        <li>4.9★ from 13 Atlanta customers</li>
+        <li>Serving Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody</li>
+      </ul>
+      <div class="direct-line">
+        <span class="label">Or call us direct</span>
+        <a class="phone" href="tel:+16787872022">(678) 787-2022</a>
+      </div>
+    </div>
+
+    <form class="estimate-form" method="post" action="https://crm.cloakanddagger.co/api/site-intake">
+      <div class="form-head">
+        <h3>Tell us what you need</h3>
+        <span class="response-time"><span class="dot"></span>Replies same day</span>
+      </div>
+
+      <div class="row-2">
+        <div>
+          <label for="estimate-name">Name</label>
+          <input id="estimate-name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="estimate-phone">Phone</label>
+          <input id="estimate-phone" name="phone" type="tel">
+        </div>
+      </div>
+
+      <div>
+        <label for="estimate-email">Email</label>
+        <input id="estimate-email" name="email" type="email" required>
+      </div>
+
+      <div>
+        <label for="estimate-service">Service needed</label>
+        <select id="estimate-service" name="service" required>
+          <option value="">Select a service…</option>
+          <option value="electrical-repair-atlanta">Electrical Repair</option>
+          <option value="panel-upgrade-atlanta">Panel Upgrades</option>
+          <option value="ev-charger-installation-atlanta">EV Charger Installation</option>
+          <option value="ceiling-fan-installation-atlanta">Ceiling Fans & Lighting</option>
+          <option value="other">Other / not sure</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="estimate-message">Tell us about your project</label>
+        <textarea id="estimate-message" name="message" required></textarea>
+      </div>
+
+      <div class="form-foot">
+        <p class="privacy">We never share your info. By submitting, you agree we may text or email about your estimate.</p>
+        <button type="submit" class="submit">
+          <i data-lucide="send"></i>
+          Get a Free Estimate
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
   <div class="wrap">
-    <h2>Not sure which service you need?</h2>
-    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">We'll help you figure it out.</p>
-    <a class="cta-btn" href="/contact.html">Get a Free Estimate</a>
-    <p style="margin-top: 16px;">or call <a href="tel:+16787872022" style="color: var(--accent); font-weight: 600;">(678) 787-2022</a></p>
+    <span class="eyebrow">Or just give us a call</span>
+    <h2>Free estimates, no pressure. We show up when we say we will.</h2>
+    <p class="cta-tail"><a class="cta-phone" href="tel:+16787872022">(678) 787-2022</a></p>
   </div>
 </section>
 
@@ -74,7 +148,7 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Plugged Electricians</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Atlanta's trusted electrical team</p>
+        <p>Atlanta's trusted electrical team</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -92,7 +166,7 @@
         <h4>Contact</h4>
         <a href="tel:+16787872022">(678) 787-2022</a>
         <a href="mailto:contact@pluggedelectriciansatl.com">contact@pluggedelectriciansatl.com</a>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody</p>
+        <p style="margin-top: 8px;">Serving Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -102,8 +176,15 @@
 </footer>
 
 <script>
+  if (window.lucide) window.lucide.createIcons();
   document.addEventListener('DOMContentLoaded', () => {
     if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
   });
 </script>
 

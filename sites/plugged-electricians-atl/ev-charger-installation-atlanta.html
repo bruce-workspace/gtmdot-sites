@@ -23,6 +23,8 @@
   <title>EV Charger Installation in Atlanta, GA — Plugged Electricians</title>
   <meta name="description" content="Tesla, ChargePoint, Wallbox EV chargers installed and inspected. Panel load check included. Atlanta licensed electrician. 4.9-star Google. (678) 787-2022.">
   <link rel="canonical" href="https://plugged-electricians-atl.gtmdot.com/ev-charger-installation-atlanta.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="_base.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 
@@ -80,8 +82,8 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap site-header-inner">
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
     <a class="site-logo" href="/">Plugged Electricians</a>
     <nav class="site-nav">
       <a href="/services.html">Services</a>
@@ -96,42 +98,62 @@
 </header>
 
 <!-- HERO (service-specific) -->
-<section class="hero">
+<section class="hero" style="min-height: 60vh;">
   <div class="wrap">
-    <p style="font-size: 14px; color: var(--ink-soft); margin: 0 0 12px;">
-      <a href="/services.html" style="color: var(--ink-soft); text-decoration: none;">Services</a> / EV Charger Installation
-    </p>
-    <h1>Level 2 EV charger installation in Atlanta</h1>
-    <p class="lede">Home EV chargers installed and inspected — Tesla Wall Connector, ChargePoint, Wallbox, whatever you have or want.</p>
-    <a class="cta-btn" href="/contact.html">Get a Free Estimate</a>
+    <div class="hero-content">
+      <div class="hero-stamps">
+        <span class="hero-kicker">Electrical services · Atlanta</span>
+      </div>
+      <p class="prose breadcrumb" style="margin: 0 0 16px;">
+        <a href="/services.html">Services</a> / EV Charger Installation
+      </p>
+      <h1>Level 2 EV charger installation in Atlanta</h1>
+      <p class="lede">Home EV chargers installed and inspected — Tesla Wall Connector, ChargePoint, Wallbox, whatever you have or want.</p>
+      <div class="hero-actions">
+        <a class="cta-btn" href="/contact.html">
+          <i data-lucide="message-circle"></i>
+          Get a Free Estimate
+        </a>
+        <a class="btn-ghost" href="tel:+16787872022">
+          <i data-lucide="phone"></i>
+          (678) 787-2022
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- SERVICE BODY — 400-600 words of unique content -->
 <section>
-  <div class="wrap" style="max-width: 840px;">
-    <h2>What gets installed</h2>
-    <p style="font-size: 17px; line-height: 1.65;">A Level 2 charger (240V, typically 40 or 48 amps) is the practical home standard — gives you about 25–30 miles of range per hour of charging. Everyone we install is code-compliant, GFCI-protected at the breaker, and grounded properly.</p>
-    <p style="font-size: 17px; line-height: 1.65;">We install whatever you buy: Tesla Wall Connector, ChargePoint Home Flex, Wallbox Pulsar Plus, Grizzl-E, Emporia. If you don't have one yet, we'll tell you which makes sense for your car and panel capacity.</p>
+  <div class="wrap">
+    <div class="prose">
+      <span class="eyebrow">About this service</span>
+      <h2>What gets installed</h2>
+      <p>A Level 2 charger (240V, typically 40 or 48 amps) is the practical home standard — gives you about 25–30 miles of range per hour of charging. Everyone we install is code-compliant, GFCI-protected at the breaker, and grounded properly.</p>
+      <p>We install whatever you buy: Tesla Wall Connector, ChargePoint Home Flex, Wallbox Pulsar Plus, Grizzl-E, Emporia. If you don't have one yet, we'll tell you which makes sense for your car and panel capacity.</p>
 
-    <h3>Panel load check comes first</h3>
-    <p style="font-size: 17px; line-height: 1.65;">Before anything gets wired, we do a panel load calculation per NEC Article 220. The question is whether your existing panel can handle a 40 or 48-amp continuous draw on top of your current load. About 30% of Atlanta homes we look at need a subpanel or a panel upgrade first.</p>
-    <p style="font-size: 17px; line-height: 1.65;">If your panel has room, installation is a half-day job: new 240V circuit, conduit run from panel to charger location (garage, driveway, side of house), hardware mount, and a quick test with your car. We pull the permit and schedule the inspection.</p>
+      <h3>Panel load check comes first</h3>
+      <p>Before anything gets wired, we do a panel load calculation per NEC Article 220. The question is whether your existing panel can handle a 40 or 48-amp continuous draw on top of your current load. About 30% of Atlanta homes we look at need a subpanel or a panel upgrade first.</p>
+      <p>If your panel has room, installation is a half-day job: new 240V circuit, conduit run from panel to charger location (garage, driveway, side of house), hardware mount, and a quick test with your car. We pull the permit and schedule the inspection.</p>
 
-    <h3>What to expect</h3>
-    <ol style="font-size: 17px; line-height: 1.7;">
-      <li>Free on-site load calc — we measure your existing panel capacity and tell you straight up if it'll handle the EV charger.</li>
-      <li>If load is fine: quote the install. If load is marginal: we quote both the EV install AND the subpanel or main upgrade needed.</li>
-      <li>Install day — typically half a day of work, starting with panel-off time.</li>
-      <li>Permit inspection + a test charge with your car. You plug in and we confirm it's delivering full amperage.</li>
-    </ol>
+      <h3>What to expect</h3>
+      <ol>
+        <li>Free on-site load calc — we measure your existing panel capacity and tell you straight up if it'll handle the EV charger.</li>
+        <li>If load is fine: quote the install. If load is marginal: we quote both the EV install AND the subpanel or main upgrade needed.</li>
+        <li>Install day — typically half a day of work, starting with panel-off time.</li>
+        <li>Permit inspection + a test charge with your car. You plug in and we confirm it's delivering full amperage.</li>
+      </ol>
+    </div>
   </div>
 </section>
 
 <!-- SERVICE-SPECIFIC GALLERY -->
-<section style="background: var(--paper-soft);">
+<section class="section-alt">
   <div class="wrap">
-    <h2>EV Charger Installation — recent work</h2>
+    <div class="section-head">
+      <span class="eyebrow">Recent work</span>
+      <h2>EV Charger Installation jobs.</h2>
+    </div>
     <div class="gtmdot-photo-gallery">
       <figure class="gtmdot-photo-slot"
               data-slot-id="SERVICE_GALLERY_1"
@@ -157,33 +179,103 @@
 
 <!-- FAQs -->
 <section>
-  <div class="wrap" style="max-width: 840px;">
-    <h2>Frequently asked questions</h2>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">How much does EV charger installation cost?</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">A straightforward Level 2 install with a short conduit run is typically $700–$1,200 including permit. Longer runs, trenching, or panel work push it higher. We quote after we see the site.</p>
-    </details>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">Will I need a panel upgrade?</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">About 30% of Atlanta homes we assess do. If your panel is 200-amp and not already loaded up, you're probably fine. If it's 100-amp or you've already added a lot of circuits (finished basement, heat pump, etc.), you may need a subpanel or main upgrade.</p>
-    </details>
-
-    <details style="border-bottom: 1px solid var(--rule); padding: 16px 0;">
-      <summary style="font-weight: 600; font-size: 17px; cursor: pointer;">Do you handle the permit?</summary>
-      <p style="margin: 12px 0 0; line-height: 1.6;">Yes. We pull the electrical permit and schedule the inspection. You get the signed permit card — helps with home resale and some EV rebate programs.</p>
-    </details>
+  <div class="wrap">
+    <div class="section-head" style="text-align: center; margin-left: auto; margin-right: auto;">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions about EV Charger Installation.</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary>How much does EV charger installation cost?</summary>
+        <p>A straightforward Level 2 install with a short conduit run is typically $700–$1,200 including permit. Longer runs, trenching, or panel work push it higher. We quote after we see the site.</p>
+      </details>
+      <details>
+        <summary>Will I need a panel upgrade?</summary>
+        <p>About 30% of Atlanta homes we assess do. If your panel is 200-amp and not already loaded up, you're probably fine. If it's 100-amp or you've already added a lot of circuits (finished basement, heat pump, etc.), you may need a subpanel or main upgrade.</p>
+      </details>
+      <details>
+        <summary>Do you handle the permit?</summary>
+        <p>Yes. We pull the electrical permit and schedule the inspection. You get the signed permit card — helps with home resale and some EV rebate programs.</p>
+      </details>
+    </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section style="background: var(--accent-soft); text-align: center;">
+<!-- ESTIMATE BAND — present on every page except contact.html -->
+<section class="estimate-band">
+  <div class="wrap estimate-band-grid">
+    <div class="estimate-band-copy">
+      <span class="eyebrow">Get an estimate</span>
+      <h2>Free quote, usually same week.</h2>
+      <p class="lede">Tell us about the job. We'll get back to you with a written estimate — no obligation, no upsell.</p>
+      <ul class="trust-row">
+        <li>Free written estimates, every time</li>
+        <li>Same-week scheduling for most jobs</li>
+        <li>4.9★ from 13 Atlanta customers</li>
+        <li>Serving Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody</li>
+      </ul>
+      <div class="direct-line">
+        <span class="label">Or call us direct</span>
+        <a class="phone" href="tel:+16787872022">(678) 787-2022</a>
+      </div>
+    </div>
+
+    <form class="estimate-form" method="post" action="https://crm.cloakanddagger.co/api/site-intake">
+      <div class="form-head">
+        <h3>Tell us what you need</h3>
+        <span class="response-time"><span class="dot"></span>Replies same day</span>
+      </div>
+
+      <div class="row-2">
+        <div>
+          <label for="estimate-name">Name</label>
+          <input id="estimate-name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="estimate-phone">Phone</label>
+          <input id="estimate-phone" name="phone" type="tel">
+        </div>
+      </div>
+
+      <div>
+        <label for="estimate-email">Email</label>
+        <input id="estimate-email" name="email" type="email" required>
+      </div>
+
+      <div>
+        <label for="estimate-service">Service needed</label>
+        <select id="estimate-service" name="service" required>
+          <option value="">Select a service…</option>
+          <option value="electrical-repair-atlanta">Electrical Repair</option>
+          <option value="panel-upgrade-atlanta">Panel Upgrades</option>
+          <option value="ev-charger-installation-atlanta">EV Charger Installation</option>
+          <option value="ceiling-fan-installation-atlanta">Ceiling Fans & Lighting</option>
+          <option value="other">Other / not sure</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="estimate-message">Tell us about your project</label>
+        <textarea id="estimate-message" name="message" required></textarea>
+      </div>
+
+      <div class="form-foot">
+        <p class="privacy">We never share your info. By submitting, you agree we may text or email about your estimate.</p>
+        <button type="submit" class="submit">
+          <i data-lucide="send"></i>
+          Get a Free Estimate
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
   <div class="wrap">
-    <h2>Ready for EV Charger Installation in Atlanta?</h2>
-    <p style="margin: 0 0 24px; color: var(--ink-soft); font-size: 18px;">Free on-site load calculation. If your panel can handle it, we'll install same week.</p>
-    <a class="cta-btn" href="/contact.html">Get a Free Estimate</a>
-    <p style="margin-top: 16px;">or call <a href="tel:+16787872022" style="color: var(--accent); font-weight: 600;">(678) 787-2022</a></p>
+    <span class="eyebrow">Or just give us a call</span>
+    <h2>Free estimates, no pressure. We show up when we say we will.</h2>
+    <p class="cta-tail"><a class="cta-phone" href="tel:+16787872022">(678) 787-2022</a></p>
   </div>
 </section>
 
@@ -192,7 +284,7 @@
     <div class="footer-grid">
       <div class="footer-col">
         <h4>Plugged Electricians</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Atlanta's trusted electrical team</p>
+        <p>Atlanta's trusted electrical team</p>
       </div>
       <div class="footer-col">
         <h4>Services</h4>
@@ -210,7 +302,7 @@
         <h4>Contact</h4>
         <a href="tel:+16787872022">(678) 787-2022</a>
         <a href="mailto:contact@pluggedelectriciansatl.com">contact@pluggedelectriciansatl.com</a>
-        <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin: 8px 0 0;">Serving Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody</p>
+        <p style="margin-top: 8px;">Serving Atlanta, Buckhead, Decatur, Sandy Springs, Dunwoody</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -220,8 +312,15 @@
 </footer>
 
 <script>
+  if (window.lucide) window.lucide.createIcons();
   document.addEventListener('DOMContentLoaded', () => {
     if (window.lucide) window.lucide.createIcons();
+    const header = document.getElementById('siteHeader');
+    if (header) {
+      const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    }
   });
 </script>
 

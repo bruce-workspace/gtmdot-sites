@@ -1,5 +1,6 @@
 {
   "vertical": "electrical",
+  "trade_category": "Electrical services",
   "service_cards": {
     "electrical-repair": "zap",
     "panel-upgrade": "battery-charging",
@@ -10,8 +11,13 @@
   "nav": {
     "menu": "menu"
   },
+  "actions": {
+    "primary-cta": "message-circle",
+    "phone-cta": "phone",
+    "form-submit": "send"
+  },
   "contact": {
     "upload": "upload-cloud"
   },
-  "notes": "Electrical vertical uses distinct tools, not hammer/wrench. zap=repair, battery-charging=panel, plug-zap=EV, lightbulb=ceiling-fan+lighting. Matches ICON-MAPPING.md."
+  "notes": "Electrical vertical icons per ICON-MAPPING.md §Electrical. zap=general electrical repair, battery-charging=service-panel upgrade, plug-zap=EV charger install, lightbulb=ceiling fans + lighting. Action icons (message-circle, phone, send) are scaffold-level and appear on every multi-page site — listed under actions so they don't get confused with vertical icon choices."
 }
