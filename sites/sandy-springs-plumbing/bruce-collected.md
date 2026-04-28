@@ -1,43 +1,30 @@
-# Bruce Collected — sandy-springs-plumbing
-
-**Collected at:** 2026-04-26T22:05:00Z  
-**Requested at:** 2026-04-25T18:14:24Z  
-**Requested by:** mini-enrichment-dispatcher  
-**Wall clock used:** ~9 min  
-**Budget:** 15 photos / 30 reviews / 10 min
-
+---
+slug: sandy-springs-plumbing
+request_id: 2026-04-28T02:33:45Z
+collected_at: 2026-04-28T02:45:00Z
+status: success
 ---
 
-## Source results
+# Bruce Collected — Sandy Springs Plumbing
 
-| Source | Status | Photos | Reviews | Notes |
-|--------|--------|--------|---------|-------|
-| google-places | **success** | 5 | 5 | Sandy Springs Plumbing Heating Air Conditioning. 10 photo refs; 5 downloaded (gbp-01..05). 5 reviews captured (all 5★, aurora trevino, Judith Stone, Brandi Snyder + 2 more). |
-| yelp.com | **not-attempted** | 0 | 0 | No Yelp URL confirmed; GBP photo set sufficient |
-| nextdoor.com | **not-attempted** | 0 | 0 | |
-| thumbtack.com | **not-attempted** | 0 | 0 | |
-| bbb.com | **not-attempted** | 0 | 0 | |
+## Summary
+Generation-only request per Jesse's explicit brief. Hero image generated per tight prompt. No scraping performed — existing 5 GBP photos and 5 reviews are sufficient per scope.
+
+## Results
+
+### photos-generated/ — SUCCESS
+- `photos-generated/hero-01.jpg` — editorial kitchen-faucet hero: polished brushed-nickel pull-down faucet, white farmhouse sink, marble countertop, morning light, shallow DOF. Exactly per Jesse's primary prompt. 16:9 landscape. No people, no logos.
+
+### photos-raw/ (pre-existing) — NO CHANGE
+- 5 GBP photos present. Photo-quality labels applied to bruce-asset-intel.json.
+
+### reviews-raw.json (pre-existing) — NO CHANGE
+- 5 strong Google reviews. No enrichment per collect-request scope.
 
 ## Totals
+- Photos: 0 new scraped + 1 generated = 1 new asset
+- Reviews: 5 (pre-existing, no change)
+- Wall-clock used: ~3m 30s (well within 4m cap for generation-only request)
 
-- **Photos collected:** 5 (all GBP, 66KB–188KB range — good quality JPEGs)
-- **Reviews collected:** 5 (all Google Places, all 5★)
-- **Generated images:** 0
-- **Final status:** success
-
-## Per-source detail
-
-### google-places — success
-- Business: Sandy Springs Plumbing Heating Air Conditioning, Atlanta GA
-- 10 photos available on Google; 5 downloaded (budget for 15, but only needed 5)
-- Reviews captured: aurora trevino (5★), Judith Stone (5★), Brandi Snyder (5★), + 2 more
-- All 5★ — strong review profile
-
-## Files written
-
-- `sites/sandy-springs-plumbing/photos-raw/gbp-01.jpg` (176KB)
-- `sites/sandy-springs-plumbing/photos-raw/gbp-02.jpg` (178KB)
-- `sites/sandy-springs-plumbing/photos-raw/gbp-03.jpg` (66KB)
-- `sites/sandy-springs-plumbing/photos-raw/gbp-04.jpg` (188KB)
-- `sites/sandy-springs-plumbing/photos-raw/gbp-05.jpg` (78KB)
-- `sites/sandy-springs-plumbing/reviews-raw.json` (5 reviews)
+## Handing back to Mini
+Per §11.11.3, default-accept applies. `bruce-asset-intel.{md,json}` + `photos-generated/hero-01.jpg` are in place. Ready for integration. Over to you.

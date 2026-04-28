@@ -1,0 +1,83 @@
+{
+  "slug": "sandy-springs-plumbing",
+  "generated_at": "2026-04-28T02:45:00Z",
+  "status": "success",
+  "model_stack": {
+    "reasoning": "openai-codex-gpt-5.5",
+    "image_generation": "minimax/image-01"
+  },
+  "photo_quality": [
+    {
+      "path": "photos-raw/gbp-01.jpg",
+      "label": "proof-candidate",
+      "confidence": 0.72,
+      "reasoning": "Septic/excavation work — documentary but real job. SERVICE_GALLERY or proof slots. Low caption-overlay risk.",
+      "object_tags": ["excavation", "plumbing", "exterior"]
+    },
+    {
+      "path": "photos-raw/gbp-02.jpg",
+      "label": "proof-candidate",
+      "confidence": 0.70,
+      "reasoning": "Tankless water heater in attic. Confirms real plumbing work. SERVICE_GALLERY candidate. Low caption-overlay risk.",
+      "object_tags": ["tankless-heater", "attic", "plumbing"]
+    },
+    {
+      "path": "photos-raw/gbp-03.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.75,
+      "reasoning": "Exterior HVAC unit. Good atmosphere photo. Low caption-overlay risk.",
+      "object_tags": ["hvac", "exterior", "service"]
+    },
+    {
+      "path": "photos-raw/gbp-04.jpg",
+      "label": "proof-candidate",
+      "confidence": 0.82,
+      "reasoning": "Freestanding tub — strongest real photo in the set. Currently in use as GTMDot card. Works for SERVICE_GALLERY or proof. Low caption-overlay risk.",
+      "object_tags": ["freestanding-tub", "bathroom", "plumbing"]
+    },
+    {
+      "path": "photos-raw/gbp-05.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.68,
+      "reasoning": "Fixture shot. Adequate but not distinctive. Low caption-overlay risk.",
+      "object_tags": ["fixture", "bathroom"]
+    }
+  ],
+  "hero_recommendation": {
+    "preferred_path": "photos-generated/hero-01.jpg",
+    "preferred_source": "generated",
+    "fallback_path": "photos-raw/gbp-04.jpg",
+    "reasoning": "Generated hero per Jesse's explicit request — editorial kitchen-faucet shot, polished brushed-nickel faucet, white farmhouse sink, morning light, marble countertop. Exactly per tight prompt in collect-request. Reads at 340px thumbnail for carousel card. Fallback gbp-04.jpg (freestanding tub) is strong bathroom proof but less aspirational for hero use."
+  },
+  "icon_warnings": [],
+  "object_verification": [
+    {
+      "claim": "Plumbing services business",
+      "evidence": "5 Google reviews referencing main water line replacement, sewer line, bathroom plumbing, faucet repair; gbp-01..05.jpg show real plumbing work",
+      "confidence": 0.92
+    },
+    {
+      "claim": "Atlanta-area service",
+      "evidence": "Reviews reference Dunwoody, Sandy Springs; address confirms Georgia service area",
+      "confidence": 0.90
+    }
+  ],
+  "review_coverage": {
+    "captured_total": 5,
+    "sources_present": ["google-places"],
+    "sources_recommended_for_enrichment": [],
+    "sufficiency": "sufficient",
+    "reasoning": "5 strong Google reviews with named plumbers and specific project details. No enrichment needed per collect-request scope."
+  },
+  "generated_images": [
+    {
+      "path": "photos-generated/hero-01.jpg",
+      "purpose": "hero",
+      "prompt": "Editorial interior photograph of a sun-lit modern kitchen, focused on a polished brushed-nickel pull-down faucet over a deep white farmhouse-style sink. Crisp marble countertop, soft morning light from a side window casting subtle shadows. Shallow depth of field — faucet sharp, background kitchen softly blurred. Warm whites, brushed nickel, faint greenery from a potted plant on the windowsill. Atlanta suburban-home aesthetic. No people. No text. No logos. No brand markings. No watermark. Photorealistic, magazine-quality, 16:9 landscape aspect ratio.",
+      "model": "minimax/image-01",
+      "model_revision": "image-1",
+      "license_note": "Synthetic image. Do not represent as actual company work.",
+      "intended_slot_context": "aspirational-OK | atmosphere-OK"
+    }
+  ]
+}
