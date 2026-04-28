@@ -1,88 +1,82 @@
-{
-  "source": "yelp",
-  "collected_at": "2026-04-25T04:47:00Z",
-  "business": "Tucker's Home Services",
-  "url": "https://www.yelp.com/biz/tuckers-home-services-woodstock",
-  "reviews": [
-    {
-      "reviewer_name": "Tom T.",
-      "reviewer_location": "Cumming, GA",
-      "date": "2025-07-25",
-      "rating": 5,
-      "text": "Highly recommend! They answered my text within an hour and came the next day! Very reasonable!",
-      "source": "yelp"
-    },
-    {
-      "reviewer_name": "Judith R.",
-      "reviewer_location": "Lincoln, RI",
-      "date": "2024-05-17",
-      "rating": 1,
-      "text": "Contacted Tucker's Home Services on 5/13. Was impressed to receive a quick response from Misty about an opening for 5/15. Quoted for the job and told \"Thanks! Gutter Cleaning would be $175.00 and this includes all gutters and above ground downspouts. Shaun will also blow roof as well as all walkways, patios and decks. No mess from gutters will be left. He will also do a full inspection of your gutter system and note any needed repairs or concerns.\" Asked for an estimate about some window repairs (a service Shaun provides) and told that \"Shaun wouldn't be the one doing the cleaning.\" The 15th arrived with no word from Misty, so I contacted them to confirm. Told they wouldn't make it that day, but would come the following day. Since then . . . Crickets. Not one thing I have been told by this company has been true/reliable. I will be looking elsewhere.",
-      "source": "yelp"
-    },
-    {
-      "reviewer_name": "Doug B.",
-      "reviewer_location": "Alpharetta, GA",
-      "date": "2022-02-09",
-      "rating": 5,
-      "text": "What a joy to have found a responsive, caring and competent gutter cleaning service. From scheduling (Misty) to the quality of the service, to knowledgeable crew members (Wes and Brian), to completeness of the work, to cleanup afterwards - and at a very fair price (including a senior discount) - Tucker Home Services is the real deal. We used them last year with similar results and will use them again. We have some other repair work they will be estimating for us, too. We highly recommend them!",
-      "source": "yelp"
-    },
-    {
-      "reviewer_name": "Robby S.",
-      "reviewer_location": "Atlanta, GA",
-      "date": "2017-10-05",
-      "rating": 5,
-      "text": "It is not often that you find a company that truly impresses you at every step of the process. Tucker's Home Services did just that for my home. Months ago I noticed two large sections of damaged gutters that when it rained, they would sag and water would completely come over the top. I called several companies and got various recommendations from others. Each was different, but Shaun Tucker (owner) really set himself apart. I met with Shaun to discuss the potential repairs, and I asked for a quote to replace all of the gutters. Shaun also politely explained to me that my gutters were the wrong size for my house and roof. I needed 6\" versus 5\" (builder standard), and as I was explaining the water pouring over the gutters, it suddenly was even more apparent to me. After receiving the quote and thinking about the gutter size issue, it definitely made more sense for me to replace all the gutters, and we started down that road. Granted, they are very, very busy, so the scheduled date was about 1 month out. During the next month, my wife decided to have the house painted since we would be getting new gutters. We conversed with Shaun and Misty (his wife) about timing, and we pushed it back to allow for a designer to help my wife choose colors. During this time, Shaun had his crew come out and clean the gutters since it would be a bit before they could be replaced as scheduled. The colors were finally chosen, the painter was all lined up, and the gutters were scheduled to be removed (prior to painting). A few delays happened during the painting, and Shaun rescheduled without issue. Finally, the gutter hanging day arrived. Shaun and crew spent the day on site fabricating and installing the gutters (and screens) to perfection. They cleaned everything and even spent time looking for disposed razor blades by the painters to insure my two little children were not injured. I could not have been more impressed or be happier with the choice to use Tucker's Home Services. I would recommend them to anyone looking to have any gutter services done and other home projects.",
-      "source": "yelp"
-    },
-    {
-      "reviewer_name": "Dana M.",
-      "reviewer_location": "Atlanta, GA",
-      "date": "2021-12-06",
-      "rating": 5,
-      "text": "They've been cleaning our gutters for 5+ years. Always dependable, very responsive, and do a great job!",
-      "source": "yelp"
-    },
-    {
-      "reviewer_name": "Ali P.",
-      "reviewer_location": "Atlanta, GA",
-      "date": "2021-10-15",
-      "rating": 5,
-      "text": "I have used Shaun for years to repair any and all exterior wood rot issues on my home. He is friendly, respectful, knowledgeable, and takes great pride in his work. I am always extremely pleased with the results! I highly recommend him.",
-      "source": "yelp"
-    },
-    {
-      "reviewer_name": "Joshering h.",
-      "reviewer_location": "Marietta, GA",
-      "date": "2021-07-24",
-      "rating": 1,
-      "text": "Made an appointment, they never showed up. I'd planned my day around it. No contact, no follow up. Don't waste YOUR time, I already did it for you!",
-      "source": "yelp"
-    },
-    {
-      "reviewer_name": "Christy W.",
-      "reviewer_location": "Sugar Grove, IL",
-      "date": "2018-11-18",
-      "rating": 5,
-      "text": "AMAZING! This crew that cleans our gutters are awesome!! We have quite a few gutters between our home and separate garage. They make any repairs as needed THE DAY they are out cleaning. The best part is the clean up they do after the gutters are washed out. They blow the leaves away from the house and pressure wash any mess left behind. I get a discount by having them come out 3-4 times a year as well! Great price! Try them, you will not be disappointed. SUPER HAPPY CUSTOMERS!",
-      "source": "yelp"
-    },
-    {
-      "reviewer_name": "Brandi S.",
-      "reviewer_location": "Woodstock, GA",
-      "date": "2019-04-08",
-      "rating": 5,
-      "text": "Couldn't be happier with their services period from start to finish have been wonderful to work with Sean and his team removed and replaced my horrible gutters are almost falling down all my down spouts and fixed all the rotten wood. They're very recently price they do what they say they're gonna do they do it when they say they're going to do it. I wish there were more companies out there like them. I will definitely use their services again!",
-      "source": "yelp"
-    },
-    {
-      "reviewer_name": "Zach W.",
-      "reviewer_location": "Tucker, GA",
-      "date": "2020-02-24",
-      "rating": 5,
-      "text": "Easy to work with. Reliable and honest. Great work! Will definitely recommend and have them back for more work. Thanks for a job well done.",
-      "source": "yelp"
-    }
-  ]
-}
+[
+  {
+    "source": "angi",
+    "source_url": "https://www.angi.com/companylist/us/ga/woodstock/tucker's-home-services-reviews-8253290.htm",
+    "scraped_at": "2026-04-28T05:49:00Z",
+    "reviewer_name": "Dan C.",
+    "star_rating": 1,
+    "review_date": "2021-05-01",
+    "review_text": "I phoned this company in Memorial Day to ask them to please put a stop work order on the employees working on a home next to me, the loud construction work was disrespectful to our enjoyment of a peaceful holiday. An answering service kindly told me they are observing the holiday and cannot take calls. Profit matters .. no respect or principals for anyone else.",
+    "review_language": "en"
+  },
+  {
+    "source": "angi",
+    "source_url": "https://www.angi.com/companylist/us/ga/woodstock/tucker's-home-services-reviews-8253290.htm",
+    "scraped_at": "2026-04-28T05:49:00Z",
+    "reviewer_name": "Howard F.",
+    "star_rating": 5,
+    "review_date": "2020-06-01",
+    "review_text": "They did a great job! They were very professional and responsive. We would hire them again.",
+    "review_language": "en"
+  },
+  {
+    "source": "angi",
+    "source_url": "https://www.angi.com/companylist/us/ga/woodstock/tucker's-home-services-reviews-8253290.htm",
+    "scraped_at": "2026-04-28T05:49:00Z",
+    "reviewer_name": "Mei Y.",
+    "star_rating": 4,
+    "review_date": "2018-08-01",
+    "review_text": "It went very well. They did a good job. Highly recommend.",
+    "review_language": "en"
+  },
+  {
+    "source": "angi",
+    "source_url": "https://www.angi.com/companylist/us/ga/woodstock/tucker's-home-services-reviews-8253290.htm",
+    "scraped_at": "2026-04-28T05:49:00Z",
+    "reviewer_name": "Elizabeth M.",
+    "star_rating": 5,
+    "review_date": "2017-07-01",
+    "review_text": "Great service.",
+    "review_language": "en"
+  },
+  {
+    "source": "angi",
+    "source_url": "https://www.angi.com/companylist/us/ga/woodstock/tucker's-home-services-reviews-8253290.htm",
+    "scraped_at": "2026-04-28T05:49:00Z",
+    "reviewer_name": "Daniel C.",
+    "star_rating": 5,
+    "review_date": "2017-05-01",
+    "review_text": "Great - on time - didn't even have to be home. All work performed and everything cleaned up. Extremely pleased and happy with the price.",
+    "review_language": "en"
+  },
+  {
+    "source": "angi",
+    "source_url": "https://www.angi.com/companylist/us/ga/woodstock/tucker's-home-services-reviews-8253290.htm",
+    "scraped_at": "2026-04-28T05:49:00Z",
+    "reviewer_name": "Genevieve E.",
+    "star_rating": 5,
+    "review_date": "2014-06-01",
+    "review_text": "He does gutter repair and installation. He was one of the honest gutter people that I have had. He gave me several different run downs of options. He told me what work best for my house and what would would not. He has plans where you can sign up that he will come out automatically two or three times a year to take care of the gutters which I have never had anyone do that before and for my rental properties, that is awesome because I never have to worry about my tenants doing it.",
+    "review_language": "en"
+  },
+  {
+    "source": "angi",
+    "source_url": "https://www.angi.com/companylist/us/ga/woodstock/tucker's-home-services-reviews-8253290.htm",
+    "scraped_at": "2026-04-28T05:49:00Z",
+    "reviewer_name": "Jennifer L.",
+    "star_rating": 5,
+    "review_date": "2014-05-01",
+    "review_text": "Shaun was very hard working. He cleaned and repaired our gutters quickly but efficiently. We will be using him for all of our future needs.",
+    "review_language": "en"
+  },
+  {
+    "source": "yelp",
+    "source_url": "https://www.yelp.com/biz/tuckers-home-services-woodstock",
+    "scraped_at": "2026-04-28T05:49:00Z",
+    "reviewer_name": "Yelp reviewer",
+    "star_rating": 5,
+    "review_date": "2025-07-25",
+    "review_text": "It is not often that you find a company that truly impresses you at every step of the process. Tucker's Home Services did just that for my home. Months ago I noticed two large sections of damaged gutters that when it rained, they would sag and water would completely come over the top.",
+    "review_language": "en"
+  }
+]
