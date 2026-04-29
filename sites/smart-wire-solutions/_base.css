@@ -1903,3 +1903,18 @@ section {
     gap: 10px;
   }
 }
+
+/* Quote form upload module */
+.upload-module { margin: 18px 0; }
+.upload-area { position: relative; display: grid; gap: 8px; place-items: center; padding: 22px; border: 1px dashed rgba(255,255,255,.24); border-radius: 18px; background: rgba(255,255,255,.045); text-align: center; cursor: pointer; transition: border-color .2s ease, transform .2s ease, background .2s ease; }
+.upload-area:hover { border-color: var(--accent); transform: translateY(-2px); background: rgba(255,255,255,.07); }
+.upload-area i { width: 44px; height: 44px; color: var(--accent); }
+.upload-area p { margin: 0; color: var(--text); font-weight: 700; }
+.upload-area small { color: var(--text-soft); line-height: 1.45; }
+.upload-area input[type="file"] { position: absolute; inset: 0; opacity: .01; cursor: pointer; width: 100%; height: 100%; }
+.upload-trust { margin: 8px 0 0; color: var(--text-soft); font-size: 13px; }
+.file-preview { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.file-preview .file-chip { padding: 6px 10px; border-radius: 999px; background: rgba(255,255,255,.08); color: var(--text-soft); font-size: 12px; max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.contact-form .upload-area { border-color: rgba(11,18,32,.18); background: rgba(11,18,32,.035); }
+.contact-form .upload-area p { color: var(--ink); }
+.contact-form .upload-area small, .contact-form .upload-trust { color: var(--muted); }

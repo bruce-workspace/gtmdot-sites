@@ -50,7 +50,7 @@
     <div style="display: grid; grid-template-columns: 1.3fr 1fr; gap: 56px; align-items: start;">
 
       <!-- ESTIMATE FORM -->
-      <form class="contact-form" method="post" action="https://crm.cloakanddagger.co/api/quote-intake" enctype="multipart/form-data">
+      <form class="contact-form" method="post" action="https://crm.cloakanddagger.co/api/quote-intake?prospect=smartwire-solutions-8b21c05b" enctype="multipart/form-data">
         <h2>Tell us about the job</h2>
         <p>We'll get back to you the same day with a written estimate.</p>
 
@@ -86,14 +86,18 @@
           <textarea id="message" name="message" required></textarea>
         </div>
 
-        <!-- Upload module — drag/drop photos + video -->
-        <div>
-          <label for="uploads">Photos or video of the job (optional but helpful)</label>
-          <div class="upload-area" id="uploadArea">
+        <input type="hidden" name="prospect" value="smartwire-solutions-8b21c05b">
+
+        <div class="upload-module">
+          <label for="estimate-files-contact">Photos or video of the job (optional)</label>
+          <div class="upload-area compact" data-upload-area>
             <i data-lucide="upload-cloud"></i>
-            <p>Drop photos or video here, or click to choose files</p>
-            <input type="file" id="uploads" name="uploads[]" accept="image/*,video/*" multiple style="display: none;">
+            <p>Drop files here, or click to choose</p>
+            <small>Photos & videos welcome (JPG, PNG, WebP, HEIC, GIF, MP4, MOV — up to 25MB)</small>
+            <input type="file" id="estimate-files-contact" name="files" accept="image/jpeg,image/png,image/webp,image/heic,image/gif,video/mp4,video/quicktime,.jpg,.jpeg,.png,.webp,.heic,.gif,.mp4,.mov" multiple>
           </div>
+          <p class="upload-trust">📷 Attach photos or a quick video for an accurate quote</p>
+          <div class="file-preview" data-file-preview aria-live="polite"></div>
         </div>
 
         <button type="submit" class="cta-btn">
