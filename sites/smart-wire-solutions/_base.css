@@ -256,23 +256,9 @@ button.cta-btn:hover {
   font-weight: 700;
   color: var(--text);
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   gap: 10px;
   letter-spacing: -0.3px;
-}
-
-/* Single typographic mark — accent dot before the wordmark.
-   No tile, no duplicate; just one breathing accent character. */
-.site-logo::before {
-  content: '';
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--accent);
-  align-self: center;
-  flex-shrink: 0;
-  box-shadow: 0 0 14px var(--accent-edge);
 }
 
 .site-nav {
@@ -296,6 +282,12 @@ button.cta-btn:hover {
   padding: 10px 22px;
   font-size: 13.5px;
   box-shadow: none;
+  color: #fff;
+}
+
+.site-nav .cta-btn:hover,
+.site-nav .cta-btn:focus-visible {
+  color: #fff;
 }
 
 /* hamburger — mobile right */
@@ -1899,5 +1891,15 @@ section {
     font-size: 14px;
     color: var(--muted);
     border-bottom: 0;
+  }
+}
+
+
+/* Final desktop polish from Jesse QA */
+@media (min-width: 769px) {
+  .hero-stamps {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 }
