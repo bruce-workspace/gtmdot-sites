@@ -90,17 +90,17 @@
     </a>
     <nav class="site-nav">
       <div class="nav-dropdown">
-        <a class="nav-dropdown-trigger" href="/services.html" aria-haspopup="true">Services <span aria-hidden="true">▾</span></a>
+        <a class="nav-dropdown-trigger" href="/services" aria-haspopup="true">Services <span aria-hidden="true">▾</span></a>
         <div class="nav-dropdown-menu" aria-label="Services menu">
-          <a href="/electrical-repair-atlanta.html">Electrical Repairs</a>
-          <a href="/ceiling-fan-installation-atlanta.html">Ceiling Fan Installation</a>
-          <a href="/recessed-lighting-atlanta.html">Recessed Lighting</a>
-          <a href="/electrical-troubleshooting-atlanta.html">Electrical Troubleshooting</a>
+          <a href="/electrical-repair-atlanta">Electrical Repairs</a>
+          <a href="/ceiling-fan-installation-atlanta">Ceiling Fan Installation</a>
+          <a href="/recessed-lighting-atlanta">Recessed Lighting</a>
+          <a href="/electrical-troubleshooting-atlanta">Electrical Troubleshooting</a>
         </div>
       </div>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
-      <a class="cta-btn" href="/contact.html">Get an Estimate</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+      <a class="cta-btn" href="/contact">Get an Estimate</a>
     </nav>
     <button class="hamburger" aria-label="Open menu" onclick="document.querySelector('.site-nav').classList.toggle('open')">
       <i data-lucide="menu"></i>
@@ -116,12 +116,12 @@
         <span class="hero-kicker">Electrical services · Atlanta</span>
       </div>
       <p class="prose breadcrumb" style="margin: 0 0 16px;">
-        <a href="/services.html">Services</a> / Recessed Lighting
+        <a href="/services">Services</a> / Recessed Lighting
       </p>
       <h1>Recessed lighting installation in Atlanta — clean ceilings, real light.</h1>
       <p class="lede">Add four cans to a kitchen, six to a living room, twelve across an open floor plan — we space them evenly, run the wire cleanly, and finish the ceiling so you can't tell we were there.</p>
       <div class="hero-actions">
-        <a class="cta-btn" href="/contact.html">
+        <a class="cta-btn" href="/contact">
           <i data-lucide="message-circle"></i>
           Get an Estimate
         </a>
@@ -314,15 +314,15 @@
       </div>
       <div class="footer-col">
         <h4>Services</h4>
-        <a href="/services.html">All services</a>
-        <a href="/electrical-repair-atlanta.html">Electrical Repairs</a>
-        <a href="/ceiling-fan-installation-atlanta.html">Ceiling Fan Installation</a>
-        <a href="/recessed-lighting-atlanta.html">Recessed Lighting</a>
+        <a href="/services">All services</a>
+        <a href="/electrical-repair-atlanta">Electrical Repairs</a>
+        <a href="/ceiling-fan-installation-atlanta">Ceiling Fan Installation</a>
+        <a href="/recessed-lighting-atlanta">Recessed Lighting</a>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
@@ -351,7 +351,41 @@
 
 <!--
   GTMDot shared claim UI — single source of truth for the bottom claim bar + popup.
-  Injected by brucecom-v3/scripts/bulk-inject-claim-ui.ts just before </body>.
+  Injected by brucecom-v3/scripts/bulk-inject-claim-ui.ts just before <script>
+  // GTMDot upload-module file-chip handler — renders chips for picked files
+  (function () {
+    function init() {
+      document.querySelectorAll('[data-upload-area]').forEach(function (area) {
+        var input = area.querySelector('input[type="file"]');
+        var wrapper = area.closest('.upload-module') || area.parentElement;
+        var preview = wrapper ? wrapper.querySelector('[data-file-preview]') : null;
+        if (!input || !preview) return;
+        if (input.dataset.uploadHandlerWired === '1') return;
+        input.dataset.uploadHandlerWired = '1';
+        input.addEventListener('change', function () {
+          preview.innerHTML = '';
+          var files = Array.prototype.slice.call(input.files || []);
+          files.forEach(function (f) {
+            var chip = document.createElement('span');
+            chip.className = 'file-chip';
+            var sizeKb = Math.max(1, Math.round(f.size / 1024));
+            var sizeStr = sizeKb >= 1024 ? (sizeKb / 1024).toFixed(1) + ' MB' : sizeKb + ' KB';
+            chip.textContent = f.name + ' (' + sizeStr + ')';
+            chip.title = chip.textContent;
+            preview.appendChild(chip);
+          });
+        });
+      });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+</script>
+
+</body>.
 
   Template variables (replaced at inject time):
     SMAR1182        — prospects.claim_code (required)

@@ -1633,12 +1633,12 @@ section {
 @media (max-width: 768px) {
   :root { --section-pad: 64px; --pad-x: 20px; }
   .hero { min-height: auto; padding: 56px 0 48px; }
-  .hero h1 { font-size: clamp(36px, 8vw, 48px); }
+  .hero h1 { font-size: clamp(28px, 7vw, 40px); line-height: 1.12; letter-spacing: -0.01em; word-break: normal; overflow-wrap: anywhere; }
+  .hero .lede { font-size: 16px; }
   .hero-actions .cta-btn,
   .hero-actions .btn-ghost { width: 100%; justify-content: center; }
   .trust-bar { margin-top: -32px; margin-bottom: 48px; }
   .reviews-bar h2 { text-align: left; }
-  .review-mini { flex: 0 0 80vw; max-width: 320px; }
   .gtmdot-photo-gallery { grid-template-columns: 1fr; }
   .estimate-band { padding: 56px 0; }
   .estimate-band .estimate-form { padding: 24px; }
@@ -1646,6 +1646,47 @@ section {
   .estimate-band .estimate-form .form-foot { flex-direction: column; align-items: stretch; }
   .estimate-band .estimate-form .submit { width: 100%; justify-content: center; }
   .marquee { padding: 14px 0; }
+
+  /* Service-card body text was clipping on right edge on narrow viewports.
+     Force overflow-wrap so long words break, and tighten padding to avoid
+     overflow at the column edge. */
+  .service-card { padding: 22px 20px 20px; min-width: 0; }
+  .service-card p { overflow-wrap: anywhere; word-break: normal; min-width: 0; }
+  .service-grid { grid-template-columns: 1fr; }
+
+  /* Reviews on mobile: horizontal scroll with snap + visible fade hint
+     so the user knows there are more cards beyond the right edge. */
+  .reviews-marquee {
+    margin: 0 calc(-1 * var(--pad-x));
+    padding: 4px 0 28px;
+    position: relative;
+  }
+  .reviews-marquee::after {
+    content: '';
+    position: absolute;
+    top: 4px; right: 0; bottom: 28px;
+    width: 36px;
+    pointer-events: none;
+    background: linear-gradient(to right, rgba(10, 22, 40, 0), rgba(10, 22, 40, 0.85));
+    z-index: 2;
+  }
+  .reviews-marquee .reviews-track {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: max-content;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 4px var(--pad-x);
+  }
+  .reviews-marquee .reviews-track::-webkit-scrollbar { display: none; }
+  .reviews-marquee .review-mini {
+    flex: 0 0 80vw;
+    max-width: 340px;
+    scroll-snap-align: start;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1731,26 +1772,38 @@ section {
   font-style: normal;
 }
 
+/* Desktop ≥769px: show all 4 reviews in a wrap grid (no animation —
+   marquee was unreliable with only 4 cards and creates motion-fatigue
+   on a section users want to read, not consume passively). */
 .reviews-marquee {
-  overflow: hidden;
-  margin: 0 calc(-1 * var(--pad-x));
+  overflow: visible;
+  margin: 0;
   padding: 4px 0 28px;
 }
 
 .reviews-marquee .reviews-track {
-  width: max-content;
-  overflow: visible;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
   margin: 0;
-  padding: 4px var(--pad-x) 0;
+  padding: 0;
+  overflow: visible;
   scroll-snap-type: none;
-  animation: review-scroll 52s linear infinite;
+  animation: none;
 }
 
-.reviews-marquee:hover .reviews-track { animation-play-state: paused; }
+.reviews-marquee .review-mini {
+  flex: 1 1 280px;
+  max-width: 380px;
+}
+
+.reviews-marquee:hover .reviews-track { animation-play-state: running; }
 
 @keyframes review-scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% { transform: none; }
+  100% { transform: none; }
 }
 
 .gtmdot-photo-slot[data-resolved="true"] .work-caption,
