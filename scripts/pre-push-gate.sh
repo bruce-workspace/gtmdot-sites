@@ -180,9 +180,42 @@ if [[ $STOCK_HITS -eq 0 ]]; then
   pass "no stock image hosts referenced"
 fi
 
-# ───── Check 3: claim-bar-grep ─────
+# ───── Check 3: claim-bar-grep (stage-aware) ─────
 echo ""
-echo -e "${BLUE}[3/7] claim-bar-grep${NC} — R1VS must not inject claim bar / popup / cookie banner"
+echo -e "${BLUE}[3/7] claim-bar-grep${NC} — claim UI gating depends on pipeline stage"
+
+# Stage signal lives in sites/<slug>/STAGE.txt. Single line, one of:
+#   r1vs-build       — initial R1VS build; claim UI must NOT be present
+#   mini-final-qa    — Mini has injected claim UI; required to be present
+#   outreach-staged  — postcard/email staged; claim UI required
+#   outreach-sent    — outreach has shipped; claim UI required
+# Missing/unknown signal → fail-closed (treat as r1vs-build) so in-progress
+# R1VS builds can't silently bypass the rule by omitting STAGE.txt.
+STAGE_FILE="$SITE_DIR/STAGE.txt"
+if [[ -f "$STAGE_FILE" ]]; then
+  STAGE="$(tr -d '[:space:]' < "$STAGE_FILE")"
+else
+  STAGE=""
+fi
+
+case "$STAGE" in
+  mini-final-qa|outreach-staged|outreach-sent)
+    CLAIM_REQUIRED=1
+    info "STAGE='$STAGE' — claim UI required (skipping forbidden-selector grep)"
+    ;;
+  r1vs-build)
+    CLAIM_REQUIRED=0
+    info "STAGE='r1vs-build' — claim UI forbidden"
+    ;;
+  "")
+    CLAIM_REQUIRED=0
+    warn "no STAGE.txt — defaulting to r1vs-build rules (fail-closed)"
+    ;;
+  *)
+    CLAIM_REQUIRED=0
+    warn "unrecognized STAGE='$STAGE' — defaulting to r1vs-build rules (fail-closed)"
+    ;;
+esac
 
 CLAIM_BAR_SELECTORS=(
   'id="claimBar"'
@@ -200,16 +233,31 @@ CLAIM_BAR_SELECTORS=(
 )
 
 CLAIM_HITS=0
-for sel in "${CLAIM_BAR_SELECTORS[@]}"; do
-  HITS=$(grep -l -F "$sel" $HTML_FILES 2>/dev/null || true)
-  if [[ -n "$HITS" ]]; then
-    fail "found claim-bar selector '$sel' in: $(echo $HITS | tr '\n' ' ')"
+
+if [[ $CLAIM_REQUIRED -eq 1 ]]; then
+  # Post-injection stages: confirm at least one canonical claim-bar marker
+  # is present somewhere in the build. Catches the inverse mistake — Mini
+  # promoted the stage but the injection didn't take.
+  if grep -l -F 'class="gtmdot-claim' $HTML_FILES >/dev/null 2>&1 \
+     || grep -l -F 'id="claimBar"' $HTML_FILES >/dev/null 2>&1 \
+     || grep -l -F 'id="claim-bar"' $HTML_FILES >/dev/null 2>&1; then
+    pass "claim UI present (required at stage '$STAGE')"
+  else
+    fail "stage='$STAGE' requires claim UI but no claim-bar markers found in HTML"
     CLAIM_HITS=$((CLAIM_HITS + 1))
   fi
-done
+else
+  for sel in "${CLAIM_BAR_SELECTORS[@]}"; do
+    HITS=$(grep -l -F "$sel" $HTML_FILES 2>/dev/null || true)
+    if [[ -n "$HITS" ]]; then
+      fail "found claim-bar selector '$sel' in: $(echo $HITS | tr '\n' ' ')"
+      CLAIM_HITS=$((CLAIM_HITS + 1))
+    fi
+  done
 
-if [[ $CLAIM_HITS -eq 0 ]]; then
-  pass "no claim-bar / popup / cookie banner in R1VS build"
+  if [[ $CLAIM_HITS -eq 0 ]]; then
+    pass "no claim-bar / popup / cookie banner in R1VS build"
+  fi
 fi
 
 # ───── Check 4: review-count-audit ─────

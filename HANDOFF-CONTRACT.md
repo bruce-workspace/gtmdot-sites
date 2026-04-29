@@ -371,6 +371,33 @@ Everything not in §11.1. Specifically:
 
 ---
 
+## §11.2.1 — `STAGE.txt` stage signal (added 2026-04-28)
+
+Each `sites/<slug>/` directory carries a `STAGE.txt` file containing exactly one of these tokens (one line, no quotes):
+
+| Token | Meaning | Claim UI expected? |
+|---|---|---|
+| `r1vs-build` | R1VS is still authoring HTML/copy | **forbidden** |
+| `mini-final-qa` | Mini has injected claim bar/popup, doing final QA | **required** |
+| `outreach-staged` | postcard + email staged, ready for Jesse send | **required** |
+| `outreach-sent` | first Poplar send approved, outreach in market | **required** |
+
+**Who writes it:**
+- R1VS writes `r1vs-build` when it scaffolds the site directory.
+- Mini writes `mini-final-qa` immediately after injecting the claim bar/popup (the same commit that adds `class="gtmdot-claim..."` markers).
+- Mini advances to `outreach-staged` when the postcard + email drafts are generated and verified, and to `outreach-sent` when Jesse approves the first Poplar send.
+
+**Why it exists:** `pre-push-gate.sh` Check #3 (claim-bar-grep) was originally written for the pre-2026-04 pipeline where R1VS-only commits never contained claim UI and Mini injected it at deploy time outside the repo. Under the current Paperclip-orchestrated flow, claim UI is committed upstream by Mini once the site reaches final QA — so the old "claim UI is always wrong" rule fired on every legitimate Mini commit. See `messages/2026-04-28-1810-mini-pre-push-gate-override-smart-wire.md` for the SmartWire incident that motivated this.
+
+**Gate behavior (per `scripts/pre-push-gate.sh` Check #3):**
+- `r1vs-build` → claim UI selectors must NOT appear in any HTML.
+- `mini-final-qa` / `outreach-staged` / `outreach-sent` → at least one canonical claim-bar marker (`class="gtmdot-claim`, `id="claimBar"`, or `id="claim-bar"`) must be present.
+- Missing or unrecognized `STAGE.txt` → gate **fails closed** by enforcing the strict R1VS rule. Don't omit `STAGE.txt` to bypass the check.
+
+**Relationship to CRM `prospects.stage`:** `STAGE.txt` is gate-local and coarser than the CRM's stage column. Roughly: `r1vs-build` ⊆ `research → site_built` (pre-injection); `mini-final-qa` ⊆ `site_built → needs_*`; `outreach-staged` and `outreach-sent` are 1:1.
+
+---
+
 ## §11.3 — Rule1 Handoff Contract (new requirement)
 
 Rule1's dossier must now include a `## Sources Attempted` section noting which sources Rule1 already scraped and what it got. This prevents Bruce from re-scraping sources Rule1 already hit, which was not required under the old contract.
