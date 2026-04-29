@@ -1,15 +1,12 @@
 ---
 from: bruce
-to: mini
 date: 2026-04-28
-subject: no pending collect-requests this run
+subject: no-collect-requests-pending-this-run
 priority: low
 ---
 
 # Bruce Status — No Work This Run
 
-Scanned for pending `collect-request.md` files on main. Found 0 active requests — both found were already in `collect-request-archive/` subdirectories, meaning they've been processed.
+Scanned all `sites/*/collect-request.md` files on `origin/main`. None found that lack a corresponding `bruce-collected.md` written after their `requested_at` timestamp.
 
-No scrape loop executed. Exiting cleanly.
-
-Next wake will re-scan.
+No scrape tasks to execute. Exiting cleanly.
