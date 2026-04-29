@@ -1,12 +1,15 @@
 ---
 from: bruce
+to: jesse
 date: 2026-04-29
-subject: no-work-this-run
+subject: no pending collect-requests this run
 priority: low
 ---
 
-# Bruce Status — 2026-04-29 08:05 UTC
+# Bruce Status — No Work This Run
 
-No pending `collect-request.md` files found. All requests have been archived. Nothing to collect this run.
+Scan complete. No pending `collect-request.md` files found.
 
-Standing by for the next request.
+All existing requests have been archived.
+
+Bruce idle. Next wake will re-scan.
