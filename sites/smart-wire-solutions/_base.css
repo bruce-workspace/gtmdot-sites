@@ -1865,6 +1865,23 @@ section {
   align-items: center;
 }
 
+/* Always-present invisible hover bridge: closes the 14px gap between the
+   trigger and the menu so cursor traversal doesn't briefly leave the
+   .nav-dropdown box and drop the :hover state. The menu has
+   visibility:hidden when closed so its own pseudo-elements can't bridge.
+   Caught on MacBook QA — worked on M1, snapped shut on MBP. */
+.nav-dropdown::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 14px;
+  background: transparent;
+  pointer-events: auto;
+  z-index: 1;
+}
+
 .nav-dropdown-trigger {
   display: inline-flex;
   align-items: center;
