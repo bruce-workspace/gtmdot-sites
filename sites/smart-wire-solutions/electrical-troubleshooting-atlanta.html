@@ -84,9 +84,20 @@
 
 <header class="site-header" id="siteHeader">
   <div class="site-header-inner">
-    <a class="site-logo" href="/">SmartWire Solutions</a>
+    <a class="site-logo" href="/" aria-label="SmartWire Solutions home">
+      <img src="/photos/facebook-logo.png" alt="" class="site-logo-mark">
+      <span>SmartWire Solutions</span>
+    </a>
     <nav class="site-nav">
-      <a href="/services.html">Services</a>
+      <div class="nav-dropdown">
+        <a class="nav-dropdown-trigger" href="/services.html" aria-haspopup="true">Services <span aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown-menu" aria-label="Services menu">
+          <a href="/electrical-repair-atlanta.html">Electrical Repairs</a>
+          <a href="/ceiling-fan-installation-atlanta.html">Ceiling Fan Installation</a>
+          <a href="/recessed-lighting-atlanta.html">Recessed Lighting</a>
+          <a href="/electrical-troubleshooting-atlanta.html">Electrical Troubleshooting</a>
+        </div>
+      </div>
       <a href="/about.html">About</a>
       <a href="/contact.html">Contact</a>
       <a class="cta-btn" href="/contact.html">Get an Estimate</a>

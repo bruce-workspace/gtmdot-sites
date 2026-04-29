@@ -1799,3 +1799,107 @@ section {
 .estimate-band .estimate-form .privacy,
 .footer-bottom { color: var(--muted); }
 .gtmdot-photo-gallery:focus-visible { outline: 2px solid var(--accent-light); outline-offset: 4px; }
+
+/* ───── Logo mark + services dropdown QA edits ───── */
+.site-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-logo-mark {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
+}
+
+.nav-dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-dropdown-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 14px);
+  left: -18px;
+  min-width: 260px;
+  padding: 10px;
+  background: rgba(13, 10, 20, 0.98);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  gap: 2px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease), visibility var(--dur-fast) var(--ease);
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-dropdown-menu a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: var(--muted);
+  line-height: 1.25;
+}
+
+.nav-dropdown-menu a:hover {
+  background: var(--accent-soft);
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .site-logo-mark { width: 34px; height: 34px; }
+  .site-logo span { font-size: 15px; }
+
+  .site-nav.open .nav-dropdown {
+    width: 100%;
+    display: grid;
+    gap: 0;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+  }
+
+  .site-nav.open .nav-dropdown > a {
+    border-bottom: 0;
+    padding-bottom: 10px;
+  }
+
+  .site-nav.open .nav-dropdown-menu {
+    position: static;
+    min-width: 0;
+    padding: 0 0 0 14px;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .site-nav.open .nav-dropdown-menu a {
+    padding: 10px 0;
+    font-size: 14px;
+    color: var(--muted);
+    border-bottom: 0;
+  }
+}
