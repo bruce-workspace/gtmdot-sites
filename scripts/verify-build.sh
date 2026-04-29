@@ -110,13 +110,28 @@ for html_path in site_dir.glob('**/*.html'):
                 continue
             # relative URL — check file exists
             checked += 1
-            # strip query string / anchor
+            # strip query string / anchor, normalize trailing slash
             clean = url.split('?')[0].split('#')[0]
-            rel = Path(clean.lstrip('/'))
-            candidates = [
-                html_path.parent / rel,
-                site_dir / rel,
-            ]
+            rel = clean.lstrip('/').rstrip('/')
+
+            # Cloudflare Pages strips ".html" from URLs, so an href like
+            # /about resolves on disk as about.html OR about/index.html.
+            # Build candidates accordingly: literal first (covers extensioned
+            # assets like _base.css and photos/hero.jpg), then clean-URL
+            # forms when the last path segment has no extension.
+            candidates = []
+            if rel == '':
+                candidates.append(site_dir / 'index.html')
+            else:
+                candidates.append(html_path.parent / rel)
+                candidates.append(site_dir / rel)
+                last_segment = Path(rel).name
+                if last_segment and '.' not in last_segment:
+                    candidates.append(site_dir / f'{rel}.html')
+                    candidates.append(html_path.parent / f'{rel}.html')
+                    candidates.append(site_dir / rel / 'index.html')
+                    candidates.append(html_path.parent / rel / 'index.html')
+
             if not any(c.exists() for c in candidates):
                 # In LOCAL mode: photos/* slots are legitimately empty until Master Site
                 # Builder fills them post-handoff. Track separately; don't fail.
