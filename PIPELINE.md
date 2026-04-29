@@ -64,8 +64,21 @@ converted / dead
 | `needs_decision → dead` | Jesse decides "no, DQ" | **Jesse (manual, with reason)** |
 | `needs_enrichment → needs_approval` | Bruce/R1VS work integrated, capture thresholds met | Mini (auto) |
 | `needs_approval → qa_approved` | Live preview passes Jesse's eyeball review + click | **Jesse (manual)** |
-| `qa_approved → outreach_staged` | Postcard + email drafts generated + verified | Mini (auto) |
+| `qa_approved → outreach_staged` | `outreach-readiness-gate.sh <slug>` exits 0 (all 7 technical checks pass) | Mini (auto) |
 | `outreach_staged → outreach_sent` | Jesse approves the first real Poplar send | **Jesse (manual)** |
+
+**Outreach-readiness gate (Mini-owned, ratified 2026-04-29):** `scripts/outreach-readiness-gate.sh <crm-slug>` is the canonical implementation of Mini's final gate before outreach release. It verifies, in order:
+
+1. Claim code resolves on `gtmdot.com/codes.json` and `gtmdot.com/checkout?code=<X>` returns 200
+2. Postcard desktop screenshot exists at `gtmdot-postcards.pages.dev/screenshots/<slug>-desktop.jpg` (content-type must be `image/*`, not Cloudflare's HTML fallback)
+3. Postcard mobile screenshot exists at `gtmdot-postcards.pages.dev/screenshots/<slug>-mobile.jpg` (same content-type rule)
+4. Postcard hero image exists at `gtmdot-postcards.pages.dev/<slug>-hero.jpg` (same content-type rule)
+5. Postcard mockup ready (transitive — passes if 2-4 pass)
+6. Email present, OR explicitly marked missing (postcard-only path acceptable with Jesse approval)
+7. Email sequence draft #1 renders via `/api/prospects/<id>/email-preview?seq=1` if email is present
+8. Jesse-approval gates always listed (CRM stage move, Poplar send, Resend trigger, billing, public release) — never auto-pass
+
+Paperclip and any future automation MUST run this gate before treating a prospect as ready for outreach. Mini owns the gate.
 
 **Stage split history (Mini finding #6, executed 2026-04-24):** `ready_for_review` was a single conflated bucket; split into the three `needs_*` stages above. The `ready_for_review` stage value remains in the schema for backward-compat with archived data + scheduled tasks that haven't migrated yet, but `PIPELINE_STAGES` no longer includes it (no Kanban column, empty after migration). See `briefs/06-stage-split-migration-plan.md` for the migration plan.
 
