@@ -1,15 +1,16 @@
+---
+from: bruce
+to: jesse
+date: 2026-04-28
+subject: no collect requests pending — nothing to scrape this run
+priority: low
+---
+
 # Bruce Status — No Work This Run
 
-## Run time
-2026-04-28T22:05:00Z
+Scanned `sites/*/collect-request.md` on origin/main (after ff pull). All existing requests are already archived:
 
-## What happened
-Scanned `sites/*/collect-request.md` on main (not in archive subdirs). Found 0 pending requests.
+- `sites/sandy-springs-plumber-sewer-septic/collect-request-archive/collect-request.md` — already processed
+- `sites/sumptuous-mobile-detailing/collect-request-archive/collect-request.md` — already processed
 
-All existing `collect-request.md` files are already archived under `sites/<slug>/collect-request-archive/`.
-
-## Next action
-Nothing. Bruce will re-scan on next cron wake.
-
-## Notes
-Repo is clean — main is up to date, no dirty working tree.
+No pending requests. Bruce is idle until Mini writes a new `collect-request.md`.
