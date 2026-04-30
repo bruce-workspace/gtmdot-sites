@@ -1,48 +1,24 @@
 ---
 slug: plugged-electricians-atl
-request_id: 2026-04-27T22:30:00Z
-collected_at: 2026-04-28T02:45:00Z
-status: partial
+collected_at: 2026-04-30T10:11:27.750063+00:00
+collector: bruce
 ---
 
-# Bruce Collected — Plugged Electricians Atl LLC
+# Bruce Collection Report — plugged-electricians-atl
 
-## Summary
-Asset-intel pass per §11.11. No new scraping — 16 photos already in photos-raw/, reviews at 5 of ~13 GBP total. Generated hero + photo quality labels delivered.
+- Photos collected: 1
+- Reviews collected: 30
+- Existing reviews preserved: 5
+- Wall-clock seconds: 67
+- Cap hit: max_reviews_total
+- SCRAPFLY_API_KEY present: False
 
-## Results by source
+## Source results
+- yelp: failed (unknown) — https://www.yelp.com/search?find_desc=Plugged+Electricians&find_loc=Atlanta%2C+GA — 422 Client Error:  for url: https://api.search.brave.com/res/v1/web/search?q=Plugged+Electricians+Atlanta+GA+site%3Ayelp.com&count=10
+- nextdoor: failed (unknown) — https://nextdoor.com/search/?query=Plugged%20Electricians%20Atlanta%20GA — 422 Client Error:  for url: https://api.search.brave.com/res/v1/web/search?q=Plugged+Electricians+Atlanta+GA+site%3Anextdoor.com&count=10
+- thumbtack: ok via firecrawl — 1 photos, 29 reviews — https://www.thumbtack.com/k/electricians/near-me/?zip_code=30303&q=Plugged%20Electricians%20Atlanta%20GA
+- bbb: ok via firecrawl — 0 photos, 1 reviews — https://www.bbb.org/us/ga/atlanta/profile/electrical-contractor/
 
-### photos-raw/ (pre-existing) — SUCCESS
-- 16 photos already present — photo-quality labels applied (hero-candidate, proof-candidate, gallery-candidate, discard)
-- No new scraping performed; budget cap `max_photos: 0` respected
-
-### photos-generated/ — SUCCESS
-- `photos-generated/hero-01.png` generated — aspirational editorial breaker panel, 16:9, no people, no logos
-
-### reviews-raw.json (pre-existing) — SUCCESS
-- 5 reviews already captured (Google Places, all named, high-quality)
-- Review enrichment not performed this run; max_reviews cap was 10 (advisory), review-coverage advisement written to bruce-asset-intel
-
-### yelp.com — NOT-ATTEMPTED
-- Reason: budget cap (max_wallclock_minutes: 12) consumed by image generation + asset-intel analysis. Request explicitly made hero generation the primary deliverable.
-- Note: Yelp is the top enrichment priority per review-coverage gap noted in bruce-asset-intel.json
-
-### nextdoor.com — NOT-ATTEMPTED
-- Reason: same as above
-
-### thumbtack.com — NOT-ATTEMPTED
-- Reason: same as above
-
-### owner website — NOT-ATTEMPTED
-- Reason: GBP listing only per collect-request — no owner website exists (not-attempted by Rule1 per §11.3 table)
-
-## Totals
-- Photos collected: 16 (pre-existing, no new scrape) + 1 generated = 17 total in photos-raw/ + photos-generated/
-- Reviews collected: 5 (pre-existing, no new scrape)
-- Wall-clock used: ~8m 30s (within 12m cap)
-
-## Generated Images
-- `photos-generated/hero-01.png` — hero per `hero_intent: aspirational` — aspirational editorial breaker panel
-
-## Handing back to Mini
-Per §11.11.3, default-accept applies to hero recommendation. `bruce-asset-intel.{md,json}` are in place. `photos-generated/hero-01.png` ready for integration. Over to you.
+## Failures
+- yelp: unknown — https://www.yelp.com/search?find_desc=Plugged+Electricians&find_loc=Atlanta%2C+GA
+- nextdoor: unknown — https://nextdoor.com/search/?query=Plugged%20Electricians%20Atlanta%20GA
