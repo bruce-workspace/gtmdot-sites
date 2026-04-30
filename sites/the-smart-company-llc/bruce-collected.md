@@ -1,45 +1,45 @@
 ---
 slug: the-smart-company-llc
-request_id: 2026-04-28T03:49:58.777601+00:00
-collected_at: 2026-04-28T05:45:00Z
+request_id: 2026-04-30T06:50:12.118798+00:00
+collected_at: 2026-04-30T11:30:33.724383Z
 status: failed
 ---
 
-# Bruce Collected — The Smart Company LLC
+# Bruce Collected — the-smart-company-llc
 
 ## Summary
-All four requested sources attempted. The business has no discoverable presence on Yelp, Nextdoor, Thumbtack, or BBB beyond its BBB profile page (which has no photos or reviews). The name "The Smart Company" is a generic phrase that returns many unrelated results on search engines.
+All requested sources were checked within the 10-minute budget. No usable business/work photos or new reviews were available from Yelp, Nextdoor, Thumbtack, or BBB; BBB only confirmed the public business profile and business details.
 
 ## Results by source
 
 ### yelp — FAILED
-- Reason code: `not-found`
-- Detail: Searched "The Smart Company Buford GA" and related queries. No Yelp page found for this business. Generic name produces many unrelated results; no match for Jose Figueroa / Yenire Mendoza / Buford address (3223 Mill Springs Cir).
-- Photos: 0
-- Reviews: 0
+- 0 photos → none
+- 0 reviews → `reviews-raw.json`
+- Reason if failed: `not-found`
+- Detail: Brave site search did not find a matching Yelp business page. Direct Yelp URLs `the-smart-company-llc-buford` and `smart-company-llc-buford` returned 404; the Yelp search page was blocked behind a JS/ad-block security notice, with no extractable business photos or reviews.
 
 ### nextdoor — FAILED
-- Reason code: `not-found`
-- Detail: No Nextdoor profile found. Brave search with site:nextdoor.com returned no results.
-- Photos: 0
-- Reviews: 0
+- 0 photos → none
+- 0 reviews → `reviews-raw.json`
+- Reason if failed: `login-wall`
+- Detail: Direct Nextdoor page returned 404. Nextdoor search redirected to `/login/`, so no public photos or reviews were accessible.
 
 ### thumbtack — FAILED
-- Reason code: `not-found`
-- Detail: Direct URL search and Brave search both returned no results. The business has no Thumbtack presence.
-- Photos: 0
-- Reviews: 0
+- 0 photos → none
+- 0 reviews → `reviews-raw.json`
+- Reason if failed: `not-found`
+- Detail: Brave site search found no matching Thumbtack profile. Requested Thumbtack profile URLs and the Buford pressure-washing category page returned Thumbtack's unavailable-page response.
 
 ### bbb — PARTIAL
-- Reason code: `partial`
-- Detail: BBB profile exists (A+ rating, not accredited, 5 years in business, 7/1/2020 founded) and is accessible at bbb.org/us/ga/buford/profile/home-improvement/the-smart-company-ga-llc-0443-28152977. However no photos or review text are available on the public profile — just the business info card. BBB review submission flow is accessible but no existing reviews on file.
-- Photos: 0
-- Reviews: 0
+- 0 photos → none
+- 0 reviews → `reviews-raw.json`
+- Reason if failed: `not-found`
+- Detail: BBB profile is public at `bbb.org/us/ga/buford/profile/home-improvement/the-smart-company-ga-llc-0443-28152977`, but it exposes business info only: not BBB accredited, 5 years in business, construction/remodeling categories, and co-owners Yenire Mendoza and Jose Figueroa. No public photos or review text were present; the BBB find URL returned 404.
 
 ## Totals
-- Photos collected: 0 (budget: 15, none available)
-- Reviews collected: 0 (budget: 30, none available)
-- Wall-clock used: ~6 minutes
+- Photos collected: 0 (within budget of 15)
+- Reviews collected: 0 (within budget of 30)
+- Wall-clock used: ~2m 10s
 
 ## Handing back to Mini
-This business has minimal digital footprint beyond its BBB listing. R1VS already captured 5 Google reviews via Places API. The gap is photos only. Consider: (1) owner website scraper via Firecrawl if the owner has a web presence, or (2) requesting owner-supplied photos directly. No further scrape sources likely to yield content for this business.
+Raw files are in place. Over to you for integration.
