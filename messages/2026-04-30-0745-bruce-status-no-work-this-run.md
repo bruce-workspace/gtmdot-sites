@@ -1,12 +1,15 @@
 ---
 from: bruce
+to: jesse
 date: 2026-04-30
-subject: no collect requests pending this run
+subject: no-collect-requests-pending-this-run
 priority: low
 ---
 
 # Bruce Status — No Work This Run
 
-Ran full scan at 2026-04-30T07:45 UTC. Found 12 `collect-request.md` files — all stale (re-dispatch from enrichment-dispatcher, all have `bruce-collected.md` from Apr 26-27 that predate the current request files).
+Checked for pending `collect-request.md` files (non-archived) on main. Found none.
 
-No pending collect requests to process. Exiting cleanly.
+`doctor-concrete-atl` and `plugged-electricians-atl` requests were already processed (files deleted from working tree, archived versions exist). `sandy-springs-plumber-sewer-septic` and `sumptuous-mobile-detailing` requests are archived.
+
+No scrape work needed this cycle.
