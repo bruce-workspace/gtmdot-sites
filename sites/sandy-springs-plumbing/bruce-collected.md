@@ -1,37 +1,45 @@
 ---
 slug: sandy-springs-plumbing
-request_id: 2026-04-28T02:33:45Z
-collected_at: 2026-04-28T04:19:00Z
-status: success
+request_id: 2026-04-30T06:50:12.116641+00:00
+collected_at: 2026-04-30T10:55:00Z
+status: failed
 ---
 
 # Bruce Collected — Sandy Springs Plumbing
 
 ## Summary
-Generation-only request. One hero image produced via gpt-image-2. No scraping performed per request scope.
+Attempted all 4 requested sources within the 10-minute budget. No business-attributed photos or reviews were collected: Yelp and BBB timed out through Scrapfly; Nextdoor and Thumbtack loaded, but did not expose a matching Sandy Springs Plumbing profile at 130 Allen Rd NE #242.
 
 ## Results by source
 
-### gpt-image-2 (generated hero) — SUCCESS
-- 1 photo → `sites/sandy-springs-plumbing/photos-generated/hero-01.png`
-- Per §11.11.1 + §11.11.5 guardrails applied
+### yelp — FAILED
+- Reason code: `timeout`
+- Detail: Scrapfly request to `https://www.yelp.com/biz/sandysprings-heating-plumbing-atlanta-3` returned HTTP 504 Gateway Timeout. Did not retry per one-attempt rule.
+- Photos: 0
+- Reviews: 0
 
-### yelp — NOT-ATTEMPTED
-- Per request: no additional scraping needed, existing GBP set sufficient
+### nextdoor — FAILED
+- Reason code: `no_matching_business`
+- Detail: Scrapfly rendered `https://nextdoor.com/pages/sandy-springs-plumbers-sandy-springs-ga/`, but the page is for `Sandy Springs Plumbers` at 6235 Roswell Road, not Sandy Springs Plumbing at 130 Allen Rd NE #242. Recommendations feed was empty.
+- Photos: 0
+- Reviews: 0
 
-### nextdoor — NOT-ATTEMPTED
-- Per request: no additional scraping needed
+### thumbtack — FAILED
+- Reason code: `no_matching_business`
+- Detail: Scrapfly rendered `https://www.thumbtack.com/ga/sandy-springs/plumbers`, but it was a general Sandy Springs plumbers listing page with other providers. No matching Sandy Springs Plumbing profile was present.
+- Photos: 0
+- Reviews: 0
 
-### thumbtack — NOT-ATTEMPTED
-- Per request: no additional scraping needed
-
-### bbb — NOT-ATTEMPTED
-- Per request: no additional scraping needed
+### BBB — FAILED
+- Reason code: `timeout`
+- Detail: Scrapfly request to `https://www.bbb.org/us/ga/lithia-springs/profile/plumber/sandy-springs-heating-plumbing-and-airconditioning-0443-27586942/customer-reviews` returned HTTP 504 Gateway Timeout. Did not retry per one-attempt rule.
+- Photos: 0
+- Reviews: 0
 
 ## Totals
-- Photos collected: 1 (within budget)
-- Reviews collected: 0 (not needed per request)
-- Wall-clock used: ~1m
+- Photos collected: 0 (within budget of 15)
+- Reviews collected: 0 (within budget of 30)
+- Wall-clock used: ~4m
 
 ## Handing back to Mini
-Asset intel shipped. Over to you for integration.
+No new scrapeable source assets found from the requested sources. Existing GBP-derived `photos-raw/` and `reviews-raw.json` were left unchanged.
