@@ -1,45 +1,45 @@
 ---
 slug: thermys-mobile-tire-and-brakes
-request_id: 2026-04-28T03:49:58.777870+00:00
-collected_at: 2026-04-28T05:52:00Z
-status: success
+request_id: 2026-04-30T06:50:12.119215+00:00
+collected_at: 2026-04-30T11:33:37.743804Z
+status: partial
 ---
 
-# Bruce Collected — Thermys Mobile Tire and Brakes
+# Bruce Collected — thermys-mobile-tire-and-brakes
 
 ## Summary
-This request was auto-dispatched after a previous partial collection. The prior Bruce run (2026-04-25) successfully captured 6 Yelp photos and 1 review. This run confirms those results and attemps all sources again.
+Scrapfly rendered the Yelp business photos page successfully and exposed 6 business-attributed photo URLs in Yelp's structured media gallery. I downloaded the original Yelp image bytes to `photos-raw/yelp-01.jpg` through `photos-raw/yelp-06.jpg`; no additional usable reviews were exposed beyond the existing Yelp/Yahoo Local mirror review already in `reviews-raw.json`.
 
 ## Results by source
 
-### yelp — SUCCESS
-- URL: https://www.yelp.com/biz/thermys-mobile-tire-and-brakes-atlanta-2
-- 6 photos → `thermys-yelp-01.jpg` … `thermys-yelp-06.jpg` (captured 2026-04-25, confirmed present)
-- 1 review → `reviews-raw.json` (Kierra M., 5★, 2026-03-23)
-- Note: Yelp review text was previously recovered via Yahoo Local Yelp feed mirror since direct Yelp access was blocked by Cloudflare. Full review text remains truncated in the feed.
+### yelp — PARTIAL
+- 6 photos → `photos-raw/yelp-01.jpg` … `photos-raw/yelp-06.jpg`
+- 1 review → `reviews-raw.json` (existing Yelp/Yahoo Local mirror capture; direct rendered Yelp did not expose full review body)
+- Source URLs attempted: `https://www.yelp.com/search?find_desc=Thermys+Mobile+Tire+Atlanta+GA&find_loc=Atlanta%2C+GA`, `https://www.yelp.com/biz/thermys-mobile-tire-and-brakes-atlanta`, `https://www.yelp.com/biz/thermys-mobile-tire-and-brakes-atlanta-2`, `https://www.yelp.com/biz_photos/thermys-mobile-tire-and-brakes-atlanta-2`
+- Reason if failed: `unknown` for review extraction; photos succeeded via structured media gallery
 
 ### nextdoor — FAILED
-- Reason code: `not-found`
-- Detail: No Nextdoor profile found for "Thermys Mobile Tire and Brakes" or "Thermys Mobile Tire" in Atlanta GA via search. No login wall — simply no listing exists.
-- Photos: 0
-- Reviews: 0
+- 0 photos
+- 0 reviews
+- Reason if failed: `login-wall`
+- Detail: Scrapfly rendered the search URL, but Nextdoor redirected to login with `next=/search/?query=thermys+mobile+tire+brakes+atlanta`; no public business content was available without login.
 
 ### thumbtack — FAILED
-- Reason code: `not-found`
-- Detail: No Thumbtack profile found for this business.
-- Photos: 0
-- Reviews: 0
+- 0 photos
+- 0 reviews
+- Reason if failed: `not-found`
+- Detail: Requested profile URL returned 404; rendered Atlanta mobile tire repair category did not contain Thermys, Thermys Mobile Tire, the owner name, or the business phone.
 
 ### bbb — FAILED
-- Reason code: `not-found`
-- Detail: No BBB profile found for "Thermys Mobile Tire and Brakes" in Atlanta GA.
-- Photos: 0
-- Reviews: 0
+- 0 photos
+- 0 reviews
+- Reason if failed: `not-found`
+- Detail: BBB find URL returned a 404 page under Scrapfly, and web search did not surface a Thermys BBB profile. The guessed BBB profile path returned a bot/challenge page and did not confirm a listing.
 
 ## Totals
 - Photos collected: 6 (within budget of 15)
-- Reviews collected: 1 (within budget of 30, sourced via Yahoo Local Yelp mirror)
-- Wall-clock used: ~3 minutes (sources already confirmed from prior run)
+- Reviews collected: 1 (within budget of 30)
+- Wall-clock used: ~8m 30s
 
 ## Handing back to Mini
-6 Yelp photos + 1 review available. Yelp review text is truncated. If Mini needs the full review text, recommend a Places API retry for this business to capture via Google instead. The Yelp listing at 5 stars / 1 review is the primary review signal.
+Fresh original-size Yelp photo downloads are available in `photos-raw/yelp-01.jpg` through `photos-raw/yelp-06.jpg`. `reviews-raw.json` remains valid and contains the one previously captured Yelp/Yahoo Local mirror review; no new verbatim review text could be collected from public rendered pages within the source/budget rules.
