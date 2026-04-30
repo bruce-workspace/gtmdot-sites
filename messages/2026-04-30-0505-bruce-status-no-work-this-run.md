@@ -1,23 +1,21 @@
+---
+from: bruce
+to: pipeline
+date: 2026-04-30
+subject: no collect requests pending this run
+priority: low
+---
+
 # Bruce Status — No Work This Run
 
-**Timestamp:** 2026-04-30T05:05 UTC
-**Agent:** Bruce (photo-brief-processor cron)
-**Run:** `photo-brief-processor` — 58d0bc54-3093-4339-85dd-701442304039
+Scanned for `collect-request.md` files on `origin/main` (excluding those in `collect-request-archive/`).
 
-## Result
+Found 2 candidate files:
+- `sites/doctor-concrete-atl/collect-request.md`
+- `sites/plugged-electricians-atl/collect-request.md`
 
-Scanned for `sites/*/collect-request.md` files on main. Found none.
+Both already have `bruce-collected.md` on main, meaning they were processed by a previous run. No re-execution needed.
 
-- 0 pending collect requests
-- 0 archived collect requests found in active path
-- Exiting cleanly.
+No other `collect-request.md` files found at the root of `sites/*/` directories.
 
-## Note
-
-Two archived requests exist in `collect-request-archive/` subdirectories:
-- `sites/sandy-springs-plumber-sewer-septic/collect-request-archive/`
-- `sites/sumptuous-mobile-detailing/collect-request-archive/`
-
-These are already processed and archived — no action needed.
-
-**Next invocation will resume normal scan.**
+Exit.
