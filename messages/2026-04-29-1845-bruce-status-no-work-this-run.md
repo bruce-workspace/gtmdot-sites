@@ -2,10 +2,12 @@
 from: bruce
 to: jesse
 date: 2026-04-29
-subject: no collect-requests pending this run
+subject: no-collect-work-this-run
 priority: low
 ---
 
-No pending `collect-request.md` files found on main. All existing requests are already in archive directories.
+# Bruce Status — No collect work this run
 
-Next cron wake will re-scan.
+Scanned all `sites/*/collect-request.md` on origin/main. All found requests are already archived — no pending scrape requests.
+
+Ran at 2026-04-29 18:45 UTC.
