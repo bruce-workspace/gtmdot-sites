@@ -61,5 +61,38 @@
     "text": "The job was done and completed in a timely manner and professional",
     "source": "angi",
     "date": "Mar 2021"
+  },
+  {
+    "source": "bbb",
+    "source_url": "https://www.bbb.org/us/ga/marietta/profile/concrete-contractors/doctor-concrete-atl-llc",
+    "scraped_at": "2026-04-30T10:11:17.386625+00:00",
+    "reviewer_name": null,
+    "reviewer_profile_url": null,
+    "star_rating": null,
+    "review_date": null,
+    "review_text": "[Leave a Review](https://www.bbb.org/leave-a-review)",
+    "review_language": "en"
+  },
+  {
+    "source": "bbb",
+    "source_url": "https://www.bbb.org/us/ga/marietta/profile/concrete-contractors/doctor-concrete-atl-llc",
+    "scraped_at": "2026-04-30T10:11:17.386699+00:00",
+    "reviewer_name": null,
+    "reviewer_profile_url": null,
+    "star_rating": null,
+    "review_date": null,
+    "review_text": "[File a Complaint](https://www.bbb.org/file-a-complaint)",
+    "review_language": "en"
+  },
+  {
+    "source": "bbb",
+    "source_url": "https://www.bbb.org/us/ga/marietta/profile/concrete-contractors/doctor-concrete-atl-llc",
+    "scraped_at": "2026-04-30T10:11:17.386738+00:00",
+    "reviewer_name": null,
+    "reviewer_profile_url": null,
+    "star_rating": null,
+    "review_date": null,
+    "review_text": "[Start a Review](https://www.bbb.org/leave-a-review)",
+    "review_language": "en"
   }
 ]
