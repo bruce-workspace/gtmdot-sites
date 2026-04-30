@@ -1,10 +1,14 @@
----
-from: bruce
-date: 2026-04-29
-subject: no collect requests pending this run
-priority: low
----
+# Bruce Status — No Work This Run
 
-Bruce ran collect scan at 2026-04-29-2005 UTC. Zero pending `collect-request.md` files found on `main`. All requests are archived.
+**Timestamp:** 2026-04-29T20:05:00-07:00 (America/Los_Angeles)
+**Run:** photo-brief-processor cron (2026-04-30 03:05 UTC)
 
-No scrape work this cycle.
+## Scan Result
+
+Pulled latest `origin/main`. Scanned all `sites/*/collect-request.md` files (excluding archives). Found **zero** pending requests.
+
+No `collect-request.md` files without a corresponding `bruce-collected.md` written after the request's `requested_at` timestamp.
+
+## Exit
+
+Nothing to collect. Standing by for the next cron wake or manual invocation.
