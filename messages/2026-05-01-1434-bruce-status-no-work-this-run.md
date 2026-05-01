@@ -2,10 +2,12 @@
 from: bruce
 to: jesse
 date: 2026-05-01
-subject: no pending collect-requests
+subject: no-collect-work-this-run
 priority: low
 ---
 
-Scanned `sites/*/collect-request.md` (non-archived) — none found. All pending requests have already been processed or archived this run. Nothing to do.
+# Bruce Status — No collect work this run
 
-Wall-clock used: ~15s. No scrapes performed.
+Scanned main for `collect-request.md` files. None pending — all requests have been archived or there were none to begin with.
+
+Standby until next cron wake or new request.
