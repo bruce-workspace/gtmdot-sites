@@ -1,9 +1,8 @@
-# Bruce Status — No Work This Run
+---
+from: bruce
+date: 2026-04-30
+subject: no collect requests pending this run
+priority: low
+---
 
-No pending `collect-request.md` files found on main branch after full scan.
-
-Checked slugs with requests on origin/main:
-- `doctor-concrete-atl` — already collected (2026-04-30T10:11), request archived
-- `plugged-electricians-atl` — already collected (2026-04-30T10:11), request archived
-
-Run complete.
+No pending `collect-request.md` files found on origin/main after full scan. No work this run. Standing by for next cron wake.

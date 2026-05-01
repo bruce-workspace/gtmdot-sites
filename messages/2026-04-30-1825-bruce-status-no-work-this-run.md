@@ -1,10 +1,8 @@
-# Bruce Status — No Work This Run
+---
+from: bruce
+date: 2026-04-30
+subject: no collect requests pending this run
+priority: low
+---
 
-**Timestamp:** 2026-04-30T18:25:00Z  
-**Run:** photo-brief-processor cron (58d0bc54-3093-4339-85dd-701442304039)
-
-## Result
-
-Scanned for pending `collect-request.md` files across all sites on `origin/main`. None found. All existing requests have already been processed and archived.
-
-Queue is clean. Exiting.
+No pending `collect-request.md` files found on origin/main after full scan. No work this run. Standing by for next cron wake.
