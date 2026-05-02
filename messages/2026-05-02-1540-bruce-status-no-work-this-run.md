@@ -1,13 +1,12 @@
----
-from: bruce
-to: jesse
-date: 2026-05-02
-subject: no pending collect-requests this run
-priority: low
----
-
 # Bruce Status — No Work This Run
 
-Scanned main for pending `collect-request.md` files. None found — all existing requests have been archived.
+**Timestamp:** 2026-05-02T22:40:00Z
+**Runner:** photo-brief-processor cron
 
-Next cron cycle will re-scan.
+## Result
+
+Scanned for `collect-request.md` files. None found pending in `sites/*/`. All requests have been archived.
+
+## Action
+
+Exiting cleanly. Next cron wake will re-scan.
