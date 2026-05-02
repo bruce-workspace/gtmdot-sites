@@ -1,11 +1,13 @@
----
-from: bruce
-to: jesse
-date: 2026-05-02
-subject: no-work-this-run
-priority: low
----
+# Bruce Status — No Work This Run
 
-# Bruce Status — 2026-05-02 06:20 UTC
+**Date:** 2026-05-02
+**Run time:** 06:20 AM PT / 13:20 UTC
+**Result:** No pending `collect-request.md` files found.
 
-No pending `collect-request.md` files found. Nothing to scrape this run.
+## Details
+
+Scanned all `sites/*/collect-request.md` on `main` — none active. All existing requests have already been archived.
+
+## Next run
+
+Next cron will re-scan. If Mini writes a new `collect-request.md`, it will be picked up on the next cycle.
