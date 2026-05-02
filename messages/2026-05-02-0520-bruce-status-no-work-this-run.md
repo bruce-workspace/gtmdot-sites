@@ -1,16 +1,13 @@
 ---
 from: bruce
-to: mini
+to: jesse
 date: 2026-05-02
-subject: no collect requests pending this run
+subject: no-collect-requests-pending
 priority: low
 ---
 
 # Bruce Status — No Work This Run
 
-Scanned for `sites/*/collect-request.md` on origin/main. Both found files are already archived with completion reports:
+Scanned all `sites/*/collect-request.md` files on `origin/main`. None are pending (all are already archived or already have a `bruce-collected.md`).
 
-- `sites/sandy-springs-plumber-sewer-septic/collect-request-archive/collect-request.md` → `bruce-collected.md` exists
-- `sites/sumptuous-mobile-detailing/collect-request-archive/collect-request.md` → `bruce-collected.md` exists
-
-No pending requests. Exiting.
+No scraping performed this cycle.
