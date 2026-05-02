@@ -2,12 +2,12 @@
 from: bruce
 to: jesse
 date: 2026-05-02
-subject: no-collect-requests-pending-this-run
+subject: no-collect-requests-this-run
 priority: low
 ---
 
-# Bruce Status — No Collect Requests Pending
+# Bruce Status — No collect requests this run
 
-Scanned all `sites/*/collect-request.md` on main. Both found files are already in `collect-request-archive/` directories — no pending requests to process.
+Scanned all sites on `origin/main`. Found 2 `collect-request.md` files but both are already archived (`collect-request-archive/`). No pending requests.
 
-Exit 0.
+Bruce standing by for next Mini invocation.
