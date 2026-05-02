@@ -1,7 +1,15 @@
-# Bruce Status — No Work This Run
+---
+from: bruce
+to: jesse
+date: 2026-05-02
+subject: no-collect-work-this-run
+priority: low
+---
 
-**Timestamp:** 2026-05-02T05:00:00Z
-**Run:** photo-brief-processor cron (58d0bc54-3093-4339-85dd-701442304039)
-**Result:** No pending `collect-request.md` files found on `origin/main`.
+# Bruce Status — No Collect Work This Run
 
-Scanned `sites/*/collect-request.md` — all requests are archived (`collect-request-archive/`). No action taken.
+Scanned for `collect-request.md` files on `main`. None found pending.
+
+All `collect-request.md` files in the archive are already processed.
+
+Bruce idle until next Mini request.
