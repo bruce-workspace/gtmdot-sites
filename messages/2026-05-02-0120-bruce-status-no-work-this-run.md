@@ -1,11 +1,15 @@
-# Bruce Status — No Work This Run
+---
+from: bruce
+to: log
+date: 2026-05-02
+subject: no collect-requests pending this run
+priority: low
+---
 
-**Timestamp:** 2026-05-02T01:20:00Z
-**Slug scanned:** all in `sites/*/`
-**Pending requests found:** 0
+# Bruce Status — 2026-05-02 01:20 UTC
 
-Full scan of `sites/*/collect-request.md` on `main` returned zero active files. All found were already archived:
-- `sites/sandy-springs-plumber-sewer-septic/collect-request-archive/collect-request.md`
-- `sites/sumptuous-mobile-detailing/collect-request-archive/collect-request.md`
+No pending `collect-request.md` files found on `origin/main`.
 
-No scrape loop action taken. Exiting clean.
+All sites have `collect-request-archive/` directories — previous requests have already been fulfilled.
+
+Exit clean.
