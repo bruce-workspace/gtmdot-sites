@@ -1,45 +1,47 @@
 ---
 slug: the-smart-company-llc
-request_id: 2026-04-30T06:50:12.118798+00:00
-collected_at: 2026-04-30T11:30:33.724383Z
+request_id: 2026-05-03T11:07:51.515464+00:00
+collected_at: 2026-05-03T14:06:01Z
 status: failed
 ---
 
 # Bruce Collected — the-smart-company-llc
 
 ## Summary
-All requested sources were checked within the 10-minute budget. No usable business/work photos or new reviews were available from Yelp, Nextdoor, Thumbtack, or BBB; BBB only confirmed the public business profile and business details.
+Checked existing raw files, then searched the requested sources in priority order. No matching Yelp, Nextdoor, or Thumbtack profile surfaced in source-specific web search. BBB has the known public business profile, but the profile fetch returned an anti-bot interstitial, so no photos or reviews were extractable without bypassing.
 
 ## Results by source
 
 ### yelp — FAILED
 - 0 photos → none
 - 0 reviews → `reviews-raw.json`
-- Reason if failed: `not-found`
-- Detail: Brave site search did not find a matching Yelp business page. Direct Yelp URLs `the-smart-company-llc-buford` and `smart-company-llc-buford` returned 404; the Yelp search page was blocked behind a JS/ad-block security notice, with no extractable business photos or reviews.
+- Reason code: `not-found`
+- Detail: Source-specific search for `The Smart Company` + `Buford` returned no matching Yelp business profile. No profile URL was available to scrape.
 
 ### nextdoor — FAILED
 - 0 photos → none
 - 0 reviews → `reviews-raw.json`
-- Reason if failed: `login-wall`
-- Detail: Direct Nextdoor page returned 404. Nextdoor search redirected to `/login/`, so no public photos or reviews were accessible.
+- Reason code: `not-found`
+- Detail: Source-specific search for `The Smart Company` + `Buford` returned no matching Nextdoor business profile. No profile URL was available to scrape.
 
 ### thumbtack — FAILED
 - 0 photos → none
 - 0 reviews → `reviews-raw.json`
-- Reason if failed: `not-found`
-- Detail: Brave site search found no matching Thumbtack profile. Requested Thumbtack profile URLs and the Buford pressure-washing category page returned Thumbtack's unavailable-page response.
+- Reason code: `not-found`
+- Detail: Source-specific search for `The Smart Company` + `Buford` returned no matching Thumbtack business profile. No profile URL was available to scrape.
 
-### bbb — PARTIAL
+### bbb — FAILED
 - 0 photos → none
 - 0 reviews → `reviews-raw.json`
-- Reason if failed: `not-found`
-- Detail: BBB profile is public at `bbb.org/us/ga/buford/profile/home-improvement/the-smart-company-ga-llc-0443-28152977`, but it exposes business info only: not BBB accredited, 5 years in business, construction/remodeling categories, and co-owners Yenire Mendoza and Jose Figueroa. No public photos or review text were present; the BBB find URL returned 404.
+- Reason code: `captcha`
+- Detail: Search found the BBB profile at `https://www.bbb.org/us/ga/buford/profile/home-improvement/the-smart-company-ga-llc-0443-28152977`, but fetching it returned BBB's `Just a moment...` anti-bot interstitial. Did not attempt bypass.
 
 ## Totals
-- Photos collected: 0 (within budget of 15)
-- Reviews collected: 0 (within budget of 30)
-- Wall-clock used: ~2m 10s
+- Existing photos in `photos-raw/`: 0
+- Existing raw reviews: 0
+- Photos collected this run: 0 (within budget of 15)
+- Reviews collected this run: 0 (within budget of 30)
+- Wall-clock used: ~2m
 
 ## Handing back to Mini
-Raw files are in place. Over to you for integration.
+Raw files are in place. No source photos or additional reviews were available from the requested sources under the retry-free/no-bypass rules.
