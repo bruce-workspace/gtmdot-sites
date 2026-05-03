@@ -1,11 +1,32 @@
 {
   "reviews": [
     {
-      "author": "",
+      "author": "Brett E.",
       "rating": 5,
-      "text": "I needed drywall repaired after plumbing work. Dave was the 4th contractor I contacted. Done right gives you estimates based on photo measurements. The next morning i received a detailed and reasonably priced estimateof the work. The crew came on time, did a fantastic job, cleaned up afterwards. My walls look great. Thanks Dave!",
+      "text": "Incredible work done, very easy to work with and punctual. I would very highly recommend!",
       "source": "yelp",
       "date": "Sep 22, 2025"
+    },
+    {
+      "author": "Jeremy J.",
+      "rating": 5,
+      "text": "Movers mangled the walls - patched the walls did a great job 2.5 hours and it was perfect. Thanks",
+      "source": "nextdoor",
+      "date": "3/2020"
+    },
+    {
+      "author": "Brandon V.",
+      "rating": 5,
+      "text": "Did a great job repairing and blending a damaged section of popcorn ceiling.",
+      "source": "nextdoor",
+      "date": "2/2020"
+    },
+    {
+      "author": "Marie N.",
+      "rating": 5,
+      "text": "Recommends your business. Hi, I live in Cross Creek and have known Dave for a long time. I also know some people who have used Done Right Drywall Repair and they all say they got great quality work done on time at great prices.",
+      "source": "nextdoor",
+      "date": "unknown"
     }
   ]
 }
