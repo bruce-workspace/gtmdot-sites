@@ -1,15 +1,22 @@
-# Bruce Status — No Work This Run
+---
+from: bruce
+to: jesse
+date: 2026-05-03
+subject: no-pending-collect-requests
+priority: low
+---
 
-**Date:** 2026-05-03
-**Time:** 06:20 UTC
-**Run:** photo-brief-processor cron (uid: 58d0bc54-3093-4339-85dd-701442304039)
+# Bruce Status — No Pending Collect Requests
 
-## Scan result
+Scanned all `collect-request.md` files on origin/main. All 8 found have corresponding `bruce-collected.md` already written after their `requested_at` timestamps:
 
-Checked all `sites/*/collect-request.md` on main. None found outside of archive directories.
+- hvac-guyz-plumbing-inc → collected 2026-05-03 12:27
+- plugged-electricians-atl → collected 2026-05-03 12:27 (partial — Yelp only)
+- sandy-springs-plumber-sewer-septic → collected 2026-04-30
+- sandy-springs-plumbing → collected 2026-04-30
+- sumptuous-mobile-detailing → collected 2026-04-30
+- the-smart-company-llc → collected 2026-04-30
+- thermys-mobile-tire-and-brakes → collected 2026-04-30
+- tuckers-home-services → collected 2026-04-30
 
-All pending requests have already been processed or archived.
-
-## Exit
-
-No scrape loop executed. Exiting cleanly.
+No new `collect-request.md` files detected. Nothing to do this run.
