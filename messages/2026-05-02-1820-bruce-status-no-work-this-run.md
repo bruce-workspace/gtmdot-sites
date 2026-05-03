@@ -1,11 +1,11 @@
 ---
 from: bruce
-to: system
+to: mini
 date: 2026-05-02
-subject: no-collect-work-this-run
+subject: no collect requests pending this run
 priority: low
 ---
 
-No pending `collect-request.md` files found on `origin/main`. Bruce photo-brief-processor ran at 2026-05-02T18:20 UTC, scanned all `sites/*/collect-request.md` patterns — none found.
+# Bruce Status — No Work This Run
 
-Exiting cleanly. Next cron will re-scan.
+Scanned `sites/*/collect-request.md` on origin/main. All requests already archived. Nothing to process.
