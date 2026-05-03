@@ -1,45 +1,44 @@
 ---
 slug: hvac-guyz-plumbing-inc
-request_id: 2026-05-03T12:20:00Z
-collected_at: 2026-05-03T12:27:00Z
+request_id: 2026-05-03T11:07:51.511918+00:00
+collected_at: 2026-05-03T13:43:14Z
 status: partial
 ---
 
-# Bruce Collected — hvac-guyz-plumbing-inc
+# Bruce Collected — HVAC Guyz & Plumbing Inc
 
 ## Summary
-Collected 10 new photos from Yelp (yelp-16 through yelp-25) and 8 reviews from Yelp (snippet), Nextdoor, and Birdeye. Previous run had 15 Yelp photos already; new batch brings total photos to 26 in photos-raw/. Yelp and Nextdoor review text was partially accessible via web fetch; BBB was blocked by reCAPTCHA.
+Processed the requested source waterfall once each. No new photos or reviews were added in this pass. Existing raw assets are already present from the earlier HVAC Guyz collection: Yelp photos in `photos-raw/` and 8 reviews in `reviews-raw.json`.
 
 ## Results by source
 
-### yelp — PARTIAL
-- 10 photos → photos-raw/yelp-16.jpg through yelp-25.jpg
-- 0 full reviews → reviews-raw.json (Yelp's review cards loaded via JS — web_fetch got snippets/highlights only; full review text not extractable without browser automation)
-- Reason: partial — photos captured, reviews partially accessible
+### yelp — FAILED
+- 0 new photos
+- 0 new reviews
+- Reason code: `unknown`
+- Detail: Scrapfly returned HTTP 400 on the single allowed attempt for `https://www.yelp.com/biz/hvac-guyz-and-plumbing-atlanta`. No retry attempted.
 
-### nextdoor — PARTIAL
-- 0 photos (no photos on the Nextdoor page)
-- 4 reviews → reviews-raw.json (text scraped successfully via web_fetch)
-- Reason: partial — reviews captured, no photos available on this source page
+### nextdoor — FAILED
+- 0 new photos
+- 0 new reviews
+- Reason code: `unknown`
+- Detail: Scrapfly returned HTTP 400 on the single allowed attempt for `https://nextdoor.com/pages/hvac-guyz-plumbing-inc-atlanta-ga/`. No retry attempted.
 
-### thumbtack — NOT-ATTEMPTED
-- No thumbtack listing found for this business
-- Reason: not-found
+### thumbtack — FAILED
+- 0 new photos
+- 0 new reviews
+- Reason code: `unknown`
+- Detail: Scrapfly returned HTTP 400 on the single allowed attempt for the likely Thumbtack service URL. No retry attempted.
 
-### bbb — FAILED
+### bbb — SUCCESS
 - 0 photos
-- 0 reviews (reCAPTCHA block on BBB)
-- Reason: captcha
-
-### birdeye — PARTIAL
-- 0 photos
-- 2 reviews → reviews-raw.json (text scraped via web_fetch)
-- Reason: partial — reviews captured, no photos on Birdeye
+- 0 reviews
+- Detail: Firecrawl successfully captured the BBB profile, but the page contains no customer reviews or usable business photos.
 
 ## Totals
-- Photos collected: 10 new (26 total in photos-raw/ including 15 from prior run + 1 gbp)
-- Reviews collected: 8
-- Wall-clock used: ~5m (within 10m budget)
+- Photos collected: 0 new in this pass; 26 existing raw photos already present
+- Reviews collected: 0 new in this pass; 8 existing raw reviews already present
+- Wall-clock used: ~2m (within 10m budget)
 
-## Budget status
-within budget
+## Handing back to Mini
+Raw files already exist in `sites/hvac-guyz-plumbing-inc/photos-raw/` and `sites/hvac-guyz-plumbing-inc/reviews-raw.json`. Current request archived; no HTML/CSS touched.
