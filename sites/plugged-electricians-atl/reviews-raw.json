@@ -1,10 +1,13 @@
-{
-  "source": "yelp",
-  "source_url": "https://www.yelp.com/not_recommended_reviews/plugged-electricians-atlanta-3",
-  "scraped_at": "2026-05-03T12:26:33Z",
-  "reviewer_name": "Ja-shon A.",
-  "star_rating": 5,
-  "review_date": "2023-05-09",
-  "review_text": "Sherea had very reasonable pricing. Came in and knocked the project out without hesitation and did a very wonderful job! My wife was very pleased with new recessed lighting in kitchen and living room. And also got some outdoor light upgrades and ceiling fan installations on patio. I will be calling her back for minor fixes around the house. With that being said We Recommend her 100%",
-  "review_language": "en"
-}
+[
+  {
+    "source": "yelp",
+    "source_url": "https://www.yelp.com/not_recommended_reviews/plugged-electricians-atlanta-3",
+    "scraped_at": "2026-05-03T12:26:33Z",
+    "reviewer_name": "Ja-shon A.",
+    "reviewer_profile_url": null,
+    "star_rating": 5,
+    "review_date": "2023-05-09",
+    "review_text": "Sherea had very reasonable pricing. Came in and knocked the project out without hesitation and did a very wonderful job! My wife was very pleased with new recessed lighting in kitchen and living room. And also got some outdoor light upgrades and ceiling fan installations on patio. I will be calling her back for minor fixes around the house. With that being said We Recommend her 100%",
+    "review_language": "en"
+  }
+]
