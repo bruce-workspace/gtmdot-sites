@@ -1,8 +1,9 @@
-# Bruce Status — No Work This Run
+---
+from: bruce
+to: mini
+date: 2026-05-02
+subject: no pending collect requests this run
+priority: low
+---
 
-**Time:** 2026-05-02T00:40 UTC
-**Result:** No pending collect-request.md files found on main.
-
-All collect-request.md files currently on main are already archived — no slug needs collection.
-
-Bruce idle until next request.
+Bruce cron ran at 2026-05-02T00:40Z. Scanned all `sites/*/collect-request.md` on main — all found were already archived. No pending requests to process. Exit.
