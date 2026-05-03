@@ -1,13 +1,14 @@
 ---
-from: bruce
-to: jesse
-date: 2026-05-03
-subject: no-collect-requests-pending-this-run
-priority: low
+timestamp: 2026-05-03T10:40:00Z
+agent: bruce
+run_type: cron
+scope: photo-brief-processor
 ---
 
 # Bruce Status — No Work This Run
 
-Scanned all `sites/*/collect-request.md` on `origin/main`. All found files were already archived (no unprocessed requests pending).
+Scanned for `collect-request.md` files not yet matched by a `bruce-collected.md`. Found none.
 
-Next cron will re-scan. If you expect pending requests, verify Mini committed the `collect-request.md` file and pushed to `origin/main`.
+All pending requests have been fulfilled or archived. No scrape loop executed.
+
+Exiting cleanly.
