@@ -1,28 +1,75 @@
 ---
 slug: sumptuous-mobile-detailing
-collected_at: 2026-05-03T15:36:28.011Z
-wall_clock_used_minutes: 0.63
+request_id: 2026-05-03T20:59:00Z
+collected_at: 2026-05-03T20:59:00Z
 status: partial
 ---
 
-# Bruce Collected Report — sumptuous-mobile-detailing
+# Bruce Collected — sumptuous-mobile-detailing
 
-## Per-Source Results
+## Summary
 
-| Source | Status | Reason | Photos | Reviews | URL |
-|---|---:|---|---:|---:|---|
-| yelp | **failed** | api-error | 0 | 0 | https://www.yelp.com/biz_photos/sumptuous-mobile-detailing-suwanee|
-| nextdoor | **success** | - | 0 | 0 | https://nextdoor.com/search/?query=Sumptuous%20Mobile%20Detailing%20Suwanee%20GA|
-| thumbtack | **failed** | not-found | 0 | 0 | https://www.thumbtack.com/search?query=Sumptuous%20Mobile%20Detailing%20Suwanee%20GA&location=Georgia|
-| bbb | **failed** | firecrawl-400 | 0 | 0 | https://www.bbb.org/search?find_country=USA&find_text=Sumptuous%20Mobile%20Detailing%20Suwanee%20GA|
+Scraped 5 requested source attempts. Collected 0 new usable photos from this run after filtering unrelated BBB assets; existing raw photo files remain in place from earlier collection attempts. 5 total raw reviews are available.
+
+## Results by source
+
+### yelp — FAILED
+
+- 0 photos → `sites/sumptuous-mobile-detailing/photos-raw/yelp-NN.jpg`
+
+- 0 reviews → appended to `reviews-raw.json`
+
+- URL: https://www.yelp.com/biz/sumptuous-mobile-detailing-suwanee
+
+- Reason code: `blocked-by-robots-txt`
+
+### yelp — FAILED
+
+- 0 photos → `sites/sumptuous-mobile-detailing/photos-raw/yelp-NN.jpg`
+
+- 0 reviews → appended to `reviews-raw.json`
+
+- URL: https://www.yelp.com/biz/sumptuous-mobile-detailing-buford-3
+
+- Reason code: `blocked-by-robots-txt`
+
+### nextdoor — FAILED
+
+- 0 photos → `sites/sumptuous-mobile-detailing/photos-raw/nextdoor-NN.jpg`
+
+- 0 reviews → appended to `reviews-raw.json`
+
+- URL: https://nextdoor.com/pages/sumptuous-detailing-buford-ga-4/
+
+- Reason code: `blocked-by-robots-txt`
+
+### thumbtack — FAILED
+
+- 0 photos → `sites/sumptuous-mobile-detailing/photos-raw/thumbtack-NN.jpg`
+
+- 0 reviews → appended to `reviews-raw.json`
+
+- URL: https://www.thumbtack.com/search?query=Sumptuous%20Mobile%20Detailing&zip_code=30518
+
+- Reason code: `blocked-by-robots-txt`
+
+### bbb — FAILED
+
+- 0 usable photos after filtering unrelated stock/brand images
+
+- 0 reviews → appended to `reviews-raw.json`
+
+- Reason code: `not-found`
+
+- URL: https://www.bbb.org/search?find_country=USA&find_text=Sumptuous%20Mobile%20Detailing&find_loc=Suwanee%2C%20GA
 
 ## Totals
 
-- Photos collected: 0 (budget: 15)
-- Reviews collected: 5 (budget: 30)
-- Wall-clock used: 0.63 min (budget: 10 min)
+- Photos collected: 0 this run (within budget of 15)
 
-## Files
+- Reviews collected: 5 (within budget of 30)
 
-- Photos: `photos-raw/*.jpg`
-- Reviews: `reviews-raw.json` (5 total records)
+- Wall-clock used: 0.10m for current run
+
+## Handing back to Mini
+Raw files are in place. Over to you for integration.
