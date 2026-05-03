@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  com.gtmdot.r1vs-watcher.plist — Stage 1 MVP launchd LaunchAgent
+
+  Canonical version-controlled copy. Jesse copies this to:
+    ~/Library/LaunchAgents/com.gtmdot.r1vs-watcher.plist
+
+  Then loads with:
+    launchctl load ~/Library/LaunchAgents/com.gtmdot.r1vs-watcher.plist
+
+  Unload with:
+    launchctl unload ~/Library/LaunchAgents/com.gtmdot.r1vs-watcher.plist
+
+  Note: this plist hardcodes /Users/jessealtman as the home dir. If R1VS
+  ever moves to another machine or another user, swap that path.
+
+  Refs:
+    proposals/2026-04-28-r1vs-watcher-implementation.md (commit d523c87)
+    scripts/r1vs-watcher.sh (this commit)
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- Reverse-DNS label, must match the plist filename -->
+  <key>Label</key>
+  <string>com.gtmdot.r1vs-watcher</string>
+
+  <!-- The script to run every tick -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/jessealtman/.gtmdot/r1vs-watcher.sh</string>
+  </array>
+
+  <!-- Tick every 900 seconds = 15 minutes.
+       launchd schedules the next tick StartInterval seconds after the
+       PREVIOUS tick STARTED, so a long-running tick (e.g., a Phase 3
+       build that took 25 min) won't queue ticks behind it; the next
+       tick fires 15 min after the start of the current one and is
+       skipped via mkdir-lock if the previous is still holding. -->
+  <key>StartInterval</key>
+  <integer>900</integer>
+
+  <!-- DO NOT fire on launchd-load. Manual smoke test first. -->
+  <key>RunAtLoad</key>
+  <false/>
+
+  <!-- launchd-managed log streams (separate from the watcher's own
+       per-day log at $LOG_DIR/r1vs-watcher-YYYY-MM-DD.log) -->
+  <key>StandardOutPath</key>
+  <string>/Users/jessealtman/.gtmdot/logs/r1vs-watcher.launchd.stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/jessealtman/.gtmdot/logs/r1vs-watcher.launchd.stderr.log</string>
+
+  <!-- Inherited env. The watcher script sources $GTMDOT_DIR/.env for
+       Supabase + Slack creds, but launchd needs HOME and PATH set
+       explicitly because LaunchAgents start with minimal env. -->
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>HOME</key>
+    <string>/Users/jessealtman</string>
+    <key>PATH</key>
+    <string>/Users/jessealtman/.gtmdot/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+  </dict>
+
+  <!-- Don't keep the process alive; just run on schedule. -->
+  <key>KeepAlive</key>
+  <false/>
+
+  <!-- Throttle restarts in case of repeated failure (default 10 sec
+       is fine; explicit for clarity). -->
+  <key>ThrottleInterval</key>
+  <integer>10</integer>
+
+  <!-- Working directory for the script (the script also `cd`s into
+       REPO_DIR explicitly, but this gives launchd a clean starting cwd). -->
+  <key>WorkingDirectory</key>
+  <string>/Users/jessealtman</string>
+</dict>
+</plist>

@@ -2,15 +2,33 @@
 -- Migration: r1vs_jobs queue + watcher infrastructure (Stage 1 MVP)
 -- =====================================================================
 --
--- Status: PROPOSAL — awaiting Bruce ACK on schema shape before Codex runs.
+-- Status: ACK'd FOR STAGE 1 ONLY by Codex + R1VS on 2026-04-28.
+--         Bruce ACK unavailable due to OpenClaw 4.29/4.30 instability —
+--         Bruce responded "standing by" to direct ACK/BLOCK request,
+--         did not complete schema review.
+--
+--         Stage 1 does not modify Bruce runtime, does not auto-trigger
+--         Bruce, does not write to Paperclip API, does not promote CRM
+--         stages, does not deploy, does not release outreach. The
+--         `phase_3_finalized_ready_for_bruce` status is a visible signal
+--         only — Bruce/Mini continue using the existing manual/observed
+--         handoff (messages/r1vs/<date>-r1vs-<slug>-finalized.md) for
+--         Stage 1.
+--
+--         BRUCE ACK MUST BE REVISITED BEFORE STAGE 2/3, where Bruce/
+--         Paperclip integration becomes active. Stage 2/3 cannot ship
+--         without Bruce thumbing the schema shape. If Bruce wants
+--         status names changed at that point, ALTER TABLE is cheap
+--         while there are no Bruce-side dependents.
+--
 -- Author: R1VS (MacBook Claude Code)
 -- Date:   2026-04-28
 -- Refs:
 --   docs/r1vs-trade-builder-contract.md (commit f7426d8) — table shape (§11)
 --   proposals/2026-04-28-r1vs-watcher-implementation.md (commit d523c87) — watcher additions (§4–§6)
 --
--- Codex on the Mac Mini will run this after Bruce ACKs the schema shape via
--- the #claude-sync watcher proposal thread (parent ts 1777769892.336259).
+-- Codex on the Mac Mini runs this after the Stage 1-only ACK is recorded
+-- in the #claude-sync watcher proposal thread (parent ts 1777769892.336259).
 --
 -- Idempotent: uses `if not exists` everywhere reasonable. Safe to re-run
 -- if a partial migration occurred. NOTE: column adds are NOT idempotent in
