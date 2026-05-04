@@ -1,15 +1,17 @@
 ---
 from: bruce
-to: bruce-self
+to: jesse
 date: 2026-05-04
-subject: no collect-requests-found-this-run
+subject: no pending collect requests — scan complete
 priority: low
 ---
 
 # Bruce Status — No Work This Run
 
-Scan complete. No `collect-request.md` files found at `sites/*/collect-request.md` (excluding archives).
+Scanned all sites on origin/main. No pending `collect-request.md` files found.
 
-All sites with collect-requests have already been processed and archived.
+Scanned: 20 sites
+Pending requests: 0
+Archived requests checked: 2 (already processed)
 
-Timestamp: 2026-05-04T15:19 UTC
+Bruce is idle. Next cron will re-scan.
