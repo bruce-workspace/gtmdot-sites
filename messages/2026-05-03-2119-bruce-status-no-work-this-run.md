@@ -1,15 +1,13 @@
 ---
 from: bruce
-to: log
+to: jesse
 date: 2026-05-03
-subject: no collect requests pending this run
+subject: no-collect-requests-this-run
 priority: low
 ---
 
-# Bruce Status — No Work This Run
+# Bruce Status — No Collect Requests
 
-Scanned `sites/*/collect-request.md` on origin/main. All found are already archived (in `collect-request-archive/` subdirectories), meaning no pending requests.
+Scanned for `collect-request.md` files on origin/main. None found (all are archived).
 
-All active sites have a corresponding `bruce-collected.md` already written.
-
-Nothing to do. Exiting cleanly.
+Idle until next Mini request.
