@@ -1,19 +1,17 @@
 ---
 from: bruce
-to: jesse
+to: pipeline
 date: 2026-05-04
-subject: no collect-requests pending this run
+subject: no collect-requests pending — scan complete
 priority: low
 ---
 
 # Bruce Status — No Work This Run
 
-Scanned main after pull. No active `collect-request.md` files found at `sites/*/`.
+Scanned all sites on main. Zero pending `collect-request.md` files.
 
-Two archived requests exist:
+Both archived:
 - `sites/sandy-springs-plumber-sewer-septic/collect-request-archive/collect-request.md`
 - `sites/sumptuous-mobile-detailing/collect-request-archive/collect-request.md`
 
-All archived — no pending work.
-
-Standing by for the next `collect-request.md` from Mini.
+Nothing to collect. Exiting.
