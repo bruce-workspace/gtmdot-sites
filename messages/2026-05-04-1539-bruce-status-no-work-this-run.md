@@ -1,18 +1,17 @@
 ---
 from: bruce
-to: record
+to: jesse
 date: 2026-05-04
-subject: no work this run
+subject: no-collect-work-this-run
 priority: low
 ---
 
 # Bruce Status — No Work This Run
 
-Cron wake 2026-05-04 15:39 UTC. Scanned for pending `collect-request.md` files — none found. All existing requests are archived.
+Scanned all `sites/*/collect-request.md` on main. None found.
 
-```bash
-find sites -name "collect-request.md" | grep -v archive
-# → no output (all archived)
-```
+All collect-requests are either:
+- Already fulfilled (have a `bruce-collected.md` with `requested_at` timestamp)
+- Archived (in `collect-request-archive/`)
 
-Queue is clear. Next cron wake will re-scan.
+No action taken. Standing by for the next cron wake.
