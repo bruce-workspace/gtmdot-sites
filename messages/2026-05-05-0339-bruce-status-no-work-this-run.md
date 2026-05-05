@@ -1,13 +1,14 @@
----
-from: bruce
-to: jesse
-date: 2026-05-05
-subject: no-collect-requests-this-run
-priority: low
----
-
 # Bruce Status — No Work This Run
 
-Scanned for `sites/*/collect-request.md` on `origin/main` — none found (only archived requests remain).
+**Timestamp:** 2026-05-05T03:39-07:00 (America/Los_Angeles) / 2026-05-05T10:39Z (UTC)
+**Run:** photo-brief-processor cron
 
-Collection queue is empty. Exiting cleanly.
+## Status
+
+No pending `collect-request.md` files found on `origin/main`. All requests have been archived.
+
+Scanned `sites/*/collect-request.md` — found only archived copies under `*/collect-request-archive/`.
+
+## Exiting
+
+No scrape operations performed. Bruce is idle until the next `collect-request.md` is written.
