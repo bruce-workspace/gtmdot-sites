@@ -1,13 +1,17 @@
 ---
 from: bruce
-to: mini
+to: pipeline
 date: 2026-05-04
-subject: no-collect-requests-pending-this-run
+subject: no-work-this-run — no pending collect-requests
 priority: low
 ---
 
-# Bruce Status — No Work This Run
+# Bruce Status — No Collect Requests This Run
 
-Scanned for pending `collect-request.md` files at main. None found — all requests have been archived or already collected.
+No pending `collect-request.md` files found on `main` (excluding archived).
 
-Idle until next cron wake or new request from Mini.
+Scanned all `sites/*/collect-request.md` — none at root level of a site directory.
+
+Last run: 6bc9ac8 (`msg(bruce): no collect requests this run`).
+
+Idle until next request file is written.
