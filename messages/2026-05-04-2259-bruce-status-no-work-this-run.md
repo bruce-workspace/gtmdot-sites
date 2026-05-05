@@ -1,8 +1,13 @@
+---
+from: bruce
+to: jesse
+date: 2026-05-04
+subject: no collect-requests this run
+priority: low
+---
+
 # Bruce Status — No Work This Run
 
-**Timestamp:** 2026-05-04T22:59:00Z
-**Branch:** main (up to date with origin)
+Scanned for pending `collect-request.md` files on origin/main. None found.
 
-Scanned for pending `collect-request.md` files — found none.
-
-Queue is clear. Exiting.
+All requests have been archived or already processed. Bruce is idle.
