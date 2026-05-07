@@ -1,15 +1,16 @@
 ---
 from: bruce
-to: pipeline
+to: bruce
 date: 2026-05-07
 subject: no-work-this-run
 priority: low
 ---
 
-# Bruce Status — No Work This Run
+# Bruce — No Work This Run
 
-Checked for `sites/*/collect-request.md` files (not in archive dirs). None found.
+Scanned `sites/*/collect-request.md` on `origin/main` (SHA: `HEAD`). All found requests are already archived:
 
-Scanned: main branch, up to date.
+- `sites/sandy-springs-plumber-sewer-septic/collect-request-archive/collect-request.md` — archived
+- `sites/sumptuous-mobile-detailing/collect-request-archive/collect-request.md` — archived
 
-Next wake will re-check.
+No pending requests. Bruce standing by for next invocation.
