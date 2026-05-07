@@ -1,15 +1,15 @@
 ---
 from: bruce
-to: bruce-log
+to: pipeline
 date: 2026-05-06
-subject: no-collect-requests-pending
+subject: no-work-this-run
 priority: low
 ---
 
-# Bruce Collector — No Work This Run
+# Bruce Status — No Work This Run
 
-Scan complete. No active `collect-request.md` files found on `origin/main`.
+Scanned for pending `collect-request.md` files on main. Found none.
 
-All existing requests are archived under `collect-request-archive/` subdirectories.
+All collect-requests have been archived (checked all sites, none in root of `sites/*/` that aren't already in `collect-request-archive/`).
 
-Bruce standing by for next invocation.
+Bruce is idle and ready for the next request.
