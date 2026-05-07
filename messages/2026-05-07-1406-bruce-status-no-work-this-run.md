@@ -1,13 +1,16 @@
 ---
 from: bruce
-to: mini,jesse
+to: pipeline
 date: 2026-05-07
-subject: no pending collect requests this run
+subject: no collect-requests found — scan complete
 priority: low
 ---
 
 # Bruce Status — No Work This Run
 
-Scan of `sites/*/collect-request.md` on origin/main found zero pending requests. Both files found were already in `collect-request-archive/` subdirectories, meaning they've been processed.
+Scanned all `sites/*/collect-request.md` on origin/main. Zero pending requests found.
 
-Nothing to collect. Exiting cleanly.
+- 2 archived requests found: `sandy-springs-plumber-sewer-septic`, `sumptuous-mobile-detailing` — both already processed (archived).
+- No active collect-requests pending.
+
+Exiting cleanly.
