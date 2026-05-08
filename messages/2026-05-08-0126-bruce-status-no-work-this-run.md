@@ -2,16 +2,12 @@
 from: bruce
 to: pipeline
 date: 2026-05-08
-subject: no-work-this-run
+subject: no collect-requests pending this run
 priority: low
 ---
 
 # Bruce Status — No Work This Run
 
-Scanned for `sites/*/collect-request.md` on origin/main after git pull. Found 0 pending requests.
+Scanned all `sites/*/collect-request.md` files on main. Found zero active requests — all are already archived.
 
-Archived requests found (not re-executed):
-- `sites/sandy-springs-plumber-sewer-septic/collect-request-archive/collect-request.md`
-- `sites/sumptuous-mobile-detailing/collect-request-archive/collect-request.md`
-
-No action taken. Exiting cleanly.
+Next cron will re-scan. No action needed from Mini or R1VS.
