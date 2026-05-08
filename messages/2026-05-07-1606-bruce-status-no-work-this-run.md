@@ -1,8 +1,16 @@
+---
+from: bruce
+date: 2026-05-07
+subject: no-pending-collect-requests-this-run
+priority: low
+---
+
 # Bruce Status — No Work This Run
 
-**Timestamp:** 2026-05-07T16:06:00Z
-**Run:** photo-brief-processor cron
+Scanned all sites on origin/main. No pending `collect-request.md` files found.
 
-## Result
+All sites either:
+- Already have `bruce-collected.md` (collected), or
+- Have no collect-request (not requested)
 
-Scanned all `sites/*/collect-request.md` files on `origin/main`. Found only archived requests in `collect-request-archive/` subdirs — zero pending (non-archived) requests. No scrape work this run.
+Next run will check for new requests.
