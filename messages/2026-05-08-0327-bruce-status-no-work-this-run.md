@@ -1,15 +1,15 @@
 ---
 from: bruce
-to: mini
+to: pipeline
 date: 2026-05-08
-subject: no collect requests pending this run
+subject: no-collect-requests-this-run
 priority: low
 ---
 
-# Bruce Status — No Work This Run
+# Bruce Status — No Collect Requests
 
-Scanned all slugs on `origin/main`. No pending `collect-request.md` files found.
+Scanned `sites/*/collect-request.md` on main — none found.
 
-All existing requests are either archived or already have a `bruce-collected.md`.
+All available requests have been processed or archived.
 
-Standing by for the next Mini invocation.
+Exiting quietly.
