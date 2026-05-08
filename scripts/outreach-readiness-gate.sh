@@ -103,6 +103,60 @@ check_image_url() {
   return 1
 }
 
+# ───── Helper: image dimensions ─────
+# Downloads the image to /tmp, runs sips, echoes "WIDTHxHEIGHT", returns 0 on success.
+# Caller compares against minimum dimensions. Used for postcard hero size enforcement
+# (Poplar approved templates need 11.25x6.25in @ 300dpi = 3375x1875 px raw; we accept
+# 3000x1700 minimum to allow for rounding to gpt-image-2 multiple-of-16 sizes like
+# 3360x1872 and 3392x1888).
+check_image_dimensions() {
+  local url="$1"
+  local tmp
+  tmp=$(mktemp -t gtmdot-img-XXXXXX).jpg
+  if ! curl -sSf -o "$tmp" "$url" 2>/dev/null; then
+    rm -f "$tmp"
+    return 1
+  fi
+  local w h
+  w=$(sips -g pixelWidth "$tmp" 2>/dev/null | awk '/pixelWidth/ {print $2}')
+  h=$(sips -g pixelHeight "$tmp" 2>/dev/null | awk '/pixelHeight/ {print $2}')
+  rm -f "$tmp"
+  if [[ -z "$w" || -z "$h" ]]; then
+    echo "?x?"
+    return 1
+  fi
+  echo "${w}x${h}"
+  return 0
+}
+
+# ───── Helper: hero provenance ─────
+# Reads sites/<slug>/bruce-asset-intel.json from the local gtmdot-sites checkout,
+# returns 0 if model_stack.image_generation == "openai/gpt-image-2" (exact match).
+# This is the §11.11.5 + Jesse 2026-05-07 standing instruction enforcement.
+SITES_LOCAL_DIR="/Users/bruce/.openclaw/workspace/gtmdot-sites/sites"
+check_hero_provenance() {
+  local slug="$1"
+  local intel="${SITES_LOCAL_DIR}/${slug}/bruce-asset-intel.json"
+  if [[ ! -f "$intel" ]]; then
+    echo "no-asset-intel"
+    return 1
+  fi
+  local model
+  model=$(python3 -c "
+import json, sys
+try:
+  d = json.load(open('${intel}'))
+  print(d.get('model_stack', {}).get('image_generation', ''))
+except Exception as e:
+  print(f'parse-error: {e}')
+" 2>/dev/null)
+  echo "$model"
+  if [[ "$model" == "openai/gpt-image-2" ]]; then
+    return 0
+  fi
+  return 1
+}
+
 # ───── Check 1: claim code resolves on gtmdot.com ─────
 echo -e "${BLUE}[1/8] claim-code-resolves${NC} — gtmdot.com knows the claim code"
 if [[ -z "$CLAIM_CODE" ]]; then
@@ -147,13 +201,51 @@ else
 fi
 echo ""
 
-# ───── Check 4: postcard hero image exists ─────
-echo -e "${BLUE}[4/8] postcard-hero-image${NC} — Poplar hero merge tag"
+# ───── Check 4: postcard hero image exists + print-spec + gpt-image-2 provenance ─────
+# Three sub-checks, all must pass. Per Codex postcard pipeline spec 2026-05-08
+# and Jesse 2026-05-07 standing instruction "all images via gpt-image-2".
+echo -e "${BLUE}[4/8] postcard-hero-image${NC} — Poplar hero merge tag (3 sub-checks)"
 HERO_URL="${POSTCARDS_BASE}/${SLUG}-hero.jpg"
+HERO_OK=true
+
+# 4a: file present + content-type image/*
 if check_image_url "$HERO_URL"; then
-  pass "${HERO_URL}"
+  pass "4a content-type: ${HERO_URL}"
 else
-  fail "hero image missing or non-image at ${HERO_URL}"
+  fail "4a content-type: hero missing or non-image at ${HERO_URL}"
+  HERO_OK=false
+fi
+
+# 4b: pixel dimensions ≥ 3000x1700 (postcard print-spec; gpt-image-2 native ≥ 3360x1872)
+if [[ "$HERO_OK" == "true" ]]; then
+  HERO_DIMS=$(check_image_dimensions "$HERO_URL")
+  HERO_DIM_RC=$?
+  if [[ "$HERO_DIM_RC" == "0" ]]; then
+    HERO_W=$(echo "$HERO_DIMS" | cut -dx -f1)
+    HERO_H=$(echo "$HERO_DIMS" | cut -dx -f2)
+    if [[ "$HERO_W" -ge 3000 && "$HERO_H" -ge 1700 ]]; then
+      pass "4b dimensions: ${HERO_DIMS} (≥3000×1700 print-spec)"
+    else
+      fail "4b dimensions: ${HERO_DIMS} below 3000×1700 minimum (Poplar 11.25×6.25in @ 300dpi = 3375×1875)"
+      HERO_OK=false
+    fi
+  else
+    fail "4b dimensions: could not measure ${HERO_URL} (download or sips failed)"
+    HERO_OK=false
+  fi
+fi
+
+# 4c: provenance — bruce-asset-intel.json must record model_stack.image_generation = "openai/gpt-image-2"
+HERO_MODEL=$(check_hero_provenance "$SLUG")
+HERO_MODEL_RC=$?
+if [[ "$HERO_MODEL_RC" == "0" ]]; then
+  pass "4c provenance: model_stack.image_generation = \"${HERO_MODEL}\""
+elif [[ "$HERO_MODEL" == "no-asset-intel" ]]; then
+  fail "4c provenance: no sites/${SLUG}/bruce-asset-intel.json — Bruce regen required (cannot verify gpt-image-2)"
+  HERO_OK=false
+else
+  fail "4c provenance: model_stack.image_generation = \"${HERO_MODEL}\" — must be exactly \"openai/gpt-image-2\""
+  HERO_OK=false
 fi
 echo ""
 
