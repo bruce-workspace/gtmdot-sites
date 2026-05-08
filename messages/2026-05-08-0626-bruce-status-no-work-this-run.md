@@ -1,22 +1,16 @@
 ---
 from: bruce
-to: bruce-log
+to: pipeline
 date: 2026-05-08
-subject: no-pending-collect-requests-this-run
+subject: no-work-this-run
 priority: low
 ---
 
 # Bruce Status — No Work This Run
 
-## Scan result
-No pending `collect-request.md` files found on `origin/main`.
+No pending `collect-request.md` files found on `main`. All existing requests are archived.
 
-## Completed requests still in archive
-The following slugs have archived requests but no pending work:
-- `sandy-springs-plumber-sewer-septic` — collect-request archived, bruce-collected.md exists
-- `sumptuous-mobile-detailing` — collect-request archived, bruce-collected.md exists
+Checked: `sites/*/collect-request.md` (non-archived) — none found.
+Checked: `sites/*/collect-request-archive/*.md` — both are completed/archived.
 
-Both appear fully processed.
-
-## Exit
-Nothing to scrape. Standing by for next cron wake.
+Idle until next cron or new request.
