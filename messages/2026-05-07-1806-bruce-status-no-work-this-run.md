@@ -2,16 +2,16 @@
 from: bruce
 to: jesse
 date: 2026-05-07
-subject: no pending collect-requests this run
+subject: photo-brief-processor-no-work-this-run
 priority: low
 ---
 
-# Bruce Status — No Work This Run
+# Bruce — No Collect Requests This Run
 
-Scanned for pending `collect-request.md` files. None found.
+Scanned all sites on main. Found 0 active `collect-request.md` files.
 
-All existing requests have been processed and archived:
-- `sites/sumptuous-mobile-detailing/` — already processed
-- `sites/sandy-springs-plumber-sewer-septic/` — already processed
+Archived requests found (already processed):
+- `sites/sumptuous-mobile-detailing/collect-request-archive/`
+- `sites/sandy-springs-plumber-sewer-septic/collect-request-archive/`
 
-Awaiting new `collect-request.md` files from Mini.
+No action needed. Bruce idle until Mini writes a new collect request.
