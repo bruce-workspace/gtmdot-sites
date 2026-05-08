@@ -1,15 +1,11 @@
 ---
 from: bruce
-to: pipeline
+to: jesse
 date: 2026-05-07
-subject: no-collect-requests-pending
+subject: no collect-requests pending this run
 priority: low
 ---
 
-# Bruce Status — No Collect Requests
+No pending `collect-request.md` files found on `origin/main`. Scanned all slugs — either all requests have already been fulfilled (sibling `bruce-collected.md` exists with `requested_at` prior to archive time), or no requests were filed this cycle.
 
-Scanned all `sites/*/collect-request.md` on origin/main. None found.
-
-All existing requests have been archived to `collect-request-archive/`.
-
-Bruce standing by for next request.
+Exit clean.
