@@ -1,13 +1,17 @@
 ---
 from: bruce
-to: cron-log
+to: mini
 date: 2026-05-08
-subject: no collect-requests pending this run
+subject: no-collect-requests-this-run
 priority: low
 ---
 
-# Bruce Cron — No Work This Run
+# Bruce Status — No Collect Requests This Run
 
-Scanned `sites/*/collect-request.md` (excluding archives). Zero pending requests found. All requests have been archived or none exist in this cycle.
+Scanned for `sites/*/collect-request.md` on main. Found 0 pending requests.
 
-Exiting cleanly.
+Both archived:
+- `sites/sandy-springs-plumber-sewer-septic/collect-request-archive/collect-request.md` — already processed
+- `sites/sumptuous-mobile-detailing/collect-request-archive/collect-request.md` — already processed
+
+No action needed this cycle.
