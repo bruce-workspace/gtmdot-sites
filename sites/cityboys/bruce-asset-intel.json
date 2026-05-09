@@ -1,6 +1,6 @@
 {
   "slug": "cityboys",
-  "generated_at": "2026-05-09T03:27:00Z",
+  "generated_at": "2026-05-09T22:59:00Z",
   "status": "success",
   "model_stack": {
     "reasoning": "openai-codex-gpt-5.5",
@@ -26,13 +26,13 @@
     {
       "path": "photos-generated/hero-postcard.jpg",
       "purpose": "postcard-hero",
-      "prompt": "Polished classic vehicle exterior, deep paint reflections, late afternoon light on right side. Horizontal composition with primary visual subject on the right two-thirds of the frame. Left third may go dark / be visually quieter — overlaid with text and gradient. No text, no readable signage, no logos, no license plates, no identifiable people. Cinematic photorealistic style, warm professional lighting, premium / editorial feel. 16:9 horizontal landscape orientation. JPEG quality 85+. sRGB color space.",
+      "prompt": "Polished classic vehicle exterior, deep paint reflections, late afternoon light on right side. Horizontal composition with primary visual subject on the right two-thirds of the frame. Left third may go dark / be visually quieter \u2014 overlaid with text and gradient. No text, no readable signage, no logos, no license plates, no identifiable people. Cinematic photorealistic style, warm professional lighting, premium / editorial feel. 16:9 horizontal landscape orientation. JPEG quality 85+. sRGB color space.",
       "model": "openai/gpt-image-2",
       "model_revision": "2026-05-09",
       "license_note": "Synthetic image. Do not represent as actual company work.",
       "intended_slot_context": "aspirational-business-OK | atmosphere-OK",
-      "width": 3360,
-      "height": 1872
+      "width": 3840,
+      "height": 2160
     }
   ]
 }

@@ -1,13 +1,13 @@
 ---
 slug: cityboys
-generated_at: 2026-05-09T03:27:00Z
+generated_at: 2026-05-09T22:59:00Z
 status: success
 collect_request_ref: sites/cityboys/collect-request.md
 ---
 
 # Bruce Asset Intelligence — cityboys
 
-## Postcard Hero v3 — gpt-image-2
+## Postcard Hero v4 — gpt-image-2
 
 Generated per Jesse 2026-05-07 standing instruction for postcard-print-spec hero.
 All prior postcard heroes lacked verified gpt-image-2 provenance.
