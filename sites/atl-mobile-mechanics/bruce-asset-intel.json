@@ -1,0 +1,84 @@
+{
+  "schema": "bruce-asset-intel-v1",
+  "slug": "atl-mobile-mechanics",
+  "updated_at": "2026-05-09T02:34:13Z",
+  "status": "partial",
+  "model_stack": {
+    "reasoning": "openai-codex/gpt-5.5",
+    "image_generation": "openai/gpt-image-2"
+  },
+  "photo_quality": [
+    {
+      "path": "photos-generated/hero-postcard.jpg",
+      "label": "postcard-hero",
+      "confidence": 0.93,
+      "reasoning": "Generated postcard-specific mobile mechanic hero. Composition requested visual weight on right two-thirds with darker left third for overlay. Synthetic aspirational image only; no real company-work claim.",
+      "object_tags": [
+        "mobile-mechanic",
+        "engine-bay",
+        "diagnostics",
+        "toolbox",
+        "generated"
+      ]
+    }
+  ],
+  "hero_recommendation": {
+    "preferred_path": "photos-generated/hero-postcard.jpg",
+    "preferred_source": "generated",
+    "fallback_path": null,
+    "reasoning": "Postcard-specific hero requested and generated to exact print dimensions. Use only as aspirational/atmosphere imagery."
+  },
+  "icon_warnings": [],
+  "object_verification": [
+    {
+      "claim": "mobile mechanic diagnostic visual context",
+      "evidence": "Generated hero depicts a hood-up engine bay, gloved hands diagnosing, diagnostic gear, and a toolbox with no text, logos, license plates, or identifiable people requested in prompt.",
+      "confidence": 0.93
+    }
+  ],
+  "review_coverage": {
+    "captured_total": 0,
+    "sources_present": [],
+    "sources_recommended_for_enrichment": [],
+    "sufficiency": "not-requested",
+    "reasoning": "This collect-request was email-research + postcard-hero only; review collection was not in scope."
+  },
+  "email_research": {
+    "email_found": false,
+    "emails": [],
+    "details_path": "email-research.md"
+  },
+  "generated_images": [
+    {
+      "purpose": "postcard-hero",
+      "slot": "hero-postcard",
+      "path": "sites/atl-mobile-mechanics/photos-generated/hero-postcard.jpg",
+      "width": 3360,
+      "height": 1872,
+      "dimensions_px": [
+        3360,
+        1872
+      ],
+      "format": "jpeg",
+      "quality": 90,
+      "color_space": "sRGB/RGB",
+      "composition": "visual subject on right two-thirds; left third darker negative space for future text overlay",
+      "prompt": "Cinematic photorealistic horizontal 16:9 scene for a mobile mechanic postcard hero. A hood-up engine bay is being diagnosed, with only gloved hands visible using a diagnostic tool and flashlight; no faces, no identifiable people. Place the main visual subject on the RIGHT two-thirds of the frame: engine bay, hands, diagnostic gear, and a professional mobile-mechanic toolbox on the right side. Keep the LEFT third darker and visually calm for future text overlay, with warm professional lighting and subtle depth of field. No text, no logos, no badges, no license plates, no readable labels, no brand marks.",
+      "model": "gpt-image-2",
+      "provider_model": "openai/gpt-image-2",
+      "model_revision": "gpt-image-2",
+      "source_generation_size": "3840x2160",
+      "source_generation_path": "/Users/bruce/.openclaw/media/tool-image-generation/atl-mobile-mechanics-hero-postcard---465c3b92-6633-47fb-8907-6d31f6a273f7.jpg",
+      "generated_at": "2026-05-09T02:34:13Z",
+      "license_note": "Synthetic image. Do not represent as actual company work.",
+      "intended_slot_context": "aspirational-business-OK | atmosphere-OK",
+      "guardrails": [
+        "no text",
+        "no logos",
+        "no license plates",
+        "no identifiable people",
+        "visual subject on right two-thirds"
+      ]
+    }
+  ]
+}
