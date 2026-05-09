@@ -1,6 +1,6 @@
 {
   "slug": "forest-park-collision",
-  "generated_at": "2026-04-28T04:53:00Z",
+  "generated_at": "2026-05-09T15:25:16Z",
   "status": "success",
   "model_stack": {
     "reasoning": "openai-codex-gpt-5.5",
@@ -11,7 +11,7 @@
       "path": "photos-raw/gbp-02.jpg",
       "label": "gallery-candidate",
       "confidence": 0.9,
-      "reasoning": "Shop exterior \u2014 solid proof shot",
+      "reasoning": "Shop exterior — solid proof shot",
       "object_tags": [
         "shop-exterior",
         "signage",
@@ -22,7 +22,7 @@
       "path": "photos-raw/gbp-03.jpg",
       "label": "gallery-candidate",
       "confidence": 0.88,
-      "reasoning": "Vehicle on lift \u2014 work-in-progress signal",
+      "reasoning": "Vehicle on lift — work-in-progress signal",
       "object_tags": [
         "vehicle",
         "lift",
@@ -33,7 +33,7 @@
       "path": "photos-raw/gbp-04.jpg",
       "label": "gallery-candidate",
       "confidence": 0.88,
-      "reasoning": "Vehicle receiving work \u2014 real shop environment",
+      "reasoning": "Vehicle receiving work — real shop environment",
       "object_tags": [
         "vehicle",
         "work-in-progress"
@@ -43,7 +43,7 @@
       "path": "photos-raw/gbp-05.jpg",
       "label": "proof-candidate",
       "confidence": 0.92,
-      "reasoning": "Clean vehicle, good lighting \u2014 quality result shot",
+      "reasoning": "Clean vehicle, good lighting — quality result shot",
       "object_tags": [
         "vehicle",
         "finished",
@@ -104,7 +104,7 @@
       "path": "photos-raw/yelp-05.jpg",
       "label": "gallery-candidate",
       "confidence": 0.9,
-      "reasoning": "Real Yelp photo \u2014 consistent quality with GBP",
+      "reasoning": "Real Yelp photo — consistent quality with GBP",
       "object_tags": [
         "vehicle",
         "result"
@@ -151,7 +151,7 @@
   "object_verification": [
     {
       "claim": "collision-repair vertical",
-      "evidence": "All 13 real photos show vehicle repair environment \u2014 lifts, body work, fresh paint. No unrelated imagery.",
+      "evidence": "All 13 real photos show vehicle repair environment — lifts, body work, fresh paint. No unrelated imagery.",
       "confidence": 0.97
     }
   ],
@@ -172,7 +172,7 @@
     {
       "path": "photos-generated/hero-aspirational-01.png",
       "purpose": "hero",
-      "prompt": "Editorial-style photograph of a clean, modern auto body shop interior. A pristine vehicle \u2014 a glossy black SUV \u2014 sits center-frame under dramatic overhead lighting, its paint reflecting shop lights like a mirror. The environment is orderly: tool boards on the wall are visible but not cluttered, concrete floor is clean, the space feels professional and trustworthy. Cinematic lighting, shallow depth of field, the car is the hero. Not staged or faked \u2014 aspirational automotive imagery. 4K, professional photography quality.",
+      "prompt": "Editorial-style photograph of a clean, modern auto body shop interior. A pristine vehicle — a glossy black SUV — sits center-frame under dramatic overhead lighting, its paint reflecting shop lights like a mirror. The environment is orderly: tool boards on the wall are visible but not cluttered, concrete floor is clean, the space feels professional and trustworthy. Cinematic lighting, shallow depth of field, the car is the hero. Not staged or faked — aspirational automotive imagery. 4K, professional photography quality.",
       "model": "minimax/image-01",
       "model_revision": "image-01",
       "license_note": "Synthetic image. Do not represent as actual company work.",
@@ -190,7 +190,7 @@
     {
       "path": "photos-generated/service-card-bg-02.png",
       "purpose": "service-card-bg",
-      "prompt": "Atmospheric background image for an auto body shop service card. A wide-angle view of a clean modern collision repair shop floor \u2014 multiple bays, one car on a frame rack being inspected, spray guns hung neatly on a tool board in the background. Bright fluorescent overhead lighting, polished concrete floor. Professional, trustworthy, competent. No people identifiable. 4K quality.",
+      "prompt": "Atmospheric background image for an auto body shop service card. A wide-angle view of a clean modern collision repair shop floor — multiple bays, one car on a frame rack being inspected, spray guns hung neatly on a tool board in the background. Bright fluorescent overhead lighting, polished concrete floor. Professional, trustworthy, competent. No people identifiable. 4K quality.",
       "model": "minimax/image-01",
       "model_revision": "image-01",
       "license_note": "Synthetic image. Do not represent as actual company work.",
@@ -199,7 +199,7 @@
     {
       "path": "photos-generated/service-card-bg-03.png",
       "purpose": "service-card-bg",
-      "prompt": "Atmospheric background for an auto body shop service card. A close-up detail shot of paint being applied with a spray gun to a prepped car panel \u2014 fine orange peel texture catching light, thin mist of overspray, professional collision repair setting. Clean, focused, competent. No faces or identifiable people.",
+      "prompt": "Atmospheric background for an auto body shop service card. A close-up detail shot of paint being applied with a spray gun to a prepped car panel — fine orange peel texture catching light, thin mist of overspray, professional collision repair setting. Clean, focused, competent. No faces or identifiable people.",
       "model": "minimax/image-01",
       "model_revision": "image-01",
       "license_note": "Synthetic image. Do not represent as actual company work.",
@@ -208,8 +208,8 @@
     {
       "path": "photos-generated/hero-postcard.jpg",
       "purpose": "postcard-hero",
-      "prompt": "Horizontal composition with primary visual subject on the right two-thirds of the frame. Left third may go dark / be visually quieter \u2014 overlaid with text and gradient. No text, no readable signage, no logos, no license plates, no identifiable people. Cinematic photorealistic style, warm professional lighting, premium / editorial feel. 16:9 horizontal landscape orientation. Polished sedan inside a clean modern body shop under soft overhead lights, paint-booth atmosphere, vehicle on right.",
-      "model": "openai/gpt-image-2",
+      "prompt": "Horizontal composition with primary visual subject on the right two-thirds of the frame showing a polished sedan inside a clean modern body shop under soft overhead lights, paint-booth atmosphere. Left third may go dark / be visually quieter — overlaid with text and gradient. No text, no readable signage, no logos, no license plates, no identifiable people. Cinematic photorealistic style, warm professional lighting, premium / editorial feel. 16:9 horizontal landscape orientation.",
+      "model": "gpt-image-2",
       "model_revision": "2026-05-09",
       "license_note": "Synthetic image. Do not represent as actual company work.",
       "intended_slot_context": "aspirational-business-OK | atmosphere-OK",

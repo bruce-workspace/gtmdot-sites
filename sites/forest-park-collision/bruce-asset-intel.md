@@ -87,3 +87,19 @@ Recommendation: Sufficient for build. Mini can proceed with reviews.json merge. 
 | `service-card-bg-03.png` | service-card-bg | `atmosphere-OK` | "Synthetic image. Do not represent as actual company work." |
 
 Per §11.11.5 guardrail 5: 4 generated images / 17 total visible images = 23.5% — below 30% threshold. OK.
+
+## Postcard Hero v3 — gpt-image-2
+
+Generated `photos-generated/hero-postcard.jpg` via OpenAI gpt-image-2 for postcard front use.
+
+- Generated at: 2026-05-09T15:25:16Z
+- Dimensions: 3840×2160 JPEG
+- Purpose: `postcard-hero`
+- Model stack image generation: `openai/gpt-image-2`
+- Intended slot context: `aspirational-business-OK | atmosphere-OK`
+- License note: Synthetic image. Do not represent as actual company work.
+- Verification: no readable text, signage, logos, license plates, or identifiable people; primary vehicle subject is on the right two-thirds with a quieter/darker left third for text/gradient overlay.
+
+Prompt used:
+
+> Horizontal composition with primary visual subject on the right two-thirds of the frame showing a polished sedan inside a clean modern body shop under soft overhead lights, paint-booth atmosphere. Left third may go dark / be visually quieter — overlaid with text and gradient. No text, no readable signage, no logos, no license plates, no identifiable people. Cinematic photorealistic style, warm professional lighting, premium / editorial feel. 16:9 horizontal landscape orientation.

@@ -1,26 +1,30 @@
 ---
 slug: handy-dandy-atlanta
 request_id: 2026-05-09T02:35:00Z
-collected_at: 2026-05-09T04:46:00Z
+collected_at: 2026-05-09T15:24:53Z
 status: success
 ---
 
 # Bruce Collected — Handy Dandy Atlanta
 
 ## Summary
-Postcard hero generation completed successfully via gpt-image-2.
+
+gpt-image-2 postcard hero generation completed successfully. One generated JPEG was saved for Mini's downstream postcard integration.
 
 ## Results by source
 
-### gpt-image-2 (openai) — SUCCESS
-- 1 generated image → `sites/handy-dandy-atlanta/photos-generated/hero-postcard.jpg` (3840×2160 JPEG)
-- Verified dimensions ≥ 3000×1700
-- Provenance confirmed: `model_stack.image_generation` = `openai/gpt-image-2`
+### gpt-image-2 — SUCCESS
+
+- 1 generated image → `sites/handy-dandy-atlanta/photos-generated/hero-postcard.jpg`
+- Model route: `openai/gpt-image-2`
+- Dimensions verified: 3840×2160 JPEG
+- Purpose: postcard-hero
 
 ## Totals
-- Photos collected: 1 (generated)
-- Reviews collected: 0
-- Wall-clock used: <1m
+
+- Generated images: 1
+- Wall-clock used: ~3m
 
 ## Handing back to Mini
-Postcard hero ready at `photos-generated/hero-postcard.jpg`. Integration copy to `gtmdot/postcards/handy-dandy-atlanta-hero.jpg` is yours.
+
+Postcard hero and provenance files are in place. Over to you for integration and outreach-readiness gate re-run.

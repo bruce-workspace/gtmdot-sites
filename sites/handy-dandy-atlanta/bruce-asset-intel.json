@@ -1,31 +1,50 @@
 {
   "slug": "handy-dandy-atlanta",
-  "generated_at": "2026-05-09T04:46:00Z",
+  "generated_at": "2026-05-09T15:24:53Z",
   "status": "success",
   "model_stack": {
     "reasoning": "openai-codex-gpt-5.5",
     "image_generation": "openai/gpt-image-2"
   },
-  "photo_quality": [],
+  "photo_quality": [
+    {
+      "path": "photos-generated/hero-postcard.jpg",
+      "label": "hero-candidate",
+      "confidence": 0.95,
+      "reasoning": "Synthetic postcard hero generated specifically for right-weighted composition, quiet left-third overlay area, and print-size 16:9 output.",
+      "object_tags": [
+        "handyman-tools",
+        "hardwood-surface",
+        "hardware",
+        "building-materials"
+      ]
+    }
+  ],
   "hero_recommendation": {
     "preferred_path": "photos-generated/hero-postcard.jpg",
     "preferred_source": "generated",
-    "reasoning": "Postcard hero regen per mini collect-request 2026-05-09T02:35:00Z. gpt-image-2 verified by tool response."
+    "reasoning": "Postcard hero regen per mini collect-request 2026-05-09T02:35:00Z. Generated through OpenClaw image_generate with model openai/gpt-image-2 and verified as 3840x2160 JPEG. Suitable only for aspirational or atmospheric placement, not proof of actual company work."
   },
   "icon_warnings": [],
-  "object_verification": [],
+  "object_verification": [
+    {
+      "claim": "Generated image is atmospheric handyman / home-service visual, not actual company work.",
+      "evidence": "Image generation prompt required professional handyman tools, hardware, building materials, no readable text, no logos, no identifiable people.",
+      "confidence": 0.95
+    }
+  ],
   "review_coverage": {
     "captured_total": 0,
     "sources_present": [],
     "sources_recommended_for_enrichment": [],
     "sufficiency": "insufficient",
-    "reasoning": "collect-request was for postcard hero generation only — not a full scrape"
+    "reasoning": "Collect-request was for postcard hero generation only, not review or source scraping."
   },
   "generated_images": [
     {
       "path": "photos-generated/hero-postcard.jpg",
       "purpose": "postcard-hero",
-      "prompt": "Horizontal composition with primary visual subject on the right two-thirds of the frame. Left third may go dark or be visually quieter — overlaid with text and gradient. Handyman tools laid out on warm hardwood surface, hands carefully assembling or organizing equipment on the right side. Professional workshop aesthetic, warm professional lighting, premium and editorial feel. 16:9 horizontal landscape orientation. No text, no readable signage, no logos, no license plates, no identifiable people. Cinematic photorealistic style.",
+      "prompt": "Horizontal composition with primary visual subject on the right two-thirds of the frame showing professional handyman tools arranged on a clean hardwood surface, quality hardware and building materials. Left third may go dark / be visually quieter — overlaid with text and gradient. No text, no readable signage, no logos, no license plates, no identifiable people. Cinematic photorealistic style, warm professional lighting, premium / editorial feel. 16:9 horizontal landscape orientation.",
       "model": "gpt-image-2",
       "model_revision": "2026-05-09",
       "license_note": "Synthetic image. Do not represent as actual company work.",
