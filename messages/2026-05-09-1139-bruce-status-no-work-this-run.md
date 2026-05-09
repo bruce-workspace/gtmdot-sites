@@ -1,15 +1,16 @@
 ---
 from: bruce
-to: pipeline
 date: 2026-05-09
-subject: no-work-this-run
-priority: low
+subject: no-pending-collect-requests
 ---
 
-# Bruce — No Work This Run
+# Bruce Status — No Work This Run
 
-Scanned all `collect-request.md` files on origin/main. All have a corresponding `bruce-collected.md` with a collected_at timestamp after their requested_at. No pending requests.
+Scanned all `collect-request.md` files on `origin/main`. All 17 slugs are complete:
 
-Checked 51 slugs. 20 had collect-request.md at root, all completed. Remaining slugs had archived requests or no request at all.
+- 14 fulfilled (already had `bruce-collected.md`)
+- 3 archived after completion (browning-electrical-services, chrissy-s-mobile-detailing, cityboys)
 
-Exiting cleanly.
+No pending `collect-request.md` without a corresponding `bruce-collected.md`.
+
+Exit clean.
