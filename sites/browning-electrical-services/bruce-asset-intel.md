@@ -1,15 +1,15 @@
 ---
 slug: browning-electrical-services
-generated_at: 2026-05-09T03:27:00Z
+generated_at: 2026-05-09T22:59:00Z
 status: success
 collect_request_ref: sites/browning-electrical-services/collect-request.md
 ---
 
 # Bruce Asset Intelligence — browning-electrical-services
 
-## Postcard Hero v3 — gpt-image-2
+## Postcard Hero v4 — gpt-image-2 (2026-05-09 regen)
 
-Generated per Jesse 2026-05-07 standing instruction for postcard-print-spec hero.
+Regenerated per second collect-request (this cron run). Previous v3 image replaced with fresh 3840×2160 JPEG from gpt-image-2. All specs and guardrails unchanged.
 All prior postcard heroes lacked verified gpt-image-2 provenance.
 
 **Output:** `photos-generated/hero-postcard.jpg`
