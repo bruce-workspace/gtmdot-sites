@@ -1,0 +1,52 @@
+{
+  "slug": "piedmont-tires",
+  "generated_at": "2026-05-09T05:08:00Z",
+  "status": "success",
+  "model_stack": {
+    "reasoning": "openai-codex-gpt-5.5",
+    "image_generation": "openai/gpt-image-2"
+  },
+  "photo_quality": [
+    {
+      "path": "photos-generated/hero-postcard.jpg",
+      "label": "hero-candidate",
+      "confidence": 0.9,
+      "reasoning": "Generated postcard hero per Mini request, gpt-image-2 provenance verified, dimensions 3840x2160 >= 3000x1700 required for postcard print",
+      "object_tags": ["tires", "showroom", "automotive"]
+    }
+  ],
+  "hero_recommendation": {
+    "preferred_path": "photos-generated/hero-postcard.jpg",
+    "preferred_source": "generated",
+    "fallback_path": null,
+    "reasoning": "Mini request: postcard hero regeneration via gpt-image-2. Dimensions 3840x2160 exceed 3000x1700 postcard print threshold. Saved to photos-generated/ per §11.11.2."
+  },
+  "icon_warnings": [],
+  "object_verification": [
+    {
+      "claim": "tire-services vertical",
+      "evidence": "Prompt engineered for tire showroom interior with stacked premium tires",
+      "confidence": 0.95
+    }
+  ],
+  "review_coverage": {
+    "captured_total": 0,
+    "sources_present": [],
+    "sources_recommended_for_enrichment": [],
+    "sufficiency": "not-applicable",
+    "reasoning": "Postcard hero regen only; no review collection this pass"
+  },
+  "generated_images": [
+    {
+      "path": "photos-generated/hero-postcard.jpg",
+      "purpose": "postcard-hero",
+      "prompt": "Tire showroom interior with stacked premium tires, warm overhead lighting, sales counter on right. Horizontal composition with primary visual subject on the right two-thirds of the frame. Left third may go dark / be visually quieter — overlaid with text and gradient. No text, no readable signage, no logos, no license plates, no identifiable people. Cinematic photorealistic style, warm professional lighting, premium / editorial feel. 16:9 horizontal landscape orientation.",
+      "model": "gpt-image-2",
+      "model_revision": "2026-05-09",
+      "license_note": "Synthetic image. Do not represent as actual company work.",
+      "intended_slot_context": "aspirational-business-OK | atmosphere-OK",
+      "width": 3840,
+      "height": 2160
+    }
+  ]
+}
