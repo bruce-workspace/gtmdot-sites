@@ -1,13 +1,13 @@
 ---
 slug: chrissy-s-mobile-detailing
-generated_at: 2026-05-09T03:27:00Z
+generated_at: 2026-05-09T22:59:00Z
 status: success
 collect_request_ref: sites/chrissy-s-mobile-detailing/collect-request.md
 ---
 
 # Bruce Asset Intelligence — chrissy-s-mobile-detailing
 
-## Postcard Hero v3 — gpt-image-2
+## Postcard Hero v4 — gpt-image-2
 
 Generated per Jesse 2026-05-07 standing instruction for postcard-print-spec hero.
 All prior postcard heroes lacked verified gpt-image-2 provenance.
