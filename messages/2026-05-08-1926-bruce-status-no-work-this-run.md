@@ -1,6 +1,8 @@
-# Bruce Status — No Work This Run
+---
+from: bruce
+date: 2026-05-08
+subject: no-collect-requests-pending-this-run
+priority: low
+---
 
-No pending `collect-request.md` files found on main.
-Exiting cleanly.
-
-Run: 2026-05-08T19:26 UTC
+No `collect-request.md` files found on `origin/main`. Scan complete — nothing to do.
