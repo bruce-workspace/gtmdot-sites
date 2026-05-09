@@ -1,0 +1,38 @@
+{
+  "slug": "browning-electrical-services",
+  "generated_at": "2026-05-09T03:27:00Z",
+  "status": "success",
+  "model_stack": {
+    "reasoning": "openai-codex-gpt-5.5",
+    "image_generation": "openai/gpt-image-2"
+  },
+  "photo_quality": [],
+  "hero_recommendation": {
+    "preferred_path": "photos-generated/hero-postcard.jpg",
+    "preferred_source": "generated",
+    "fallback_path": null,
+    "reasoning": "Postcard hero regen per collect-request. Generated via gpt-image-2 per Jesse 2026-05-07 mandate."
+  },
+  "icon_warnings": [],
+  "object_verification": [],
+  "review_coverage": {
+    "captured_total": 0,
+    "sources_present": [],
+    "sources_recommended_for_enrichment": [],
+    "sufficiency": "not-applicable",
+    "reasoning": "Postcard hero generation only. No review scrape requested."
+  },
+  "generated_images": [
+    {
+      "path": "photos-generated/hero-postcard.jpg",
+      "purpose": "postcard-hero",
+      "prompt": "Electrical service panel close-up with new breakers, clean professional installation, residential basement setting. Horizontal composition with primary visual subject on the right two-thirds of the frame. Left third may go dark / be visually quieter — overlaid with text and gradient. No text, no readable signage, no logos, no license plates, no identifiable people. Cinematic photorealistic style, warm professional lighting, premium / editorial feel. 16:9 horizontal landscape orientation. JPEG quality 85+. sRGB color space.",
+      "model": "openai/gpt-image-2",
+      "model_revision": "2026-05-09",
+      "license_note": "Synthetic image. Do not represent as actual company work.",
+      "intended_slot_context": "aspirational-business-OK | atmosphere-OK",
+      "width": 3360,
+      "height": 1872
+    }
+  ]
+}
