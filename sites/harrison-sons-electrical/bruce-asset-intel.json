@@ -1,0 +1,34 @@
+{
+  "schema": "bruce-asset-intel-v1",
+  "slug": "harrison-sons-electrical",
+  "updated_at": "2026-05-09T02:31:58Z",
+  "model_stack": {
+    "image_generation": "openai/gpt-image-2"
+  },
+  "generated_images": [
+    {
+      "purpose": "postcard-hero",
+      "slot": "hero-postcard",
+      "path": "sites/harrison-sons-electrical/photos-generated/hero-postcard.jpg",
+      "width": 3360,
+      "height": 1872,
+      "format": "jpeg",
+      "quality": "92",
+      "color_space": "sRGB/RGB",
+      "model": "gpt-image-2",
+      "provider_model": "openai/gpt-image-2",
+      "prompt": "Cinematic photorealistic horizontal 16:9 photograph for a direct-mail postcard hero. Scene: service panel upgrade in a clean residential garage, new breakers and neatly organized wiring positioned prominently on the RIGHT two-thirds of the image. The LEFT third should be darker, simple negative space suitable for a text overlay later, with no actual text. Warm professional lighting, tidy tools, modern electrical panel, premium contractor feel. No text, no logos, no license plates, no identifiable people, no faces, no brand marks.",
+      "source_generation_path": "/Users/bruce/.openclaw/media/tool-image-generation/harrison-sons-hero-postcard---c28a128b-6255-4873-bae3-ef12ebe37faa.jpg",
+      "generated_at": "2026-05-09T02:31:58Z",
+      "license_note": "Synthetic image. Do not represent as actual company work.",
+      "intended_slot_context": "aspirational-business-OK | atmosphere-OK",
+      "guardrails": [
+        "no text",
+        "no logos",
+        "no license plates",
+        "no identifiable people",
+        "visual subject on right two-thirds"
+      ]
+    }
+  ]
+}
