@@ -1,0 +1,38 @@
+{
+  "slug": "membrenos-pro-home-repair",
+  "generated_at": "2026-05-09T04:06:00Z",
+  "status": "success",
+  "model_stack": {
+    "reasoning": "openai-codex-gpt-5.5",
+    "image_generation": "openai/gpt-image-2"
+  },
+  "photo_quality": [],
+  "hero_recommendation": {
+    "preferred_path": "sites/membrenos-pro-home-repair/photos-generated/hero-postcard.jpg",
+    "preferred_source": "generated",
+    "fallback_path": null,
+    "reasoning": "Postcard hero generated via gpt-image-2 at 3840x2160 (exceeds 3360x1872 minimum). Primary subject on right two-thirds per spec. Left third dark for postcard text overlay. Cinematic photorealistic, warm professional lighting. No text/signage/faces per guardrails."
+  },
+  "icon_warnings": [],
+  "object_verification": [],
+  "review_coverage": {
+    "captured_total": 0,
+    "sources_present": [],
+    "sources_recommended_for_enrichment": [],
+    "sufficiency": "insufficient",
+    "reasoning": "This request is for postcard hero generation only; no review collection requested."
+  },
+  "generated_images": [
+    {
+      "path": "sites/membrenos-pro-home-repair/photos-generated/hero-postcard.jpg",
+      "purpose": "postcard-hero",
+      "prompt": "Home renovation project mid-stage, clean tools on right, warm interior light. Cinematic photorealistic style, warm professional lighting, premium editorial feel. Horizontal composition with primary visual subject on the right two-thirds of the frame. Left third may go dark / be visually quieter — overlaid with text and gradient. No text, no readable signage, no logos, no license plates, no identifiable people. 16:9 horizontal landscape orientation. sRGB JPEG quality 85+.",
+      "model": "gpt-image-2",
+      "model_revision": "2026-05-09",
+      "license_note": "Synthetic image. Do not represent as actual company work.",
+      "intended_slot_context": "aspirational-business-OK | atmosphere-OK",
+      "width": 3840,
+      "height": 2160
+    }
+  ]
+}
