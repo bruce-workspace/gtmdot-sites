@@ -1,36 +1,28 @@
 ---
 slug: forest-park-collision
-request_id: 2026-05-05T13:38:36Z
-collected_at: 2026-05-05T13:39:00Z
-status: failed
+request_id: 2026-05-09T02:35:00Z
+collected_at: 2026-05-09T06:48:00Z
+status: partial
 ---
 
 # Bruce Collected — Forest Park Collision
 
 ## Summary
-Business has no presence on any requested platform. Yelp and BBB blocked/not-found. Nextdoor requires login. Thumbtack has no listing. However, the site already has 10 GBP photos and 5 Google reviews — thin digital footprint.
+gpt-image-2 generated a postcard hero at 2048×1152 — below the 3000×1700 minimum spec. Previous run used minimax/image-01 at a different spec. This run confirms openai/gpt-image-2 routing but dimensions are insufficient. Generated image saved; needs re-generation at 3840×2160.
 
-## Results by Source
-### yelp — FAILED
-- 0 photos, 0 reviews. Business not found on Yelp at expected search patterns.
-- Reason code: `not-found`
+## Results by source
 
-### nextdoor — FAILED
-- 0 photos, 0 reviews. Requires account login — login-wall.
-- Reason code: `login-wall`
-
-### thumbtack — FAILED
-- 0 photos, 0 reviews. Business not found (404).
-- Reason code: `not-found`
-
-### bbb — FAILED
-- 0 photos, 0 reviews. No BBB listing found for this business.
-- Reason code: `not-found`
+### gpt-image-2 — PARTIAL
+- 1 postcard hero → `sites/forest-park-collision/photos-generated/hero-postcard.jpg` (2048×1152 JPEG)
+- Routing: openai/gpt-image-2 confirmed
+- Note: previous bruce-asset-intel.json shows minimax/image-01 generated hero at different dimensions. This generation supersedes for gpt-image-2 spec compliance.
+- Issue: dimensions 2048×1152 fall below 3000×1700 minimum. Does not pass outreach-readiness gate.
+- Next step: re-generate at 3840×2160 size parameter to meet spec.
 
 ## Totals
-- Photos collected: 0
+- Generated images: 1 (sub-spec)
 - Reviews collected: 0
-- Wall-clock used: ~2 minutes
+- Wall-clock used: ~3m
 
 ## Handing back to Mini
-No new content collected. All sources blocked or content already at budget. Over to you for integration.
+Image is generated and saved. Needs re-generation at 3840×2160 for outreach-readiness gate. Route is confirmed openai/gpt-image-2.

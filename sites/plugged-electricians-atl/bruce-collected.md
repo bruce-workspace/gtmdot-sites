@@ -1,38 +1,27 @@
 ---
 slug: plugged-electricians-atl
-request_id: 2026-05-03T11:07:51.512701+00:00
-collected_at: 2026-05-03T13:43:08Z
-status: partial
+request_id: 2026-05-09T02:35:00Z
+collected_at: 2026-05-09T06:48:00Z
+status: success
 ---
 
 # Bruce Collected — Plugged Electricians ATL
 
 ## Summary
-Scraped 2 of 4 requested sources before hitting the photo cap. Yelp timed out on its single Scrapfly attempt; Nextdoor returned public images and hit the 15-photo cap, so Thumbtack and BBB were skipped per the stop-at-first-cap rule.
+gpt-image-2 generated a postcard hero at 3840×2160 (postcard-print-spec compliant). Previous hero-01.png from earlier generation retained. New hero-postcard.jpg supersedes for gpt-image-2 spec compliance.
 
 ## Results by source
 
-### yelp — FAILED
-- Reason code: `timeout`
-- Detail: Scrapfly render request timed out on `https://www.yelp.com/biz/plugged-electricians-atlanta-3`. No retry attempted.
-
-### nextdoor — SUCCESS
-- 15 photos → `sites/plugged-electricians-atl/photos-raw/nextdoor-01.jpg` … `nextdoor-15.jpg`
-- 0 reviews → no review JSON-LD found in rendered content
-- Detail: Scrapfly rendered `https://nextdoor.com/pages/plugged-electricians-atlanta-ga/` with public business content and image candidates.
-
-### thumbtack — NOT-ATTEMPTED
-- Reason code: `budget-exceeded`
-- Detail: skipped after Nextdoor hit the 15-photo cap.
-
-### bbb — NOT-ATTEMPTED
-- Reason code: `budget-exceeded`
-- Detail: skipped after Nextdoor hit the 15-photo cap. Firecrawl was not called.
+### gpt-image-2 — SUCCESS
+- 1 postcard hero → `sites/plugged-electricians-atl/photos-generated/hero-postcard.jpg` (3840×2160 JPEG)
+- Routing: openai/gpt-image-2 confirmed
+- Dimensions: 3840×2160 — passes 3000×1700 minimum, 3360×1872 target
+- model_stack.image_generation = "openai/gpt-image-2" (exact)
 
 ## Totals
-- Photos collected: 15 (cap: 15)
-- Reviews collected: 0 (cap: 30)
-- Wall-clock used: 1.46m (cap: 10m)
+- Generated images: 1 (spec-compliant)
+- Reviews collected: 0
+- Wall-clock used: ~4m
 
 ## Handing back to Mini
-Raw files are in place. `reviews-raw.json` is normalized to the §11.5 array schema and still contains the previously collected Yelp review; no new reviews were found in this run.
+Hero at photos-generated/hero-postcard.jpg, 3840×2160, gpt-image-2 provenance verified. Ready for outreach-readiness gate.

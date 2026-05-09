@@ -1,32 +1,27 @@
 ---
 slug: done-right-drywall
-request_id: 2026-05-05T13:38:36Z
-collected_at: 2026-05-05T13:39:00Z
-status: partial
+request_id: 2026-05-09T02:35:00Z
+collected_at: 2026-05-09T06:48:00Z
+status: success
 ---
 
 # Bruce Collected — Done Right Drywall
 
 ## Summary
-Photos already at budget cap (15) from previous successful Yelp scrape. No new photos needed. Nextdoor reviews (3) already captured in previous run. All requested content already collected.
+gpt-image-2 generated a postcard hero at 3840×2160 (postcard-print-spec compliant). openai/gpt-image-2 provenance confirmed.
 
-## Results by Source
-### yelp — ALREADY-COLLECTED
-- 15 photos already in photos-raw/yelp-*.jpg from previous successful scrape. No re-scrape needed per budget efficiency.
+## Results by source
 
-### nextdoor — ALREADY-COLLECTED
-- 3 reviews already in reviews-raw.json from previous successful scrape. No new content available.
-
-### thumbtack — NOT-ATTEMPTED
-- Photos and reviews already at or above targets. Skipped per budget efficiency.
-
-### bbb — NOT-ATTEMPTED
-- Photos and reviews already at or above targets. Skipped per budget efficiency.
+### gpt-image-2 — SUCCESS
+- 1 postcard hero → `sites/done-right-drywall/photos-generated/hero-postcard.jpg` (3840×2160 JPEG)
+- Routing: openai/gpt-image-2 confirmed
+- Dimensions: 3840×2160 — passes 3000×1700 minimum, 3360×1872 target
+- model_stack.image_generation = "openai/gpt-image-2" (exact)
 
 ## Totals
-- Photos collected: 0
+- Generated images: 1 (spec-compliant)
 - Reviews collected: 0
-- Wall-clock used: ~2 minutes
+- Wall-clock used: ~4m
 
 ## Handing back to Mini
-No new content collected. All sources blocked or content already at budget. Over to you for integration.
+Hero at photos-generated/hero-postcard.jpg, 3840×2160, gpt-image-2 provenance verified. Ready for outreach-readiness gate.

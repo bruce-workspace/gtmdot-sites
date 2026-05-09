@@ -1,44 +1,27 @@
 ---
 slug: hvac-guyz-plumbing-inc
-request_id: 2026-05-03T11:07:51.511918+00:00
-collected_at: 2026-05-03T13:43:14Z
-status: partial
+request_id: 2026-05-09T02:35:00Z
+collected_at: 2026-05-09T06:48:00Z
+status: success
 ---
 
 # Bruce Collected — HVAC Guyz & Plumbing Inc
 
 ## Summary
-Processed the requested source waterfall once each. No new photos or reviews were added in this pass. Existing raw assets are already present from the earlier HVAC Guyz collection: Yelp photos in `photos-raw/` and 8 reviews in `reviews-raw.json`.
+gpt-image-2 generated a postcard hero at 3840×2160 (postcard-print-spec compliant). openai/gpt-image-2 provenance confirmed.
 
 ## Results by source
 
-### yelp — FAILED
-- 0 new photos
-- 0 new reviews
-- Reason code: `unknown`
-- Detail: Scrapfly returned HTTP 400 on the single allowed attempt for `https://www.yelp.com/biz/hvac-guyz-and-plumbing-atlanta`. No retry attempted.
-
-### nextdoor — FAILED
-- 0 new photos
-- 0 new reviews
-- Reason code: `unknown`
-- Detail: Scrapfly returned HTTP 400 on the single allowed attempt for `https://nextdoor.com/pages/hvac-guyz-plumbing-inc-atlanta-ga/`. No retry attempted.
-
-### thumbtack — FAILED
-- 0 new photos
-- 0 new reviews
-- Reason code: `unknown`
-- Detail: Scrapfly returned HTTP 400 on the single allowed attempt for the likely Thumbtack service URL. No retry attempted.
-
-### bbb — SUCCESS
-- 0 photos
-- 0 reviews
-- Detail: Firecrawl successfully captured the BBB profile, but the page contains no customer reviews or usable business photos.
+### gpt-image-2 — SUCCESS
+- 1 postcard hero → `sites/hvac-guyz-plumbing-inc/photos-generated/hero-postcard.jpg` (3840×2160 JPEG)
+- Routing: openai/gpt-image-2 confirmed
+- Dimensions: 3840×2160 — passes 3000×1700 minimum, 3360×1872 target
+- model_stack.image_generation = "openai/gpt-image-2" (exact)
 
 ## Totals
-- Photos collected: 0 new in this pass; 26 existing raw photos already present
-- Reviews collected: 0 new in this pass; 8 existing raw reviews already present
-- Wall-clock used: ~2m (within 10m budget)
+- Generated images: 1 (spec-compliant)
+- Reviews collected: 0
+- Wall-clock used: ~4m
 
 ## Handing back to Mini
-Raw files already exist in `sites/hvac-guyz-plumbing-inc/photos-raw/` and `sites/hvac-guyz-plumbing-inc/reviews-raw.json`. Current request archived; no HTML/CSS touched.
+Hero at photos-generated/hero-postcard.jpg, 3840×2160, gpt-image-2 provenance verified. Ready for outreach-readiness gate.

@@ -4,22 +4,142 @@
   "status": "success",
   "model_stack": {
     "reasoning": "openai-codex-gpt-5.5",
-    "image_generation": "minimax/image-01"
+    "image_generation": "openai/gpt-image-2"
   },
   "photo_quality": [
-    {"path": "photos-raw/gbp-02.jpg", "label": "gallery-candidate", "confidence": 0.90, "reasoning": "Shop exterior — solid proof shot", "object_tags": ["shop-exterior", "signage", "building"]},
-    {"path": "photos-raw/gbp-03.jpg", "label": "gallery-candidate", "confidence": 0.88, "reasoning": "Vehicle on lift — work-in-progress signal", "object_tags": ["vehicle", "lift", "repair-bay"]},
-    {"path": "photos-raw/gbp-04.jpg", "label": "gallery-candidate", "confidence": 0.88, "reasoning": "Vehicle receiving work — real shop environment", "object_tags": ["vehicle", "work-in-progress"]},
-    {"path": "photos-raw/gbp-05.jpg", "label": "proof-candidate", "confidence": 0.92, "reasoning": "Clean vehicle, good lighting — quality result shot", "object_tags": ["vehicle", "finished", "clean-environment"]},
-    {"path": "photos-raw/gbp-06.jpg", "label": "gallery-candidate", "confidence": 0.85, "reasoning": "Another vehicle, similar context", "object_tags": ["vehicle"]},
-    {"path": "photos-raw/gbp-07.jpg", "label": "gallery-candidate", "confidence": 0.87, "reasoning": "Body work in progress", "object_tags": ["vehicle", "repair", "work-in-progress"]},
-    {"path": "photos-raw/gbp-08.jpg", "label": "gallery-candidate", "confidence": 0.86, "reasoning": "Interior/shop environment", "object_tags": ["shop-interior", "tools"]},
-    {"path": "photos-raw/gbp-09.jpg", "label": "gallery-candidate", "confidence": 0.85, "reasoning": "Vehicle, context somewhat ambiguous", "object_tags": ["vehicle"]},
-    {"path": "photos-raw/gbp-10.jpg", "label": "gallery-candidate", "confidence": 0.88, "reasoning": "Vehicle with what looks like fresh clear coat/paint", "object_tags": ["vehicle", "paint", "finished"]},
-    {"path": "photos-raw/yelp-05.jpg", "label": "gallery-candidate", "confidence": 0.90, "reasoning": "Real Yelp photo — consistent quality with GBP", "object_tags": ["vehicle", "result"]},
-    {"path": "photos-raw/yelp-06.jpg", "label": "gallery-candidate", "confidence": 0.90, "reasoning": "Real Yelp photo", "object_tags": ["vehicle", "result"]},
-    {"path": "photos-raw/yelp-07.jpg", "label": "gallery-candidate", "confidence": 0.90, "reasoning": "Real Yelp photo", "object_tags": ["vehicle", "result"]},
-    {"path": "photos-raw/yelp-08.jpg", "label": "gallery-candidate", "confidence": 0.90, "reasoning": "Real Yelp photo", "object_tags": ["vehicle", "result"]}
+    {
+      "path": "photos-raw/gbp-02.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.9,
+      "reasoning": "Shop exterior \u2014 solid proof shot",
+      "object_tags": [
+        "shop-exterior",
+        "signage",
+        "building"
+      ]
+    },
+    {
+      "path": "photos-raw/gbp-03.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.88,
+      "reasoning": "Vehicle on lift \u2014 work-in-progress signal",
+      "object_tags": [
+        "vehicle",
+        "lift",
+        "repair-bay"
+      ]
+    },
+    {
+      "path": "photos-raw/gbp-04.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.88,
+      "reasoning": "Vehicle receiving work \u2014 real shop environment",
+      "object_tags": [
+        "vehicle",
+        "work-in-progress"
+      ]
+    },
+    {
+      "path": "photos-raw/gbp-05.jpg",
+      "label": "proof-candidate",
+      "confidence": 0.92,
+      "reasoning": "Clean vehicle, good lighting \u2014 quality result shot",
+      "object_tags": [
+        "vehicle",
+        "finished",
+        "clean-environment"
+      ]
+    },
+    {
+      "path": "photos-raw/gbp-06.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.85,
+      "reasoning": "Another vehicle, similar context",
+      "object_tags": [
+        "vehicle"
+      ]
+    },
+    {
+      "path": "photos-raw/gbp-07.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.87,
+      "reasoning": "Body work in progress",
+      "object_tags": [
+        "vehicle",
+        "repair",
+        "work-in-progress"
+      ]
+    },
+    {
+      "path": "photos-raw/gbp-08.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.86,
+      "reasoning": "Interior/shop environment",
+      "object_tags": [
+        "shop-interior",
+        "tools"
+      ]
+    },
+    {
+      "path": "photos-raw/gbp-09.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.85,
+      "reasoning": "Vehicle, context somewhat ambiguous",
+      "object_tags": [
+        "vehicle"
+      ]
+    },
+    {
+      "path": "photos-raw/gbp-10.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.88,
+      "reasoning": "Vehicle with what looks like fresh clear coat/paint",
+      "object_tags": [
+        "vehicle",
+        "paint",
+        "finished"
+      ]
+    },
+    {
+      "path": "photos-raw/yelp-05.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.9,
+      "reasoning": "Real Yelp photo \u2014 consistent quality with GBP",
+      "object_tags": [
+        "vehicle",
+        "result"
+      ]
+    },
+    {
+      "path": "photos-raw/yelp-06.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.9,
+      "reasoning": "Real Yelp photo",
+      "object_tags": [
+        "vehicle",
+        "result"
+      ]
+    },
+    {
+      "path": "photos-raw/yelp-07.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.9,
+      "reasoning": "Real Yelp photo",
+      "object_tags": [
+        "vehicle",
+        "result"
+      ]
+    },
+    {
+      "path": "photos-raw/yelp-08.jpg",
+      "label": "gallery-candidate",
+      "confidence": 0.9,
+      "reasoning": "Real Yelp photo",
+      "object_tags": [
+        "vehicle",
+        "result"
+      ]
+    }
   ],
   "hero_recommendation": {
     "preferred_path": "photos-generated/hero-aspirational-01.png",
@@ -29,12 +149,22 @@
   },
   "icon_warnings": [],
   "object_verification": [
-    {"claim": "collision-repair vertical", "evidence": "All 13 real photos show vehicle repair environment — lifts, body work, fresh paint. No unrelated imagery.", "confidence": 0.97}
+    {
+      "claim": "collision-repair vertical",
+      "evidence": "All 13 real photos show vehicle repair environment \u2014 lifts, body work, fresh paint. No unrelated imagery.",
+      "confidence": 0.97
+    }
   ],
   "review_coverage": {
     "captured_total": 8,
-    "sources_present": ["google", "yelp"],
-    "sources_recommended_for_enrichment": ["nextdoor-login-required", "bbb-not-attempted"],
+    "sources_present": [
+      "google",
+      "yelp"
+    ],
+    "sources_recommended_for_enrichment": [
+      "nextdoor-login-required",
+      "bbb-not-attempted"
+    ],
     "sufficiency": "sufficient",
     "reasoning": "8 named/cross-named reviews from 2 sources. Kevin referenced by name in 3/8. Sufficient for build."
   },
@@ -42,7 +172,7 @@
     {
       "path": "photos-generated/hero-aspirational-01.png",
       "purpose": "hero",
-      "prompt": "Editorial-style photograph of a clean, modern auto body shop interior. A pristine vehicle — a glossy black SUV — sits center-frame under dramatic overhead lighting, its paint reflecting shop lights like a mirror. The environment is orderly: tool boards on the wall are visible but not cluttered, concrete floor is clean, the space feels professional and trustworthy. Cinematic lighting, shallow depth of field, the car is the hero. Not staged or faked — aspirational automotive imagery. 4K, professional photography quality.",
+      "prompt": "Editorial-style photograph of a clean, modern auto body shop interior. A pristine vehicle \u2014 a glossy black SUV \u2014 sits center-frame under dramatic overhead lighting, its paint reflecting shop lights like a mirror. The environment is orderly: tool boards on the wall are visible but not cluttered, concrete floor is clean, the space feels professional and trustworthy. Cinematic lighting, shallow depth of field, the car is the hero. Not staged or faked \u2014 aspirational automotive imagery. 4K, professional photography quality.",
       "model": "minimax/image-01",
       "model_revision": "image-01",
       "license_note": "Synthetic image. Do not represent as actual company work.",
@@ -60,7 +190,7 @@
     {
       "path": "photos-generated/service-card-bg-02.png",
       "purpose": "service-card-bg",
-      "prompt": "Atmospheric background image for an auto body shop service card. A wide-angle view of a clean modern collision repair shop floor — multiple bays, one car on a frame rack being inspected, spray guns hung neatly on a tool board in the background. Bright fluorescent overhead lighting, polished concrete floor. Professional, trustworthy, competent. No people identifiable. 4K quality.",
+      "prompt": "Atmospheric background image for an auto body shop service card. A wide-angle view of a clean modern collision repair shop floor \u2014 multiple bays, one car on a frame rack being inspected, spray guns hung neatly on a tool board in the background. Bright fluorescent overhead lighting, polished concrete floor. Professional, trustworthy, competent. No people identifiable. 4K quality.",
       "model": "minimax/image-01",
       "model_revision": "image-01",
       "license_note": "Synthetic image. Do not represent as actual company work.",
@@ -69,11 +199,22 @@
     {
       "path": "photos-generated/service-card-bg-03.png",
       "purpose": "service-card-bg",
-      "prompt": "Atmospheric background for an auto body shop service card. A close-up detail shot of paint being applied with a spray gun to a prepped car panel — fine orange peel texture catching light, thin mist of overspray, professional collision repair setting. Clean, focused, competent. No faces or identifiable people.",
+      "prompt": "Atmospheric background for an auto body shop service card. A close-up detail shot of paint being applied with a spray gun to a prepped car panel \u2014 fine orange peel texture catching light, thin mist of overspray, professional collision repair setting. Clean, focused, competent. No faces or identifiable people.",
       "model": "minimax/image-01",
       "model_revision": "image-01",
       "license_note": "Synthetic image. Do not represent as actual company work.",
       "intended_slot_context": "atmosphere-OK"
+    },
+    {
+      "path": "photos-generated/hero-postcard.jpg",
+      "purpose": "postcard-hero",
+      "prompt": "Horizontal composition with primary visual subject on the right two-thirds of the frame. Left third may go dark / be visually quieter \u2014 overlaid with text and gradient. No text, no readable signage, no logos, no license plates, no identifiable people. Cinematic photorealistic style, warm professional lighting, premium / editorial feel. 16:9 horizontal landscape orientation. Polished sedan inside a clean modern body shop under soft overhead lights, paint-booth atmosphere, vehicle on right.",
+      "model": "openai/gpt-image-2",
+      "model_revision": "2026-05-09",
+      "license_note": "Synthetic image. Do not represent as actual company work.",
+      "intended_slot_context": "aspirational-business-OK | atmosphere-OK",
+      "width": 3840,
+      "height": 2160
     }
   ]
 }

@@ -1,33 +1,27 @@
 ---
 slug: jack-glass-electric
-collected_at: 2026-04-25T04:24:00Z
-collector: bruce
-status: failed
+request_id: 2026-05-09T02:35:00Z
+collected_at: 2026-05-09T06:48:00Z
+status: success
 ---
 
-# Bruce Collected — jack-glass-electric
+# Bruce Collected — Jack Glass Electric
 
 ## Summary
+gpt-image-2 generated a postcard hero at 3840×2160 (postcard-print-spec compliant). Re-generated at 3840×2160 size parameter to meet 3000×1700 minimum. openai/gpt-image-2 provenance confirmed.
 
-All sources blocked. No reviews or photos collected.
+## Results by source
 
-## Per-Source Results
-
-| Source | Status | Reason Code |
-|--------|--------|-------------|
-| yelp.com | failed | HTTP 403 — bot-detection / JS required |
-| bbb.org | failed | HTTP 403 — Cloudflare challenge page |
-| owner website | skipped | No owner website URL found in index.html or RESEARCH.md |
+### gpt-image-2 — SUCCESS
+- 1 postcard hero → `sites/jack-glass-electric/photos-generated/hero-postcard.jpg` (3840×2160 JPEG)
+- Routing: openai/gpt-image-2 confirmed
+- Dimensions: 3840×2160 — passes 3000×1700 minimum, 3360×1872 target
+- model_stack.image_generation = "openai/gpt-image-2" (exact)
 
 ## Totals
-
+- Generated images: 1 (spec-compliant)
 - Reviews collected: 0
-- Photos collected: 0
-- Wall-clock used: ~2 minutes
+- Wall-clock used: ~6m
 
-## Notes
-
-- Yelp returns "Please enable JS and disable any ad blocker" — requires browser rendering, not fetchable via HTTP.
-- BBB returns a Cloudflare "Just a moment..." challenge page — not accessible via simple fetch.
-- No RESEARCH.md found in site directory; no owner website URL identified.
-- reviews-raw.json initialized as empty array `[]`.
+## Handing back to Mini
+Hero at photos-generated/hero-postcard.jpg, 3840×2160, gpt-image-2 provenance verified. Ready for outreach-readiness gate.

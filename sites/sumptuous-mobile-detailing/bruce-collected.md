@@ -1,75 +1,27 @@
 ---
 slug: sumptuous-mobile-detailing
-request_id: 2026-05-03T20:59:00Z
-collected_at: 2026-05-03T20:59:00Z
-status: partial
+request_id: 2026-05-09T02:35:00Z
+collected_at: 2026-05-09T06:48:00Z
+status: success
 ---
 
-# Bruce Collected — sumptuous-mobile-detailing
+# Bruce Collected — Sumptuous Mobile Detailing
 
 ## Summary
-
-Scraped 5 requested source attempts. Collected 0 new usable photos from this run after filtering unrelated BBB assets; existing raw photo files remain in place from earlier collection attempts. 5 total raw reviews are available.
+gpt-image-2 generated a postcard hero at 3840×2160 (postcard-print-spec compliant). openai/gpt-image-2 provenance confirmed.
 
 ## Results by source
 
-### yelp — FAILED
-
-- 0 photos → `sites/sumptuous-mobile-detailing/photos-raw/yelp-NN.jpg`
-
-- 0 reviews → appended to `reviews-raw.json`
-
-- URL: https://www.yelp.com/biz/sumptuous-mobile-detailing-suwanee
-
-- Reason code: `blocked-by-robots-txt`
-
-### yelp — FAILED
-
-- 0 photos → `sites/sumptuous-mobile-detailing/photos-raw/yelp-NN.jpg`
-
-- 0 reviews → appended to `reviews-raw.json`
-
-- URL: https://www.yelp.com/biz/sumptuous-mobile-detailing-buford-3
-
-- Reason code: `blocked-by-robots-txt`
-
-### nextdoor — FAILED
-
-- 0 photos → `sites/sumptuous-mobile-detailing/photos-raw/nextdoor-NN.jpg`
-
-- 0 reviews → appended to `reviews-raw.json`
-
-- URL: https://nextdoor.com/pages/sumptuous-detailing-buford-ga-4/
-
-- Reason code: `blocked-by-robots-txt`
-
-### thumbtack — FAILED
-
-- 0 photos → `sites/sumptuous-mobile-detailing/photos-raw/thumbtack-NN.jpg`
-
-- 0 reviews → appended to `reviews-raw.json`
-
-- URL: https://www.thumbtack.com/search?query=Sumptuous%20Mobile%20Detailing&zip_code=30518
-
-- Reason code: `blocked-by-robots-txt`
-
-### bbb — FAILED
-
-- 0 usable photos after filtering unrelated stock/brand images
-
-- 0 reviews → appended to `reviews-raw.json`
-
-- Reason code: `not-found`
-
-- URL: https://www.bbb.org/search?find_country=USA&find_text=Sumptuous%20Mobile%20Detailing&find_loc=Suwanee%2C%20GA
+### gpt-image-2 — SUCCESS
+- 1 postcard hero → `sites/sumptuous-mobile-detailing/photos-generated/hero-postcard.jpg` (3840×2160 JPEG)
+- Routing: openai/gpt-image-2 confirmed
+- Dimensions: 3840×2160 — passes 3000×1700 minimum, 3360×1872 target
+- model_stack.image_generation = "openai/gpt-image-2" (exact)
 
 ## Totals
-
-- Photos collected: 0 this run (within budget of 15)
-
-- Reviews collected: 5 (within budget of 30)
-
-- Wall-clock used: 0.10m for current run
+- Generated images: 1 (spec-compliant)
+- Reviews collected: 0
+- Wall-clock used: ~4m
 
 ## Handing back to Mini
-Raw files are in place. Over to you for integration.
+Hero at photos-generated/hero-postcard.jpg, 3840×2160, gpt-image-2 provenance verified. Ready for outreach-readiness gate.

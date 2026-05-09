@@ -1,49 +1,27 @@
 ---
 slug: pine-peach-painting
-request_id: 2026-04-24T03:14:03.205764+00:00
-collected_at: 2026-04-25T04:47:00Z
-status: partial
+request_id: 2026-05-09T02:35:00Z
+collected_at: 2026-05-09T06:48:00Z
+status: success
 ---
 
-# Bruce Collected — pine-peach-painting
+# Bruce Collected — Pine Peach Painting
 
 ## Summary
-5 reviews collected from Birdeye aggregator; Yelp blocked; no photos collected (site already has 5 photos at target).
+gpt-image-2 generated a postcard hero at 3840×2160 (postcard-print-spec compliant). openai/gpt-image-2 provenance confirmed.
 
 ## Results by source
 
-### yelp — PARTIAL
-- URL found: https://www.yelp.com/biz/pine-peach-paint-atlanta
-- Reason: Page returned 403 bot-detection on direct fetch; page exists but review text not retrievable
-- Photos: 0 (URLs not surfaced)
-- Reviews: 0 from Yelp directly
-
-### birdeye.com — SUCCESS
-- URL: https://reviews.birdeye.com/pine-peach-painting-166927010934071
-- Aggregate: 4.8 stars / 21 reviews
-- Photos: 0 (no photo URLs surfaced)
-- Reviews: 5 → reviews-raw.json
-- Note: Only 5 review snippets rendered on the landing page; full 21-review corpus behind JS pagination
-
-### nextdoor.com — FAILED
-- Reason: No listing found via web search; business has no Nextdoor presence under this name
-- Photos: 0
-- Reviews: 0
-
-### thumbtack.com — FAILED
-- Reason: No listing found via web search
-- Photos: 0
-- Reviews: 0
-
-### bbb.com — FAILED
-- Reason: 403 Cloudflare bot-detection; no review text surfaced via search
-- Photos: 0
-- Reviews: 0
+### gpt-image-2 — SUCCESS
+- 1 postcard hero → `sites/pine-peach-painting/photos-generated/hero-postcard.jpg` (3840×2160 JPEG)
+- Routing: openai/gpt-image-2 confirmed
+- Dimensions: 3840×2160 — passes 3000×1700 minimum, 3360×1872 target
+- model_stack.image_generation = "openai/gpt-image-2" (exact)
 
 ## Totals
-- Photos collected: 0 (site already has 5 — at/above target of 3)
-- Reviews collected: 5
+- Generated images: 1 (spec-compliant)
+- Reviews collected: 0
 - Wall-clock used: ~4m
 
 ## Handing back to Mini
-5 reviews in reviews-raw.json from Birdeye. Photos gap is already closed (5 existing). Main gap was reviews — 5 new ones should push above the ≥3 threshold for re-render. Over to you for integration.
+Hero at photos-generated/hero-postcard.jpg, 3840×2160, gpt-image-2 provenance verified. Ready for outreach-readiness gate.

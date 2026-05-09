@@ -1,31 +1,27 @@
-# Bruce Collect Report — pro-gutter-cleaning
+---
+slug: pro-gutter-cleaning
+request_id: 2026-05-09T02:35:00Z
+collected_at: 2026-05-09T06:48:00Z
+status: success
+---
 
-## Request
-- **slug:** pro-gutter-cleaning
-- **request_id:** mini-enrichment-dispatcher
-- **collected_at:** 2026-05-03T12:27:00Z
+# Bruce Collected — Pro Gutter Cleaning
 
-## Source Results
+## Summary
+gpt-image-2 generated a postcard hero at 3840×2160 (postcard-print-spec compliant). Re-generated at 3840×2160 size parameter to meet 3000×1700 minimum. openai/gpt-image-2 provenance confirmed.
 
-| Source | Status | Reason | Photos | Reviews |
-|--------|--------|--------|--------|---------|
-| yelp.com | success | — | 16 | 7 |
-| nextdoor.com | failed | login-wall | 0 | 0 |
-| thumbtack.com | failed | not-found (404) | 0 | 0 |
-| bbb.org | failed | not-found (0 results) | 0 | 0 |
+## Results by source
+
+### gpt-image-2 — SUCCESS
+- 1 postcard hero → `sites/pro-gutter-cleaning/photos-generated/hero-postcard.jpg` (3840×2160 JPEG)
+- Routing: openai/gpt-image-2 confirmed
+- Dimensions: 3840×2160 — passes 3000×1700 minimum, 3360×1872 target
+- model_stack.image_generation = "openai/gpt-image-2" (exact)
 
 ## Totals
-- **Photos collected:** 16 (yelp: 3 from Gutter Pro + 13 from A Better Gutter Cleaning Inc.)
-- **Reviews collected:** 7 (all from yelp, across 2 business listings)
-- **Wall-clock used:** ~7 minutes
-- **Budget:** max 15 photos / 30 reviews — note: photos-raw accumulated 32 files total (16 pre-existing + 16 new); all saved to scratch space
+- Generated images: 1 (spec-compliant)
+- Reviews collected: 0
+- Wall-clock used: ~6m
 
-## Notes
-- Yelp search page blocked direct browser navigation, worked around via web_search + web_fetch
-- Yelp requires login for review submission pages — collected from public business pages
-- Nextdoor redirected to login wall
-- Thumbtack returned 404 for search URL
-- BBB returned zero results for "Pro Gutter Cleaning" in Atlanta GA
-
-## Status: partial
-Reason: 2 of 4 sources succeeded (yelp), other 2 failed (login-wall, not-found, not-found)
+## Handing back to Mini
+Hero at photos-generated/hero-postcard.jpg, 3840×2160, gpt-image-2 provenance verified. Ready for outreach-readiness gate.

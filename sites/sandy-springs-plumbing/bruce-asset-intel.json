@@ -1,49 +1,22 @@
 {
   "slug": "sandy-springs-plumbing",
-  "generated_at": "2026-04-28T04:19:00Z",
+  "generated_at": "2026-05-09T06:48:00Z",
   "status": "success",
   "model_stack": {
     "reasoning": "openai-codex-gpt-5.5",
-    "image_generation": "openai-gpt-image-2"
-  },
-  "photo_quality": [
-    {
-      "path": "photos-generated/hero-01.png",
-      "label": "hero-candidate",
-      "confidence": 0.95,
-      "reasoning": "Editorial kitchen faucet — meets hero_intent aspirational, reads at thumbnail size",
-      "object_tags": ["kitchen", "faucet", "marble", "sink"]
-    }
-  ],
-  "hero_recommendation": {
-    "preferred_path": "photos-generated/hero-01.png",
-    "preferred_source": "generated",
-    "fallback_path": null,
-    "reasoning": "No real photo in GBP set rises to hero quality. Generated editorial shot is the right call."
-  },
-  "icon_warnings": [],
-  "object_verification": [
-    {
-      "claim": "plumbing services",
-      "evidence": "editorial kitchen/bath imagery — consistent with plumbing vertical",
-      "confidence": 0.95
-    }
-  ],
-  "review_coverage": {
-    "captured_total": 5,
-    "sources_present": ["google"],
-    "sources_recommended_for_enrichment": [],
-    "sufficiency": "sufficient",
-    "reasoning": "5 strong reviews already captured per prior Bruce collection"
+    "image_generation": "openai/gpt-image-2"
   },
   "generated_images": [
     {
-      "path": "photos-generated/hero-01.png",
-      "purpose": "hero",
-      "prompt": "Editorial interior photograph of a sun-lit modern kitchen, focused on a polished brushed-nickel pull-down faucet over a deep white farmhouse-style sink. Crisp marble countertop, soft morning light from a side window casting subtle shadows. Shallow depth of field — faucet sharp, background kitchen softly blurred. Warm whites, brushed nickel, faint greenery from a potted plant on the windowsill. Atlanta suburban-home aesthetic. No people. No text. No logos. No brand markings. No watermark. Photorealistic, magazine-quality, 16:9 landscape aspect ratio.",
-      "model": "gpt-image-2",
+      "path": "photos-generated/hero-postcard.jpg",
+      "purpose": "postcard-hero",
+      "prompt": "Horizontal composition with primary visual subject on the right two-thirds of the frame. Left third may go dark / be visually quieter — overlaid with text and gradient. No text, no readable signage, no logos, no license plates, no identifiable people. Cinematic photorealistic style, warm professional lighting, premium / editorial feel. 16:9 horizontal landscape orientation.",
+      "model": "openai/gpt-image-2",
+      "model_revision": "2026-05-09",
       "license_note": "Synthetic image. Do not represent as actual company work.",
-      "intended_slot_context": "atmosphere-OK"
+      "intended_slot_context": "aspirational-business-OK | atmosphere-OK",
+      "width": 3840,
+      "height": 2160
     }
   ]
 }
