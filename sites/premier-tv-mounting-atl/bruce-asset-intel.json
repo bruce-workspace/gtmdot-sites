@@ -1,6 +1,6 @@
 {
   "slug": "premier-tv-mounting-atl",
-  "generated_at": "2026-05-09T05:48:00Z",
+  "generated_at": "2026-05-09T07:06:00Z",
   "status": "success",
   "model_stack": {
     "reasoning": "openai-codex-gpt-5.5",
@@ -10,7 +10,7 @@
   "hero_recommendation": {
     "preferred_path": "photos-generated/hero-postcard.jpg",
     "preferred_source": "generated",
-    "reasoning": "Postcard hero regen per mini collect-request 2026-05-09T02:35:00Z. gpt-image-2 verified by tool response."
+    "reasoning": "Postcard hero regen per mini collect-request 2026-05-09T02:35:00Z. gpt-image-2 verified by tool response. Note: generated at 3840x2160 (gpt-image-2 native 4K) vs requested 3360x1872 — closest available size."
   },
   "icon_warnings": [],
   "object_verification": [],
