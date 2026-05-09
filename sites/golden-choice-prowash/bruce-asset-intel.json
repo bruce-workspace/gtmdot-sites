@@ -1,0 +1,19 @@
+{
+  "slug": "golden-choice-prowash",
+  "model_stack": {
+    "image_generation": "openai/gpt-image-2"
+  },
+  "generated_images": [
+    {
+      "purpose": "postcard-hero",
+      "path": "sites/golden-choice-prowash/photos-generated/hero-postcard.jpg",
+      "prompt": "High-pressure washing of a stone driveway, with a visible sweeping water arc and a bright clean stripe appearing on the right side of the driveway where the surface has just been washed. Horizontal composition with primary visual subject on the right two-thirds of the frame. Left third may go dark / be visually quieter — overlaid with text and gradient. No text, no readable signage, no logos, no license plates, no identifiable people. Cinematic photorealistic style, warm professional lighting, premium / editorial feel. 16:9 horizontal landscape orientation. Residential exterior detail shot, no faces, no vehicles, no signage, no branding, editorial commercial photography, realistic mist and water droplets, strong depth and texture.",
+      "model": "gpt-image-2",
+      "model_revision": "2026-05-09",
+      "license_note": "Synthetic image. Do not represent as actual company work.",
+      "intended_slot_context": "aspirational-business-OK | atmosphere-OK",
+      "width": 3360,
+      "height": 1872
+    }
+  ]
+}
