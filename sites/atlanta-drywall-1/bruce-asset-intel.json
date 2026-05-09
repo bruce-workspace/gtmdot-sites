@@ -1,0 +1,56 @@
+{
+  "slug": "atlanta-drywall-1",
+  "generated_at": "2026-05-09T02:30:43Z",
+  "status": "partial",
+  "model_stack": {
+    "reasoning": "openai-codex/gpt-5.5",
+    "image_generation": "openai/gpt-image-2"
+  },
+  "photo_quality": [],
+  "hero_recommendation": {
+    "preferred_path": "photos-generated/hero-postcard.jpg",
+    "preferred_source": "generated",
+    "fallback_path": null,
+    "reasoning": "Postcard-specific hero requested: smooth finished drywall with recessed lighting and room-corner detail on right two-thirds. Synthetic aspirational image only; no real company-work claim."
+  },
+  "icon_warnings": [],
+  "object_verification": [
+    {
+      "claim": "drywall/finished-interior visual context",
+      "evidence": "Generated hero depicts smooth finished drywall, recessed lighting, and room corner detail with no text, logos, license plates, or identifiable people.",
+      "confidence": 0.93
+    }
+  ],
+  "review_coverage": {
+    "captured_total": 0,
+    "sources_present": [],
+    "sources_recommended_for_enrichment": [],
+    "sufficiency": "not-requested",
+    "reasoning": "This collect-request was email-research + postcard-hero only; review collection was not in scope."
+  },
+  "email_research": {
+    "email_found": false,
+    "emails": [],
+    "details_path": "email-research.md"
+  },
+  "generated_images": [
+    {
+      "path": "photos-generated/hero-postcard.jpg",
+      "purpose": "postcard-hero",
+      "dimensions_px": [
+        3360,
+        1872
+      ],
+      "format": "jpeg",
+      "quality": 90,
+      "color_space": "sRGB",
+      "composition": "visual subject on right two-thirds; left third calm negative space",
+      "prompt": "Cinematic photorealistic professional interior construction photograph for a drywall contractor postcard. Smooth finished drywall with crisp recessed lighting, elegant room corner detail placed on the RIGHT two-thirds of the image. Warm professional lighting, subtle texture, clean modern residential room, high-end finish quality, shallow depth of field, wide horizontal 16:9 composition. Leave the LEFT third visually calm and uncluttered negative space. No text, no logos, no license plates, no identifiable people, no faces, no tools with brand marks.",
+      "model": "openai/gpt-image-2",
+      "model_revision": "gpt-image-2",
+      "source_generation_size": "3840x2160",
+      "license_note": "Synthetic image. Do not represent as actual company work.",
+      "intended_slot_context": "aspirational-business-OK | atmosphere-OK"
+    }
+  ]
+}
