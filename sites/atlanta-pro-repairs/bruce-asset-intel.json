@@ -1,0 +1,36 @@
+{
+  "slug": "atlanta-pro-repairs",
+  "generated_at": "2026-05-09T03:11:00Z",
+  "status": "success",
+  "model_stack": {
+    "reasoning": "openai-codex-gpt-5.5",
+    "image_generation": "openai/gpt-image-2"
+  },
+  "photo_quality": [],
+  "hero_recommendation": {
+    "preferred_path": "photos-generated/hero-postcard.jpg",
+    "preferred_source": "generated",
+    "fallback_path": null,
+    "reasoning": "Postcard hero regen per Mini 2026-05-09 collect-request. Generated via gpt-image-2 at 3360x1872."
+  },
+  "icon_warnings": [],
+  "object_verification": [],
+  "review_coverage": {
+    "captured_total": 0,
+    "sources_present": [],
+    "sources_recommended_for_enrichment": [],
+    "sufficiency": "not-applicable",
+    "reasoning": "Postcard hero generation task only; review coverage not applicable."
+  },
+  "generated_images": [
+    {
+      "path": "photos-generated/hero-postcard.jpg",
+      "purpose": "postcard-hero",
+      "prompt": "Home repair workshop with tools organized on pegboard walls, project on workbench on right side. Horizontal composition with primary visual subject on the right two-thirds of the frame. Left third may go dark or be visually quieter — overlaid with text and gradient. No text, no readable signage, no logos, no license plates, no identifiable people. Cinematic photorealistic style, warm professional lighting, premium editorial feel. 16:9 horizontal landscape orientation.",
+      "model": "gpt-image-2",
+      "model_revision": "2026-05-09",
+      "license_note": "Synthetic image. Do not represent as actual company work.",
+      "intended_slot_context": "aspirational-business-OK | atmosphere-OK"
+    }
+  ]
+}
