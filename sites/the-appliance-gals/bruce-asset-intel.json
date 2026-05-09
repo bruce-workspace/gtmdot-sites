@@ -1,0 +1,37 @@
+{
+  "slug": "the-appliance-gals",
+  "generated_at": "2026-05-09T05:48:00Z",
+  "status": "success",
+  "model_stack": {
+    "reasoning": "openai-codex-gpt-5.5",
+    "image_generation": "openai/gpt-image-2"
+  },
+  "photo_quality": [],
+  "hero_recommendation": {
+    "preferred_path": "photos-generated/hero-postcard.jpg",
+    "preferred_source": "generated",
+    "reasoning": "Postcard hero regen per mini collect-request 2026-05-09T02:35:00Z. gpt-image-2 verified by tool response."
+  },
+  "icon_warnings": [],
+  "object_verification": [],
+  "review_coverage": {
+    "captured_total": 0,
+    "sources_present": [],
+    "sources_recommended_for_enrichment": [],
+    "sufficiency": "insufficient",
+    "reasoning": "collect-request was for postcard hero generation only — not a full scrape"
+  },
+  "generated_images": [
+    {
+      "path": "photos-generated/hero-postcard.jpg",
+      "purpose": "postcard-hero",
+      "prompt": "Horizontal composition with primary visual subject on the right two-thirds of the frame. Left third may go dark or be visually quieter — overlaid with text and gradient. Dryer being serviced in modern laundry room, warm interior light, hands visible on right side. Cinematic photorealistic style, warm professional lighting, premium and editorial feel. 16:9 horizontal landscape orientation. No text, no readable signage, no logos, no license plates, no identifiable people.",
+      "model": "gpt-image-2",
+      "model_revision": "2026-05-09",
+      "license_note": "Synthetic image. Do not represent as actual company work.",
+      "intended_slot_context": "aspirational-business-OK | atmosphere-OK",
+      "width": 3840,
+      "height": 2160
+    }
+  ]
+}

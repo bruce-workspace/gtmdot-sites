@@ -1,0 +1,30 @@
+---
+slug: the-appliance-gals
+generated_at: 2026-05-09T05:48:00Z
+status: success
+collect_request_ref: sites/the-appliance-gals/collect-request.md
+---
+
+# Bruce Asset Intelligence — The Appliance Gals
+
+## Postcard Hero v3 — gpt-image-2
+
+Generated: 2026-05-09
+Model: openai/gpt-image-2 (verified by tool response)
+Dimensions: 3840×2160 (4K)
+Purpose: postcard-hero
+Composition: Dryer being serviced in modern laundry room, warm interior light, hands visible on right side. Left third quiet for postcard text overlay.
+
+Guardrails (§11.11.5) applied:
+- `data-source="generated"` on `<img>` (Mini's job at integration)
+- `intended_slot_context`: aspirational-business-OK | atmosphere-OK
+- `license_note`: "Synthetic image. Do not represent as actual company work."
+- `model_stack.image_generation`: openai/gpt-image-2 exactly
+
+## Photo Quality Assessment
+
+No raw photos — collect-request was for postcard hero generation only.
+
+## Review Coverage Notes
+
+collect-request was for postcard hero generation only — not a full scrape.
