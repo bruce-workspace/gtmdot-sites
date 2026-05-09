@@ -1,0 +1,27 @@
+{
+  "business_slug": "roberts-mobile-services",
+  "business_name": "Robert's Mobile Services",
+  "updated_at": "2026-05-09T03:56:00Z",
+  "model_stack": {
+    "image_generation": "openai/gpt-image-2"
+  },
+  "generated_images": [
+    {
+      "id": "postcard-hero-v3",
+      "purpose": "postcard-hero",
+      "path": "sites/roberts-mobile-services/photos-generated/hero-postcard.jpg",
+      "prompt": "Cinematic photorealistic horizontal 16:9 postcard hero image of a multi-tool mobile service van with the side door open, organized diagnostic tools and repair equipment visible on the RIGHT two-thirds of the frame. The visual subject must occupy the right two-thirds. The left third should be darker, quieter negative space suitable for text overlay, with a natural shadow gradient. Warm professional golden-hour lighting, clean industrial Atlanta roadside/workshop atmosphere, polished commercial photography, realistic details. No text, no logos, no license plates, no identifiable people, no faces, no brand marks.",
+      "model": "gpt-image-2",
+      "provider_model": "openai/gpt-image-2",
+      "width": 3360,
+      "height": 1872,
+      "format": "jpeg",
+      "quality": 90,
+      "license_note": "Synthetic image. Do not represent as actual company work.",
+      "intended_slot_context": "aspirational-business-OK | atmosphere-OK",
+      "composition_notes": "Subject/right equipment occupies right two-thirds; left third is darker negative space for postcard overlay. No text, logos, plates, or identifiable people requested.",
+      "sha256": "22a386c14b81d60c2c2432f1a44da53ad38115e62fde4d517425d64a92b11aac",
+      "generated_at": "2026-05-09T03:54:00Z"
+    }
+  ]
+}
