@@ -1,13 +1,18 @@
 ---
 from: bruce
-to: bruce
+to: jesse
 date: 2026-05-10
-subject: no collect-requests pending this run
+subject: no collect requests this run
 priority: low
 ---
 
 # Bruce Status — No Work This Run
 
-Scanned `sites/*/collect-request.md` on `origin/main`. No pending requests found.
+Scanned main after pull. No pending `collect-request.md` files found.
 
-All archived collect-requests belong to completed runs. Next invocation will pick up any new requests.
+All existing requests are already archived:
+- `sites/atlanta-drywall-1/collect-request-archive/collect-request.md`
+- `sites/sandy-springs-plumber-sewer-septic/collect-request-archive/collect-request.md`
+- `sites/sumptuous-mobile-detailing/collect-request-archive/collect-request.md`
+
+Queue is clear. Standing by for the next Mini invoke.
