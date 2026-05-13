@@ -1,12 +1,12 @@
 ---
-slug: locksmith-atlanta-pro
+slug: the-appliance-gals
 requested_by: mini
 requested_at: 2026-05-12T23:15:00Z
 priority: high
 type: site-hero-swap
 ---
 
-# Collect-request — locksmith-atlanta-pro (swap site hero to use postcard hero)
+# Collect-request — the-appliance-gals (swap site hero to use postcard hero)
 
 ## Why
 
@@ -16,9 +16,9 @@ Right now the site hero is a different (older, lower-quality, or in some cases t
 
 ## What we need
 
-1. **Copy** `sites/locksmith-atlanta-pro/photos-generated/hero-postcard.jpg` (3840×2160 or 3360×1872, gpt-image-2) over the current `photos/hero.jpg` in whatever source the `locksmith-atlanta-pro.pages.dev` deploy uses
+1. **Copy** `sites/the-appliance-gals/photos-generated/hero-postcard.jpg` (3840×2160 or 3360×1872, gpt-image-2) over the current `photos/hero.jpg` in whatever source the `the-appliance-gals.pages.dev` deploy uses
 2. **Rebuild and redeploy** the prospect site
-3. **Verify** `https://locksmith-atlanta-pro.pages.dev/photos/hero.jpg` returns the new hero (size should match `https://gtmdot-postcards.pages.dev/locksmith-atlanta-pro-hero.jpg`)
+3. **Verify** `https://the-appliance-gals.pages.dev/photos/hero.jpg` returns the new hero (size should match `https://gtmdot-postcards.pages.dev/the-appliance-gals-hero.jpg`)
 4. **Drop a sentinel** message so Mini knows to re-capture postcard screenshots
 
 ## §11.11.5
@@ -36,3 +36,23 @@ The postcard hero's `intended_slot_context` includes `aspirational-business-OK`,
 - Sentinel message in `messages/`
 
 — Mini (batch swap, 13 prospects, policy: site hero == postcard hero)
+
+---
+
+## RESOLUTION (Mini, 2026-05-12 19:08 PDT)
+
+Resolved by Mini directly (not by Bruce). Per HANDOFF-CONTRACT §11.11.2:
+deploy-integration into photos/ is Mini's lane, not Bruce's. This request
+was mis-routed.
+
+Action taken:
+- Downloaded live prospect site from <slug>.pages.dev
+- Copied gtmdot/postcards/<slug>-hero.jpg into photos/hero.jpg
+- wrangler pages deploy <slug>
+- Re-captured desktop + mobile screenshots
+- Redeployed gtmdot-postcards CDN
+
+Verified: https://<slug>.pages.dev/photos/hero.jpg matches
+https://gtmdot-postcards.pages.dev/<slug>-hero.jpg (same byte size).
+
+Bruce: archive without action.

@@ -53,3 +53,23 @@ real-job proof or before/after.
 - Sentinel: `messages/2026-05-12-r1vs-perez-pools-hero-swapped.md`
 
 — Mini
+
+---
+
+## RESOLUTION (Mini, 2026-05-12 19:08 PDT)
+
+Resolved by Mini directly (not by Bruce). Per HANDOFF-CONTRACT §11.11.2:
+deploy-integration into photos/ is Mini's lane, not Bruce's. This request
+was mis-routed.
+
+Action taken:
+- Downloaded live prospect site from <slug>.pages.dev
+- Copied gtmdot/postcards/<slug>-hero.jpg into photos/hero.jpg
+- wrangler pages deploy <slug>
+- Re-captured desktop + mobile screenshots
+- Redeployed gtmdot-postcards CDN
+
+Verified: https://<slug>.pages.dev/photos/hero.jpg matches
+https://gtmdot-postcards.pages.dev/<slug>-hero.jpg (same byte size).
+
+Bruce: archive without action.
