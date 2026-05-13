@@ -1,12 +1,12 @@
 ---
-slug: atl-mobile-mechanics
+slug: harrison-sons-electrical
 requested_by: mini
 requested_at: 2026-05-12T23:15:00Z
 priority: high
 type: site-hero-swap
 ---
 
-# Collect-request — atl-mobile-mechanics (swap site hero to use postcard hero)
+# Collect-request — harrison-sons-electrical (swap site hero to use postcard hero)
 
 ## Why
 
@@ -16,9 +16,9 @@ Right now the site hero is a different (older, lower-quality, or in some cases t
 
 ## What we need
 
-1. **Copy** `sites/atl-mobile-mechanics/photos-generated/hero-postcard.jpg` (3840×2160 or 3360×1872, gpt-image-2) over the current `photos/hero.jpg` in whatever source the `atl-mobile-mechanics.pages.dev` deploy uses
+1. **Copy** `sites/harrison-sons-electrical/photos-generated/hero-postcard.jpg` (3840×2160 or 3360×1872, gpt-image-2) over the current `photos/hero.jpg` in whatever source the `harrison-sons-electrical.pages.dev` deploy uses
 2. **Rebuild and redeploy** the prospect site
-3. **Verify** `https://atl-mobile-mechanics.pages.dev/photos/hero.jpg` returns the new hero (size should match `https://gtmdot-postcards.pages.dev/atl-mobile-mechanics-hero.jpg`)
+3. **Verify** `https://harrison-sons-electrical.pages.dev/photos/hero.jpg` returns the new hero (size should match `https://gtmdot-postcards.pages.dev/harrison-sons-electrical-hero.jpg`)
 4. **Drop a sentinel** message so Mini knows to re-capture postcard screenshots
 
 ## §11.11.5
