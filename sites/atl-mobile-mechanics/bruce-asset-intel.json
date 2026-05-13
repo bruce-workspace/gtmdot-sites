@@ -1,7 +1,7 @@
 {
   "schema": "bruce-asset-intel-v1",
   "slug": "atl-mobile-mechanics",
-  "updated_at": "2026-05-09T02:34:13Z",
+  "updated_at": "2026-05-13T02:21:22Z",
   "status": "partial",
   "model_stack": {
     "reasoning": "openai-codex/gpt-5.5",
@@ -37,11 +37,13 @@
     }
   ],
   "review_coverage": {
-    "captured_total": 0,
-    "sources_present": [],
+    "captured_total": 4,
+    "sources_present": [
+      "google_business_profile"
+    ],
     "sources_recommended_for_enrichment": [],
-    "sufficiency": "not-requested",
-    "reasoning": "This collect-request was email-research + postcard-hero only; review collection was not in scope."
+    "sufficiency": "sufficient",
+    "reasoning": "Captured 4 usable real Google reviews from the Places Details API. Strongest entries include Joseph by name, price/reliability notes, diagnostic ability, and an alternator job mention. One recent 1-star review was intentionally excluded from site copy handoff but remains discoverable in source if Mini wants to account for balance."
   },
   "email_research": {
     "email_found": false,
@@ -79,6 +81,40 @@
         "no identifiable people",
         "visual subject on right two-thirds"
       ]
+    }
+  ],
+  "reviews": [
+    {
+      "title": "Joseph is great 10/10 definitely recommend",
+      "text": "Joseph is great 10/10 definitely recommend!! My new mechanic He gets the job done fast!! Price are reasonable. Definitely can count on him anyday and time!!",
+      "reviewer": "A'leetra Woods",
+      "rating": 5,
+      "source": "Google Business Profile",
+      "scraped_at": "2026-05-13T02:21:22Z"
+    },
+    {
+      "title": "Fair pricing and knowledgeable",
+      "text": "Great service, can tell he takes pride in what he does man is a actual mechanic that is fair in pricing and knowledgeable would recommend to anyone.",
+      "reviewer": "Matt Ruffino",
+      "rating": 5,
+      "source": "Google Business Profile",
+      "scraped_at": "2026-05-13T02:21:22Z"
+    },
+    {
+      "title": "No one could get my car running right until I called",
+      "text": "I went to several mechanics. No one could get my car running right until I called this service and he found other issues that I didn’t know. I had definitely would use it again best mechanic ever.",
+      "reviewer": "KING LION",
+      "rating": 5,
+      "source": "Google Business Profile",
+      "scraped_at": "2026-05-13T02:21:22Z"
+    },
+    {
+      "title": "Had an issue with an alternator",
+      "text": "Professionalism to the core with expert guidance in helping with the trouble of vehicles these days. Had an issue with an alternator, called, Mr Joseph gave his analytics, gave a time as to when he could come and have it prepared with the breakdown of pricing and have been smooth sailing since then .\n\nI highly recommend them in ATL. Referred some of my family members, we even mentioned that he offered us a family referal discount lol 😆.",
+      "reviewer": "Keevian Burnette",
+      "rating": 5,
+      "source": "Google Business Profile",
+      "scraped_at": "2026-05-13T02:21:22Z"
     }
   ]
 }

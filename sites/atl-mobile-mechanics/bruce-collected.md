@@ -58,3 +58,38 @@ Completed the email research waterfall and generated the postcard hero. No verif
 - `sites/atl-mobile-mechanics/bruce-asset-intel.json`
 - `sites/atl-mobile-mechanics/bruce-asset-intel.md`
 - `sites/atl-mobile-mechanics/bruce-collected.md`
+
+## Reviews (2026-05-13 scrape)
+
+Source: Google Business Profile / Google Places Details API for `Atl Mobile Mechanic's,We Come To U!!` (`cid=4964704970564788666`), rating 4.0 across 174 Google reviews at scrape time. Returned listing phone/address differ from the site record, but the review content names Joseph and matches Mini's requested owner context.
+
+### "Joseph is great 10/10 definitely recommend"
+- text: Joseph is great 10/10 definitely recommend!! My new mechanic He gets the job done fast!! Price are reasonable. Definitely can count on him anyday and time!!
+- reviewer: A'leetra Woods
+- rating: 5
+- source: Google Business Profile
+- scraped_at: 2026-05-13T02:21:22Z
+
+### "Fair pricing and knowledgeable"
+- text: Great service, can tell he takes pride in what he does man is a actual mechanic that is fair in pricing and knowledgeable would recommend to anyone.
+- reviewer: Matt Ruffino
+- rating: 5
+- source: Google Business Profile
+- scraped_at: 2026-05-13T02:21:22Z
+
+### "No one could get my car running right until I called"
+- text: I went to several mechanics. No one could get my car running right until I called this service and he found other issues that I didn’t know. I had definitely would use it again best mechanic ever.
+- reviewer: KING LION
+- rating: 5
+- source: Google Business Profile
+- scraped_at: 2026-05-13T02:21:22Z
+
+### "Had an issue with an alternator"
+- text: Professionalism to the core with expert guidance in helping with the trouble of vehicles these days. Had an issue with an alternator, called, Mr Joseph gave his analytics, gave a time as to when he could come and have it prepared with the breakdown of pricing and have been smooth sailing since then .
+
+I highly recommend them in ATL. Referred some of my family members, we even mentioned that he offered us a family referal discount lol 😆.
+- reviewer: Keevian Burnette
+- rating: 5
+- source: Google Business Profile
+- scraped_at: 2026-05-13T02:21:22Z
+

@@ -23,3 +23,7 @@ Cinematic photorealistic horizontal 16:9 scene for a mobile mechanic postcard he
 - No license plates
 - No identifiable people or faces
 - Synthetic/aspirational use only, not documentary proof
+
+## Review scrape v1 — GBP
+
+Captured 4 usable Google Business Profile reviews at 2026-05-13T02:21:22Z. Best site candidates: A'leetra Woods (Joseph by name, speed, price), Keevian Burnette (alternator + pricing breakdown), KING LION (diagnostic success after other mechanics failed), Matt Ruffino (fair pricing/knowledgeable). Source listing returned by Google Places: `Atl Mobile Mechanic's,We Come To U!!`, 4.0 rating across 174 reviews, cid `4964704970564788666`. Note: listing address/phone differ from current site record, but Joseph/name/review context match Mini's request.
