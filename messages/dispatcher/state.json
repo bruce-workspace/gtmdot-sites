@@ -1,0 +1,219 @@
+{
+  "backup": {
+    "age_hours": 0.0002756111111111111,
+    "ok": true,
+    "path": "/Users/bruce/.openclaw/workspace/paperclip-sandbox-home/instances/gtmdot-sandbox/data/backups/paperclip-20260601-083401.sql.gz",
+    "size_bytes": 109314
+  },
+  "config_path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/config/dispatcher-routing.json",
+  "digest_path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/digests/2026-06-01-0834-dispatcher-digest.md",
+  "lane_files": {
+    "experiments": {
+      "age_hours": 212.27632878194444,
+      "exists": true,
+      "gtm_ids": [],
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/experiments-latest.md",
+      "sha256": "cc96f71e307add52373c112e8c6c66716e03801c84888c9a2326de841b842d87",
+      "updated": "2026-05-23T15:17:28-04:00",
+      "warning": "stale status file (212.3h old)"
+    },
+    "outreach": {
+      "age_hours": 0.8174372438888888,
+      "exists": true,
+      "gtm_ids": [
+        "GTM-9",
+        "GTM-24"
+      ],
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/outreach-operations-latest.md",
+      "sha256": "05db0dc0917588642d7af4036bd185dbc80ebbcb6163c4b57d153fe9425fffc4",
+      "updated": "2026-06-01T10:45:00-04:00",
+      "warning": null
+    },
+    "platform": {
+      "age_hours": 0.234104395,
+      "exists": true,
+      "gtm_ids": [],
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/gtmdot-platform-latest.md",
+      "sha256": "ac8f9b1fe16f246efdf237df026d22570113889d6084f1dc37316498b5dc666b",
+      "updated": "2026-06-01T11:20:00-04:00",
+      "warning": null
+    },
+    "post-build": {
+      "age_hours": 19.998548071944445,
+      "exists": true,
+      "gtm_ids": [],
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/post-build-operations-latest.md",
+      "sha256": "c4ecd8efe9b0b76a00fd9b30985658ecba2b0d159120815ae7a9cf129499d3cd",
+      "updated": "2026-05-31T15:34:08-04:00",
+      "warning": null
+    },
+    "pre-build": {
+      "age_hours": 212.45104777138891,
+      "exists": true,
+      "gtm_ids": [
+        "GTM-1",
+        "GTM-4",
+        "GTM-6",
+        "GTM-15",
+        "GTM-16",
+        "GTM-17",
+        "GTM-18",
+        "GTM-19",
+        "GTM-20",
+        "GTM-22",
+        "GTM-23"
+      ],
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/pre-build-coordination-latest.md",
+      "sha256": "3ef0f466ef95deeaef25eb15a3d5431cc1a5f8c93def0bd432ce89de86400ec8",
+      "updated": "2026-05-23T15:06:59-04:00",
+      "warning": "stale status file (212.5h old)"
+    },
+    "quarterback": {
+      "age_hours": 2.000213771111111,
+      "exists": true,
+      "gtm_ids": [
+        "GTM-1",
+        "GTM-4",
+        "GTM-6",
+        "GTM-9",
+        "GTM-15",
+        "GTM-16",
+        "GTM-17",
+        "GTM-18",
+        "GTM-19",
+        "GTM-20",
+        "GTM-22",
+        "GTM-23",
+        "GTM-24"
+      ],
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/quarterback-latest.md",
+      "sha256": "ccceb48c10dddcf936290d1777f288cc4bcb287860c79d44402c6d0ac746c77d",
+      "updated": "2026-06-01T06:34:02-07:00",
+      "warning": null
+    }
+  },
+  "last_run_at": "2026-06-01T08:34:02-07:00",
+  "mode": "dry-run",
+  "outbox_files": [
+    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-06-01-0834-to-pre-build.md",
+    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-06-01-0834-to-post-build.md",
+    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-06-01-0834-to-outreach.md",
+    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-06-01-0834-to-platform.md",
+    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-06-01-0834-to-experiments.md"
+  ],
+  "paperclip": {
+    "dashboard_error": null,
+    "dashboard_ok": true,
+    "health_error": null,
+    "health_ok": true,
+    "issues_error": null,
+    "issues_read": 24,
+    "source": "api"
+  },
+  "recent_artifacts": [
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T04:23:18-07:00",
+      "name": "2026-06-01-crm-review-workflow-ux-deploy-complete.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-crm-review-workflow-ux-deploy-complete.md",
+      "sha256": "29963fe96ca92e920f1e71a92f91033bddf7c339ba4f93cfdbda2381c5defa09",
+      "summary": "CRM Review Workflow UX Deploy Complete"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T04:19:43-07:00",
+      "name": "2026-06-01-1119-bruce-status-no-work-this-run.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-1119-bruce-status-no-work-this-run.md",
+      "sha256": "61aa7734ca9097aeb2e497cc4ea962b8d8d1a3bcb366631349a58b350010cc82",
+      "summary": "subject: no work this run"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T03:47:48-07:00",
+      "name": "2026-06-01-crm-v2-codex-takeover-control-plane-reset.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-crm-v2-codex-takeover-control-plane-reset.md",
+      "sha256": "ec0688c77ce8dac398d7ab534f8bf7c1fe9320406b88bbb1b6964dc65dcf40a6",
+      "summary": "CRM v2 Codex Takeover / Control-Plane Reset"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T03:46:34-07:00",
+      "name": "2026-06-01-crm-review-ux-and-current-board-friction.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-crm-review-ux-and-current-board-friction.md",
+      "sha256": "cc85079ae57b76479c273cef4c78b1c43e22cc57bef3dc49cf58924fe279f9ee",
+      "summary": "CRM Review UX And Current Board Friction"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T03:39:30-07:00",
+      "name": "2026-06-01-poplar-provider-state-production-fix-complete.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-poplar-provider-state-production-fix-complete.md",
+      "sha256": "1fe31fb2cfdb5501109ee28863867860918eb29948ce92028ecf06718473307c",
+      "summary": "Poplar Provider-State Production Fix Complete"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T03:33:50-07:00",
+      "name": "2026-06-01-poplar-provider-truth-audit.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-poplar-provider-truth-audit.md",
+      "sha256": "fc86dc6695943305b8d741a96c1170bd994efbcd76cbfbc40b48449fee5b9087",
+      "summary": "Poplar Provider Truth Audit"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-05-31T19:59:37-07:00",
+      "name": "2026-06-01-0259-bruce-status-no-work-this-run.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-0259-bruce-status-no-work-this-run.md",
+      "sha256": "0fa63fb9a9fcfd2db7f56fa18b16d3dfba20f1ddc5ac1730635f138c08e29dd3",
+      "summary": "No pending collect-request.md files found this run. All existing requests are archived."
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-05-31T13:41:17-07:00",
+      "name": "2026-05-31-poplar-provider-state-integration-fix.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-05-31-poplar-provider-state-integration-fix.md",
+      "sha256": "c3a05329681ad362f00513511aaeccb6506de2cd70cc774448aae7615a3ef090",
+      "summary": "Poplar Provider-State Integration Fix"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-05-31T13:28:52-07:00",
+      "name": "2026-05-31-24hrs-postcard-exception-ui-diagnosis.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-05-31-24hrs-postcard-exception-ui-diagnosis.md",
+      "sha256": "9f7919c9784df625f2878d73d70a4081c95984129e6a91b7787a0c47e549252c",
+      "summary": "24 Hrs Mobile Tire Services Postcard Exception / UI Diagnosis - 2026-05-31"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-05-31T13:26:57-07:00",
+      "name": "2026-05-31-dead-enrichment-comment-routing-audit.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-05-31-dead-enrichment-comment-routing-audit.md",
+      "sha256": "e2c22b728be78c6d5b8bc0ab0adb5101d3570561e21c0468c5ee28705bbc0fd3",
+      "summary": "Dead / Enrichment / Comment Routing Audit - 2026-05-31"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-05-31T13:19:14-07:00",
+      "name": "2026-05-31-next-catchup-approval-packet.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-05-31-next-catchup-approval-packet.md",
+      "sha256": "0667df9fd5a0a8bfd21166e9bef6e32cfcc5a31793010b2a5ea03a626f06cc50",
+      "summary": "Next Catch-Up Approval Packet - 2026-05-31"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-05-31T13:17:55-07:00",
+      "name": "2026-05-31-post-vacation-outreach-catchup.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-05-31-post-vacation-outreach-catchup.md",
+      "sha256": "e145dd412f34e665dc63eda279578cda9bafed2fe8f764fc0419a2eb5c876293",
+      "summary": "Post-Vacation Outreach Catch-Up - 2026-05-31"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-05-31T13:11:52-07:00",
+      "name": "2026-05-31-return-from-vacation-codex-audit.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-05-31-return-from-vacation-codex-audit.md",
+      "sha256": "2cce75fec62622f1b24a65a157d169c7acfc05192ae7192fd07a6382e8e9468b",
+      "summary": "GTMDot Return-From-Vacation Audit - 2026-05-31"
+    }
+  ]
+}

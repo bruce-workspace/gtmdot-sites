@@ -1,0 +1,66 @@
+{
+  "dashboard_agents": {
+    "active": 0,
+    "error": 0,
+    "paused": 0,
+    "running": 0
+  },
+  "dashboard_error": null,
+  "dashboard_ok": true,
+  "dashboard_tasks": {
+    "blocked": 3,
+    "done": 5,
+    "inProgress": 0,
+    "open": 19
+  },
+  "dispatcher_digest": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/digests/2026-06-01-0834-dispatcher-digest.md",
+  "dispatcher_last_run": "2026-06-01T08:34:02-07:00",
+  "guardrails": [
+    "read-only health/status artifact",
+    "no CRM/Supabase writes",
+    "no Paperclip mutations",
+    "no deploys",
+    "no Poplar/Resend/SMS sends",
+    "no prospect/customer contact",
+    "no git pushes",
+    "no production site edits"
+  ],
+  "latest_backup": {
+    "age_hours": 0.0002981072222222222,
+    "mtime": "2026-06-01T08:34:01-07:00",
+    "ok": true,
+    "path": "/Users/bruce/.openclaw/workspace/paperclip-sandbox-home/instances/gtmdot-sandbox/data/backups/paperclip-20260601-083401.sql.gz",
+    "size_bytes": 109314
+  },
+  "launchagents": {
+    "com.gtmdot.dispatcher-bridge": {
+      "label": "com.gtmdot.dispatcher-bridge",
+      "ok": true,
+      "returncode": 0,
+      "summary": "path = /Users/bruce/Library/LaunchAgents/com.gtmdot.dispatcher-bridge.plist",
+      "target": "gui/501/com.gtmdot.dispatcher-bridge"
+    },
+    "com.gtmdot.paperclip": {
+      "label": "com.gtmdot.paperclip",
+      "ok": true,
+      "returncode": 0,
+      "summary": "path = /Users/bruce/Library/LaunchAgents/com.gtmdot.paperclip.plist",
+      "target": "gui/501/com.gtmdot.paperclip"
+    }
+  },
+  "paperclip_health": {
+    "authReady": true,
+    "bootstrapInviteActive": false,
+    "bootstrapStatus": "ready",
+    "deploymentExposure": "private",
+    "deploymentMode": "local_trusted",
+    "features": {
+      "companyDeletionEnabled": true
+    },
+    "status": "ok",
+    "version": "2026.428.0"
+  },
+  "paperclip_health_error": null,
+  "paperclip_ok": true,
+  "updated": "2026-06-01T08:34:02-07:00"
+}
