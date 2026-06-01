@@ -1,1 +1,0 @@
-No pending collect-request.md files found in gtmdot-sites for this run.

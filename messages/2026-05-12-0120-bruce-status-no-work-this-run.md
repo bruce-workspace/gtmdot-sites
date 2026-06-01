@@ -1,1 +1,0 @@
-No pending `collect-request.md` files were found for this cron run.

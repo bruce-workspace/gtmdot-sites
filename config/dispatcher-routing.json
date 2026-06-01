@@ -1,0 +1,62 @@
+{
+  "paperclip": {
+    "base_url": "http://127.0.0.1:3199",
+    "company_id": "a67ce81f-9799-4ef0-b217-76bc39c19f9f",
+    "dashboard_url": "http://127.0.0.1:3199/GTM/dashboard"
+  },
+  "paths": {
+    "status_dir": "messages/status",
+    "messages_dir": "messages",
+    "dispatcher_dir": "messages/dispatcher",
+    "paperclip_cache_dir": "messages/dispatcher/cache",
+    "paperclip_backups_dir": "/Users/bruce/.openclaw/workspace/paperclip-sandbox-home/instances/gtmdot-sandbox/data/backups"
+  },
+  "lane_status_files": {
+    "quarterback": "messages/status/quarterback-latest.md",
+    "pre-build": "messages/status/pre-build-coordination-latest.md",
+    "post-build": "messages/status/post-build-operations-latest.md",
+    "outreach": "messages/status/outreach-operations-latest.md",
+    "platform": "messages/status/gtmdot-platform-latest.md",
+    "experiments": "messages/status/experiments-latest.md"
+  },
+  "issue_routes": {
+    "GTM-2": "outreach",
+    "GTM-7": "outreach",
+    "GTM-8": "outreach",
+    "GTM-9": "outreach",
+    "GTM-10": "outreach",
+    "GTM-24": "outreach",
+    "GTM-3": "post-build",
+    "GTM-11": "post-build",
+    "GTM-12": "post-build",
+    "GTM-13": "post-build",
+    "GTM-14": "post-build",
+    "GTM-4": "pre-build",
+    "GTM-15": "pre-build",
+    "GTM-16": "pre-build",
+    "GTM-17": "pre-build",
+    "GTM-18": "pre-build",
+    "GTM-5": "platform",
+    "GTM-19": "platform",
+    "GTM-20": "platform",
+    "GTM-6": "quarterback",
+    "GTM-21": "quarterback",
+    "GTM-22": "quarterback",
+    "GTM-23": "quarterback"
+  },
+  "lane_display_names": {
+    "quarterback": "Quarterback / Main GTMDot",
+    "pre-build": "Pre-Build Coordination",
+    "post-build": "Post-Build Operations",
+    "outreach": "Outreach Operations",
+    "platform": "GTMDot Platform / CRM v2",
+    "experiments": "Experiments",
+    "bruce": "Bruce Enrichment",
+    "r1vs": "R1VS Site Builder"
+  },
+  "staleness": {
+    "lane_warning_hours": 24,
+    "backup_warning_hours": 3,
+    "recent_artifact_hours": 36
+  }
+}

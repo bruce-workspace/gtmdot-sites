@@ -1,1 +1,0 @@
-No pending collect-request.md files found this run. All existing collect-request.md files are archived.

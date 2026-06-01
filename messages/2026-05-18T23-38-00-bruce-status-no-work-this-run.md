@@ -1,1 +1,0 @@
-No pending `collect-request.md` files were found in `~/.openclaw/workspace/gtmdot-sites/sites/*/` after pulling the latest changes. No scraping work was performed in this run.
