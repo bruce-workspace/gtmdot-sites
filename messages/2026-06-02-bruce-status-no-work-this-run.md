@@ -1,1 +1,1 @@
-No pending collect-request.md files found during this cron run.
+No new photo collection requests found this run.
