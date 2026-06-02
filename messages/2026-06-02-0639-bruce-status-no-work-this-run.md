@@ -1,0 +1,1 @@
+No pending 'collect-request.md' files found after scanning the gtmdot-sites repository. All existing requests appear to be archived or have corresponding 'bruce-collected.md' files.
