@@ -1,1 +1,1 @@
-No pending collect-request.md files found at 2026-06-02 10:59 AM America/Los_Angeles.
+No pending collect-request.md files found for processing in this run.
