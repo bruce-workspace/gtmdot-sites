@@ -1,24 +1,24 @@
 {
   "backup": {
-    "age_hours": 0.0002756111111111111,
+    "age_hours": 0.0015426502777777778,
     "ok": true,
-    "path": "/Users/bruce/.openclaw/workspace/paperclip-sandbox-home/instances/gtmdot-sandbox/data/backups/paperclip-20260601-083401.sql.gz",
-    "size_bytes": 109314
+    "path": "/Users/bruce/.openclaw/workspace/paperclip-sandbox-home/instances/gtmdot-sandbox/data/backups/paperclip-20260602-083401.sql.gz",
+    "size_bytes": 114762
   },
   "config_path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/config/dispatcher-routing.json",
-  "digest_path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/digests/2026-06-01-0834-dispatcher-digest.md",
+  "digest_path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/digests/2026-06-02-0834-dispatcher-digest.md",
   "lane_files": {
     "experiments": {
-      "age_hours": 212.27632878194444,
+      "age_hours": 236.27774347055555,
       "exists": true,
       "gtm_ids": [],
       "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/experiments-latest.md",
       "sha256": "cc96f71e307add52373c112e8c6c66716e03801c84888c9a2326de841b842d87",
       "updated": "2026-05-23T15:17:28-04:00",
-      "warning": "stale status file (212.3h old)"
+      "warning": "stale status file (236.3h old)"
     },
     "outreach": {
-      "age_hours": 0.8174372438888888,
+      "age_hours": 24.818852394722224,
       "exists": true,
       "gtm_ids": [
         "GTM-9",
@@ -27,28 +27,28 @@
       "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/outreach-operations-latest.md",
       "sha256": "05db0dc0917588642d7af4036bd185dbc80ebbcb6163c4b57d153fe9425fffc4",
       "updated": "2026-06-01T10:45:00-04:00",
-      "warning": null
+      "warning": "stale status file (24.8h old)"
     },
     "platform": {
-      "age_hours": 0.234104395,
+      "age_hours": 24.235519458333332,
       "exists": true,
       "gtm_ids": [],
       "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/gtmdot-platform-latest.md",
       "sha256": "ac8f9b1fe16f246efdf237df026d22570113889d6084f1dc37316498b5dc666b",
       "updated": "2026-06-01T11:20:00-04:00",
-      "warning": null
+      "warning": "stale status file (24.2h old)"
     },
     "post-build": {
-      "age_hours": 19.998548071944445,
+      "age_hours": 43.999963265000005,
       "exists": true,
       "gtm_ids": [],
       "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/post-build-operations-latest.md",
       "sha256": "c4ecd8efe9b0b76a00fd9b30985658ecba2b0d159120815ae7a9cf129499d3cd",
       "updated": "2026-05-31T15:34:08-04:00",
-      "warning": null
+      "warning": "stale status file (44.0h old)"
     },
     "pre-build": {
-      "age_hours": 212.45104777138891,
+      "age_hours": 236.4524630336111,
       "exists": true,
       "gtm_ids": [
         "GTM-1",
@@ -66,10 +66,10 @@
       "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/pre-build-coordination-latest.md",
       "sha256": "3ef0f466ef95deeaef25eb15a3d5431cc1a5f8c93def0bd432ce89de86400ec8",
       "updated": "2026-05-23T15:06:59-04:00",
-      "warning": "stale status file (212.5h old)"
+      "warning": "stale status file (236.5h old)"
     },
     "quarterback": {
-      "age_hours": 2.000213771111111,
+      "age_hours": 24.001629150555555,
       "exists": true,
       "gtm_ids": [
         "GTM-1",
@@ -87,19 +87,19 @@
         "GTM-24"
       ],
       "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/quarterback-latest.md",
-      "sha256": "ccceb48c10dddcf936290d1777f288cc4bcb287860c79d44402c6d0ac746c77d",
-      "updated": "2026-06-01T06:34:02-07:00",
-      "warning": null
+      "sha256": "2337327396227b22798860bab0642b2fb9d932783489e8ce50b69a5374db4cb3",
+      "updated": "2026-06-01T08:34:02-07:00",
+      "warning": "stale status file (24.0h old)"
     }
   },
-  "last_run_at": "2026-06-01T08:34:02-07:00",
+  "last_run_at": "2026-06-02T08:34:07-07:00",
   "mode": "dry-run",
   "outbox_files": [
-    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-06-01-0834-to-pre-build.md",
-    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-06-01-0834-to-post-build.md",
-    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-06-01-0834-to-outreach.md",
-    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-06-01-0834-to-platform.md",
-    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-06-01-0834-to-experiments.md"
+    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-06-02-0834-to-pre-build.md",
+    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-06-02-0834-to-post-build.md",
+    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-06-02-0834-to-outreach.md",
+    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-06-02-0834-to-platform.md",
+    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-06-02-0834-to-experiments.md"
   ],
   "paperclip": {
     "dashboard_error": null,
@@ -113,47 +113,111 @@
   "recent_artifacts": [
     {
       "gtm_ids": [],
-      "mtime": "2026-06-01T04:23:18-07:00",
-      "name": "2026-06-01-crm-review-workflow-ux-deploy-complete.md",
-      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-crm-review-workflow-ux-deploy-complete.md",
-      "sha256": "29963fe96ca92e920f1e71a92f91033bddf7c339ba4f93cfdbda2381c5defa09",
-      "summary": "CRM Review Workflow UX Deploy Complete"
+      "mtime": "2026-06-02T08:20:12-07:00",
+      "name": "20260602-112006-bruce-status-no-work-this-run.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/20260602-112006-bruce-status-no-work-this-run.md",
+      "sha256": "cc01b9158a1a2e5c930cd62da954e5373c7f0f3509a07febec946ab8b10b44be",
+      "summary": "Bruce status: no pending collect requests"
     },
     {
       "gtm_ids": [],
-      "mtime": "2026-06-01T04:19:43-07:00",
-      "name": "2026-06-01-1119-bruce-status-no-work-this-run.md",
-      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-1119-bruce-status-no-work-this-run.md",
-      "sha256": "61aa7734ca9097aeb2e497cc4ea962b8d8d1a3bcb366631349a58b350010cc82",
+      "mtime": "2026-06-02T06:59:47-07:00",
+      "name": "2026-06-02-1359-bruce-status-no-work-this-run.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-02-1359-bruce-status-no-work-this-run.md",
+      "sha256": "cd7e339470b9e1271449b37c2523a52744a73106d54f366070172a8e7eed0711",
       "summary": "subject: no work this run"
     },
     {
       "gtm_ids": [],
-      "mtime": "2026-06-01T03:47:48-07:00",
-      "name": "2026-06-01-crm-v2-codex-takeover-control-plane-reset.md",
-      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-crm-v2-codex-takeover-control-plane-reset.md",
-      "sha256": "ec0688c77ce8dac398d7ab534f8bf7c1fe9320406b88bbb1b6964dc65dcf40a6",
-      "summary": "CRM v2 Codex Takeover / Control-Plane Reset"
+      "mtime": "2026-06-02T06:39:34-07:00",
+      "name": "2026-06-02-bruce-status-no-work-this-run.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-02-bruce-status-no-work-this-run.md",
+      "sha256": "c5df85a5ba6043afb7ed34ad591a09824bd5bdd8eca6759c4c00d2073668b9dd",
+      "summary": "No new photo collection requests found this run."
     },
     {
       "gtm_ids": [],
-      "mtime": "2026-06-01T03:46:34-07:00",
-      "name": "2026-06-01-crm-review-ux-and-current-board-friction.md",
-      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-crm-review-ux-and-current-board-friction.md",
-      "sha256": "cc85079ae57b76479c273cef4c78b1c43e22cc57bef3dc49cf58924fe279f9ee",
-      "summary": "CRM Review UX And Current Board Friction"
+      "mtime": "2026-06-02T05:19:39-07:00",
+      "name": "2026-06-02-1219-bruce-status-no-work-this-run.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-02-1219-bruce-status-no-work-this-run.md",
+      "sha256": "70cf2bb7fa9400ed43ac87e4c92a894b3b35ff06b683c66cfa6a57aa69813057",
+      "summary": "No pending `collect-request.md` files were found in `sites/*/` for this run."
     },
     {
       "gtm_ids": [],
-      "mtime": "2026-06-01T03:39:30-07:00",
-      "name": "2026-06-01-poplar-provider-state-production-fix-complete.md",
-      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-poplar-provider-state-production-fix-complete.md",
-      "sha256": "1fe31fb2cfdb5501109ee28863867860918eb29948ce92028ecf06718473307c",
-      "summary": "Poplar Provider-State Production Fix Complete"
+      "mtime": "2026-06-01T23:39:36-07:00",
+      "name": "2026-06-02-0639-bruce-status-no-work-this-run.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-02-0639-bruce-status-no-work-this-run.md",
+      "sha256": "074bdba2b3bc1dedfd3de720ae6b656e6837d14779315e843b70d43c84756097",
+      "summary": "No pending 'collect-request.md' files found after scanning the gtmdot-sites repository. All existing requests appear to be archived or have corresponding 'bruce-collected.md' files."
     },
     {
       "gtm_ids": [],
-      "mtime": "2026-06-01T03:33:50-07:00",
+      "mtime": "2026-06-01T22:39:36-07:00",
+      "name": "2026-06-02T05:39:00Z-bruce-status-no-work-this-run.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-02T05:39:00Z-bruce-status-no-work-this-run.md",
+      "sha256": "3aa2296037b4b4bdbd6c5ad925c7c0386e9a33e07dbc5a410771188515526cc7",
+      "summary": "No pending collect-request.md files found during this cron run."
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T20:59:32-07:00",
+      "name": "2026-06-01T20-59-00-bruce-status-no-work-this-run.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01T20-59-00-bruce-status-no-work-this-run.md",
+      "sha256": "a2fd24cd54c3aac12c5968bc806dfdfaeef0405c1f05782823e507cfe31bb4cf",
+      "summary": "No pending `collect-request.md` files were found for this run. All requests have been processed or archived."
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T17:59:39-07:00",
+      "name": "2026-06-01-1759-bruce-status-no-work-this-run.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-1759-bruce-status-no-work-this-run.md",
+      "sha256": "710e79a8e904410311cddc6a12e9d0b563de250800d939853f672c8202d9114b",
+      "summary": "subject: no work this run"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T15:59:46-07:00",
+      "name": "2026-06-01-1600-bruce-status-no-work-this-run.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-1600-bruce-status-no-work-this-run.md",
+      "sha256": "1b3a2ba3747133ef1190e68df258dd04e4b188e13ec5fcadcfffe7a1d7ad2ba9",
+      "summary": "subject: no work this run"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T12:39:38-07:00",
+      "name": "2026-06-01T12-39-bruce-status-no-work-this-run.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01T12-39-bruce-status-no-work-this-run.md",
+      "sha256": "9deffc2120f9227df68418398d5b7b313215f3c9da8d4768547f8a7f0f46fc99",
+      "summary": "subject: no work this run"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T10:02:23-07:00",
+      "name": "2026-06-01-1700-bruce-status-no-work-this-run.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-1700-bruce-status-no-work-this-run.md",
+      "sha256": "8d6edbfdab265628ef02a6abe2a663aff4b7e0b08ddae85bc5a5b85daa41a537",
+      "summary": "subject: No pending collect-requests"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T10:02:17-07:00",
+      "name": "20260519015842-bruce-status-no-work-this-run.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/20260519015842-bruce-status-no-work-this-run.md",
+      "sha256": "4dbdd3ec98160b7d533e0f8f77f0e0dd4705a570cbe84564e88a1b3d49d6420d",
+      "summary": "No pending collect-request.md files were found in this run."
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T10:02:17-07:00",
+      "name": "20260518055624-bruce-status-no-work-this-run.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/20260518055624-bruce-status-no-work-this-run.md",
+      "sha256": "6e246688372abe6bc8536d8e9c7646696794e7997e59a292e2726df274689c6a",
+      "summary": "No pending collect-request.md files found in this run."
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T10:02:17-07:00",
       "name": "2026-06-01-poplar-provider-truth-audit.md",
       "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-poplar-provider-truth-audit.md",
       "sha256": "fc86dc6695943305b8d741a96c1170bd994efbcd76cbfbc40b48449fee5b9087",
@@ -161,7 +225,39 @@
     },
     {
       "gtm_ids": [],
-      "mtime": "2026-05-31T19:59:37-07:00",
+      "mtime": "2026-06-01T10:02:17-07:00",
+      "name": "2026-06-01-poplar-provider-state-production-fix-complete.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-poplar-provider-state-production-fix-complete.md",
+      "sha256": "1fe31fb2cfdb5501109ee28863867860918eb29948ce92028ecf06718473307c",
+      "summary": "Poplar Provider-State Production Fix Complete"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T10:02:17-07:00",
+      "name": "2026-06-01-crm-v2-codex-takeover-control-plane-reset.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-crm-v2-codex-takeover-control-plane-reset.md",
+      "sha256": "ec0688c77ce8dac398d7ab534f8bf7c1fe9320406b88bbb1b6964dc65dcf40a6",
+      "summary": "CRM v2 Codex Takeover / Control-Plane Reset"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T10:02:17-07:00",
+      "name": "2026-06-01-crm-review-workflow-ux-deploy-complete.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-crm-review-workflow-ux-deploy-complete.md",
+      "sha256": "29963fe96ca92e920f1e71a92f91033bddf7c339ba4f93cfdbda2381c5defa09",
+      "summary": "CRM Review Workflow UX Deploy Complete"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T10:02:17-07:00",
+      "name": "2026-06-01-crm-review-ux-and-current-board-friction.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-crm-review-ux-and-current-board-friction.md",
+      "sha256": "cc85079ae57b76479c273cef4c78b1c43e22cc57bef3dc49cf58924fe279f9ee",
+      "summary": "CRM Review UX And Current Board Friction"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T10:02:17-07:00",
       "name": "2026-06-01-0259-bruce-status-no-work-this-run.md",
       "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-06-01-0259-bruce-status-no-work-this-run.md",
       "sha256": "0fa63fb9a9fcfd2db7f56fa18b16d3dfba20f1ddc5ac1730635f138c08e29dd3",
@@ -169,39 +265,15 @@
     },
     {
       "gtm_ids": [],
-      "mtime": "2026-05-31T13:41:17-07:00",
-      "name": "2026-05-31-poplar-provider-state-integration-fix.md",
-      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-05-31-poplar-provider-state-integration-fix.md",
-      "sha256": "c3a05329681ad362f00513511aaeccb6506de2cd70cc774448aae7615a3ef090",
-      "summary": "Poplar Provider-State Integration Fix"
+      "mtime": "2026-06-01T10:02:17-07:00",
+      "name": "2026-05-31-return-from-vacation-codex-audit.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-05-31-return-from-vacation-codex-audit.md",
+      "sha256": "2cce75fec62622f1b24a65a157d169c7acfc05192ae7192fd07a6382e8e9468b",
+      "summary": "GTMDot Return-From-Vacation Audit - 2026-05-31"
     },
     {
       "gtm_ids": [],
-      "mtime": "2026-05-31T13:28:52-07:00",
-      "name": "2026-05-31-24hrs-postcard-exception-ui-diagnosis.md",
-      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-05-31-24hrs-postcard-exception-ui-diagnosis.md",
-      "sha256": "9f7919c9784df625f2878d73d70a4081c95984129e6a91b7787a0c47e549252c",
-      "summary": "24 Hrs Mobile Tire Services Postcard Exception / UI Diagnosis - 2026-05-31"
-    },
-    {
-      "gtm_ids": [],
-      "mtime": "2026-05-31T13:26:57-07:00",
-      "name": "2026-05-31-dead-enrichment-comment-routing-audit.md",
-      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-05-31-dead-enrichment-comment-routing-audit.md",
-      "sha256": "e2c22b728be78c6d5b8bc0ab0adb5101d3570561e21c0468c5ee28705bbc0fd3",
-      "summary": "Dead / Enrichment / Comment Routing Audit - 2026-05-31"
-    },
-    {
-      "gtm_ids": [],
-      "mtime": "2026-05-31T13:19:14-07:00",
-      "name": "2026-05-31-next-catchup-approval-packet.md",
-      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-05-31-next-catchup-approval-packet.md",
-      "sha256": "0667df9fd5a0a8bfd21166e9bef6e32cfcc5a31793010b2a5ea03a626f06cc50",
-      "summary": "Next Catch-Up Approval Packet - 2026-05-31"
-    },
-    {
-      "gtm_ids": [],
-      "mtime": "2026-05-31T13:17:55-07:00",
+      "mtime": "2026-06-01T10:02:17-07:00",
       "name": "2026-05-31-post-vacation-outreach-catchup.md",
       "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-05-31-post-vacation-outreach-catchup.md",
       "sha256": "e145dd412f34e665dc63eda279578cda9bafed2fe8f764fc0419a2eb5c876293",
@@ -209,11 +281,27 @@
     },
     {
       "gtm_ids": [],
-      "mtime": "2026-05-31T13:11:52-07:00",
-      "name": "2026-05-31-return-from-vacation-codex-audit.md",
-      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-05-31-return-from-vacation-codex-audit.md",
-      "sha256": "2cce75fec62622f1b24a65a157d169c7acfc05192ae7192fd07a6382e8e9468b",
-      "summary": "GTMDot Return-From-Vacation Audit - 2026-05-31"
+      "mtime": "2026-06-01T10:02:17-07:00",
+      "name": "2026-05-31-poplar-provider-state-integration-fix.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-05-31-poplar-provider-state-integration-fix.md",
+      "sha256": "c3a05329681ad362f00513511aaeccb6506de2cd70cc774448aae7615a3ef090",
+      "summary": "Poplar Provider-State Integration Fix"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T10:02:17-07:00",
+      "name": "2026-05-31-next-catchup-approval-packet.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-05-31-next-catchup-approval-packet.md",
+      "sha256": "0667df9fd5a0a8bfd21166e9bef6e32cfcc5a31793010b2a5ea03a626f06cc50",
+      "summary": "Next Catch-Up Approval Packet - 2026-05-31"
+    },
+    {
+      "gtm_ids": [],
+      "mtime": "2026-06-01T10:02:17-07:00",
+      "name": "2026-05-31-dead-enrichment-comment-routing-audit.md",
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/2026-05-31-dead-enrichment-comment-routing-audit.md",
+      "sha256": "e2c22b728be78c6d5b8bc0ab0adb5101d3570561e21c0468c5ee28705bbc0fd3",
+      "summary": "Dead / Enrichment / Comment Routing Audit - 2026-05-31"
     }
   ]
 }

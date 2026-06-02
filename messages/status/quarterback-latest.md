@@ -1,6 +1,6 @@
 Lane: Quarterback / GTMDot Control Plane
 Session: Dispatcher Bridge B1.0
-Updated: 2026-06-01T08:34:02-07:00
+Updated: 2026-06-02T08:34:07-07:00
 Owner: Codex / Dispatcher Bridge
 Mode: dry-run coordination digest generated
 
@@ -8,7 +8,7 @@ Current objective:
 Keep the active GTMDot lanes synchronized through the file ledger and local Paperclip without requiring Jesse to manually copy every update between sessions.
 
 Current state:
-Dispatcher B1.0 generated a dry-run digest at `/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/digests/2026-06-01-0834-dispatcher-digest.md`. No Paperclip, CRM, deploy, send, contact, git, or production mutations were performed.
+Dispatcher B1.0 generated a dry-run digest at `/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/digests/2026-06-02-0834-dispatcher-digest.md`. No Paperclip, CRM, deploy, send, contact, git, or production mutations were performed.
 
 Active prospects/items:
 - Quarterback / Main GTMDot: GTM-1, GTM-4, GTM-6, GTM-9, GTM-15, GTM-16, GTM-17, GTM-18, GTM-19, GTM-20, GTM-22, GTM-23, GTM-24
@@ -19,7 +19,7 @@ Active prospects/items:
 - Experiments: no GTM IDs detected
 
 Latest artifacts:
-- `/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/digests/2026-06-01-0834-dispatcher-digest.md`
+- `/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/digests/2026-06-02-0834-dispatcher-digest.md`
 
 Paperclip issues:
 - Quarterback / Main GTMDot: GTM-1, GTM-4, GTM-6, GTM-9, GTM-15, GTM-16, GTM-17, GTM-18, GTM-19, GTM-20, GTM-22, GTM-23, GTM-24
@@ -30,8 +30,12 @@ Paperclip issues:
 - Experiments: none
 
 Blockers:
-- Pre-Build Coordination: stale status file (212.5h old)
-- Experiments: stale status file (212.3h old)
+- Quarterback / Main GTMDot: stale status file (24.0h old)
+- Pre-Build Coordination: stale status file (236.5h old)
+- Post-Build Operations: stale status file (44.0h old)
+- Outreach Operations: stale status file (24.8h old)
+- GTMDot Platform / CRM v2: stale status file (24.2h old)
+- Experiments: stale status file (236.3h old)
 
 Decisions needed from Jesse:
 - pre-build / GTM-1, GTM-4, GTM-6, GTM-15, GTM-16, GTM-17, GTM-18, GTM-19, GTM-20, GTM-22, GTM-23: Mbanugo unresolved flags remain: owner name, direct email, CRM field reconciliation, GBP URL mismatch, TLS/source risk, Chosen Tires/Roadside Assistance alternate-branding risk, and identity-flag copy approval.

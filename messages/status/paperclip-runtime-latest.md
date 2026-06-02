@@ -1,6 +1,6 @@
 Lane: Paperclip Runtime
 Owner: Codex / GTMDot quarterback
-Updated: 2026-06-01T08:34:02-07:00
+Updated: 2026-06-02T08:34:07-07:00
 Mode: proactive control-plane runtime status
 
 Current state:
@@ -11,11 +11,11 @@ Current state:
 - Dispatcher LaunchAgent: loaded (path = /Users/bruce/Library/LaunchAgents/com.gtmdot.dispatcher-bridge.plist)
 
 Latest backup:
-- `/Users/bruce/.openclaw/workspace/paperclip-sandbox-home/instances/gtmdot-sandbox/data/backups/paperclip-20260601-083401.sql.gz` (109314 bytes, 0.00h old)
+- `/Users/bruce/.openclaw/workspace/paperclip-sandbox-home/instances/gtmdot-sandbox/data/backups/paperclip-20260602-083401.sql.gz` (114762 bytes, 0.00h old)
 
 Dispatcher:
-- Last run: 2026-06-01T08:34:02-07:00
-- Latest digest: `/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/digests/2026-06-01-0834-dispatcher-digest.md`
+- Last run: 2026-06-02T08:34:07-07:00
+- Latest digest: `/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/digests/2026-06-02-0834-dispatcher-digest.md`
 
 Blockers:
 - No runtime blockers detected.

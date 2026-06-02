@@ -13,8 +13,8 @@
     "inProgress": 0,
     "open": 19
   },
-  "dispatcher_digest": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/digests/2026-06-01-0834-dispatcher-digest.md",
-  "dispatcher_last_run": "2026-06-01T08:34:02-07:00",
+  "dispatcher_digest": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/digests/2026-06-02-0834-dispatcher-digest.md",
+  "dispatcher_last_run": "2026-06-02T08:34:07-07:00",
   "guardrails": [
     "read-only health/status artifact",
     "no CRM/Supabase writes",
@@ -26,11 +26,11 @@
     "no production site edits"
   ],
   "latest_backup": {
-    "age_hours": 0.0002981072222222222,
-    "mtime": "2026-06-01T08:34:01-07:00",
+    "age_hours": 0.0015624872222222222,
+    "mtime": "2026-06-02T08:34:02-07:00",
     "ok": true,
-    "path": "/Users/bruce/.openclaw/workspace/paperclip-sandbox-home/instances/gtmdot-sandbox/data/backups/paperclip-20260601-083401.sql.gz",
-    "size_bytes": 109314
+    "path": "/Users/bruce/.openclaw/workspace/paperclip-sandbox-home/instances/gtmdot-sandbox/data/backups/paperclip-20260602-083401.sql.gz",
+    "size_bytes": 114762
   },
   "launchagents": {
     "com.gtmdot.dispatcher-bridge": {
@@ -62,5 +62,5 @@
   },
   "paperclip_health_error": null,
   "paperclip_ok": true,
-  "updated": "2026-06-01T08:34:02-07:00"
+  "updated": "2026-06-02T08:34:07-07:00"
 }
