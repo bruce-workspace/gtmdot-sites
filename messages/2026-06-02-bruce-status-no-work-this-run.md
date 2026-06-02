@@ -1,1 +1,1 @@
-No pending collect-request.md files found in `sites/*/` that do not have a corresponding `bruce-collected.md` written after the request's `requested_at` timestamp. No work to process in this run.
+No pending collect-request.md files found during this cron run.
