@@ -1,1 +1,1 @@
-No pending collect-request.md files found. No scrape work to perform in this run.
+No pending `collect-request.md` files were found for processing in this run.
