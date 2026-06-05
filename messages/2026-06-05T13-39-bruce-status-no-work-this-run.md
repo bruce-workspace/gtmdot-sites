@@ -1,0 +1,1 @@
+No pending `collect-request.md` files were found for this run. All existing requests are archived.
