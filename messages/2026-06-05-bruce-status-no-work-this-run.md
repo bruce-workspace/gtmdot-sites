@@ -1,1 +1,1 @@
-No pending `collect-request.md` files were found for processing in this run.
+No pending `collect-request.md` files found at 2026-06-05 13:59 UTC. No scrape tasks were executed this run.
