@@ -1,0 +1,1 @@
+No pending collect-request.md files found in ~/.openclaw/workspace/gtmdot-sites/sites. No scrape jobs processed in this run.
