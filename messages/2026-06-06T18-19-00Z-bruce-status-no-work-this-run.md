@@ -1,0 +1,1 @@
+No pending collect-request.md files found in the gtmdot-sites repository. No scrape tasks to execute this run.
