@@ -1,1 +1,1 @@
-No pending collect-request.md files found after scanning all sites. No scrape requests processed in this run.
+No pending collect-request.md files found in sites/*/ directories.
