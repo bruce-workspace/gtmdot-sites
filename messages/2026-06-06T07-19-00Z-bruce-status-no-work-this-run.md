@@ -1,0 +1,1 @@
+Bruce-as-Collector: No pending scrape requests found in this run. All active collect-request.md files have corresponding bruce-collected.md files, or no active requests exist.
