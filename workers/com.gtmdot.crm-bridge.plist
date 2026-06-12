@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.gtmdot.crm-bridge</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/bruce/.openclaw/workspace/gtmdot-sites/workers/gtmdot_crm_paperclip_bridge.py</string>
+  </array>
+  <key>StartInterval</key>
+  <integer>120</integer>
+  <key>StandardOutPath</key>
+  <string>/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/crm-bridge/stdout.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/crm-bridge/stderr.log</string>
+  <key>RunAtLoad</key>
+  <true/>
+  <!-- INSTALL (after Jesse ack — GOAL.md gate):
+       cp workers/com.gtmdot.crm-bridge.plist ~/Library/LaunchAgents/
+       launchctl load ~/Library/LaunchAgents/com.gtmdot.crm-bridge.plist
+       Note: PAPERCLIP_WRITE is intentionally NOT set here — outbox drain
+       stays dry-run even once the agent is loaded (Phase D gate). -->
+</dict>
+</plist>
