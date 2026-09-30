@@ -1,0 +1,114 @@
+{
+  "backup": {
+    "age_hours": 0.015262391111111112,
+    "ok": true,
+    "path": "/Users/bruce/.openclaw/workspace/paperclip-sandbox-home/instances/gtmdot-sandbox/data/backups/paperclip-20260703-065922.sql.gz",
+    "size_bytes": 129525
+  },
+  "config_path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/config/dispatcher-routing.json",
+  "digest_path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/digests/2026-07-03-0700-dispatcher-digest.md",
+  "lane_files": {
+    "experiments": {
+      "age_hours": 978.7137576061111,
+      "exists": true,
+      "gtm_ids": [],
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/experiments-latest.md",
+      "sha256": "cc96f71e307add52373c112e8c6c66716e03801c84888c9a2326de841b842d87",
+      "updated": "2026-05-23T15:17:28-04:00",
+      "warning": "stale status file (978.7h old)"
+    },
+    "outreach": {
+      "age_hours": 767.2548658475,
+      "exists": true,
+      "gtm_ids": [
+        "GTM-9",
+        "GTM-24"
+      ],
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/outreach-operations-latest.md",
+      "sha256": "05db0dc0917588642d7af4036bd185dbc80ebbcb6163c4b57d153fe9425fffc4",
+      "updated": "2026-06-01T10:45:00-04:00",
+      "warning": "stale status file (767.3h old)"
+    },
+    "platform": {
+      "age_hours": 637.0629218844444,
+      "exists": true,
+      "gtm_ids": [],
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/gtmdot-platform-latest.md",
+      "sha256": "5edc588f04a95045591af980306efa784fb5e07cf60903e87773f091c9b3cb91",
+      "updated": "2026-06-06T20:56:31-04:00",
+      "warning": "stale status file (637.1h old)"
+    },
+    "post-build": {
+      "age_hours": 786.4359767125,
+      "exists": true,
+      "gtm_ids": [],
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/post-build-operations-latest.md",
+      "sha256": "c4ecd8efe9b0b76a00fd9b30985658ecba2b0d159120815ae7a9cf129499d3cd",
+      "updated": "2026-05-31T15:34:08-04:00",
+      "warning": "stale status file (786.4h old)"
+    },
+    "pre-build": {
+      "age_hours": 978.8884764219445,
+      "exists": true,
+      "gtm_ids": [
+        "GTM-1",
+        "GTM-4",
+        "GTM-6",
+        "GTM-15",
+        "GTM-16",
+        "GTM-17",
+        "GTM-18",
+        "GTM-19",
+        "GTM-20",
+        "GTM-22",
+        "GTM-23"
+      ],
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/pre-build-coordination-latest.md",
+      "sha256": "3ef0f466ef95deeaef25eb15a3d5431cc1a5f8c93def0bd432ce89de86400ec8",
+      "updated": "2026-05-23T15:06:59-04:00",
+      "warning": "stale status file (978.9h old)"
+    },
+    "quarterback": {
+      "age_hours": 2.0004202227777776,
+      "exists": true,
+      "gtm_ids": [
+        "GTM-1",
+        "GTM-4",
+        "GTM-6",
+        "GTM-9",
+        "GTM-15",
+        "GTM-16",
+        "GTM-17",
+        "GTM-18",
+        "GTM-19",
+        "GTM-20",
+        "GTM-22",
+        "GTM-23",
+        "GTM-24"
+      ],
+      "path": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/status/quarterback-latest.md",
+      "sha256": "960c9520d9ac236c48085f10a82badb7f8b637a195a1bedd7b90b7224cbf3e44",
+      "updated": "2026-07-03T05:00:16-07:00",
+      "warning": null
+    }
+  },
+  "last_run_at": "2026-07-03T07:00:17-07:00",
+  "mode": "dry-run",
+  "outbox_files": [
+    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-07-03-0700-to-pre-build.md",
+    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-07-03-0700-to-post-build.md",
+    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-07-03-0700-to-outreach.md",
+    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-07-03-0700-to-platform.md",
+    "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/outbox/2026-07-03-0700-to-experiments.md"
+  ],
+  "paperclip": {
+    "dashboard_error": null,
+    "dashboard_ok": true,
+    "health_error": null,
+    "health_ok": true,
+    "issues_error": null,
+    "issues_read": 24,
+    "source": "api"
+  },
+  "recent_artifacts": []
+}
