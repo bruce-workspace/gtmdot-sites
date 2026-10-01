@@ -1,1 +1,1 @@
-No new `collect-request.md` files were found to process in this run. All existing requests appear to be archived.
+No pending 'collect-request.md' files found after scanning the repository. No scrape work was performed in this cron run.
