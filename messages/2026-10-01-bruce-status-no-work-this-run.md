@@ -1,0 +1,1 @@
+No pending 'collect-request.md' files found after scanning the gtmdot-sites repository. No scrape tasks were executed in this cron run.
