@@ -1,1 +1,0 @@
-No pending collect-request.md files found. No collection work performed this run.
