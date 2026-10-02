@@ -1,1 +1,1 @@
-No pending 'collect-request.md' files found after scanning the repository. No scrape work was performed in this cron run.
+No pending collect-request.md files found. No collection work performed this run.
