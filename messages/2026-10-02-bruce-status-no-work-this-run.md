@@ -1,0 +1,1 @@
+No pending `collect-request.md` files found. No scrapes were performed this run.
