@@ -1,1 +1,1 @@
-No pending `collect-request.md` files found. No scrapes were performed this run.
+No pending collect-request.md files found in sites/*/ that are not in an archive directory and do not have a sibling bruce-collected.md written after the request\'s requested_at timestamp. Current time: Friday, October 2nd, 2026 - 5:19 AM (America/Los_Angeles)
