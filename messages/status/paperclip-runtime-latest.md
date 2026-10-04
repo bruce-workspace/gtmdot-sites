@@ -1,24 +1,26 @@
 Lane: Paperclip Runtime
 Owner: Codex / GTMDot quarterback
-Updated: 2026-06-02T08:34:07-07:00
+Updated: 2026-10-04T08:01:16-04:00
 Mode: proactive control-plane runtime status
 
 Current state:
-- Paperclip health: ok
-- Dashboard tasks: `{"blocked": 3, "done": 5, "inProgress": 0, "open": 19}`
-- Dashboard agents: `{"active": 0, "error": 0, "paused": 0, "running": 0}`
+- Paperclip health: not ok
+- Dashboard tasks: `unavailable`
+- Dashboard agents: `unavailable`
 - Paperclip LaunchAgent: loaded (path = /Users/bruce/Library/LaunchAgents/com.gtmdot.paperclip.plist)
-- Dispatcher LaunchAgent: loaded (path = /Users/bruce/Library/LaunchAgents/com.gtmdot.dispatcher-bridge.plist)
+- Dispatcher LaunchAgent: not loaded (Bad request.)
 
 Latest backup:
-- `/Users/bruce/.openclaw/workspace/paperclip-sandbox-home/instances/gtmdot-sandbox/data/backups/paperclip-20260602-083401.sql.gz` (114762 bytes, 0.00h old)
+- BLOCKED: backup directory missing at `/Users/bruce/.openclaw/workspace/paperclip-sandbox-home/instances/gtmdot-sandbox/data/backups`
 
 Dispatcher:
 - Last run: 2026-06-02T08:34:07-07:00
 - Latest digest: `/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/digests/2026-06-02-0834-dispatcher-digest.md`
 
 Blockers:
-- No runtime blockers detected.
+- Paperclip API is not healthy: {'status': 'unhealthy', 'version': '2026.428.0', 'error': 'database_unreachable'}
+- Backup problem: backup directory missing
+- Dispatcher LaunchAgent is not loaded.
 
 Actions explicitly not performed:
 - No CRM/Supabase writes.
