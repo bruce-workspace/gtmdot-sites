@@ -1,0 +1,1 @@
+No pending 'collect-request.md' files found outside of archive directories. No scrape tasks to process in this run.
