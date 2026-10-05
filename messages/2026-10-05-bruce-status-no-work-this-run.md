@@ -1,1 +1,1 @@
-No pending collect-request.md files found in sites/*/ directories.
+No pending `collect-request.md` files found after scanning the `gtmdot-sites` repository. No new data collection was performed in this run.
