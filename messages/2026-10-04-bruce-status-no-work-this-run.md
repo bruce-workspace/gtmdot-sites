@@ -1,1 +1,1 @@
-No pending collect-request.md files found in sites/*/ for processing during this cron run.
+No pending collect-request.md files found during this run. All existing requests are archived.
