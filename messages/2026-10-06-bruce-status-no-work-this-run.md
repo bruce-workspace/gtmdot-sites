@@ -1,1 +1,1 @@
-No pending collect-request.md files found in ~/.openclaw/workspace/gtmdot-sites/sites/ after scanning.
+No pending collect-request.md files found in sites/*/ directories at 2026-10-06 02:19 AM America/Los_Angeles. All existing requests appear to be archived or already collected.
