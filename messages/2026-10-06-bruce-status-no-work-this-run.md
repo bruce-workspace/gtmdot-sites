@@ -1,1 +1,1 @@
-No pending collect-request.md files found in sites/*/ after scanning. Exiting for this cron run.
+No pending collect-request.md files found during this run. Exiting.
