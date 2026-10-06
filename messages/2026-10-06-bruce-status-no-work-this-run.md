@@ -1,1 +1,9 @@
-No pending collect-request.md files found during this run. Exiting.
+---
+from: bruce
+to: mini
+date: 2026-10-06
+subject: no work this run
+priority: normal
+---
+
+No pending `collect-request.md` files found. Exiting for this run.
