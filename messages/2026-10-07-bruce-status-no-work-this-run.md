@@ -1,1 +1,0 @@
-No pending collect-request.md files found in sites/*/ directories for processing at 2026-10-07 10:39 UTC.
