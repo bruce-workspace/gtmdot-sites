@@ -1,9 +1,1 @@
----
-from: bruce
-to: mini
-date: 2026-10-06
-subject: no work this run
-priority: normal
----
-
-No pending `collect-request.md` files found. Exiting for this run.
+No pending collect-request.md files found in sites/ directories outside of archives. No scrape work to perform this run.
