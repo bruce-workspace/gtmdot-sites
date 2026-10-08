@@ -1,1 +1,1 @@
-Bruce-as-Collector: No pending `collect-request.md` files found in `sites/*/` directories. No work performed this run.
+No pending collect-request.md files found this run. Bruce-as-Collector is idle.
