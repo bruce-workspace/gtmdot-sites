@@ -1,0 +1,1 @@
+No pending collect-request.md files found in ~/.openclaw/workspace/gtmdot-sites/sites that are not archived. No work to do in this run.
