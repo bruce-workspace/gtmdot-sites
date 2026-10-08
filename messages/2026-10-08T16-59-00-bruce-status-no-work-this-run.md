@@ -1,0 +1,1 @@
+No pending `collect-request.md` files were found in `sites/*/` directories. No work was performed in this run.
