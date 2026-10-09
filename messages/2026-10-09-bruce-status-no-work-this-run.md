@@ -1,1 +1,1 @@
-No pending collect-request.md files found in /Users/bruce/.openclaw/workspace/gtmdot-sites/sites. No work to do in this run.
+No pending collect-request.md files found in sites/*/collect-request.md. No scraping work performed this run.
