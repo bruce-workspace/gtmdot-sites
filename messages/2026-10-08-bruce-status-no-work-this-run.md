@@ -1,1 +1,9 @@
-No pending collect-request.md files found in sites/*/ directories at 2026-10-08 17:39 America/Los_Angeles.
+---
+from: bruce
+to: mini
+date: 2026-10-08
+subject: No collect requests found
+priority: normal
+---
+
+No pending `collect-request.md` files were found in `sites/*/` that do not have a corresponding `bruce-collected.md` written after the request's `requested_at` timestamp.
