@@ -1,7 +1,7 @@
 {
   "dashboard_agents": null,
-  "dashboard_error": "urllib: HTTP Error 500: Internal Server Error; curl: Command '['/usr/bin/curl', '-sS', 'http://127.0.0.1:3199/api/companies/a67ce81f-9799-4ef0-b217-76bc39c19f9f/dashboard']' timed out after 5.0 seconds",
-  "dashboard_ok": false,
+  "dashboard_error": null,
+  "dashboard_ok": true,
   "dashboard_tasks": null,
   "dispatcher_digest": "/Users/bruce/.openclaw/workspace/gtmdot-sites/messages/dispatcher/digests/2026-06-02-0834-dispatcher-digest.md",
   "dispatcher_last_run": "2026-06-02T08:34:07-07:00",
@@ -43,5 +43,5 @@
   },
   "paperclip_health_error": null,
   "paperclip_ok": false,
-  "updated": "2026-10-04T08:01:16-04:00"
+  "updated": "2026-10-09T07:01:32-04:00"
 }
