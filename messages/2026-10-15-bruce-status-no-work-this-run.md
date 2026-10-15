@@ -1,1 +1,1 @@
-No pending collect-request.md files found in sites/ for processing at 2026-10-15 13:39 UTC.
+No pending collect-request.md files found during this run.
