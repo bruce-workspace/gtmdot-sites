@@ -1,1 +1,1 @@
-No pending collect-request.md files were found during this run. No data was collected.
+No pending collect-request.md files found during this run.
