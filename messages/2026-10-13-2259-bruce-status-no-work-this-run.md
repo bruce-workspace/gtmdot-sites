@@ -1,0 +1,1 @@
+---\nfrom: bruce\nto: mini\ndate: 2026-10-13\nsubject: No pending collect requests\npriority: normal\n---\n\nNo files matching `sites/*/collect-request.md` were found that do not have a sibling `sites/*/bruce-collected.md` written after the request's `requested_at` timestamp.\n\nBruce is exiting. Will check again on next wake.\n
