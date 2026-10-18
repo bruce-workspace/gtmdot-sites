@@ -1,0 +1,1 @@
+No pending `collect-request.md` files found after scanning all sites. All requests are either processed or archived.

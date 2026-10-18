@@ -1,0 +1,1 @@
+No pending collect-request.md files found in `sites/*/` (excluding `collect-request-archive/`) at 2026-10-15 11:19 UTC.

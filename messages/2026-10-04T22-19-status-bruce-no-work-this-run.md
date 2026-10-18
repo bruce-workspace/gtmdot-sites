@@ -1,0 +1,1 @@
+No pending collect-request.md files found in sites/*/collect-request.md. All found requests are in archive directories. No work to perform in this run.

@@ -1,0 +1,1 @@
+No pending `collect-request.md` files found after scanning the `gtmdot-sites` repository. All existing `collect-request.md` files are in archive directories.

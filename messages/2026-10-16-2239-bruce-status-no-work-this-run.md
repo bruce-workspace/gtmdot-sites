@@ -1,0 +1,1 @@
+No pending `collect-request.md` files found in `sites/` directory. No scraping work was performed in this run.

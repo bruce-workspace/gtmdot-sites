@@ -1,0 +1,1 @@
+No pending `collect-request.md` files found at 2026-10-18 08:59 UTC. Exiting.

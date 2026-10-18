@@ -1,0 +1,1 @@
+No pending collect-request.md files found after scanning gtmdot-sites. No work for photo-brief-processor this run. Time: 2026-10-17 11:39 AM (America/Los_Angeles)

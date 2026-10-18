@@ -1,0 +1,1 @@
+No pending collect-request.md files found. Exiting for this cron run.

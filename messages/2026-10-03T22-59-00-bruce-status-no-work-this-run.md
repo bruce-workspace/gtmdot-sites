@@ -1,0 +1,1 @@
+No pending `collect-request.md` files found after scanning `sites/*/collect-request.md`. Exiting this cron run.

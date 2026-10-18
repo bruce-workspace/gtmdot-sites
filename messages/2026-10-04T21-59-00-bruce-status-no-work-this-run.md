@@ -1,0 +1,1 @@
+No pending `collect-request.md` files found after scanning the repository. No work to perform in this cron run.

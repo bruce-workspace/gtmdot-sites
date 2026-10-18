@@ -1,0 +1,1 @@
+No pending collect-request.md files found in sites/*/ directories after a full scan. Exiting without further action.

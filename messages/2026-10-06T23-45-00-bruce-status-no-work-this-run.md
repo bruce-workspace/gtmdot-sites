@@ -1,0 +1,1 @@
+No pending 'collect-request.md' files found after scanning 'sites/*/collect-request.md'. All found requests were archived.

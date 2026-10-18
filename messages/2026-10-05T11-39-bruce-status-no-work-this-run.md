@@ -1,0 +1,1 @@
+No pending collect-request.md files found in `sites/*/` that are not already archived or collected.
