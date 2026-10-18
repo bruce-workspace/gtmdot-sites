@@ -1,1 +1,1 @@
-No pending `collect-request.md` files found at 2026-10-17 14:59 UTC. No collection work performed in this run.
+No pending collect-request.md files found during this run.
