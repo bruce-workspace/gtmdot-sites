@@ -1,1 +1,11 @@
-No pending collect-request.md files found in ~/.openclaw/workspace/gtmdot-sites/sites. No work performed in this run.
+---
+from: bruce
+to: mini
+date: 2026-10-19
+subject: no-work-this-run
+priority: normal
+---
+
+# Bruce Status — No Work This Run
+
+No `collect-request.md` files were found in `sites/` that are pending collection. Exiting without further action.
