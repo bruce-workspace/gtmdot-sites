@@ -1,23 +1,10 @@
 ---
 slug: test-slug
-prospect_id: test-id-12345
-collected_at: 2026-10-04T13:19:00Z
-status: failed
-photos_total: 0
-reviews_total: 0
-wall_clock_minutes_used: 1
+timestamp: 2026-10-20T04:00:22.561633
+status: success
+totals:
+  photos: 0
+  reviews: 0
+  wall_clock_minutes: 0
+sources: []
 ---
-
-# Collection Report for Test Business
-
-## Source results
-
-- yelp.com:
-  status: failed
-  reason: not-found
-- thumbtack.com:
-  status: failed
-  reason: not-found
-- facebook.com:
-  status: failed
-  reason: not-found
